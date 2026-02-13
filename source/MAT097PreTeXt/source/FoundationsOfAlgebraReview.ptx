@@ -1,0 +1,1629 @@
+<section xml:id="FoundationsOfAlgebraReview">
+  <title>Foundations of Algebra Review</title>
+  <subsection>
+    <title>Algebraic Expressions</title>
+    <p>
+      Determine the number of terms in the algebraic expression.
+      For each term, state the coefficient and literal part.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>3a-4b^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          number of terms: <m>2</m>
+        </p>
+        <p>
+          terms<m>:3a</m><m>,-4b^2</m>
+        </p>
+        <p>
+          coefficients: <m>3</m>, <m>-4</m>
+        </p>
+        <p>
+          literal parts: <m>a</m>, <m>b^2</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{c}{4}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          number of terms: <m>1</m>
+        </p>
+        <p>
+          terms<m>:\frac{c}{4}</m>
+        </p>
+        <p>
+          coefficients: <m>\frac{1}{4}</m>,
+        </p>
+        <p>
+          literal parts: <m>c</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{2d-4f}{2}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          number of terms: <m>2</m>
+        </p>
+        <p>
+          terms<m>:\frac{2d}{2}</m><m>,\frac{-4f}{2}</m>
+        </p>
+        <p>
+          coefficients: <m>1</m>, <m>-2</m>
+        </p>
+        <p>
+          literal parts: <m>d</m>, <m>f</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>6t^3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          number of terms: <m>1</m>
+        </p>
+        <p>
+          terms<m>:6t^3</m>
+        </p>
+        <p>
+          coefficients: <m>6</m>
+        </p>
+        <p>
+          literal parts: <m>t^3</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{1}{5}y</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          number of terms: <m>1</m>
+        </p>
+        <p>
+          terms<m>:\frac{1}{5}y</m>
+        </p>
+        <p>
+          coefficients: <m>\frac{1}{5}</m>
+        </p>
+        <p>
+          literal parts: <m>y</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-3k^5+k^2-k+1</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          number of terms: <m>4</m>
+        </p>
+        <p>
+          terms<m>:-3k^5
+          <me>
+            ,k^2
+          </me>,
+          -k
+          <me>
+            ,1$\\ \hspace{0.3in} coefficients: $-3$, $1
+          </me>,
+          -1</m><m>,1</m>
+        </p>
+        <p>
+          literal parts: <m>k^5</m>, <m>k^2</m>, <m>k</m>, none
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>142</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          number of terms: <m>1</m>
+        </p>
+        <p>
+          terms<m>:142</m>
+        </p>
+        <p>
+          coefficients: <m>142</m>
+        </p>
+        <p>
+          literal parts: none
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>9d-4</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          number of terms: <m>2</m>
+        </p>
+        <p>
+          terms<m>:9d</m><m>,-4</m>
+        </p>
+        <p>
+          coefficients: <m>9</m>, <m>-4</m>
+        </p>
+        <p>
+          literal parts: <m>d</m>, none
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{4g}{3h}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          number of terms: <m>1</m>
+        </p>
+        <p>
+          terms<m>:\frac{4g}{3h}</m>
+        </p>
+        <p>
+          coefficients: <m>\frac{4}{3}</m>,
+        </p>
+        <p>
+          literal parts: <m>\frac{g}{h}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>r</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          number of terms: <m>1</m>
+        </p>
+        <p>
+          terms<m>:r</m>
+        </p>
+        <p>
+          coefficients: <m>1</m>
+        </p>
+        <p>
+          literal parts: <m>r</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    </exercises><p>
+      Rewrite each of the following in simplified form.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>-3g(4g)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-12g^2</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(2h)(-4h^2)(-h^4)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>8h^7</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(jkl)(6k^3l)(7j^6kl^4)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>42j^7k^5l^6</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3m - 7n + 14 + 16m + 23n - 8</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>19m+16n+6</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2p^2 - 8p - 10 - 5p^2 + 17p - 27</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-3p^2+9p-37</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(2p^2 - 8p - 10) - (5p^2 + 17p - 27)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-3p^2-25p+17</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-2(5 - 8q)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>16q-10</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>9r(5r + 7)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>45r^2+63r</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>s(2s - 1) - 3s(4s + 5)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-10s^2-16s</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2t^2(4t - 9) - 4t(t^2 + 3t)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>4t^3-30t^2</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(5u + 3)(u - 2)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>5u^2-7u-6</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-2(7 - v)(3v - 5)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>6v^2-52v+70</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3w(2w - 8)w^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>6w^4-24w^3</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(2x - 5)^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>4x^2-20x+25</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(y - 3)(y^2 - 4y + 1)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>y^3-7y^2+13y-3</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(5z - 2)(3z^2 + 5z - 8)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>15z^3+19z^2-50z+16</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3m(m)(-2m^2)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-6m^4</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>h^2(h^3)(h^4)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>h^9</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3ba(ab)(-3ab^2)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-9a^3b^4</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-pq(p^3q^7)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-p^4q^8</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    </exercises><p>
+      Simplify the following by combining like terms:
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>j^3 + 4j^2 - j^3 - 2j^2 + 4</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2j^2+4</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>x^4 + 12x^3 - 3x^3 - 6x^4 + x - 1</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-5x^4+9x^3+x-1</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>8z^3 + 3z - 2z^2 - 4z^3 + 2 - z + 3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>4z^3-2z^2+2z+5</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>4 + p^3 - 5p^2 - 5 + 3p^2 - p^3 - 2p^2 + p</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-4p^2+p-1</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    </exercises><p>
+      Simplify the following expressions
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>3(a - 4)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3a-12</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>7t(t + 1)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>7t^2+7t</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-2(g - 5) + (g + 4)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>14-g</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>6t(t - 8) - 3(t + 2)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>6t^2-51t-6</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>6(v^2 - v + 7) + 3(v - 5)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>6v^2-3v+27</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(j + 7)(j - 2)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>j^2+5j-14</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(r + 4)(r - 1)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>r^2+3r-4</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(r - 4)(r + 1)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>r^2-3r-4</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(h - 4)^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>h^2-8h+16</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(p + 2)^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>p^2+4p+4</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>4(w - 7)^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>4w^2-56w+196</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(f - 4)(f^2 + 2f - 4)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>f^3-2f^2-12f+16</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(3f + 2)(-f^2 - 5f + 1)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-3f^3-17f^2-7f+2</m>
+        </p>
+      </solution>
+    </exercise>
+    
+  </exercises></subsection>
+  <subsection>
+    <title>Exponents</title>
+    <p>
+      Rewrite each of the following in simplest form.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>(-2a)(4a^3)(a^2)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-8a^6</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(5bc^5)(7b^4c^7)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>35d^5c^{12}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(d^4e^7f)(f^6d^3)(e^{10}f^{20})</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>d^7e^{17}f^{27}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{25h^9}{-5h^3}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-5h^6</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{30j^{10}k^{20}}{-90j^{10}k^{15}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-\frac{1}{3}k^5</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{45l^{32}n^{18}}{25l^{19}m^0n^8}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{9}{5}l^{13}n^{10}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{(9qr^7)(6q^{10}r^{15})}{(-3r^2)(4q^8r^7)}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-4.5q^3r^{13}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{(s^7t^5u^9)(s^{13}u^0)(s^{11}t^2u^9)}{s^2t^2u^2}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>s^{19}t^{14}h^{16}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(3x^2)(4x)(-x)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-12x^4</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{4xy(-2x^2y^2)}{x^3y^y}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-8</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(5^2)^3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>5^6=15,625</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\frac{2}{3}\right)^4</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{2^4}{3^4}=\frac{16}{81}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(-3^2)^4</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>6561</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(vw^4)^3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>v^2w^{12}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(-3x^3y^2)^5</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-243x^{15}y^{10}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(2xy^3)^3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>8x^3y^9</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\frac{2z}{3a}\right)^6</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{64z^6}{729a^6}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\left( \frac{25b^3c^7}{5bc^5} \right)^3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>125b^6c^6</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\left( \frac{16g^4h^2}{6gh} \right)^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{64}{9}g^6h^2</m>
+        </p>
+      </solution>
+    </exercise>
+    
+  </exercises></subsection>
+  <subsection>
+    <title>Negative Exponents</title>
+    <p>
+      Express each of the following without negative exponents.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>\frac{8^3}{8^7}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{1}{8^4}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{3^{-1}}{3^{-2}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{10a^4}{20a^8}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{1}{2a^4}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{30m^5}{15m^6}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{2}{m}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{25b^3c^9}{15b^6c^4}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{5c^5}{3b^3}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{35d^{-2}e^{-7}}{28d^8e^{-4}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{7}{4d^{10}e^3}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2p^{-8}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{2}{p^8}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(3j^2)^{-1}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{1}{3j^2}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{6}{f^{-5}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>6f^5</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{-2}{3k^{-3}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{-2}{3}k^3</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{16g^{-4}}{4g^7}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{4}{g^3}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(2h^2)^{-2}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{1}{4h^4}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(3t^6)^{-4}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{1}{81g^{24}}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    </exercises><p>
+      Express each of the following using fractional exponents.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>\sqrt{2x}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(2x)^{\frac{1}{2}}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3\sqrt{4x}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(4x)^{\frac{1}{2}}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2\sqrt{x}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2x^{\frac{1}{2}}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\sqrt[3]{y^2 - 5}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(y^2-5)^{\frac{1}{3}}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\sqrt[4]{r + 10}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(r+10)^{\frac{1}{4}}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2\sqrt[3]{y^2} - 5</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2y^{\frac{2}{3}-5}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    </exercises><p>
+      Express each of the following without fractional exponents.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>3z^{\frac{1}{5}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3\sqrt[5]{z}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(3z)^{\frac{1}{5}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\sqrt[5]{3z}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-2ab^{\frac{1}{2}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-2a\sqrt{b}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-2(ab)^{\frac{1}{2}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-2\sqrt{ab}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5 - 2d^{\frac{1}{5}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>5-2\sqrt[5]{d}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5 - (2d)^{\frac{1}{5}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>5-\sqrt[5]{2d}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(5 - 2d)^{\frac{1}{5}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\sqrt[5]{5-2d}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+  </exercises></subsection>
+  <subsection>
+    <title>Factoring</title>
+    <p>
+      Factor each of the following expressions:
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>18 - 3a</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3(6-a)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>4a^2 + 6a^3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2a^2(2+3a)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>15b + 24c - 36d</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3(5b+8c-12d)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5xy - 10x^2y^3 - 15x^4y^5</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>5xy(1-2xy^2-3x^3y^4)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>10j^2 - 20j + 30</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>10(j^2-2j+3)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3e^2 - 5e</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>e(3e-5)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2f^3 - 10f^2 + f</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>f(2f^2-10f+1)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>14g^5 + 28g^3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>7g^3(2g^2+4)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2h^2i - 6h^4i^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2h^2i(1-3h^2i)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>24a^2b^2c - 18abc^2 + 9a^3b^3c^3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3abc(8ab-9c+3a^2b^2c^2)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>a^2 + 12a + 35</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(a+5)(a+7)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>b^2 - 11b + 30</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(b-5)(b-6)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>y^2 + 6y - 55</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(y+11)(y-5)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>c^2 - 3c - 40</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(c-8)(c+5)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>d^2 + 4d - 45</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(d+9)(d-5)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-15e + e^2 + 36</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(e-12)(e-3)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2x^2 + 2x - 84</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2(x+7)(x-6)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>x^3 + 21x^2 + 54x</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>x(x+18)(x+3)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>f^2 - 81</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(f+9)(f-9)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>g^2 - 36</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(g+6)(g-6)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3h^2 - 147</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3(h+7)(h-7)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>4a^2 - 324</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>4(a+9)(a-9)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+  </exercises></subsection>
+</section>

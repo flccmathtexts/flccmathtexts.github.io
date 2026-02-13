@@ -1,0 +1,1486 @@
+<section xml:id="FormulaLinearFunctions">
+  <title>Finding Formulas for Linear Functions</title>
+  <introduction>
+    <p>
+      Of course not every function is linear,
+      but lots and lots of useful functions are.
+      We've already seen some of the properties of linear functions,
+      specifically how to find their slopes and intercepts,
+      and what those slopes and intercepts tell you.
+    </p>
+    <p>
+      In almost all of our work so far, though,
+      we've assumed that we already had a formula for a given linear function,
+      and then could work from that formula.
+      In this section,
+      we'll fully explore something we've hinted at in a few examples but not yet developed:
+      how to find the formula for a function that we've determined to be linear.
+      As you'll see,
+      the properties of linear functions that we've already observed are not just helpful in interpreting functions whose formulas we somehow already know – they are incredibly useful in helping us find formulas for those functions in the first place!
+    </p>
+  </introduction>
+  <subsection>
+    <title>Formulas for Linear Functions Given Slope and Intercept</title>
+    <p>
+      In <xref ref="LinearFunctionsandIntercepts">Chapter</xref>,
+      we introduced the slope-intercept form for a linear function,
+      <m>f(x)=mx+b</m>.
+      We noted that a function is linear if and only if it can be written in this form.
+      So, if we know the slope and vertical intercept of a linear function,
+      we can write a formula for the function simply by plugging that slope and intercept into this general form.
+    </p>
+    <example xml:id="FormulaLinearFunctionsExample1">
+      <statement>
+        <p>
+          Suppose <m>f(x)</m> is a linear function whose slope is <m>-5</m> and vertical intercept is <m>(0, 8)</m>.
+          Find a formula for <m>f(x)</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Since it is linear, we know that
+      <m>f(x)=mx+b</m> for the appropriate values of <m>m</m> and <m>b</m>.
+      Now <m>m</m> is the slope, so we know that <m>m</m> is <m>-5</m>.
+      The vertical intercept can be given as a point, as it is here,
+      or just as the output value of that point which would be just <m>8</m>,
+      and so that's <m>b</m>.
+      So substituting thosevalues into the slope-intercept form we get that
+      <me>
+        f(x)=-5x+8
+      </me>
+    </p>
+    <p>
+      It really is just that simple,
+      if we know the slope and vertical intercept.
+      Of course, we won't always have those values at our disposal,
+      but since they are pretty significant features,
+      it's actually not all that unusual to have them available to find a linear function's formula.
+      In fact, when we worked out a couple formulas at the start of <xref ref="LinearFunctionsandIntercepts">Section</xref> using common sense reasoning,
+      this is in fact what we were doing.
+    </p>
+    <example xml:id="FormulaLinearFunctionsExample2">
+      <statement>
+        <p>
+          A new bottle of vitamins contains <m>75</m> pills,
+          and a full day's dose is <m>3</m> pills.
+          Find a formula for the number of pills the bottle will contain after <m>t</m> full daily doses have been taken.
+        </p>
+      </statement>
+    </example>
+    <p>
+      The function is linear,
+      because with each full daily dose the number of pills changes by the same amount,
+      it drops by three.
+      The vertical intercept is the starting point, or more precisely,
+      it is the number of pills in the bottle when the number of daily doses taken is zero.
+      So <m>m</m> is <m>-3</m> and <m>b</m> is <m>75</m>.
+      And so:
+      <me>
+        f(t)=-3t+75
+      </me>
+    </p>
+    <p>
+      It's not unusual to change the formula a bit,
+      especially when a different order might seem to better reflect the
+      <q>story</q>
+      the function is describing.
+      Here, we start with <m>75</m> pills and then take away <m>3</m> each day,
+      so it might seem more natural to write this as <m>f(t)=75-3t</m>.
+      Of course, this is algebraically equivalent to the formula we wrote above,
+      so this alternative is also a correct formula for the function.
+      At least for now, we will try to stick with the <m>mx+b</m> order,
+      to emphasize that this is what we are using,
+      but it is not at all incorrect to write this function either way.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Formulas for Linear Models Given Slope and Input-Output Pair</title>
+    <p>
+      Of course, we aren't always lucky enough to have both the slope and the vertical intercept.
+      If we have the slope and one input-output pair for a linear function,
+      we can still find the function's formula,
+      albeit with a little more effort required.
+      We will present two different methods for doing this by way of a specific example.
+      Either method will always work,
+      and so which one you use is a matter of preference.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          <em><em>Method #1: Back Substitution</em></em>
+          <ol>
+            <li>
+              <p>
+                Start with the general form
+                <m>f(x)=mx+b</m> (replacing the <m>x</m> and <m>f(x)</m> with the actual names of the function and input variable if they are different)
+              </p>
+            </li>
+            <li>
+              <p>
+                Plug in the known value of the slope as <m>m</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Using the known input-output pair,
+                plug in the input for <m>x</m> and the output for <m>f(x)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                Solve the resulting equation for <m>b</m> to get the vertical intercept.
+              </p>
+            </li>
+            <li>
+              <p>
+                You now have the slope and vertical intercept; use these in the
+                <q><m>f(x)=mx+b</m></q>
+                form to get the function formula.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      We can see how this works with the following two examples.
+      We will actually start with a
+      <q>numbers only</q>
+      example just to show how this method works,
+      and then will move to a real-world application example which will allow us to see both how the method works and a little bit of interpretation along the way.
+    </p>
+    <example xml:id="FormulaLinearFunctionsExample3">
+      <statement>
+        <p>
+          Find the formula for the linear function <m>g(t)</m> given that the function's slope is <m>-4.5</m> and the function's graph passes through the point <m>(5, 12)</m>.
+        </p>
+      </statement>
+    </example>
+    <ol>
+      <li>
+        <p>
+          We begin with the fact that since we know <m>g(t)</m> is linear,
+          it must have a formula of the form:
+          <me>
+            g(t)=mx+b
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          Now since we know the slope, we can plug that in to get:
+          <me>
+            g(t)=-4.5t+b
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          Next, since the graph passes through the point <m>(5,12)</m> we know that <m>g(5)=12</m>,
+          and so if we plug in the input of <m>5</m> for <m>t</m> the output must be <m>12</m>.
+          Plugging those values in we get:
+          <me>
+            12=-4.5(5)+b
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          Now this is an equation we can solve for <m>b</m>.
+          Doing that we get:
+          <me>
+            12 = -22.5 + b
+          </me>
+          <me>
+            b=34.5
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          So now we know that our function's slope is <m>-4.5</m> and its vertical intercept is <m>34.5</m>.
+          So, putting these facts together,
+          we conclude that the formula is:
+          <me>
+            g(t)=-4.5t+34.5
+          </me>
+        </p>
+      </li>
+    </ol>
+    <p>
+      In this first example we listed the numbered steps of the method explicitly.
+      We won't do that in future examples,
+      but you can see that we are in fact still following them.
+      In the next example,
+      we'll use the method to find a formula where there is a real world interpretation to the linear function and see how this gives some extra insight into why this method works.
+    </p>
+    <example xml:id="FormulaLinearFunctionsExample4">
+      <statement>
+        <p>
+          An online music site charges a fixed monthly membership fee,
+          which allows unlimited streaming.
+          Members can also download songs for <m>$0.85</m> each.
+          Last month I downloaded <m>32</m> songs and paid <m>$35.20</m>.
+          Find a formula for the amount I pay as a function of the number of songs I download.
+        </p>
+      </statement>
+    </example>
+    <p>
+      First we note that this function would indeed be linear.
+      The input is music purchased
+      (counted in songs),
+      and the output is cost
+      (in dollars).
+      The rate of change would be dollars per song,
+      and we are told this is a constant <m>$0.85</m> per song.
+      So the function is linear.
+    </p>
+    <p>
+      If we let <m>s</m> be the number of songs and <m>C(s)</m> be the cost for downloading that many songs, then:
+      <me>
+        C(s)=mx+b
+      </me>
+    </p>
+    <p>
+      Plugging in the known slope we get:
+      <me>
+        C(s)=0.85s+b
+      </me>
+    </p>
+    <p>
+      Since an input of <m>32</m> songs gives and output of a <m>$35.20</m> charge, we know:
+      <me>
+        35.2 = 0.85(32)+b
+      </me>
+    </p>
+    <p>
+      And so we solve for <m>b</m> and get:
+      <me>
+        35.2 = 27.2+b
+      </me>
+      <me>
+        b=8
+      </me>
+    </p>
+    <p>
+      Putting the slope and vertical intercept together we get that the overall formula must be:
+      <me>
+        C(s)=0.85s+8
+      </me>
+    </p>
+    <p>
+      We can add some interpretation to this formula as well.
+      The vertical intercept is the charge you'd pay when the input - the number of songs you download - is zero.
+      So, we can interpret this function as telling us that you pay
+      <m>$8</m> per month just to have the service,
+      plus <m>$0.85</m> per download. }
+    </p>
+    <p>
+      This example agrees with a less-structured but commonsense way of figuring this out.
+      Rather than using the formal method we've laid out here,
+      you could have figured this formula out by reasoning that since each download costs
+      <m>$0.85</m>, I must have paid <m>32($0.85)=$27.20</m> for the downloads.
+      Since my total charge was <m>$35.20</m>,
+      the membership fee must have been <m>$35.20-$27.20 = $8</m>.
+      From this you could have easily arrived at the formula.
+    </p>
+    <p>
+      Such reasoning is perfectly correct,
+      and in fact if you look through the example,
+      it's actually pretty much what we did!
+      There's nothing wrong with taking this less-structured approach,
+      but in cases where the interpretation is not so easy to see it may not work so well.
+      The structured method we've laid out here always works,
+      whether the interpretation is easy,
+      difficult, or even if there is no interpretation at all
+      (as in <xref ref="FormulaLinearFunctionsExample3">Example</xref>).
+    </p>
+    <p>
+      Now at the start of this section we promised a second method,
+      and we will introduce that now,
+      and then illustrate its use with the same two examples we've just worked out with the first method.
+      Again, it must be emphasized that both methods will always work,
+      but for a number of reasons,
+      your instructor may prefer, or even insist that you use one or the other.
+      Make sure that you are clear about the expectations in the course that you are taking.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Point-Slope Form</title>
+    <p>
+      This second method is a formula,
+      derived from the formula for slope.
+      Before presenting the formula,
+      we'll briefly show where it comes from.
+      Though you need not fear being asked to reproduce the derivation yourself,
+      it's good to see at least once that our formulas really do come from somewhere!
+    </p>
+    <p>
+      Our formula for slope <idx><h>Linear Function</h><h>Slope</h></idx> can be written in the form:
+      <me>
+        m=\frac{\Delta f(x)}{\Delta x} = \frac{\Delta output}{\Delta input}
+      </me>
+    </p>
+    <p>
+      Now, suppose we have a particular input-output pair for a linear function.
+      If we call this particular input value <m>x_0</m> then we would call the output value <m>f(x_0)</m> or using an output variable we could call it just <m>y_0</m>.
+      To keep the notation a little simpler,
+      we will use <m>y_0</m> instead of the function notation here.
+    </p>
+    <p>
+      Now let's let just plain <m>x</m> and just plain <m>y</m> be any other input and output for this function. (To be clear:
+      <m>(x_0,y_0)</m> is the specific input-output pair that we know,
+      and just plain <m>(x,y)</m> represents any other input-output pair for the function - not any specific input-output pair that we know.)
+    </p>
+    <p>
+      <m>\Delta output</m> and <m>\Delta input</m> can be found by subtracting outputs and inputs,
+      and so going back to the slope formula we'd get:
+      <me>
+        m=\frac{y-y_0}{x-x_0}
+      </me>
+    </p>
+    <p>
+      Which we can then solve for <m>y</m> by first clearing the fraction and then simplifying:
+      <md>
+        <mrow>\frac{y-y_0}{x-x_0}\amp =m</mrow>
+        <mrow>\left( \frac{y-y_0}{x-x_0} \right)(x-x_0) \amp = m(x-x_0)</mrow>
+        <mrow>y-y_0\amp =m(x-x_0)</mrow>
+        <mrow>y\amp =m(x-x_0)+y_0</mrow>
+      </md>
+    </p>
+    <p>
+      This work has led us to the point-slope form for the equation of a linear function.
+      Plugging in the slope and known input-output pair directly into this form gives an equation for the linear function;
+      it can then be readily simplified into slope-intercept form.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          <em><em>Method #2: Point-Slope Form</em></em>
+        </p>
+        <p>
+              <idx><h>Linear Function</h><h>Point-Slope Form</h></idx>
+        </p>
+        <p>
+          If <m>m</m> is the slope and
+          <m>(x_0,y_0)</m> is a given input-output pair for a linear function,
+          the function's formula can be found by plugging these values into the form:
+          <me>
+            y=m(x-x_0)+y_0
+          </me>
+        </p>
+        <p>
+          If the input variable is a letter other than <m>x</m> that letter would be used in place of <m>x</m> in this form;
+          if there is an output variable given then that letter would likewise be used in place of <m>y</m>.
+        </p>
+        <p>
+          This can then be simplified into slope-intercept form if desired,
+          and the <m>y</m> can be replaced with an <m>f(x)</m> to use function notation.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      We will illustrate the use of this method by reworking the previous two examples.
+    </p>
+    <example xml:id="FormulaLinearFunctionsExample5">
+      <statement>
+        <p>
+          Find the formula for the linear function <m>g(t)</m> given that the function's slope is <m>-4.5</m> and the function's graph passes through the point <m>(5,12)</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Here the input variable is <m>t</m> and so we use that in place of <m>x</m>.
+      There is no output variable given so we will use <m>y</m>.
+    </p>
+    <p>
+      We have here that <m>m=-4.5</m>,
+      <m>t_0=5</m> and <m>y_0=12</m>.
+      We plug these into the point-slope form to get:
+      <me>
+        y=m(t-t_0)+y_0\\ y=-4.5(t-5)+12
+      </me>
+      and now we simplify:
+      <me>
+        y=-4.5t+22.5 + 12\\ y=-4.5t+34.5
+      </me>
+      and finally rewriting in function form by replacing the <m>y</m> with an <m>g(t)</m>:
+      <me>
+        g(t)=-4.5t+34.5
+      </me>
+    </p>
+    <example xml:id="FormulaLinearFunctionsExample6">
+      <statement>
+        <p>
+          An online music site charges a fixed monthly membership fee,
+          which allows unlimited streaming.
+          Members can also download songs for <m>$0.85</m> each.
+          Last month I downloaded <m>32</m> songs and paid <m>$35.20</m>.
+          Find a formula for the amount I pay as a function of the number of songs I download.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Just as we did the first time,
+      we must first note that this function would indeed be linear.
+      The input is music purchased
+      (counted in songs),
+      and the output is cost
+      (in dollars).
+      The rate of change would be dollars per song,
+      and we are told this is a constant <m>$0.85</m> per song.
+      So the function is linear.
+    </p>
+    <p>
+      If we let <m>s</m> be the number of songs and <m>C(s)</m> be the cost for downloading that many songs,
+      as we did before, and let <m>y</m> stand in as the output variable,
+      we have that <m>m=0.85</m> and the known input output pair
+      <m>(s_0,y_0)</m> is <m>(32,35.20)</m>.
+      Plugging this in to the point-slope form we get:
+      <md>
+        <mrow>y=m(s-s_0)+y_0</mrow>
+        <mrow>y=0.85(s-32)+35.2</mrow>
+        <mrow>y=0.85s-27.2+35.2</mrow>
+        <mrow>y=0.85s+8</mrow>
+      </md>
+    </p>
+    <p>
+      Which we can then rewrite in function notation as:
+      <me>
+        C(s)=0.85s+8
+      </me>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Formulas for Linear Models Given Two Input-Output Pairs</title>
+    <p>
+      Sometimes we are not even lucky enough to have the slope for a linear function.
+      We can, however,
+      still find the formula for a linear function if we have not just one but two input-output pairs for the function.
+    </p>
+    <p>
+      Remember that if we know two input-output pairs for a function,
+      we can use them to calculate its slope.
+      Then, once we have the slope,
+      we can use the methods we've already discussed in this chapter to find the formula for the function.
+      If we have the slope and one input-output pair we are set - and in this case,
+      we actually have more than one!
+    </p>
+    <definition>
+      <statement>
+        <p>
+          <em><em>Method for Finding the Formula for a Linear</em></em>
+        </p>
+        <p>
+          <em /><em>Function Given Two Input-output Pairs</em>
+          <ol>
+            <li>
+              <p>
+                Use the two input-output pairs to find the function's slope
+              </p>
+            </li>
+            <li>
+              <p>
+                Use the slope together with either one of the input-output pairs to find the function's formula,
+                using methods previously discussed.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Essentially then we are just adding on an additional step at the start - finding the slope.
+      Once we've done that, we are pretty much in the same boat as before.
+    </p>
+    <example xml:id="FormulaLinearFunctionsExample7">
+      <statement>
+        <p>
+          Find the formula for the linear function whose graph passes through the points <m>(2,9)</m> and <m>(-1,24)</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      We first find the slope:
+      <md>
+        <mrow>m\amp =\frac{\Delta output}{\Delta input}=\frac{\Delta f(x)}{\Delta x}=\frac{f(2)=f(-1)}{2-(-1)}</mrow>
+        <mrow>\amp =\frac{9-24}{2-(-1)}</mrow>
+        <mrow>\amp =\frac{-15}{3}</mrow>
+        <mrow>\amp =-5</mrow>
+      </md>
+    </p>
+    <p>
+      We now know the slope and can use it together with either of the two given input-output pairs.
+      Here we will use <m>(2,9)</m> for no particular reason other than we have to pick one of them. (Using the other pair will work equally well).
+    </p>
+    <p>
+      We'll use the Back Substitution Method here (though using the point-slope form would work equally well.
+      You've got choices!)
+    </p>
+    <p>
+      Since the function is linear we know it can be written in the form:
+      <me>
+        f(x)=mx+b
+      </me>
+    </p>
+    <p>
+      Plugging in the slope we get:
+      <me>
+        f(x)=-5x+b
+      </me>
+    </p>
+    <p>
+      And now plugging in the input-output pair and solving for <m>b</m>:
+      <md>
+        <mrow>9\amp =-5(2)+b</mrow>
+        <mrow>9\amp =-10+b</mrow>
+        <mrow>b=19</mrow>
+      </md>
+    </p>
+    <p>
+      And finally putting this all together we get:
+      <me>
+        f(x)=-5x+19
+      </me>
+    </p>
+    <p>
+      Knowing a second input-output pair gives an opportunity to check your answer if you like.
+      If the formula is correct,
+      we know it should give <m>f(-1)=24</m> because <m>(-1,24)</m> is on its graph.
+      You can verify for yourself that this does indeed work correctly.
+    </p>
+    <example xml:id="FormulaLinearFunctionsExample8">
+      <statement>
+        <p>
+          In patients with diabetes,
+          blood sugar levels often fluctuate dramatically during the day and from day to day.
+          Therefore, measuring a patient's blood sugar level at any given time does not really reveal very much about overall blood sugar control.
+        </p>
+        <p>
+          A blood test known as
+          <q>glycated hemoglobin</q>
+          or
+          <q>A1C</q>
+          can be performed which measures a patients overall average blood sugar levels over the previous two to three months.
+          It measures the percent of hemoglobin in the blood that has been affected by exposure to glucose.
+          The average blood sugar level is a linear function of the A1C level.
+          An A1C level of <m>7.0\%</m> corresponds to an average blood sugar of <m>154 mg/dl</m>
+          (milligrams of glucose per deciliter of blood).
+          An A1C level of <m>10.0\%</m> corresponds to an average blood sugar level of <m>241 mg/dl</m>. (Source: Wikipedia,
+          <q>glycated hemoglobin</q>, accessed 7/24/11)
+          <ol marker="a">
+            <li>
+              <p>
+                Find a formula for average blood sugar level as a function of A1C.
+              </p>
+            </li>
+            <li>
+              <p>
+                What would an A1C of 8.2 indicate for an average blood sugar?
+              </p>
+            </li>
+            <li>
+              <p>
+                A typical average blood sugar for a non-diabetic would be 100.
+                What A1C level would this correspond to?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </example>
+    <ol marker="a">
+      <li>
+        <p>
+          Here we know two input-output pairs,
+          and so we can use them to find the slope:
+          <md>
+            <mrow>m\amp =\frac{\Delta output}{\Delta input}=\frac{\Delta average \text{ }  blood \text{ }  sugar}{\Delta A1C}</mrow>
+            <mrow>\amp =\frac{241-154}{10-7}</mrow>
+            <mrow>\amp =\frac{87}{3}</mrow>
+            <mrow>\amp =29</mrow>
+          </md>
+          Now we can use either input-output pair together with this slope to find the vertical intercept and complete the formula.
+          Using <m>x</m> and <m>f(x)</m> for the input variable and function name we get:
+          <me>
+            f(x)=mx+b
+          </me>
+          For no reason other than we've got to pick one,
+          we'll use the pair <m>(10,241)</m>:
+          <md>
+            <mrow>241\amp =29(10)+b</mrow>
+            <mrow>241\amp =290+b</mrow>
+            <mrow>b\amp =-49</mrow>
+          </md>
+          Putting this together we get the formula:
+          <me>
+            f(x)=-29x-49
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          Now that we have the formula we can use it.
+          Plugging in <m>x=8.2</m> we get:
+          <md>
+            <mrow>f(x)\amp =29x-49</mrow>
+            <mrow>f(8.2)\amp =29(8.2)-49</mrow>
+            <mrow>f(8.2)\amp =188.8</mrow>
+          </md>
+          So an A1C level of <m>8.2\%</m> indicates an average blood sugar level of <m>188.8 mg/dl</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Once again using the formula,
+          but this time substituting in an output value:
+          <md>
+            <mrow>f(x)\amp =29x-49</mrow>
+            <mrow>100\amp =29x-49</mrow>
+            <mrow>151\amp =29x</mrow>
+            <mrow>x=\frac{151}{29} \approx 5.21</mrow>
+          </md>.
+          So an average blood sugar of
+          <m>100 mg/dl</m> equates to an A1C level of approximately <m>5.21\%</m>.
+        </p>
+      </li>
+    </ol>
+  </subsection>
+  <subsection>
+    <title>Exercises</title>
+    <introduction>
+      <p>
+        NOTE: In all of the following problems,
+        when you are asked to find the formula for a linear function,
+        your final answer should be expressed in slope-intercept (that is,
+        <m>f(x)=mx+b</m> form).
+      </p>
+    </introduction>
+    <subsubsection>
+      <title>Formulas for Linear Models Given Slope and Intercept</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            Suppose <m>f(x)</m> is a linear function whose slope is <m>5</m> and whose vertical intercept is <m>(0, -3)</m>.
+            Find a formula for <m>f(x)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(x)=5x-3</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>f(t)</m> is a linear function.
+            Its slope is <m>-4</m> and its vertical intercept is <m>(0, 9)</m>.
+            Give a formula for <m>f(t)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>g(t)</m> is linear with slope
+            <m>-\frac{3}{5}</m> and vertical intercept <m>\frac{11}{3}</m>.
+            Give a formula for this function.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>g(t)=\frac{3}{5}t+\frac{11}{3}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The linear function <m>h(z)</m> has slope
+            <m>\frac{1}{4}</m> and vertical intercept <m>-\frac{5}{2}</m>.
+            Find a formula for this function.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A car rental agency charges
+            <m>$17.50</m> to rent a subcompact car for a day,
+            plus <m>$0.20</m> per mile.
+            The cost of a daily rental is a function of the miles driven.
+            Find a formula for this function.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(x)=0.2x+17.5</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            To print a textbook, a printer charges a flat
+            <m>$5.75</m> regardless of its length,
+            plus a charge of <m>$0.02</m> per page.
+            Give a formula for the charge to print a book as a function of the number of pages it contains.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A car is doing <m>70 mph</m> when the driver begins to apply the brakes steadily,
+            decreasing the speed by <m>0.5</m> mph per second.
+            Find a formula for the speed of the car <m>t</m> seconds after the driver begins braking.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(t)=-0.5t+70</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            I am driving from Rochester NY to Boston MA, a distance of <m>420 miles</m>.
+            Assuming that I drive at a steady rate of exactly <m>60</m> miles per hour,
+            the distance I have left to go is a linear function of the time since I started my trip.
+            Find a formula for this function.
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Formulas for Linear Models Given Slope and an Input-Output Pair</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            Find a formula for <m>f(x)</m> given that it is a linear function whose slope is <m>-2</m> and its graph passes through the point <m>(3,5)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(x)=-2x+11</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find a formula for the linear function <m>g(x)</m> which has a slope of <m>5</m> and whose graph passes through <m>(-3,7)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find a formula for the linear function whose slope is
+            <m>\frac{1}{2}</m> and whose graph passes through <m>(4, -4)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(x)=\frac{1}{2}x-6</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find a formula for a linear function with slope
+            <m>\frac{-2}{3}</m> and whose graph includes the point <m>(7,1)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>h(x)</m> is a linear function with slope <m>-2</m> and suppose <m>h(1) = 3</m>.
+            Find a formula for this function.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>h(x)=-2x+5</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>g(t)</m> is a linear function whose slope is <m>8</m>.
+            Also suppose <m>g(3) = -5</m>.
+            Find a formula for <m>g(t)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>f(\frac{2}{3}) = 5</m> and the function is linear with a slope of <m>21</m>,
+            what is a formula for <m>f(t)</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(t)=21t-9</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>g(x)</m> is linear,
+            its slope is <m>\frac{-3}{5}</m> and <m>g(-8) = \frac{17}{5}</m>,
+            what is a formula for <m>g(x)</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find a formula for a linear function whose slope is
+            <m>-\frac{5}{2}</m> and which gives an output of <m>25</m> when given an input of <m>40</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(x)=\frac-{5}{2}x+125</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            When you input <m>-7</m> into a linear function the resulting output is <m>12</m>.
+            The function's slope is <m>-\frac{5}{14}</m>.
+            What is a formula for this function?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The appropriate dose
+            (in milligrams)
+            of a medication is a function of the patient's weight
+            (in pounds).
+            For a <m>140</m> pound patient the dose would be <m>45</m> milligrams.
+            For a heavier or lighter patient,
+            the dose would change at a rate of <m>0.25</m> milligrams per pound.
+            Find a formula for the appropriate dose as a function of patient weight.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(x)=0.25x+10</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            For a standard policy,
+            a car insurance company charges a set amount plus an additional <m>85</m> for each point on your license.
+            Suppose you have three points on your license and car insurance costs you <m>835</m>.
+            Find a formula for your car insurance cost as a function of points on your license.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Water is flowing out of a tank at a constant rate of <m>25</m> liters per hour.
+            After <m>2</m> hours, <m>365</m> liters remain in the tank.
+            Find a formula for the water left in the tank as a function of time.
+            How much water was originally in the tank?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(x)=-25x+415</m>; <m>415</m> liters
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A contractor is sanding hardwood floors to be refinished,
+            working at a steady rate of <m>420</m> square feet per hour.
+            After working for <m>1 \frac{1}{2}</m> hours,
+            she has <m>1780</m> square feet left to do.
+            Find a formula for the remaining flooring to sand as a function of hours worked.
+            How large was the overall job?
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Formulas for Linear Models Given Two Input-Output Pairs</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            Find a formula for the linear function whose graph passes through the points <m>(3, -6)</m> and <m>(5,10)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(x)=8x-30</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find a formula for the linear function whose graph passes through the points
+            <m>(-20, -400)</m> and <m>(10, 500)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find a formula for the linear function whose graph passes through
+            <m>(50, -300)</m> and <m>(-10, 1500)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(x)=-30x+1200</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find a formula for the linear function whose graph passes through <m>(-8, 24)</m> and <m>(7, -6)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)</m> is a linear function and its graph includes the points
+            <m>(25, 11)</m> and <m>(-50, -19)</m>.
+            Find a formula for this function.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(x)=\frac{2}{5}x+1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)</m> is linear and its graph includes <m>(-20, 18)</m> and <m>(-12, 0)</m>.
+            Find a formula for <m>f(x)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find a formula for the function whose graph is a straight line passing through the points
+            <m>(\frac{1}{2}, \frac{5}{6})</m> and <m>(\frac{5}{4}, -\frac{1}{3})</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(x)=-{14}{9}x+\frac{29}{18}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The graph of <m>g(t)</m> is a straight line and its graph includes
+            <m>(3, -\frac{1}{2})</m> and <m>(\frac{5}{4}, 3)</m>.
+            Find a formula for <m>g(t)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The cost of shipping a load of freight includes a set base fee charged regardless of the amount shipped plus a set cost per ton.
+            If it costs <m>$800</m> to ship <m>2.5</m> tons and it costs
+            <m>$2000</m> to ship <m>10</m> tons,
+            <ol marker="a">
+              <li>
+                <p>
+                  find a formula for shipping cost as a function of tons shipped,
+                </p>
+              </li>
+              <li>
+                <p>
+                  determine the cost to ship <m>50</m> tons, and
+                </p>
+              </li>
+              <li>
+                <p>
+                  determine how much a shipment weighed if it cost <m>$3000</m> to ship.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            a. <m>f(x)=160x+400</m>
+          </p>
+          <p>
+            b. <m>$8400</m>
+          </p>
+          <p>
+            c. <m>16.25</m> tons
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A candy vending machine dispenses a set weight of jellybeans each time someone puts a quarter in.
+            Last Tuesday the machine contained <m>84</m> ounces of jellybeans and seven quarters.
+            One week later,
+            the machine contained <m>63</m> ounces of jellybeans and forty-nine quarters.
+            No one refilled the machine or removed any money from it in between.
+            <ol marker="a">
+              <li>
+                <p>
+                  Find a formula for the weight of jellybeans in the machine as a function of money collected.
+                </p>
+              </li>
+              <li>
+                <p>
+                  How much candy do you get for each quarter?
+                </p>
+              </li>
+              <li>
+                <p>
+                  How much candy does the machine contain when it is full?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A manufacturing line takes some time to set up,
+            but once this is done it produces widgets at a steady rate.
+            Including start-up time,
+            it takes <m>4</m> hours to produce <m>500</m> crates of widgets,
+            and <m>7</m> hours to produce <m>1100</m> crates.
+            <ol marker="a">
+              <li>
+                <p>
+                  Find a formula for crates of widgets produced as a function of time.
+                </p>
+              </li>
+              <li>
+                <p>
+                  How many widgets could be produced in 12 hours?
+                </p>
+              </li>
+              <li>
+                <p>
+                  How long would it take to produce 1500 crates?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            a. <m>f(x)=200x-300</m>
+          </p>
+          <p>
+            b. <m>2100</m> crates
+          </p>
+          <p>
+            c. <m>9</m> hours
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The total amount of insulin a diabetic patient requires in a day is a function of the amount of carbohydrates he consumes.
+            For a given patient,
+            the body requires a certain amount of insulin regardless of the amount consumed,
+            and then there is a set amount of insulin
+            (in units)
+            required per gram of carbohydrate.
+            If a particular diabetic patient consumes <m>300</m> grams of carbohydrates,
+            he will need <m>74</m> units of insulin.
+            He'll need <m>99</m> units if he eats <m>450</m> grams of carbohydrate.
+            <ol marker="a">
+              <li>
+                <p>
+                  Find a formula for insulin required as a function of carbohydrates consumed.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Explain the meaning of the vertical intercept of this function.
+                </p>
+              </li>
+              <li>
+                <p>
+                  How much insulin would be required to cover a daily consumption of <m>250</m> grams of carbohydrate?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+  </subsection>
+  <subsection>
+    <title>Grab Bag</title>
+    <exercises><exercise>
+      <statement>
+        <p>
+          The boiling point of water is <m>212^\circ</m>F at sea level.
+          At <m>1000</m> feet above sea level the boiling point is approximately
+          <m>210^\circ</m>F. Assuming that boiling point is a linear function of altitude above sea level
+          (in reality it isn't, but it is close enough to linear that we can get a very good approximation by assuming it is anyway)
+          find a formula for the boiling point of water as a function of altitude above sea level.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>f(x)=-0.002x+212</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x)</m> is linear, <m>f(3) = 70</m> and <m>f(6) = -50</m>.
+          <ol marker="a">
+            <li>
+              <p>
+                Find a formula for <m>f(x)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find <m>f(4)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>g(x)</m> is linear,
+          <m>g(0) = 2</m> and <m>g(3) = 11</m>,
+          find a formula for <m>g(x)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>g(x)=3x+2</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Laundry detergent is sold in a pump container.
+          Each load of laundry requires <m>4</m> presses of the pump.
+          When full, the container contains enough detergent for <m>200</m> pump presses.
+          <ol>
+            <li>
+              <p>
+                Find a formula for the number of pump presses remaining in the container as a function of the number of loads of laundry done.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find and interpret the horizontal intercept of this function.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          This question is based on a poster at an amusement park advertising
+          <m>$0.99</m> refills after buying a souvenir cup for
+          <m>$6.99</m> with the initial fill-up.
+          <ol marker="a">
+            <li>
+              <p>
+                Find a formula for the total cost of your drinks with this offer as a function of the number of times you refill the cup.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a formula for the total cost of your drinks with this offer as a function of the number of times the cup is filled.
+              </p>
+            </li>
+            <li>
+              <p>
+                For (a) and (b) you should have different values for the vertical intercept.
+                What does the vertical intercept mean in each of these cases?
+                What is the difference between them?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          a. <m>f(x)=0.99x+6.99</m>
+        </p>
+        <p>
+          b. <m>f(x)=0.99x+6</m>
+        </p>
+        <p>
+          c. In (a) the vertical intercept was the initial cost of the cup including the first fill-up (<m>x</m> is the number of refills); In (b) the vertical intercept was the cost of the cup not including the first fill
+          (<m>x</m> is the number of times the cup is filled,
+          including the initial fill-up).
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find a formula for the function whose graph is the straight line passing through
+          <m>(-\frac{1}{2}, 3)</m> and <m>(\frac{3}{2}, -5)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Airaloft Airlines offers a credit card,
+          where users receive a set number of frequent flier miles for each dollar they charge to the card.
+          If you charge a total of <m>$20,000</m> you would earn <m>40,000</m> miles.
+          If you charge a total of <m>$10,000</m> you would earn <m>25,000</m> miles.
+          <ol marker="a">
+            <li>
+              <p>
+                Find a formula for the miles earned as a function of dollars charged.
+              </p>
+            </li>
+            <li>
+              <p>
+                How many miles would you earn if you charge <m>$30,000</m>?
+              </p>
+            </li>
+            <li>
+              <p>
+                A free trip to Australia requires <m>80,000</m> miles.
+                How much would you need to charge to your card to earn enough for that trip?
+              </p>
+            </li>
+            <li>
+              <p>
+                Give a possible interpretation for the vertical intercept of this function.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          a. <m>f(x)=1.5x+10000</m>
+        </p>
+        <p>
+          b. <m>55,000</m> miles
+        </p>
+        <p>
+          c. <m>$46,666.67</m>
+        </p>
+        <p>
+          d. You earn <m>10,000</m> miles for opening a charge card account.
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Property taxes in the Town of Townsville are calculated by charging a flat amount for each property,
+          plus a set rate per square foot of living space.
+          A <m>1200</m> square foot house would be charged <m>$2400</m> in taxes.
+          A <m>2000</m> square foot house would pay <m>$3800</m>.
+          What would the taxes be for an <m>1800</m> square foot house?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>h(t)</m> is linear,
+          <m>h(5) = \frac{7}{5}</m> and <m>h(-2) = -\frac{14}{5}</m>.
+          Find a formula for <m>h(t)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>h(t)=\frac{3}{5}t-\frac{8}{5}</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The upward velocity of a model rocket is a linear function of the time since it was launched.
+          The rocket's initial upward velocity is <m>192</m> feet per second.
+          After <m>2</m> seconds the upward velocity has dropped to <m>128</m> feet per second.
+          Find a formula for upward velocity as a function of time.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find a formula for a linear function whose slope is <m>9</m> and whose vertical intercept is located at <m>(0, -8)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>f(x)=9x-8</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find a formula for the linear function with slope <m>-2</m> and whose vertical intercept is the origin.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Suppose <m>f(x)</m> is a linear function,
+          some of whose input-output pairs are given in the table below:
+        </p>
+        <tabular>
+          <row>
+            <cell>x</cell>
+            <cell>f(x)</cell>
+          </row>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+          <row>
+            <cell>3.5</cell>
+            <cell>12</cell>
+          </row>
+          <row>
+            <cell>5</cell>
+            <cell>15</cell>
+          </row>
+          <row>
+            <cell>8.5</cell>
+            <cell>22</cell>
+          </row>
+        </tabular>
+        <p>
+          Find a formula for this function.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>f(x)=2x+5</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A fruit wholesaler charges grocers
+          <m>$0.40</m> per pound for bananas,
+          plus a delivery charge which is the same set amount regardless of how many bananas he delivers.
+          Yummi's Greenmarket bought <m>350</m> pounds of bananas and paid <m>$165</m>.
+          What is the delivery charge?
+          Find a formula for the cost of an order of <m>x</m> pounds of bananas.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          An internet discount coupon promoter charges merchants a flat
+          <m>$50</m> fee to send out an email promotion,
+          and then receives a set amount for each discount coupon purchased.
+          If <m>40</m> were purchased, Harry's Haberdashery would pay a total of <m>$250</m>.
+          Find a formula for the total Harry's would pay as a function of discount coupons purchased,
+          and use this formula to determine how much they would pay if <m>84</m> were purchased.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>C(x)=50+5x</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Linear functions by definition must have a constant rate of change.
+          What this means in a given application,
+          though, can lead to some confusion.
+          For example,
+          suppose that a small ice cream company is trying to mathematically model its profits.
+          The company has fixed costs
+          (that is, costs that they have to pay regardless of how much ice cream they sell)
+          of <m>$4,000</m> per month.
+          They sell their ice cream for <m>$3.50</m> per pint,
+          and it costs them <m>$2.25</m> to make each pint of ice cream.
+          Ben says:
+          <q>Well, our profit is clearly a linear function of the number of pints of ice cream we sell.
+          Since <m>$3.50</m> -
+          <m>$2.25</m> = <m>$1.25</m>,
+          we make the same, steady <m>$1.25</m> per pint sold.
+          Since our profits as a function of pints sold increase at a constant rate,
+          the function is linear.</q>
+        </p>
+        <p>
+          Jerry says:
+          <q>Nonsense!
+          I agree that if our profit per pint sold were constant,
+          the function would be linear, but it's not!
+          If we sell, say, <m>5000</m> pints,
+          we take in <m>5000($3.50) = $17,500</m>.
+          It costs us <m>5000($2.25) = $11,250</m> to make that ice cream,
+          plus our fixed costs are <m>$4,000</m>,
+          for a total of <m>$15,250</m>.
+          So we make <m>$17,500 - $15,250 = $2,250</m> profit.
+          And that would be <m>$2,250/5000</m> pints = <m>$0.45</m> per pint.
+          But now if we sell just <m>2000</m> pints,
+          we take in <m>2000($3.50) = $7,000</m>.
+          That ice cream costs <m>2000($2.25) = $4,500</m> to make,
+          and so when you add in our fixed costs our costs are <m>$8,500</m> in total.
+          So our ``make</q>
+          <m>$7,000 - $8,500 = -$1,500</m>.
+          So our
+          <q>profit</q>
+          is <m>-$1,500/2000 = -$0.75</m> per pint.
+          A loss of <m>75</m> cents a pint sure ain't the same as a profit of <m>$0.45</m> per pint!''
+        </p>
+        <p>
+          Who is right?
+          Explain.
+        </p>
+      </statement>
+    </exercise>
+  </exercises></subsection>
+</section>

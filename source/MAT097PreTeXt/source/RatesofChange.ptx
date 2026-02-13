@@ -1,0 +1,1774 @@
+<section xml:id="RatesofChange">
+  <title>Rates of Change</title>
+  <introduction>
+    <p>
+      The ancient Greek philosopher Heraclitus is best known for saying
+      <q>the only constant is change</q>. This is a quote that gets used a lot,
+      mainly because it applies to so many situations.
+      There aren't many things in this world that aren't in some way changing,
+      and so change is an important consideration in the mathematical models we use to describe this world.
+    </p>
+    <p>
+      In the functions we've looked at so far,
+      it's almost always been true that when you change the input value,
+      the output value also changes.
+      This is not a requirement for a function;
+      a constant function like <m>f(x)=42</m>
+      (which always give the exact same output no matter what you input)
+      is a perfectly good function.
+      But constant functions aren't really all that useful or interesting.
+      Change is everywhere in the world,
+      and so the functions we are likely to find useful to mathematically model the world will naturally be functions which reflect those changes.
+    </p>
+    <p>
+      In this section,
+      we'll discuss rates of change in mathematical models.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Average Rates of Change</title>
+    <p>
+      Suppose you are driving down the highway in a car.
+      We can look at the distance you've travelled as a function of the time you've been driving.
+      Let's also suppose we know the following:
+    </p>
+    <tabular>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>Time (Hours)</cell>
+        <cell>Distance Traveled (miles)</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>0</cell>
+        <cell>0</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>58</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+    </tabular>
+    <p>
+      It's no surprise that the distance you've traveled has changed as time goes by;
+      that's kind of the point of driving down the highway in a car!
+      You're moving.
+    </p>
+    <p>
+      We know from experience that
+      <q>moving</q>
+      can happen at different rates.
+      Sometimes you move fast, sometimes you move slow.
+      How fast were you moving in the first hour of your trip?
+      Well, common sense says that you traveled 58 miles in one hour,
+      so that means that your speed was 58 miles per hour.
+    </p>
+    <p>
+      Now, common sense also tells us that this 58 miles per hour is not the exact speed you were traveling at every single moment of that hour.
+      When you're driving,
+      of course you sometimes are going faster and sometimes going slower.
+      You may have sped up to pass or going down hill,
+      and may have slowed down in a construction zone, going up hill,
+      or when you noticed that police car with a radar gun pointed at you.
+      Even if you had the cruise control set at 58 for the entire hour,
+      there would still be some variation in your speed
+      (since cruise control does not maintain a perfectly constant speed).
+      So, when we say you were going 58 miles per hour,
+      we understand that this is an average speed.
+    </p>
+    <p>
+      Being a little more formal about this, we could write:
+      <me>
+        average \text{ }  speed = \frac{distance \text{ }  traveled}{time \text{ }  elapsed} = \frac{58 \text{ }  miles}{1 \text{ }  hour} = 58 \text{ }  miles \text{ }  per \text{ }  hour
+      </me>
+    </p>
+    <p>
+      Now, this was an average speed we could calculate in our heads just using common sense.
+      If we weren't looking at just the first hour or the trip we might not be able to do the calculation quite so simply,
+      but we can adapt.
+      Suppose we want to calculate an average speed based on this portion of your trip:
+    </p>
+    <tabular>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>Time (Hours)</cell>
+        <cell>Distance Traveled (miles)</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>58</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>2.5</cell>
+        <cell>149.5</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+    </tabular>
+    <p>
+      The distance traveled over this portion of the trip can be calculated by subtracting <m>149.5 - 58 = 91.5</m> miles.
+      The time elapsed could also be found by subtraction - - this portion of the trip took <m>2.5 - 1 = 1.5</m> hours.
+      Then:
+      <me>
+        average \text{ }  speed = \frac{distance \text{ }  traveled}{time \text{ }  elapsed} = \frac{91.5 \text{ }  miles}{1.5 \text{ }  hours} = 61 \text{ }  miles \text{ }  per \text{ }  hour
+      </me>
+    </p>
+    <p>
+      So, the average speed for this portion of the trip was 61 miles per hour.
+      Not surprisingly,
+      this is a different average speed that what we calculated for the first hour.
+      It stands to reason that since your speed varies,
+      your average speed also will vary depending on what portion of your trip we are looking at.
+    </p>
+    <p>
+      Notice that in both cases, we essentially did the same thing.
+      To find the average speed
+      (that is, the average rate of change in the distance traveled as a function of time),
+      we found the distance traveled
+      (the change in the output)
+      by subtracting and divided it by the time elapsed
+      (the change in the input)
+      which we also found by subtracting.
+    </p>
+    <p>
+      We can generalize this as follows:
+    </p>
+    <definition>
+      <statement>
+        <p>
+              <idx><h>Average Rate of Change</h></idx> <em><em>The Average Rate of Change (
+          <q>AROC</q>
+          ) Formula</em></em>
+        </p>
+        <p>
+          The average rate of change of <m>f(x)</m> between <m>x=a</m> and <m>x=b</m> is
+          <me>
+            AROC=\frac{\Delta output}{\Delta input}=\frac{\Delta f(x)}{\Delta x}=\frac{f(b)-f(a)}{b-a}
+          </me>
+        </p>
+        <p>
+          (The symbol <m>\Delta</m> means
+          <q>the change in</q>.)
+        </p>
+      </statement>
+    </definition>
+    <p>
+      This formula just generalizes the speed example we were discussing above
+      (where the output was distance and input was time.)
+      But it applies to lots of other things other than speed - it can be used to find the average rate of change for any function at all.
+    </p>
+    <example xml:id="RateofChangeExample1">
+      <statement>
+        <p>
+          The official temperature at the Rochester International Airport
+          (in degrees Fahrenheit)
+          as a function of time
+          (in hours)
+          since midnight is shown in the following table:
+        </p>
+        <tabular>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+          <row>
+            <cell>Time (hours)</cell>
+            <cell>Temperature (<m>\deg F</m>)</cell>
+          </row>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+          <row>
+            <cell>0</cell>
+            <cell>48</cell>
+          </row>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+          <row>
+            <cell>6</cell>
+            <cell>39</cell>
+          </row>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+          <row>
+            <cell>10</cell>
+            <cell>48</cell>
+          </row>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+        </tabular>
+        <p>
+          Find the average rate of change in the temperature
+          <ol marker="a">
+            <li>
+              <p>
+                between midnight and 6 a.m.,
+              </p>
+            </li>
+            <li>
+              <p>
+                between 6 a.m. and 10 a.m., and
+              </p>
+            </li>
+            <li>
+              <p>
+                between midnight and 10 a.m.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </example>
+    <ol marker="a">
+      <li>
+        <p>
+          Following the formula,
+          using the temperatures at midnight (i.e. at time = 0) and 6 a.m. (i.e. at time = 6):
+          <me>
+            AROC = \frac{\Delta temperature}{\Delta time} = \frac{f(6)-f(0)}{6-0} = \frac{39-48}{6-0} = -1.5
+          </me>
+          So, between midnight and 6 a.m. the temperature was changing at an average rate of <m>-1.5 \deg F</m> per hour.
+          Equivalently,
+          we could say it was dropping at average rate of <m>1.5 \deg F</m> per hour (saying
+          <q>dropping</q>
+          indicates direction and so eliminates the need for the negative sign.)
+        </p>
+      </li>
+      <li>
+        <p>
+          Following the same approach:
+          <me>
+            AROC = \frac{\Delta temperature}{\Delta time} = \frac{f(10)-f(6)}{10-6} = \frac{48-39}{10-6} = 2.25
+          </me>
+          So, between 6 a.m. and 10 a.m. the temperature was increasing at an average rate of <m>2.25 \deg F</m> per hour.
+        </p>
+      </li>
+      <li>
+        <p>
+          Again:
+          <me>
+            AROC = \frac{\Delta temperature}{\Delta time} = \frac{f(10)-f(0)}{10-0} = \frac{48-48}{10-0} = 0
+          </me>
+          So between midnight and 10 a.m. the average rate of change of the temperature was <m>0 \deg F</m> per hour.
+          Note that this does not mean that the temperature was not changing!
+          This average rate of change means that when you average out all the changes the overall increases and decreases balance each other out.
+        </p>
+      </li>
+    </ol>
+    <p>
+      The notion of average rate of change can be applied to any function,
+      regardless of whether or not we have any particular mathematical model in mind.
+    </p>
+    <example xml:id="RateofChangeExample2">
+      <statement>
+        <p>
+          Find the average rate of change in
+          <m>f(x)=x^2-3x+7</m> between <m>x=-1</m> and <m>x=1</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      To find the average rate of change we need both inputs and outputs.
+      We are given the two inputs,
+      but we need to use the function formula to find the corresponding outputs.
+      <me>
+        f(-1)=(-1)^2-3(-1)+7=11\\ f(1)=(1)^2-3(1)+7=5
+      </me>
+    </p>
+    <p>
+      Using these in the AROC formula we get:
+      <me>
+        AROC=\frac{\Delta f(x)}{\Delta x} = \frac{f(1)-f(-1)}{1-(-1)} = \frac{5-11}{1-(-1)} = \frac{-6}{2} = -3
+      </me>
+    </p>
+    <p>
+      So the average rate of change of this function between <m>x=-1</m> and <m>x=1</m> is <m>-3</m>. }
+    </p>
+  </subsection>
+  <subsection>
+    <title>Interpreting Average Rates of Change</title>
+    <p>
+      When we are talking about a car traveling down the highway,
+      it's not much of a stretch to realize that the rate of change we are talking about is a speed,
+      and if the distance is in miles and time is in hours,
+      it's fairly obvious that this speed would be measured in miles per hour.
+      Likewise, if temperature is in <m>\deg F</m> and time is in hours,
+      it's not hard to see that this functions average rate of change would be measure in <m>\deg F</m> per hour.
+    </p>
+    <p>
+      But sometimes we are looking at models where common sense isn't so reliable a guide,
+      either because the model could be set up to work in more than one way and we're not <m>100\%</m> sure about how it actually is set up,
+      or because what we are modeling is unfamiliar.
+      How do we interpret and put units on average rates of change then?
+    </p>
+    <p>
+      Fortunately, there is always a clear pattern to the units,
+      which can help with interpretation.
+      When we calculated that first speed, we took
+      <me>
+        \frac{58 \text{ }  miles}{1 \text{ }  hour}
+      </me>
+      and got an average speed of 58 miles per hour.
+      Now, our attention was mainly focused on the numbers.
+      That 58 came from dividing
+      <m>\frac{58}{1}</m>, but now notice the units.
+      We are dividing <m>\frac{miles}{hour}</m> and the units we end up with were miles per hour,
+      which can also be written as
+      <q>miles/hour</q>. The fact that this looks like just another way of writing the fraction is not a coincidence.
+      Units for average rates of change always work out this way!
+    </p>
+    <p>
+      When we found the average rate of temperature change between midnight and 6 a.m. we ended up with
+      <m>\frac{-9}{6}</m> to get the number <m>-1.5</m>, but the units
+      <q><m>\deg F</m> per hour</q>
+      came from the fact that the numerator was a change of temperature in degrees Fahrenheit and the denominator was a change of time in hours.
+      It was this <m>\frac{\deg F}{hour}</m> that made the average rate of change be measured in
+      <q><m>\deg F</m>/hour</q>
+      or
+      <q><m>\deg F</m> per hour</q>.
+    </p>
+    <p>
+      In general:
+    </p>
+    <definition>
+      <statement>
+        <p>
+              <idx><h>Average Rate of Change</h><h>Units</h></idx> <em><em>Units of Average Rate of Change</em></em>
+        </p>
+        <p>
+          The units of an average rate of change are always
+          <q>output units/input units</q>
+        </p>
+        <p>
+          which can also be expressed as
+        </p>
+        <p>
+          <q>output units per input unit</q>.
+        </p>
+      </statement>
+    </definition>
+    <example xml:id="RateofChangeExample3">
+      <statement>
+        <p>
+          As I drive down the highway,
+          the distance I've traveled is a function of the amount of gasoline I've used.
+          Some data for this function is given in the table below:
+        </p>
+        <tabular>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+          <row>
+            <cell>Gasoline (gallons)</cell>
+            <cell>Distance (miles)</cell>
+          </row>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+          <row>
+            <cell>3.2</cell>
+            <cell>108.6</cell>
+          </row>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+          <row>
+            <cell>7.5</cell>
+            <cell>255.8</cell>
+          </row>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+        </tabular>
+        <p>
+          What is the average rate of change in this function between the two points given in this table (rounded to one decimal place)?
+          What are the units?
+          What does this average rate of change tell you in practical terms?
+        </p>
+      </statement>
+    </example>
+    <p>
+      We are treating distance as a function of gasoline,
+      so distance is the output and gasoline is the input.
+      So, using the AROC formula we get:
+      <me>
+        AROC = \frac{\Delta output}{\Delta input} = \frac{\Delta distance}{\Delta gasoline} = \frac{255.8-108.6}{7.5-3.2} = \frac{147.2}{4.3} = 34.2
+      </me>
+    </p>
+    <p>
+      The units are always
+      <q>output units per input unit</q>
+      so this means the average rate of change is actually
+      <q>34.2 miles per gallon</q>.
+    </p>
+    <p>
+      The average rate of change tells us the rate at which distance is changing as the amount of gas used changes.
+      In other words, how far you go versus how much gas you burn.
+      It might not be easy to see what the practical meaning is based just on that description though.
+      The units give us a clue though.
+      Just saying
+      <q>34.2 miles per gallon</q>
+      gives a huge hint that we are talking about my average gas mileage for this portion of the trip. }
+    </p>
+    <p>
+      As in this example,
+      the units of the average rate of change often give us a big hint about what the average rate of change actually means.
+    </p>
+    <example xml:id="RateofChangeExample4">
+      <statement>
+        <p>
+          Mobile phones contain small amounts of valuable metals,
+          and increasingly phones are being recycled to reclaim these materials.
+          Suppose that the amount of silver
+          (in kilograms)
+          that a recycler expects can be recovered is a function of the phones' weight
+          (in tons).
+        </p>
+        <p>
+          The recycler expects to recover 16.1 kilograms of silver from 5 tons of used phones and 32.7 kilograms from 10 tons.
+          Find the average rate of change of this function
+          (rounded to one decimal place)
+          including the appropriate units.
+          What does this average rate of change tell you in a practical sense?
+        </p>
+      </statement>
+    </example>
+    <p>
+      Silver is a function of phones,
+      <me>
+        AROC = \frac{\Delta output}{\Delta input} = \frac{\Delta silver}{\Delta phones} = \frac{32.7-16.1}{10-5} = \frac{16.6}{5} = 3.32
+      </me>
+      the units are
+      <q>output units per input unit</q>, so using this and rounding we conclude that the average rate of change is
+      <q>3.3 kilograms of silver per ton of recycled phones</q>.
+    </p>
+    <p>
+      To interpret this,
+      we know that the amount of expected silver to be recovered changes relative to the amount of phones,
+      so this rate should tell us on average how quickly we expect the amount of recovered silver to be changing as more phones are processed.
+      More helpfully,
+      the units give us a huge hint: The recycler expects, on average,
+      that they will recover 3.3 kilograms of silver per ton of recycled phones. }
+    </p>
+  </subsection>
+  <subsection>
+    <title>Constant vs. Nonconstant Rates of Change</title>
+    <p>
+      As we've emphasized already,
+      what we are after here is the average rate of change for functions.
+      We need to always be clear that what we have is only an average.
+      If your average speed over the first hour of a trip is 58 miles per hour,
+      we all understand that this gives an indication of how fast you were driving over the course of that hour overall,
+      but we all also understand that this does not mean that you were driving 58 miles per hour the whole time,
+      or even at any specific time.
+    </p>
+    <p>
+      It's possible that your speed stayed pretty close to 58 mph the whole time,
+      but it's also possible that you drove 95 mph for part of the hour and were not moving at all during other parts of the hour
+      (presumably when you got pulled over for doing 95.)
+      Either way, you could have ended up with a 58 mph average speed.
+      Likewise, it's possible that,
+      say, 17 minutes into the trip you were going 58,
+      but it's not at all unlikely that at that specific time you were going faster or slower.
+      All we know is the average.
+    </p>
+    <p>
+      Likewise, knowing that the average rate of change in temperature was
+      <m>0 \deg F</m> per hour from midnight till 10 a.m. tells us something valuable about the overall change in temperature,
+      but it tells us nothing about whether the temperature stayed fairly stable or bounced around a lot,
+      and it tells us nothing about the temperature at 3 a.m. or 7 a.m. or any other particular time.
+    </p>
+    <p>
+      It makes sense that our mathematical models can't give us this information.
+      Finding an average speed or rate of temperature change only requires us to know where things stood at the start and at the end of period we're looking at.
+      We don't need to know about how things varied along the way.
+      To know what was going on at some point in between requires us to have a lot more information.
+      Can you imagine how complicated it would be to create a mathematical model to precisely match up with everything that happens along the course of an hour's driving?
+    </p>
+    <p>
+      In some special cases, though, we can know more.
+      If the rate of change is itself not changing
+      (that is, if the rate of change is constant)
+      then we know what the rate of change was at any given time - it's always the same.
+      This is a very special situation that certainly can't be relied on to happen with things like driving or temperatures,
+      but when it does occur, it certainly is a nice trait to have.
+      We'll close this chapter by noting this and offering an example where this happens.
+      We'll have a lot more to say about functions with constant rates of change in the following chapter!
+    </p>
+    <example xml:id="RateofChangeExample5">
+      <statement>
+        <p>
+          The amount of a residential electric bill
+          (in dollars)
+          is a function of the electricity used
+          (in kilowatt hours).
+          The function is given by the formula <m>A(x)=12.75+0.12x</m>.
+          If my electric usage changes from 720 to 860 kilowatt hours,
+          what will the average rate of change of my electric bill be as that usage increases?
+          What if it then decreases from 860 kilowatt hours to 585 kilowatt hours?
+          Does it seem likely that the rate of change will always be the same?
+        </p>
+      </statement>
+    </example>
+    <p>
+      To determine the change in usage from <m>x=720</m> to <m>x=860</m> kilowatt hours,
+      we need to know the amount of the bills for those usage levels.
+      <me>
+        A(720) = 12.75+0.12(720) = 99.15\\ A(860) = 12.75+0.12(860) = 115.95
+      </me>
+    </p>
+    <p>
+      So the average rate of change is
+      <md>
+        <mrow>AROC \amp = \frac{\Delta bill}{\Delta usage} = \frac{\Delta A(x)}{\Delta x}</mrow>
+        <mrow>\amp = \frac{A(860)-A(720)}{860-720}</mrow>
+        <mrow>\amp = \frac{115.95-99.15}{860-720}</mrow>
+        <mrow>\amp =\frac{16.80}{140}</mrow>
+        <mrow>\amp =0.12</mrow>
+      </md>
+    </p>
+    <p>
+      So we would conclude that as usage changes from 720 to 860 kilowatt hours,
+      the bill changes at an average rate of <m>$0.12</m> per kilowatt hour.
+    </p>
+    <p>
+      Calculating the bill for 585 kilowatt hours we get:
+      <me>
+        A(585)=12.75+0.12(585)=82.95
+      </me>
+    </p>
+    <p>
+      And then:
+      <md>
+        <mrow>AROC \amp = \frac{\Delta bill}{\Delta usage} = \frac{\Delta A(x)}{\Delta x}</mrow>
+        <mrow>\amp = \frac{A(585)-A(860)}{585-860}</mrow>
+        <mrow>\amp = \frac{82.95-115.95}{585-860}</mrow>
+        <mrow>\amp =\frac{-33}{-260}</mrow>
+        <mrow>\amp =0.12</mrow>
+      </md>
+    </p>
+    <p>
+      So as the usage goes from 860 to 585 kilowatt hours the average rate of change is again <m>$0.12</m> per kilowatt hour. }
+    </p>
+    <p>
+      The fact that these two average rates of change are the same could be a coincidence,
+      but there is reason to think something more might be going on here.
+      The rate of change is giving us a rate per kilowatt hour,
+      and it seems reasonable to suppose that the electric bill might be based on some set price per kilowatt hour.
+      (Of course, it might not be, too,
+      since there might be a discount or a surcharge for higher or lower usage amounts.)
+    </p>
+    <p>
+      Adding to this suspicion, though,
+      is the fact that the average rate of change <m>0.12</m> appears in the function formula.
+      In fact, if you think through how you would go about calculating an electric bill if there were a set price per kilowatt hour,
+      the given formula seems to match up with that pretty nicely.
+    </p>
+    <p>
+      While we are not yet able to say for certain that this average rate of change is in fact a constant rate of change,
+      there seems to be good reason to think it might be.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Exercises</title>
+    <subsubsection>
+      <title>Average Rate of Change</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            Dahlia is running in a marathon.
+            The distance she's covered
+            (in miles)
+            as a function of time since the race started
+            (in hours)
+            is shown in the table below:
+          </p>
+          <tabular>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>Time</cell>
+              <cell>Distance</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>0.0</cell>
+              <cell>0.0</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>0.5</cell>
+              <cell>4.9</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>1.0</cell>
+              <cell>9.6</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>1.5</cell>
+              <cell>14.2</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>2.0</cell>
+              <cell>18.1</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+          </tabular>
+          <p>
+            Find her average speed (rounded to two decimal places):
+            <ol marker="a">
+              <li>
+                <p>
+                  For the first hour of the race.
+                </p>
+              </li>
+              <li>
+                <p>
+                  For the second hour of the race.
+                </p>
+              </li>
+              <li>
+                <p>
+                  From one half hour into the race to the end of the second hour.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Over the entire two hours shown in the table.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            a. 9.6 miles per hour
+          </p>
+          <p>
+            b. 8.5 miles per hour
+          </p>
+          <p>
+            c. 8.8 miles per hour
+          </p>
+          <p>
+            d. 9.05 miles per hour
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Julia is absorbed in a really good book.
+            The number of pages she's read as a function of time since she started reading
+            (in hours)
+            is shown in the table below:
+          </p>
+          <tabular>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>Time</cell>
+              <cell>Pages</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>0.0</cell>
+              <cell>0</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>0.5</cell>
+              <cell>27</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>1.0</cell>
+              <cell>58</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>1.5</cell>
+              <cell>83</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>2.0</cell>
+              <cell>110</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+          </tabular>
+          <p>
+            Find her average reading rate:
+            <ol marker="a">
+              <li>
+                <p>
+                  For the first hour.
+                </p>
+              </li>
+              <li>
+                <p>
+                  For the second hour.
+                </p>
+              </li>
+              <li>
+                <p>
+                  From one half hour in to the end of the second hour.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Over the entire two hours shown in the table.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The Dow Jones Industrial Average (
+            <q>DJIA</q>
+            ) is a commonly used measure for the performance of the U.S. stock market.
+            End-of-day values of the DJIA as a function of days from the start of June 2001 are given in the table below:
+          </p>
+          <tabular>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>Days</cell>
+              <cell>DJIA</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>11</cell>
+              <cell>10922</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>12</cell>
+              <cell>10948</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>13</cell>
+              <cell>10872</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>14</cell>
+              <cell>10690</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>15</cell>
+              <cell>10624</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+          </tabular>
+          <ol marker="a">
+            <li>
+              <p>
+                What was the average rate of change
+                (points per day)
+                from June 11 (i.e., day 11) to June 13 (i.e., day 13)?
+              </p>
+            </li>
+            <li>
+              <p>
+                What was the average rate of change from June 13 to June 15?
+              </p>
+            </li>
+            <li>
+              <p>
+                What was the average rate of change from June 11 to June 14?
+              </p>
+            </li>
+          </ol>
+        </statement>
+        <solution>
+          <p>
+            a. <m>-25</m> points per day
+          </p>
+          <p>
+            b. <m>-124</m> points per day
+          </p>
+          <p>
+            c. <m>-77.33</m> points per day.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            I track the number of followers I have on Twitter as of the end of each week.
+            My numbers for the last five weeks are included in the table below:
+          </p>
+          <tabular>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>Week</cell>
+              <cell>Followers</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>1</cell>
+              <cell>922</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>2</cell>
+              <cell>1948</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>3</cell>
+              <cell>2872</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>4</cell>
+              <cell>4690</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>5</cell>
+              <cell>4124</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+          </tabular>
+          <ol marker="a">
+            <li>
+              <p>
+                What was the average rate of change
+                (followers per week)
+                from week 1 to week 4?
+              </p>
+            </li>
+            <li>
+              <p>
+                What was the average rate of change from week 4 to week 5?
+              </p>
+            </li>
+            <li>
+              <p>
+                What was the average rate of change from week 3 to week 5?
+              </p>
+            </li>
+          </ol>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in the function
+            <m>f(x) = x^2</m> between <m>x = 2</m> and <m>x = 4</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>6</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in the function
+            <m>f(x) = x^3</m> between <m>x = 0</m> and <m>x = 5</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in the function
+            <m>g(t) = t^2 - 3t + 5</m> between <m>t = -1</m> and <m>t = 3</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in the function
+            <m>g(t) = 2t^2 - t + 3</m> between <m>t = -2</m> and <m>t = 3</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in the function
+            <m>r(x) = \frac{3 + x}{3 - x}</m> between <m>x = 5</m> and <m>x = 10</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{3}{7}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in the function
+            <m>r(x) = \frac{x+1}{3-x}</m> between <m>x = 4</m> and <m>x = 8</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in the function <m>h(t) = \frac{2}{3}t - \frac{7}{3}</m> between
+            <m>t = \frac{1}{2}</m> and <m>t = \frac{3}{4}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{2}{3}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in the function
+            <m>h(t) = \frac{1}{3}t - \frac{4}{6}</m> between <m>t = 5</m> and <m>t = \frac{17}{3}</m>.
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Interpreting Average Rate of Change</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            The amount of uranium fuel consumed by a nuclear reactor
+            (in kg)
+            to produce electricity
+            (in megawatt hours)
+            is given in the following table:
+          </p>
+          <tabular>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>Uranium (kg)</cell>
+              <cell>Electricity (MWh)</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>70</cell>
+              <cell>26,885</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>120</cell>
+              <cell>49,660</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+          </tabular>
+          <p>
+            What is the average rate of change in this function between the two points given in this table (rounded to one decimal place)?
+            What are the units?
+            What does this average rate of change tell you in practical terms?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>455.5</m> megawatt-hours per kilogram.
+            You can get <m>455.5</m> megawatt-hours per kilogram on average for each kilogram of uranium between <m>70</m> and <m>120</m> kilograms
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Uranium (used for as a fuel for nuclear reactors) is found in phosphate rock,
+            which is normally mined for fertilizer.
+            The amount of uranium that can be recovered
+            (in kilograms)
+            as a function of the amount of phosphate
+            (in tons)
+            produced by a mine in Namibia is given in the following table:
+          </p>
+          <tabular>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>Phosphate (tons)</cell>
+              <cell>Uranium (kg)</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>30,000</cell>
+              <cell>6,200</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>50,000</cell>
+              <cell>10,400</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+          </tabular>
+          <p>
+            What is the average rate of change in this function between the two input-output pairs given in this table?
+            What are the units?
+            What does this average rate of change tell you in practical terms?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Toby's predicted weight following a diet is function of how long he has been on the diet.
+            After 3 months his predicted weight is 190 pounds,
+            and after 9 months his predicted weight is 172 pounds.
+            Find the average rate of change in this function between 3 and 9 months,
+            and explain its practical meaning.
+            Make sure to include appropriate units in your answer.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-3</m> (predicted) pounds per months.
+            Between 3 and 9 months on the diet, Toby is predicted to lose an average of 3 pounds per month.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Jessica is working on a weight-training program.
+            The amount she can bench press is a function of time on the program.
+            After 3 months on the program, she can bench 85 pounds.
+            After 7 months, she can bench 105 pounds.
+            Find the average rate of change in this function between 3 and 7 months,
+            and explain its practical meaning, including units.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Tony's predicted weight after one year on a diet is a function of how many daily calories he consumes.
+            If he consumes 2400 calories each day,
+            his predicted weight is 210 pounds.
+            If he consumes 2100 calories per day,
+            his predicted weight is 198 pounds.
+            Find the average rate of change in this function between these two pieces of information,
+            and explain its practical meaning.
+            Make sure to include appropriate units in your answer.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-0.04</m> (predicted) pounds per daily Calorie.
+            Going between 2400 and 2100 Calories per day, Tony is predicted to lose on average 0.04 pounds over the course of the year for each Calorie he cuts from his daily total.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Jessica is working on a cardio program to get into better shape.
+            She has found that her maximum heart rate while working on an elliptical trainer is a function of the resistance setting.
+            If she sets resistance at level 5, her maximum heart rate is 150.
+            At level 8, her heart rate maxes out at 165.
+            Find the average rate of change in this function between level 5 and level 8, and explain what it means in every day terms.
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Constant vs. Nonconstant Rates of Change</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            After operating for 40 days,
+            a wind turbine had produced 504 megawatt hours of electricity.
+            After operating for 75 days the same turbine had produced 864 megawatt hours.
+            Find the average rate of change in electricity produced during this time interval as a function of time,
+            including units in your answer.
+            Is it likely that this rate of change would always be the same?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            10.29 megawatt-hours per day.
+            It is unlikely that this would always be the same,
+            because the electricity produced by the wind turbine each day depends on how much the wind is blowing and that is certainly not constant each day.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            After following a strict diet for 5 weeks, Lou weighed 275 pounds.
+            After 10 weeks her weight was down to 260 pounds.
+            Find the average rate of change in Lou's weight as a function of time on the diet,
+            including units.
+            Does it seem likely that this rate of change would be constant?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A caterer's fee for a wedding depends on the number of invited guests.
+            She uses the formula <m>C(x) = 35x + 800</m> to set her prices,
+            where <m>x</m> is the number of guests.
+            <ol marker="a">
+              <li>
+                <p>
+                  Laurie and Mike originally planned to invite 80 guests to their wedding,
+                  and then decided to have a larger wedding, inviting 115 instead.
+                  Find the average rate of change in the caterer's charges resulting from this change.
+                  Include units in your answer.
+                </p>
+              </li>
+              <li>
+                <p>
+                  After seeing how much it would cost to invite that many people,
+                  they trimmed their guest list down to 90.
+                  Find the average rate of change in the caterer's charges resulting from this change of plans.
+                  Include units in your answer.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Would it be reasonable to think that this average rate of change would always come out the same?
+                  Why or why not?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            a. <m>$35</m> per guest
+          </p>
+          <p>
+            b. <m>$35</m> per guest
+          </p>
+          <p>
+            c. It is reasonable to expect that it would be,
+            because it makes sense that the caterer would charge a certain set amount per guest,
+            and also because the formula shows that she multiplies 35 times the number of guests and then adds an additional charge that doesn't depend on the number of guests.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A pharmacist's charge to prepare a topical skin cream is a function of the amount of active ingredient in the cream He uses the formula
+            <m>f(x) = 17.50 + 0.12x</m> where <m>x</m> is the amount of active ingredient in milligrams.
+            <ol marker="a">
+              <li>
+                <p>
+                  A patient was originally prescribed a 1000 milligram does,
+                  but the next month was increased to 1500 milligrams.
+                  Find the average rate of change of the cream's cost between these two doses.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The following month the prescription was increased again,
+                  to 1800 milligrams.
+                  Find the average rate of change in the cream's cost between these two doses.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Would it be reasonable to expect that this average rate of change will always come out to be the same,
+                  regardless of how the dosage changes?
+                  Why or why not?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The amount of gasoline
+            (in gallons)
+            that a refiner can produce from crude oil
+            (in barrels)
+            is given in the table below:
+          </p>
+          <tabular>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>Crude Oil (barrels)</cell>
+              <cell>Gasoline (gallons)</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>1200</cell>
+              <cell>21,900</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>800</cell>
+              <cell>14,600</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+          </tabular>
+          <ol>
+            <li>
+              <p>
+                Find the average rate of change of this function between the two production levels given in the table.
+              </p>
+            </li>
+            <li>
+              <p>
+                What are the units of the average rate of change you found in (a)?
+                What is the practical meaning of this average rate of change?
+              </p>
+            </li>
+            <li>
+              <p>
+                Does is seem likely that this rate of change would always be the same?
+              </p>
+            </li>
+          </ol>
+        </statement>
+        <solution>
+          <p>
+            a. 18.25 gallons per barrel
+          </p>
+          <p>
+            b. gallons per barrel;
+            the refiner is getting an average of 18.25 gallons of gas for each barrel of crude.
+          </p>
+          <p>
+            c. It seems likely that it would always be the same or very close to the same value,
+            since the amount of gas you can extract from each barrel of crude oil is probably the same.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The amount of synthetic crude oil
+            (in barrels)
+            that a refiner can produce from lignite coal
+            (in tons)
+            is given in the table below:
+          </p>
+          <tabular>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>Coal (tons)</cell>
+              <cell>Crude Oil (barrels)</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>750</cell>
+              <cell>2150</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>500</cell>
+              <cell>1400</cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+          </tabular>
+          <ol>
+            <li>
+              <p>
+                Find the average rate of change of this function between the two production levels given in the table.
+              </p>
+            </li>
+            <li>
+              <p>
+                What are the units of the average rate of change you found in (a)?
+                What is the practical meaning of this average rate of change?
+              </p>
+            </li>
+            <li>
+              <p>
+                Does is seem likely that this rate of change would always be the same?
+              </p>
+            </li>
+          </ol>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Grab Bag</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            I'm driving down the thruway with my cruise control set.
+            After 15 minutes I've traveled 18 miles.
+            After 25 minutes I've traveled 30 miles.
+            <ol marker="a">
+              <li>
+                <p>
+                  Find the average rate of change in distance traveled as a function of time over this time interval,
+                  including units in your answer.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The units of your answer to (a) are not the units we usually would use for this rate of change.
+                  Change the units of time for this function and then recalculate the average rate of change with the more commonly used units.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Does it seem reasonable that this rate of change would always be the same?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            a. 1.2 miles per minute
+          </p>
+          <p>
+            72 miles per hour
+          </p>
+          <p>
+            yes, because the cruise control is set.
+            (in reality cruise control doesn't keep the speed at a constant,
+            so the average rate of change will not always be exactly the same,
+            but it is reasonable to treat it as constant since it maintains
+            <q>pretty much</q>
+            the same speed.
+            So in reality the answer is no,
+            but in a mathematical model it is reasonable to treat the situation as though the speed is constant).
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in the function <m>t(z) = \frac{93}{2}z - \frac{3}{5}</m> between
+            <m>z = \frac{-1}{7}</m> and <m>z = \frac{13}{7}</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in the function <m>A(w) = \frac{3}{2}w + 5</m> between
+            <m>w = \frac{2}{7}</m> and <m>w = \frac{16}{7}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{3}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            On the planet Zoloft, the main food crop is cymbalta.
+            A zoloftian farmer produced 1600 lexapros of cymbalta from a plot measuring 300 wellbutrins last year.
+            This year he expanded his farm,
+            and was able to produce 2800 lexapros from its 500 wellbutrins of land.
+            Find the average rate of change in his production of cymbalta as a function of his farm size.
+            Include units in your answer.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Thingmies (in gross) are a function of doohickeys
+            (in litres). 300 litres of doohickeys results in 8500 gross of thingmies,
+            while 11,000 gross of thingmies would result from 250 litres of doohickeys.
+            Find the average rate of change of this function between these two pieces of data,
+            including units in your answer.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-50</m> gross per liter.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            I'm riding my bike on a long distance ride.
+            After 15 minutes I've traveled 3.8 miles.
+            After 25 minutes I've traveled 6.2 miles.
+            <ol>
+              <li>
+                <p>
+                  Find the average rate of change in distance traveled as a function of time over this time interval,
+                  including units in your answer.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The units of your answer to (a) are not the units we usually would use for this rate of change.
+                  Change the units of time for this function and then recalculate the average rate of change with the more commonly used units.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Does it seem reasonable that this rate of change would always be the same?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The population of Ulcer Gulch, Colorado,
+            as a function of years since 2000,
+            is given by the formula <m>P(t) = 2800 + 200t - 3t^2</m>.
+            Find the average rate of change in the town's population between 2005 and 2011.
+            Include units in your answer.
+            Does it seem likely that this average rate of change would always be the same?
+            Why or why not?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            152 people per year.
+            It is probably not always the same since the population of the town will not always be changing at the same rate.
+            Also, in the formula there is one term which appears to add 200 people per year,
+            but then there is a squared term which would not change at a steady rate.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A political consultant has produced a mathematical model which predicts the number of votes a candidate will receive in the election for West Macedon dogcatcher as a function of money spent on political consulting fees.
+            He predicts that the candidate will receive 430 votes if he spends $500,
+            but 700 votes if he spends $850.
+            <ol marker="a">
+              <li>
+                <p>
+                  What is the average rate of change in this function between these two prediction levels?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Explain the practical meaning of the average rate of change.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If the average rate of change were always the same,
+                  how many votes would the consultant predict she would receive if he spent $2000?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Does it seem reasonable that this rate of change would always be the same?
+                  Why or why not?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in
+            <m>t(w) = (w - 1)(w - 3)</m> on the interval <m>[2,7]</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>5</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The number of members of Eastonboro YMCA as a function of years since 2000,
+            is given by the formula <m>Y(t) = 800 + 52t - 5t^2</m>.
+            Find the average rate of change in the Y's memberships between 2003 and 2011.
+            Include units in your answer.
+            Does it seem likely that this average rate of change would always be the same?
+            Why or why not?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A political consultant has produced a mathematical model which predicts the number of votes a candidate will receive in the South Dakota primary as a function of days spent campaigning in the state.
+            He predicts that the candidate will receive 80,000 votes if she spends 12 days campaigning,
+            but only 50,000 votes if she spends 7 days campaigning.
+            <ol marker="a">
+              <li>
+                <p>
+                  What is the average rate of change in this function between the two prediction levels?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Explain the practical meaning of the average rate of change.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If the average rate of change were always the same,
+                  how many votes would the consultant predict she would receive if she spent 10 days campaigning?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Does it seem reasonable that this average rate of change would always be the same?
+                  Why or why not?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            a. 6000 votes per day.
+          </p>
+          <p>
+            b. Between 7 and 12 days,
+            the candidate is gaining on average 6000 votes per day for each day she spends campaigning in the state.
+          </p>
+          <p>
+            c. 68,000 votes
+          </p>
+          <p>
+            d. probably not,
+            since it does not seem likely that there would be a perfectly fixed number of votes you'd always gain each day spent campaigning,
+            but it is possible that the consultant's model does assume it is always the same,
+            since it is only intended to make a prediction,
+            not determine the actual exact number of votes.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the average rate of change in
+            <m>h(w) = (w + 1)(w - 3)</m> on the interval <m>[2,7]</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            (This question is a continuation of question #21.) A caterer's fee for a wedding depends on the number of invited guests.
+            She uses the formula <m>C(x) = 35x + 800</m> to set her prices,
+            where <m>x</m> is the number of guests.
+            <ol marker="a">
+              <li>
+                <p>
+                  Calculate the caterer's fee for 80 guests.
+                  What is the average cost per guest if Laurie and Mike invite 80 guests?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Calculate the fee for 115 guests.
+                  What is the average cost per guest if they invite 115 guests?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Calculate the fee for 90 guests.
+                  What is the average cost per guest if they invite 90 guests?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Both these average costs you calculated here and the average rates of change you calculated in #21 can be thought of as the cost per guest invited.
+                  Yet the amounts are different.
+                  Explain the difference in practical terms between the cost-per-guest values you calculated in #21 and the cost-per-guest you calculated here.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+  </subsection>
+</section>

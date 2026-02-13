@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Solving Second Degree Equations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Algebra and Introduction to Functions">
+<meta property="book:author" content="FLCC Mathematics Department">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.14';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Algebra and Introduction to Functions</span></a></h1>
+<p class="byline">FLCC Mathematics Department</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="root-1-2-8-2.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="FirstDegreeEquations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="SolvingEquations.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="SolveHigherOrderEquations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\executeiffilenewer}[3]{
+\ifnum\pdfstrcmp{\pdffilemoddate{#1}}
+{\pdffilemoddate{#2}}&gt;0
+{\immediate\write18{#3}}\fi}
+\newcommand{\includesvg}[1]{
+\executeiffilenewer{#1.svg}{#1.pdf}
+{inkscape -z -D --file=#1.svg
+--export-pdf=#1.pdf --export-latex}
+IIIII}
+\newcommand{\ex}[1]{\begin{exercise}#1 \end{exercise}}
+\def\arraystretch{1.5}
+\newcommand{\sol}[1]{\begin{solution}#1 \end{solution}}
+\newcommand{\exam}[1]{\begin{example}#1\end{example}}
+\newcommand{\indenttext}[1]{#1}
+\newcommand{\quotes}[1]{``#1''}
+\renewcommand{\rotatebox}[2]{#2}
+\newcommand{\This}{\GetExerciseProperty{counter-value}}
+\newcommand{\lineheight}[1]{\fontsize{\fsize}{#1\fsize}\selectfont}
+\def\svgwidth{\undefined}
+\def\svgscale{\undefined}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="root-1-2-2.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="FoundationsOfArithmetic.html" class="internal"><span class="codenumber">1</span> <span class="title">Foundations of Arithmetic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="OrderofOperations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Order of Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-3" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Common Pitfalls</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-3-3" class="internal"><span class="codenumber">1.1.1.1</span> <span class="title">Multiplication and Division are tied as are Addition and Substraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-3-4" class="internal"><span class="codenumber">1.1.1.2</span> <span class="title">Nested Parentheses</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-3-5" class="internal"><span class="codenumber">1.1.1.3</span> <span class="title">Exponents and Negative Numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-3-6" class="internal"><span class="codenumber">1.1.1.4</span> <span class="title">Implied Groupings</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-4" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Order of Operation and Your Calculator</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-5" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-5-2" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ArithmeticwithFractions.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Arithmetic with Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-3" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Adding and Subtracting Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-4" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Multiplying and Dividing Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-5" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Reducing Fractions to Lowest Terms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-6" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Fraction Arithmetic and Your Calculator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-7" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Closing Thoughts</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-8" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-8-3" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-8-5" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-8-7" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AlgebraicSubstitution.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Algebraic Substitution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-3" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Substitution in Algebraic Expressions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-4" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-5" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Input-Output and Your Calculator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-6" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Tables with Multiple Inputs</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-2" class="internal"><span class="codenumber">1.3.5.1</span> <span class="title">Substituting into Algebraic Expressions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-2-3" class="internal"><span class="codenumber">1.3.5.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-3" class="internal"><span class="codenumber">1.3.5.2</span> <span class="title">Formulas</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-3-3" class="internal"><span class="codenumber">1.3.5.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-4" class="internal"><span class="codenumber">1.3.5.3</span> <span class="title">Input-Output Tables</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-4-3" class="internal"><span class="codenumber">1.3.5.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Foundation of Arithmetic Review Questions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html#FoundationOfArithmeticReviewQuestions-2" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Order of Operations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html#FoundationOfArithmeticReviewQuestions-2-3" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html#FoundationOfArithmeticReviewQuestions-3" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Algebraic Substitution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html#FoundationOfArithmeticReviewQuestions-3-3" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="FoundationsOfAlgebra.html" class="internal"><span class="codenumber">2</span> <span class="title">Foundations of Algebra</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AlgebraicExpressions.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Algebraic Expressions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-3" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Terms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-4" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Simplifying Terms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-5" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Combining Like Terms</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-2" class="internal"><span class="codenumber">2.1.4.1</span> <span class="title">Terms</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-3" class="internal"><span class="codenumber">2.1.4.2</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-4" class="internal"><span class="codenumber">2.1.4.3</span> <span class="title">Simplifying Terms</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-4-4" class="internal"><span class="codenumber">2.1.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-5" class="internal"><span class="codenumber">2.1.4.4</span> <span class="title">Combining Like Terms</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-5-3" class="internal"><span class="codenumber">2.1.4.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Distribution.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Distribution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="Distribution.html#Distribution-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Distribution.html#Distribution-3-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Algebraic Expressions Exponents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-2" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Exponents and Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-3" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Exponents and Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-4" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Exponents and Expressions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-5" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Exponents and Fractions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-6" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-6-3" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="NegativeExponents.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Negative Exponents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="NegativeExponents.html#NegativeExponents-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="NegativeExponents.html#NegativeExponents-3-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="CommonFactor.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Factoring: Common Factor</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CommonFactor.html#CommonFactor-3" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Common Factor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CommonFactor.html#CommonFactor-4" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Factor by Grouping</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="CommonFactor.html#CommonFactor-5" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="CommonFactor.html#CommonFactor-5-2" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SecondDegreeFactor.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Factoring: Second Degree Expression</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="SecondDegreeFactor.html#SecondDegreeFactor-3" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SecondDegreeFactor.html#SecondDegreeFactor-3-2" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Foundations of Algebra Review</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-2" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Algebraic Expressions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-2-3" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-2-5" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-2-7" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-2-9" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-3" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Exponents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-3-3" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-4" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Negative Exponents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-4-3" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-4-5" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-4-7" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-5" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Factoring</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-5-3" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="SolvingEquations.html" class="internal"><span class="codenumber">3</span> <span class="title">Solving Equations</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="FirstDegreeEquations.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Solving First Degree Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-3" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Solving Equations Using the Balance Principle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Solving Equations Involving Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Identities and Contradictions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-6" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Solving for One Variable in Terms of Others</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-2" class="internal"><span class="codenumber">3.1.5.1</span> <span class="title">Solutions to Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-2-3" class="internal"><span class="codenumber">3.1.5.1</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-2-5" class="internal"><span class="codenumber">3.1.5.1</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-3" class="internal"><span class="codenumber">3.1.5.2</span> <span class="title">Solving Equations Using the Balance Principle</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-3-2" class="internal"><span class="codenumber">3.1.5.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-4" class="internal"><span class="codenumber">3.1.5.3</span> <span class="title">Solving Equations Involving Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-4-2" class="internal"><span class="codenumber">3.1.5.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-5" class="internal"><span class="codenumber">3.1.5.4</span> <span class="title">Identities and Contradictions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-5-3" class="internal"><span class="codenumber">3.1.5.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-6" class="internal"><span class="codenumber">3.1.5.5</span> <span class="title">Solving for One Variable in Terms of Others</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-6-3" class="internal"><span class="codenumber">3.1.5.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-7" class="internal"><span class="codenumber">3.1.5.6</span> <span class="title">General Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FirstDegreeEquations.html#FirstDegreeEquations-7-7-2" class="internal"><span class="codenumber">3.1.5.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="SolveSecondDegree.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Solving Second Degree Equations</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SolveSecondDegree.html#SolveSecondDegree-2" class="internal"><span class="codenumber">3.2.1</span> <span class="title">The Square Root Property</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SolveSecondDegree.html#SolveSecondDegree-3" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Factor to Solve a Second-Degree Equation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="SolveSecondDegree.html#SolveSecondDegree-4" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SolveSecondDegree.html#SolveSecondDegree-4-2" class="internal"><span class="codenumber">3.2.3.1</span> <span class="title">The Square Root Property</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolveSecondDegree.html#SolveSecondDegree-4-2-3" class="internal"><span class="codenumber">3.2.3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SolveSecondDegree.html#SolveSecondDegree-4-3" class="internal"><span class="codenumber">3.2.3.2</span> <span class="title">Solving a Second Degree Equation by Factoring</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolveSecondDegree.html#SolveSecondDegree-4-3-3" class="internal"><span class="codenumber">3.2.3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SolveHigherOrderEquations.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Solving Equations of Degree 2 or Greater</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SolveHigherOrderEquations.html#SolveHigherOrderEquations-3" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Rational Exponents</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SolvingRationalExponents.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Solving using Rational Exponents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SolvingRationalExponents.html#SolvingRationalExponents-3" class="internal"><span class="codenumber">3.4.1</span> <span class="title">One Solution or Multiple Solutions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="SolvingRationalExponents.html#SolvingRationalExponents-4" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingRationalExponents.html#SolvingRationalExponents-4-3" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingRationalExponents.html#SolvingRationalExponents-4-5" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingRationalExponents.html#SolvingRationalExponents-4-7" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SolvingEquationsReviewQuestions.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Solving Equations Review Questions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="SolvingEquationsReviewQuestions.html#SolvingEquationsReviewQuestions-2" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsReviewQuestions.html#SolvingEquationsReviewQuestions-2-3" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsReviewQuestions.html#SolvingEquationsReviewQuestions-2-5" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsReviewQuestions.html#SolvingEquationsReviewQuestions-2-7" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsReviewQuestions.html#SolvingEquationsReviewQuestions-2-9" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="SolvingEquationsReviewQuestions.html#SolvingEquationsReviewQuestions-3" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Second Degree Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsReviewQuestions.html#SolvingEquationsReviewQuestions-3-3" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="SolvingEquationsReviewQuestions.html#SolvingEquationsReviewQuestions-4" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Higher Order Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsReviewQuestions.html#SolvingEquationsReviewQuestions-4-3" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="FoundationsOfFunctions.html" class="internal"><span class="codenumber">4</span> <span class="title">Foundations of Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Functions.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Functions.html#Functions-3" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Functions.html#Functions-4" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Functions and Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Functions.html#Functions-5" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Functions Defined Verbally</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Functions.html#Functions-6" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Functions Defined by Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Functions.html#Functions-7" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Domain and Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Functions.html#Functions-8" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Determining Whether or Not a Rule is a Function</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="Functions.html#Functions-9" class="internal"><span class="codenumber">4.1.7</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="Functions.html#Functions-9-2" class="internal"><span class="codenumber">4.1.7.1</span> <span class="title">Function Terminology</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Functions.html#Functions-9-2-3" class="internal"><span class="codenumber">4.1.7.1</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Functions.html#Functions-9-2-5" class="internal"><span class="codenumber">4.1.7.1</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="Functions.html#Functions-9-3" class="internal"><span class="codenumber">4.1.7.2</span> <span class="title">Functions and Formulas</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Functions.html#Functions-9-3-2" class="internal"><span class="codenumber">4.1.7.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="Functions.html#Functions-9-4" class="internal"><span class="codenumber">4.1.7.3</span> <span class="title">Functions Defined Verbally</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Functions.html#Functions-9-4-2" class="internal"><span class="codenumber">4.1.7.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="Functions.html#Functions-9-5" class="internal"><span class="codenumber">4.1.7.4</span> <span class="title">Function Defined by Tables</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Functions.html#Functions-9-5-4" class="internal"><span class="codenumber">4.1.7.4</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Functions.html#Functions-9-5-7" class="internal"><span class="codenumber">4.1.7.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="Functions.html#Functions-9-6" class="internal"><span class="codenumber">4.1.7.5</span> <span class="title">Domain and Range</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Functions.html#Functions-9-6-2" class="internal"><span class="codenumber">4.1.7.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Functions.html#Functions-9-6-4" class="internal"><span class="codenumber">4.1.7.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="Functions.html#Functions-9-7" class="internal"><span class="codenumber">4.1.7.6</span> <span class="title">Determining Whether or Not a Rule is a Function</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Functions.html#Functions-9-7-3" class="internal"><span class="codenumber">4.1.7.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="Functions.html#Functions-9-8" class="internal"><span class="codenumber">4.1.7.7</span> <span class="title">Grab Bag</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Functions.html#Functions-9-8-2" class="internal"><span class="codenumber">4.1.7.7</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="FunctionsandGraphs.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Functions and Graphs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Functions and Coordinates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-5" class="internal"><span class="codenumber">4.2.3</span> <span class="title">The Graphing Calculator</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-6" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-6-2" class="internal"><span class="codenumber">4.2.4.1</span> <span class="title">Coordinates</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-6-2-2" class="internal"><span class="codenumber">4.2.4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-6-3" class="internal"><span class="codenumber">4.2.4.2</span> <span class="title">Graphs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-6-3-2" class="internal"><span class="codenumber">4.2.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-6-4" class="internal"><span class="codenumber">4.2.4.3</span> <span class="title">Graphing Calculator</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-6-4-2" class="internal"><span class="codenumber">4.2.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-6-5" class="internal"><span class="codenumber">4.2.4.4</span> <span class="title">Grab Bag</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FunctionsandGraphs.html#FunctionsandGraphs-6-5-2" class="internal"><span class="codenumber">4.2.4.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SolvingEquationsGraphically.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Solving Equations Graphically</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Graphical Solution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Window Setting for Graphical Solution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">When to Use a Graphical Solution</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-2" class="internal"><span class="codenumber">4.3.4.1</span> <span class="title">Graphical Solutions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-2-3" class="internal"><span class="codenumber">4.3.4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-3" class="internal"><span class="codenumber">4.3.4.2</span> <span class="title">Window Setting for Graphical Solution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-3-3" class="internal"><span class="codenumber">4.3.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-4" class="internal"><span class="codenumber">4.3.4.3</span> <span class="title">When to use graphical solutions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-4-3" class="internal"><span class="codenumber">4.3.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-5" class="internal"><span class="codenumber">4.3.4.4</span> <span class="title">Grab Bag</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-5-3" class="internal"><span class="codenumber">4.3.4.4</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-5-6" class="internal"><span class="codenumber">4.3.4.4</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-5-8" class="internal"><span class="codenumber">4.3.4.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Functions and Mathematical Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-3" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Functions as Mathematical Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-4" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Interpreting Function Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-5" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Relevant Domain and Range</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-6" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-6-2" class="internal"><span class="codenumber">4.4.4.1</span> <span class="title">Functions as Mathematical Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-6-2-3" class="internal"><span class="codenumber">4.4.4.1</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-6-2-5" class="internal"><span class="codenumber">4.4.4.1</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-6-3" class="internal"><span class="codenumber">4.4.4.2</span> <span class="title">Interpreting Function Notation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-6-3-3" class="internal"><span class="codenumber">4.4.4.2</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-6-3-5" class="internal"><span class="codenumber">4.4.4.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-6-4" class="internal"><span class="codenumber">4.4.4.3</span> <span class="title">Relevant Domain and Range</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-6-4-2" class="internal"><span class="codenumber">4.4.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-6-5" class="internal"><span class="codenumber">4.4.4.4</span> <span class="title">Grab Bag</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FunctionsAndMathematicalModels.html#FunctionsAndMathematicalModels-6-5-2" class="internal"><span class="codenumber">4.4.4.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ImplicitFunctions.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Implicit Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-3" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Implicit Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-4" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Rewriting Implicit Functions in Explicit Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-5" class="internal"><span class="codenumber">4.5.3</span> <span class="title">Switching Input and Output Variables</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-6" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-6-2" class="internal"><span class="codenumber">4.5.4.1</span> <span class="title">Implicit Functions:</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-6-2-2" class="internal"><span class="codenumber">4.5.4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-6-3" class="internal"><span class="codenumber">4.5.4.2</span> <span class="title">Rewriting Implicit Functions in Explicit Form</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-6-3-2" class="internal"><span class="codenumber">4.5.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-6-4" class="internal"><span class="codenumber">4.5.4.3</span> <span class="title">Switching Input and Output Variables</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-6-4-2" class="internal"><span class="codenumber">4.5.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-6-5" class="internal"><span class="codenumber">4.5.4.4</span> <span class="title">Grab Bag</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ImplicitFunctions.html#ImplicitFunctions-6-5-2" class="internal"><span class="codenumber">4.5.4.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="RatesofChange.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Rates of Change</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-3" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Average Rates of Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-4" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Interpreting Average Rates of Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-5" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Constant vs. Nonconstant Rates of Change</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-6" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-6-2" class="internal"><span class="codenumber">4.6.4.1</span> <span class="title">Average Rate of Change</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-6-2-2" class="internal"><span class="codenumber">4.6.4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-6-3" class="internal"><span class="codenumber">4.6.4.2</span> <span class="title">Interpreting Average Rate of Change</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-6-3-2" class="internal"><span class="codenumber">4.6.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-6-4" class="internal"><span class="codenumber">4.6.4.3</span> <span class="title">Constant vs. Nonconstant Rates of Change</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-6-4-2" class="internal"><span class="codenumber">4.6.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-6-5" class="internal"><span class="codenumber">4.6.4.4</span> <span class="title">Grab Bag</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="RatesofChange.html#RatesofChange-6-5-2" class="internal"><span class="codenumber">4.6.4.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Foundations of Functions Review Questions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-2" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Function Terminology</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-2-4" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-2-6" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-3" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Functions and Formulas</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-3-2" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-4" class="internal"><span class="codenumber">4.7.3</span> <span class="title">Determining Whether or Not a Rule is a Function</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-4-3" class="internal"><span class="codenumber">4.7.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-5" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Domain and Range</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-5-2" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-6" class="internal"><span class="codenumber">4.7.5</span> <span class="title">Functions and Graphs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-6-2" class="internal"><span class="codenumber">4.7.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-7" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Solve Graphically</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-7-3" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-8" class="internal"><span class="codenumber">4.7.7</span> <span class="title">Function Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-8-3" class="internal"><span class="codenumber">4.7.7</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-8-5" class="internal"><span class="codenumber">4.7.7</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-8-7" class="internal"><span class="codenumber">4.7.7</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-8-9" class="internal"><span class="codenumber">4.7.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-9" class="internal"><span class="codenumber">4.7.8</span> <span class="title">Implicit Functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-9-2" class="internal"><span class="codenumber">4.7.8</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-10" class="internal"><span class="codenumber">4.7.9</span> <span class="title">Rates of Change</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfFunctionsReviewQuestions.html#FoundationsOfFunctionsReviewQuestions-10-2" class="internal"><span class="codenumber">4.7.9</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="LinearFunctions.html" class="internal"><span class="codenumber">5</span> <span class="title">Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LinearFunctionsandSlope.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Functions and Their Slopes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-3" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Linear Functions and Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-4" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Linear Functions and Mathematical Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-5" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Graphs of Linear Functions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-6" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-6-2" class="internal"><span class="codenumber">5.1.4.1</span> <span class="title">Linear Functions and Slope</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-6-2-3" class="internal"><span class="codenumber">5.1.4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-6-3" class="internal"><span class="codenumber">5.1.4.2</span> <span class="title">Linear Functions and Mathematical Models</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-6-3-2" class="internal"><span class="codenumber">5.1.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-6-4" class="internal"><span class="codenumber">5.1.4.3</span> <span class="title">Graphs of Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-6-4-2" class="internal"><span class="codenumber">5.1.4.3</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-6-4-4" class="internal"><span class="codenumber">5.1.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-6-5" class="internal"><span class="codenumber">5.1.4.4</span> <span class="title">Grab Bag</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsandSlope.html#LinearFunctionsandSlope-6-5-2" class="internal"><span class="codenumber">5.1.4.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Linear Functions and Their Intercepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-3" class="internal"><span class="codenumber">5.2.1</span> <span class="title">The Vertical Intercept</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-4" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Slope-Intercept Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-5" class="internal"><span class="codenumber">5.2.3</span> <span class="title">The Horizontal Intercept</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-6" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-6-2" class="internal"><span class="codenumber">5.2.4.1</span> <span class="title">Vertical Intercept</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-6-2-2" class="internal"><span class="codenumber">5.2.4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-6-3" class="internal"><span class="codenumber">5.2.4.2</span> <span class="title">Slope-Intercept Form</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-6-3-2" class="internal"><span class="codenumber">5.2.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-6-4" class="internal"><span class="codenumber">5.2.4.3</span> <span class="title">Horizontal Intercept</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-6-4-2" class="internal"><span class="codenumber">5.2.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-6-5" class="internal"><span class="codenumber">5.2.4.4</span> <span class="title">Grab Bag</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsandIntercepts.html#LinearFunctionsandIntercepts-6-5-2" class="internal"><span class="codenumber">5.2.4.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="FormulaLinearFunctions.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Finding Formulas for Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-3" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Formulas for Linear Functions Given Slope and Intercept</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-4" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Formulas for Linear Models Given Slope and Input-Output Pair</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-5" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Point-Slope Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-6" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Formulas for Linear Models Given Two Input-Output Pairs</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-7" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-7-3" class="internal"><span class="codenumber">5.3.5.1</span> <span class="title">Formulas for Linear Models Given Slope and Intercept</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-7-3-2" class="internal"><span class="codenumber">5.3.5.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-7-4" class="internal"><span class="codenumber">5.3.5.2</span> <span class="title">Formulas for Linear Models Given Slope and an Input-Output Pair</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-7-4-2" class="internal"><span class="codenumber">5.3.5.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-7-5" class="internal"><span class="codenumber">5.3.5.3</span> <span class="title">Formulas for Linear Models Given Two Input-Output Pairs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-7-5-2" class="internal"><span class="codenumber">5.3.5.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-8" class="internal"><span class="codenumber">5.3.6</span> <span class="title">Grab Bag</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FormulaLinearFunctions.html#FormulaLinearFunctions-8-2" class="internal"><span class="codenumber">5.3.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LinearFunctionsGraphs.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Linear Functions and Their Graphs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-3" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Graphical Solution of Linear Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-4" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Graphical Solution of Linear Inequalities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-5" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Parallel and Perpendicular Lines</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-6" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-6-2" class="internal"><span class="codenumber">5.4.4.1</span> <span class="title">Graphical Solution of Linear Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-6-2-3" class="internal"><span class="codenumber">5.4.4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-6-3" class="internal"><span class="codenumber">5.4.4.2</span> <span class="title">Graphical Solution of Linear Inequalities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-6-3-3" class="internal"><span class="codenumber">5.4.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-6-4" class="internal"><span class="codenumber">5.4.4.3</span> <span class="title">Parallel and Perpendicular Lines</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-6-4-2" class="internal"><span class="codenumber">5.4.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-6-5" class="internal"><span class="codenumber">5.4.4.4</span> <span class="title">Grab Bag</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsGraphs.html#LinearFunctionsGraphs-6-5-2" class="internal"><span class="codenumber">5.4.4.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SystemsofLinearEquations.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Systems of Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-3" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Linear Systems and their Solutions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-4" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Solving Linear Systems Graphically</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-5" class="internal"><span class="codenumber">5.5.3</span> <span class="title">Solving Linear Systems by Substitution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-6" class="internal"><span class="codenumber">5.5.4</span> <span class="title">Solving Linear Systems by Elimination</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-7" class="internal"><span class="codenumber">5.5.5</span> <span class="title">Strategies for Solving Linear Systems</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8" class="internal"><span class="codenumber">5.5.6</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-2" class="internal"><span class="codenumber">5.5.6.1</span> <span class="title">Linear Systems and their Solutions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-2-2" class="internal"><span class="codenumber">5.5.6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-3" class="internal"><span class="codenumber">5.5.6.2</span> <span class="title">Solving Linear Systems Graphically</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-3-3" class="internal"><span class="codenumber">5.5.6.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-4" class="internal"><span class="codenumber">5.5.6.3</span> <span class="title">Solving Linear Systems by Substitution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-4-3" class="internal"><span class="codenumber">5.5.6.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-5" class="internal"><span class="codenumber">5.5.6.4</span> <span class="title">Solving Linear Systems by Elimination</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-5-3" class="internal"><span class="codenumber">5.5.6.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-6" class="internal"><span class="codenumber">5.5.6.5</span> <span class="title">Strategies for Solving Linear Systems</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-6-3" class="internal"><span class="codenumber">5.5.6.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-7" class="internal"><span class="codenumber">5.5.6.6</span> <span class="title">Grab Bag</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SystemsofLinearEquations.html#SystemsofLinearEquations-8-7-3" class="internal"><span class="codenumber">5.5.6.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Linear Functions Review Questions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html#LinearFunctionsReviewQuestions-2" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Slope</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html#LinearFunctionsReviewQuestions-2-2" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html#LinearFunctionsReviewQuestions-3" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Intercepts</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html#LinearFunctionsReviewQuestions-3-2" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html#LinearFunctionsReviewQuestions-4" class="internal"><span class="codenumber">5.6.3</span> <span class="title">Formula</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html#LinearFunctionsReviewQuestions-4-2" class="internal"><span class="codenumber">5.6.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html#LinearFunctionsReviewQuestions-5" class="internal"><span class="codenumber">5.6.4</span> <span class="title">Graphs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html#LinearFunctionsReviewQuestions-5-3" class="internal"><span class="codenumber">5.6.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html#LinearFunctionsReviewQuestions-6" class="internal"><span class="codenumber">5.6.5</span> <span class="title">System of Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html#LinearFunctionsReviewQuestions-6-3" class="internal"><span class="codenumber">5.6.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LinearFunctionsReviewQuestions.html#LinearFunctionsReviewQuestions-6-5" class="internal"><span class="codenumber">5.6.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="root-1-2-8.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="root-1-2-8-1.html" class="internal"><span class="title">Bibliography</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="root-1-2-8-2.html" class="internal"><span class="title">Index</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="SolveSecondDegree"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Second Degree Equations</span>
+</h2>
+<section class="subsection" id="SolveSecondDegree-2"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Square Root Property</span>
+</h3>
+<div class="para logical" id="SolveSecondDegree-2-2">
+<div class="para">In order to solve a second-degree equation, or an equation with an <span class="process-math">\(x^2\)</span> term, we have to get rid of the exponent to be able to solve for <span class="process-math">\(x\text{.}\)</span> In many second-degree equations, we can do this simply by taking the square root of both sides of the equation. For example, to solve the following:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-2-3">
+\begin{equation*}
+x^2=25
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="SolveSecondDegree-2-3">
+<div class="para">We could undo the squaring of <span class="process-math">\(x\)</span> by taking the square root of both sides. There is, though, a wrinkle in this approach. There are actually two solutions to this equation: <span class="process-math">\(x\)</span> could be <span class="process-math">\(5\)</span> since <span class="process-math">\(5^2=25\text{,}\)</span> but <span class="process-math">\(x\)</span> could also be <span class="process-math">\(-5\)</span> because <span class="process-math">\((-5)^2=25\)</span> as well. The square root function, which is usually denoted using the radical symbol “<span class="process-math">\(\sqrt{}\)</span>”, is interpreted to mean just the positive square root. Yet the positive square root is not the only solution to the equation, and so we need to make sure we don’t loose the other solution in the algebra. To do this we follow the <em class="emphasis">square root property</em>  which tells us that we can take the square root of both sides of the equation so long as we acknowledge that there are two possible square roots, the positive and the negative. We usually do this using the symbol “<span class="process-math">\(\pm\)</span>” which is read as “plus or minus”. So the next step in solving <span class="process-math">\(x^2=25\)</span> would be:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-3-14">
+\begin{equation*}
+x=\pm \sqrt{25}
+\end{equation*}
+</div>
+<div class="para">leading to the solutions:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-3-15">
+\begin{equation*}
+x=\pm 5
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="SolveSecondDegree-2-4">
+<div class="para">It is important to understand that this notation is actually telling us that there are two solutions to the equation. There is no such number as <span class="process-math">\(\pm 5\text{.}\)</span> This notation is just a compact way of expressing that there are to the equation <span class="process-math">\(x^2=25\text{,}\)</span> specifically it is compact notation for the expression:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-4-3">
+\begin{equation*}
+x=5 \text{ or }  x=-5
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="SolveSecondDegree-2-5">This method can be applied to other equations, as the following example will illustrate:<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="SolveSecondDegreeExample1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="SolveSecondDegreeExample1-1-1">Solve <span class="process-math">\(4x^2-25=11\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegreeExample1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.1"><a href="#SolveSecondDegreeExample1" title="Copy heading and permalink for Example 3.2.1" aria-label="Copy heading and permalink for Example 3.2.1">🔗</a></div></article></details><div class="para logical" id="SolveSecondDegree-2-7">
+<div class="para">To apply the square root property we need to solve for <span class="process-math">\(x^2\)</span> as if it were simply a variable. Thus, we start by adding <span class="process-math">\(25\)</span> to both sides of the equation to obtain:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-7-3">
+\begin{equation*}
+4x^2=36
+\end{equation*}
+</div>
+<div class="para">and then we divide both sides by <span class="process-math">\(4\)</span> so that:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-7-5">
+\begin{equation*}
+x^2=9\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="SolveSecondDegree-2-8">
+<div class="para">Applying the square root property now gives:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-8-1">
+\begin{equation*}
+x=\pm \sqrt{9}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-8-2">
+\begin{equation*}
+x=\pm 3
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="SolveSecondDegreeExample2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="SolveSecondDegreeExample2-1-1">Solve <span class="process-math">\(2x^2+7=39\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegreeExample2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.2"><a href="#SolveSecondDegreeExample2" title="Copy heading and permalink for Example 3.2.2" aria-label="Copy heading and permalink for Example 3.2.2">🔗</a></div></article></details><div class="para logical" id="SolveSecondDegree-2-10">
+<div class="para">We start by subtracting <span class="process-math">\(7\)</span> from both sides:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-10-2">
+\begin{equation*}
+2x^2=32
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="SolveSecondDegree-2-11">
+<div class="para">To get <span class="process-math">\(x^2\)</span> by itself, we divide by <span class="process-math">\(2\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-11-3">
+\begin{equation*}
+x^2=16
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="SolveSecondDegree-2-12">
+<div class="para">Applying the square root property now gives:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-12-1">
+\begin{equation*}
+x=\pm \sqrt{16}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-12-2">
+\begin{equation*}
+x=\pm 4
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="SolveSecondDegreeExample3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="SolveSecondDegreeExample3-1-1">Solve <span class="process-math">\(3z^2-9=z^2+6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegreeExample3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.3"><a href="#SolveSecondDegreeExample3" title="Copy heading and permalink for Example 3.2.3" aria-label="Copy heading and permalink for Example 3.2.3">🔗</a></div></article></details><div class="para logical" id="SolveSecondDegree-2-14">
+<div class="para">To do this we first use ordinary algebra to solve for <span class="process-math">\(z^2\text{,}\)</span> so subtract <span class="process-math">\(z^2\)</span> from both sides:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-14-3">
+\begin{equation*}
+2z^2-9=6
+\end{equation*}
+</div>
+<div class="para">and then add <span class="process-math">\(9\)</span> to both sides:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-14-5">
+\begin{equation*}
+2z^2=15
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="SolveSecondDegree-2-15">
+<div class="para">Now to get <span class="process-math">\(z^2\)</span> by itself we divide by 2:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-15-2">
+\begin{equation*}
+z^2=\frac{15}{2}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="SolveSecondDegree-2-16">
+<div class="para">Now we are ready to use the square root property. Doing so we end up with two solutions</div>
+<div class="displaymath process-math" id="SolveSecondDegree-2-16-1">
+\begin{equation*}
+z=\pm \sqrt{\frac{15}{2}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="SolveSecondDegree-2-17">Since neither <span class="process-math">\(15\)</span> nor <span class="process-math">\(2\)</span> is a perfect square we are stuck on simplifying this any further. This is a perfectly fine way to express the answer. If, however, you would like to have a decimal approximation. it can be obtained using your calculator as <span class="process-math">\(z=\pm 2.7386\text{....}\)</span> The problem with converting to a decimal is that it does typically require rounding so it is often preferable to leave your answer in radical notation as that is the exact answer and can be rounded to any level of precision later on. }<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-2-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.2.1: The Square Root Property"><a href="#SolveSecondDegree-2" title="Copy heading and permalink for Subsection 3.2.1: The Square Root Property" aria-label="Copy heading and permalink for Subsection 3.2.1: The Square Root Property">🔗</a></div></section><section class="subsection" id="SolveSecondDegree-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Factor to Solve a Second-Degree Equation</span>
+</h3>
+<div class="para logical" id="SolveSecondDegree-3-2">
+<div class="para">In some cases, a second degree equation may be written in a way that makes the solutions very easy to find. For example:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-3-2-1">
+\begin{equation*}
+(x-4)(x+1)=0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="SolveSecondDegree-3-3">We know that can be simplified by using the distributive property so we know this is indeed a second degree equation.<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="SolveSecondDegree-3-4">We know from basic arithmetic that if you multiply two numbers together and get zero, one of these numbers must be zero. Formally, this fact is called the <em class="emphasis">zero product property</em>.<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="SolveSecondDegree-3-5"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="SolveSecondDegree-3-5-1-1"> <em class="emphasis"><em class="emphasis">Zero Product Principle</em></em><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="SolveSecondDegree-3-5-1-2">If <span class="process-math">\(AB=0\text{,}\)</span> then either <span class="process-math">\(A=0\)</span> or <span class="process-math">\(B=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.2.4"><a href="#SolveSecondDegree-3-5" title="Copy heading and permalink for Definition 3.2.4" aria-label="Copy heading and permalink for Definition 3.2.4">🔗</a></div></article><div class="para logical" id="SolveSecondDegree-3-6">
+<div class="para">Now, in this equation we have two expressions being multiplied together: <span class="process-math">\(x-4\)</span> and <span class="process-math">\(x+1\text{.}\)</span> The equation says that their product is zero. So, according to the zero product property, the only possibilities are</div>
+<div class="displaymath process-math" id="SolveSecondDegree-3-6-3">
+\begin{equation*}
+x-4=0 \text{ or }  x+1=0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="SolveSecondDegree-3-7">Using this fact we know there are two possibilities to consider. One is that <span class="process-math">\(x-4=0\text{.}\)</span> If that is the case, then we can easily solve and see that <span class="process-math">\(x=4\text{.}\)</span> The other possibility is that <span class="process-math">\(x+1=0\text{.}\)</span> In that case, we can also easily solve and see that <span class="process-math">\(x=-1\text{.}\)</span> So, we conclude that this equation’s solutions are <span class="process-math">\(x=4\)</span> and <span class="process-math">\(x=-1\text{.}\)</span> When a second degree equation is written in a form like this, as a product, we can find the solutions simply by setting each of the factors equal to zero and solving. Here is another example:<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="SolveSecondDegreeExample4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="SolveSecondDegreeExample4-1-1">Solve: <span class="process-math">\(5(2x-3)(x+7)=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegreeExample4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.5"><a href="#SolveSecondDegreeExample4" title="Copy heading and permalink for Example 3.2.5" aria-label="Copy heading and permalink for Example 3.2.5">🔗</a></div></article></details><div class="para" id="SolveSecondDegree-3-9">To solve <span class="process-math">\(5(2x-3)(x+7)=0\)</span> we set each factor equal to zero and determine if that leads to a consistent equation. Since the product is zero, we can apply the zero product principle to conclude that either <span class="process-math">\(5=0\)</span> or <span class="process-math">\(2x-3=0\)</span> or <span class="process-math">\(x+7=0\text{.}\)</span> Since the first factor is a number and it is not equal to zero, we get a contradiction as <span class="process-math">\(5 \ne 0\text{.}\)</span> Thus, the first factor does not lead to a solution to the equation in question. The second factor, <span class="process-math">\(2x-3\)</span> is zero when <span class="process-math">\(x=\frac{3}{2}\text{.}\)</span> The third factor <span class="process-math">\(x+7\)</span> is zero when <span class="process-math">\(x=-7\text{.}\)</span> Thus, there are two solutions to the equation <span class="process-math">\(x=\frac{3}{2}\)</span> and <span class="process-math">\(x=-7\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="SolveSecondDegree-3-10">As we saw in <a href="SecondDegreeFactor.html" class="internal" title="Section 2.6: Factoring: Second Degree Expression">section 2.6</a> this second-degree equation is written as the product of expressions, or we can say in factored form. In some cases, we can use the method given to us in <a href="SecondDegreeFactor.html" class="internal" title="Section 2.6: Factoring: Second Degree Expression">section 2.6</a> to factor the second degree expression to help us solve. To review:<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="SolveSecondDegree-3-11"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="SolveSecondDegree-3-11-1-1">
+<div class="para"><em class="emphasis"><em class="emphasis">Factoring Second Degree Expressions of the Form <span class="process-math">\(x^2+bx+c\)</span></em></em></div>
+<ol class="decimal" id="SolveSecondDegree-3-11-1-1-2">
+<li id="SolveSecondDegree-3-11-1-1-2-1">
+<span class="heading li--heading"><span class="title li--heading-title"><span class="process-math">\(\cdot\)</span>.</span></span><div class="para" id="SolveSecondDegree-3-11-1-1-2-1-2">Consider all the pairs of integers whose product is <span class="process-math">\(c\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-11-1-1-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1: \cdot"><a href="#SolveSecondDegree-3-11-1-1-2-1" title="Copy heading and permalink for Item 1: \cdot" aria-label="Copy heading and permalink for Item 1: \cdot">🔗</a></div>
+</li>
+<li id="SolveSecondDegree-3-11-1-1-2-2">
+<span class="heading li--heading"><span class="title li--heading-title"><span class="process-math">\(\cdot\)</span>.</span></span><div class="para" id="SolveSecondDegree-3-11-1-1-2-2-2">If the sum of any of the pairs is <span class="process-math">\(b\text{,}\)</span> then the expression can be factored to <span class="process-math">\((x+m)(x+n)\)</span> where <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> are the integers.<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-11-1-1-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2: \cdot"><a href="#SolveSecondDegree-3-11-1-1-2-2" title="Copy heading and permalink for Item 2: \cdot" aria-label="Copy heading and permalink for Item 2: \cdot">🔗</a></div>
+</li>
+<li id="SolveSecondDegree-3-11-1-1-2-3">
+<span class="heading li--heading"><span class="title li--heading-title"><span class="process-math">\(\cdot\)</span>.</span></span><div class="para" id="SolveSecondDegree-3-11-1-1-2-3-2">If none of the pairs sum to <span class="process-math">\(b\text{,}\)</span> then the expression cannot be factored using integers. We then say is it “not factorable over the integers”.<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-11-1-1-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3: \cdot"><a href="#SolveSecondDegree-3-11-1-1-2-3" title="Copy heading and permalink for Item 3: \cdot" aria-label="Copy heading and permalink for Item 3: \cdot">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="SolveSecondDegree-3-11-1-2">When groupings of the same variable raised to power or exponents, you can just add the exponents<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-11-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="SolveSecondDegree-3-11-1-3">
+<div class="para">(make sure to remember that a ‘plain’ <span class="process-math">\(x\)</span> is actually <span class="process-math">\(x^1\)</span>).</div>
+<div class="displaymath process-math" id="SolveSecondDegree-3-11-1-3-3">
+\begin{equation*}
+x^a \cdot x^b = x^{a+b}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-11-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.2.6"><a href="#SolveSecondDegree-3-11" title="Copy heading and permalink for Definition 3.2.6" aria-label="Copy heading and permalink for Definition 3.2.6">🔗</a></div></article><details id="SolveSecondDegreeExample5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="SolveSecondDegreeExample5-1-1">Factor <span class="process-math">\(x^2-5x+6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegreeExample5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.7"><a href="#SolveSecondDegreeExample5" title="Copy heading and permalink for Example 3.2.7" aria-label="Copy heading and permalink for Example 3.2.7">🔗</a></div></article></details><div class="para" id="SolveSecondDegree-3-13">We need to consider all possible pairs of integers whose product is <span class="process-math">\(6\)</span> and then look at their sum to see if it is possible to obtain a sum of the factors equal to <span class="process-math">\(-5\text{.}\)</span> We consider all possible pairs <span class="process-math">\(1\)</span> and <span class="process-math">\(6\)</span> (sum <span class="process-math">\(7\)</span>), <span class="process-math">\(-1\)</span> and <span class="process-math">\(-6\)</span> (sum <span class="process-math">\(-7\)</span>), <span class="process-math">\(2\)</span> and <span class="process-math">\(3\)</span> (sum <span class="process-math">\(5\)</span>), and <span class="process-math">\(-2\)</span> and <span class="process-math">\(-3\)</span> (sum <span class="process-math">\(-5\)</span>). The last pair of factors are the factors that we want and <span class="process-math">\(x^2-5x+6=(x-2)(x-3)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="SolveSecondDegree-3-14">In this case, there were not many possibilities to consider, and one of those possibilities worked. In many cases, though, there are either too many possible pairs to consider, or the expression can’t be factored over the integers at all. In the special case where the expression can be readily factored, solving by factoring is a reasonable method to use.<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="SolveSecondDegreeExample6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="SolveSecondDegreeExample6-1-1">Solve <span class="process-math">\(x^2-5x+6=0\)</span> using factoring<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegreeExample6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.8"><a href="#SolveSecondDegreeExample6" title="Copy heading and permalink for Example 3.2.8" aria-label="Copy heading and permalink for Example 3.2.8">🔗</a></div></article></details><div class="para" id="SolveSecondDegree-3-16">Using <a href="SolveSecondDegree.html#SolveSecondDegreeExample5" class="xref" data-knowl="./knowl/xref/SolveSecondDegreeExample5.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 3.2.7">example 3.2.7</a>, we can factor the left side of the equation as <span class="process-math">\((x-2)(x-3)=0\text{.}\)</span> Applying the zero product principle we see that the solutions to the equation come from <span class="process-math">\(x-2=0\)</span> or <span class="process-math">\(x-3=0\text{.}\)</span> Thus, the solutions we are looking for are <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="SolveSecondDegreeExample7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="SolveSecondDegreeExample7-1-1">Solve <span class="process-math">\(x^2+8x+7=0\)</span> using factoring<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegreeExample7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.9"><a href="#SolveSecondDegreeExample7" title="Copy heading and permalink for Example 3.2.9" aria-label="Copy heading and permalink for Example 3.2.9">🔗</a></div></article></details><div class="para logical" id="SolveSecondDegree-3-18">
+<div class="para">There are not too many possibilities to consider here, since <span class="process-math">\(7\)</span> is prime, and so the only pairs to consider are <span class="process-math">\(7\)</span> and <span class="process-math">\(1\)</span> or <span class="process-math">\(-7\)</span> and <span class="process-math">\(-1\text{.}\)</span> Since <span class="process-math">\(7 + 1 = 8\)</span> we can factor this expression in <span class="process-math">\((x+1)(x+7)\)</span> so we need to consider:</div>
+<div class="displaymath process-math" id="SolveSecondDegree-3-18-8">
+\begin{equation*}
+(x+1)(x+7)=0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="SolveSecondDegree-3-19">Setting each factor equal to zero, we solve <span class="process-math">\((x+1)(x+7)=0\text{.}\)</span> So either <span class="process-math">\(x+1=0\)</span> in which case <span class="process-math">\(x=-1\)</span> or <span class="process-math">\(x+7=0\)</span> in which case <span class="process-math">\(x=-7\text{.}\)</span> So the solutions are <span class="process-math">\(x=-1\)</span> and <span class="process-math">\(x=-7\text{.}\)</span> }<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="SolveSecondDegreeExample8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="SolveSecondDegreeExample8-1-1">Solve <span class="process-math">\(x^2-9x+20=0\)</span> using factoring<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegreeExample8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.10"><a href="#SolveSecondDegreeExample8" title="Copy heading and permalink for Example 3.2.10" aria-label="Copy heading and permalink for Example 3.2.10">🔗</a></div></article></details><div class="para logical" id="SolveSecondDegree-3-21">
+<div class="para">We consider the possibilities that factors of <span class="process-math">\(20\)</span> which are <span class="process-math">\(4\)</span> and <span class="process-math">\(5\)</span> (sum <span class="process-math">\(9\)</span>), <span class="process-math">\(-4\)</span> and <span class="process-math">\(-5\)</span> (sum <span class="process-math">\(-9\)</span>), <span class="process-math">\(10\)</span> and <span class="process-math">\(2\)</span> (sum <span class="process-math">\(12\)</span>), <span class="process-math">\(-10\)</span> and <span class="process-math">\(-2\)</span> (sum <span class="process-math">\(-12\)</span>), <span class="process-math">\(20\)</span> and <span class="process-math">\(1\)</span> (sum <span class="process-math">\(21\)</span>), or <span class="process-math">\(-20\)</span> and <span class="process-math">\(-1\)</span> (sum <span class="process-math">\(-21\)</span>). We need the pairs whose sum equals <span class="process-math">\(-9\)</span> so we use <span class="process-math">\(-4\)</span> and <span class="process-math">\(-5\text{,}\)</span> we can factor this into</div>
+<div class="displaymath process-math" id="SolveSecondDegree-3-21-23">
+\begin{equation*}
+(x-4)(x-5)=0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="SolveSecondDegree-3-22">Setting each factor equal to zero, we solve <span class="process-math">\((x-4)(x-5)=0\)</span> by saying either <span class="process-math">\(x-4=0\)</span> in which case <span class="process-math">\(x=4\)</span> or <span class="process-math">\(x-5=0\)</span> in which case <span class="process-math">\(x=5\text{.}\)</span> So the solutions are <span class="process-math">\(x=4\)</span> and <span class="process-math">\(x=5\text{.}\)</span> }<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-3-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.2.2: Factor to Solve a Second-Degree Equation"><a href="#SolveSecondDegree-3" title="Copy heading and permalink for Subsection 3.2.2: Factor to Solve a Second-Degree Equation" aria-label="Copy heading and permalink for Subsection 3.2.2: Factor to Solve a Second-Degree Equation">🔗</a></div></section><section class="subsection" id="SolveSecondDegree-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<section class="subsubsection" id="SolveSecondDegree-4-2"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Square Root Property</span>
+</h4>
+<div class="para" id="SolveSecondDegree-4-2-2">Solve each of the following equations using the square root property and ordinary algebra.<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="exercises" id="SolveSecondDegree-4-2-3"><h5 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h5>
+<article class="exercise exercise-like" id="SolveSecondDegree-4-2-3-1"><h6 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-2-3-1-1-1">
+<span class="process-math">\(x^2=49\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-2-3-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-2-3-1-2-1">
+<span class="process-math">\(x=7\)</span> and <span class="process-math">\(x=-7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.1.1.1"><a href="#SolveSecondDegree-4-2-3-1-2" title="Copy heading and permalink for Solution 3.2.3.1.1.1" aria-label="Copy heading and permalink for Solution 3.2.3.1.1.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.1.1"><a href="#SolveSecondDegree-4-2-3-1" title="Copy heading and permalink for Exercise 3.2.3.1.1" aria-label="Copy heading and permalink for Exercise 3.2.3.1.1">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-2-3-2"><h6 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-2-3-2-1-1">
+<span class="process-math">\(x^2=81\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.1.2"><a href="#SolveSecondDegree-4-2-3-2" title="Copy heading and permalink for Exercise 3.2.3.1.2" aria-label="Copy heading and permalink for Exercise 3.2.3.1.2">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-2-3-3"><h6 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-2-3-3-1-1">
+<span class="process-math">\(4x^2=324\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-2-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-2-3-3-2-1">
+<span class="process-math">\(x=9\)</span> and <span class="process-math">\(x=-9\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.1.3.1"><a href="#SolveSecondDegree-4-2-3-3-2" title="Copy heading and permalink for Solution 3.2.3.1.3.1" aria-label="Copy heading and permalink for Solution 3.2.3.1.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.1.3"><a href="#SolveSecondDegree-4-2-3-3" title="Copy heading and permalink for Exercise 3.2.3.1.3" aria-label="Copy heading and permalink for Exercise 3.2.3.1.3">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-2-3-4"><h6 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-2-3-4-1-1">
+<span class="process-math">\(3y^2=48\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.1.4"><a href="#SolveSecondDegree-4-2-3-4" title="Copy heading and permalink for Exercise 3.2.3.1.4" aria-label="Copy heading and permalink for Exercise 3.2.3.1.4">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-2-3-5"><h6 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-2-3-5-1-1">
+<span class="process-math">\(2z^2-38=12\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-2-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-2-3-5-2-1">
+<span class="process-math">\(z=5\)</span> and <span class="process-math">\(z=-5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.1.5.1"><a href="#SolveSecondDegree-4-2-3-5-2" title="Copy heading and permalink for Solution 3.2.3.1.5.1" aria-label="Copy heading and permalink for Solution 3.2.3.1.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.1.5"><a href="#SolveSecondDegree-4-2-3-5" title="Copy heading and permalink for Exercise 3.2.3.1.5" aria-label="Copy heading and permalink for Exercise 3.2.3.1.5">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-2-3-6"><h6 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-2-3-6-1-1">
+<span class="process-math">\(4t^2+75=139\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.1.6"><a href="#SolveSecondDegree-4-2-3-6" title="Copy heading and permalink for Exercise 3.2.3.1.6" aria-label="Copy heading and permalink for Exercise 3.2.3.1.6">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-2-3-7"><h6 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-2-3-7-1-1">
+<span class="process-math">\((2x-1)^2=49\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-2-3-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-2-3-7-2-1">
+<span class="process-math">\(x=4\)</span> and <span class="process-math">\(x=-3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.1.7.1"><a href="#SolveSecondDegree-4-2-3-7-2" title="Copy heading and permalink for Solution 3.2.3.1.7.1" aria-label="Copy heading and permalink for Solution 3.2.3.1.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.1.7"><a href="#SolveSecondDegree-4-2-3-7" title="Copy heading and permalink for Exercise 3.2.3.1.7" aria-label="Copy heading and permalink for Exercise 3.2.3.1.7">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-2-3-8"><h6 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-2-3-8-1-1">
+<span class="process-math">\((3y-7)^2=144\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.1.8"><a href="#SolveSecondDegree-4-2-3-8" title="Copy heading and permalink for Exercise 3.2.3.1.8" aria-label="Copy heading and permalink for Exercise 3.2.3.1.8">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-2-3-9"><h6 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-2-3-9-1-1">
+<span class="process-math">\((2y+5)^2-3=33\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-2-3-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-2-3-9-2-1">
+<span class="process-math">\(x=\frac{1}{2}\)</span> and <span class="process-math">\(x=-\frac{11}{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.1.9.1"><a href="#SolveSecondDegree-4-2-3-9-2" title="Copy heading and permalink for Solution 3.2.3.1.9.1" aria-label="Copy heading and permalink for Solution 3.2.3.1.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.1.9"><a href="#SolveSecondDegree-4-2-3-9" title="Copy heading and permalink for Exercise 3.2.3.1.9" aria-label="Copy heading and permalink for Exercise 3.2.3.1.9">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-2-3-10"><h6 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-2-3-10-1-1">
+<span class="process-math">\((2z+3)^2+19=100\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-2-3-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.1.10"><a href="#SolveSecondDegree-4-2-3-10" title="Copy heading and permalink for Exercise 3.2.3.1.10" aria-label="Copy heading and permalink for Exercise 3.2.3.1.10">🔗</a></div></article><div class="autopermalink" data-description="Exercises 3.2.3.1"><a href="#SolveSecondDegree-4-2-3" title="Copy heading and permalink for Exercises 3.2.3.1" aria-label="Copy heading and permalink for Exercises 3.2.3.1">🔗</a></div></section><div class="autopermalink" data-description="Subsubsection 3.2.3.1: The Square Root Property"><a href="#SolveSecondDegree-4-2" title="Copy heading and permalink for Subsubsection 3.2.3.1: The Square Root Property" aria-label="Copy heading and permalink for Subsubsection 3.2.3.1: The Square Root Property">🔗</a></div></section><section class="subsubsection" id="SolveSecondDegree-4-3"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving a Second Degree Equation by Factoring</span>
+</h4>
+<div class="para" id="SolveSecondDegree-4-3-2">Factor the following to solve for the variable.<div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="exercises" id="SolveSecondDegree-4-3-3"><h5 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h5>
+<article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-1"><h6 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-1-1-1">
+<span class="process-math">\(z^2-4x-12=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-3-3-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-3-3-1-2-1">
+<span class="process-math">\(z=6\)</span> and <span class="process-math">\(z=-2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.2.1.1"><a href="#SolveSecondDegree-4-3-3-1-2" title="Copy heading and permalink for Solution 3.2.3.2.1.1" aria-label="Copy heading and permalink for Solution 3.2.3.2.1.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.1"><a href="#SolveSecondDegree-4-3-3-1" title="Copy heading and permalink for Exercise 3.2.3.2.1" aria-label="Copy heading and permalink for Exercise 3.2.3.2.1">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-2"><h6 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-2-1-1">
+<span class="process-math">\(x^2-9x-10=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.2"><a href="#SolveSecondDegree-4-3-3-2" title="Copy heading and permalink for Exercise 3.2.3.2.2" aria-label="Copy heading and permalink for Exercise 3.2.3.2.2">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-3"><h6 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-3-1-1">
+<span class="process-math">\(x^2+7x+12=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-3-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-3-3-3-2-1">
+<span class="process-math">\(x=-3\)</span> and <span class="process-math">\(x=-4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.2.3.1"><a href="#SolveSecondDegree-4-3-3-3-2" title="Copy heading and permalink for Solution 3.2.3.2.3.1" aria-label="Copy heading and permalink for Solution 3.2.3.2.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.3"><a href="#SolveSecondDegree-4-3-3-3" title="Copy heading and permalink for Exercise 3.2.3.2.3" aria-label="Copy heading and permalink for Exercise 3.2.3.2.3">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-4"><h6 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-4-1-1">
+<span class="process-math">\(x^2+3x+2=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.4"><a href="#SolveSecondDegree-4-3-3-4" title="Copy heading and permalink for Exercise 3.2.3.2.4" aria-label="Copy heading and permalink for Exercise 3.2.3.2.4">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-5"><h6 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-5-1-1">
+<span class="process-math">\(x^2+6x+9=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-3-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-3-3-5-2-1">
+<span class="process-math">\(x=-3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.2.5.1"><a href="#SolveSecondDegree-4-3-3-5-2" title="Copy heading and permalink for Solution 3.2.3.2.5.1" aria-label="Copy heading and permalink for Solution 3.2.3.2.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.5"><a href="#SolveSecondDegree-4-3-3-5" title="Copy heading and permalink for Exercise 3.2.3.2.5" aria-label="Copy heading and permalink for Exercise 3.2.3.2.5">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-6"><h6 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-6-1-1">
+<span class="process-math">\(x^2-6x-7=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.6"><a href="#SolveSecondDegree-4-3-3-6" title="Copy heading and permalink for Exercise 3.2.3.2.6" aria-label="Copy heading and permalink for Exercise 3.2.3.2.6">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-7"><h6 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-7-1-1">
+<span class="process-math">\((x-2)(4x-16)=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-3-3-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-3-3-7-2-1">
+<span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.2.7.1"><a href="#SolveSecondDegree-4-3-3-7-2" title="Copy heading and permalink for Solution 3.2.3.2.7.1" aria-label="Copy heading and permalink for Solution 3.2.3.2.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.7"><a href="#SolveSecondDegree-4-3-3-7" title="Copy heading and permalink for Exercise 3.2.3.2.7" aria-label="Copy heading and permalink for Exercise 3.2.3.2.7">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-8"><h6 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-8-1-1">
+<span class="process-math">\(x^2-8x+12=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.8"><a href="#SolveSecondDegree-4-3-3-8" title="Copy heading and permalink for Exercise 3.2.3.2.8" aria-label="Copy heading and permalink for Exercise 3.2.3.2.8">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-9"><h6 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-9-1-1">
+<span class="process-math">\(x^2+2x-8=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-3-3-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-3-3-9-2-1">
+<span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=-4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.2.9.1"><a href="#SolveSecondDegree-4-3-3-9-2" title="Copy heading and permalink for Solution 3.2.3.2.9.1" aria-label="Copy heading and permalink for Solution 3.2.3.2.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.9"><a href="#SolveSecondDegree-4-3-3-9" title="Copy heading and permalink for Exercise 3.2.3.2.9" aria-label="Copy heading and permalink for Exercise 3.2.3.2.9">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-10"><h6 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-10-1-1">
+<span class="process-math">\((x+3)(x+2)=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.10"><a href="#SolveSecondDegree-4-3-3-10" title="Copy heading and permalink for Exercise 3.2.3.2.10" aria-label="Copy heading and permalink for Exercise 3.2.3.2.10">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-11"><h6 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-11-1-1">
+<span class="process-math">\(2a^2-18a+28=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-3-3-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-3-3-11-2-1">
+<span class="process-math">\(a=2\)</span> and <span class="process-math">\(a=7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.2.11.1"><a href="#SolveSecondDegree-4-3-3-11-2" title="Copy heading and permalink for Solution 3.2.3.2.11.1" aria-label="Copy heading and permalink for Solution 3.2.3.2.11.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.11"><a href="#SolveSecondDegree-4-3-3-11" title="Copy heading and permalink for Exercise 3.2.3.2.11" aria-label="Copy heading and permalink for Exercise 3.2.3.2.11">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-12"><h6 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-12-1-1">
+<span class="process-math">\(3g^2-6g-9=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.12"><a href="#SolveSecondDegree-4-3-3-12" title="Copy heading and permalink for Exercise 3.2.3.2.12" aria-label="Copy heading and permalink for Exercise 3.2.3.2.12">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-13"><h6 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-13-1-1">
+<span class="process-math">\(2r^2+4r-30=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-3-3-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-3-3-13-2-1">
+<span class="process-math">\(z=3\)</span> and <span class="process-math">\(z=-5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.2.13.1"><a href="#SolveSecondDegree-4-3-3-13-2" title="Copy heading and permalink for Solution 3.2.3.2.13.1" aria-label="Copy heading and permalink for Solution 3.2.3.2.13.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.13"><a href="#SolveSecondDegree-4-3-3-13" title="Copy heading and permalink for Exercise 3.2.3.2.13" aria-label="Copy heading and permalink for Exercise 3.2.3.2.13">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-14"><h6 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-14-1-1">
+<span class="process-math">\(y^2-y=42\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.14"><a href="#SolveSecondDegree-4-3-3-14" title="Copy heading and permalink for Exercise 3.2.3.2.14" aria-label="Copy heading and permalink for Exercise 3.2.3.2.14">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-15"><h6 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-15-1-1">
+<span class="process-math">\(r^2-9=8r\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="SolveSecondDegree-4-3-3-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="SolveSecondDegree-4-3-3-15-2-1">
+<span class="process-math">\(r=9\)</span> and <span class="process-math">\(r=-1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.2.15.1"><a href="#SolveSecondDegree-4-3-3-15-2" title="Copy heading and permalink for Solution 3.2.3.2.15.1" aria-label="Copy heading and permalink for Solution 3.2.3.2.15.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.15"><a href="#SolveSecondDegree-4-3-3-15" title="Copy heading and permalink for Exercise 3.2.3.2.15" aria-label="Copy heading and permalink for Exercise 3.2.3.2.15">🔗</a></div></article><article class="exercise exercise-like" id="SolveSecondDegree-4-3-3-16"><h6 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="SolveSecondDegree-4-3-3-16-1-1">
+<span class="process-math">\(3a^2+3a-60=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SolveSecondDegree-4-3-3-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3.2.16"><a href="#SolveSecondDegree-4-3-3-16" title="Copy heading and permalink for Exercise 3.2.3.2.16" aria-label="Copy heading and permalink for Exercise 3.2.3.2.16">🔗</a></div></article><div class="autopermalink" data-description="Exercises 3.2.3.2"><a href="#SolveSecondDegree-4-3-3" title="Copy heading and permalink for Exercises 3.2.3.2" aria-label="Copy heading and permalink for Exercises 3.2.3.2">🔗</a></div></section><div class="autopermalink" data-description="Subsubsection 3.2.3.2: Solving a Second Degree Equation by Factoring"><a href="#SolveSecondDegree-4-3" title="Copy heading and permalink for Subsubsection 3.2.3.2: Solving a Second Degree Equation by Factoring" aria-label="Copy heading and permalink for Subsubsection 3.2.3.2: Solving a Second Degree Equation by Factoring">🔗</a></div></section><div class="autopermalink" data-description="Subsection 3.2.3: Exercises"><a href="#SolveSecondDegree-4" title="Copy heading and permalink for Subsection 3.2.3: Exercises" aria-label="Copy heading and permalink for Subsection 3.2.3: Exercises">🔗</a></div></section><div class="autopermalink" data-description="Section 3.2: Solving Second Degree Equations"><a href="#SolveSecondDegree" title="Copy heading and permalink for Section 3.2: Solving Second Degree Equations" aria-label="Copy heading and permalink for Section 3.2: Solving Second Degree Equations">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="FirstDegreeEquations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="SolveHigherOrderEquations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

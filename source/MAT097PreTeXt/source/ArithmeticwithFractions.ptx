@@ -1,0 +1,1055 @@
+<section xml:id="ArithmeticwithFractions">
+  <title>Arithmetic with Fractions</title>
+  <introduction>
+    <p>
+      We often encounter fractions in mathematics and in the real world.
+      Before moving forward in this book,
+      we'll take some time to review the rules of fraction arithmetic,
+      and also discuss using your calculators for fractions.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Adding and Subtracting Fractions</title>
+    <p>
+      Suppose you are traveling from New York to Singapore.
+      You have a layover in Vancouver,
+      where you pick up a book to read on the flight for C$9.95 (Canadian dollars).
+      Then, on your second layover in Tokyo you pick up a souvenir fridge magnet for ¥2500 (Japanese yen).
+      How much have you spent?
+    </p>
+    <p>
+      Obviously you can't just add 9.95 + 2500 to answer this question.
+      Canadian dollars and Japanese yen are different currencies,
+      and so you can't just add them together and expect to get an answer that means anything.
+      A sensible answer to the question requires you to put the amounts of money in some common terms,
+      such as converting them to US dollars,
+      and then adding the results.
+    </p>
+    <p>
+      The same issue arises if we need to add fractions.
+      Halves and thirds are different things,
+      and so to add we first need to put these fractions into common terms.
+      We'll recall the method for doing this below,
+      and then work through a few examples.
+    </p>
+    <definition>
+      <statement>
+        <p>
+              <idx><h>Fractions</h><h>Addition</h></idx> <em><em>Adding and Subtracting Fractions</em></em>
+          <ul>
+            <li>
+              <p>
+                Find a common denominator.
+                A common denominator is any number that all of the denominators divide into evenly.
+              </p>
+            </li>
+            <li>
+              <p>
+                A common denominator can always be found by multiplying all the denominators together.
+                Often, though, this will be larger than necessary.
+              </p>
+            </li>
+            <li>
+              <p>
+                It is desirable, but not mandatory,
+                to use the least common denominator.
+                If the denominators share any factors in common,
+                each factor only needs to be included in the common denominator as many times as it is used in the denominator in which it appears the most.
+              </p>
+            </li>
+            <li>
+              <p>
+                Each fraction can be changed to the common denominator by multiplying its numerator and denominator by whatever is needed to change the denominator into the common denominator.
+              </p>
+            </li>
+            <li>
+              <p>
+                Once all the denominators are common,
+                the fractions can be added/subtracted by adding/subtracting their numerators.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Putting this in words makes it seem more complicated than it actually is.
+      Some examples will help remind you how this all works.
+    </p>
+    <example xml:id="ArithmeticwithFractionsExample1">
+      <statement>
+        <p>
+          Evaluate <m>\displaystyle \frac{3}{5} + \frac{4}{3}</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      The denominators are <m>3</m> and <m>5</m>,
+      and so a common denominator is <m>3 \cdot 5 = 15</m>.
+      Since <m>3</m> and <m>5</m> don't have any common factors,
+      this is the smallest possible common denominator.
+    </p>
+    <p>
+      To make <m>5</m> into the common denominator of <m>15</m>,
+      we need to multiply by <m>3</m>.
+      So we'll multiply the first fraction by <m>\frac{3}{3}</m>
+      (recall that we can do this because <m>\frac{3}{3} = 1</m>,
+      and so this changes the form of the fraction but not its value,
+      since we are really just multiplying by <m>1</m>).
+      For similar reasons,
+      we'll multiply the second fraction by <m>\frac{5}{5}</m>.
+      <me>
+        \displaystyle \frac{3}{5} \left( \frac{3}{3} \right) + \frac{4}{3} \left( \frac{5}{5} \right) = \frac{9}{15} + \frac{20}{15} = \frac{29}{15}
+      </me>
+    </p>
+    <p>
+      Note that this answer is an <em>improper fraction</em>,
+      which means that its numerator is larger than its denominator.
+      This answer could be rewritten as the <em>mixed number</em>;
+      <m>1\frac{14}{15}</m>.
+      Either answer is correct.
+      In this book,
+      we will not rewrite improper fractions as mixed numbers,
+      unless there is a clear reason to do so. }
+    </p>
+    <example xml:id="ArithmeticwithFractionsExample2">
+      <statement>
+        <p>
+          Evaluate <m>\displaystyle \frac{3}{8} + \frac{5}{6} - \frac{2}{3}</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We could use <m>8 \cdot 6 \cdot 3 = 142</m> as a common denominator,
+      but this is larger than necessary.
+      Since <m>8=2\cdot 2\cdot 2</m> and <m>6=3\cdot 2</m>,
+      and <m>3</m> is just <m>3</m>,
+      we only need to include three <m>2</m>'s
+      (since <m>8</m> has three of them)
+      and one <m>3</m>
+      (since that one three will cover for both the <m>6</m> and the <m>3</m> denominators.)
+      So our least common denominator is <m>2\cdot 2\cdot 2\cdot 3=24</m>.
+      Then:
+      <md>
+        <mrow>\frac{3}{8} + \frac{5}{6} - \frac{2}{3} \amp  =\frac{3}{8} \left( \frac{3}{3} \right) + \frac{5}{6} \left( \frac{4}{4} \right) - \frac{2}{3} \left( \frac{8}{8} \right)</mrow>
+        <mrow>\amp  = \frac{9}{24} + \frac{20}{24} - \frac{16}{24}</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = \frac{13}{24}</mrow>
+      </md>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Multiplying and Dividing Fractions</title>
+    <p>
+      Multiplying fractions is actually much easier than adding or subtracting them.
+      No common denominators are required.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          <em><idx><h>Fractions</h><h>Multiplying</h></idx>
+          </em> <em>Multiplying Fractions</em>
+          <ul>
+            <li>
+              <p>
+                Multiply the numerators and the denominators by each other.
+              </p>
+            </li>
+            <li>
+              <p>
+                That is it!
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      In fact, we've already multiplied some fractions in this chapter
+      (in <xref ref="ArithmeticwithFractionsExample1">Examples</xref>
+      and <xref ref="ArithmeticwithFractionsExample2" />
+      we multiplied to get fractions into their common denominators).
+    </p>
+    <example xml:id="ArithmeticwithFractionsExample3">
+      <statement>
+        <p>
+          Evaluate <m>\displaystyle \frac{3}{5} \left( \frac{2}{7} \right)</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      Using the above for multiplying fractions:
+      <me>
+        \displaystyle \frac{3}{5} \left( \frac{2}{7} \right) = \frac{3\cdot 2}{5 \cdot 7} = \frac{6}{35}
+      </me>
+    </p>
+    <p>
+      Dividing fractions is a little less straightforward.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          <em><em>Dividing Fractions</em></em>
+          <ul>
+            <li>
+              <p>
+                Write the division as a <em>complex fraction</em>, that is,
+                as a fraction whose numerator and/or denominator are fractions.
+              </p>
+            </li>
+            <li>
+              <p>
+                Multiply the complex fraction by the reciprocal of its denominator over itself.
+              </p>
+            </li>
+            <li>
+              <p>
+                After multiplying,
+                the denominator of the complex fraction becomes 1, and so it can be ignored.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      This method is also sometimes described as the
+      <q>invert and multiply rule</q>, since the result ends up being equal to the numerator of the complex fraction multiplied by the reciprocal of the complex fraction's denominator.
+    </p>
+    <example xml:id="ArithmeticwithFractionsExample4">
+      <statement>
+        <p>
+          Evaluate <m>\displaystyle \frac{3}{7} \div \frac{4}{5}</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      Using the above for dividing fractions:
+      <md>
+        <mrow>\frac{3}{7} \div \frac{4}{5} \amp  = \frac{\frac{3}{7}}{\frac{4}{5}}</mrow>
+        <mrow>\amp  =\frac{\frac{3}{7}}{\frac{4}{5}} \left( \frac{\frac{5}{4}}{\frac{5}{4}} \right)</mrow>
+        <mrow>\amp  = \frac{\frac{3\cdot 5}{7 \cdot 4}}{\frac{4 \cdot 5}{5\cdot 4}}</mrow>
+        <mrow>\amp  = \frac{\frac{15}{28}}{1}</mrow>
+        <mrow>\amp  = \frac{15}{28}</mrow>
+      </md>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Reducing Fractions to Lowest Terms</title>
+    <p>
+      There are <m>60</m> minutes in an hour,
+      and so <m>30</m> minutes is <m>\frac{30}{60}</m> of an hour.
+      But no one would actually say
+      <q><m>\frac{30}{60}</m> of an hour</q>; of course you'd say <m>30</m> minutes is <m>\frac{1}{2}</m> of an hour.
+      The fractions <m>\frac{30}{60}</m> and
+      <m>\frac{1}{2}</m> are equal to each other,
+      so either would be technically correct,
+      but it's obviously much simpler to use the fraction with the smaller numerator and denominator.
+    </p>
+    <p>
+      When we replace a fraction like
+      <m>\frac{30}{60}</m> to an equal fraction with a smaller numerator and denominator,
+      we say that we <em>reduce</em>
+          <idx><h>Fractions</h><h>Reduced</h></idx>
+      it.
+      When a fraction cannot be reduced any further,
+      we say it is written in <em>lowest terms</em>.
+      To keep things as simple as possible,
+      it is a standard practice to reduce fractions to lowest terms whenever possible.
+    </p>
+    <p>
+      A fraction can be reduced if and only if its numerator and denominator share a common factor
+      (other than <m>1</m>).
+      For example,
+      <m>\displaystyle \frac{30}{60}</m> can be reduced because its numerator and denominator have common factors:
+      <m>2</m>, <m>3</m>, <m>5</m>, <m>6</m>,
+      <m>10</m>, <m>15</m>, and <m>30</m>.
+      Since <m>30</m> is the largest,
+      we'll use that, and rewrite <m>\displaystyle \frac{30}{60}</m> as:
+      <me>
+        \frac{30}{60} = \frac{30 \times 1}{30 \times 2}
+      </me>
+      which, because of the rules for multiplying fractions,
+      we can rewrite as:
+      <me>
+        \frac{30}{30}\left(\frac{1}{2}\right)
+      </me>
+      and since <m>\displaystyle \frac{30}{30} = 1</m>,
+      we see that the result just is equal to <m>\displaystyle \frac{1}{2}</m>.
+    </p>
+    <p>
+      Usually we aren't quite so formal about this;
+      more often, we talk about canceling a common factor which amounts to the same thing.
+      Following that route,
+      once we see the common factor of <m>30</m> in the numerator and denominator, we
+      <q>cancel it out</q>
+      like this:
+      <me>
+        \frac{30}{60} = \frac{30 \cdot 1}{30 \cdot 2} = \frac{\cancel{30} \cdot 1}{\cancel{30} \cdot 2} = \frac{1}{2}
+      </me>
+    </p>
+    <p>
+      It's good to have some idea of why this works,
+      but from a practical standpoint we usually just go with this cancellation approach.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          <em><em>Method for Reducing Fractions</em></em>
+          <ul>
+            <li>
+              <p>
+                If the numerator and denominator share a common factor,
+                cancel it.
+              </p>
+            </li>
+            <li>
+              <p>
+                If the resulting fraction's numerator and denominator don't share any common factors,
+                you're done, the fraction has been reduced to lowest terms.
+                If they do have a common factor, repeat.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      <xref ref="ArithmeticwithFractionsExample1">Examples</xref>
+      through <xref ref="ArithmeticwithFractionsExample4" />
+      were intentionally set up so that the final answer would come out to be in lowest terms.
+      You cannot always assume that this will happen, though.
+      Whenever you do any fraction arithmetic,
+      you should as a last step reduce the answer to lowest terms.
+    </p>
+    <example xml:id="ArithmeticwithFractionsExample5">
+      <statement>
+        <p>
+          Evaluate <m>\displaystyle \frac{1}{6}+\frac{1}{3}-\frac{1}{8}</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      The least common denominator here is <m>24</m>.
+      So:
+      <me>
+        \displaystyle \frac{1}{6}\left(\frac{4}{4}\right) + \frac{1}{3}\left(\frac{8}{8}\right)+ \frac{1}{8}\left(\frac{3}{3}\right)=\frac{4}{24} + \frac{8}{24}-\frac{3}{24}=\frac{9}{24}
+      </me>
+    </p>
+    <p>
+      Now we need to see if this fraction can be reduced to lower terms.
+      Since <m>9</m> and <m>24</m> share a common factor <m>3</m> this should not be considered the final answer yet.
+      We still need to reduce the fraction to lowest terms.
+      <me>
+        \frac{9}{24}=\frac{3 \cdot 3}{3 \cdot 8}=\frac{\cancel{3} \cdot 3}{\cancel{3} \cdot 8}=\frac{3}{8}
+      </me>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Fraction Arithmetic and Your Calculator</title>
+    <p>
+      Your calculator can be used as a tool for fraction arithmetic.
+    </p>
+    <p>
+      On any calculator,
+      you can evaluate arithmetic expressions involving fractions.
+      If you want to add <m>\displaystyle \frac{1}{2} + \frac{1}{4}</m> you can simply enter that expression into your calculator and get a correct result.
+    </p>
+    <p>
+      Unfortunately,
+      most calculators will give that answer as a decimal, not as a fraction.
+      So, for this example you would get an answer of <m>0.75</m>.
+      Now, if a decimal answer is what you are looking for, that's fine,
+      but if you want it as a fraction,
+      you'd need to recognize that <m>0.75</m> is <m>\frac{3}{4}</m> yourself.
+      That's fine for a familiar fraction like <m>\frac{3}{4}</m>,
+      but it wouldn't work so well if you were evaluating <m>\displaystyle \frac{2}{7} - \frac{6}{5}\left(\frac{2}{39}\right)</m>.
+      You're not likely to recognize that your calculator's decimal answer of
+      <m>0.22417582</m> is actually <m>\displaystyle \frac{306}{1365}</m>.
+    </p>
+    <p>
+      The TI-83 and TI-84 calculators have the ability, though,
+      to report answers as fractions, if you tell them to.
+    </p>
+    <p>
+      On your calculator, locate the
+      <q>MATH</q>
+      key
+      (it should be in the leftmost column,
+      third or fourth from the top).
+      If you hit that key it will take you to a menu,
+      and the first item on that menu is
+      <q>1: <m>\blacktriangleright</m> Frac</q>.
+    </p>
+    <p>
+      This command tells the calculator to express the answer as a fraction in lowest terms.
+      So, for example, suppose we want to add
+      <m>\displaystyle \frac{1}{2} + \frac{1}{4}</m> and get the answer as a fraction,
+      not a decimal.
+      We would enter:
+      <me>
+        1/2+1/4 \blacktriangleright \text{ Frac }
+      </me>
+      and then hit return to get the answer:
+      <me>
+        \frac{3}{4}
+      </me>
+    </p>
+    <p>
+      We can use this with any fractional expression we want to evaluate.
+      Let's revisit <xref ref="ArithmeticwithFractionsExample5">Example</xref> now:
+    </p>
+    <example xml:id="ArithmeticwithFractionsExample6">
+      <statement>
+        <p>
+          Evaluate <m>\displaystyle \frac{1}{6} + \frac{1}{3} - \frac{1}{8}</m> using your calculator.
+        </p>
+      </statement>
+    </example>
+    <p>
+      We enter:
+      <me>
+        1/6+1/3-1/8 \blacktriangleright \text{ Frac }
+      </me>
+    </p>
+    <p>
+      Hit enter and then get the result:
+      <me>
+        \frac{3}{8}
+      </me>
+    </p>
+    <p>
+      We can also use this feature to reduce a fraction to lowest terms.
+      Since the calculator always returns the result in lowest terms,
+      if you enter a fraction that is not,
+      it will evaluate it as a decimal and then convert the result to a fraction in lowest terms.
+      The end result - you've reduced your fraction.
+    </p>
+    <example xml:id="ArithmeticwithFractionsExample7">
+      <statement>
+        <p>
+          Reduce <m>\displaystyle \frac{5544}{22,176}</m> to lowest terms
+        </p>
+      </statement>
+    </example>
+    <p>
+      On the calculator:
+      <me>
+        5544/22176 \blacktriangleright \text{ Frac }
+      </me>
+    </p>
+    <p>
+      Gives the result:
+      <me>
+        \frac{1}{4}
+      </me>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Closing Thoughts</title>
+    <p>
+      With the
+      <q><m>\blacktriangleright</m>Frac</q>
+      feature of the calculator available to us,
+      we can easily handle otherwise tedious fraction arithmetic.
+      This is really, really good news.
+      One word of warning is very important here.
+      You may get the impression that,
+      since the calculator can essentially do any fraction arithmetic you need,
+      that you don't really need to know the rules and techniques of fraction arithmetic.
+      While it is true that you'll be able to avoid a lot of this work by effective calculator use,
+      you will still need these rules and techniques for algebra purposes later in the course.
+      It is for this reason especially that homework exercises are provided where you are asked not to rely on the calculator for your fraction arithmetic.
+      If you skip the opportunity to master those skills here,
+      you'll have much more trouble dealing with algebraic fractions later on!
+    </p>
+  </subsection>
+  <subsection>
+    <title>Exercises</title>
+    <p>
+      Evaluate the following arithmetic expressions without using the
+      <q><m>\blacktriangleright</m>Frac</q>
+      command on your calculator.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>\frac{1}{2}+\frac{1}{3}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{5}{6}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{2}{7}+\frac{1}{5}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{3}{5}+\frac{1}{8}-\frac{1}{4}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{19}{40}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{6}{7}-\frac{3}{4}+\frac{3}{14}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{11}{8}-\frac{13}{16}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{9}{16}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{11}{9}+\frac{2}{27}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{7}{30}+\frac{5}{6}-\frac{11}{12}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{3}{20}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{13}{15}-\frac{2}{25}-\frac{4}{9}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3-\frac{7}{5}-\frac{3}{10}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{13}{10}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{3}{8}-\frac{1}{12}+1</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{4}{5}\left(\frac{1}{3}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{4}{15}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{2}{7}\left(\frac{3}{5}\right)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{1}{3}\left(\frac{5}{6}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{5}{18}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{5}{3}\left(\frac{2}{9}\right)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{3}{5}\div\frac{11}{2}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{6}{55}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{7}{2}\div\frac{5}{3}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{9}{11}\div\frac{2}{3}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{27}{22}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{4}{5}\div\frac{3}{2}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{7}{2}\div 5</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{7}{10}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{7}{13}\div 2</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{3}{8}+\frac{3}{2}-\frac{5}{8}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{5}{4}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{5}{2}+\frac{1}{3}-\frac{5}{6}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{4}{5}\left(\frac{25}{8}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{5}{2}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{9}{16}\left(\frac{10}{3}\right)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{10}{27}\div\frac{25}{9}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{2}{15}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{18}{35}\div\frac{9}{49}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    </exercises><p>
+      Reduce the following fractions to lowest terms without using the
+      <q><m>\blacktriangleright</m>Frac</q>
+      command on your calculator.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>\frac{20}{60}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{1}{3}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{100}{80}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{72}{140}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{18}{35}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{54}{72}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    </exercises><p>
+      Evaluate the following arithmetic expressions,
+      expressing your answers as fractions in lowest terms.
+      Use your calculator as much or as little as you like.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>\frac{27}{4}\left(\frac{100}{81}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{25}{3}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{162}{125}\left(\frac{200}{243}\right)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{15}{48}-\frac{3}{8}+\frac{5}{6}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{37}{48}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{21}{25}-\frac{31}{125}+\frac{3}{10}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{17}{75}-\frac{3}{10}+\frac{41}{250}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{34}{375}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{45}{132}-\frac{157}{430}+\frac{1}{4}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{7}{4}-\frac{3}{8}+\frac{2}{5}\left(\frac{5}{16}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{3}{2}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{1}{2}-\frac{3}{32}+\frac{5}{96}\left(\frac{2}{35}\right)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{24}{75}\left(\frac{27}{80}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{27}{250}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{312}{49}\left(\frac{63}{78}\right)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{824}{49}\div\frac{404}{32}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{6592}{4949}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{14}{29}\div\frac{105}{58}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{5}{7}\left(\frac{14}{25}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{2}{5}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{13}{4}-\frac{5}{2}+1</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{13}{8}-\frac{1}{4}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{11}{8}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{7}{2}\left(\frac{81}{21}\right)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{9}{8}+\frac{3}{16}-2\left(\frac{5}{32}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>1</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{17}{32}\div\frac{54}{68}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{6}{5}-\frac{3}{10}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{9}{10}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{243}{1000}+\frac{243}{750}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{243}{1000}\div\frac{243}{750}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{3}{4}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{13}{15}-\frac{3}{25}\div\frac{5}{2}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3-\frac{7}{16}\div\frac{1}{8}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-\frac{1}{2}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{3}{4}\left(\frac{45}{6}\right)\left(\frac{1}{9}\right)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+  </exercises></subsection>
+</section>

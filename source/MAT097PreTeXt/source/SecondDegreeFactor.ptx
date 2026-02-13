@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="SecondDegreeFactor">
+  <title>Factoring: Second Degree Expression</title>
+  <introduction>
+    <p>
+      Recall the distribution rules from <xref ref="Distribution">Section</xref>
+      <xref ref="DistributionExample5">Example</xref>:
+      <md>
+        <mrow>(x+2)(x+3) \amp  = x(x+3)+2(x+3)</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = x^2+3x+2x+6</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = x^2+5x+6</mrow>
+      </md>
+    </p>
+    <p>
+      Notice, to arrive at our simplified expression, we took the sum of the
+      <q><m>x</m></q>
+      terms <m>3x+2x</m> to give us our middle term of <m>5x</m>.
+      The constant, <m>6</m>,
+      came from the multiplication of the integers from our original expression.
+      Our simplified solution is a second-degree expression because it contains an <m>x^2</m> term.
+    </p>
+    <p>
+      To factor an expression of the second degree,
+      in the form <m>x^2+bx+c</m>,
+      which the coefficient of the <m>x^2</m> term is <m>1</m>,
+      we need to find numbers whose sum is the coefficient of the middle term <m>b</m> and whose product is the constant term <m>c</m>.
+    </p>
+    <definition>
+      <statement>
+        <p>
+              <idx><h>Factor</h><h>Second Degree</h></idx> <em><em>Factoring Second Degree Expressions of the Form <m>x^2+bx+c</m></em></em>
+          <ul>
+            <li>
+              
+              <p>
+                Consider all the pairs of integers whose product is <m>c</m>
+              </p>
+            </li>
+            <li>
+              
+              <p>
+                If the sum of any of the pairs is <m>b</m>,
+                then the expression can be factored to
+                <m>(x+m)(x+n)</m> where <m>m</m> and <m>n</m> are the integers.
+              </p>
+            </li>
+            <li>
+              
+              <p>
+                If none of the pairs sum to <m>b</m>,
+                then the expression cannot be factored using integers.
+                We then say is it
+                <q>not factorable over the integers</q>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+    <example xml:id="SecondDegreeFactorExample1">
+      <statement>
+        <p>
+          Factor <m>x^2+7x+10</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We first consider factors of <m>10</m>, which are (<m>10
+      <me>
+        ,1$ - the sum of which is $11$) or ($5
+      </me>,
+      2</m> - the sum of which is <m>7</m>).
+      We need the pair we choose to have a sum equal to <m>7</m> and the only pair that satisfies that is <m>5</m> and <m>2</m>.
+      So, we can factor <m>x^2+7x+10</m> into <m>(x+5)(x+2)</m>.
+      Remember that multiplication is commutative so the order in which we put the integers <m>5</m> and <m>2</m> here works either way.
+    </p>
+    <p>
+      We can easily check our work by using the distributive law:
+      <md>
+        <mrow>(x+5)(x+2) \amp  = x(x)+x(2)+5(x)+5(2)</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = x^2+2x+5x+10</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = x^2+7x+10</mrow>
+      </md>
+    </p>
+    <example xml:id="SecondDegreeFactorExample2">
+      <statement>
+        <p>
+          Factor <m>x^2-11x+10</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We know from <xref ref="SecondDegreeFactorExample1">example</xref>
+      that the factors to consider are (<m>10
+      <me>
+        ,1$ - sum $11$) or ($5
+      </me>,
+      2</m> - sum <m>7</m>).
+      However we are now trying to find a pair whose sum is equal to <m>-11</m>.
+      Remember that the product of two negative numbers gives us a positive number,
+      which means that we can also consider the factors of <m>10</m> as (<m>-10</m>,
+      <m>-1</m> - sum <m>-11</m>) or
+      (<m>-5
+      <me>
+        ,-2$ - sum $-7$). We need our pair to have a sum of $-11$ so we will choose ($-10
+      </me>,
+      -1</m>).
+      We can factor <m>x^2-11x+10</m> into <m>(x-10)(x-1)</m>.
+    </p>
+    <example xml:id="SecondDegreeFactorExample3">
+      <statement>
+        <p>
+          Factor <m>x^2-7x-30</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We now need to find the factors of <m>-30</m>,
+      remember that only multiplying a negative number by a positive number can give us a negative product.
+      Let's examine the possibilities here:
+    </p>
+    <tabular>
+      <row>
+        <cell>Factors</cell>
+        <cell>Sum</cell>
+        <cell>Product</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell><m>-30,1</m></cell>
+        <cell><m>-29</m></cell>
+        <cell><m>-30</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell><m>-15,2</m></cell>
+        <cell><m>-13</m></cell>
+        <cell><m>-30</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell><m>\textbf{-10,3}</m></cell>
+        <cell><m>\textbf{-7}</m></cell>
+        <cell><m>\textbf{-30}</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell><m>-6,5</m></cell>
+        <cell><m>-1</m></cell>
+        <cell><m>-30</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell><m>-5,6</m></cell>
+        <cell><m>1</m></cell>
+        <cell><m>-30</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell><m>-3,10</m></cell>
+        <cell><m>7</m></cell>
+        <cell><m>-30</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell><m>-2,15</m></cell>
+        <cell><m>13</m></cell>
+        <cell><m>-30</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell><m>-1,30</m></cell>
+        <cell><m>29</m></cell>
+        <cell><m>-30</m></cell>
+      </row>
+    </tabular>
+    <p>
+      The factors of <m>-10</m> and <m>3</m> give us the sum and product that we are looking for.
+      Therefore, we can factor <m>x^2-7x-30</m> into <m>(x-10)(x+3)</m>. }
+    </p>
+    <example xml:id="SecondDegreeFactorExample4">
+      <statement>
+        <p>
+          Factor <m>2x^2+16x+30</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      It is important to recognize here that the coefficient of the <m>x^2</m> terms here does not equal <m>1</m>.
+      We can however, begin by dividing by a common factor,
+      which in this case is <m>2</m> and once we do that we are left with:
+      <me>
+        2x^2+16x+30=2(x^2+8x+15)
+      </me>
+    </p>
+    <p>
+      Remember that we want to be sure we have factored our expression completely.
+      We have to then attempt to factor what we have inside the parenthesis.
+      We are looking for factors of <m>15</m>, whose sum is <m>8</m>.
+      We check the factors of <m>15</m>, (<m>15</m>,
+      <m>1</m> - sum <m>16</m>),
+      (<m>5
+      <me>
+        ,3$ - sum $8$). We need the pair $5$, $3$. We can then factor $2x^2+16x+2$ into $2(x+5)(x+3)$. }
+        <example xml:id="SecondDegreeFactorExample5">
+          <statement>
+            <p>
+              Factor: \(x^3+x^2-6x\)
+            </p>
+          </statement>
+        </example>
+        \indenttext{You will notice that this expression is not in fact second degree because of the presence of the $x^3$, this is a third degree expression. We can however use the same ideas to factor this expression and begin by looking for a common factor between the three terms. There is no common factor between the coefficients other than 1. For the literal part, the highest power of $x$ that is a factor of $x^3$, $x^2$, and $x$ is $x$. Therefore, the common factor is $x$. Once we factor that out we are left with:
+      </me>
+      x^3+x^2-6x=x(x^2+x-6)
+      <me>
+        To factor completely, we need factors of $-6$ whose sum is $1$ (remember that the middle term, $x$, is equivalent to $1x$). The pairs to consider are ($6$, $-1$ - sum $5$), ($-6$, $1$ - sum $-5$), ($-3
+      </me>,
+      2</m> - sum <m>-1</m>), and
+      (<m>3</m>, <m>-2</m> - sum <m>1</m>).
+      We need the pair <m>3</m>, <m>-2</m>.
+      We can then factor <m>x^3+x^2-6x</m> into <m>x(x+3)(x-2)</m>. }
+    </p>
+    <example xml:id="SecondDegreeFactorExample6">
+      <statement>
+        <p>
+          Factor: <m>x^2-25</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      Notice that there are only <m>2</m> terms in this expression,
+      which leads us to believe that the coefficient of the
+      <q>middle term</q>
+      must be <m>0</m>.
+      We can think of this expression as <m>x^2+0x-25</m>.
+      We can factor in the same way we had in the previous examples,
+      factors of <m>-25</m> whose sum is <m>0</m>.
+      Our options are (<m>25</m>, <m>-1</m> – sum <m>24</m>), (<m>-25
+      <me>
+        ,1$ - sum $-24$) or ($-5$, $5$ - sum $0$). We need the pair $5$, $-5$. We can then factor $x^2-25$ into $(x+5)(x-5)$.  Let's use the distributive law to check our solution:
+        <md>
+          <mrow>(x+5)(x-5) \amp  = x(x)+x(-5)+5(x)+5(-5)</mrow>
+          <mrow>\amp</mrow>
+          <mrow>\amp  = x^2-5x+5x-25</mrow>
+          <mrow>\amp</mrow>
+          <mrow>\amp  = x^2-25</mrow>
+        </md>
+        }  Notice that the pair of integers we used were the same number with opposite signs.  This caused the middle term to simplify to $0$ when combining like terms.  Also note that multiplying a number by itself is \quotes{squaring} that number ($5 \cdot 5 = 25$) giving us a product that is a perfect square!  When we have a second degree expression in the form $a^2-b^2$ we can refer to that as the \textbf{difference of squares} \knownindex{\lt h&gt;Factor\lt /h&gt;\lt h&gt;Difference of Squares\lt /h&gt;} and factor into $(a+b)(a-b)$. This pattern requires subtraction in the original expression because that is how our middle terms were eliminated when combined.
+        <example xml:id="SecondDegreeFactorExample7">
+          <statement>
+            <p>
+              Factor: \(t^2-36\)
+            </p>
+          </statement>
+        </example>
+        \indenttext{Because $t \cdot t = t^2$ and $6 \cdot 6 = 36$, we can factor $t^2-36$ into $(t+6)(t-6)$. }
+        <example xml:id="SecondDegreeFactorExample8">
+          <statement>
+            <p>
+              Factor: \(2w^2-32\)
+            </p>
+          </statement>
+        </example>
+        \indenttext{We can begin factoring out a common factor here of 2 which leaves us with:
+      </me>
+      2(w^2-16)</m>$
+    </p>
+    <p>
+      We can continue to factor the expression inside the parenthesis knowing that $w\cdot w = w^2<m>and</m>4 \cdot 4 = 16<m>.
+      We factor</m>2w^2-32<m>into</m>2(w+4)(w-4)$. }
+    </p>
+  </introduction>
+  <subsection>
+    <title>Exercises</title>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>x^2+5x+6</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(x+2)(x+3)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>a^2-a-6</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>g^2+g-6</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(g+3)(g-2)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>r^2-4r-5</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>x^2+9x+14</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(x+7)(x+2)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>x^2-12x+36</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>x^2+9x+18</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(x+3)(x+6)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>y^2+7y-30</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>t^2+9t+20</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(t+5)(t+4)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>g^2-13g+36</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>x^2+10x-24</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(x+12)(x-2)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>h^2+h-30</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>f^2-7f+12</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(f-3)(f-4)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>v^2+14v+48</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>r^2-10r-24</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(r-12)(r+2)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>p^2-26p+48</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2b^2+10b+12</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2(b+3)(b+2)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2w^2+12w+10</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5x^2-50x+125</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>5(x-5)(x-5)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>x^3+3x^2-10x</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2w^3-4w^2+2w</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2w(w-1)(w-1)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>x^2-100</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>a^2-49</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(a+7)(a-7)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3x^2-75</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>4x^2-36</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>4(x-3)(x+3)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>q^2-225</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2p^2-72</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2(p+6)(p-6)</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>r^2-121</m>
+        </p>
+      </statement>
+    </exercise>
+    
+  </exercises></subsection>
+</section>

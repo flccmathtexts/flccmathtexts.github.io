@@ -1,0 +1,392 @@
+<section xml:id="NegativeExponents">
+  <title>Negative Exponents</title>
+  <introduction>
+    <p>
+      What does <m>10^{-3}</m> represent?
+      Typing it into your calculator yields a value of <m>0.001</m>.
+      Why?
+    </p>
+    <p>
+      We think of a positive integer exponent indicating repeated multiplication.
+      For example,
+      <m>10^4=10 \cdot 10 \cdot 10 \cdot 10 = 10,000</m>.
+      A negative integer exponent can be viewed as indicative of repeated division.
+      For example;
+      <me>
+        \displaystyle 10^{-3} = 1\cdot 10^{-3} = 1 \div 10 \div 10 \div 10 = \frac{1}{10 \cdot 10 \cdot 10}=\frac{1}{10^3}
+      </me>
+    </p>
+    <definition>
+      <statement>
+        <p>
+              <idx><h>Exponents</h><h>Negative</h></idx> <em><em>Negative Exponents</em></em>
+        </p>
+        <p>
+          We define
+          <me>
+            \displaystyle x^{-a}=\frac{1}{x^a}
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <example xml:id="NegativeExponentsExample1">
+      <statement>
+        <p>
+          Simplify the expression <m>2^{-4}</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Using the definition for negative exponents:
+      <me>
+        \displaystyle 2^{-4}=\frac{1}{2^4}=\frac{1}{16}=0.0625
+      </me>
+    </p>
+    <p>
+      Ok.
+      Now let's back up a little bit.
+      What happens if we start with <m>\displaystyle \frac{10^2}{10^5}</m>?
+      Expanding this expression:
+      <me>
+        \displaystyle \frac{10 \cdot 10}{10 \cdot 10 \cdot 10 \cdot 10 \cdot 10} = \frac{10}{10} \cdot\frac{10}{10} \cdot\frac{1}{10 \cdot 10 \cdot 10} = 1 \cdot 1 \cdot \frac{1}{10^3}
+      </me>
+    </p>
+    <p>
+      This confirms that the division rule works even in cases when the exponent in the numerator is less than the exponent in the denominator applied to the same base.
+      In other words:
+      <me>
+        \displaystyle \frac{10^2}{10^5} = 10^{2-5} = 10^{-3} = \frac{1}{10^3}
+      </me>
+    </p>
+    <p>
+      Armed with this new insight,
+      we can now practice simplifying expression that didn't fit into the same patterns as what we've worked on so far.
+    </p>
+    <example xml:id="NegativeExponentsExample2">
+      <statement>
+        <p>
+          Simplify the expression below and express your answer both with and without negative exponents.
+          <me>
+            \frac{a^5}{a^9}
+          </me>
+        </p>
+      </statement>
+    </example>
+    <p>
+      Applying the division rule:
+      <me>
+        \frac{a^5}{a^9}=a^{5-9}=a^{-4}
+      </me>
+    </p>
+    <p>
+      Rewriting the expression equivalently,
+      without a negative exponent:
+      <me>
+        a^{-4}=\frac{1}{a^4}
+      </me>
+    </p>
+    <example xml:id="NegativeExponentsExample3">
+      <statement>
+        <p>
+          Simplify the expression below and express your answer without negative exponents.
+          <me>
+            \frac{10}{5x^{-6}}
+          </me>
+        </p>
+      </statement>
+    </example>
+    <p>
+      This expression is a bit different,
+      as our base with the negative power is now in the denominator of our fractions.
+      One approach to simplify this is as follows:
+    </p>
+    <p>
+      Rewriting the expression as a product:
+      <me>
+        \frac{10}{5x^{-6}}=\frac{10}{5}\cdot\frac{1}{x^{-6}}=2 \cdot \frac{1}{x^{-6}}=\frac{2}{x^{-6}}
+      </me>
+    </p>
+    <p>
+      Here, we will use the definition that
+      <m>x^{-a}=\frac{1}{x^a}</m> to rewrite this expression without a negative exponent:
+    </p>
+    <p>
+      Rewriting the expression as a product again:
+      <me>
+        \frac{10}{5x^{-6}}=2 \cdot \frac{1}{x^{-6}}
+      </me>
+    </p>
+    <p>
+      Rewriting without the negative exponent:
+      <me>
+        \frac{10}{5x^{-6}}=2 \cdot \frac{1}{\left(\frac{1}{x^{6}}\right)}
+      </me>
+    </p>
+    <p>
+      Then we multiply the numerator and denominator by the reciprocal of the denominator to simplify.
+      The reciprocal of <m>\frac{1}{x^6}</m> is <m>\frac{x^6}{1}=x^6</m>.
+      <me>
+        \frac{10}{5x^{-6}}=2 \cdot \frac{1}{\left(\frac{1}{x^{6}}\right)}=2 \cdot \frac{1 \cdot x^6}{\left(\frac{1}{x^{6}}\right)\cdot\left(\frac{x^{6}}{1}\right)}=2\cdot \frac{x^6}{\left(\frac{x^6}{x^6}\right)}
+      </me>
+    </p>
+    <p>
+      Here we identify that <m>\frac{x^6}{x^6} = 1</m> and we obtain:
+      <me>
+        \frac{10}{5x^{-6}}=2\cdot\frac{x^6}{1}=2x^6
+      </me>
+    </p>
+    <p>
+      Note: it is not
+      <q>bad</q>
+      or incorrect to have a negative exponent in an expression or an equation.
+      We are practicing rewriting expressions with and without negative exponents to reinforce what they represent.
+    </p>
+    <example xml:id="NegativeExponentsExample4">
+      <statement>
+        <p>
+          Rewrite the expression in simplest form
+          <me>
+            .\displaystyle \frac{64b^6c^{-4}}{4b^9c^{-7}}
+          </me>
+        </p>
+      </statement>
+    </example>
+    <p>
+      Dividing the coefficients and applying the division rule:
+      <me>
+        \displaystyle 16b^{6-9}c^{-4-(-7)}=16b^{-3}c^{3}
+      </me>
+    </p>
+    <p>
+      This simplifies into several equivalent expressions:
+      <me>
+        \displaystyle \frac{64b^6c^{-4}}{4b^9c^{-7}}=16b^{-3}c^{3} = \frac{16c^3}{b^{3}}=16\frac{c^3}{b^{3}}
+      </me>
+    </p>
+    <example xml:id="NegativeExponentsExample5">
+      <statement>
+        <p>
+          Rewrite the expression in simplest form.
+          <me>
+            {\left(3d^{-4}e^5\right)}^{-2}
+          </me>
+        </p>
+      </statement>
+    </example>
+    <p>
+      Applying the power rule:
+      <me>
+        {\left(3d^{-4}e^5\right)}^{-2}={\left(3\right)}^{-2}{\left(d^{-4}\right)}^{-2}{\left(e^5\right)}^{-2}=3^{-2}d^9e^{-10}
+      </me>
+    </p>
+    <p>
+      Simplifying:
+      <me>
+        {\left(3d^{-4}e^5\right)}^{-2}=\frac{1}{9}d^8e^{-10}
+      </me>
+    </p>
+    <p>
+      Rewriting without a negative exponent:
+      <me>
+        {\left(3d^{-4}e^5\right)}^{-2}=\frac{1d^8}{9e^{10}}
+      </me>
+    </p>
+  </introduction>
+  <subsection>
+    <title>Exercises</title>
+    <p>
+      Simplify each of the following.
+      Express both with and without negative exponents.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>3^{-2}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3^{-2}=\frac{1}{9}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5^{-2}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{b^5}{b^{15}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>b^{-5}=\frac{1}{b^5}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{1}{a^{-4}}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{c^{-9}}{c^2}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>c^{-11}=\frac{1}{c^{11}}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{2^{-3}}{2^{-5}}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2d^{-3}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2d^{-3}=\frac{2}{d^3}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(2d\right)^{-3}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{3e^5}{15e^{-5}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>5^{-1}e^{10}=\frac{e^{10}}{5}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{f^7f^{-3}}{f^{-6}}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{g^{-4}g^9}{g^{15}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>g^{-5}=\frac{1}{g^5}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{-4h^{-2}j^{-6}}{16h^7j^{-10}}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{3}{4k^{-4}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3\cdot4^{-1}k^4 = \frac{3}{4}k^4</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{3k^{-4}}{4}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{1}{2m^{-4}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2^{-1}m^4=\frac{m^4}{2}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{1}{(2m)^{-4}}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>{\left(2n^{-3}\right)}^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>4n^{-6}=\frac{4}{n^6}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>{\left(2n^{-3}\right)}^{-2}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+  </exercises></subsection>
+</section>

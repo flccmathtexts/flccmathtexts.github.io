@@ -1,0 +1,1048 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AlgebraicSubstitution">
+
+  <title>Algebraic Substitution</title>
+  <introduction>
+    <p>
+      A 4000 year old Babylonian tablet,
+      now on display at the Institute for the Study of the Ancient World at New York University,
+      poses the following question:
+    </p>
+    <p>
+      <q>If the cost of digging a trench is 9 gin,
+      and the trench has a length of 5 ninda and is one-half ninda deep,
+      and if a worker's daily load of earth costs 10 gin to move,
+      and his daily wages are 6 se of silver,
+      then how wide is the canal?</q><fn>
+      Source: Exhibition Review: \quotes{Masters of Math,
+      from Old Babylon} by Edward Rothstein.
+      New York Times. 11/26/10
+      </fn>
+    </p>
+    <p>
+      Except for the unfamiliar units
+      (what the heck is a ninda or a gin or a se?)
+      this looks like a pretty typical algebra problem,
+      and you might imagine ancient Babylonian students sweating over this problem in algebra class.
+      You might imagine them struggling through the wording to set up an equation,
+      and then wrestling through the algebra to solve that equation and get the answer.
+      Except for one thing:
+      algebra as we know it wasn't invented until thousands of years later.<fn>
+      There was no moment of invention,
+      and no single inventor of algebra,
+      so we can't really pinpoint \quotes{when algebra was invented}. The methods we now call \quotes{algebra} developed over the course of more than 1000 years.
+      But all of that happened long after the Babylonians.
+      Most people consider the start of development of our familiar variables-and-equations algebra to the work of the Persian mathematician Muhammad ibn Mūsā al-Khwārizmī, who lived from around 780-850 CE. The word \quotes{algebra} comes from one of the words in the Arabic title of one of his books \quotes{Al-Kitāb al-mukhtaṣ ar fī ḥ isāb al-jabr wa-l-muqābala}.
+      </fn>
+    </p>
+    <p>
+      The methods available to Babylonian math students and their teachers didn't include the tools of variables and equations that we are so used to today.
+      They had their methods of course,
+      but a problem like this was vastly more difficult to solve without the tools than we now take for granted.
+    </p>
+    <p>
+      Even though it may not always seem that way,
+      the point of algebra is to make problem solving simpler.
+      We use variables, algebraic expressions built from them,
+      and equations using them to approach problem-solving in a logical and organized way.
+      In this chapter,
+      we'll review some of the basic tools and methods of this approach.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Substitution in Algebraic Expressions</title>
+    <p>
+      In algebra we use symbols as a more compact alternative to ordinary language.
+      For example, the fact:
+    </p>
+    <p>
+      The area of a rectangle is the result of multiplying its length by its width
+    </p>
+    <p>
+      can be expressed much more simply using mathematical symbols and variables in place of words and as the equation:
+      <me>
+        A=LW
+      </me>
+    </p>
+    <p>
+      Both the English sentence and the equation are saying the same thing,
+      but it is usually advantageous to use symbols rather than words.
+    </p>
+    <p>
+      An <em>algebraic expression</em>
+          <idx><h>Algebraic Expression</h></idx>
+      is any collection of variables and/or numbers tied together by arithmetic operations.
+      In the above equation, we used the algebraic expression
+      <q>LW</q>
+      to represent the instructions for calculating the area.
+    </p>
+    <p>
+      Now, suppose we have a rectangular garden that measures 20 feet by 16 feet.
+      To calculate its area, we can use the equation above,
+      plugging in 20 for <m>L</m> and 16 for <m>W</m>, to get:
+      <me>
+        A = (20 \text{ feet } )(16 \text{ feet } ) = 320 \text{ square feet }
+      </me>
+    </p>
+    <p>
+      <q>Plugging in</q>
+      specific values for the variables and evaluating the result is more formally known as
+          <idx><h>Algebraic Substitution</h></idx>
+      <em>algebraic substitution</em>.
+    </p>
+    <algorithm xml:id="AlgebraicSubstitutionExample1">
+      <statement>
+        <p>
+          Evaluate the algebraic expression
+          <m>t^2+2t-4p</m> if <m>t=7</m> and <m>p=-3</m>
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      We start with the equation,
+      and then replace the variables <m>t</m> and <m>p</m> with their given values,
+      and then do the arithmetic:
+      <me>
+        t^2+2t-4p=(7)^2+2(7)-4(-3)=75
+      </me>
+    </p>
+    <p>
+      Since we don't know what this algebraic expression is meant to represent or the appropriate units for the variables represent,
+      we just leave the final answer as <m>75</m>. }
+    </p>
+    <algorithm xml:id="AlgebraicSubstitutionExample2">
+      <statement>
+        <p>
+          Evaluate <m>\frac{c^2V}{2}</m> if <m>c=-3</m> and <m>V=200</m>
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      The original equation contains <m>c^2</m>,
+      so whatever <m>c</m> is, we need to square it.
+      But if we write <m>-3^2</m>,
+      remember that it is only the <m>3</m> that gets squared.
+      To make sure that the entire <m>-3</m> will be squared,
+      we need to use parentheses:
+      <me>
+        \frac{c^2 V}{2} = \frac{(-3)^2(200)}{2} = \frac{9*200}{2} = \frac{1800}{2} = 900
+      </me>
+    </p>
+    <p>
+      The example above warns of a common and easy-to-make mistake when substituting negative numbers.
+      This error can always be avoided by putting parentheses around the number.
+      While parentheses are not always needed,
+      you may want to consider always putting parentheses around negative numbers when you substitute them in,
+      to play it safe.
+    </p>
+    <algorithm xml:id="AlgebraicSubstitutionExample3">
+      <statement>
+        <p>
+          Evaluate <m>P^2T^3-1</m> if <m>P=-4</m> and <m>T=2</m>
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      Substituting in the given values:
+      <me>
+        P^2T^3-1=(-4)^2(2)^3-1=16*8-1=128-1=127
+      </me>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Formulas</title>
+    <p>
+      When we use an algebraic expression or an equation involving algebraic expressions to express a specific relationship between quantities,
+      we usually call it a formula.
+      In the discussion above,
+      the equation <m>A=LW</m> is the formula for the area of a rectangle.
+      On the other hand,
+      we would probably not call the algebraic expressions in <xref ref="AlgebraicSubstitutionExample1">Examples</xref>,
+      <xref ref="AlgebraicSubstitutionExample2" />
+      and <xref ref="AlgebraicSubstitutionExample3" /> formulas,
+      because we don't really have any sense of those expressions' purposes or meanings.
+    </p>
+    <p>
+      When you are just substituting into algebraic expressions without any sense of what they represent,
+      all you can give in a final answer is the just numeric result.
+      When you have know the units involved or the meaning of what you are calculating,
+      it is appropriate to state your final answer using the appropriate units and/or in a way that relates it to the meaning.
+    </p>
+    <algorithm xml:id="AlgebraicSubstitutionExample4">
+      <statement>
+        <p>
+          The formula for converting from temperature in Fahrenheit to temperature in Celsius is <m>C=\frac{5}{9}(F-32)</m>.
+          If the temperature is <m>14 ^\circ \text{F}</m>,
+          what is the temperature in Celsius?
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      It is clear that in the formula <m>F</m> represents temperature in degrees Fahrenheit and <m>C</m> represents temperature in degrees Celsius.
+      So we substitute given <m>F=14</m> to get:
+      <md>
+        <mrow>C \amp  =\frac{5}{9}(F-32)</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = \frac{5}{9}(14-32)</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  =\frac{5}{9}(-18)</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = -10</mrow>
+      </md>
+    </p>
+    <p>
+      Since we know the units involved here,
+      it would be most appropriate to state the final answer as
+      <q>the temperature is <m>-10^\circ \text{C}</m></q>
+      or simply
+      <q><m>-10^\circ \text{C}</m>.</q>
+    </p>
+    <p>
+      <q><m>C=-10</m></q>
+      would probably not be a satisfactory answer in this situation.
+      If you asked someone
+      <q>What is <m>14^\circ</m> Fahrenheit in Celsius</q>
+      and they answered
+      <q><m>C=-10</m></q>
+      you'd probably find that a pretty strange way of talking. }
+    </p>
+    <p>
+      Of course, if you don't know the appropriate units or the context,
+      then you can only reasonably give the numeric answer.
+    </p>
+    <algorithm xml:id="AlgebraicSubstitutionExample5">
+      <statement>
+        <p>
+          The formula for the energy stored in a charged capacitor is <m>W=\frac{1}{2}cv^2</m>.
+          Calculate <m>W</m> if <m>c=100</m> and <m>v=50</m>
+        </p>
+      </statement>
+    </algorithm>
+    <md>
+      <mrow>W \amp  = \frac{1}{2}(100)(50)^2</mrow>
+      <mrow>\amp</mrow>
+      <mrow>\amp  = \frac{1}{2}(100)(2500)</mrow>
+      <mrow>\amp</mrow>
+      <mrow>\amp  = \frac{1}{2}(250,000)</mrow>
+      <mrow>\amp</mrow>
+      <mrow>\amp  = 125,000</mrow>
+    </md>
+    <p>
+      In this case, the best we can do is say
+      <q>the energy stored is <m>W=125,000</m></q>
+      or even just
+      <q><m>W=125,000</m></q>, since we don't know the units.
+      If we don't know the units or the meaning for a formula,
+      obviously we can't be expected to use them in the final answer.
+      If, however, we did know the units,
+      it would be appropriate to use them. }
+    </p>
+    <algorithm xml:id="AlgebraicSubstitutionExample6">
+      <statement>
+        <p>
+          The energy, in joules,
+          stored in a charged capacitor is given by <m>W=\frac{1}{2}cv^2</m>,
+          where <m>c</m> is the capacitance in farads and <m>v</m> is the current in volts.
+          Determine the energy stored if the capacitance is 100 farads and the current is 50 volts.
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      This is the same problem as <xref ref="AlgebraicSubstitutionExample5">Example</xref>,
+      except that here we know more about what the formula represents.
+      A more appropriate answer to this question would be
+      <q>the energy stored is 125,000 joules</q>
+      or just
+      <q>125,000 joules</q>.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Input-Output and Your Calculator</title>
+    <p>
+      Sometimes we have a formula that we need to use repeatedly.
+      Suppose that you are doing a presentation for a phys ed class where you want to show the relationship between daily exercise and weight.
+      In your research,
+      you've formulas that predict a person's weight one year from now based on how much they exercise.
+      For a 40 year old man who is 5' 10'' and weighs 200 lbs,
+      and who consumes 2800 calories per day,
+      his projected weight <m>W</m> one year from now is given by the formula:
+      <me>
+        W=210-\frac{m}{3}
+      </me>
+      where <m>m</m> is the number of minutes of vigorous exercise he gets on average per day.
+    </p>
+    <p>
+      You don't think just showing this formula will give your audience a very good sense of the relationship between exercise and weight,
+      and so you want to present a table,
+      showing what his projected weight would be at different levels of exercise,
+      something like this:
+    </p>
+    <tabular>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>If his average daily vigorous exercise is:</cell>
+        <cell>His projected weight in one year would be:</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>none</cell>
+        <cell />
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>30</cell>
+        <cell />
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>60</cell>
+        <cell />
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>90</cell>
+        <cell />
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>120</cell>
+        <cell />
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+    </tabular>
+    <p>
+      To fill in the projected weights in this table,
+      you will need to substitute each of the different exercise amounts into the formula.
+      This sort of table is called an input-output table,
+      because it shows the result (output) you get with each different value you input into the formula.
+    </p>
+    <p>
+      It is not difficult to do this by hand,
+      but it is a little tedious.
+      Your TI-83 or TI-84 calculator has the built-in ability to create tables for a given formula.
+      Let's walk through how to use the calculator to create this table.
+    </p>
+    <p>
+      First, we need to give the calculator the formula we are using.
+      In the upper left hand corner of your calculator,
+      you should see a key labeled
+      <q>Y=</q>. Hit this key now and you should see a screen that looks like this:
+    </p>
+    <figure>
+      <caption>Calculator Formula Input Screen</caption>
+      <image source="AlgebraicSubstitutionImages/CalculatorFormulaScreen.png" />
+    </figure>
+    <p>
+      If there are any formulas already entered,
+      you can either type over them or delete them using the
+      <q>CLEAR</q>
+      key.
+    </p>
+    <p>
+      The calculator can keep track of multiple formulas at once,
+      but we only need to use the one right now,
+      so we will just enter our formula on the Y1 line.
+    </p>
+    <p>
+      While any letter at all can be used as a variable,
+      the calculator is not quite so flexible.
+      The input variable
+      (the one you are going to substitute different values for)
+      must always be X, and the output variable
+      (the result)
+      must always be Y. Since the
+      <q>Y1=</q>
+      is already built in, we just need to enter the
+      <q>210-X/3</q>
+      part of the formula.
+      You can do that now using the calculator keypad.
+      For the X, you'll notice a key labeled
+      <q><m>\text{X} ,\text{T} ,\theta,\text{n}</m></q>. Hitting that key will give you the X you need.
+      The result should look like this:
+    </p>
+    <figure>
+      <caption>Formula Entered into Calculator</caption>
+      <image source="AlgebraicSubstitutionImages/CalculatorFormulaEx6Small.png" />
+    </figure>
+    <p>
+      Now, to set up the table.
+      In the top row of your calculator you will see a key labeled
+      <q>WINDOW</q>
+      with
+      <q>TBLSET</q>
+      marked above it.
+      Hit
+      <q>2nd</q>
+      and then that key, and you will arrive at the Table Setup screen,
+      which should look like this (the specific values on your screen may differ)
+    </p>
+    <figure>
+      <caption>Calculator Table Setup Screen</caption>
+      <image source="AlgebraicSubstitutionImages/CalculatorTableSetupDefault.svg" />
+    </figure>
+    <p>
+      For our table,
+      the exercise amounts we are inputting start with 0 and go up in increments of 30 minutes.
+      So, set the value for
+      <q>TblStart</q>
+      to 0, and
+      <q><m>\Delta</m>Tbl</q>
+      to 30.
+      The
+      <q><m>\Delta</m></q>
+      is the Greek letter delta,
+      which is commonly used in math and science to represent
+      <q>change</q>
+      or
+      <q>change in</q>. So we are telling the calculator to start the table at 0 minutes and then change that input value in increments of 30 minutes.
+    </p>
+    <p>
+      Next, set
+      <q>Independent</q>
+      to Auto.
+      Independent variable is just another term for input variable;
+      in this case we are telling the calculator to plug in values of that variable automatically based on our instructions.
+      If you instead set this to
+      <q>Ask</q>
+      you will need to type in the input values you want to use manually.
+      Dependent variable is another word for output variable,
+      which we also want the calculator to find automatically,
+      so we set that to Auto as well.
+      The result should look like this:
+    </p>
+    <figure>
+      <caption>Calculator Table Setup Screen</caption>
+      <image source="AlgebraicSubstitutionImages/CalculatorTableSetupAuto.png" />
+    </figure>
+    <p>
+      Now we are ready to see our table.
+      In the upper right hand corned there is a key labeled
+      <q>GRAPH</q>
+      and above it the marking
+      <q>TABLE</q>. Hit
+      <q>2nd</q>
+      and then that key, and you should see this result:
+    </p>
+    <figure>
+      <caption>Calculator Automatically Generated Table</caption>
+      <image source="AlgebraicSubstitutionImages/CalculatorTableEx6.png" />
+    </figure>
+    <p>
+      Note that even though we only wanted to go as far as 120 minutes,
+      the calculator keeps going.
+      We never told it where to stop, and we never actually do.
+      If you don't care about the values past 120 minutes, just ignore them.
+      (Likewise, if you want the calculator to go farther,
+      you can continue the table in either direction by scrolling using the up and down arrow keys.)
+      And so, now we are ready to put it all together and make that presentation to our phys ed class:
+    </p>
+    <tabular>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>If his average daily vigorous exercise is:</cell>
+        <cell>His projected weight in one year would be:</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>none</cell>
+        <cell>210 lbs</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>30</cell>
+        <cell>200 lbs</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>60</cell>
+        <cell>190 lbs</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>90</cell>
+        <cell>180 lbs</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>120</cell>
+        <cell>170 lbs</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+      </row>
+    </tabular>
+    <p>
+      In summary:
+    </p>
+    <definition>
+      <statement>
+        <p>
+              <idx><h>Calculator</h><h>Table</h></idx> <em><em>Creating an Input-Output Table on a TI-83/84</em></em>
+          <ol>
+            <li>
+              <p>
+                Hit the
+                <q>Y=</q>
+                key and enter the formula.
+                Use Y1 (or Y2, Y3, etc. as needed) as the output variable,
+                and change the input variable to X
+              </p>
+            </li>
+            <li>
+              <p>
+                Use 2nd WINDOW (TblSet) to set up the table.
+              </p>
+            </li>
+            <li>
+              <p>
+                Use TblStart and <m>\Delta</m>Tbl to set up the initial value of the input variable and increment,
+                and set Indpnt to
+                <q>Auto</q>
+                to have the calculator set up the input values automatically.
+              </p>
+            </li>
+            <li>
+              <p>
+                Ignore TblStart and <m>\Delta</m>Tbl
+                (it doesn't matter what they are set to)
+                and set Indpnt to
+                <q>Ask</q>
+                to type in input values manually.
+              </p>
+            </li>
+            <li>
+              <p>
+                Always set Dependent to
+                <q>Auto</q>
+              </p>
+            </li>
+            <li>
+              <p>
+                Hit 2nd GRAPH (Table) to see the table.
+                If you set Indpnt to
+                <q>Ask</q>
+                type in the values you want to plug in in the X column.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </definition>
+    <algorithm xml:id="AlgebraicSubstitutionExample7">
+      <statement>
+        <p>
+          Using the formula <m>C=\frac{5}{9}(F-32)</m> given in <xref ref="AlgebraicSubstitutionExample4">Example</xref>,
+          create a table on your calculator which shows the Celsius equivalent for temperatures of <m>0^\circ \text{F}</m>,
+          <m>32^\circ \text{F}</m>, <m>68^\circ \text{F}</m>,
+          <m>98.6^\circ \text{F}</m>, and <m>212^\circ \text{F}</m>.
+        </p>
+      
+    <p>
+      First we enter the formula, replacing the input variable,
+      using Y1 in place of C and X in pace of F. We will put parentheses around the fraction 5/9 to make it clear that the (X-32) is not part of the denominator.
+      (This is actually not needed in this case,
+      since order of operations would evaluate it with only the 9 in the denominator,
+      but it is still clearer with the extra parentheses.)
+    </p>
+    <figure>
+      <caption>Calculator Formula Entered on Formula Screen</caption>
+      <image source="AlgebraicSubstitutionImages/CalculatorFormulaEx7.png" />
+    </figure>
+    <p>
+      Now, since there is no set increment between the input values we want to use,
+      we will set the Independent variable to Ask. (It does not matter what your TblStart and <m>\Delta</m>Tbl are set to;
+      the calculator will ignore them.):
+    </p>
+    <figure>
+      <caption>Calculator Table Setup Screen</caption>
+      <image source="AlgebraicSubstitutionImages/CalculatorTableSetupEx7.png" />
+    </figure>
+    <p>
+      Now, we got to the table, and enter the input values we want.
+      (If your calculator already has some X values in place you can just type over them.)
+      The result should look like this:
+    </p>
+    <figure>
+      <caption>Calculator Table Generated from Entered Values</caption>
+      <image source="AlgebraicSubstitutionImages/CalculatorTableEx7.png" />
+    </figure>
+    </statement>
+    </algorithm>
+  </subsection>
+  <subsection>
+    <title>Tables with Multiple Inputs</title>
+    <p>
+      The examples we've done here with tables both involved formulas where there was just one input variable.
+      Could we create a table for a formula where we needed to input more than one value,
+      such as the <m>W=\frac{1}{2}cv^2</m> we used in <xref ref="AlgebraicSubstitutionExample4">Examples</xref>
+      and <xref ref="AlgebraicSubstitutionExample5" />?
+    </p>
+    <p>
+      The TI-83 and 84 calculators can do this,
+      but they are really set up mainly for tables where there will only be one input value.
+      In our work in this course, that will be fine.
+      As we will see shortly,
+      most of our attention in this course will be devoted to problems where there is just one input variable and one output variable.
+      So we don't need to concern ourselves at the moment with calculator tables for multiple inputs.
+      Any time we need to substitute in multiple values,
+      we will do this by substituting and evaluating,
+      as we did in <xref ref="AlgebraicSubstitutionExample4">Examples</xref>
+      and <xref ref="AlgebraicSubstitutionExample5" />.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Exercises</title>
+    <subsubsection>
+      <title>Substituting into Algebraic Expressions</title>
+      <p>
+        Evaluate the given algebraic expressions by substituting in the given variable values.
+      </p>
+      
+      <exercises><exercise>
+        <statement>
+          <p>
+            Evaluate <m>3x-1</m> if <m>x=8</m>
+          </p>
+        </statement>
+        <solution>
+        <p>23</p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            Evaluate <m>2y+5</m> if <m>y=4</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            Evaluate <m>2SP</m> if <m>S=3</m> and <m>P=7</m>
+          </p>
+        </statement>
+        <solution>
+        <p>42</p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            Evaluate <m>3k+m</m> if <m>k=4</m> and <m>m=5</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            Evaluate <m>3z^2+3z+1</m> if <m>z=-3</m>
+          </p>
+        </statement>
+        <solution>
+        <p>19</p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            Evaluate <m>2p+p^2</m> if <m>p=3</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            Evaluate <m>t^2+3t+1</m> if <m>t=5</m>
+          </p>
+        </statement>
+        <solution>
+        <p>41</p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            Evaluate <m>2p+p^2</m> if <m>p=-7</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            Evaluate <m>w^2-20w+250</m> if <m>w=-10</m>
+          </p>
+        </statement>
+        <solution>
+        <p>550</p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            Evaluate <m>2r^2-3r+5</m> if <m>r=-2</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            Evaluate <m>\frac{T-R^2}{NR}</m> if <m>T=100</m>,
+            <m>R=4</m>, and <m>N=2</m>
+          </p>
+        </statement>
+        <solution>
+        <p>10.5</p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            Evaluate <m>\frac{pq-12}{q}</m> if <m>p=13</m> and <m>q=2</m>
+          </p>
+        </statement>
+      </exercise>
+      
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Formulas</title>
+      <p>
+        Use the given formulas and information to answer the questions posed.
+        Phrase your answers appropriately for the information given.
+        Round appropriately if necessary.
+      </p>
+      <exercises><exercise>
+        <statement>
+          <p>
+            A publisher's printing cost <m>C</m>
+            (in dollars)
+            of producing <m>x</m> copies of a textbook is given by the formula <m>C=400+25x</m>.
+            What would be the cost of producing 238 copies?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>$6350</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A printer's cost <m>C</m>
+            (in dollars)
+            to produce <m>x</m> copies of a travel brochure is given by the formula <m>C=275+.24x</m>.
+            What would be the cost to print 3500 copies of the brochure?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The height of a ball <m>h</m>
+            (in feet)
+            <m>t</m> seconds after it is thrown upward is given by the formula <m>h=-16t^2+60t+7</m>.
+            What is the height of the ball three seconds after it is thrown?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>43</m> feet
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The height of a javelin <m>h</m>
+            (in meters)
+            <m>t</m> seconds after it is thrown upward is given by the formula <m>h=-4.9t^2 + 17.4t+1.8</m>.
+            What is the javelin's height four seconds after being thrown?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            At room temperature and pressure,
+            the quantity of carbon dioxide <m>A</m>
+            (in moles)
+            in a container having volume <m>V</m> litres is given by the formula <m>A=\frac{V}{24}</m>.
+            What quantity of carbon dioxide will there be in a 6000 liter tank at room temperature and pressure?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>250</m> moles
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            At room temperature and pressure,
+            the mass of carbon dioxide gas <m>M</m>
+            (in grams)
+            in a container having volume <m>V</m> liters is given by the formula <m>M=\frac{44V}{24}</m>.
+            What is the mass of carbon dioxide contained in a 36 liter container at room temperature and pressure?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The kinetic energy <m>E</m> in joules possessed by an object with mass <m>m</m> kilograms moving at <m>v</m> meters per second is given by the formula <m>E=]frac{1}{2}mv^2</m>.
+            Determine the kinetic energy of a 30 kilogram object moving at 12 meters per second.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>2160</m> joules
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The kinetic energy <m>E</m> in joules possessed by an object with mass <m>m</m> kilograms moving at <m>v</m> meters per second is given by the formula <m>E=\frac{1}{2}mv^2</m>.
+            Determine the kinetic energy of a 15 kilogram object moving at 20 meters per second.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A homeowner is considering installing a geothermal heating system.
+            The system will cost a lot up front to install,
+            but will cost much less to operate each year than her current system.
+            The time <m>T</m> in years that it will take to recoup the extra cost of installing the system is given by the formula
+            <m>T=\frac{12000}{K-300}</m> where <m>K</m> is the annual cost of operating her current system.
+            How long will it take to recoup the cost if her current system costs <m>$1800</m> to operate?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>15</m> years
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A retail store is considering replacing its current lighting fixtures with high-efficiency LED lighting.
+            The LED lighting will cost more initially to install,
+            but will cost less to operate.
+            The time <m>T</m> in months that it will take to recoup the additional cost of the LED lighting is given by the formula
+            <m>T=\frac{4200}{D-170}</m> where <m>D</m> is the monthly cost of the current lighting.
+            How long will it take to recoup the LED system's cost if the current lighting costs <m>$380</m> per month?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A publisher's average printing cost per textbook <m>a</m>
+            (in dollars)
+            for a print run of <m>x</m> copies of a textbook is given by the formula <m>a=\frac{400+25x}{x}</m>.
+            What would be the average cost per textbook in a print run of 580 copies?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>$25.69</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A printer's average cost per brochure <m>a</m>
+            (in dollars)
+            to produce <m>x</m> copies of a travel brochure is given by the formula <m>a=\frac{275+.24x}{x}</m>.
+            What would be the cost to print 2500 copies of the brochure?
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Input-Output Tables</title>
+      <p>
+        Create an Input-Output table in each of the following situations
+      </p>
+      <exercises><exercise>
+        <statement>
+          <p>
+            A travel agent sells travelers checks denominated in foreign currencies to their customers.
+            The cost in US dollars of buying travelers checks worth <m>x</m> euros is calculated using the formula <m>y=1.345x+27.50</m>.
+            The agent wants to post a table showing what the cost would be to buy €<m> 250</m>,
+            €<m> 500</m>, €<m>750</m>, €<m> 1000</m>,
+            €<m> 1250</m> and €<m> 1500</m> worth of travelers' checks.
+            Create the table he is looking for.
+            (Note:
+            <q>€<m></m></q>
+            is the symbol for euros.)
+          </p>
+        </statement>
+        <solution>
+          <tabular>
+            <row>
+              <cell><m>x</m></cell>
+              <cell><m>y</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell>€<m> 250</m></cell>
+              <cell><m>$363.75</m></cell>
+            </row>
+            <row>
+              <cell>€<m> 500</m></cell>
+              <cell><m>$700.00</m></cell>
+            </row>
+            <row>
+              <cell>€<m> 750</m></cell>
+              <cell><m>$1036.25</m></cell>
+            </row>
+            <row>
+              <cell>€<m> 1000</m></cell>
+              <cell><m>$1372.50</m></cell>
+            </row>
+            <row>
+              <cell>€<m> 1250</m></cell>
+              <cell><m>$1708.75</m></cell>
+            </row>
+            <row>
+              <cell>€<m> 1500</m></cell>
+              <cell><m>$2045.00</m></cell>
+            </row>
+          </tabular>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A flooring store wants to promote a sale in which they will install any amount of carpeting for just <m>$75</m>
+            (plus the cost of the carpeting).
+            During this sale,
+            for their most popular carpet style the cost to carpet <m>x</m> square feet can be found using the formula <m>y=3.98x+75</m>.
+            The store manager wants to create a table which will show the total cost to carpet 300, 600, 900, 1200, 1500 and 1800 square feet.
+            Create this table for him.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The height of a ball <m>h</m>
+            (in feet)
+            <m>t</m> seconds after it is thrown upward is given by the formula <m>h=-16t^2+60t+7</m>.
+            Create a table which shows the height of the ball 0, 0.5, 1.0, 1.5, 2.0, 2.5 and 3.0 seconds after being thrown.
+          </p>
+        </statement>
+        <solution>
+          <tabular>
+            <row>
+              <cell><m>t</m></cell>
+              <cell><m>h</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell />
+              <cell />
+            </row>
+            <row>
+              <cell><m>0.0</m> seconds</cell>
+              <cell><m>7</m> feet</cell>
+            </row>
+            <row>
+              <cell><m>0.5</m> seconds</cell>
+              <cell><m>33</m> feet</cell>
+            </row>
+            <row>
+              <cell><m>1.0</m> seconds</cell>
+              <cell><m>51</m> feet</cell>
+            </row>
+            <row>
+              <cell><m>1.5</m> seconds</cell>
+              <cell><m>61</m> feet</cell>
+            </row>
+            <row>
+              <cell><m>2.0</m> seconds</cell>
+              <cell><m>63</m> feet</cell>
+            </row>
+            <row>
+              <cell><m>2.5</m> seconds</cell>
+              <cell><m>57</m> feet</cell>
+            </row>
+            <row>
+              <cell><m>3.0</m> seconds</cell>
+              <cell><m>43</m> feet</cell>
+            </row>
+          </tabular>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The distance traveled <m>d</m>
+            (in feet)
+            by a bicycle <m>t</m> seconds after hitting the brakes is given by <m>d=30t-2.5t^2</m>.
+            Create a table which shows the distance the bike has traveled 0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5 and 4.0 seconds after hitting the brakes.
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+  </subsection>
+</section>

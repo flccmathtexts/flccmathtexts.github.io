@@ -1,0 +1,652 @@
+<section xml:id="SolveSecondDegree">
+  <title>Solving Second Degree Equations</title>
+  <subsection>
+    <title>The Square Root Property</title>
+    <p>
+      In order to solve a second-degree equation,
+      or an equation with an <m>x^2</m> term,
+      we have to get rid of the exponent to be able to solve for <m>x</m>.
+      In many second-degree equations,
+      we can do this simply by taking the square root of both sides of the equation.
+      For example, to solve the following:
+      <me>
+        x^2=25
+      </me>
+    </p>
+    <p>
+      We could undo the squaring of <m>x</m> by taking the square root of both sides.
+      There is, though, a wrinkle in this approach.
+      There are actually two solutions to this equation:
+      <m>x</m> could be <m>5</m> since <m>5^2=25</m>,
+      but <m>x</m> could also be <m>-5</m> because <m>(-5)^2=25</m> as well.
+      The square root function, which is usually denoted using the radical symbol
+      <q><m>\sqrt{}</m></q>, is interpreted to mean just the positive square root.
+      Yet the positive square root is not the only solution to the equation,
+      and so we need to make sure we don't loose the other solution in the algebra.
+      To do this we follow the <em>square root property</em>
+          <idx><h>Square Root Property</h></idx>
+      which tells us that we can take the square root of both sides of the equation so long as we acknowledge that there are two possible square roots,
+      the positive and the negative.
+      We usually do this using the symbol
+      <q><m>\pm</m></q>
+      which is read as
+      <q>plus or minus</q>. So the next step in solving <m>x^2=25</m> would be:
+      <me>
+        x=\pm \sqrt{25}
+      </me>
+      leading to the solutions:
+      <me>
+        x=\pm 5
+      </me>
+    </p>
+    <p>
+      It is important to understand that this notation is actually telling us that there are two solutions to the equation.
+      There is no such number as <m>\pm 5</m>.
+      This notation is just a compact way of expressing that there are to the equation <m>x^2=25</m>,
+      specifically it is compact notation for the expression:
+      <me>
+        x=5 \text{ or }  x=-5
+      </me>
+    </p>
+    <p>
+      This method can be applied to other equations,
+      as the following example will illustrate:
+    </p>
+    <example xml:id="SolveSecondDegreeExample1">
+      <statement>
+        <p>
+          Solve <m>4x^2-25=11</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      To apply the square root property we need to solve for <m>x^2</m> as if it were simply a variable.
+      Thus, we start by adding <m>25</m> to both sides of the equation to obtain:
+      <me>
+        4x^2=36
+      </me>
+      and then we divide both sides by <m>4</m> so that:
+      <me>
+        x^2=9
+      </me>.
+    </p>
+    <p>
+      Applying the square root property now gives:
+      <me>
+        x=\pm \sqrt{9}
+      </me>
+      <me>
+        x=\pm 3
+      </me>
+    </p>
+    <example xml:id="SolveSecondDegreeExample2">
+      <statement>
+        <p>
+          Solve <m>2x^2+7=39</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We start by subtracting <m>7</m> from both sides:
+      <me>
+        2x^2=32
+      </me>
+    </p>
+    <p>
+      To get <m>x^2</m> by itself, we divide by <m>2</m>:
+      <me>
+        x^2=16
+      </me>
+    </p>
+    <p>
+      Applying the square root property now gives:
+      <me>
+        x=\pm \sqrt{16}
+      </me>
+      <me>
+        x=\pm 4
+      </me>
+    </p>
+    <example xml:id="SolveSecondDegreeExample3">
+      <statement>
+        <p>
+          Solve <m>3z^2-9=z^2+6</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      To do this we first use ordinary algebra to solve for <m>z^2</m>,
+      so subtract <m>z^2</m> from both sides:
+      <me>
+        2z^2-9=6
+      </me>
+      and then add <m>9</m> to both sides:
+      <me>
+        2z^2=15
+      </me>
+    </p>
+    <p>
+      Now to get <m>z^2</m> by itself we divide by 2:
+      <me>
+        z^2=\frac{15}{2}
+      </me>
+    </p>
+    <p>
+      Now we are ready to use the square root property.
+      Doing so we end up with two solutions
+      <me>
+        z=\pm \sqrt{\frac{15}{2}}
+      </me>
+    </p>
+    <p>
+      Since neither <m>15</m> nor <m>2</m> is a perfect square we are stuck on simplifying this any further.
+      This is a perfectly fine way to express the answer.
+      If, however,
+      you would like to have a decimal approximation. it can be obtained using your calculator as
+      <m>z=\pm 2.7386</m>.... The problem with converting to a decimal is that it does typically require rounding so it is often preferable to leave your answer in radical notation as that is the exact answer and can be rounded to any level of precision later on. }
+    </p>
+  </subsection>
+  <subsection>
+    <title>Factor to Solve a Second-Degree Equation</title>
+    <p>
+      In some cases,
+      a second degree equation may be written in a way that makes the solutions very easy to find.
+      For example:
+      <me>
+        (x-4)(x+1)=0
+      </me>
+    </p>
+    <p>
+      We know that can be simplified by using the distributive property so we know this is indeed a second degree equation.
+    </p>
+    <p>
+      We know from basic arithmetic that if you multiply two numbers together and get zero,
+      one of these numbers must be zero.
+      Formally, this fact is called the
+      <em>zero product property</em>.
+    </p>
+    <definition>
+      <statement>
+        <p>
+              <idx><h>Zero Product Principle</h></idx> <em><em>Zero Product Principle</em></em>
+        </p>
+        <p>
+          If <m>AB=0</m>, then either <m>A=0</m> or <m>B=0</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Now, in this equation we have two expressions being multiplied together:
+      <m>x-4</m> and <m>x+1</m>.
+      The equation says that their product is zero.
+      So, according to the zero product property,
+      the only possibilities are
+      <me>
+        x-4=0 \text{ or }  x+1=0
+      </me>
+    </p>
+    <p>
+      Using this fact we know there are two possibilities to consider.
+      One is that <m>x-4=0</m>.
+      If that is the case, then we can easily solve and see that <m>x=4</m>.
+      The other possibility is that <m>x+1=0</m>.
+      In that case, we can also easily solve and see that <m>x=-1</m>.
+      So, we conclude that this equation's solutions are <m>x=4</m> and <m>x=-1</m>.
+      When a second degree equation is written in a form like this,
+      as a product,
+      we can find the solutions simply by setting each of the factors equal to zero and solving.
+      Here is another example:
+    </p>
+    <example xml:id="SolveSecondDegreeExample4">
+      <statement>
+        <p>
+          Solve: <m>5(2x-3)(x+7)=0</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      To solve <m>5(2x-3)(x+7)=0</m> we set each factor equal to zero and determine if that leads to a consistent equation.
+      Since the product is zero,
+      we can apply the zero product principle to conclude that either <m>5=0</m> or <m>2x-3=0</m> or <m>x+7=0</m>.
+      Since the first factor is a number and it is not equal to zero,
+      we get a contradiction as <m>5 \ne 0</m>.
+      Thus, the first factor does not lead to a solution to the equation in question.
+      The second factor, <m>2x-3</m> is zero when <m>x=\frac{3}{2}</m>.
+      The third factor <m>x+7</m> is zero when <m>x=-7</m>.
+      Thus, there are two solutions to the equation <m>x=\frac{3}{2}</m> and <m>x=-7</m>.
+    </p>
+    <p>
+      As we saw in <xref ref="SecondDegreeFactor">section</xref>
+      this second-degree equation is written as the product of expressions,
+      or we can say in factored form.
+      In some cases,
+      we can use the method given to us in <xref ref="SecondDegreeFactor">section</xref>
+      to factor the second degree expression to help us solve.
+      To review:
+    </p>
+    <definition>
+      <statement>
+        <p>
+          <em><em>Factoring Second Degree Expressions of the Form <m>x^2+bx+c</m></em></em>
+          <ol>
+            <li>
+              <title><m>\cdot</m></title>
+              <p>
+                Consider all the pairs of integers whose product is <m>c</m>
+              </p>
+            </li>
+            <li>
+              <title><m>\cdot</m></title>
+              <p>
+                If the sum of any of the pairs is <m>b</m>,
+                then the expression can be factored to
+                <m>(x+m)(x+n)</m> where <m>m</m> and <m>n</m> are the integers.
+              </p>
+            </li>
+            <li>
+              <title><m>\cdot</m></title>
+              <p>
+                If none of the pairs sum to <m>b</m>,
+                then the expression cannot be factored using integers.
+                We then say is it
+                <q>not factorable over the integers</q>.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          When groupings of the same variable raised to power or exponents,
+          you can just add the exponents
+        </p>
+        <p>
+          (make sure to remember that a ‘plain' <m>x</m> is actually <m>x^1</m>).
+          <me>
+            x^a \cdot x^b = x^{a+b}
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <example xml:id="SolveSecondDegreeExample5">
+      <statement>
+        <p>
+          Factor <m>x^2-5x+6</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We need to consider all possible pairs of integers whose product is <m>6</m> and then look at their sum to see if it is possible to obtain a sum of the factors equal to <m>-5</m>.
+      We consider all possible pairs <m>1</m> and <m>6</m>
+      (sum <m>7</m>),
+      <m>-1</m> and <m>-6</m>
+      (sum <m>-7</m>),
+      <m>2</m> and <m>3</m>
+      (sum <m>5</m>),
+      and <m>-2</m> and <m>-3</m>
+      (sum <m>-5</m>).
+      The last pair of factors are the factors that we want and <m>x^2-5x+6=(x-2)(x-3)</m>
+    </p>
+    <p>
+      In this case, there were not many possibilities to consider,
+      and one of those possibilities worked.
+      In many cases, though,
+      there are either too many possible pairs to consider,
+      or the expression can't be factored over the integers at all.
+      In the special case where the expression can be readily factored,
+      solving by factoring is a reasonable method to use.
+    </p>
+    <example xml:id="SolveSecondDegreeExample6">
+      <statement>
+        <p>
+          Solve <m>x^2-5x+6=0</m> using factoring
+        </p>
+      </statement>
+    </example>
+    <p>
+      Using <xref ref="SolveSecondDegreeExample5">example</xref>,
+      we can factor the left side of the equation as <m>(x-2)(x-3)=0</m>.
+      Applying the zero product principle we see that the solutions to the equation come from <m>x-2=0</m> or <m>x-3=0</m>.
+      Thus, the solutions we are looking for are <m>x=2</m> and <m>x=3</m>.
+    </p>
+    <example xml:id="SolveSecondDegreeExample7">
+      <statement>
+        <p>
+          Solve <m>x^2+8x+7=0</m> using factoring
+        </p>
+      </statement>
+    </example>
+    <p>
+      There are not too many possibilities to consider here,
+      since <m>7</m> is prime,
+      and so the only pairs to consider are <m>7</m> and <m>1</m> or <m>-7</m> and <m>-1</m>.
+      Since <m>7 + 1 = 8</m> we can factor this expression in
+      <m>(x+1)(x+7)</m> so we need to consider:
+      <me>
+        (x+1)(x+7)=0
+      </me>
+    </p>
+    <p>
+      Setting each factor equal to zero,
+      we solve <m>(x+1)(x+7)=0</m>.
+      So either <m>x+1=0</m> in which case <m>x=-1</m> or <m>x+7=0</m> in which case <m>x=-7</m>.
+      So the solutions are <m>x=-1</m> and <m>x=-7</m>. }
+    </p>
+    <example xml:id="SolveSecondDegreeExample8">
+      <statement>
+        <p>
+          Solve <m>x^2-9x+20=0</m> using factoring
+        </p>
+      </statement>
+    </example>
+    <p>
+      We consider the possibilities that factors of <m>20</m> which are <m>4</m> and <m>5</m> (sum <m>9</m>),
+      <m>-4</m> and <m>-5</m> (sum <m>-9</m>), <m>10</m> and <m>2</m>
+      (sum <m>12</m>),
+      <m>-10</m> and <m>-2</m>
+      (sum <m>-12</m>),
+      <m>20</m> and <m>1</m>
+      (sum <m>21</m>),
+      or <m>-20</m> and <m>-1</m>
+      (sum <m>-21</m>).
+      We need the pairs whose sum equals <m>-9</m> so we use <m>-4</m> and <m>-5</m>,
+      we can factor this into
+      <me>
+        (x-4)(x-5)=0
+      </me>
+    </p>
+    <p>
+      Setting each factor equal to zero,
+      we solve <m>(x-4)(x-5)=0</m> by saying either <m>x-4=0</m> in which case <m>x=4</m> or <m>x-5=0</m> in which case <m>x=5</m>.
+      So the solutions are <m>x=4</m> and <m>x=5</m>. }
+    </p>
+  </subsection>
+  <subsection>
+    <title>Exercises</title>
+    <subsubsection>
+      <title>The Square Root Property</title>
+      <p>
+        Solve each of the following equations using the square root property and ordinary algebra.
+      </p>
+      
+      <exercises><exercise>
+        <statement>
+          <p>
+            <m>x^2=49</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=7</m> and <m>x=-7</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2=81</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>4x^2=324</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=9</m> and <m>x=-9</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>3y^2=48</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>2z^2-38=12</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>z=5</m> and <m>z=-5</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>4t^2+75=139</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>(2x-1)^2=49</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=4</m> and <m>x=-3</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>(3y-7)^2=144</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>(2y+5)^2-3=33</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=\frac{1}{2}</m> and <m>x=-\frac{11}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>(2z+3)^2+19=100</m>
+          </p>
+        </statement>
+      </exercise>
+      
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Solving a Second Degree Equation by Factoring</title>
+      <p>
+        Factor the following to solve for the variable.
+      </p>
+      
+      <exercises><exercise>
+        <statement>
+          <p>
+            <m>z^2-4x-12=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>z=6</m> and <m>z=-2</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2-9x-10=0</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2+7x+12=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=-3</m> and <m>x=-4</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2+3x+2=0</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2+6x+9=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=-3</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2-6x-7=0</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>(x-2)(4x-16)=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=2</m> and <m>x=4</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2-8x+12=0</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2+2x-8=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=2</m> and <m>x=-4</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>(x+3)(x+2)=0</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>2a^2-18a+28=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>a=2</m> and <m>a=7</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>3g^2-6g-9=0</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>2r^2+4r-30=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>z=3</m> and <m>z=-5</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>y^2-y=42</m>
+          </p>
+        </statement>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>r^2-9=8r</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>r=9</m> and <m>r=-1</m>
+          </p>
+        </solution>
+      </exercise>
+      
+      <exercise>
+        <statement>
+          <p>
+            <m>3a^2+3a-60=0</m>
+          </p>
+        </statement>
+      </exercise>
+      
+    </exercises></subsubsection>
+  </subsection>
+</section>

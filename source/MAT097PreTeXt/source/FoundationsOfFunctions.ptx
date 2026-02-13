@@ -1,0 +1,10 @@
+<chapter xmlns:ns0="http://www.w3.org/2001/XInclude" xml:id="FoundationsOfFunctions">
+  <title>Foundations of Functions</title>
+  <ns0:include href="Functions.ptx" />
+  <ns0:include href="FunctionsandGraphs.ptx" />
+  <ns0:include href="SolvingEquationsGraphically.ptx" />
+  <ns0:include href="FunctionsAndMathematicalModels.ptx" />
+  <ns0:include href="ImplicitFunctions.ptx" />
+  <ns0:include href="RatesofChange.ptx" />
+  <ns0:include href="FoundationsOfFunctionsReviewQuestions.ptx" />
+</chapter>

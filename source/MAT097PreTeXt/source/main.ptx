@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <docinfo>
+<macros>
+\newcommand{\executeiffilenewer}[3]{
+\ifnum\pdfstrcmp{\pdffilemoddate{#1}}
+{\pdffilemoddate{#2}}>0
+{\immediate\write18{#3}}\fi}
+\newcommand{\includesvg}[1]{
+\executeiffilenewer{#1.svg}{#1.pdf}
+{inkscape -z -D --file=#1.svg
+--export-pdf=#1.pdf --export-latex}
+IIIII}
+\newcommand{\ex}[1]{\begin{exercise}#1 \end{exercise}}
+\def\arraystretch{1.5}
+\newcommand{\sol}[1]{\begin{solution}#1 \end{solution}}
+\newcommand{\exam}[1]{\begin{example}#1\end{example}}
+\newcommand{\indenttext}[1]{#1}
+\newcommand{\quotes}[1]{``#1''}
+\renewcommand{\rotatebox}[2]{#2}
+\newcommand{\This}{\GetExerciseProperty{counter-value}}
+\newcommand{\lineheight}[1]{\fontsize{\fsize}{#1\fsize}\selectfont}
+\def\svgwidth{\undefined}
+\def\svgscale{\undefined}
+</macros>
+<latex-image-preamble>
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usepackage{tkz-euclide}
+\usetikzlibrary{patterns}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix,arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+\usetikzlibrary{through,intersections,decorations,shadows,fadings}
+\usepackage{pgfplots}
+</latex-image-preamble>
+
+<rename element="algorithm">Example</rename>
+  </docinfo>
+  <book>
+    <title>Algebra and Introduction to Functions</title>
+    <frontmatter>
+      <titlepage>
+        <author>
+          <personname>FLCC Mathematics Department</personname>
+        </author>
+      </titlepage>
+    </frontmatter>
+    <xi:include href="./FoundationsOfArithmetic.ptx"/>
+    <xi:include href="./FoundationsOfAlgebra.ptx"/>
+    <xi:include href="./SolvingEquations.ptx"/>
+    <xi:include href="./FoundationsOfFunctions.ptx"/>
+    <xi:include href="./LinearFunctions.ptx"/>
+    <backmatter>
+      <xi:include href="./bibliography.ptx"/>
+      <index>
+        <title>Index</title>
+        <index-list/>
+      </index>
+    </backmatter>
+  </book>
+</pretext>

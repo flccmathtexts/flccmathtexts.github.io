@@ -1,0 +1,506 @@
+<section xml:id="SolvingRationalExponents">
+  <title>Solving using Rational Exponents</title>
+  <introduction>
+    <p>
+      Relating equations to this exponent rule will give us another perspective as to why it is meaningful.
+      Remember that there is a connection between radicals and fractional exponents.
+      If we look at the same equation, <m>x^2=25</m>,
+      we started the section with again we can rationalize the steps in another way.
+      Remember the idea is to isolate the variable.
+      When we solved this equation above,
+      we resulted with just <m>x</m> on the left side.
+      The power on that
+      <q>isolated</q>
+      <m>x</m> is 1.
+      If we recall the power rule for exponents given to us in <xref ref="AlgebraicExpressionsExponents">section</xref>,
+      where <m>(x^a)^b = x^{a \cdot b}</m>,
+      we can use this rule to help us solve.
+      <me>
+        x^2 = 25
+      </me>
+    </p>
+    <p>
+      We want to raise both sides to some power such that when we multiply that power by the power of <m>2</m> that exists on the left side currently,
+      the result is <m>1</m>.
+      In other words,
+      <q><m>2</m> times what number gives us <m>1</m></q>? <m>2 \cdot \frac{1}{2} = 1</m> as <m>2 \cdot \frac{1}{2} = \frac{2}{1} \cdot \frac{1}{2} = \frac{2}{2}= 1</m>.
+      Multiplying a number by its reciprocal will always yield <m>1</m>!
+    </p>
+    <p>
+      So, if we raise both sides to the
+      <m>\frac{1}{2}</m> power, we have the following:
+      <me>
+        {(x^2)}^{\frac{1}{2}} = (25)^{\frac{1}{2}}
+      </me>
+    </p>
+    <p>
+      Using the power rule:
+      <me>
+        x^{2 \cdot \frac{1}{2}} = 25^{\frac{1}{2}}
+      </me>
+      <me>
+        x = \pm 5
+      </me>
+    </p>
+    <p>
+      We end up with the same solution,
+      because raising both sides to the
+      <m>\frac{1}{2}</m> power is the same as taking the square root!
+    </p>
+    <p>
+      Let's look at another example:
+    </p>
+    <example xml:id="SolveHigherOrderEquationsExample4">
+      <statement>
+        <p>
+          Solve <m>x^3=64</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We want to isolate that variable on the left side and it is being raised to the third power.
+      We need to think what can I multiply <m>3</m> by to give me <m>1</m>?
+      <m>3 \cdot \frac{1}{3} = 1</m>!
+      Let's take this approach:
+      <me>
+        \left({x^3}\right)^{\frac{1}{3}}=64^{\frac{1}{3}}
+      </me>
+    </p>
+    <p>
+      Using the power rule:
+      <me>
+        x^{3\cdot\frac{1}{3}}=64^{\frac{1}{3}}
+      </me>
+    </p>
+    <p>
+      Remember that <m>64^{\frac{1}{3}}</m> can be entered into the calculator as
+      <q><m>64^\wedge(1/3)</m></q>
+      and we get:
+      <me>
+        x^1=x=4
+      </me>
+    </p>
+    <p>
+      It is important to realize that because <m>x^{\frac{1}{3}}=\sqrt[3]{x}</m>,
+      taking the cube or third root of both sides would have given us the same solution!
+    </p>
+  </introduction>
+  <subsection>
+    <title>One Solution or Multiple Solutions</title>
+    <p>
+      Another thing to note here is we have one strict solution in this particular case,
+      whereas in the previous equation <m>x^2=5</m> we knew that we had <m>2</m> solutions,
+      <m>x = 5</m> or <m>x = -5</m>.
+      In the case of an even power squaring a positive or a negative,
+      results in the same solution:
+      <me>
+        (3)^2 = 9 \text{    and    }  (-3)^2 = 9
+      </me>
+    </p>
+    <p>
+      We can say the same for a number raised to the fourth power (an any even power):
+      <me>
+        (2)^4 = 2 \cdot 2 \cdot 2  \cdot 2 = 16 \text{    and    }  (-2)^4 = (-2) \cdot (-2) \cdot (-2) \cdot (-2) = 16
+      </me>
+    </p>
+    <p>
+      When there is an even number of negatives,
+      the result will always be positive!
+      When we are working with an odd power,
+      we do not yield the same results:
+      <me>
+        (2)^3 = 2 \cdot 2 \cdot 2 = 8 \text{    and    }   (-2)^3=(-2) \cdot (-2) \cdot (-2) = -8
+      </me>
+    </p>
+    <p>
+      The multiplication of the first two numbers gives us a positive <m>4</m>,
+      but then we have a positive <m>4</m> times a negative <m>2</m>,
+      which leaves us with a negative <m>8</m>.
+      So, going back to our example above, <m>x^3=64</m>,
+      <m>4</m> is the unique solution to that equation because if we tried to test our equation with a <m>-4</m>:
+      <me>
+        (-4) \cdot (-4)  \cdot (-4)= -64
+      </me>
+    </p>
+    <example xml:id="SolveHigherOrderEquationsExample5">
+      <statement>
+        <p>
+          Solve <m>2x^3=128</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      Let's look at this equation very carefully.
+      The left side reads
+      <q>two times <m>x</m> to the third power</q>. We absolutely want to use the balance principal to help us isolate that <m>x</m>,
+      but it is important to realize that only the variable is being raised to the third power,
+      not the coefficient out front.
+      For that reason,
+      we need to start here first before we worry about that power.
+      We take the same steps we would take if we had an <m>x</m> with a power of <m>1</m> on the left side.
+      If we are multiplying, we transform this equation using division:
+      <me>
+        2x^3 = 128
+      </me>
+    </p>
+    <p>
+      Divide by <m>2</m> on both sides to begin:
+      <md>
+        <mrow>\frac{2x^3}{2} \amp = \frac{128}{2}</mrow>
+        <mrow>x^3 \amp = 64</mrow>
+        <mrow>{(x^3)}^{\frac{1}{3}}\amp  = (64)^{\frac{1}{3}}</mrow>
+        <mrow>x \amp = 4</mrow>
+      </md>
+    </p>
+    <example xml:id="SolveHigherOrderEquationsExample6">
+      <statement>
+        <p>
+          Solve <m>6p^5-10=182</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      Thinking of this equation where the variable was raised to the first power,
+      the first step we would take would be to add <m>10</m> to both sides and then to divide by <m>6</m>:
+      <md>
+        <mrow>6p^5 - 10 + 10 \amp = 182 + 10</mrow>
+        <mrow>6p^5 \amp = 192</mrow>
+        <mrow>\frac{6p^5}{6} \amp = \frac{192}{6}</mrow>
+        <mrow>p^5 \amp = 32</mrow>
+        <mrow>{(p^5)}^{\frac{1}{5}} \amp = (32)^{\frac{1}{5}}</mrow>
+        <mrow>p \amp = 2</mrow>
+      </md>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Exercises</title>
+    <p>
+      Express each of the following using fractional exponents.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>\sqrt{2}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2^{\frac{1}{2}}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\sqrt[9]{p}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\sqrt[5]{3q}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>{(3q)}^{\frac{1}{5}}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\sqrt[100]{r-5}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>\sqrt{x^2-2}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>{\left(x^2-2\right)}^{\frac{1}{2}}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5\sqrt[3]{ab}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3\sqrt[7]{g}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3{(g)}^{\frac{1}{7}}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-4c\sqrt[5]{2d}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    </exercises><p>
+      Write each of the following expressions without fractional exponents
+      (in radical form).
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>s^{\frac{1}{9}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\sqrt[9]{s}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2t^{\frac{1}{6}}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>{(2t)}^{\frac{1}{6}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\sqrt[6]{2t}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5a(6b)^{\frac{1}{5}}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>{(6-q))}^{\frac{1}{6}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\sqrt[6]{6-q}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(-2x^2y)^{\frac{1}{5}}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>19hk^{\frac{1}{7}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>19h\sqrt[7]{k}</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>19(hk)^{\frac{1}{7}}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    </exercises><p>
+      Solve the following equations for the given variable.
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>u^3=125</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>u=5</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>y^2-16=0</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-s^3=64</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>s=-8</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>z^3+\frac{1}{2}=\frac{5}{8}</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>v^3+7=34</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>v=3</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2q^2+7=57</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>t^3+7=-1</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>t=-2</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2w^3-9=-695</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5p^2+6=3p^2+78</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>p=6</m> or <m>p=-6</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5x^3+9=2x^3+225</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3z^5-20+9z^5=364</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>z=2</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2p^4+3=4805</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3r^4+12-r^4=44</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>r=2</m> or <m>r=-2</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3w^5-2000=w^5+48</m>
+        </p>
+      </statement>
+    </exercise>
+    
+  </exercises></subsection>
+</section>

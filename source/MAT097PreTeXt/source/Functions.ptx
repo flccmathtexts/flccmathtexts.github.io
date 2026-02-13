@@ -1,0 +1,2568 @@
+<section xml:id="Functions">
+  <title>Functions</title>
+  <introduction>
+    <p>
+      One of the biggest uses of algebra
+      (and mathematics in general)
+      is describing and modeling the relationship between two related quantities.
+      For example, we might want to:
+      <ol marker="labelcirc">
+        <li>
+          <p>
+            find the amount of grass seed we need to cover an athletic field based on its size, or
+          </p>
+        </li>
+        <li>
+          <p>
+            calculate the equivalent temperature in Fahrenheit for a temperature in Celsius, or
+          </p>
+        </li>
+        <li>
+          <p>
+            price a vacation package based on the number of nights we want to stay, or
+          </p>
+        </li>
+        <li>
+          <p>
+            estimate when we will arrive at our destination from how many miles we have left to travel, or
+          </p>
+        </li>
+        <li>
+          <p>
+            determine the grade needed on a final exam to achieve a desired final course grade
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      and we could easily come up with many, many more examples.
+      In this chapter,
+      we'll develop techniques that will be useful in handling these sorts of situations.
+    </p>
+    <p>
+      Even though these examples deal with unrelated things,
+      they all have something in common.
+      Each involves a relationship between two quantities,
+      and in each we have in mind that we will know the value
+      (or values)
+      we want to consider for one of the quantities
+      (the Celsius temperature, the field size, the number of nights,
+      the distance left to travel, or the desired grade),
+      and we will want to find the value(s) of the other quantity as a result.
+      You might have several athletic fields to seed,
+      and need to figure out how much grass seed you need to take to each one to complete the job.
+      Or you might be taking a trip to Canada,
+      where temperatures are given in Celsius,
+      and want to have a way to convert them to more familiar Fahrenheit temperatures.
+    </p>
+    <p>
+      These situations all fit nicely into a general framework called a function.
+      In this chapter, we will introduce functions,
+      and show how they can be used in these and other situations.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Functions</title>
+    <p>
+      We'll start by defining functions and related terms.
+      This all may seem overwhelming at first,
+      but don't worry – it should make more sense after looking at a few examples.
+    </p>
+    <definition>
+      <statement>
+        <p>
+              <idx><h>Function</h></idx> <em><em>Function Definition</em></em>
+        </p>
+        <p>
+          A function is a rule which processes information by assigning one and only one output to each input.
+          If the input variable's name is <m>x</m>,
+          the output variable is <m>y</m>,
+          and the name of the function is <m>f</m>,
+          we write <m>y=f(x)</m> which is read as
+          <q><m>y</m> equals <m>f</m> of <m>x</m>.</q>
+          (Other letters can be used for any of the quantities involved,
+          but whatever letters are used they follow the same pattern.)
+        </p>
+        <p>
+          Functions can be represented using a function diagram like this:
+          <me>
+            input \rightarrow f \rightarrow output
+          </me>
+          or using variables:
+          <me>
+            x \rightarrow f \rightarrow y \text{  OR  }  x \rightarrow f \rightarrow f(x)
+          </me>
+        </p>
+        <p>
+          When a function exists between two quantities, we say that
+          <q>the output variable
+          (or quantity)
+          is a function of the input variable (or quantity).</q>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Perfectly clear?
+      Probably not – that's a lot of terminology to absorb all at once.
+      With practice, though, these terms will become familiar.
+      Let's take a look at a couple of examples to illustrate how it all works.
+    </p>
+    <example xml:id="FunctionsExample1">
+      <statement>
+        <p>
+          The amount of grass seed
+          (in pounds)
+          needed to cover an athletic field can be determined based on the area
+          (in square feet).
+          Let <m>y</m> represent the amount of grass seed and let <m>A</m> represent the area.
+          <ol marker="a">
+            <li>
+              <p>
+                State the input variable and quantity.
+              </p>
+            </li>
+            <li>
+              <p>
+                State the output variable and quantity.
+              </p>
+            </li>
+            <li>
+              <p>
+                Describe the relationship by stating
+                <q>is a function of</q>
+                using both the variables and the quantities they represent.
+              </p>
+            </li>
+            <li>
+              <p>
+                Assuming the function's name is <m>f</m>,
+                write an equation which relates the variables and the function.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </example>
+    <ol marker="a">
+      <li>
+        <p>
+          The relationship described here says that we are going to determine the amount of seed based on the area.
+          The question does not say we need to draw a function diagram,
+          but it may be helpful to do this.
+          It seems that we are meant to
+          <q>tell</q>
+          the function the area we need to cover, and then
+          <q>ask</q>
+          the function to then determine how much grass seed we need.
+          So the function diagram would look like this:
+          <me>
+            area \rightarrow f \rightarrow grass \text{ }  seed
+          </me>
+          and from this diagram it is clear that the input quantity is area
+          (in square feet)
+          and the input variable is <m>A</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          From the diagram we can see that the output quantity is pounds of grass seed,
+          and the output variable is <m>y</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The phrasing always follows the patters
+          <q>output is a function of input</q>. So, using quantities, we would say that
+          <q>the amount of grass seed, <m>y</m>,
+          is a function of the area, <m>A</m></q>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Following the pattern used in the definition,
+          we would write <m>y=f(A)</m>.
+        </p>
+      </li>
+    </ol>
+    <p>
+      A function can be imagined as a kind of computer,
+      programmed to process just the information we want.
+      The function diagrams can help with that.
+      In the example we just saw,
+      the description clearly indicated that we'd need something we could tell the area of the field and then have it figure out and tell us how much grass seed we'd need.
+      Drawing a diagram to reflect this flow of information makes it clear which is the input and which is the output,
+      and then following the definitions everything else just falls into place.
+      With practice,
+      you may not need to draw diagrams or look back at definitions.
+      But until you've reached the point where this is all second nature,
+      it's a good idea to follow the method shown in the example.
+    </p>
+    <example xml:id="FunctionsExample2">
+      <statement>
+        <p>
+          The Fahrenheit temperature <m>F</m> can be calculated for any temperature in Celsius,
+          <m>C</m>.
+          Let the function which calculates this be called <m>T</m>.
+          <ol marker="a">
+            <li>
+              <p>
+                State the input variable and quantity.
+              </p>
+            </li>
+            <li>
+              <p>
+                State the output variable and quantity.
+              </p>
+            </li>
+            <li>
+              <p>
+                Describe the function using
+                <q><em>
+                <me>
+                  } is a function of \underline{
+                </me>
+                </em></q>
+                using the variables and the quantities they represent.
+              </p>
+            </li>
+            <li>
+              <p>
+                Write an equation which relates the variables and the function.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </example>
+    <p>
+      The problem states that we want to determine Fahrenheit for a given Celsius temperature.
+      So we want our function to do this:
+      <me>
+        C \rightarrow T \rightarrow F
+      </me>
+      <ol marker="a">
+        <li>
+          <p>
+            The input quantity is degrees Celsius,
+            and the input variable is <m>C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            The output quantity is degrees Fahrenheit and the output variable is <m>F</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            It's always
+            <q><em>output</em> is a function of <em>input</em></q>, so we would say
+            <q>the Fahrenheit temperature, <m>F</m>,
+            is a function of the Celsius temperature, <m>C</m></q>.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      In this example Celsius is the input and Fahrenheit is the output.
+      Could it be the other way around?
+      Well, with Fahrenheit and Celsius temperatures at least,
+      sure it could.
+      We could figure out Celsius based on Fahrenheit just as well as Fahrenheit based on Celsius.
+      Which is input and which is output is determined by what we are trying to do.
+      The description of this problem made it clear that in this case we want to determine Fahrenheit for a given Celsius temperature,
+      and that's why we set our function up that way.
+      You have to read carefully to determine input and output – be careful!
+    </p>
+  </subsection>
+  <subsection>
+    <title>Functions and Formulas</title>
+    <p>
+      Now, in what we've done so far,
+      we've been able to determine the setup of the input-output function relationship and describe it in appropriate terminology,
+      but we haven't had enough information to actually find the correct output for any particular input value.
+      To do that, we need to know the details of the function's rule.
+    </p>
+    <p>
+      The most common way to give a function's rule is with a formula.
+      A simple example will illustrate.
+      Suppose we want to set up a function to find the area <m>A</m> of a square based on the length of its side,
+      <m>s</m>.
+      This function would take side length as its input,
+      and give area as its output.
+      So we would say that area is a function of side length,
+      or <m>A</m> is a function of <m>s</m>.
+      If we name the function <m>f</m>,
+      we could write <m>A = f(s)</m>.
+    </p>
+    <p>
+      But we can go further.
+      We know how to calculate the area of a square based on its side length.
+      Using our variables,
+      we can write the formula for the area of a square as
+      <me>
+        A = s^2
+      </me>
+      or, replacing the output variable with <m>f(s)</m> we could write this formula as
+      <me>
+        f(s) = s^2
+      </me>
+    </p>
+    <p>
+      We've taken the formula for the area of a square and used it to write a formula for the function which finds the area of a square.
+      For any given input value of <m>s</m>,
+      this formula tells you that the output value you want can be found by using that value in the formula <m>s^2</m>.
+    </p>
+    <p>
+      In other words, once we have this formula for the function,
+      we can find the output for any input by algebraic substitution into a formula.
+      For example,
+      suppose we want to find the area of a square whose length is <m>10</m> inches.
+      We would then use <m>s = 10</m> in our formula to get:
+      <md>
+        <mrow>\amp  f(s)=s^2 \amp  f(10)=10^2 \amp  f(10)=100</mrow>
+      </md>
+    </p>
+    <p>
+      Not surprisingly the formula tells us the area would be <m>100</m> square inches.
+    </p>
+    <p>
+      Before we move on,
+      notice that we substituted for <m>s</m> both in the formula itself and also inside the
+      <q><m>f()</m>.</q>
+      This left us with the expression
+      <q><m>f(10)</m></q>
+      on the left side.
+      This will happen whenever we replace the input variable with a specific value.
+      So wherever we might run into the expression
+      <q><m>f(10)</m></q>
+      we would understand that to mean
+      <q>the specific output you get from the function <m>f</m> with the input <m>10</m></q>. A shorter way of saying that is
+      <q><m>f</m> of <m>10</m></q>. Likewise, we would read
+      <q><m>f(5.3)</m></q>
+      as
+      <q><m>f</m> of <m>5.3</m></q>
+      and would understand that to mean the output you get from the function <m>f</m> if you input the value <m>5.3</m>.
+    </p>
+    <example xml:id="FunctionsExample3">
+      <statement>
+        <p>
+          The Fahrenheit temperature <m>F</m> is a function of the Celsius temperature <m>C</m>.
+          The formula for this function is given by <m>T(C)=\frac{9}{5}C+32</m>.
+          Use this function formula to find the Fahrenheit temperature equivalent to <m>30 ^\circ C</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      We need to use <m>C=30</m> in the formula.
+      We get:
+      <md>
+        <mrow>T(C)\amp =\frac{9}{5}C+32</mrow>
+        <mrow>T(30)\amp =\frac{9}{5}(30)+32</mrow>
+        <mrow>\amp =86</mrow>
+      </md>
+    </p>
+    <p>
+      So the Fahrenheit temperature corresponding to
+      <m>30 ^\circ C</m> would be <m>86 ^\circ F</m>.
+    </p>
+    <p>
+      Of course it is nice to know the purpose of a function,
+      but if all we have is a formula we can still calculate outputs for inputs just the same.
+    </p>
+    <example xml:id="FunctionsExample4">
+      <statement>
+        <p>
+          Suppose <m>f(x)=x^2-3x+1</m>.
+          Find <m>f(-2)</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      <m>f(-2)</m> is the result of using <m>-2</m> as an input into this function.
+      So:
+      <md>
+        <mrow>f(x)\amp =x^2-3x+1</mrow>
+        <mrow>f(-2)\amp =(-2)^2-3(-2)+1</mrow>
+        <mrow>\amp =4+6+1</mrow>
+        <mrow>\amp =11</mrow>
+      </md>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Functions Defined Verbally</title>
+    <p>
+      Formulas are a very handy way to state a function's rule.
+      But having a formula is not required.
+      To have a function,
+      you must have one and only one output for each input.
+      The way you get that input may be specified by a formula,
+      but it can be expressed in other ways.
+      One of these other ways is a verbal description of the rule.
+    </p>
+    <example xml:id="FunctionsExample5">
+      <statement>
+        <p>
+          The sales tax rate in Ontario County, NY is <m>7.5 \%</m>.
+          Let <m>f(t)</m> be the total price including tax for a purchase of <m>t</m> dollars.
+          Find <m>f(800)</m>,
+          the price including sales tax for a laptop priced at <m>$ 800</m>.
+          Express your answer both as an answer to the question and in function notation.
+        </p>
+      </statement>
+    </example>
+    <p>
+      The sales tax is <m>7.5 \%</m> of
+      <m>$800</m> which would be <m>(0.075)($800) = $60</m>.
+      So the total price would be <m>$800 + $60 = $860</m>.
+      So, in answer to the question,
+      the price including tax is <m>$860</m>.
+      In function notation we would write <m>f(800)=860</m>.
+    </p>
+    <p>
+      Here, we didn't have a formula,
+      but we had enough information to calculate the output,
+      nonetheless.
+      If we wanted to, we could come up with a formula for this function.
+      It is not too hard to see that this function could also be given as <m>f(t)=.075t+t</m>.
+      Sometimes, though,
+      we may have a function for which a formula would be utterly impossible.
+    </p>
+    <example xml:id="FunctionsExample6">
+      <statement>
+        <p>
+          Suppose <m>f</m> is the rule which assigns to each U.S. state its capital.
+          Find <m>f(Washington)</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      The function takes states as inputs and gives their capitals as outputs.
+      There is obviously no way we could ever write an algebraic formula to
+      <q>calculate</q>
+      this.
+      But, we can still determine the output for a given input.
+      If you don't happen to know the state capital of Washington,
+      a few moments with an atlas or surfing the web reveals that <m>f(Washington)=Olympia</m>.
+    </p>
+    <p>
+      The state capital example reveals something else about functions:
+      they don't necessarily have to involve numbers or quantities.
+      Other pieces of information, such as states or their capitals,
+      can be used as the inputs and outputs for a function.
+      In mathematics,
+      we are usually most interested in functions with numerical inputs and outputs – and most of the functions we'll see in this class will be numeric ones.
+      But non-numeric functions like this are nonetheless perfectly good functions.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Functions Defined by Tables</title>
+    <p>
+      Sometimes neither a formula nor a verbal description is available to give a function's rule.
+      Functions can also be defined using a table which lists inputs and gives their corresponding outputs.
+      We don't need to know what the rationale
+      (if any)
+      was for assigning any particular input its output <mdash /> we only need to be able to determine what the output is.
+    </p>
+    <p>
+      One common example of a table-defined function might be US Social Security numbers.
+      Each US citizen has one and only one Social Security number,
+      and so we can look at Social Security numbers as a function of US citizens.
+      There is no way to possibly define any algebraic formula for this function,
+      nor is there any way to verbally describe a rule that would let you figure out someone's Social Security number based on who they are
+      (if you ever did find such a rule,
+      you could make a fortune in identity theft.)
+      The only way to specify that function would be by listing out every citizen and his or her number.
+      This would be impractical to do on paper,
+      but it is not hard to imagine that a computer could contain this information in a massive table.
+      In fact, the Social Security Administration has such a table in their computer systems.
+    </p>
+    <p>
+      Here is a more modest example of a table-defined function.
+    </p>
+    <example xml:id="FunctionsExample7">
+      <statement>
+        <p>
+          Let <m>f(s)</m> be the fine in Pennsylvania for speeding in a <m>65 mph</m> zone.
+          A highway road sign shows the fine for speeding as a function of how fast you were going.
+        </p>
+        <tabular>
+          <row>
+            <cell>Speed</cell>
+            <cell>Fine</cell>
+          </row>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+          <row>
+            <cell><m>70</m> mph</cell>
+            <cell><m>$45</m></cell>
+          </row>
+          <row>
+            <cell><m>75</m> mph</cell>
+            <cell><m>$55</m></cell>
+          </row>
+          <row>
+            <cell><m>80</m> mph</cell>
+            <cell><m>$65</m></cell>
+          </row>
+          <row>
+            <cell><m>85</m> mph</cell>
+            <cell><m>$75</m></cell>
+          </row>
+        </tabular>
+        <p>
+          Find <m>f(80)</m>, the fine for going <m>80</m> mph.
+          Express your result as an answer to the question and also in function notation.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Reading the table we can see that the fine is <m>$65</m>.
+      In function notation we would write <m>f(80)=65</m>.
+    </p>
+    <p>
+      A word of warning about table-defined functions.
+      Unless you have extra information about how the function's outputs are determined,
+      you cannot use a table to find outputs for any inputs that are not listed in the table.
+      Table-defined functions are limited to only the inputs listed in the table.
+    </p>
+    <p>
+      For example,
+      suppose you want to know the fine for going <m>90</m> mph.
+      There is no way to tell this from the given table.
+      It seems that for every <m>5</m> mph increase in speed the fine goes up <m>$10</m>,
+      so it might be reasonable to guess the fine would be <m>$85</m>.
+      But that is only a guess.
+      It could also be that the maximum fine for speeding is <m>$75</m>,
+      so that might be the fine for a <m>90</m> mph speed.
+      Or, maybe the state has an extra fine tacked on for really excessive speeds,
+      making the fine for <m>90</m> mph <m>$100</m>,
+      or <m>$150</m>, or <m>$250</m>?
+      There just is no way of knowing for sure.
+      Based on this table,
+      you cannot determine the fine for a <m>90 mph</m> speed.
+      But really you shouldn't be driving that fast anyway.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Domain and Range</title>
+    <p>
+      We've defined a function to be any rule that takes inputs,
+      processes them according to some rule,
+      and then gives outputs as a result.
+      We haven't said much, though,
+      about what sorts of things we can use as inputs or get as outputs from our functions.
+      For a given function, some things would make sense as inputs,
+      and some things would not.
+      In <xref ref="FunctionsExample6">Example</xref>
+      (the state capitals function)
+      it would make sense to use
+      <q>Washington</q>,
+      <q>Nebraska</q>, or
+      <q>Rhode Island</q>
+      as inputs, since these are all states.
+      But it wouldn't make any sense at all to input the
+      <q>Pacific Ocean</q>, the number <m>8</m>, or
+      <q>Justin Bieber</q>
+      into that function – none of these are states,
+      and so asking what the state capital of the Pacific Ocean, 8, or the Bieb wouldn't make any sense.
+    </p>
+    <p>
+      On the other hand, for the function
+      <m>f(x)=x^2-3x+1</m> which we used in <xref ref="FunctionsExample4">Example</xref>
+      it makes perfect sense to input the number 8, but
+      <q>Washington</q>,
+      <q>Nebraska</q>
+      or
+      <q>Rhode Island</q>
+      don't make any more sense as inputs than an ocean or a teen idol.
+    </p>
+    <p>
+      Every function has a certain set of things that it can take as inputs,
+      and also a set of things that can show up as outputs.
+      These are called the domain and range respectively.
+      They're important enough to deserve a highlighted definition:
+    </p>
+    <definition>
+      <statement>
+        <p>
+              <idx><h>Function</h><h>Domain</h></idx>
+              <idx><h>Function</h><h>Range</h></idx>
+          <em><em>Domain and Range</em></em>
+        </p>
+        <p>
+          The set of all possible inputs for a function is called its <em>domain</em>.
+          The set of all possible outputs for a function is called its <em>range</em>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      For a function like the state capitals function,
+      determining the domain and range is a matter of asking yourself what sorts of things the described function is intended to take as inputs,
+      and what the relevant outputs would be.
+      For the state capitals example,
+      the domain is the set of all U.S. states.
+      More formally we could write this as <m>\{ x \vert x \text{ is a U.S. State }  \}</m>.
+      The range would be the set of all U.S. state capitals;
+      formally <m>\{ y \vert y \text{ is a U.S. state capital } \}</m>.
+      Note that the letters used in the formal set descriptions don't matter <mdash /> the domain could also have been written
+      <m>\{ t \vert t \text{ is a U.S. State }  \}</m> or using any other letter.
+      (You should ask your instructor whether or not you are expected to write domains and ranges in formal set-builder notation or can just give a verbal description.)
+    </p>
+    <example xml:id="FunctionsExample8">
+      <statement>
+        <p>
+          Let <m>c(t)</m> be the rule that tells what day of the week each human being <m>t</m> was born on.
+          What are the domain and range of this function?
+        </p>
+      </statement>
+    </example>
+    <p>
+      This function takes as inputs human beings.
+      So the domain would be the set of all human beings,
+      or <m>\{t \vert t \text{ is a human being } \}</m>.
+    </p>
+    <p>
+      The outputs from this function are days of the week.
+      So the domain would be the set of days of the week,
+      or <m>\{y \vert y \text{ is a day of the week } \}</m>,
+      or <m>\{</m>Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday<m>\}</m>. }
+    </p>
+    <p>
+      For a numerical function like
+      <m>f(x)=x^2-3x+1</m> the domain would be the set of all real numbers,
+      or <m>\mathbb{R}</m>,
+      since any real number could be substituted into the formula and give a result.
+      The range for this function is a more complicated question.
+      While the outputs from this function will obviously be real numbers,
+      it's not obvious whether every real number actually does end up as an output from this function.
+      In fact, it turns out that there are lots of real numbers that cannot possibly be output from this function.
+      For example,
+      no matter what you input for <m>x</m> you will never get <m>-5</m> out of this function
+      (take our word for that for now,
+      though you'll see how we know this can never happen later in the course.)
+      So, the range is not the set of all real numbers.
+      At this point in the course we are not ready to determine just what the range of this function is,
+      so we will avoid questions about the ranges of functions like this one for now (we'll revisit this question later.)
+    </p>
+    <example xml:id="FunctionsExample9">
+      <statement>
+        <p>
+          What is the domain of the function <m>g(z)=2z+\frac{z^2}{5}</m>?
+        </p>
+      </statement>
+    </example>
+    <p>
+      Any real number could be substituted in to this formula and give a result.
+      So the domain is <m>\mathbb{R}</m>,
+      the set of all real numbers.
+    </p>
+    <p>
+      Sometimes there are real numbers that cannot be substituted in to a formula to give an output.
+      For example,
+      the function <m>h(x)=\frac{1}{x}</m> cannot have the number <m>0</m> in its domain,
+      because if you substitute zero into the formula you get <m>\frac{1}{0}</m> which is undefined.
+      Any other real number, though, would be fine.
+      So the domain of this function is all nonzero real numbers,
+      or <m>\{x \vert x\ne 0\}</m>.
+    </p>
+    <p>
+      At this point in your mathematical career,
+      you know about two impossibilities.
+      You cannot divide by zero,
+      and you cannot take the square root of a negative number.
+      So, if a function's rule asks you to divide by or take the square root of anything involving the input variable,
+      we need to make sure to exclude from its domain any values that would require doing the impossible.
+    </p>
+    <example xml:id="FunctionsExample10">
+      <statement>
+        <p>
+          What is the domain of the function <m>f(x)=\frac{3x^2 -5x+73}{x-3}</m>?
+        </p>
+      </statement>
+    </example>
+    <p>
+      The numerator looks intimidating,
+      but it doesn't matter to us.
+      Nothing impossible will happen in the numerator,
+      no matter what value of <m>x</m> you input.
+      On the other hand,
+      we must make sure that the denominator is never zero.
+      So, to find the value we need to exclude from the domain,
+      we solve the equation <m>x-3=0</m> and get <m>x=3</m>.
+      So since <m>x=3</m> would give us a zero denominator,
+      we must exclude it from the domain.
+      So the domain is all real numbers except 3, or <m>\{x \vert x \ne 3\}</m>.
+    </p>
+    <example xml:id="FunctionsExample11">
+      <statement>
+        <p>
+          What is the domain of the function <m>g(x)=\sqrt{3x-2}</m>?
+        </p>
+      </statement>
+    </example>
+    <p>
+      Here we need to make sure that the expression in the square root is not negative, or,
+      in other words, that it is greater than or equal to zero.
+      So we solve <m>3x-2 \ge 0</m> and get that <m>x \ge \frac{2}{3}</m>.
+      So our domain is all real numbers greater than or equal to <m>\frac{2}{3}</m>,
+      or <m>\{ x \vert x \ge \frac{2}{3} \}</m>, or <m>[2,\infty)</m>.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Determining Whether or Not a Rule is a Function</title>
+    <p>
+      Not every rule is a function.
+      When we have a function,
+      we demand that it provide us a clear and unambiguous output for any input we give it.
+      If I input the length of a square's side, I want to know the area.
+      I don't want a list of several different possible areas.
+      If I know the Celsius temperature is
+      <m>10^\circ C</m> and want to convert that to Fahrenheit, I want one and only one answer to that question.
+      I don't want to be told,
+      <q>well, it might be <m>50^\circ F</m>,
+      or it might be <m>84^\circ F</m>,
+      or it might be twenty below.</q>
+    </p>
+    <p>
+      Our definition of a function requires that for each input we get one and only one output.
+      A function isn't allowed to hedge.
+      Functions have to always give a straight answer!
+      So, a rule that does not do this can't be a function.
+    </p>
+    <p>
+      How could a rule not meet this requirement?
+      Well, just about any algebraic formula can be used to define a function.
+      We know from experience that the basic mathematical operations always evaluate to the same result.
+      (Six times nine is fifty-four,
+      it was fifty-four yesterday,
+      it will be fifty-four tomorrow,
+      it is fifty-four in New York,
+      it is fifty-four in China, it is always always always always fifty-four.)
+      So we know that <m>f(x)=5x^3-7x^2-3x-9</m> is a perfectly good function,
+      because no matter what input we substitute in for <m>x</m>,
+      the process of evaluating the result will always give one and only one final answer,
+      and whatever that answer is it will be the same anytime,
+      anywhere.
+    </p>
+    <p>
+      But not all rules behave this way.
+      Sometimes, though,
+      we try to set up a function and end up with a rule that can give more than one output for a given input.
+      The following examples will illustrate a few cases where this may be a problem.
+    </p>
+    <example xml:id="FunctionsExample12">
+      <statement>
+        <p>
+          Let <m>h(c)</m> be the rule that tells you the current NHL hockey team for each location that is the named home of a current NHL team.
+          Does this rule define a function?
+        </p>
+      </statement>
+    </example>
+    <p>
+      This rule is set up to process information,
+      taking homes of NHL teams as inputs and giving the teams themselves as outputs:
+      <me>
+        \text{ home }  \rightarrow h \rightarrow \text{ team }
+      </me>
+    </p>
+    <p>
+      Now for many locations this works fine.
+      For example:
+      <me>
+        \text{ Buffalo }  \rightarrow h \rightarrow \text{ Sabres }
+      </me>
+      and similarly if we input Boston, Toronto,
+      or Montreal things work out fine;
+      we get the Bruins, the Leafs,
+      and the Canadiens as outputs respectively.
+    </p>
+    <p>
+      But we run into a problem if we input New York.
+      There are two NHL teams that call New York home:
+      the Islanders and the Rangers.
+      Which is the output?
+      According to our rule, they both are.
+      This is not allowed.
+      This
+      <q>function</q>
+      doesn't give us a single straight answer,
+      and so it is not a function after all!
+    </p>
+    <p>
+      Now a couple of comments are important here.
+      It does not matter that most of the time this rule would have given only one output.
+      If there is even one single input that gives multiple outputs,
+      the rule is not a function.
+      That doesn't mean that it is meaningless,
+      or that it doesn't describe any real relationship.
+      But it does mean it is not a function.
+      Rules like our NHL example that can give multiple outputs for an input are called multifunctions and are used in some situations
+      (though we won't be using them in this book.)
+      But they are absolutely not functions.
+    </p>
+    <p>
+      Secondly, sometimes people will mistakenly think a rule is not a function because some inputs don't give any output.
+      If you input San Diego into this rule,
+      for example, you don't get an output,
+      because San Diego does not have a current NHL team.
+      This is not a problem.
+      That only means that San Diego is not in the domain!
+      A rule does not have to give an output for every imaginable input to be a function.
+      The rule only has to give one and only one output for each input in its domain.
+    </p>
+    <example xml:id="FunctionsExample13">
+      <statement>
+        <p>
+          Let <m>k(t)</m> be the rule that assigns to each current NHL team the team's named home.
+          Is <m>k(t)</m> a function?
+        </p>
+      </statement>
+    </example>
+    <p>
+      This rule is set up to take teams as inputs and give homes as outputs:
+      <me>
+        \text{ team }  \rightarrow k \rightarrow \text{ home }
+      </me>
+    </p>
+    <p>
+      Now, here we do not have the problem from the previous example.
+      If you input the Sabres you get Buffalo,
+      input the Bruins you get Boston, etc.
+      But if you input the Rangers you get one and only one output: New York.
+      And if you input the Islanders you also get one and only one output: New York.
+      The fact that two distinct inputs give the same output is not a problem!
+      Since no two teams have two named homes, this is a function.
+    </p>
+    <p>
+      It is important to contrast these last two examples.
+      Remember: a function must give one and only one output for each input.
+      If there is even one input that gives two outputs according to a rule,
+      that rule is not a function.
+      So, this is not OK:
+      <me>
+        \text{ New York }  \rightarrow h \begin{array}{l} \rightarrow \text{ Rangers? } \\ \rightarrow \text{ Islanders? } \end{array}
+      </me>
+    </p>
+    <p>
+      But there is absolutely nothing wrong with two inputs sharing the same output.
+      This is OK:
+      <me>
+        \begin{array}{l} \text{ Rangers }  \rightarrow \\ \text{ Islanders }  \rightarrow \end{array}  k \begin{array}{l} \rightarrow \text{ New York } \\ \rightarrow  \text{ New York } \end{array}
+      </me>
+    </p>
+    <p>
+      The key to functions is that they must never give an ambiguous answer.
+      In the first case, is the output the Rangers or the Islanders?
+      Can't tell?
+      Well, that's a problem.
+      In the second case,
+      there's no ambiguity about what the output is for any input.
+      So that's not a problem at all.
+    </p>
+    <example xml:id="FunctionsExample14">
+      <statement>
+        <p>
+          Is the following rule a function?
+          Why or why not?
+          <m>p(x)=42</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      This rule is a bit ridiculous.
+      No matter what you input for <m>x</m>,
+      you always get the same output: <m>42</m>.
+      However, that makes this a perfectly fine function.
+      There is nothing you could possibly input for <m>x</m> that would give you two or more different outputs.
+      There is always one and only one output for any given input.
+      So this rule is a function.
+    </p>
+    <p>
+      It is important to note that when you are showing that a rule is not a function,
+      all you need to do is give any one input that has two outputs.
+      There is no need to discuss whether or not the example you give is the only one,
+      one of many, or one of infinitely many.
+      Don't get bogged down in extra unnecessary details.
+      To show that a rule is not a function,
+      you only need one input that gives more than one output.
+      Anything more is unnecessary.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Exercises</title>
+    <subsubsection>
+      <title>Function Terminology</title>
+      <p>
+        Each of the following relationships can be represented by a function.
+        For each relationship
+        <ol marker="a">
+          <li>
+            <p>
+              state the input variable and quantity,
+            </p>
+          </li>
+          <li>
+            <p>
+              state the output variable and quantity,
+            </p>
+          </li>
+          <li>
+            <p>
+              describe the relationship as a function using the phrasing
+              <q><em>
+              <me>
+                } is a function of \underline{
+              </me>
+              </em></q>
+              using both the variables and the quantities they represent, and
+            </p>
+          </li>
+          <li>
+            <p>
+              write an equation which relates the variables and the function.
+              You may find it helpful to draw a function diagram.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <exercises><exercise>
+        <statement>
+          <p>
+            The price <m>P</m> for a shipment of <m>x</m> gallons of paint can be determined using a function called <m>f</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  input <m>x</m>, gallons of paint
+                </p>
+              </li>
+              <li>
+                <p>
+                  output <m>P</m>, price
+                </p>
+              </li>
+              <li>
+                <p>
+                  price, <m>P</m>, is a function of gallons of paint, <m>x</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>P=f(x)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The cost <m>C</m> to produce <m>z</m> litres of solvent can be calculated using the function <m>g</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The number of coaches <m>y</m> for a youth soccer league is determined based on the number of kids enrolled in the league,
+            <m>t</m>.
+            The function used to determine this is called <m>C</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  input <m>t</m>, number of kids
+                </p>
+              </li>
+              <li>
+                <p>
+                  output <m>y</m>, number of coaches
+                </p>
+              </li>
+              <li>
+                <p>
+                  number of coaches,
+                  <m>y</m>, is a function of the number of kids, <m>t</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>y=C(t)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The number of hours <m>h</m> Jayden needs to work to earn <m>d</m> dollars at his job is determined by the function <m>w</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The number of barrels of oil <m>B</m> needed to produce <m>G</m> gallons of gasoline can be calculated using the function <m>r</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  input <m>G</m>, gallons of gasoline
+                </p>
+              </li>
+              <li>
+                <p>
+                  output <m>B</m>, barrels of oil
+                </p>
+              </li>
+              <li>
+                <p>
+                  barrels of oil needed, <m>B</m>,
+                  is a function of gallons of gasoline, <m>G</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>B=r(G)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The number of seconds <m>s</m> it takes a computer network to transmit <m>d</m> terabytes of data is determined by the function <m>T</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The function <m>f</m> calculates the speed <m>s</m> of a rocket
+            (in miles per hour)
+            <m>t</m> seconds after it is launched.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  input <m>t</m>, seconds since launch
+                </p>
+              </li>
+              <li>
+                <p>
+                  output <m>s</m>, speed of the rocket
+                </p>
+              </li>
+              <li>
+                <p>
+                  speed, <m>s</m>, is a function of time since launch, <m>t</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>s=f(t)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The function <m>h</m> determines the height <m>y</m> of a baseball
+            (in feet)
+            <m>t</m> seconds after it is thrown upward.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If you know <m>Q</m> the number of questions on a multiple choice test,
+            you can figure out the number <m>x</m> you need to answer correctly to pass the test using the function <m>P</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  input <m>Q</m>, number of questions
+                </p>
+              </li>
+              <li>
+                <p>
+                  output <m>x</m>, number you need to answer correctly
+                </p>
+              </li>
+              <li>
+                <p>
+                  number of questions you need to answer correctly,
+                  <m>x</m>, is a function of the number of questions, <m>Q</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>x=P(Q)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If you know <m>d</m> the distance you need to travel on the thruway you can calculate the toll <m>t</m> you will have to pay using the function <m>f</m>.
+          </p>
+        </statement>
+      </exercise>
+      </exercises><p>
+        In each of the following problems,
+        two variables and the quantities they represent are given,
+        and an equation relating these variables with a function is also given.
+        <ol marker="a">
+          <li>
+            <p>
+              state the input variable and quantity,
+            </p>
+          </li>
+          <li>
+            <p>
+              state the output variable and quantity,
+            </p>
+          </li>
+          <li>
+            <p>
+              describe the relationship as a function using the phrasing
+              <q><em>
+              <me>
+                } is a function of \underline{
+              </me>
+              </em></q>
+              using both the variables and the quantities they represent, and
+            </p>
+          </li>
+        </ol>
+      </p>
+      <exercises><exercise>
+        <statement>
+          <p>
+            <m>h</m> is the number of minutes needed to walk to school at a given pace,
+            <m>d</m> is the distance to school in miles, and <m>h = f(d)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  input <m>d</m>, miles to school
+                </p>
+              </li>
+              <li>
+                <p>
+                  output <m>h</m>, minutes need to walk
+                </p>
+              </li>
+              <li>
+                <p>
+                  minutes to walk,
+                  <m>h</m>, is a function of miles to school, <m>x</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>w</m> is the number of weeks required to install <m>m</m> miles of fiber optic cable,
+            and <m>w = f(m)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y</m> is the number of months it will take to pay off a credit card with balance <m>B</m> paying the minimum payment,
+            and <m>y = f(B)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  input <m>B</m>, balance
+                </p>
+              </li>
+              <li>
+                <p>
+                  output <m>y</m>, months to pay off
+                </p>
+              </li>
+              <li>
+                <p>
+                  months to pay off, <m>y</m>, is a function of balance, <m>B</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>T</m> is the total amount paid over the life of a car loan,
+            <m>C</m> is the amount borrowed, and <m>T = f(C)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>t</m> is the time in seconds that it takes for a race car to accelerate to a speed of <m>m</m> miles per hour,
+            and <m>t = a(m)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  input <m>m</m>, speed
+                </p>
+              </li>
+              <li>
+                <p>
+                  output <m>t</m>, time to accelerate
+                </p>
+              </li>
+              <li>
+                <p>
+                  time to accelerate, <m>t</m>,
+                  is a function of speed, <m>m</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>K</m> is the temperature in degrees Kelvin,
+            <m>F</m> is the temperature in degrees Fahrenheit, and <m>K = g(F)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>m</m> is the velocity a race car needs to accelerate up to,
+            <m>t</m> is the time required to do this, and <m>t = a(m)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  input <m>m</m>, velocity
+                </p>
+              </li>
+              <li>
+                <p>
+                  output <m>t</m>, time to accelerate
+                </p>
+              </li>
+              <li>
+                <p>
+                  time to accelerate, <m>t</m>,
+                  is a function of velocity, <m>m</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>F</m> is the temperature in degrees Fahrenheit,
+            <m>K</m> is the temperature in degrees Kelvin, and <m>F = g(K)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>C</m> is the amount borrowed on a car loan,
+            <m>I</m> is the total amount of interest on the loan, and <m>I = f(C)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  input <m>C</m>, amount borrowed
+                </p>
+              </li>
+              <li>
+                <p>
+                  output <m>I</m>, amount of interest
+                </p>
+              </li>
+              <li>
+                <p>
+                  amount of interest, <m>I</m>,
+                  is a function of amount borrowed, <m>C</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>B</m> is the balance on a credit card,
+            <m>y</m> is the number of months it will take to pay it off making the minimum monthly payment,
+            and <m>y = f(B)</m>.
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Functions and Formulas</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            The annual property tax on residential property in the Town of Townsville is calculated using the function <m>f(x)=0.018x+75</m>,
+            where <m>x</m> is the property's assessed value.
+            Use this function to determine the annual property tax on a home assessed at <m>$175,000</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>$3,225</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The annual property tax on residential property in the Village of Villageport is calculated using the function
+            <m>f(x)=0.021x+350</m> where <m>x</m> is the property's assessed value.
+            Use this function to determine the annual property tax on a home assessed at <m>$154,000</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The height in feet of a ball thrown upward with an initial upward velocity of 75 feet per second can be calculated using the function <m>h(t)=-16t^2+75t</m>,
+            where <m>t</m> is the number of seconds since the ball was thrown.
+            Use this function to find the ball's height <m>2</m> seconds after being thrown.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>86</m> feet
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The height of a ball thrown upward with an initial velocity of 18 meters per second can be calculated using the function <m>h(t)=-4.9t^2+18t</m>,
+            where <m>t</m> is the number of seconds since the ball was thrown.
+            Use this function to find the ball's height <m>2</m> seconds after being thrown
+            (round to one decimal place).
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>f(x)=3x+7</m>, find <m>f(5)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(5)=22</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>f(x)=11-5x</m>, find <m>f(3)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>g(x)=x^2-2x+1</m>, find <m>g(1)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>g(1)=0</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>g(x)=2x^2-5x+3</m>, find <m>g(2)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>g(t)=7t+t^2</m>, find <m>g(-1)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>g(-1)=-6</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>g(t)=5-t^2</m>, find <m>g(-3)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>h(z)=3-2z</m>, find <m>h(0)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>h(1)=3</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>r(x)=150+2x</m>, find <m>r(5)</m>.
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Functions Defined Verbally</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            Let <m>r</m> be the rule that rounds each real number <m>x</m> to the nearest whole integer.
+            Find (a) <m>r(0.54)</m>, (b)
+            <m>r(227.1396)</m>, and (c) <m>r(-2.93)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  <m>r(0.54) = 1</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>r(227.1396) = 227</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>r(-2.93) = -3</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>d</m> be the rule that rounds each real number <m>x</m> to one decimal place.
+            Find (a) <m>d(1.76)</m>, (b)
+            <m>d(22.43)</m>, and (c) <m>d(-11.55)</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>a</m> be the rule that assigns to each English word the first letter in the word.
+            Find (a) <m>a(\text{ bicycle } )</m>, (b) <m>a(\text{ porcupine } )</m>,
+            and (c) <m>a(\text{ plastic } )</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  <m>a(\text{ bicycle } )=\text{b}</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>a(\text{ porcupine } )=\text{p}</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>a(\text{ plastic } )=\text{p}</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>f</m> be the rule that assigns to each English word the last letter in the word.
+            Find (a) <m>f(\text{ bicycle } )</m>, (b) <m>f(\text{ porcupine } )</m>,
+            and (c) <m>f(\text{ plastic } )</m>.
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Function Defined by Tables</title>
+      <p>
+        Answer the following questions based on the table below,
+        which gives the price of each lunch special as a function of the entree ordered.
+        Assume the function's name is <m>p</m>.
+      </p>
+      <tabular>
+        <row>
+          <cell>Lunch Special</cell>
+          <cell>Price (includes soup, eggroll, or can of soda)</cell>
+        </row>
+        <row bottom="minor">
+          <cell />
+          <cell />
+        </row>
+        <row>
+          <cell>Beef with broccoli</cell>
+          <cell><m>$7.95</m></cell>
+        </row>
+        <row>
+          <cell>Kung pao chicken</cell>
+          <cell><m>$6.95</m></cell>
+        </row>
+        <row>
+          <cell>Shrimp with lobster sauce</cell>
+          <cell><m>$8.95</m></cell>
+        </row>
+        <row>
+          <cell>Szechuan tofu</cell>
+          <cell><m>$7.50</m></cell>
+        </row>
+      </tabular>
+      <exercises><exercise>
+        <statement>
+          <p>
+            Find <m>p(\text{ Szechuan tofu } )</m>,
+            the price of the Szechuan tofu lunch special.
+            Express your answer both in ordinary English and in function notation.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>p(\text{ Szechuan tofu } )=7.50</m>;
+            the price of the Szechuan tofulunch special is <m>$7.50</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find <m>p(\text{ Kung pao chicken } )</m>,
+            the price of the Kung pao chicken lunch special.
+            Express your answer both in ordinary English and in function notation.
+          </p>
+        </statement>
+      </exercise>
+      </exercises><p>
+        Answer the following questions based on the table below,
+        which gives the weight in pounds at which a <m>35</m> year old man is considered
+        <q>obese</q>
+        according to USDA diet guidelines as a function of his height in inches.
+        Assume the function's name is <m>f</m>.
+      </p>
+      <tabular>
+        <row>
+          <cell>Height (inches)</cell>
+          <cell>Weight (pounds)</cell>
+        </row>
+        <row bottom="minor">
+          <cell />
+          <cell />
+        </row>
+        <row>
+          <cell><m>66</m></cell>
+          <cell><m>186</m></cell>
+        </row>
+        <row>
+          <cell><m>68</m></cell>
+          <cell><m>197</m></cell>
+        </row>
+        <row>
+          <cell><m>70</m></cell>
+          <cell><m>209</m></cell>
+        </row>
+        <row>
+          <cell><m>72</m></cell>
+          <cell><m>221</m></cell>
+        </row>
+      </tabular>
+      <exercises><exercise>
+        <statement>
+          <p>
+            Find <m>f(70)</m>,
+            the weight at which a <m>70</m> inch tall man would be considered obese.
+            Express your answer both in ordinary English and in function notation.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f(70)=209</m>;
+            a <m>70</m> inch tall man would be considered obese at a weight of <m>209</m> pounds
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find <m>f(66)</m>,
+            the weight at which a <m>66</m> inch tall man would be considered obese.
+            Express your answer both in ordinary English and in function notation.
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Domain and Range</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            Let <m>M</m> be the function that assigns to each living human being their legal date of birth
+            (month and day).
+            What is the domain of <m>M</m>?
+            What is the range of <m>M</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Domain is all living human beings;
+            range is all possible dates (month and day)
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>p</m> be the rule that assigns to each vehicle registered in the state of New York its license plate number.
+            What is the domain of <m>p</m>?
+            What is the range of <m>p</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>r</m> be the rule that gives the rank of each current member of the U.S. Army.
+            What is the domain of <m>r</m>?
+            What is the range of <m>r</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Domain is all current members of the US Army;
+            range is all possible ranks
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>W</m> be the rule that gives the wedding date
+            (month and day)
+            of each legally married American married couple.
+            What is the domain of <m>W</m>?
+            What is the range of <m>W</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of <m>f(x)=x^2-3x+5</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Domain is all real numbers or <m>\mathbb{R}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of <m>f(x)=2x-5</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of <m>g(x)=\frac{17x-5}{x-1}</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Domain is all real numbers except <m>1</m>,
+            or <m>\{x \vert x \ne 1 \}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of <m>g(x)=\frac{x^2-3x+17}{x+2}</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of <m>h(x)=\frac{x}{2}+\frac{2}{x}</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Domain is all real numbers except 0, or <m>\{x \vert x \ne 0 \}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of <m>h(x)=\frac{x-3}{x-5}-\frac{3}{4}</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of <m>f(t)=2+\sqrt{t-3}</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Domain is all real numbers greater than or equal to 3, or <m>\{x \vert x \ge 3 \}</m>
+          </p>
+        </solution>
+      </exercise>
+      </exercises><p>,
+        or <m>[3,\infty)</m>]
+      </p>
+      <exercises><exercise>
+        <statement>
+          <p>
+            What is the domain of <m>f(t)=\sqrt{2t-5}</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of <m>h(t)=\frac{t}{2t-1}</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Domain is all real numbers except <m>\frac{1}{2}</m>,
+            or <m>\{x \vert x \ne \frac{1}{2} \}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of <m>g(t)=\frac{6t+1}{2t-3}</m>?
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Determining Whether or Not a Rule is a Function</title>
+      <p>
+        Each of the following exercises describes a rule which could be used to process information.
+        Determine whether or not the given rule is a function.
+        Clearly justify your answer.
+      </p>
+      <exercises><exercise>
+        <statement>
+          <p>
+            Let <m>f</m> be the rule that names the biological father of each living human being.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Yes this is a function.
+            Each input (living human being) has one and only one biological father.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>m</m> be the rule that gives the legal spouse of every legally married American.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>c</m> be the rule that assigns to each biological father his child.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            No, this is not a function.
+            There are some inputs
+            (biological fathers)
+            who have more than one child.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>w</m> be the rule that assigns to each person who has ever gotten married the person they married.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>P</m> be the rule that determines the current selling price for each item in stock at the Macedon, NY Walmart store.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Yes, this is a function.
+            Each item has one and only one price (when the cashier rings it up there is only one price that comes up.)
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>D</m> be the rule that determines the current selling price for each item in stock at a dollar store.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>g</m> be the rule that gives each student who completes this course his or her final course grade.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Yes, this is a function.
+            Each input (student) gets only one final grade.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>k</m> be the rule that gives each student enrolled at this college his or her current grade point average.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>m</m> be the rule that assigns to each dog owner his or her dog.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            No, this is not a function.
+            Some inputs
+            (dog owners)
+            have more than one output (dogs they own.)
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>n</m> be the rule that assigns to each owned dog its owner.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=(x-3)(x+2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Yes, this is a function.
+            If you input any real number and evaluate the result,
+            you get one and only one answer.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=3x^2+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>g(t)=\frac{2t+1}{t-1}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Yes, this is a function.
+            If you input any real number except <m>t=1</m>,
+            you get one and only one answer. (<m>t=1</m> is not a problem because it is excluded from the domain,
+            and even if you ignored this fact and input <m>t=1</m> you would give you no output,
+            not more than one)
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>h(x)=\frac{x^2-1}{x-1}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Yes, this is a function.
+            No matter what you use as input,
+            you get only one output (the output is always zero.)
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>c(t)=42</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Grab Bag</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            Suppose <m>f(x)=x^2-3x</m>.
+            Calculate:
+            <ol marker="a">
+              <li>
+                <p>
+                  <m>f(3)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>f(-2)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>f(0)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  <m>f(3)=0</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>f(-2)=10</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>f(0)=0</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The cost of roaming data on a cellular plan is a function of the amount of data downloaded.
+            The cost is <m>$15.36</m> per megabyte.
+            Use this function to determine how much it would cost to download <m>3.5</m> megabytes on this plan.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Let <m>C</m> be the cost of roaming data on a cellular plan,
+            let <m>d</m> be the amount of data downloaded
+            (in megabytes)
+            and suppose <m>C=f(d)</m>.
+            <ol marker="a">
+              <li>
+                <p>
+                  State the input variable and quantity,
+                </p>
+              </li>
+              <li>
+                <p>
+                  state the output variable and quantity, and
+                </p>
+              </li>
+              <li>
+                <p>
+                  describe the relationship using both the variables and the quantities they represent using the phrasing
+                  <q><em>
+                  <me>
+                    } is a function of \underline{
+                  </me>
+                  </em></q>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  <m>d</m>, The amount of data
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>C</m>, the cost
+                </p>
+              </li>
+              <li>
+                <p>
+                  The cost of roaming data, <m>C</m>,
+                  is a function of the amount of data downloaded, <m>d</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of <m>g(x)=x^2+3x-1</m>?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            For the table given below:
+            <md>
+              <mrow>\begin{array}{c|cccccc} X \amp  0 \amp  1 \amp  2 \amp  3 \amp  4 \amp  5</mrow>
+              <mrow>\hline Y \amp  6 \amp  2 \amp  -1 \amp  4 \amp  7 \amp  2 \end{array}</mrow>
+            </md>
+            <ol marker="a">
+              <li>
+                <p>
+                  Is <m>Y</m> a function of <m>X</m>?
+                  Justify your answer.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Is <m>X</m> a function of <m>Y</m>?
+                  Justify your answer.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  <m>Y</m> is a function of <m>X</m>, Each input (<m>X</m>) has only one output value
+                  (<m>Y</m>).
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>X</m> is not a function of <m>Y</m>.
+                  The input <m>Y=2</m> corresponds to two different outputs (<m>X=1</m> and <m>X=5</m>)
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Give an example of a rule that does not define a function.
+            Explain why the rule fails to define a function.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Does the rule <m>f(x)=\frac{3}{x}</m> define a function?
+            Why or why not.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Yes, <m>f</m> is a function.
+            Each input <m>x</m> gives one and only one output.
+            (<m>x=0</m> is excluded from the domain.)
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>f(x)=8-x^2</m>.
+            Calculate:
+            <ol marker="a">
+              <li>
+                <p>
+                  <m>f(3)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>f(-2)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>f(0)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The rated range of an electric vehicle is a function of the storage capacity of its battery.
+            Suppose an electric car is expected to travel <m>4.5</m> miles per kilowatt hour.
+            Use this function to determine its range if it has a <m>28</m> kwh battery.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>126</m> miles
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>R</m> is the range
+            (in miles)
+            of an electric vehicle,
+            let <m>E</m> be the storage capacity of its battery in kilowatt hours,
+            and suppose <m>R=g(E)</m>.
+            <ol marker="a">
+              <li>
+                <p>
+                  State the input variable and quantity,
+                </p>
+              </li>
+              <li>
+                <p>
+                  state the output variable and quantity, and
+                </p>
+              </li>
+              <li>
+                <p>
+                  describe the relationship using both the variables and the quantities they represent using the phrasing
+                  <q><em>
+                  <me>
+                    } is a function of \underline{
+                  </me>
+                  </em></q>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of <m>f(x)=\frac{x+2}{x-5}</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            All real numbers except <m>5</m>,
+            or <m>\{x \vert x \ne 5\}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            For the table given below:
+            <md>
+              <mrow>\begin{array}{c|c} \text{ Agent }  \amp  \text{ Listing }</mrow>
+              <mrow>\hline \text{ Loman }  \amp   742 \text{ Evergreen }</mrow>
+              <mrow>\text{ Mays }  \amp  1313 \text{ Mockingbird }</mrow>
+              <mrow>\text{ Popeil }  \amp  10 \text{ Stigwood }</mrow>
+              <mrow>\text{ Mays }  \amp  342 \text{ Gravelpit }</mrow>
+              <mrow>\text{ Hill }  \amp  518 \text{ Crestview }</mrow>
+              <mrow>\text{ Hill }  \amp  704 \text{ Hauser } \end{array}</mrow>
+            </md>
+            <ol marker="a">
+              <li>
+                <p>
+                  Is agent a function of listing?
+                  Justify your answer.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Is listing a function of agent?
+                  Justify your answer.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Fill in the table below so that <m>x</m> is a function of <m>y</m> and <m>y</m> is also a function of <m>x</m>.
+            <md>
+              <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
+              <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
+            </md>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            There are many possible correct answers.
+            As long as no value appears more than once in either the <m>x</m> or <m>y</m> row,
+            it works.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Fill in the table below so that <m>x</m> is a function of <m>y</m> but <m>y</m> is not a function of <m>x</m>.
+            <md>
+              <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
+              <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
+            </md>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Fill in the table below so that <m>x</m> is not a function of <m>y</m> but <m>y</m> is a function of <m>x</m>.
+            <md>
+              <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
+              <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
+            </md>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            There are many possible correct answers.
+            As long as no value appears more than once in the <m>x</m> row but at least one value does appear more than once in the <m>y</m> row,
+            it works.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Fill in the table below so that <m>x</m> is not a function of <m>y</m> and <m>y</m> is also not a function of <m>x</m>.
+            <md>
+              <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
+              <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
+            </md>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>h</m> is the function which gives the number of electoral votes that each state gets in the Electoral College.
+            Determine <m>h(\text{ Florida } )</m>,
+            <m>h(\text{ Wyoming } )</m> and
+            <m>h(\text{ Massachusetts } )</m>. (NOTE: Unless you happen to have this information memorized for some reason,
+            look it up in a reference book or on the internet.)
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  <m>h(\text{ Florida } )=30</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>h(\text{ Wyoming } )=3</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>h(\text{ Massachusetts } )=11</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What is the domain of the function <m>q(t)=\frac{t+5}{t-5}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The mass in kilograms <m>m</m> of an object can be determined based on its weight <m>w</m> in pounds,
+            using a function called <m>C</m>.
+            <ol marker="a">
+              <li>
+                <p>
+                  State the input variable and quantity,
+                </p>
+              </li>
+              <li>
+                <p>
+                  state the output variable and quantity, and
+                </p>
+              </li>
+              <li>
+                <p>
+                  describe the relationship using both the variables and the quantities they represent using the phrasing
+                  <q><em>
+                  <me>
+                    } is a function of \underline{
+                  </me>
+                  </em></q>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Write an equation which relates the variables and the function.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  input <m>w</m>, weight in pounds
+                </p>
+              </li>
+              <li>
+                <p>
+                  output <m>m</m>, mass in kilograms
+                </p>
+              </li>
+              <li>
+                <p>
+                  mass, <m>m</m> is a function of weight <m>w</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>m=C(w)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>f</m> is defined to be a function which takes as inputs the last name of each student in a college's freshman class and gives as an output that student's academic advisor.
+            Does <m>f(\text{ Smith } ) = \text{ Jones }</m> mean (a) that Smith is Jones' academic advisor or (b) that Jones is Smith's academic advisor?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>H</m> is a function that gives the first name of each student in a class as a function of that student's last name.
+            <ol marker="a">
+              <li>
+                <p>
+                  Since <m>H</m> is a function,
+                  which of the following must be true:
+                  that no two students share the same last name,
+                  that no two students share the same first name,
+                  or that no two students share either the same first name or last name?
+                  Justify your answer.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Rewrite each of the following function equations as a student's name
+                  (such as
+                  <q>Mary Jones</q>
+                  ):
+                  <m>H(\text{ James } ) = \text{ George }</m>,
+                  <m>H(\text{ Li } ) = \text{ Huang }</m>,
+                  and <m>H(\text{ Bradley } ) = \text{ Cooper }</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  No two students share the same last name
+                </p>
+              </li>
+              <li>
+                <p>
+                  George James, Huang Li, Cooper Bradley
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>f(x)=\frac{2}{3}x-1</m>.
+            Find
+            <ol marker="a">
+              <li>
+                <p>
+                  <m>f(0)</m>,
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>f(-9)</m> and
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>f(5)</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            If <m>f(x) = x^2</m> find two different input values which give the same output value.
+            Does the fact that you can do this mean <m>f(x)</m> is not a function?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            There are many possible answers.
+            Take any positive number and the corresponding negative number.
+            <m>3</m> and <m>-3</m> for example,
+            since <m>f(3)=3^2=9</m> and <m>f(-3)=(-3)^2=9</m>.
+            This is not a problem,
+            since it is fine for two different inputs to give the same output.
+          </p>
+        </solution>
+      </exercise>
+    </exercises></subsubsection>
+  </subsection>
+</section>

@@ -1,0 +1,1541 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AlgebraicExpressions">
+  <title>Algebraic Expressions</title>
+  <introduction>
+    <p>
+      In the last section,
+      we defined algebraic expressions as any collection of variables and/or numbers tied together by arithmetic operations.
+      In this section,
+      we'll explore the rules of working with these expressions,
+      and put them to work to our advantage.
+    </p>
+    <p>
+      We also discussed the idea of using algebraic expressions as a simpler way of expressing mathematical ideas.
+      We observed that instead of saying
+      <q>the area of a rectangle is the result of multiplying its length by its width</q>
+      we could just write the equation
+      <q>
+        <m>A=LW</m>
+      </q>. The equation is more concise and lends itself to algebraic substitution when we need to actually calculate areas.
+      This is the goal and the power of algebra:
+      to make things as simple as possible (yes, I know,
+      it often doesn't feel like it!)
+    </p>
+    <p>
+      Let's try another example.
+      Suppose you are working for a landscaping company that installs brick paver patios,
+      and you need to determine the price to quote a job.
+      The total cost of the materials will depend on the area of the patio to be installed.
+      The pavers cost <m>$0.97</m> per square foot,
+      the crushed gravel for the foundation costs <m>23</m> cents per square foot,
+      and other materials
+      (such as sand)
+      add up to <m>20</m> cents per square foot.
+      The labor for installation costs <m>$2.45</m> per square foot.
+      In addition,
+      the use of the equipment for the project will cost a flat <m>$425</m>,
+      and your company prices <m>$800</m> into each job for overhead and profit,
+      with an additional <m>20</m> cents per square foot for overhead and profit as well.
+    </p>
+    <p>
+      In this scenario,
+      the amount of your quote will depend on just one thing:
+      the square footage of the patio.
+      If we call that <m>x</m>,
+      we can see that the pavers will cost <m>0.97</m> times <m>x</m>,
+      the gravel <m>0.20</m> times <m>x</m>, and so on.
+      So, the quote for an <m>x</m> square foot patio can be expressed algebraically as:
+      <me>
+        0.97x+0.23x+0.20x+2.45x+425+800+0.20x
+      </me>
+    </p>
+    <p>
+      To determine the price for a job,
+      you just would need to plug in the square footage for <m>x</m>,
+      and then do the arithmetic.
+      But that's an awful lot of arithmetic.
+      There is a simpler way.
+      The costs of pavers, gravel, other materials, labor,
+      and the per-square foot profit and overhead charge all are multiplied by the square footage.
+      Rather than calculating these each individually,
+      we could just add <m>$0.97+$0.23+$0.20+$2.45+$0.20</m> to get that the total per square-foot cost is <m>$3.85</m>,
+      and so the part of the quote that depends on the patio's size is just <m>3.85x</m>.
+      Similarly, we can just combine the <m>$425</m> and
+      <m>$800</m> overhead and profit cost to get that there is
+      <m>$425+$800=$1225</m> to be added to the quote regardless of the patio's size.
+      So, putting them all together,
+      the quote could also be expressed algebraically as:
+      <me>
+        3.85x+1225
+      </me>
+    </p>
+    <p>
+      Now, it should be clear that both of these algebraic expressions will give you the same price for the job.
+      But it should also be clear that the second is going to be a lot easier to work with.
+      What we have done here is an example of algebraic simplification.
+      <em>Algebraic Simplification</em>
+      <idx>
+        <h>Algebraic Simplification</h>
+      </idx> is the process of finding simpler algebraic expressions that are equivalent to more complicated ones.
+    </p>
+    <p>
+      Of course, if we want the expressions to give the same results,
+      there must be some rules that we must follow.
+      In this section we will review some of the main rules and techniques of algebraic simplification.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Terms</title>
+    <p>
+      Algebraic expressions can be broken down into terms.
+      A term is a part of an algebraic expression that is separated from the other parts by addition
+      (or subtraction,
+      since subtraction is the same as adding a negative.)
+      The number that is multiplied by everything else in a term is called its coefficient.
+      The
+      <q>everything else</q>
+      is called its literal part.
+      The following are all examples of terms.
+    </p>
+    <tabular>
+      <row>
+        <cell>Term</cell>
+        <cell>Coefficient</cell>
+        <cell>Literal Part</cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+        <cell />
+        <cell />
+      </row>
+      <row>
+        <cell>
+          <m>14x^2y^3</m>
+        </cell>
+        <cell>
+          <m>14</m>
+        </cell>
+        <cell>
+          <m>x^2y^3</m>
+        </cell>
+      </row>
+      <row>
+        <cell>
+          <m>7z</m>
+        </cell>
+        <cell>
+          <m>7</m>
+        </cell>
+        <cell>
+          <m>z</m>
+        </cell>
+      </row>
+      <row>
+        <cell>
+          <m>qrt</m>
+        </cell>
+        <cell>
+          <m>1</m>
+        </cell>
+        <cell>
+          <m>qrt</m>
+        </cell>
+      </row>
+      <row>
+        <cell>
+          <m>42</m>
+        </cell>
+        <cell>
+          <m>42</m>
+        </cell>
+        <cell>none</cell>
+      </row>
+    </tabular>
+    <p>
+      A couple of things to note from these examples:
+      <ul>
+        <li>
+          <p>
+            Every term has a coefficient.
+            <m>qrt</m> can be rewritten as <m>1qrt</m>,
+            and so if there is no coefficient written,
+            it is always assumed to be 1 as in there is one of those terms in the expression.
+          </p>
+        </li>
+        <li>
+          <p>
+            Not every term has a literal part.
+            A number by itself is still considered a term and is referred to as a <em>constant term</em>.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      On the other hand,
+      an expression like <m>3.85x+1225</m> is not a term,
+      because the <m>3.85x</m> and the <m>1225</m> are separated from each other by addition.
+      We would say that this expression consists of two terms:
+      <m>3.85x</m> is a term and so is <m>1225</m>.
+    </p>
+    <p>
+      The expression <m>4x^2y^3-5x+y^4-3</m> consists of four terms.
+      While the definition says terms must be separated by addition,
+      subtraction is the same as adding a negative so we can rewrite this as <m>4x^2y^3+(-5x)+y^4+(-3)</m>.
+      Usually we don't actually bother doing this,
+      but we do remember that it could be done.
+      This has an important consequence, though,
+      which the following example illustrates.
+    </p>
+    <algorithm xml:id="AlgebraicExpressionsExample1">
+      <statement>
+        <p>
+          How many terms are there in the expression <m>2x^3-3x^2+5</m>?
+          Identify each term's coefficient and literal part
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      There are three terms, separated by the
+      <q>
+        <m>+</m>
+      </q>
+      and
+      <q>
+        <m>-</m>
+      </q>
+      symbols.
+    </p>
+    <p>
+      For the first term, <m>2x^3</m>,
+      the coefficient is <m>2</m> and the literal part is <m>x^3</m>.
+    </p>
+    <p>
+      For the second term,
+      we need to remember that we could rewrite that subtraction as adding a negative.
+      We don't need to actually write this,
+      but since the definition of a term requires us to at least think of it this way,
+      we consider the coefficient to be <m>-3</m>.
+      (In other words, we treat subtraction as a negative coefficient.)
+      The literal part is <m>x^2</m>.
+    </p>
+    <p>
+      For the third term, the coefficient is <m>5</m>,
+      and there is no literal part. }
+    </p>
+    <algorithm xml:id="AlgebraicExpressionsExample2">
+      <statement>
+        <p>
+          How many terms are there in the expression <m>\displaystyle \frac{3x}{5y}</m>?
+          Identify each term's coefficient and literal part.
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      Nothing here can be separated by addition, so this is one term.
+      To determine the coefficient and literal part,
+      remember the rules for multiplying fractions (which in this case we will use to
+      <q>unmultiply</q>
+      this fraction.
+      <me>
+        \frac{3x}{5y}=\frac{3}{5}\frac{x}{y}
+      </me>
+    </p>
+    <p>
+      The coefficient is <m>\displaystyle \frac{3}{5}</m> and the literal part is <m>\displaystyle \frac{x}{y}</m> }
+    </p>
+  </subsection>
+  <subsection>
+    <title>Simplifying Terms</title>
+    <p>
+      A term can often be written in more than one way.
+      For example, the term
+      <me>
+        5x^3
+      </me>
+      could also be written as
+      <me>
+        5xxx
+      </me>
+      since <m>x^3</m> is just a shorter way of writing <m>xxx</m>.
+      But writing <m>5xxx</m> probably seems strange to you – and it should!
+      We almost always would rather write our algebraic expressions in the simplest way we can,
+      and writing out the <m>x</m>'s repeatedly is far less simple than just using an exponent.
+    </p>
+    <p>
+      We could also write this same term as
+      <me>
+        x^3(5)
+      </me>
+      since multiplication is commutative
+      (that is, the order doesn't matter when you multiply,)
+      But that probably looks weird to you too.
+      We almost always write the coefficient of a term at the start of the term.
+      And because we do this all the time we hardly ever give it any thought.
+    </p>
+    <p>
+      A term is considered to be in <em>simplified form</em>
+      <idx>
+        <h>Algebraic Expression</h>
+        <h>Simplified</h>
+      </idx> whenever:
+      <ul>
+        <li>
+          <p>
+            the coefficient is written at the start of the term, and
+          </p>
+        </li>
+        <li>
+          <p>
+            any repeated variables are combined together and written using an exponent.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      So, while <m>x^3(5)</m>,
+      <m>5xxx</m>, and <m>5x^3</m> are all perfectly good terms,
+      only <m>5x^3</m> would be considered to be in simplified form.
+    </p>
+    <p>
+      Now, is the following expression a term?
+      <me>
+        (4xy)(3x^2y)
+      </me>
+    </p>
+    <p>
+      It may look like we have two terms here,
+      but in fact everything in this expression is tied by multiplication.
+      Nothing is being separated by addition
+      (or subtraction),
+      so this is actually just a single term.
+      To see what its coefficient and literal part are, though,
+      we need to do some rearranging,
+      and put this in simplified form.
+      Since everything is multiplied,
+      and multiplication is commutative (order doesn't matter)
+      <me>
+        (4xy)(3x^2y)=(4)(3)(x)(xx)(y)(y)=12x^3y^2
+      </me>
+      and so we see the coefficient is <m>12</m> and the literal part is <m>x^3y^2</m>.
+    </p>
+    <algorithm xml:id="AlgebraicExpressionsExample3">
+      <statement>
+        <p>
+          How many terms are there in the expression <m>(3x^2)(2x)(x^2)</m>?
+          Identify each term's coefficient and literal part.
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      Because everything is tied by multiplication, this is one term.
+      To see the coefficient and literal part clearly,
+      we'll simplify the term by multiplying.
+      <me>
+        (3x^2)(2x)(x^2)=(3)(2)(1)(xx)(x)(xx)=6x^5
+      </me>
+    </p>
+    <p>
+      So the coefficient is <m>6</m> and the literal part is <m>x^5</m>. }
+    </p>
+    <algorithm xml:id="AlgebraicExpressionsExample4">
+      <statement>
+        <p>
+          How many terms are there in the expression <m>(3x^2)(2x)-x^2</m>?
+          Identify each term's coefficient and literal part.
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      There are two terms here, separated by the subtraction.
+      Simplifying by multiplying we get:
+      <me>
+        (3x^2)(2x)-x^2=(3)(2)(xx)(x)+-1x^2=6x^2+-1x^2
+      </me>
+    </p>
+    <p>
+      The first term's coefficient is <m>6</m> and its literal part is <m>x^3</m>.
+      The second term's coefficient is <m>-1</m> and its <m>x^2</m>.
+      Remember that the coefficient is negative because if we rewrite the expression with the terms separated by addition.}
+    </p>
+    <p>
+      What about a term like this?
+      <me>
+        (5x^{35})(3x^{49})(3x)
+      </me>
+    </p>
+    <p>
+      To put this term in simplified form,
+      we can follow the methods used in the previous examples.
+      But we surely don't want to write out all those <m>x</m>'s!
+      In practice,
+      what we do here is to multiply the numbers to get the coefficient,
+      and then count how many <m>x</m>'s are being multiplied together to determine the appropriate exponent.
+      In this case,
+      <m>5 \times 2 \times 3 = 30</m> so the coefficient is <m>30</m>.
+      Now, in the first parentheses we have <m>x^{35}</m>,
+      so that is the same as <m>35</m>
+      <m>x</m>'s multiplied together.
+      In the second parentheses we have <m>49</m>
+      <m>x</m>'s, and in the third we get one more.
+      So, in total,
+      there are <m>35+49+1=85</m>
+      <m>x</m>'s all together.
+      So, the simplified form of this term is:
+      <me>
+        3x^{85}
+      </me>
+    </p>
+    <p>
+      Notice that if we consider <m>x</m> to be <m>x^1</m>,
+      what we've done by counting the exponents is the same as just adding up the exponents.
+      This can be stated as the following rule:
+    </p>
+    <definition>
+      <statement>
+        <p>
+          <idx>
+            <h>Exponents</h>
+            <h>Multiplication</h>
+          </idx>
+          <em>
+            <em>Multiplication Rule for Exponents</em>
+          </em>
+        </p>
+        <p>
+          When multiplying groupings of the same variable raised to powers,
+          you can just add the powers.
+          (Make sure to remember though that a plain <m>x</m> is actually treated as <m>x^1</m>.)
+        </p>
+      </statement>
+    </definition>
+    <algorithm xml:id="AlgebraicExpressionsExample5">
+      <statement>
+        <p>
+          Rewrite the term <m>(4xy^4)(2x^7)(3x^{12}y^6)</m> in simplified form.
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      Multiplying the coefficients gives us an overall coefficient of:
+      <me>
+        4\times 2\times 3 = 24
+      </me>
+    </p>
+    <p>
+      Adding the exponents for <m>x</m> we can see the overall exponent for <m>x</m> will be:
+      <me>
+        1+7+12=20
+      </me>
+    </p>
+    <p>
+      Likewise, the overall exponent for <m>y</m> will be:
+      <me>
+        4+6=10
+      </me>
+    </p>
+    <p>
+      So, the simplified form of this term is:
+      <me>
+        24x^{20}y^{10}
+      </me>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Combining Like Terms</title>
+    <p>
+      Suppose you need to replace the carpeting in two bedrooms and the hallway of an apartment.
+      One bedroom is <m>300</m> square feet in area,
+      the second is <m>210</m> square feet,
+      and the hallway measures <m>90</m> square feet.
+      How much carpet do you need to replace?
+    </p>
+    <p>
+      You could say: <m>300 ft^2 + 210 ft^2 +90 ft^2</m>.
+      But wouldn't it be far simpler to just total up the areas and say you needed to replace <m>600 ft^2</m>?
+    </p>
+    <p>
+      Because the three measurements are all measuring the same thing
+      (area to be carpeted)
+      it is both reasonable and simpler to combine them in to a grand total.
+    </p>
+    <p>
+      We use the same idea with algebraic expressions.
+      While <m>300x^2+210x^2+90x^2</m> is a perfectly good algebraic expression,
+      it would be simpler to just put all those <m>x^2</m> terms together and rewrite the expression as the far simpler <m>600x^2</m>.
+      We handle those
+      <q>squared <m>x</m>‘s</q>
+      just the same as we handle square feet.
+    </p>
+    <p>
+      This is a general rule for algebra.
+      We say that two terms are <em>like</em>
+      <idx>
+        <h>Like Terms</h>
+      </idx>
+      if and only if they have the same literal parts.
+      Like terms can be combined by adding their coefficients
+      (and keeping the literal part the same).
+    </p>
+    <algorithm xml:id="AlgebraicExpressionsExample6">
+      <statement>
+        <p>
+          Simplify the expression <m>5x^3-9x^3+7x^3</m> by combining like terms.
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      Since all three terms have the same literal part (<m>x^3</m>) they are all like,
+      and so we combine them by adding their coefficients.
+      Since <m>5+(-9)+7=3</m>, the expression simplifies to <m>3x^3</m>.
+    </p>
+    <p>
+      Now, let's change things up a little bit.
+      Suppose that you still need to carpet those two bedrooms,
+      but instead of carpeting the hallway you need to install a runner,
+      which is not sold by area but instead by length.
+      The hallway is <m>15</m> feet long.
+      So, you need to put in <m>300</m> square feet and <m>210</m> square feet of carpeting,
+      and <m>15</m> feet of runner.
+    </p>
+    <p>
+      So, we need <m>300 ft^2+210 ft^2+15ft</m>.
+      Now, it still makes sense to combine the square footage of the two bedrooms.
+      But would it make sense to add <m>15</m> feet to this?
+      Of course not!
+      Area and length measure to different things,
+      and so we can't reasonably add them together.
+      So, we could say we need <m>510 ft^2 + 15 ft</m>,
+      but we would not combine things any further.
+    </p>
+    <p>
+      Once again, this idea extends to algebraic expressions.
+      If terms are unlike
+      (that is, if they are not like)
+      we cannot combine them at all.
+    </p>
+    <algorithm xml:id="AlgebraicExpressionsExample7">
+      <statement>
+        <p>
+          Simplify the expression <m>5y^3-2y+3y-11y^3</m>.
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      Since addition is commutative,
+      we can rearrange the <m>y^3</m> terms so they can be added together.
+    </p>
+    <p>
+      Combining the <m>y^3</m> terms gives <m>5y^3+-11y^3=-6y^3</m>.
+    </p>
+    <p>
+      Combining the plain <m>y</m> terms gives <m>-2y+3y=1y</m>
+    </p>
+    <p>
+      So, overall we get <m>-6y^3+y</m>.
+    </p>
+    <p>
+      These cannot be combined any further because the two terms in the expression are unlike. } In this example we wrote the <m>y^3</m> term first.
+      There is no reason why we cannot write it the other way around;
+      that is <m>y-6y^3</m> would also be a correct answer.
+      However, we usually write expressions from highest to lowest powered terms.
+      We will follow that convention in this book.
+    </p>
+    <algorithm xml:id="AlgebraicExpressionsExample8">
+      <statement>
+        <p>
+          Simplify the expression <m>3xy-14x^2y-9xy+4+8x^2y-1</m>.
+        </p>
+      </statement>
+    </algorithm>
+    <p>
+      Here we proceed by adding like terms:
+      <md>
+        <mrow>3xy-14x^2y-9xy+4+8x^2y-1 \amp  = -14x^2y+8x^2y+3xy-9xy+4+-1</mrow>
+        <mrow>\amp =-6x^2y-6xy+3</mrow>
+      </md>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Exercises</title>
+    <subsubsection>
+      <title>Terms</title>
+      <p>
+        Determine how many terms there are in each of the following algebraic expressions.
+        For each term, state the coefficient and the literal part.
+      </p>
+    </subsubsection>
+    <exercises>
+      <exercise>
+        <statement>
+          <p>
+            <m>3x^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            1 term
+          </p>
+          <p>
+            coefficient: <m>3</m>
+          </p>
+          <p>
+            literal part: <m>x</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4y^3</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4x-3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            2 terms
+          </p>
+          <p>
+            coefficients: <m>4</m>, <m>-3</m>
+          </p>
+          <p>
+            literal parts: <m>x</m>, none
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5-2y</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            1 term
+          </p>
+          <p>
+            coefficient: <m>1</m>
+          </p>
+          <p>
+            literal part: <m>x^7</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>z</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>11</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            1 term
+          </p>
+          <p>
+            coefficient: <m>11</m>
+          </p>
+          <p>
+            literal part: none
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>42</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3x^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            1 term
+          </p>
+          <p>
+            coefficient: <m>3</m>
+          </p>
+          <p>
+            literal part: <m>x^2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>11x^5y</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3x+2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            2 terms
+          </p>
+          <p>
+            coefficient: <m>3</m>, <m>2</m>
+          </p>
+          <p>
+            literal parts: <m>x</m>, none
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2y-5</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4z-3w+7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            3 terms
+          </p>
+          <p>
+            coefficient: <m>4</m>, <m>-3</m>, <m>7</m>
+          </p>
+          <p>
+            literal parts: <m>x</m>, <m>w</m>, none
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a+2xy-3z</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5x^2-3yb+2y^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            3 terms
+          </p>
+          <p>
+            coefficient: <m>5</m>, <m>-3</m>, <m>3</m>
+          </p>
+          <p>
+            literal parts: <m>x^2</m>, <m>yb</m>, <m>y^2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3p-4q</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2mn^2+3yz-z</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            3 terms
+          </p>
+          <p>
+            coefficient: <m>2</m>, <m>3</m>, <m>-1</m>
+          </p>
+          <p>
+            literal parts: <m>mn^2</m>, <m>yz</m>, <m>z</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2-2uv+y^2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4x^2-2ab+b^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            3 terms
+          </p>
+          <p>
+            coefficient: <m>4</m>, <m>-2</m>, <m>1</m>
+          </p>
+          <p>
+            literal parts: <m>x^2</m>, <m>ab</m>, <m>b^2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3x^3+2y^2-5z+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2x^4-3c^3+4x^2-x</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            4 terms
+          </p>
+          <p>
+            coefficient: <m>2</m>, <m>-3</m>, <m>4</m>, <m>-1</m>
+          </p>
+          <p>
+            literal parts: <m>x^4</m>, <m>c^3</m>, <m>x^2</m>, <m>x</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2x^3-3x^2+2x-1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>ax^2+by+c</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            3 terms
+          </p>
+          <p>
+            coefficient: <m>1</m>, <m>1</m>, <m>1</m>
+          </p>
+          <p>
+            literal parts: <m>ax^2</m>, <m>by</m>, <m>c</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2x^3y+3xy^2-4y^3</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4x^2+3xy-2y^2+z</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            4 terms
+          </p>
+          <p>
+            coefficient: <m>4</m>, <m>3</m>, <m>-2</m>, <m>1</m>
+          </p>
+          <p>
+            literal parts: <m>x^2</m>, <m>xy</m>, <m>y^2</m>, <m>z</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^4+2x^3-x^2+5x-7</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3s^3+2r^2-4q-1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            4 terms
+          </p>
+          <p>
+            coefficient: <m>3</m>, <m>2</m>, <m>-4</m>, <m>-1</m>
+          </p>
+          <p>
+            literal parts: <m>s^3</m>, <m>r^2</m>, <m>q</m>, none
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5xy+3m-2n</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2cd+3ef-4gh+i</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            4 terms
+          </p>
+          <p>
+            coefficient: <m>2</m>, <m>3</m>, <m>-4</m>, <m>1</m>
+          </p>
+          <p>
+            literal parts: <m>cd</m>, <m>ef</m>, <m>gh</m>, <m>i</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^3+2x^2+3x+4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4z^3-3z^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            2 terms
+          </p>
+          <p>
+            coefficient: <m>4</m>, <m>-3</m>
+          </p>
+          <p>
+            literal parts: <m>z^3</m>, <m>z^2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>17y^4-3y^2+2y-1</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercises>
+    <subsubsection>
+      <title>Simplifying Terms</title>
+      <p>
+        Rewrite each of the following terms in simplified form.
+      </p>
+      <p>
+        (2) 
+      </p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
+              <m>2x(3x^2)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>6x^3</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>4(2y^2)(7y^2)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(3x^2)(5x)(2x^4)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>30x^7</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(7y)(2y^5)(3y^2)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(3z^3)(4z^4)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>12z^7</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(2p^2)(3p^3)(4p^4)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(x^2y^3)(x^5)(3x^4)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>3x^11y^3</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(2p^2)(3p^3q^5)(5q)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(3xy)(2yz)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>6xy^2z</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(4ab)(5cd)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(2pq^2)(3qr^2)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>6pq^3r^2</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(x^2y)(xy^2)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(3ax)(4by)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>12abxy</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(7x^2y)(2xy^3)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(2ab)(3cd)(4ef)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>24abcdef</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(5xy^2)(2x^2z)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(4ac^2)(3bd)(2ef)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>24abc^2def</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(2x^3y^2)(3xyz)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(xy^2)(x^2y^3)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>x^3y^5</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(4a^2b)(3ab^2)(2abc)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(3x^2y^2)(2xy)(5xyz)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>30x^4y^4z</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(2pq^3)(5qr^2)(3rs)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(x^3)(2x^2y)(3xy^2)(4y^3)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>24x^6y^6</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(2a^2b^3)(3ab^2c)(4bc^2)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(3x^2y^3)(5xy^2z)(2xyz)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>30x^4y^6z^2</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(4a^2bc)(3ab^2c^2)(2abc^2)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(5xy)(2x^2y^2)(3x^3y^3)(4x^4y^4)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>120x^10y^10</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(2abc)(3bcd)(4cde)(5def)</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(xy)(x^2y)(xy^2)(x^2y^2)(xy^3)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>x^7y^9</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>(3a)(4b)(5c)(6d)(7e)(8f)</m>
+            </p>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
+    <subsubsection>
+      <title>Combining Like Terms</title>
+      <p>
+        (2) 
+      </p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
+              <m>2x^2-3x+5x+3x^2</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>5x^2+2x</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>5x-7x+3x-2x+x^2+4x+3x^2</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>11x^3-3x^2+2x-5+x^2-2x+6</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>11x^3-2x^2+1</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>r^2+2r-r^2-3r+r</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>4t-2t+3t-5+t^2-4t^2+2t+7</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-3t^2+7t+2</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>11j-j^2+3j-9</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>3x^2-5x+2x^2-4x+7</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>5x^2-9x+7</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>4y^3+2y^2-3y^3+5y^2-y+10</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>2ab+3bc-4ab+2ac-5bc</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-2ab+2ac-2bc</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>x^2y-xy^2+x^2y^2-2xy+3yx^2</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>2p^2q^3-3p^2q^3+5p^2q-pq^3+2p^2q</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-p^2q^3+7p^2q-pq^3</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>3xy-2yx+4xy-3yx+2yx-xy</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>3x^2-5x+2x^2-4x+7</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>5x^2-9x+7</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>4y^3+2y^2-3y^3+5y^2-y+10</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>2a+3b-4a+2a-5b</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-2b</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>x^2y-xy^2+x^2y^2-2xy+3yx^2</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>2p^2q^3-3p^2q^3+5p^2q-pq^3+2p^2q</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-p^2q^3+7p^2q-pq^3</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>y^5-3y^3+2y-y^3+4y^5-5y+3y</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>3z^2-5+2z-11z+3z^2+4-6z^2+9z+1</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>0</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>3xy-2yx+4xy-3yx+2yx-xy</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>2x^3-4x^2y+3xy^2-5x^3+2x^2y-3xy^2</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-3x^3-2x^2y</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>4a^2b-3ab^2+2a^2b-5ab^2+3ab-4a^2b</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>2xy^2-3yx^2+4xy^2-2yx^2+5yx^2-xy^2</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>5xy^2</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>3p^3q-4pq^3+2p^3q-3pq^3+4p^3q-5pq^3</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>2a^2b^3-3a^2b^3+4ab^2-2a^2b^3+3ab^2-5ab^2</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>2ab^2-3a^2b^3</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>3x^3y-4xy^3+2x^3y-3xy^3+4x^3y-5xy^3</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>4abc-3bca+2cab-5abc+3bac-4cab</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-3abc</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>2x^4-3x^3y+4x^2y^2-2x^4+3x^3y-5x^2y^2</m>
+            </p>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
+  </subsection>
+</section>

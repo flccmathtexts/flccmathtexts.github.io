@@ -1,0 +1,13 @@
+INFO    : Building target web
+ERROR   : XInclude Error caused build to fail:
+ERROR   : file:/C:/Users/maley/OneDrive/Documents/GitHub/flcc_algebratext/_MAT097AlgebraTextbook/ptx/david/source/AlgebraicExpressions.ptx:1276:19:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: exercsies line 961 and exercises
+file:/C:/Users/maley/OneDrive/Documents/GitHub/flcc_algebratext/_MAT097AlgebraTextbook/ptx/david/source/FoundationsOfAlgebra.ptx:3:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/maley/OneDrive/Documents/GitHub/flcc_algebratext/_MAT097AlgebraTextbook/ptx/david/source/AlgebraicExpressions.ptx, and no fallback was found
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

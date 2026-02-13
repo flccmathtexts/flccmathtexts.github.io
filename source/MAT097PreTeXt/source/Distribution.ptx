@@ -1,0 +1,811 @@
+<section xml:id="Distribution">
+  <title>Distribution</title>
+  <introduction>
+    <p>
+      The distributive law, one of the basic laws of arithmetic and algebra,
+      states that when you have something multiplied by an expression in parentheses,
+      you can multiply it by each of the terms inside the parentheses.
+    </p>
+    <p>
+          <idx><h>Distribution</h></idx>
+      Well, that was awfully wordy.
+      It's far easier to represent this using symbols:
+      <me>
+        a(b+c)=ab+ac
+      </me>
+      where <m>a</m>,
+      <m>b</m> and <m>c</m> represent any algebraic expressions at all.
+    </p>
+    <p>
+      The distributive law is often put to use in simplifying algebraic expressions,
+      as the next few examples will illustrate.
+    </p>
+    <example xml:id="DistributionExample1">
+      <statement>
+        <p>
+          Distribute and then simplify the expression <m>5(2x+3y)</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Following the distributive law,
+      we can multiply 5 by each term inside the parentheses:
+      <me>
+        5(2x+3y)=5(2x)+5(3y)=10x+15y
+      </me>
+    </p>
+    <p>
+      The instructions for <xref ref="DistributionExample1">example</xref>
+      explicitly told us to distribute.
+      Usually, though,
+      it is understood that distributing whenever possible is a part of simplifying,
+      and so you should assume that distributing is expected when you are asked to simplify an expression as in the next example.
+    </p>
+    <example xml:id="DistributionExample2">
+      <statement>
+        <p>
+          Simplify <m>5x(2x^2+3x+1)+3x(2x-5)</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      We'll distribute first, and then simplify each of the resulting terms.
+      Finally, we will combine like terms.
+      <md>
+        <mrow>5x(2x^2+3x+1)+3x(2x-5) \amp  = 5x(2x^2)+5x(3x)+5x(1))+3x(2x)+3x(-5)</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = 10x^3+15x^2+5x+6x^2+-15x</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = 10x^3 + 21x^2 -10x</mrow>
+      </md>
+    </p>
+    <p>
+      Usually we don't actually write out the step shown on the second line in the example above.
+      We usually just combine the steps of distributing into each term and simplifying,
+      going directly from the first line to the third.
+      From here on in we will not write out that step in this book,
+      but whether or not you want to write that step out in your own work is entirely your choice.
+    </p>
+    <p>
+      The following example will illustrate a very important point about distributing when a subtraction is involved.
+      Pay particular attention to this next example!
+    </p>
+    <example xml:id="DistributionExample3">
+      <statement>
+        <p>
+          Simplify <m>4x(x-3)-3x(x+2)</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      It is clear that we need to distribute <m>4x</m> into the first set of parentheses.
+      In the second set, though, it is easy to make a mistake.
+      It appears that we need to just distribute the <m>3x</m>,
+      which would give us the following (incorrect) result:
+      <me>
+        \text{\underline{Incorrect:}    }  4x^2-12x-3x^2+6x
+      </me>
+    </p>
+    <p>
+      The error here is that the
+      <q><m>-</m></q>
+      is only being applied to the first part of what's inside those parentheses.
+      The
+      <q><m>x</m></q>
+      got the negative, but the
+      <q><m>+2</m></q>
+      did not.
+    </p>
+    <p>
+      To treat this correctly,
+      in theory what we should do is to rewrite
+      <m>4x(x-3)-3x(x+2)</m> as <m>4x(x-3)+(-3x)(x+2)</m>,
+      using the fact that subtracting is the same as adding a negative.
+      Then we would distribute the <m>-3x</m> in and everything would get the negative.
+      In practice,
+      most people just remember that when you distribute,
+      the minus gets distributed as well.
+    </p>
+    <p>
+      In this case, that means that we'd bring along the
+      <q><m>-</m></q>
+      and distribute a <m>-3x</m> into the <m>(x+2)</m>.
+      Whichever way you choose to look at it, the result is the same:
+      <me>
+        \text{\underline{Correct:}    }  4x(x-3)-3x(x+2)=4x^2-12x-3x^2-6x=x^2-18x
+      </me>
+    </p>
+    <p>
+      Let's try one additional example before moving on:
+    </p>
+    <example xml:id="DistributionExample4">
+      <statement>
+        <p>
+          Simplify <m>5x(3x-1)-2(x^2-4x-3)-3(4x+2)</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      There are a lot of
+      <q><m>-</m></q>
+      's to deal with here.
+      Take your time and be careful!
+      <md>
+        <mrow>5x(3x-1)\amp -2(x^2-4x-3)-3(4x+2)</mrow>
+        <mrow>\amp  = 5x(3x-1)+(-2)(x^2-4x-3)+(-3)(4x+2)</mrow>
+        <mrow>\amp  = 15x^2-5x-2x^2+8x+6-12x-6</mrow>
+        <mrow>\amp  = 13x^2-9x</mrow>
+      </md>
+    </p>
+    <p>
+      The notion of distribution extends from simple terms as demonstrated in the following examples:
+    </p>
+    <example xml:id="DistributionExample5">
+      <statement>
+        <p>
+          Simplify <m>(x+2)(x+3)</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We begin by distributing the second expression across the addition in the first:
+      <md>
+        <mrow>(x+2)(x+3)\amp  = x(x+3)+2(x+3)</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = x^2+3x+2x+6</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = x^2+5x+6</mrow>
+      </md>
+    </p>
+    <example xml:id="DistributionExample6">
+      <statement>
+        <p>
+          Simplify <m>(2x-4)(3x-1)</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We distribute and combine like terms:
+      <md>
+        <mrow>(2x-4)(3x-1) \amp  = 2x(3x-1)-4(3x-1)</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = 6x^2-2x-12x+4</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = 6x^2-14x+4</mrow>
+      </md>
+    </p>
+    <example xml:id="DistributionExample7">
+      <statement>
+        <p>
+          Simplify <m>(x-2)(2x^2+3x+4)</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We distribute and combine like terms:
+      <md>
+        <mrow>(x-2)(2x^2+3x+4) \amp  = x(2x^2+3x+4)-2(2x^2+3x+4)</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = 2x^3+3x^2+4x-4x^2-6x-8</mrow>
+        <mrow>\amp</mrow>
+        <mrow>\amp  = 2x^3-x^2-2x-8</mrow>
+      </md>
+    </p>
+  </introduction>
+  <subsection>
+    <title>Exercises</title>
+    <p>
+      Simplify each of the following algebraic expressions:
+    </p>
+    
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>2(x-3)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2x-6</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5(x+2)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2y(3y+5)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>6y^2+10y</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>7x(x-1)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3(x-2)+2(x-3)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>5x-12</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>6(y+3)+4(2y-9)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3x(x-9)+5(x^2+7x-1)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>8x^2+8x-5</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3(k^2-5k+1)+2k(k+3)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>4(z-3)-2(z-5)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2x-22</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2(5y+7)-3(3y+1)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>4y(y^2-8)-3(y^3+2y)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>y^-38y</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>3z(3z-4)-5(z-1)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2x(x-3)+x(4x-1)-5(x^2-2x-1)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>x^2+3x+5</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5x(2x-1)-3(x^2+2x)+11x(x-4)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>4x(2x-1)-3x(2-6x)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>26x-10x</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>8(3-5x)-3(8-2x)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>4x^2-3x(x-2)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>x^2+6x</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(3x)(2x)(5x^2)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>t^2-5t+3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>t^2-5t+3</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>4x(x-5)-2x(x+7)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5r^2-3r+r(2r+5)+3(r-1)+5</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>7r^2+5r+2</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>p^2-p(p-2)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(t^2-3t+6)-(t^2+3t-5)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-6t+11</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2t(3t^2)+3t^3</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>w(w-3)-3w(w+1)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-2w^2-6w</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5y^2-2y(y-3)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(2z^2)(3z)(z^3)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>6z^6</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>x^3+x^2+x</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>6z(2z-5)-4z(3z-2)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-22z</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2+4h(h-1)+2h(h-7)-h^2+3h-5</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>6x^2-3x(2x+5)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-15x</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>4p^2(2p^2)-2p^3(4p)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>g(g+2)-2g(g-1)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-g^2+4g</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(6x^3-3x+1)-(1-3x-x^2-6x^3)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(f+2)(f+9)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>f^2+11f+18</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(g-7)(g-11)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(h+4)(h-2)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>h^2+2h-8</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(I-10)(I+5)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>2(j+6)(j+9)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2j^2+30j+108</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(k+5)(k-5)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(k+5)(k+5)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>k^2+10k+25</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(L+10)(L-10)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(7-L)(7+L)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>49-L^2</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(m-8)(8+m)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-7(n+6)(n-6)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>252-7n^2</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(p-2)^2</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(3q-7)^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>9q^2-42q+49</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>5(r+3)^2</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-4(7-2s)^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-16s^2+112s-196</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(t-2)(3t+4)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>-3(u^2-3u+20)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-3u^2+9u-60</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(2v+7)^2</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(w-3)(w+3)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>w^2-9</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(x-4)(x^2-2x+1)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(a+2)(3a^2+4a-7)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3a^3+10a^2+a-14</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(m-4)(m^2-8m+1)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(2g+5)(g^3-2g^2+g)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2g^4+g^3-8g^2+5g</m>
+        </p>
+      </solution>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>
+          <m>(4t-1)(3t^2-8t+2)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+  </exercises></subsection>
+</section>

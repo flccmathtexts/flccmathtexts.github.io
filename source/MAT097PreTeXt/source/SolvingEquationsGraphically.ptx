@@ -1,0 +1,1260 @@
+<section xml:id="SolvingEquationsGraphically">
+  <title>Solving Equations Graphically</title>
+  <introduction>
+    <p>
+      Graphs are a powerful tool which we will exploit throughout this book.
+      A particularly powerful use for graphs is as a tool to solve equations,
+      particularly in cases where traditional algebra methods would be tedious or ineffective.
+      In this chapter we will introduce this method and discuss when it is - and when it is not - a useful alternative.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Graphical Solution</title>
+    <p>
+      We'll begin this chapter by showing how we could use a graph to solve a fairly simple equation.
+      Consider, for example, the equation:
+      <me>
+        2x-1=7
+      </me>
+    </p>
+    <p>
+      Now, it is not hard to solve this equation with traditional algebra.
+      Add one to both sides, divide by two,
+      and you can quickly conclude that the solution is <m>x=4</m>.
+      Fair enough.
+      But we also could have seen this in another way.
+    </p>
+    <p>
+      The algebraic expression on the left side of that equation can be used to define a function,
+      <m>f(x)=2x-1</m>.
+      Using the calculator,
+      we can readily obtain a graph of this function (shown below in the standard window):
+    </p>
+    <figure>
+      <caption>Graph of <m>f(x)=2x-1</m> in the standard window</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure01.png" />
+    </figure>
+    <p>
+      Now, remember that a graph for a function consists of all of its input-output pairs.
+      For example, <m>(5,9)</m> lies on this graph,
+      because when you input <m>x=5</m> into the function
+      <m>f(x)=2x-1</m> the resulting output is <m>f(5)=9</m>.
+    </p>
+    <p>
+      Now, solving the equation <m>2x-1=7</m> amounts to asking
+      <q>what <m>x</m> value do we need to input into
+      <m>f(x)=2x-1</m> to get <m>7</m> as the resulting output?</q>
+      We can find this by looking for the point on the graph where the output value is <m>7</m>;
+      that is, where <m>f(x)=7</m>.
+    </p>
+    <p>
+      We could try to do this by tracing along the graph to get to the point we are seeking,
+      but we can find it more efficiently in another way.
+      If we consider the right side of the equation as also defining a function <m>g(x)=7</m> and graph that function,
+      the result is just a flat horizontal line whose output value stays at <m>7</m> no matter where we go on the input axis (shown below in the standard window):
+    </p>
+    <figure>
+      <caption>Graph of <m>g(x)=7</m> in the standard window</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure02.png" />
+    </figure>
+    <p>
+      Now, we can graph the right-side function and left-side function together.
+      The
+      <q>Y=</q>
+      screen allows us to enter more than one function at once,
+      so if we do this:
+    </p>
+    <figure>
+      <caption>Entering two function in the calculator</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure03.png" />
+    </figure>
+    <p>
+      And then we get both graphed together in the same window:
+    </p>
+    <figure>
+      <caption>Graph of <m>f(x)=2x-1</m> and <m>g(x)=7</m> in the standard window</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure04.png" />
+    </figure>
+    <p>
+      Now, how does this help?
+      Well, we are looking for the place where the output of
+      <m>f(x)=2x-1</m> is <m>7</m> <mdash /> or, in other words,
+      where the graph of <m>f(x)=2x-1</m> is at a height of <m>7</m>.
+      But the output of <m>g(x)=7</m> is always <m>7</m>, or,
+      in other words,
+      the graph of <m>g(x)=7</m> is always at a height of <m>7</m>.
+      So, the point on the graph of
+      <m>f(x)=2x-1</m> that we are looking for is the point where the two graphs intersect!
+    </p>
+    <p>
+      The calculator has programs built in to find the intersection between two graphs.
+      We'll walk through that right now, step-by-step.
+    </p>
+    <p>
+          <idx><h>Calculator:Intersection</h></idx>
+      In the top row of your calculator,
+      you will see a key labeled
+      <q>TRACE</q>
+      which is marked above as
+      <q>CALC</q>. Hit
+      <q>2nd</q>
+      and then this key to reach the
+      <q>CALC</q>
+      menu.
+      You should see this:
+    </p>
+    <figure>
+      <caption>The \quotes{CALC} menu</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure05.png" />
+    </figure>
+    <p>
+      Now, select
+      <q>5: Intersect</q>
+      and the graphs will appear:
+    </p>
+    <figure>
+      <caption>The first step toward finding the intersection</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure06.png" />
+    </figure>
+    <p>
+      Now we are ready to work through the calculator program to find the intersection.
+      Because the calculator can store more than two graphs,
+      the program first asks you to confirm which two graphs you want to intersect. (Unfortunately,
+      you still have to do this even if you've only entered two!) The
+      <q>First curve?</q>
+      question at the bottom of the screen is asking you to confirm that one of the two graphs you want to intersect is indeed the one shown in the upper left-hand corner,
+      <q>Y1=2X-1</q>. (The word
+      <q>curve</q>
+      is an old-fashioned word for graph;
+      for our purposes you can just read this as meaning the same thing as
+      <q>graph</q>.) Since this is correct, you only need to hit
+      <q>Enter</q>
+      to confirm.
+      The screen should now show this:
+    </p>
+    <figure>
+      <caption>The second step toward finding the intersection</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure07.png" />
+    </figure>
+    <p>
+      Since
+      <q>Y2=7</q>
+      is indeed the other graph, hit
+      <q>Enter</q>
+      again to confirm.
+    </p>
+    <figure>
+      <caption>The third step toward finding the intersection</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure08.png" />
+    </figure>
+    <p>
+      The calculator is now asking for a guess.
+      The calculator will find the intersection that is closest to the guess you enter here.
+      Since there is only one intersection,
+      this doesn't really matter, though when there is more than one intersection
+      (which we will see an example of shortly)
+      this step is important.
+      Here, you can use the arrow keys to move the blob closer to the intersection if you like,
+      but you can also just hit
+      <q>Enter</q>
+      without changing anything and let it go:
+    </p>
+    <figure>
+      <caption>Found the intersection</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure09.png" />
+    </figure>
+    <p>
+      So the intersection occurs at <m>(4,7)</m>.
+      Our goal though was to solve the original equation,
+      so this is not quite the answer we were looking for.
+      We set these graphs up so that the input (<m>x</m>) value of their intersection would be the solution to the original equation.
+      So, we conclude that the solution is:
+      <me>
+        x=4
+      </me>
+      which agrees with the answer we got solving using traditional algebra.
+    </p>
+    <p>
+      Now, the equation in this example we've worked through was quite simple,
+      chosen just to illustrate how the method works.
+      Given the choice,
+      you'd almost certainly not choose to use graphical solution for this one,
+      since traditional algebra would have been much less work.
+      The point, though,
+      is that the graphing method works just as well if the algebra to solve the equations would be more demanding.
+      We'll illustrate this with a few examples.
+    </p>
+    <example xml:id="SolvingEquationsGraphicallyExample1">
+      <statement>
+        <p>
+          Solve <m>t+2=4(2t+1)-2(3t-1)</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We begin by making each side of the equation a function,
+      and entering them into the calculator.
+      Remember that in the calculator the input variable must always be rewritten as
+      <q>X</q>. So we enter:
+    </p>
+    <figure>
+      <caption>Entering both sides of the equation</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure10.png" />
+    </figure>
+    <p>
+      Running through the steps:
+      <ol>
+        <li>
+          <p>
+            Select
+            <q>2nd</q>
+            <q>TRACE</q>
+            (i.e.
+            <q>CALC</q>
+            ) <ndash />&gt;
+            <q>5:Intersect</q>
+          </p>
+        </li>
+        <li>
+          <p>
+            Hit
+            <q>Enter</q>
+            to confirm we want to use Y1=X+2
+          </p>
+        </li>
+        <li>
+          <p>
+            Hit
+            <q>Enter</q>
+            to confirm we want to use Y2=4(2X+1) – 2(3X – 1)
+          </p>
+        </li>
+        <li>
+          <p>
+            Hit
+            <q>Enter</q>
+            to agree to the suggested guess
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      We end up with:
+    </p>
+    <figure>
+      <caption>The intersection on the calculator</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure11.png" />
+    </figure>
+    <p>
+      From this we use the X-value of the intersection to conclude that the solution to the equation is <m>t=-4</m>
+    </p>
+    <p>
+      We can check this is by substituting it back into the original equation.
+      (It's not a bad idea to do this,
+      since even though the calculator will never make an error in finding the intersection,
+      it is always possible that you might make a typographical error entering the formulas.)
+      }
+    </p>
+    <example xml:id="SolvingEquationsGraphicallyExample2">
+      <statement>
+        <p>
+          Solve <m>x^2-10=2x</m>.
+          Round to two decimal places if necessary.
+          This equation has two solutions.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Now, this is actually a problem that we cannot (yet) solve using traditional algebra,
+      because if we try to put the <m>x</m> terms together we are unable to do so,
+      because we cannot put the <m>x^2</m> and <m>2x</m> together – they are unlike terms.
+      Graphical solution still works just fine though.
+    </p>
+    <p>
+      Starting with:
+    </p>
+    <figure>
+      <caption>Entering both sides of the equation</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure12.png" />
+    </figure>
+    <p>
+      Running the intersect program up to the
+      <q>Guess?</q>
+      step we get:
+    </p>
+    <figure>
+      <caption>Finding an intersection</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure13.png" />
+    </figure>
+    <p>
+      We can see there that there are two intersections between the graphs,
+      meaning that our equation has more than one solution.
+      We will need to run the intersect program twice,
+      once to get each of the shown solutions.
+      Now, use the arrow keys to move the blob closer to the intersection on the left.
+      You don't have to worry about getting really close to it,
+      you just need to be close enough that the calculator clearly
+      <q>understands</q>
+      which intersection you are after.
+      Then hitting enter to confirm, you get:
+    </p>
+    <figure>
+      <caption>First intersection</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure14.png" />
+    </figure>
+    <p>
+      so one solution to the equation
+      (rounded to two decimal places)
+      is <m>x=-2.32</m>.
+    </p>
+    <p>
+      We now need to run through the program again.
+      Once we get to the
+      <q>Guess</q>
+      step, we will need to use the arrow keys to move the blob closer to the intersection on the right.
+      We end up with:
+    </p>
+    <figure>
+      <caption>Second intersection</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure15.png" />
+    </figure>
+    <p>
+      So the equation's two solutions are <m>x=-2.32</m> and <m>x=4.32</m>. }
+    </p>
+  </subsection>
+  <subsection>
+    <title>Window Setting for Graphical Solution</title>
+    <p>
+      In all of the examples we've seen so far,
+      we've been able to find the intersection(s) we were looking for within the standard window.
+      Of course this won't always happen.
+    </p>
+    <p>
+      The standard window is usually a good place to start but if the graphs you see in the standard window don't intersect you'll have to change the window so that you can see the intersection.
+      Fortunately, you're usually not flying blind when you do this.
+      The graph you see in the standard window often will give you some hint about how you need to adjust.
+    </p>
+    <example xml:id="SolvingEquationsGraphicallyExample3">
+      <statement>
+        <p>
+          Solve <m>\frac{1}{2}x+3=\frac{x+20}{3}</m> graphically
+        </p>
+      </statement>
+    </example>
+    <p>
+      We start with the standard window:
+    </p>
+    <figure>
+      <caption>Standard Window</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure16.png" />
+    </figure>
+    <p>
+      We don't get an intersection in the standard window,
+      but looking at the graphs but they do appear to be coming together.
+      If we try to run the intersect program here,
+      though we end up with this error:
+    </p>
+    <figure>
+      <caption>Error screen</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure17.png" />
+    </figure>
+    <p>
+      Not the most descriptive error code ever written,
+      but this is the error you will get whenever you try to intersect two graphs that don't intersect within your window's interval of <m>x</m>-values.
+      The intersect program will only find the intersection if it occurs within the interval of <m>x</m>-values that you have graphed.
+      The calculator is not
+      <q>smart enough</q>
+      to know to look for an intersection outside that window.
+    </p>
+    <p>
+      But the intersection does exist.
+      We just have to adjust our window to find it.
+      Looking at the graphs,
+      we can see that they appear to be getting closer together as we move up and to the right.
+      So, we need to use a larger upper limit for both X and Y to find the intersection.
+      We can't tell how much higher we need to go,
+      but we can make a reasonable guess and adjust as needed.
+      Let's try increasing both to <m>20</m>:
+    </p>
+    <figure>
+      <caption>Xmax, Ymax set from <m>10</m> to <m>20</m></caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure18.png" />
+    </figure>
+    <p>
+      which gives us this view of the graphs:
+    </p>
+    <figure>
+      <caption>New graph based on new window</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure19.png" />
+    </figure>
+    <p>
+      It's not clear whether or not they actually intersect in this window.
+      If you try to run the Intersect program,
+      though, you'll see that they don't.
+      It doesn't look like we need to go higher to get the intersection,
+      but it does appear we need to go a bit farther to the right.
+      So, adjusting Xmax up to, say,
+      <m>25</m>, and walking through the Intersect program we end up with:
+    </p>
+    <figure>
+      <caption>New graph based on new window</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure20.png" />
+    </figure>
+    <p>
+      So we can conclude the solution to this equation is <m>x=22</m>. }
+    </p>
+    <p>
+      We don't always get enough of a hint from the standard window, though.
+      Sometimes we need to actually take a look at some values of the two functions to get a sense of a window where we might see the graphs.
+    </p>
+    <example xml:id="SolvingEquationsGraphicallyExample4">
+      <statement>
+        <p>
+          Solve <m>\frac{5-2x}{3}=3(2x+7)-5(x-2)</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We start by entering the two sides of the equation as functions:
+    </p>
+    <figure>
+      <caption>Treating both sides as functions in the calculator</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure21.png" />
+    </figure>
+    <p>
+      But if we look at these graphs in the standard window we see nothing at all!
+      These graphs both lie entirely outside the standard window.
+    </p>
+    <p>
+      To get a hint of where to look, we can create a table.
+      It doesn't much matter what values we try - we're just trying to get any glimpse of the graphs – so we'll just use an automatic table starting at zero and going up in increments of one unit:
+    </p>
+    <figure>
+      <caption>Treating both sides as functions in the calculator</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure22.png" />
+    </figure>
+    <p>
+      From this we can see that if we are using X-values that fall within the standard window,
+      the Y-values are much higher than the standard window.
+      So, we might try something like switching to
+      <q>Ymin=0</q>
+      and
+      <q>Ymax=50</q>, which gives us this view:
+    </p>
+    <figure>
+      <caption>Treating both sides as functions in the calculator</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure23.png" />
+    </figure>
+    <p>
+      Luckily, this view not only gives us a hint where the intersection might be,
+      it actually includes it.
+      Completing the process of finding the intersection, we get:
+    </p>
+    <figure>
+      <caption>Treating both sides as functions in the calculator</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure24.png" />
+    </figure>
+    <p>
+      allowing us to conclude that the solution is <m>x=-8.6</m>. }
+    </p>
+    <p>
+      Before concluding this discussion,
+      there are a couple of additional points which we should address.
+    </p>
+    <p>
+      We saw in <xref ref="FunctionsandGraphsExample2">Example</xref>
+      that it's possible for an equation to have multiple solutions.
+      Which raises the question:
+      how do we know in <xref ref="FunctionsandGraphsExample3">Examples</xref>
+      and <xref ref="FunctionsandGraphsExample4" />
+      that we got all the solutions?
+      We adjusted our window to find a solution ... but how do we know that we wouldn't find another if we looked elsewhere?
+    </p>
+    <p>
+      In both of these examples, though,
+      we had first degree equations.
+      We know from our prior experience of algebra that unless a first degree equation is inconsistent
+      (no solutions)
+      or an identity
+      (everything is a solution)
+      it will have one and only one solution.
+      So, while we can't say for sure just by looking at the graphs whether or not there are other solutions out there,
+      what we know about algebra assures us that we don't have to worry about this with these examples.
+      For equations that are not first degree,
+      such as the one in <xref ref="FunctionsandGraphsExample2">Example</xref>,
+      you need to know more about how they behave algebraically and graphically to know how many solutions you are looking for.
+      We will explore this in later chapters of this book;
+      for the time being,
+      if you are asked to solve an equation that is not first degree you will be given enough additional information to know whether or not you need to look for additional solutions.
+    </p>
+    <p>
+      Another comment needs to be made about the window adjustment.
+      It actually is not necessary to see the intersection on your calculator screen to find the intersection!
+      The calculator requires that the solution's input value fall inside the window in order to find the intersection,
+      but it does not require the output value to fall within the window.
+      Or, said another way,
+      the calculator cannot find the intersection if it is to the right or left of the window,
+      but it actually can find the intersection if it falls above or below the window.
+      So sometimes if you don't have the intersection in the window but run the intersect program,
+      you get the answer anyway.
+      This actually would have happened in <xref ref="FunctionsandGraphsExample4">Example</xref>
+      if we had not adjusted the window to see the intersection.
+      But since you can't really rely on that happening,
+      it's probably best to always try to get a window that the intersection falls within.
+    </p>
+    <p>
+      Sometimes you can get away with not seeing the intersection,
+      sometimes you can't.
+      It's safer to always try to get the intersection on screen before trying to find it.
+    </p>
+  </subsection>
+  <subsection>
+    <title>When to Use a Graphical Solution</title>
+    <p>
+      Graphical solution is a fantastically useful tool but it is not always the best approach.
+      Often a graphical approach will allow you to solve an equation with much less effort than traditional algebra would require.
+      And sometimes as we've seen it even opens up the possibility of solving equations we could not otherwise solve.
+      But it's also often true that graphical solution is sometimes much more work than just working through the problem with algebra.
+    </p>
+    <p>
+      For example,
+      let's reconsider the first equation we used as an example in this chapter:
+      <me>
+        2x-1=7
+      </me>
+    </p>
+    <p>
+      This can be solved either way,
+      but I think you'll agree that the work involved in solving this graphically was way more than the very minimal effort it takes to solve it with algebra.
+      We used this simple equation as a first example to illustrate how graphical solution works,
+      but in fact you almost certainly would not want to use graphical solution given the choice.
+    </p>
+    <p>
+      On the other hand, and equation like this one:
+      <me>
+        \frac{3}{5}x-\frac{2}{7}\left(\frac{4}{13}x+\frac{11}{3} \right) = \frac{4}{9}-\frac{2}{11}x
+      </me>
+      seems like it would take a lot of effort to work through algebraically.
+      While it would be a pain to type each side in to the calculator,
+      that seems like less effort than slogging through clearing all those fractions.
+      For this equation, graphing might be a better choice.
+    </p>
+    <p>
+      Of course, there's no hard and fast rule about this.
+      Which method would be better to solve this one?
+      <me>
+        3(2x-5)-5(7+x)-9=12+4(3x-5)-2(5x+1)
+      </me>
+    </p>
+    <p>
+      On the one hand,
+      solving this with algebra is going to involve a lot of distributing and combining like terms.
+      Solving graphically would avoid that work.
+      On the other hand,
+      though, putting each side of this equation into the
+      <q>Y=</q>
+      screen will involve a lot of typing,
+      and even the slightest typographical error will throw everything off.
+      And, those are all whole numbers,
+      which are not too bad to work with.
+      Which approach is better?
+      That's really a judgment call – given the choice of methods to solve this problem,
+      whichever one sounds preferable to you is probably the better choice for you.
+      Someone else might choose differently,
+      depending on their own experience and preferences.
+    </p>
+    <p>
+      Even though there are no absolute rules here,
+      we can make some suggestions.
+      In general:
+    </p>
+    <tabular>
+      {|p{.5\textwidth}|p{.5\textwidth}|}
+      \hline
+      Traditional Algebra is Preferable if: &amp; Graphical Solution may be Preferable if:
+      \hline
+      <m>\bullet</m> The equation is fairly simple, requiring few steps to solve algebraically and/or &amp; <m>\bullet</m> The equation is complex, involving lots of distributing, combining terms, clearing fractions, or the like and/or
+      <m>\bullet</m> The numbers are generally whole numbers, or reasonably nice fractions or decimals and/or &amp; <m>\bullet</m> The numbers are \quotes{messy} decimals or fractions and/or
+      <m>\bullet</m> The numbers are large (making a window setting tough to find for graphical solution) and/or &amp; <m>\bullet</m> The numbers are not terribly large (making an appropriate window setting probably not hard to find) and/or
+      <m>\bullet</m> An exact answer is required and/or &amp; <m>\bullet</m> A rounded answer is acceptable and/or
+      <m>\bullet</m> The equation can be solved using algebra techniques you know &amp; <m>\bullet</m> The equation cannot be solved using algebra techniques you know.
+      \hline
+    </tabular>
+    <example xml:id="SolvingEquationsGraphicallyExample5">
+      <statement>
+        <p>
+          Which solution method would be the better bet for each of the following equations?
+          Why?
+          <ol marker="a">
+            <li>
+              <p>
+                <m>3x-5=4-2x</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>4.67(2.13t-1.15)+0.87=1.13(2.22t-9.14)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>100,000x-50,000=75,000x+25,000</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\frac{3}{2}w+(4-w)=\frac{2}{5}w-3</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </example>
+    <ol marker="a">
+      <li>
+        <p>
+          <m>3x-5=4-2x</m> For this, traditional algebra is probably the better bet,
+          since solving this equation would not require too many steps and would probably be less work than setting up and using a graph.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>4.67(2.13t-1.15)+0.87=1.13(2.22t-9.14)</m> The numbers in this equation are awkward,
+          and solving this using traditional algebra would require quite a few steps.
+          Graphical solution would probably be less work,
+          though it does require being very careful to avoid typos when entering the two sides into the calculator.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>100,000x-50,000=75,000x+25,000</m> Here,
+          the algebra required to solve this would not be terribly demanding.
+          And since the numbers are so large it would be difficult to get an appropriate window setting for the graphs.
+          Traditional algebra is almost certainly the better bet.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\frac{3}{2}w+(4-w)=\frac{2}{5}w-3</m> This one is really a matter of preference.
+          Because of the fractions and the simplification required,
+          solving this one with traditional algebra will require some effort.
+          But the fractions are not that bad and the amount of simplification required won't be excessive so it is debatable whether that work is more or less effort than graphical solution.
+          Either approach would be a reasonable choice.
+        </p>
+      </li>
+    </ol>
+    <p>
+      Sometimes you might start with one approach,
+      and then decide that maybe it wasn't the best approach after all.
+      Don't be afraid to change tactics!
+    </p>
+    <p>
+      Suppose you set out to solve this equation graphically:
+      <me>
+        3(2-x)+5(x-1)=3x-2(2-5x)-11x
+      </me>
+    </p>
+    <p>
+      Doing so, in the standard window you'd end up with the graph:
+    </p>
+    <figure>
+      <caption>A very hard to find intersection</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure25.png" />
+    </figure>
+    <p>
+      Now, the two graphs don't intersect in this window,
+      and it's hard to see which direction we should move if we want to find the intersection.
+      The graphs are not coming together in any obvious way.
+      Now you could spend hours driving yourself crazy trying to find an appropriate window to get the intersection.
+      Or you could just decide that maybe graphical solution won't work so well after all.
+    </p>
+    <p>
+      Solving with algebra instead we get:
+      <me>
+        \begin{array}{rcl} 3(2-x)+5(x-1)\amp  = \amp 3x-2(2-5x)-11x\\ \amp  \amp \\ 6-3x+5x-5\amp =\amp 3x-4+10x-11x\\ \amp  \amp  \\ 2x+1\amp =\amp 2x-4\\ \amp  \amp \\ 1\amp =\amp -4 \end{array}
+      </me>
+    </p>
+    <p>
+      It turns out that this is an inconsistent equation: it has no solutions.
+      You could have spent the rest of your life looking for that intersection,
+      and you never would have found it.
+      Stubbornly sticking with graphical solution here would have condemned you to an eternity of futility with your graphing calculator.
+      The horror!
+    </p>
+    <p>
+      You might object,
+      saying that you could have seen from the initial graphs that there would never be an intersection.
+      The graphs certainly looked like they were parallel lines,
+      which never intersect.
+      Unfortunately,
+      you can never tell that for sure just by looking at the graph.
+      If you set out to graphically solve:
+      <me>
+        1.9999x+2.5=2x-1
+      </me>
+      your graphs also look like parallel lines
+    </p>
+    <figure>
+      <caption>A very hard to find intersection</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure26.png" />
+    </figure>
+    <p>
+      But in fact this equation does have a solution:
+      <me>
+        \begin{array}{rcl} 1.9999x+2.5\amp =\amp 2x-1\\ 3.5\amp =\amp 0.0001x\\ x\amp =\amp 35,000 \end{array}
+      </me>
+    </p>
+    <p>
+      Just because you can't find an intersection doesn't mean that one doesn't exist.
+      These graphs actually do intersect,
+      but you'd have to extend your window all the way out to include
+      <m>x=35,000</m> within the window to find it.
+      It would take you a very long time before you'd come up with that window.
+    </p>
+    <p>
+      If you first try graphical solution and can't find the intersection,
+      it is incorrect to conclude that no intersection exists.
+      It is, though,
+      correct to conclude that maybe graphical solution isn't the way to go.
+    </p>
+    <p>
+      In the exercises,
+      you will find many problems where you are specifically asked to use graphical solution.
+      If you are specifically asked to solve graphically,
+      make sure to do so, even if you'd rather use traditional algebra.
+      It's important to get enough practice with this method to have it at the ready when you need it.
+      In other exercises, though, you'll have the choice of methods.
+      In these, and in the future, be flexible in your approach.
+      As we've seen,
+      there are times when graphical solution is by far the best approach,
+      and other times where traditional algebra is the way to go.
+      If you are comfortable with both approaches,
+      you'll often be able to save yourself needless exertion by having the option of choosing the easier path.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Exercises</title>
+    <subsubsection>
+      <title>Graphical Solutions</title>
+      <p>
+        Solve each of the following equations graphically.
+        Some of these equations may have multiple solutions,
+        but all solutions for these equations occur within the standard window.
+        Round your answers to two decimal places if necessary.
+      </p>
+      <exercises><exercise>
+        <statement>
+          <p>
+            <m>3+4x=5-2x</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=0.33</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3-2x=2x+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4(2-x)+3(x+1)=2(3x-1)-5x+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=5</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>11x-5(2x+1)+8=4(3x+1)-2(5x-3)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{7x-11}{5}=\frac{9x+5}{2}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=-1.52</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4-\frac{5}{3}x=\frac{3x+11}{5}-7</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2.31t-1.07(4.16t+3.25)=8.13+0.15(1.98t-3.17)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>t=-4.57</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>11.87-2.03(3.35-1.56z)=0.28(2.01z-23.95)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2x-x^2=3x-2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=1</m> and <m>x=-2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2-5x+6=5-(x-2)^2</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Window Setting for Graphical Solution</title>
+      <p>
+        Solve each of the following equations graphically.
+        You may need to adjust your window settings.
+        Each of these equations has one and only one solution.
+        Round your answers to two decimal places if necessary.
+      </p>
+      <exercises><exercise>
+        <statement>
+          <p>
+            <m>20-3x=9-8x</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=-2.2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x+5=2x-5</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3t-28=t+4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>t=16</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5z-35=2z+7</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{19-3z}{2}=\frac{14-8z}{5}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>z=-67</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{4t-3}{5}=\frac{3t+7}{4}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2y+10=\frac{3}{2}y-10</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>y=-40</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{5}{3}y+8=\frac{6}{5}y-12</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2x+1=20-x</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=6.33</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3x-5=30-2x</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3x+50}{2}=\frac{2x+70}{5}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=-10</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3-2x}{5}-11=\frac{40-x}{2}</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>When to use graphical solutions</title>
+      <p>
+        For each of the following questions,
+        decide whether you would rather try to solve using graphical solution or traditional algebra.
+        Do not actually solve the equations.
+        The better method is a matter of opinion,
+        so there are no right or wrong answers,
+        but you should explain your reasoning.
+      </p>
+      <exercises><exercise>
+        <statement>
+          <p>
+            <m>3.25(4.13x-3.17)-2.55=0.87x+3.13(0.55x-1.15)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Graphically since the algebra looks lengthy.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3}{5}(\frac{2}{3}t-\frac{7}{5})-\frac{11}{12}=\frac{5}{4}-\frac{8}{11}(3-\frac{2}{5}t)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4x-2=3x+1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Algebraically, it looks quick to solve.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>1250z+25,000=300(40z-12,000)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5(3-y)=2(6+y)-5(2y+7)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Either, algebraically is reasonable and graphical would not take too long.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3x+2=17</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{r-2}{3}=\frac{r+9}{5}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Algebraically,
+            as long as fractions are not terrible it is preferable
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>z^2-5z+3=2z+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3z^2-5z+3=8-z^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Graphically, it is easier to find both solutions visually
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{3}t-\frac{4}{5}=7-\frac{9}{2}t</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Grab Bag</title>
+      <p>
+        Solve each of these equations either graphically or using traditional algebra.
+        Choose the most efficient solution method – do not work harder than you need to!
+        Unless otherwise noted, each of these equations has only one solution.
+        Round your answers to two decimal places if necessary.
+      </p>
+      <exercises><exercise>
+        <statement>
+          <p>
+            <m>2(3x-1)-5x=8x+3-3(2x+5)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=10</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>1.43x-3.79=2.05(1.17x-5.13)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>500t-23,000=15(30t-200)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>t=400</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3x-7}{5}=\frac{2x+1}{3}+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8.62x-3.09(1.89x-2.19)=9.87-2.01(0.76x+1.52)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=0.01</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2w-1=9</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>18-2t-(t-8)=3(t-9)-2(t-5)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>t=10.75</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{7}{3}x-\frac{29}{2}=\frac{3}{2}x-\frac{62}{3}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2-2x+8=8</m>
+          </p>
+        </statement>
+      </exercise>
+      </exercises><p>
+        (NOTE: This equation has two solutions.)
+      </p>
+      <solution>
+        <p>
+          <m>x=0</m> and <m>x=2</m>
+        </p>
+      </solution>
+      <exercises><exercise>
+        <statement>
+          <p>
+            <m>180k-32,000=160k+48,000</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3(2t-5)-3(t-2)=5t+7-2(t+1)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            No Solutions
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>z^2=3z+1</m>
+          </p>
+        </statement>
+      </exercise>
+      </exercises><p>
+        (NOTE: This equation has two solutions.)
+      </p>
+      <exercises><exercise>
+        <statement>
+          <p>
+            <m>\frac{19x-5}{10}=\frac{39x+50}{40}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=1.89</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5(2-x)+7=3(4-x)+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8x-3(2x+5)=x+1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=16</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>40-3x=5(x+3)-3(x-12)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>1.03y+2.01(1.13y-1.45)=11.02-2.86(1.72y-0.14)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=1.74</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>S</m> is a rule that takes equations as inputs and gives their solutions as outputs.
+            Is <m>S</m> is function?
+            Why or why not?
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+  </subsection>
+</section>

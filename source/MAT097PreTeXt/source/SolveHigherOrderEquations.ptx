@@ -1,0 +1,142 @@
+<section xml:id="SolveHigherOrderEquations">
+  <title>Solving Equations of Degree 2 or Greater</title>
+  <introduction>
+    <p>
+      The following exercises will contain concepts covered in chapters 1
+      (use of the balance principal),
+      chapter 2
+      (some exponent properties)
+      and the previous section, solving second degree equations.
+      As you may have picked up on,
+      solving an equation of any degree still makes use of the balance principal,
+      manipulating the equation to isolate the variable.
+      As you saw in the previous section,
+      when we had a second degree equation,
+      one option is to use the square root property.
+      Recall this example:
+      <me>
+        x^2 = 25
+      </me>
+    </p>
+    <p>
+      We wanted to isolate that <m>x</m>,
+      and in order to do so we needed to
+      <q>undo</q>
+      that power of <m>2</m>.
+      Our method was to take the square root of the left side and subsequently the right side as well to do so:
+      <me>
+        \sqrt{x^2} = \sqrt{25}
+      </me>
+      leading to: <m>x = \pm 5</m>.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Rational Exponents</title>
+    <p>
+      We are now going to consider what happens in such a situation where the exponent on the variable is larger than <m>2</m>.
+      Everything above is based on the fact that the square root of a number, (<m>\sqrt(k)</m>),
+      gives us a solution to <m>x^2=k</m>.
+      We need to explore this in more detail.
+    </p>
+    <p>
+      Since <m>\sqrt{16} = 4</m>,
+      the phrase square root literally comes from the area of a square.
+      A square with side lengths of <m>4</m>cm has an area of <m>16 \text{ cm } ^2</m>.
+      If we are being completely formal,
+      we'd write the expression <m>\sqrt{16}</m> like this:
+      <me>
+        \sqrt{16}=\sqrt[2]{16^1}
+      </me>
+    </p>
+    <p>
+      The
+      <q>2</q>
+      on the outside of the radical is called the <em>index</em>.
+      As a matter of efficiency,
+      humans stopped writing this index of <m>2</m> with square roots because we use them so frequently.
+      The
+      <q><m>1</m></q>
+      on the inside, with the base of <m>16</m>,
+      is still called the <em>exponent</em> or <em>power</em>.
+      We can further rewrite the expression like this:
+      <me>
+        \sqrt{16}=\sqrt[2]{16^1}=16^{\frac{1}{2}}
+      </me>
+    </p>
+    <p>
+      Unique.
+      Check your calculator to see the expressions are actually equivalent.
+      <m>16^{\frac{1}{2}}</m> can be entered into your calculator as
+      <q><m>16^\wedge(1/2)</m></q>.
+    </p>
+    <p>
+      So, what does the expression <m>\sqrt[3]{27}</m> represent?
+      We read this as the
+      <q>cube root of <m>27</m></q>
+      or as the
+      <q>third root of <m>27</m></q>. It can be rewritten as:
+      <me>
+        \sqrt[3]{27} = \sqrt[3]{27^1} = 27^{\frac{1}{3}}
+      </me>
+    </p>
+    <p>
+      Evaluating this last expression using your calculator yields <m>3</m>.
+      Why?
+      Because <m>3 \cdot 3 \cdot 3 = 27</m>.
+    </p>
+    <p>
+      Thus, the <m>n^{\text{ th } }</m> root of a number,
+      expressed as <m>\sqrt[n]{}</m> represent a number that when multiplied by itself <m>n</m> times gives back what was rooted.
+      That will make more sense with some more examples.
+    </p>
+    <definition>
+      <statement>
+        <p>
+              <idx><h>Exponent</h><h>Rational</h></idx> <em><em>Rational Exponent Rule</em></em>
+          <me>
+            \sqrt[n]{x}=x^{\frac{1}{n}}
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <example xml:id="SolveHigherOrderEquationsExample1">
+      <statement>
+        <p>
+          Find <m>\sqrt[4]{81}</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      Using the ration exponent rule,
+      we have that <m>\sqrt[4]{81}=81^{\frac{1}{4}}</m>.
+      Using a calculator one finds that
+      <m>81^{\frac{1}{4}}=81^\wedge (1/4)=3</m> and it is readily verified that <m>3 \cdot 3 \cdot 3 \cdot 3 =81</m>.
+    </p>
+    <example xml:id="SolveHigherOrderEquationsExample2">
+      <statement>
+        <p>
+          Rewrite the expression <m>\sqrt[3]{2x}</m> using fractional exponents
+        </p>
+      </statement>
+    </example>
+    <p>
+      Both the <m>2</m> and the <m>x</m> are being ‘cube rooted' so
+      <me>
+        \sqrt[3]{2x}=(2x)^{\frac{1}{3}}
+      </me>
+    </p>
+    <example xml:id="SolveHigherOrderEquationsExample3">
+      <statement>
+        <p>
+          Rewrite the expression <m>(5c^2d)^{\frac{1}{6}}</m> in radical form.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Everything inside the parenthesis is being raised to the <m>\frac{1}{6}</m> power, so;
+      <me>
+        (5c^2d)^{\frac{1}{6}}=\sqrt[6]{5c^2d}
+      </me>
+    </p>
+  </subsection>
+</section>

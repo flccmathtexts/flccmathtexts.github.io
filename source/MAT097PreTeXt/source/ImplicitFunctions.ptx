@@ -1,0 +1,936 @@
+<section xml:id="ImplicitFunctions">
+  <title>Implicit Functions</title>
+  <introduction>
+    <p>
+      Normally we want our function formulas to be set up so that when we plug in an input value,
+      we simply evaluate the result to get the corresponding output value.
+      For example,
+      the relationship between Fahrenheit and Celsius temperature can be described with the formula
+      <me>
+        F=\frac{9}{5}C+32
+      </me>
+      where as you would expect <m>F</m> is the temperature in degrees Fahrenheit and <m>C</m> is the temperature in degrees Celsius.
+      How does this formula work as a function?
+      Is <m>F</m> a function of <m>C</m>?
+      Is <m>C</m> as function of <m>F</m>?
+      Does it work both ways?
+      Does it work either way?
+    </p>
+  </introduction>
+  <subsection>
+    <title>Implicit Functions</title>
+    <p>
+      Now, we can treat the temperature in Fahrenheit as a function of temperature in Celsius
+      (since each Fahrenheit temperature corresponds to one and only one Celsius temperature).
+      Or we can treat Celsius as a function of Fahrenheit
+      (since each Celsius temperature corresponds to one and only one Fahrenheit temperature).
+      And either way, we can use this formula.
+      If you input a value for <m>C</m> into the formula,
+      you can evaluate the result and get the corresponding value of <m>F</m>.
+      And, if you input a value of <m>F</m>,
+      you can then solve the result to get the corresponding value of <m>C</m>.
+      Either way works.
+    </p>
+    <p>
+      However, one way works more nicely than the other.
+      If you treat <m>C</m> as the input,
+      then the formula is perfectly set up to give you <m>F</m> as the output.
+      We say that this equation defines <m>F</m> <em>explicitly</em>
+          <idx><h>Function</h><h>Explicit</h></idx>
+      as a function of <m>C</m>.
+      We can even give this function a name and write it in function notation as <m>f(C)=\frac{9}{5}C+32</m>.
+    </p>
+    <p>
+      If we treat <m>F</m> as the input,
+      then we have to work through the algebra to figure out what the output value of <m>C</m> would be.
+      It can be done,
+      but it is certainly not anywhere near as convenient as it was the other way around.
+      And, since we don't have an expression which gives us <m>C</m> explicitly,
+      we can't use function notation with the formula as given.
+      In this situation,
+      where a function relationship exists but the formula is set up so that we have to solve for the output value when an input is plugged in,
+      we say that the equation defines <m>C</m> <em>implicitly</em>
+          <idx><h>Function</h><h>Implicit</h></idx>
+      as a function of <m>F</m>.
+    </p>
+    <p>
+      When a formula defines a function explicitly,
+      that is the more natural way to handle the relationship the formula describes.
+      There are, however,
+      cases where we will have good reason to do things the other way around.
+    </p>
+    <example xml:id="ImplicitFunctionsExample1">
+      <statement>
+        <p>
+          The relationship between my natural gas bill
+          (in dollars)
+          and the amount of gas I use
+          (in therms)
+          is given by the formula <m>B=12.5+0.85t</m> where <m>B</m> is my bill and <m>t</m> is my gas usage.
+          Is my bill a function of my usage?
+          Is my usage a function of my bill?
+          Which is the more natural way to use this formula?
+        </p>
+      </statement>
+    </example>
+    <p>
+      My bill is a function of my usage because for any given amount of gas used I will be billed one and only one amount.
+      Likewise, usage is a function of my bill because for any given bill amount there should be one and only one amount of usage (since if I use more I should be billed more and if I use less I should be billed less – this fits with common sense,
+      and also can be seen from the formula,
+      since a different usage would give a different bill from this formula.)
+    </p>
+    <p>
+      The formula is set up to conveniently take <m>t</m> as the input and give <m>B</m> as the output.
+      So it is more natural to treat my bill as a function of my usage.
+      In other words,
+      this formula explicitly gives my bill as a function of my usage,
+      and implicitly gives my usage as a function of my bill.
+    </p>
+    <p>
+      This view also agrees with how things actually happen;
+      you I use a certain amount of gas and then the utility calculates my bill based on this.
+      So the formula is written in a way that agrees with how things are actually likely to be done. }
+    </p>
+    <example xml:id="ImplicitFunctionsExample2">
+      <statement>
+        <p>
+          The formula for the relationship between a sphere's radius and its volume is usually written <m>V=\frac{4}{3} \pi r^3</m>,
+          where <m>V</m> is the volume and <m>r</m> is the radius.
+          Is volume a function of radius?
+          Is radius a function of volume?
+          Which is the more natural way to use this formula?
+        </p>
+      </statement>
+    </example>
+    <p>
+      We know that volume is a function of radius because if a sphere with a given radius can only have one volume (you can't draw a sphere in two different sizes with the same radius.)
+    </p>
+    <p>
+      Likewise, radius is a function of volume,
+      because a sphere with a given volume can only have one radius (you can't draw a sphere with a given volume in more than one different way.)
+    </p>
+    <p>
+      The formula is set up to conveniently take <m>r</m> as an input and give <m>V</m> as the output.
+      So it is more natural to treat volume as a function of radius.
+      In other words,
+      the formula gives volume explicitly as a function of radius,
+      but only implicitly gives radius as a function of volume. }
+    </p>
+    <example xml:id="ImplicitFunctionsExample3">
+      <statement>
+        <p>
+          The formula for the relationship between the time in seconds and height in meters of a ball thrown upward
+          (with an initial upward velocity of 30 meters per second)
+          can be expressed by the formula <m>h=-4.9t^2+30t</m>,
+          where <m>h</m> is the height and <m>t</m> is the time.
+          Is height a function of time?
+          It time a function of height?
+          Which is the more natural way to use this formula?
+        </p>
+      </statement>
+    </example>
+    <p>
+      We know that height is a function of time because at any given time the ball will be at one and only one height (it can't be in two places at once.)
+    </p>
+    <p>
+      Time is not a function of height, though,
+      because both common sense and experience with similar examples in the past tell us that the ball can be at a given height at two different times (on the way up and on the way down.)
+    </p>
+    <p>
+      We only have one choice of how to use this formula,
+      with height as a function of time.
+      Fortunately,
+      this formula is set up to conveniently take time as the input and give height as the output.
+      In other words,
+      this formula gives height explicitly as a function of time.
+      It does not give time as a function of height at all. }
+    </p>
+  </subsection>
+  <subsection>
+    <title>Rewriting Implicit Functions in Explicit Form</title>
+    <p>
+      Sometimes we have an equation that does not define any function explicitly,
+      but nonetheless expresses a relationship between quantities.
+      For example,
+      suppose a refiner is making <m>500</m> gallons of a fuel blend of gasoline and ethanol.
+      If we let <m>G</m> represent the amount of gasoline
+      (in gallons)
+      and let <m>E</m> represent that amount of ethanol
+      (in gallons),
+      we can see that
+      <me>
+        G+E=500
+      </me>.
+    </p>
+    <p>
+      Is the amount of gasoline a function of the amount of ethanol?
+      Yes!
+      We can see this both from common sense
+      (if I know how much ethanol was used,
+      there is only one possible amount of gasoline that could have been used to bring the total to 500 gallons),
+      and from algebra (if you plug in any given value for <m>E</m> you can solve the equation to get one and only one value for <m>G</m>.
+    </p>
+    <p>
+      Is the amount of ethanol a function of the amount of gasoline?
+      Again, the answer is yes, for pretty much exactly the same reasons.
+    </p>
+    <p>
+      This formula, though,
+      does not define either of these functions explicitly.
+      Whether we input gasoline or ethanol,
+      we will have to do some algebra to get the other quantity.
+      We can however create an explicit function from this formula by solving for whichever variable we want to be output in terms of the variable we want to be input.
+    </p>
+    <p>
+      Suppose we want to treat the amount of ethanol as a function of the amount of gasoline.
+      So we want a formula that is set up to give <m>E</m> explicitly – a formula like this:
+      <me>
+        E = something \text{ }  based \text{ }  on \text{ }  G
+      </me>
+    </p>
+    <p>
+      So we start with the given equation,
+      and solve it for <m>E</m>:
+      <md>
+        <mrow>G+E\amp =500</mrow>
+        <mrow>E\amp =500-G</mrow>
+      </md>
+    </p>
+    <p>
+      So we now have a formula that gives ethanol as a function of gasoline explicitly!
+    </p>
+    <p>
+      It's not hard to see that we could also get gasoline as a function of ethanol explicitly with the formula <m>G=500-E</m>.
+    </p>
+    <example xml:id="ImplicitFunctionsExample4">
+      <statement>
+        <p>
+          The equation <m>2x+3y=6-2x</m> implicitly defines <m>x</m> as a function of <m>y</m> and also implicitly defines <m>y</m> as a function of <m>x</m>.
+          Rewrite this equation to give these functions explicitly.
+        </p>
+      </statement>
+    </example>
+    <p>
+      First, to find <m>x</m> as a function of <m>y</m> means we want an equation that gives <m>x</m> as the output.
+      So we solve for <m>x</m>:
+      <md>
+        <mrow>2x+3y\amp =6-2x</mrow>
+        <mrow>4x+3y\amp =6</mrow>
+        <mrow>4x\amp =6-3y</mrow>
+        <mrow>x\amp =\frac{6-3y}{4}</mrow>
+      </md>
+    </p>
+    <p>
+      We can rewrite this in function notation if we want as <m>x=f(y)=\frac{6-3y}{4}</m>.
+    </p>
+    <p>
+      Now to find <m>y</m> as a function of <m>x</m> we solve for <m>y</m>:
+      <md>
+        <mrow>2x+3y\amp =6-2x</mrow>
+        <mrow>3y\amp =6-4x</mrow>
+        <mrow>y\amp =\frac{6-4y}{3}</mrow>
+      </md>
+    </p>
+    <p>
+      We can rewrite this in function notation also as <m>y=g(x)=\frac{6-4y}{3}</m>. }
+    </p>
+    <p>
+      In this last example we were told that the equation defined functions implicitly.
+      What if we aren't told that?
+      How can we tell whether or not an equation contains an implicit function?
+    </p>
+    <p>
+      When the equation comes from a mathematical model,
+      the meaning of the model often tells us this.
+      In the gasoline-ethanol example,
+      even without seeing the formula you could have figured that each would have to be a function of the other.
+      In <xref ref="ImplicitFunctionsExample3">Example</xref>
+      it made sense that time would not be a function of height because,
+      unless we assume the baseball is thrown so hard that it escapes the Earth's gravitation and continues on to explore the universe,
+      the ball will both go up and come down.
+    </p>
+    <p>
+      But we can't always rely on this.
+      Sometimes we don't know the purpose behind the equation we are working with,
+      and sometimes the equation models something we don't know enough about to say whether or not a function exists.
+      How can we tell in those cases?
+    </p>
+    <p>
+      We can determine whether an equation implicitly defines a function by trying to explicitly find a formula for the function.
+      In the previous example (<xref ref="ImplicitFunctionsExample4">Example</xref>
+      you could have seen that <m>x</m> was a function of <m>y</m> by solving for <m>x</m> in terms of <m>y</m>.
+      Because you can algebraically modify the equation to be an explicit function,
+      you know the function exists.
+    </p>
+    <example xml:id="ImplicitFunctionsExample5">
+      <statement>
+        <p>
+          Suppose <m>\frac{t-3}{2}=\frac{p+4}{5}</m>.
+          Is <m>t</m> a function of <m>p</m>?
+        </p>
+      </statement>
+    </example>
+    <p>
+      If we can solve for <m>t</m> in terms of <m>p</m> explicitly,
+      then it must be.
+      So we'll try doing that.
+      <md>
+        <mrow>\frac{t-3}{2}\amp =\frac{p+4}{5}</mrow>
+        <mrow>10*\left(\frac{t-3}{2}\right)\amp =10*\left(\frac{p+4}{5}\right)</mrow>
+        <mrow>5(t-3)\amp =2(p+4)</mrow>
+        <mrow>5t-15\amp =2p+8</mrow>
+        <mrow>5t\amp =2p+23</mrow>
+        <mrow>t\amp =\frac{2p+23}{5}</mrow>
+      </md>
+    </p>
+    <p>
+      Since we can find an explicit formula for <m>t</m> as a function of <m>p</m> from this equation,
+      we can conclude that <m>t</m> is indeed a function of <m>p</m>. }
+    </p>
+    <p>
+      We could also have found that <m>p</m> is a function of <m>t</m> in this example in much the same way.
+      Since that's pretty similar we won't show the work for that here,
+      but you may want to try to work that through yourself now.
+    </p>
+    <example xml:id="ImplicitFunctionsExample6">
+      <statement>
+        <p>
+          Suppose <m>3h=k^2-11</m>.
+          Is <m>h</m> a function of <m>k</m>?
+          Is <m>k</m> a function of <m>h</m>?
+        </p>
+      </statement>
+    </example>
+    <p>
+      We try to solve for <m>h</m> first.
+      That's actually pretty easy:
+      <md>
+        <mrow>3h\amp =k^2-11</mrow>
+        <mrow>h\amp =\frac{k^2-11}{3}</mrow>
+      </md>
+    </p>
+    <p>
+      So since we could get an explicit formula for <m>h</m> in terms of <m>k</m> we can say that <m>h</m> is indeed a function of <m>k</m>.
+    </p>
+    <p>
+      On the other hand,
+      we run into trouble when we try to solve for <m>k</m>:
+      <md>
+        <mrow>3h\amp =k^2-11</mrow>
+        <mrow>3h+11\amp =k^2</mrow>
+        <mrow>k^2\amp =3h+11</mrow>
+      </md>
+    </p>
+    <p>
+      To get rid of the exponent,
+      we need to take the square root of both sides of this equation.
+      However, remember that every positive number has two square roots - one positive and one negative.
+      So we get:
+      <me>
+        k=\sqrt{3h+11} \text{    OR    }  k=-\sqrt{3h+11}
+      </me>
+    </p>
+    <p>
+      This equation can be written compactly as:
+      <me>
+        k=\pm \sqrt{3h+11}
+      </me>
+    </p>
+    <p>
+      The symbol
+      <q><m>\pm</m></q>
+      is used to indicate
+      <q>plus or minus</q>. Now, while this is a formula for <m>k</m>,
+      it is a formula that gives two different results.
+      So, for a given input value of <m>h</m>,
+      this formula can give two different outputs for <m>k</m>.
+      For this reason,
+      we can conclude that <m>k</m> is not a function of <m>h</m>. }
+    </p>
+    <p>
+      So, in summary, if we can find an explicit formula
+      (one that does not involve anything like
+      <q><m>\pm</m></q>
+      which gives multiple answers),
+      we have a function.
+      If we try to solve and end up with an ambiguous formula
+      (such as the one we just found),
+      we do not have a function.
+    </p>
+    <p>
+      There might be times, though,
+      where you try to solve for a variable and are simply unable to do it.
+      Returning to <xref ref="ImplicitFunctionsExample3">Example</xref>,
+      where we had the formula <m>h=-4.9t^2+30t</m>,
+      we determined based on the meaning of the formula that <m>t</m> is not a function of <m>h</m>.
+      If you try to solve this equation for <m>t</m> in terms of <m>h</m> you probably won't meet with much success.
+      Could you also conclude that it is not a function from an inability to solve for <m>t</m>?
+    </p>
+    <p>
+      The answer is emphatically NO! Just because you can't solve an equation with the algebra tools you've learned so far,
+      does not necessarily mean it can't be done.
+      <q>I can't do it</q>
+      doesn't mean
+      <q>it can't be done!</q>
+      By itself, inability to solve does not tell you one way or the other whether or not the relationship is a function.
+      In the case of <xref ref="ImplicitFunctionsExample3">Example</xref>,
+      we can't solve for <m>t</m> and we know for other reasons that <m>t</m> is not a function of <m>h</m>.
+    </p>
+    <p>
+      But other times we may not be able to solve and the relationship may still be a function.
+      For example,
+      the equation <m>p-10=2^t</m> implicitly defines <m>p</m> as a function of <m>t</m> (that's not hard to show),
+      but it also defines <m>t</m> as a function of <m>p</m>
+      (though solving this equation for <m>t</m> requires tools that lie far beyond the scope of this course.)
+      To be able to say that <m>t</m> is a function of <m>p</m> here would require either those more advanced tools,
+      or knowing something about what <m>p</m> and <m>t</m> represent.
+    </p>
+    <p>
+      In the exercises,
+      you won't be given any questions where whether or not the relationship is a function cannot be determined.
+      In all the problems you will see in this course,
+      it will be possible to tell whether or not the relationship is a function either using algebra we are already familiar with,
+      or by thinking about what the variables in the equation represent.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Switching Input and Output Variables</title>
+    <p>
+      Let's return now to the Fahrenheit-Celsius example we used to start this chapter.
+      We saw that the formula <m>F=\frac{9}{5}C+32</m> gives Fahrenheit explicitly as a function of Celsius.
+      We also noted that this formula also gives Celsius as a function of Fahrenheit <em>implicitly</em>.
+    </p>
+    <p>
+      If we want to input Celsius and get Fahrenheit as an output we are fine with the formula as it is,
+      but if we want to go the other way this formula makes that possible,
+      but tedious.
+      It is almost always more convenient to have a formula that gives the function you want <em>explicitly</em>.
+      We can accomplish this by solving for the output variable we want.
+    </p>
+    <example xml:id="ImplicitFunctionsExample7">
+      <statement>
+        <p>
+          The formula <m>F=\frac{9}{5}C+32</m> implicitly gives <m>C</m> as a function of <m>F</m>.
+          Find a formula that gives <m>C</m> as a function of <m>F</m> explicitly.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Solving for <m>C</m>:
+      <md>
+        <mrow>F\amp =\frac{9}{5}C+32</mrow>
+        <mrow>F-32\amp =\frac{9}{5}C</mrow>
+        <mrow>5(F-32)\amp =5\left(\frac{9}{5}C\right)</mrow>
+        <mrow>5F-160\amp =9C</mrow>
+        <mrow>C\amp =\frac{5F-160}{9}</mrow>
+      </md>
+    </p>
+    <p>
+      Functions that express the same relationship with their input and output variables switched are called inverses of each other.
+      We won't be doing much with inverse functions in this course,
+      but they will be very important in later mathematical coursework.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Exercises</title>
+    <subsubsection>
+      <title>Implicit Functions:</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            In the formula <m>r = 5s - 3</m> which is the more natural choice for the input variable,
+            and which is the more natural choice of output variable?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            input <m>s</m>, output <m>r</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            In the formula <m>p = 7t^2 - 5t - 4</m> which is the more natural choice for the input variable,
+            and which is the more natural choice of output variable?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            In the formula <m>\frac{1}{2}v^2 - 2v = E</m> what would be the most natural choices for input and output variable?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            input <m>v</m>, output <m>E</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            In the formula <m>k^3 = z</m> what would be the most natural choices for input and output variable?
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The formula which relates tuition to credit hours taken for part-time students at Falstaff Community College is given by the formula <m>T = 180 + 375c</m>,
+            where <m>T</m> is the tuition and <m>c</m> is the number of credit hours.
+            Is tuition a function of credit hours?
+            Is credit hours a function of tuition?
+            Which is the more natural way to use this formula?
+            Explain your reasoning.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Tuition is a function of credit hours.
+            This makes sense because the tuition is based on and determined by the number of credit hours,
+            and also because the equation is set up to use <m>c</m> as the input.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The amount of water
+            (in gallons)
+            a backyard pool contains is related to the depth of the water
+            (in feet)
+            by the formula <m>W = 2000d</m>,
+            where <m>W</m> is the water volume and <m>d</m> is the depth.
+            Is the water volume a function of depth?
+            Is depth a function of volume?
+            Which is the more natural way to use this formula?
+            Explain your reasoning.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The hours of daylight,
+            <m>D</m> in Ithaca, New York <m>t</m> days after the Spring Equinox is approximated by the formula <m>D=12+\frac{18}{365}t-\frac{38}{49000000}t^3+\frac{1}{32000000000}x^5</m>.
+            Is <m>D</m> a function of <m>t</m>?
+            Is <m>t</m> a function of <m>D</m>?
+            Which is the more natural way to look at this relationship?
+            Justify your answers.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>D</m> is a function of <m>t</m>.
+            The time of year determines how many hours of daylight,
+            and the formula is set up with <m>t</m> as the input.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The length in centimeters, <m>L</m>,
+            of a yoyo string <m>s</m> seconds after I release the yoyo from my hand is given by the formula <m>L=12s(4-s)</m>.
+            Is <m>L</m> a function of <m>s</m>?
+            Is <m>s</m> a function of <m>L</m>?
+            Which is the more natural way to look at this relationship?
+            Justify your answers.
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Rewriting Implicit Functions in Explicit Form</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            The equation <m>6y - 5x = 30</m> implicitly defines <m>y</m> as a function of <m>x</m>.
+            Rewrite this equation to give this function explicitly.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>y=\frac{5x+30}{6}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The equation <m>11y - 2t = 88</m> implicitly defines <m>y</m> as a function of <m>t</m>.
+            Rewrite this equation to give this function explicitly.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The equation <m>2r - 3p = 6 + r</m> implicitly defines <m>r</m> as a function of <m>p</m>.
+            Rewrite this equation to make the function explicit.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>r=3p+6</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The equation <m>5j + 7q = 100 + 2q</m> implicitly defines <m>q</m> as a function of <m>j</m>.
+            Rewrite this equation to make the function explicit.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            In the equation <m>5(y - 4) + 2x = 8y</m>,
+            the variable <m>x</m> is a function of <m>y</m> implicitly.
+            Rewrite this equation so that this function is explicit.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x=\frac{3y+20}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            In the equation <m>2(x + 1) - 3(y + 2) = 4x + y</m>,
+            the variable <m>x</m> is implicitly a function of <m>y</m>.
+            Rewrite this equation so that this function is explicit.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            In the equation <m>\frac{m+3n}{2}=\frac{m-4}{6}</m>,
+            is <m>m</m> a function of <m>n</m>?
+            Justify your answer.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Yes, it is.
+            The equation can be solved for <m>m</m> in terms of <m>n</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            In the equation <m>\frac{m + 3n}{2} = \frac{m - 4}{6}</m>,
+            is <m>n</m> a function of <m>m</m>?
+            Justify your answer.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            In the equation <m>\frac{2t}{3} - \frac{s}{2} = \frac{t - 2}{5}</m>,
+            is <m>s</m> a function of <m>t</m>?
+            Justify your answer.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Yes, it is.
+            The equation can be solved for <m>s</m> in terms of <m>t</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            In the equation <m>\frac{2t}{3} - \frac{s}{2} = \frac{t - 2}{5}</m>,
+            is <m>t</m> a function of <m>s</m>?
+            Justify your answer.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <ol marker="a">
+            <li>
+              <p>
+                In the equation <m>x^2 + y = 5</m>,
+                is <m>y</m> a function of <m>x</m>?
+                Justify your answer.
+              </p>
+            </li>
+            <li>
+              <p>
+                In the same equation, is <m>x</m> a function of <m>y</m>?
+                Justify your answer.
+              </p>
+            </li>
+          </ol>
+        </statement>
+        <solution>
+          <p>
+            a. Yes, it is.
+            The equation can be solved for <m>y</m> in terms of <m>x</m>
+          </p>
+          <p>
+            b. No, it is not.
+            If we tried to solve for <m>x</m>,
+            we'd have to take the square root of both sides in the process,
+            which would introduce the <m>\pm</m> problem discuss in the chapter.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <ol marker="a">
+            <li>
+              <p>
+                Suppose <m>3x^2 = 5y^2 - 8</m>.
+                Is <m>y</m> a function of <m>x</m>?
+                How do you know?
+              </p>
+            </li>
+            <li>
+              <p>
+                In the same equation, is <m>x</m> a function of <m>y</m>?
+                How do you know?
+              </p>
+            </li>
+          </ol>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Switching Input and Output Variables</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            The equation <m>w = 80 - 2l</m> gives <m>w</m> as a function of <m>l</m>.
+            Rewrite this equation to make <m>l</m> an explicit function of <m>w</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>l=\frac{80-w}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Rewrite <m>t = \frac{3p - 2}{5}</m> to give <m>p</m> as an explicit function of <m>t</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The relationship between my natural gas bill
+            (in dollars)
+            and the amount of gas I use
+            (in therms)
+            is given by the formula <m>B = 12.50 + 0.85t</m> where <m>B</m> is my bill and <m>t</m> is my gas usage.
+            This formula gives my bill as a function of my usage.
+            Rewrite this formula so that it gives my usage as a function of my bill.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>t=\frac{B-12.5}{0.85}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The amount of music
+            (in hours)
+            that can be stored on a digital music player is a function of the size of its memory capacity
+            (in megabytes),
+            and is given by the formula <m>t = \frac{x-120}{10}</m>.
+            Is memory capacity also a function of amount of music?
+            If so, rewrite this equation in a way that gives this function explicitly.
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+    <subsubsection>
+      <title>Grab Bag</title>
+      <exercises><exercise>
+        <statement>
+          <p>
+            In which of the following equations is <m>y</m> a function of <m>x</m>?
+            How do you know?
+            <ol marker="a">
+              <li>
+                <p>
+                  <m>x - 2y = 3x - y + 2</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>x^2 - 3y = 5 - 2y</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>11x - 3y^2 = 18 - y^2</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>\frac{4 - 3x}{2} - \frac{2y + 7}{3} = 0</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>y - 2(y - 3) = x</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            a. Function, can be solved for <m>y</m>.
+          </p>
+          <p>
+            b. Function, can be solved for <m>y</m>.
+          </p>
+          <p>
+            c. Not a function,
+            getting rid of squared term would result in <m>\pm</m> at some point.
+          </p>
+          <p>
+            d. Function, can be solved for <m>y</m>.
+          </p>
+          <p>
+            e. Function, can be solved for <m>y</m>.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Suppose <m>2T = 3(P - 7)</m>.
+            <ol marker="a">
+              <li>
+                <p>
+                  Is <m>T</m> a function of <m>P</m>?
+                  If so, find an explicit formula.
+                  If not, explain why not.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Is <m>P</m> a function of <m>T</m>?
+                  If so, find an explicit formula.
+                  If not, explain why not.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A club is planning a field trip to Washington D.C. The total cost of the trip is a function of the number of members who will be going,
+            and is given by the formula <m>C(x) = 1850 + 475x</m>.
+            <ol marker="a">
+              <li>
+                <p>
+                  Let <m>K</m> be a variable which represents the cost of the trip.
+                  Rewrite this function formula as an equation which gives <m>K</m> as a function of <m>x</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Is the number of members going a function of total cost?
+                  If so, rewrite this equation so that it gives members going as a function of cost explicitly.
+                  If not, explain why not.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            a. <m>K=1850+475x</m>
+          </p>
+          <p>
+            b. It is, <m>x=\frac{K-1850}{475}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A movie theater operator has hired a business consultant to help determine price strategy.
+            The consultant developed a model which projects the theatre's monthly profits as a function of the regular adult ticket price.
+            Suppose her model uses the function <m>p(t) = 800(-t^2 + 20t - 64)</m>.
+            <ol marker="a">
+              <li>
+                <p>
+                  Rewrite this function formula as an equation with the variable <m>R</m> used to represent projected monthly profit.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Graph the function in the window
+                  <m>0 \leq t \leq 20</m> and <m>0 \leq R \leq 40000</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  With the algebra we know so far,
+                  it is not possible to solve the equation for <m>t</m>.
+                  That only means that we can't find a formula which gives <m>t</m> as an explicit function of <m>R</m>;
+                  that does not tell us whether or not ticket price is a function of projected profit.
+                  Use the graph to determine whether or not ticket price is a function of projected profit,
+                  and explain your reasoning.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A refiner has 1000 gallons of pure gasoline which she is blending with ethanol.
+            The relationship given between the percent of ethanol in the blend,
+            <m>P</m>, and the gallons of ethanol she adds, <m>g</m>,
+            is given by the formula <m>P = \frac{100g}{1000 + g}</m>.
+            This formula gives the percent explicitly as a function of gallons added.
+            Is the amount of added ethanol a function of the percent of ethanol in the blend?
+            How do you know? (You may, or may not,
+            choose to use the formula to answer this question.)
+          </p>
+        </statement>
+        <solution>
+          <p>
+            It is a function,
+            because common sense tells you that to get a given percentage of alcohol there would be only one answer to the question of how much ethanol you would need to add.
+            It is also possible to solve for <m>g</m> in terms of <m>P</m>.
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Find the inverse function for <m>f(x) = 3x - 7</m>.
+          </p>
+        </statement>
+      </exercise>
+    </exercises></subsubsection>
+  </subsection>
+</section>
