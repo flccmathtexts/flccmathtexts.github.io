@@ -136,42 +136,42 @@
     <p>
       A few examples will further illustrate.
     </p>
-    <example xml:id="OrderofOperationsExample1">
-      <statement>
-        <p>
-          <em>Evaluate <m>4-2^3+7(2-3)</m></em>
-        </p>
-      </statement>
-    </example>
-    <p>
-      Following order of operations we will (a) do what is inside parentheses,
-      then (b) apply the exponent,
-      then (c) multiply, and then (d) add and subtract, left to right:
-      <md>
-        <mrow>5-2^3+7(2-3) \amp  = 5-2^3+7(-1)</mrow>
-        <mrow>\amp  = 5-8+7(-1)</mrow>
-        <mrow>\amp  = 5-8-7</mrow>
-        <mrow>\amp  = -3-7</mrow>
-        <mrow>\amp  = -10</mrow>
-      </md>
-    </p>
-    <example xml:id="OrderofOperationsExample2">
-      <statement>
-        <p>
-          <em>Evaluate <m>(5-2)^3+7(2)-3</m></em>
-        </p>
-      </statement>
-    </example>
-    <p>
-      We again follow order of operations:
-      <md>
-        <mrow>(5-2)^3+7(2)-3 \amp  = (3)^3+7(2)-3</mrow>
-        <mrow>\amp  = 27+7(2)-3</mrow>
-        <mrow>\amp  = 27+14-3</mrow>
-        <mrow>\amp  = 41-3</mrow>
-        <mrow>\amp  = 38</mrow>
-      </md>
-    </p>
+    <algorithm xml:id="OrderofOperationsExample1">
+        <statement>
+            <p>
+                <em>Evaluate <m>4-2^3+7(2-3)</m></em>
+            </p>
+            <p>
+                Following order of operations we will (a) do what is inside parentheses,
+                then (b) apply the exponent,
+                then (c) multiply, and then (d) add and subtract, left to right:
+                <md>
+                    <mrow>4-2^3+7(2-3) \amp = 4-2^3+7(-1)</mrow>
+                    <mrow>\amp = 4-8+7(-1)</mrow>
+                    <mrow>\amp = 4-8-7</mrow>
+                    <mrow>\amp = -4-7</mrow>
+                    <mrow>\amp = -11</mrow>
+                </md>
+            </p>
+        </statement>
+    </algorithm>
+    <algorithm xml:id="OrderofOperationsExample2">
+        <statement>
+            <p>
+                <em>Evaluate <m>(5-2)^3+7(2)-3</m></em>
+            </p>
+            <p>
+                We again follow order of operations:
+                <md>
+                    <mrow>(5-2)^3+7(2)-3 \amp = (3)^3+7(2)-3</mrow>
+                    <mrow>\amp = 27+7(2)-3</mrow>
+                    <mrow>\amp = 27+14-3</mrow>
+                    <mrow>\amp = 41-3</mrow>
+                    <mrow>\amp = 38</mrow>
+                </md>
+            </p>
+        </statement>
+    </algorithm>
     <p>
       You may wonder why the order of operations is what it is.
       Why put multiplication before addition,
@@ -216,20 +216,20 @@
         Remember that even though M comes before D in PEMDAS, Multiplication and Division are tied and are carried out from left to right as at the same time.
         Similarly Addition and Subtraction are tied and carried out from left to right in the order they appear.
       </p>
-      <example xml:id="OrderofOperationsExample3">
+      <algorithm xml:id="OrderofOperationsExample3">
         <statement>
-          <p>
-            <em>Evaluate <m>20 \div 4 * 3</m></em>
-          </p>
+            <p>
+                <em>Evaluate <m>20 \div 4 * 3</m></em>
+            </p>
+            <p>
+                We carry out the division and then the multiplication since this is how they appear from left to right in the expression:
+                <md>
+                    <mrow>20 \div 4 * 3 \amp = 5 * 3</mrow>
+                    <mrow>\amp = 15</mrow>
+                </md>
+            </p>
         </statement>
-      </example>
-      <p>
-        We carry out the division and then the multiplication since this is how they appear from left to right in the expression:
-        <md>
-          <mrow>20 \div 4 * 3 \amp  = 5*3</mrow>
-          <mrow>\amp  = 15</mrow>
-        </md>
-      </p>
+      </algorithm>
     </subsubsection>
     <subsubsection>
       <title>Nested Parentheses</title>
@@ -243,31 +243,29 @@
         and so we work on the parentheses inside first.
         The following example illustrates:
       </p>
-      <example xml:id="OrderofOperationsExample4">
+      <algorithm xml:id="OrderofOperationsExample4">
         <statement>
-          <p>
-            <em>Evaluate <m>4-2[7-3(4+2)^2]</m></em>
-          </p>
+            <p>
+                <em>Evaluate <m>4-2[7-3(4+2)^2]</m></em>
+            </p>
+            <p>
+                Recall that the different shapes [ ] and ( ) for the parentheses have no significance; 
+                the different shapes are just used to make the expression easier to read.
+            </p>
+            <p>
+                Looking at the expression overall, we need to do what is inside the [ ] parentheses first. 
+                Once inside those parentheses, what do we do first? We do what is inside the ( ) parentheses of course!
+                <md>
+                    <mrow>4-2[7-3(4+2)^2] \amp = 4-2[7-3(6)^2]</mrow>
+                    <mrow>\amp = 4-2[7-3(36)]</mrow>
+                    <mrow>\amp = 4-2[7-108]</mrow>
+                    <mrow>\amp = 4-2[-101]</mrow>
+                    <mrow>\amp = 4+202</mrow>
+                    <mrow>\amp = 206</mrow>
+                </md>
+            </p>
         </statement>
-      </example>
-      <p>
-        Recall that the different shapes [ ] and ( ) for the parentheses have no significance;
-        the different shapes are just used to make the expression easier to read.
-      </p>
-      <p>
-        Looking at the expression overall,
-        we need to do what is inside the [ ] parentheses first.
-        Once inside those parentheses, what do we do first?
-        We do what is inside the ( ) parentheses of course!
-        <md>
-          <mrow>4-2[7-3(4+2)^2] \amp  = 4-2[7-3(6)^2]</mrow>
-          <mrow>\amp  = 4-2[7-3(36)]</mrow>
-          <mrow>\amp  = 4-2[7-108]</mrow>
-          <mrow>\amp  = 4-2[-101]</mrow>
-          <mrow>\amp  = 4+202</mrow>
-          <mrow>\amp  = 206</mrow>
-        </md>
-      </p>
+      </algorithm>
     </subsubsection>
     <subsubsection>
       <title>Exponents and Negative Numbers</title>
@@ -313,40 +311,40 @@
           (-3)^2=(-3)(-3)=9
         </me>
       </p>
-      <example xml:id="OrderofOperationsExample5">
+      <algorithm xml:id="OrderofOperationsExample5">
         <statement>
-          <p>
-            <em>Evaluate <m>-5^2+(-3)^2-(-4^2)</m></em>
-          </p>
+            <p>
+                <em>Evaluate <m>-5^2+(-3)^2-(-4^2)</m></em>
+            </p>
+            <p>
+                Using the discussion above on exponents and signs:
+                <md>
+                    <mrow>-5^2+(-3)^2-(-4^2) \amp = -25+9 -(-16)</mrow>
+                    <mrow>\amp = -25+9+16</mrow>
+                    <mrow>\amp = 0</mrow>
+                </md>
+            </p>
         </statement>
-      </example>
-      <p>
-        Using the discussion above on exponents and signs:
-        <md>
-          <mrow>-5^2+(-3)^2-(-4^2) \amp  = -25+9 -(-16)</mrow>
-          <mrow>\amp  = -25+9+16</mrow>
-          <mrow>\amp  = 0</mrow>
-        </md>
-      </p>
+      </algorithm>
     </subsubsection>
     <subsubsection>
       <title>Implied Groupings</title>
       <p>
         The third special situation to look out for is best illustrated with an example first.
       </p>
-      <example xml:id="OrderofOperationsExample6">
+      <algorithm xml:id="OrderofOperationsExample6">
         <statement>
-          <p>
-            <em>Evaluate <m>\displaystyle \frac{30-16}{4+3}</m></em>
-          </p>
+            <p>
+                <em>Evaluate <m>\displaystyle \frac{30-16}{4+3}</m></em>
+            </p>
+            <p>
+                We evaluate the numerator and denominator before carrying out the division:
+                <me>
+                    \frac{30-16}{4+3}=\frac{14}{7}=2
+                </me>
+            </p>
         </statement>
-      </example>
-      <p>
-        We evaluate the numerator and denominator before carrying out the division
-        <me>
-          \frac{30-16}{4+3}=\frac{14}{7}=2
-        </me>
-      </p>
+      </algorithm>
       <p>
         No problem, right?
       </p>
@@ -393,19 +391,19 @@
         PEMDAS doesn't say anything at all about those,
         but we always interpret them as though what is inside them is in parentheses.
       </p>
-      <example xml:id="OrderofOperationsExample7">
+      <algorithm xml:id="OrderofOperationsExample7">
         <statement>
-          <p>
-            <em>Evaluate <m>\displaystyle \frac{4+|5-13|}{\sqrt{7+2}+1}</m></em>
-          </p>
+            <p>
+                <em>Evaluate <m>\displaystyle \frac{4+|5-13|}{\sqrt{7+2}+1}</m></em>
+            </p>
+            <p>
+                Following order of operations, we have:
+                <me>
+                    \frac{4+|5-13|}{\sqrt{7+2}+1}=\frac{4+|-8|}{\sqrt{9}+1}=\frac{4+8}{3+1}=\frac{12}{4}=3
+                </me>
+            </p>
         </statement>
-      </example>
-      <p>
-        Following order of operations, we have:
-        <me>
-          \frac{4+|5-13|}{\sqrt{7+2}+1}=\frac{4+|-8|}{\sqrt{9}+1}=\frac{4+8}{3+1}=\frac{12}{4}=3
-        </me>
-      </p>
+      </algorithm>
     </subsubsection>
   </subsection>
   <subsection>
@@ -454,17 +452,17 @@
     <p>
       Implied groupings are also an issue with the calculator as the following example will illustrate.
     </p>
-    <example xml:id="OrderofOperationsExample8">
-      <statement>
-        <p>
-          To evaluate <m>\displaystyle \frac{8+10}{5-3}</m> Jessie typed
-          <q><m>8+10/5-3</m></q>
-          into her calculator, and got an answer of 7.
-          This is not the correct answer.
-          What went wrong and how do we correct it?
-        </p>
-      </statement>
-    </example>
+    <algorithm xml:id="OrderofOperationsExample8">
+        <statement>
+            <p>
+                To evaluate <m>\displaystyle \frac{8+10}{5-3}</m> Jessie typed
+                <q><m>8+10/5-3</m></q>
+                into her calculator, and got an answer of 7.
+                This is not the correct answer.
+                What went wrong and how do we correct it?
+            </p>
+        </statement>
+      </algorithm>
     <p>
       When we as human beings see the <m>8+10</m> written as a numerator and <m>5-3</m> as the denominator,
       we understand that there is an implied grouping at work.
@@ -492,32 +490,31 @@
       and use the calculator to evaluate each of the pieces.
       The next example will illustrate.
     </p>
-    <example xml:id="OrderofOperationsExample9">
-      <statement>
-        <p>
-          <em>Evaluate <m>\displaystyle \frac{-5+2(3-1)^2}{7+4(3^2-5)}</m></em>
-        </p>
-      </statement>
-    </example>
-    <p>
-      To enter this into the calculator all at once,
-      you would need to insert the implied parentheses, and then enter:
-      <q><m>(-5+2(3-1) ^\wedge 2)/(7+4(3 ^\wedge 2-5))</m></q>.
-    </p>
-    <p>
-      That works, but it is such a long entry that it would be easy to make a typo entering it,
-      and hard to notice that it happened.
-      It might be better to evaluate the numerator and denominator separately,
-      and then divide the results:
-      <md>
-        <mrow>\amp  -5+2(3-1) ^\wedge 2 = 3</mrow>
-        <mrow>\amp  7+4(3 ^\wedge 2-5) = 23</mrow>
-      </md>
-    </p>
-    <p>
-      The final answer then is <m>3/23</m>.
-      Dividing this and rounding to 4 decimal places gives a final answer of <m>0.1304</m>.
-    </p>
+    <algorithm xml:id="OrderofOperationsExample9">
+        <statement>
+            <p>
+                <em>Evaluate <m>\displaystyle \frac{-5+2(3-1)^2}{7+4(3^2-5)}</m></em>
+            </p>
+            <p>
+                To enter this into the calculator all at once, 
+                you would need to insert the implied parentheses, and then enter: 
+                <q><m>(-5+2(3-1) ^\wedge 2)/(7+4(3 ^\wedge 2-5))</m></q>.
+            </p>
+            <p>
+                That works, but it is such a long entry that it would be easy to make a typo entering it, 
+                and hard to notice that it happened. It might be better to evaluate the numerator and denominator separately, 
+                and then divide the results:
+                <md>
+                    <mrow>-5+2(3-1) ^\wedge 2 \amp = 3</mrow>
+                    <mrow>7+4(3 ^\wedge 2-5) \amp = 23</mrow>
+                </md>
+            </p>
+            <p>
+                The final answer then is <m>3/23</m>. 
+                Dividing this and rounding to 4 decimal places gives a final answer of <m>0.1304</m>.
+            </p>
+        </statement>
+    </algorithm>
     <p>
       There is another advantage to doing the top and bottom separately.
       <m>3/23</m> does not divide evenly,
