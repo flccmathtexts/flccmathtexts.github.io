@@ -63,7 +63,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js"
+      "pretext": "_static/pretext/js/lib"
     }
   },
   "startup": {
@@ -80,7 +80,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Algebra and Introduction to Functions">
 <meta property="book:author" content="FLCC Mathematics Department">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,16 +102,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.14';
+eBookConfig.runestone_version = '7.11.19';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -921,7 +921,7 @@ IIIII}
 </div>
 <div class="para logical" id="OrderofOperations-2-3">
 <div class="para">Directions like this simply are not very good directions. Two different people interpreting these instructions differently will take different amounts of the medicine, and at least one of those amounts is going to be wrong. This is obviously not a good thing. The expressions we right down in mathematics are also sets of instructions. For example, the expression:</div>
-<div class="displaymath process-math" id="OrderofOperations-2-3-1">
+<div class="displaymath process-math">
 \begin{equation*}
 7+1-3*2
 \end{equation*}
@@ -985,7 +985,7 @@ IIIII}
 </div>
 <div class="para logical" id="OrderofOperations-2-7">
 <div class="para">Given this order, there is never any room for misunderstanding arithmetic instructions. The steps of:</div>
-<div class="displaymath process-math" id="OrderofOperations-2-7-1">
+<div class="displaymath process-math">
 \begin{equation*}
 7+1-3*2
 \end{equation*}
@@ -995,7 +995,7 @@ IIIII}
 </div>
 <div class="para logical" id="OrderofOperations-2-8">
 <div class="para">There are no parentheses or exponents in this expression, so we skip over those steps and move next to multiplication and division. We have one multiplication in the expression, so we multiply <span class="process-math">\(3*2\)</span> to get <span class="process-math">\(6\text{,}\)</span> and arrive at:</div>
-<div class="displaymath process-math" id="OrderofOperations-2-8-3">
+<div class="displaymath process-math">
 \begin{equation*}
 7+1-3*2 = 7+1-6
 \end{equation*}
@@ -1005,13 +1005,13 @@ IIIII}
 <div class="para logical" id="OrderofOperations-2-9">
 <div class="para">The next step is additions and subtractions, and we have one of each. Order of operations says we do them from left to right, so we first add <span class="process-math">\(7+1\)</span> to get <span class="process-math">\(8\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="OrderofOperations-2-9-3">
+<div class="displaymath process-math">
 \begin{equation*}
 7+1-6 = 8-6
 \end{equation*}
 </div>
 <div class="para">and then finish up by subtracting <span class="process-math">\(8-6\)</span> to arrive at a final result:</div>
-<div class="displaymath process-math" id="OrderofOperations-2-9-5">
+<div class="displaymath process-math">
 \begin{equation*}
 2
 \end{equation*}
@@ -1020,43 +1020,43 @@ IIIII}
 </div>
 <div class="para" id="OrderofOperations-2-10">A few examples will further illustrate.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="OrderofOperationsExample1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<article class="algorithm theorem-like" id="OrderofOperationsExample1"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3></summary><article class="example example-like knowl__content"><div class="para" id="OrderofOperationsExample1-1-1">
+</h3>
+<div class="para" id="OrderofOperationsExample1-1-1">
 <em class="emphasis">Evaluate <span class="process-math">\(4-2^3+7(2-3)\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 1.1.2"><a href="#OrderofOperationsExample1" title="Copy heading and permalink for Example 1.1.2" aria-label="Copy heading and permalink for Example 1.1.2">🔗</a></div></article></details><div class="para logical" id="OrderofOperations-2-12">
+</div> <div class="para logical" id="OrderofOperationsExample1-1-2">
 <div class="para">Following order of operations we will (a) do what is inside parentheses, then (b) apply the exponent, then (c) multiply, and then (d) add and subtract, left to right:</div>
-<div class="displaymath process-math" id="OrderofOperations-2-12-1">
+<div class="displaymath process-math" id="OrderofOperationsExample1-1-2-1">
 \begin{align*}
-5-2^3+7(2-3) \amp  = 5-2^3+7(-1)\\
-\amp  = 5-8+7(-1)\\
-\amp  = 5-8-7\\
-\amp  = -3-7\\
-\amp  = -10
+4-2^3+7(2-3) \amp = 4-2^3+7(-1)\\
+\amp = 4-8+7(-1)\\
+\amp = 4-8-7\\
+\amp = -4-7\\
+\amp = -11
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="OrderofOperationsExample2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<div class="autopermalink" data-description="Example 1.1.2"><a href="#OrderofOperationsExample1" title="Copy heading and permalink for Example 1.1.2" aria-label="Copy heading and permalink for Example 1.1.2">🔗</a></div></article><article class="algorithm theorem-like" id="OrderofOperationsExample2"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3></summary><article class="example example-like knowl__content"><div class="para" id="OrderofOperationsExample2-1-1">
+</h3>
+<div class="para" id="OrderofOperationsExample2-1-1">
 <em class="emphasis">Evaluate <span class="process-math">\((5-2)^3+7(2)-3\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 1.1.3"><a href="#OrderofOperationsExample2" title="Copy heading and permalink for Example 1.1.3" aria-label="Copy heading and permalink for Example 1.1.3">🔗</a></div></article></details><div class="para logical" id="OrderofOperations-2-14">
+</div> <div class="para logical" id="OrderofOperationsExample2-1-2">
 <div class="para">We again follow order of operations:</div>
-<div class="displaymath process-math" id="OrderofOperations-2-14-1">
+<div class="displaymath process-math" id="OrderofOperationsExample2-1-2-1">
 \begin{align*}
-(5-2)^3+7(2)-3 \amp  = (3)^3+7(2)-3\\
-\amp  = 27+7(2)-3\\
-\amp  = 27+14-3\\
-\amp  = 41-3\\
-\amp  = 38
+(5-2)^3+7(2)-3 \amp = (3)^3+7(2)-3\\
+\amp = 27+7(2)-3\\
+\amp = 27+14-3\\
+\amp = 41-3\\
+\amp = 38
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-2-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="OrderofOperations-2-15">You may wonder why the order of operations is what it is. Why put multiplication before addition, or division after exponents? Why the PEMDAS order instead of some other? In fact, there is no absolute reason why order of operations <em class="emphasis">has</em> to be the way it is, but it is important to have a commonly accepted standard to avoid misunderstandings. The PEMDAS order of operations is sort of like the rule that we drive on the right side of the road in the US. There really is no reason why driving on the right is better than driving on the left, and it doesn’t really matter all that much which side we agree is the correct one, but it is pretty important that we all agree which side we’re all going to drive on! PEMDAS is the accepted “rules of the road” in mathematics.<details class="ptx-footnote" aria-live="polite" id="OrderofOperations-2-15-3"><summary class="ptx-footnote__number" title="Footnote 1.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="OrderofOperations-2-15-3">Just as in some countries the standard is to drive on the left, there actually are some circumstances in which a different order of operations is used. Two examples are Polish notation, developed in the early 1900’s by the Polish logician Jan Lukasiewicz, and Reverse Polish notation, a variation of regular Polish notation. These are used in certain very special technical circumstances. But you are very unlikely to ever run into those circumstances, though, and if you ever do, you’ll know!</div></details><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-2-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 1.1.3"><a href="#OrderofOperationsExample2" title="Copy heading and permalink for Example 1.1.3" aria-label="Copy heading and permalink for Example 1.1.3">🔗</a></div></article><div class="para" id="OrderofOperations-2-13">You may wonder why the order of operations is what it is. Why put multiplication before addition, or division after exponents? Why the PEMDAS order instead of some other? In fact, there is no absolute reason why order of operations <em class="emphasis">has</em> to be the way it is, but it is important to have a commonly accepted standard to avoid misunderstandings. The PEMDAS order of operations is sort of like the rule that we drive on the right side of the road in the US. There really is no reason why driving on the right is better than driving on the left, and it doesn’t really matter all that much which side we agree is the correct one, but it is pretty important that we all agree which side we’re all going to drive on! PEMDAS is the accepted “rules of the road” in mathematics.<details class="ptx-footnote" aria-live="polite" id="OrderofOperations-2-13-3"><summary class="ptx-footnote__number" title="Footnote 1.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="OrderofOperations-2-13-3">Just as in some countries the standard is to drive on the left, there actually are some circumstances in which a different order of operations is used. Two examples are Polish notation, developed in the early 1900’s by the Polish logician Jan Lukasiewicz, and Reverse Polish notation, a variation of regular Polish notation. These are used in certain very special technical circumstances. But you are very unlikely to ever run into those circumstances, though, and if you ever do, you’ll know!</div></details><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="OrderofOperations-3"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Common Pitfalls</span>
 </h3>
@@ -1066,53 +1066,52 @@ IIIII}
 </h4>
 <div class="para" id="OrderofOperations-3-3-2">One situation we’ve already encountered, but it bears repetition. Remember that even though M comes before D in PEMDAS, Multiplication and Division are tied and are carried out from left to right as at the same time. Similarly Addition and Subtraction are tied and carried out from left to right in the order they appear.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="OrderofOperationsExample3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<article class="algorithm theorem-like" id="OrderofOperationsExample3"><h5 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h5></summary><article class="example example-like knowl__content"><div class="para" id="OrderofOperationsExample3-1-1">
+</h5>
+<div class="para" id="OrderofOperationsExample3-1-1">
 <em class="emphasis">Evaluate <span class="process-math">\(20 \div 4 * 3\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 1.1.4"><a href="#OrderofOperationsExample3" title="Copy heading and permalink for Example 1.1.4" aria-label="Copy heading and permalink for Example 1.1.4">🔗</a></div></article></details><div class="para logical" id="OrderofOperations-3-3-4">
+</div> <div class="para logical" id="OrderofOperationsExample3-1-2">
 <div class="para">We carry out the division and then the multiplication since this is how they appear from left to right in the expression:</div>
-<div class="displaymath process-math" id="OrderofOperations-3-3-4-1">
+<div class="displaymath process-math" id="OrderofOperationsExample3-1-2-1">
 \begin{align*}
-20 \div 4 * 3 \amp  = 5*3\\
-\amp  = 15
+20 \div 4 * 3 \amp = 5 * 3\\
+\amp = 15
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsubsection 1.1.1.1: Multiplication and Division are tied as are Addition and Substraction"><a href="#OrderofOperations-3-3" title="Copy heading and permalink for Subsubsection 1.1.1.1: Multiplication and Division are tied as are Addition and Substraction" aria-label="Copy heading and permalink for Subsubsection 1.1.1.1: Multiplication and Division are tied as are Addition and Substraction">🔗</a></div></section><section class="subsubsection" id="OrderofOperations-3-4"><h4 class="heading hide-type">
+<div class="autopermalink" data-description="Example 1.1.4"><a href="#OrderofOperationsExample3" title="Copy heading and permalink for Example 1.1.4" aria-label="Copy heading and permalink for Example 1.1.4">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection 1.1.1.1: Multiplication and Division are tied as are Addition and Substraction"><a href="#OrderofOperations-3-3" title="Copy heading and permalink for Subsubsection 1.1.1.1: Multiplication and Division are tied as are Addition and Substraction" aria-label="Copy heading and permalink for Subsubsection 1.1.1.1: Multiplication and Division are tied as are Addition and Substraction">🔗</a></div></section><section class="subsubsection" id="OrderofOperations-3-4"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Nested Parentheses</span>
 </h4>
 <div class="para" id="OrderofOperations-3-4-2">Parentheses can occur inside other parentheses, called nested parentheses. Following order of operations, we do whatever is inside parentheses first. If what is inside those parentheses has multiple steps, we need to do those steps following order of operations, and so we work on the parentheses inside first. The following example illustrates:<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="OrderofOperationsExample4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<article class="algorithm theorem-like" id="OrderofOperationsExample4"><h5 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h5></summary><article class="example example-like knowl__content"><div class="para" id="OrderofOperationsExample4-1-1">
+</h5>
+<div class="para" id="OrderofOperationsExample4-1-1">
 <em class="emphasis">Evaluate <span class="process-math">\(4-2[7-3(4+2)^2]\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 1.1.5"><a href="#OrderofOperationsExample4" title="Copy heading and permalink for Example 1.1.5" aria-label="Copy heading and permalink for Example 1.1.5">🔗</a></div></article></details><div class="para" id="OrderofOperations-3-4-4">Recall that the different shapes [ ] and ( ) for the parentheses have no significance; the different shapes are just used to make the expression easier to read.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="OrderofOperations-3-4-5">
+</div> <div class="para" id="OrderofOperationsExample4-1-2">Recall that the different shapes [ ] and ( ) for the parentheses have no significance; the different shapes are just used to make the expression easier to read.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="OrderofOperationsExample4-1-3">
 <div class="para">Looking at the expression overall, we need to do what is inside the [ ] parentheses first. Once inside those parentheses, what do we do first? We do what is inside the ( ) parentheses of course!</div>
-<div class="displaymath process-math" id="OrderofOperations-3-4-5-1">
+<div class="displaymath process-math" id="OrderofOperationsExample4-1-3-1">
 \begin{align*}
-4-2[7-3(4+2)^2] \amp  = 4-2[7-3(6)^2]\\
-\amp  = 4-2[7-3(36)]\\
-\amp  = 4-2[7-108]\\
-\amp  = 4-2[-101]\\
-\amp  = 4+202\\
-\amp  = 206
+4-2[7-3(4+2)^2] \amp = 4-2[7-3(6)^2]\\
+\amp = 4-2[7-3(36)]\\
+\amp = 4-2[7-108]\\
+\amp = 4-2[-101]\\
+\amp = 4+202\\
+\amp = 206
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsubsection 1.1.1.2: Nested Parentheses"><a href="#OrderofOperations-3-4" title="Copy heading and permalink for Subsubsection 1.1.1.2: Nested Parentheses" aria-label="Copy heading and permalink for Subsubsection 1.1.1.2: Nested Parentheses">🔗</a></div></section><section class="subsubsection" id="OrderofOperations-3-5"><h4 class="heading hide-type">
+<div class="autopermalink" data-description="Example 1.1.5"><a href="#OrderofOperationsExample4" title="Copy heading and permalink for Example 1.1.5" aria-label="Copy heading and permalink for Example 1.1.5">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection 1.1.1.2: Nested Parentheses"><a href="#OrderofOperations-3-4" title="Copy heading and permalink for Subsubsection 1.1.1.2: Nested Parentheses" aria-label="Copy heading and permalink for Subsubsection 1.1.1.2: Nested Parentheses">🔗</a></div></section><section class="subsubsection" id="OrderofOperations-3-5"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exponents and Negative Numbers</span>
 </h4>
 <div class="para logical" id="OrderofOperations-3-5-2">
 <div class="para">A second situation often gives more trouble. Suppose we want to evaluate:</div>
-<div class="displaymath process-math" id="OrderofOperations-3-5-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 -3^2
 \end{equation*}
@@ -1123,7 +1122,7 @@ IIIII}
 </div>
 <div class="para logical" id="OrderofOperations-3-5-4">
 <div class="para">The correct answer is the second one. The correct evaluation is:</div>
-<div class="displaymath process-math" id="OrderofOperations-3-5-4-1">
+<div class="displaymath process-math">
 \begin{equation*}
 -3^2=-(3)(3)=-9
 \end{equation*}
@@ -1132,7 +1131,7 @@ IIIII}
 </div>
 <div class="para logical" id="OrderofOperations-3-5-5">
 <div class="para">Why do we interpret things this way? By convention, we interpret <span class="process-math">\(-3\)</span> as though the negative sign and the <span class="process-math">\(3\)</span> are being multiplied. In other words, we treat <span class="process-math">\(-3\)</span> as though it were <span class="process-math">\((-1)(3)\text{.}\)</span> And so, following this convention, since exponents come before multiplication:</div>
-<div class="displaymath process-math" id="OrderofOperations-3-5-5-5">
+<div class="displaymath process-math">
 \begin{equation*}
 -3^2=(-1)3^2=(-1)(9)=-9
 \end{equation*}
@@ -1141,99 +1140,99 @@ IIIII}
 </div>
 <div class="para logical" id="OrderofOperations-3-5-6">
 <div class="para">If we actually wanted to say <span class="process-math">\((-3)(-3)\)</span> we would need to use parentheses and write <span class="process-math">\((-3)^2\text{.}\)</span> Since parentheses take precedence over everything, the correct evaluation of that would be:</div>
-<div class="displaymath process-math" id="OrderofOperations-3-5-6-3">
+<div class="displaymath process-math">
 \begin{equation*}
 (-3)^2=(-3)(-3)=9
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="OrderofOperationsExample5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<article class="algorithm theorem-like" id="OrderofOperationsExample5"><h5 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h5></summary><article class="example example-like knowl__content"><div class="para" id="OrderofOperationsExample5-1-1">
+</h5>
+<div class="para" id="OrderofOperationsExample5-1-1">
 <em class="emphasis">Evaluate <span class="process-math">\(-5^2+(-3)^2-(-4^2)\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 1.1.6"><a href="#OrderofOperationsExample5" title="Copy heading and permalink for Example 1.1.6" aria-label="Copy heading and permalink for Example 1.1.6">🔗</a></div></article></details><div class="para logical" id="OrderofOperations-3-5-8">
+</div> <div class="para logical" id="OrderofOperationsExample5-1-2">
 <div class="para">Using the discussion above on exponents and signs:</div>
-<div class="displaymath process-math" id="OrderofOperations-3-5-8-1">
+<div class="displaymath process-math" id="OrderofOperationsExample5-1-2-1">
 \begin{align*}
--5^2+(-3)^2-(-4^2) \amp  = -25+9 -(-16)\\
-\amp  = -25+9+16\\
-\amp  = 0
+-5^2+(-3)^2-(-4^2) \amp = -25+9 -(-16)\\
+\amp = -25+9+16\\
+\amp = 0
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsubsection 1.1.1.3: Exponents and Negative Numbers"><a href="#OrderofOperations-3-5" title="Copy heading and permalink for Subsubsection 1.1.1.3: Exponents and Negative Numbers" aria-label="Copy heading and permalink for Subsubsection 1.1.1.3: Exponents and Negative Numbers">🔗</a></div></section><section class="subsubsection" id="OrderofOperations-3-6"><h4 class="heading hide-type">
+<div class="autopermalink" data-description="Example 1.1.6"><a href="#OrderofOperationsExample5" title="Copy heading and permalink for Example 1.1.6" aria-label="Copy heading and permalink for Example 1.1.6">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection 1.1.1.3: Exponents and Negative Numbers"><a href="#OrderofOperations-3-5" title="Copy heading and permalink for Subsubsection 1.1.1.3: Exponents and Negative Numbers" aria-label="Copy heading and permalink for Subsubsection 1.1.1.3: Exponents and Negative Numbers">🔗</a></div></section><section class="subsubsection" id="OrderofOperations-3-6"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Implied Groupings</span>
 </h4>
 <div class="para" id="OrderofOperations-3-6-2">The third special situation to look out for is best illustrated with an example first.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="OrderofOperationsExample6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<article class="algorithm theorem-like" id="OrderofOperationsExample6"><h5 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h5></summary><article class="example example-like knowl__content"><div class="para" id="OrderofOperationsExample6-1-1">
+</h5>
+<div class="para" id="OrderofOperationsExample6-1-1">
 <em class="emphasis">Evaluate <span class="process-math">\(\displaystyle \frac{30-16}{4+3}\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 1.1.7"><a href="#OrderofOperationsExample6" title="Copy heading and permalink for Example 1.1.7" aria-label="Copy heading and permalink for Example 1.1.7">🔗</a></div></article></details><div class="para logical" id="OrderofOperations-3-6-4">
-<div class="para">We evaluate the numerator and denominator before carrying out the division</div>
-<div class="displaymath process-math" id="OrderofOperations-3-6-4-1">
+</div> <div class="para logical" id="OrderofOperationsExample6-1-2">
+<div class="para">We evaluate the numerator and denominator before carrying out the division:</div>
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{30-16}{4+3}=\frac{14}{7}=2
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="OrderofOperations-3-6-5">No problem, right?<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 1.1.7"><a href="#OrderofOperationsExample6" title="Copy heading and permalink for Example 1.1.7" aria-label="Copy heading and permalink for Example 1.1.7">🔗</a></div></article><div class="para" id="OrderofOperations-3-6-4">No problem, right?<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="OrderofOperations-3-6-6">There’s only one tiny little issue with this example. Order of operations says multiplications and divisions have to be done before additions and subtractions. But in this example, we did just the opposite – we did the addition and subtraction before we did the division! So, even though it should feel as though we did do this correctly, it also looks like we violated order of operations, which would not be correct.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="OrderofOperations-3-6-5">There’s only one tiny little issue with this example. Order of operations says multiplications and divisions have to be done before additions and subtractions. But in this example, we did just the opposite – we did the addition and subtraction before we did the division! So, even though it should feel as though we did do this correctly, it also looks like we violated order of operations, which would not be correct.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="OrderofOperations-3-6-7">But now if we go back and try to follow the rules, we run into a roadblock. Clearly we are supposed to divide the top, <span class="process-math">\(30-16\text{,}\)</span> by the bottom, <span class="process-math">\(4+3\text{.}\)</span> But how can we possibly do that without first subtracting <span class="process-math">\(30-16\)</span> to get <span class="process-math">\(14\text{,}\)</span> and adding <span class="process-math">\(4+3\)</span> to get <span class="process-math">\(7\text{?}\)</span> We can’t!<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="OrderofOperations-3-6-6">But now if we go back and try to follow the rules, we run into a roadblock. Clearly we are supposed to divide the top, <span class="process-math">\(30-16\text{,}\)</span> by the bottom, <span class="process-math">\(4+3\text{.}\)</span> But how can we possibly do that without first subtracting <span class="process-math">\(30-16\)</span> to get <span class="process-math">\(14\text{,}\)</span> and adding <span class="process-math">\(4+3\)</span> to get <span class="process-math">\(7\text{?}\)</span> We can’t!<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="OrderofOperations-3-6-8">
+<div class="para logical" id="OrderofOperations-3-6-7">
 <div class="para">What we have here is an example of an implied grouping. Because we cannot possibly do the division first, we know the numerator and denominator must be meant to be treated as though they were grouped by parentheses. So, when we see:</div>
-<div class="displaymath process-math" id="OrderofOperations-3-6-8-1">
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{30-16}{4+3}
 \end{equation*}
 </div>
 <div class="para">we mentally interpret that as though there were parentheses there:</div>
-<div class="displaymath process-math" id="OrderofOperations-3-6-8-2">
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{(30-16)}{(4+3)}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="OrderofOperations-3-6-9">We don’t usually actually write them, because it is always clear that we have to interpret any fraction as though they were there. Since “everyone knows” they must be there, we don’t bother writing them.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="OrderofOperations-3-6-8">We don’t usually actually write them, because it is always clear that we have to interpret any fraction as though they were there. Since “everyone knows” they must be there, we don’t bother writing them.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="OrderofOperations-3-6-10">There are other implied groupings as well. Two examples you may have encountered before are absolute value and square roots. PEMDAS doesn’t say anything at all about those, but we always interpret them as though what is inside them is in parentheses.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="OrderofOperations-3-6-9">There are other implied groupings as well. Two examples you may have encountered before are absolute value and square roots. PEMDAS doesn’t say anything at all about those, but we always interpret them as though what is inside them is in parentheses.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="OrderofOperationsExample7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<article class="algorithm theorem-like" id="OrderofOperationsExample7"><h5 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h5></summary><article class="example example-like knowl__content"><div class="para" id="OrderofOperationsExample7-1-1">
+</h5>
+<div class="para" id="OrderofOperationsExample7-1-1">
 <em class="emphasis">Evaluate <span class="process-math">\(\displaystyle \frac{4+|5-13|}{\sqrt{7+2}+1}\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 1.1.8"><a href="#OrderofOperationsExample7" title="Copy heading and permalink for Example 1.1.8" aria-label="Copy heading and permalink for Example 1.1.8">🔗</a></div></article></details><div class="para logical" id="OrderofOperations-3-6-12">
+</div> <div class="para logical" id="OrderofOperationsExample7-1-2">
 <div class="para">Following order of operations, we have:</div>
-<div class="displaymath process-math" id="OrderofOperations-3-6-12-1">
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{4+|5-13|}{\sqrt{7+2}+1}=\frac{4+|-8|}{\sqrt{9}+1}=\frac{4+8}{3+1}=\frac{12}{4}=3
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-3-6-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsubsection 1.1.1.4: Implied Groupings"><a href="#OrderofOperations-3-6" title="Copy heading and permalink for Subsubsection 1.1.1.4: Implied Groupings" aria-label="Copy heading and permalink for Subsubsection 1.1.1.4: Implied Groupings">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.1.1: Common Pitfalls"><a href="#OrderofOperations-3" title="Copy heading and permalink for Subsection 1.1.1: Common Pitfalls" aria-label="Copy heading and permalink for Subsection 1.1.1: Common Pitfalls">🔗</a></div></section><section class="subsection" id="OrderofOperations-4"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Example 1.1.8"><a href="#OrderofOperationsExample7" title="Copy heading and permalink for Example 1.1.8" aria-label="Copy heading and permalink for Example 1.1.8">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection 1.1.1.4: Implied Groupings"><a href="#OrderofOperations-3-6" title="Copy heading and permalink for Subsubsection 1.1.1.4: Implied Groupings" aria-label="Copy heading and permalink for Subsubsection 1.1.1.4: Implied Groupings">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.1.1: Common Pitfalls"><a href="#OrderofOperations-3" title="Copy heading and permalink for Subsection 1.1.1: Common Pitfalls" aria-label="Copy heading and permalink for Subsection 1.1.1: Common Pitfalls">🔗</a></div></section><section class="subsection" id="OrderofOperations-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Order of Operation and Your Calculator</span>
 </h3>
 <div class="para logical" id="OrderofOperations-4-2">
 <div class="para">Almost all calculators sold today, including the calculator you are using for this course, have order of operations built-in. When you enter an expression to evaluate, the calculator automatically follows order of operations correctly. So to evaluate:</div>
-<div class="displaymath process-math" id="OrderofOperations-4-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 5+(8-3^2)^4
 \end{equation*}
 </div>
 <div class="para">you would enter (try it now):</div>
-<div class="displaymath process-math" id="OrderofOperations-4-2-2">
+<div class="displaymath process-math">
 \begin{equation*}
 5+(8-3 ^\wedge 2 ) ^\wedge 4
 \end{equation*}
@@ -1248,13 +1247,14 @@ IIIII}
 </div>
 <div class="para" id="OrderofOperations-4-5">Implied groupings are also an issue with the calculator as the following example will illustrate.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="OrderofOperationsExample8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="OrderofOperationsExample8"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="OrderofOperationsExample8-1-1">To evaluate <span class="process-math">\(\displaystyle \frac{8+10}{5-3}\)</span> Jessie typed “<span class="process-math">\(8+10/5-3\)</span>” into her calculator, and got an answer of 7. This is not the correct answer. What went wrong and how do we correct it?<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h4>
+<div class="para" id="OrderofOperationsExample8-1-1">To evaluate <span class="process-math">\(\displaystyle \frac{8+10}{5-3}\)</span> Jessie typed “<span class="process-math">\(8+10/5-3\)</span>” into her calculator, and got an answer of 7. This is not the correct answer. What went wrong and how do we correct it?<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 1.1.9"><a href="#OrderofOperationsExample8" title="Copy heading and permalink for Example 1.1.9" aria-label="Copy heading and permalink for Example 1.1.9">🔗</a></div></article></details><div class="para logical" id="OrderofOperations-4-7">
+<div class="autopermalink" data-description="Example 1.1.9"><a href="#OrderofOperationsExample8" title="Copy heading and permalink for Example 1.1.9" aria-label="Copy heading and permalink for Example 1.1.9">🔗</a></div></article><div class="para logical" id="OrderofOperations-4-7">
 <div class="para">When we as human beings see the <span class="process-math">\(8+10\)</span> written as a numerator and <span class="process-math">\(5-3\)</span> as the denominator, we understand that there is an implied grouping at work. But when she typed “<span class="process-math">\(8+10/5-3\)</span>”, the machine had no way of knowing about that grouping, and so it followed order of operations, dividing before adding and subtracting:</div>
-<div class="displaymath process-math" id="OrderofOperations-4-7-4">
+<div class="displaymath process-math">
 \begin{equation*}
 8+10/5-3=8+2-3=10-3=7
 \end{equation*}
@@ -1263,7 +1263,7 @@ IIIII}
 </div>
 <div class="para logical" id="OrderofOperations-4-8">
 <div class="para">To correct this, Jessie needs to insert those implied parentheses into what she types into the calculator: “<span class="process-math">\((8+10)/(5-3)\)</span>”. The calculator will then do what was intended:</div>
-<div class="displaymath process-math" id="OrderofOperations-4-8-2">
+<div class="displaymath process-math">
 \begin{equation*}
 (8+10)/(5-3)=18/2=9
 \end{equation*}
@@ -1272,28 +1272,26 @@ IIIII}
 </div>
 <div class="para" id="OrderofOperations-4-9">With long calculations, especially those with nested parentheses, it can become tedious to enter the whole expression into the calculator at once. In those cases, it may be easier to break the expression into pieces (following order of operations of course) and use the calculator to evaluate each of the pieces. The next example will illustrate.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="OrderofOperationsExample9" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="OrderofOperationsExample9"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="OrderofOperationsExample9-1-1">
+</h4>
+<div class="para" id="OrderofOperationsExample9-1-1">
 <em class="emphasis">Evaluate <span class="process-math">\(\displaystyle \frac{-5+2(3-1)^2}{7+4(3^2-5)}\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 1.1.10"><a href="#OrderofOperationsExample9" title="Copy heading and permalink for Example 1.1.10" aria-label="Copy heading and permalink for Example 1.1.10">🔗</a></div></article></details><div class="para" id="OrderofOperations-4-11">To enter this into the calculator all at once, you would need to insert the implied parentheses, and then enter: “<span class="process-math">\((-5+2(3-1) ^\wedge 2)/(7+4(3 ^\wedge 2-5))\)</span>”.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="OrderofOperations-4-12">
+</div> <div class="para" id="OrderofOperationsExample9-1-2">To enter this into the calculator all at once, you would need to insert the implied parentheses, and then enter: “<span class="process-math">\((-5+2(3-1) ^\wedge 2)/(7+4(3 ^\wedge 2-5))\)</span>”.<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample9-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="OrderofOperationsExample9-1-3">
 <div class="para">That works, but it is such a long entry that it would be easy to make a typo entering it, and hard to notice that it happened. It might be better to evaluate the numerator and denominator separately, and then divide the results:</div>
-<div class="displaymath process-math" id="OrderofOperations-4-12-1">
+<div class="displaymath process-math" id="OrderofOperationsExample9-1-3-1">
 \begin{align*}
-\amp  -5+2(3-1) ^\wedge 2 = 3\\
-\amp  7+4(3 ^\wedge 2-5) = 23
+-5+2(3-1) ^\wedge 2 \amp = 3\\
+7+4(3 ^\wedge 2-5) \amp = 23
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample9-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="OrderofOperationsExample9-1-4">The final answer then is <span class="process-math">\(3/23\text{.}\)</span> Dividing this and rounding to 4 decimal places gives a final answer of <span class="process-math">\(0.1304\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperationsExample9-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="OrderofOperations-4-13">The final answer then is <span class="process-math">\(3/23\text{.}\)</span> Dividing this and rounding to 4 decimal places gives a final answer of <span class="process-math">\(0.1304\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 1.1.10"><a href="#OrderofOperationsExample9" title="Copy heading and permalink for Example 1.1.10" aria-label="Copy heading and permalink for Example 1.1.10">🔗</a></div></article><div class="para" id="OrderofOperations-4-11">There is another advantage to doing the top and bottom separately. <span class="process-math">\(3/23\)</span> does not divide evenly, and so you might want to leave it just as a fraction. Doing the two pieces separately makes it easy to see that the answer can be written as <span class="process-math">\(3/23\text{.}\)</span> Doing the whole thing in one piece would just give a decimal which you’d be unlikely to recognize as the fraction <span class="process-math">\(3/23\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="OrderofOperations-4-14">There is another advantage to doing the top and bottom separately. <span class="process-math">\(3/23\)</span> does not divide evenly, and so you might want to leave it just as a fraction. Doing the two pieces separately makes it easy to see that the answer can be written as <span class="process-math">\(3/23\text{.}\)</span> Doing the whole thing in one piece would just give a decimal which you’d be unlikely to recognize as the fraction <span class="process-math">\(3/23\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="OrderofOperations-4-15">Sometimes rounding will raise issues depending on how you break things up to enter into the calculator. While this may result in different answers, those differences will be very small. In general we won’t worry about these sorts of discrepancies. }<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-4-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="OrderofOperations-4-12">Sometimes rounding will raise issues depending on how you break things up to enter into the calculator. While this may result in different answers, those differences will be very small. In general we won’t worry about these sorts of discrepancies. }<div class="autopermalink" data-description="Paragraph"><a href="#OrderofOperations-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 1.1.2: Order of Operation and Your Calculator"><a href="#OrderofOperations-4" title="Copy heading and permalink for Subsection 1.1.2: Order of Operation and Your Calculator" aria-label="Copy heading and permalink for Subsection 1.1.2: Order of Operation and Your Calculator">🔗</a></div></section><section class="subsection" id="OrderofOperations-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>

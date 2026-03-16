@@ -63,7 +63,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js"
+      "pretext": "_static/pretext/js/lib"
     }
   },
   "startup": {
@@ -80,7 +80,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Algebra and Introduction to Functions">
 <meta property="book:author" content="FLCC Mathematics Department">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,16 +102,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.14';
+eBookConfig.runestone_version = '7.11.19';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -927,7 +927,7 @@ IIIII}
 </div>
 <div class="para logical" id="FunctionsAndMathematicalModels-3-4">
 <div class="para">To do this we first need to decide which quantity should be the input and which should be the output. The more natural way to do this would be to treat volume as a function of time, since the volume is changing as the time changes. Also, at any given time the pool can only have one volume (i.e. it is impossible for the pool to have two different volumes at the same time!), so we know setting things up this way will meet the requirements of a function. So our mathematical model would be based on a function like this:</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-3-4-1">
+<div class="displaymath process-math">
 \begin{equation*}
 time \rightarrow f \rightarrow volume
 \end{equation*}
@@ -936,7 +936,7 @@ time \rightarrow f \rightarrow volume
 </div>
 <div class="para logical" id="FunctionsAndMathematicalModels-3-5">
 <div class="para">Could we do it the other way around? Sometimes we can set up a model with inputs and outputs switched, and which way we do it depends on which approach we find more convenient or useful. Sometimes we can’t because the model only works as a function one way, In this example, we would run into some trouble if we tried to set things up with time as a function of volume, like this:</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-3-5-1">
+<div class="displaymath process-math">
 \begin{equation*}
 volume \rightarrow f \rightarrow time
 \end{equation*}
@@ -974,7 +974,7 @@ volume \rightarrow f \rightarrow time
 <li id="FunctionsAndMathematicalModels-3-9-2">
 <div class="para logical" id="FunctionsAndMathematicalModels-3-9-2-1">
 <div class="para">This could probably be set up either way. If you use a certain amount of electricity, the utility company will send you one and only one bill for that use - they never send you two different bills and let you pick which you want to pay. So if we input electric use, we get one and only one bill amount. On the other hand, if we know your bill for the month, there probably is only one amount of electric use that would give you that bill, since if you use less it would probably be lower and if you use more it will probably be higher. So, we could probably set this up with bill as input and electric use as output. It seems more natural though, to set up the function like this:</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-3-9-2-1-1">
+<div class="displaymath process-math">
 \begin{equation*}
 electricity \text{ }  use \rightarrow f \rightarrow bill
 \end{equation*}
@@ -987,7 +987,7 @@ electricity \text{ }  use \rightarrow f \rightarrow bill
 </ol>
 <div class="para logical" id="FunctionsAndMathematicalModels-3-10">
 <div class="para">Once we have determined our input and output, we next need to find a formula or other rule that fits the scenario we are trying to model. Finding formulas to suit mathematical models will be a major topic of the rest of this course and book, so we won’t get too deeply into that quite yet. You are not expected to come up with formulas on your own yet. For the swimming pool problem, we will note here that the pool starts with <span class="process-math">\(7200\)</span> gallons and since it is pumping at a rate of <span class="process-math">\(20\)</span> gallons per minute, after <span class="process-math">\(t\)</span> minutes <span class="process-math">\(20t\)</span> gallons will have been pumped out. Putting that together, it turns out that the volume of water in the pool as a function of time since the pump was turned on can be mathematically modeled with the function</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-3-10-5">
+<div class="displaymath process-math">
 \begin{equation*}
 f(t)=7200-20t
 \end{equation*}
@@ -997,7 +997,7 @@ f(t)=7200-20t
 </div>
 <div class="para logical" id="FunctionsAndMathematicalModels-3-11">
 <div class="para">While we are not going to spend much time trying to find formulas yet, we are interested in how a formula can be used to get information about the relationship we are mathematically modeling. Suppose, for example, we want to know how much water will be left in the pool after one hour. We can use this model to answer this question. Time is the input for this function, so we can input into it a time of one hour. Since <span class="process-math">\(t\)</span> is the time in minutes, this means we need to input <span class="process-math">\(t=60\)</span> (since an hour is <span class="process-math">\(60\)</span> minutes). So, doing this we get:</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-3-11-4">
+<div class="displaymath process-math">
 \begin{equation*}
 f(60)=7200-20(60)=6000
 \end{equation*}
@@ -1012,7 +1012,7 @@ f(60)=7200-20(60)=6000
 </div>
 <div class="autopermalink" data-description="Example 4.4.2"><a href="#FunctionsasModelsExample2" title="Copy heading and permalink for Example 4.4.2" aria-label="Copy heading and permalink for Example 4.4.2">🔗</a></div></article></details><div class="para logical" id="FunctionsAndMathematicalModels-3-14">
 <div class="para">Since usage is the input, we need to input <span class="process-math">\(x=800\)</span> into our function model. So:</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-3-14-2">
+<div class="displaymath process-math">
 \begin{equation*}
 b(800)=7.95+.1(800)=87.95
 \end{equation*}
@@ -1027,7 +1027,7 @@ b(800)=7.95+.1(800)=87.95
 </div>
 <div class="autopermalink" data-description="Example 4.4.3"><a href="#FunctionsasModelsExample3" title="Copy heading and permalink for Example 4.4.3" aria-label="Copy heading and permalink for Example 4.4.3">🔗</a></div></article></details><div class="para logical" id="FunctionsAndMathematicalModels-3-17">
 <div class="para">Since time is the input, we know we need to input <span class="process-math">\(t=3\)</span> into our function model:</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-3-17-2">
+<div class="displaymath process-math">
 \begin{equation*}
 h(3)=-16(3)^2+96(3)=144
 \end{equation*}
@@ -1084,7 +1084,7 @@ x \amp = 846
 </div>
 <div class="autopermalink" data-description="Example 4.4.5"><a href="#FunctionsasModelsExample5" title="Copy heading and permalink for Example 4.4.5" aria-label="Copy heading and permalink for Example 4.4.5">🔗</a></div></article></details><div class="para logical" id="FunctionsAndMathematicalModels-3-27">
 <div class="para">We know the height (output) we want, so we plug in <span class="process-math">\(h(t)=100\)</span> to get the equation:</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-3-27-2">
+<div class="displaymath process-math">
 \begin{equation*}
 100=-16t^2+96t
 \end{equation*}
@@ -1132,7 +1132,7 @@ x \amp = 846
 </div>
 <div class="para logical" id="FunctionsAndMathematicalModels-4-5">
 <div class="para">You also know that function notation is always “<span class="process-math">\(f(input)=output\)</span>”. So:</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-4-5-2">
+<div class="displaymath process-math">
 \begin{equation*}
 f\left(\underbrace{10}_{input} \right)=\underbrace{7000}_{output}
 \end{equation*}
@@ -1145,7 +1145,7 @@ f\left(\underbrace{10}_{input} \right)=\underbrace{7000}_{output}
 </div>
 <div class="para logical" id="FunctionsAndMathematicalModels-4-8">
 <div class="para">We can go the other way too. Suppose you know that there are 4800 gallons of water left after 2 hours (120 minutes). Time is the input, so the input is 120. Volume is the output, so the output is 4800 gallons. So, following the format <span class="process-math">\(f(input)=output\)</span> we can write this in function notation as:</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-4-8-2">
+<div class="displaymath process-math">
 \begin{equation*}
 f(120)=4800\text{.}
 \end{equation*}
@@ -1175,7 +1175,7 @@ f(120)=4800\text{.}
 </div>
 <div class="para logical" id="FunctionsAndMathematicalModels-5-3">
 <div class="para">So, for example, the domain of the function</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-5-3-1">
+<div class="displaymath process-math">
 \begin{equation*}
 f(t)=7200-20t
 \end{equation*}
@@ -1191,7 +1191,7 @@ f(t)=7200-20t
 </div>
 <div class="para logical" id="FunctionsAndMathematicalModels-5-7">
 <div class="para">So realistically speaking, the domain for the function in this mathematical model would be all real numbers between <span class="process-math">\(0\)</span> and <span class="process-math">\(360\)</span> inclusive, which we would write as</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-5-7-3">
+<div class="displaymath process-math">
 \begin{equation*}
 \{t|0 \leq t \leq 360\} \text{    OR    }  [0,360]
 \end{equation*}
@@ -1204,7 +1204,7 @@ f(t)=7200-20t
 </div>
 <div class="para logical" id="FunctionsAndMathematicalModels-5-10">
 <div class="para">We do something similar with range. The range is the set of all outputs for the function. We didn’t spend much time finding function’s ranges, because that really requires more advanced algebra tools. But the relevant range for a given mathematical model is often easier to determine. In our swimming pool example, the output represents the gallons of water in the pool. We know that the pool starts with <span class="process-math">\(7200\)</span> gallons and we are draining it, so we would expect that any volume between <span class="process-math">\(0\)</span> and <span class="process-math">\(7200\)</span> gallons would be a reasonable output to get. So the relevant range would be</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-5-10-4">
+<div class="displaymath process-math">
 \begin{equation*}
 \{f(t)|0 \leq f(t) \leq 7200\} \text{    OR    }  [0,7200]
 \end{equation*}
@@ -1254,7 +1254,7 @@ f(t)=7200-20t
 </div>
 <div class="autopermalink" data-description="Example 4.4.13"><a href="#FunctionsasModelsExample9" title="Copy heading and permalink for Example 4.4.13" aria-label="Copy heading and permalink for Example 4.4.13">🔗</a></div></article></details><div class="para logical" id="FunctionsAndMathematicalModels-5-17">
 <div class="para">Time is the input and height is the output. The relevant domain would be all reasonable times to use in this model, which is clearly the time between when the rocket is launched and when it returns to the ground. When the rocket is launched, <span class="process-math">\(t=0\)</span> so that is pretty clearly the lower limit for the relevant domain. The upper limit would be when the rocket returns to the ground. To find this we would need to plug in <span class="process-math">\(h(t)=0\)</span> into the function, and then solve</div>
-<div class="displaymath process-math" id="FunctionsAndMathematicalModels-5-17-3">
+<div class="displaymath process-math">
 \begin{equation*}
 -16t^2+96t=0
 \end{equation*}

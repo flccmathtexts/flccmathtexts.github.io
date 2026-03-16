@@ -1,5 +1,5 @@
-<string>:43:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element idx, got titlepage
-<string>:43:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element frontmatter there
-<string>:43:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
-<string>:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext
-<string>:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element pretext there
+file:/C:/Users/maley/OneDrive/Documents/GitHub/flccmathtexts.github.io/source/MAT097PreTeXt/source/main.ptx:43:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element idx, got titlepage
+file:/C:/Users/maley/OneDrive/Documents/GitHub/flccmathtexts.github.io/source/MAT097PreTeXt/source/main.ptx:43:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element frontmatter there
+file:/C:/Users/maley/OneDrive/Documents/GitHub/flccmathtexts.github.io/source/MAT097PreTeXt/source/main.ptx:43:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
+file:/C:/Users/maley/OneDrive/Documents/GitHub/flccmathtexts.github.io/source/MAT097PreTeXt/source/main.ptx:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext
+file:/C:/Users/maley/OneDrive/Documents/GitHub/flccmathtexts.github.io/source/MAT097PreTeXt/source/main.ptx:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element pretext there

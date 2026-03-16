@@ -63,7 +63,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js"
+      "pretext": "_static/pretext/js/lib"
     }
   },
   "startup": {
@@ -80,7 +80,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Algebra and Introduction to Functions">
 <meta property="book:author" content="FLCC Mathematics Department">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,16 +102,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.14';
+eBookConfig.runestone_version = '7.11.19';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -921,7 +921,7 @@ IIIII}
 </div>
 <div class="para logical" id="FirstDegreeEquations-2-3">
 <div class="para">But now suppose you want to know how many minutes you can use before your balance falls to <span class="process-math">\($10\text{.}\)</span> So, in other words, you need to solve the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-2-3-2">
+<div class="displaymath process-math">
 \begin{equation*}
 25 - 0.03m = 10
 \end{equation*}
@@ -1015,7 +1015,7 @@ IIIII}
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-11">
 <div class="para">Suppose we want to solve:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-11-1">
+<div class="displaymath process-math">
 \begin{equation*}
 25 - 0.03m = 10
 \end{equation*}
@@ -1038,7 +1038,7 @@ IIIII}
 <div class="para logical" id="FirstDegreeEquations-3-14">
 <div class="para">Now, we don’t have <span class="process-math">\(m\)</span> isolated yet, but we’re closer. We now just have to get rid of the coefficient <span class="process-math">\(-0.03\text{.}\)</span> Now, it is a common mistake to try to do this by adding <span class="process-math">\(0.03\)</span> to both sides, but that won’t work because <span class="process-math">\(-0.03m\)</span> and <span class="process-math">\(0.03\)</span> are not like terms, and so they cannot be combined. But we can divide both sides by <span class="process-math">\(-0.03\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-14-7">
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{-0.03m}{-0.03} = \frac{-15}{-0.03}
 \end{equation*}
@@ -1047,7 +1047,7 @@ IIIII}
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-15">
 <div class="para">Which gives us:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-15-1">
+<div class="displaymath process-math">
 \begin{equation*}
 m = 500
 \end{equation*}
@@ -1063,7 +1063,7 @@ m = 500
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample2-1-1">
 <div class="para">Solve for <span class="process-math">\(x\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample2-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 5x-11+3(2x-3)=2
 \end{equation*}
@@ -1113,7 +1113,7 @@ x\amp =2
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample3-1-1">
 <div class="para">Solve for <span class="process-math">\(z\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample3-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 5(z+1)-16=3z-5
 \end{equation*}
@@ -1129,7 +1129,7 @@ x\amp =2
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-26">
 <div class="para">It doesn’t matter which side we collect the <span class="process-math">\(z\)</span>’s on; either is fine. It is more common to collect them on the left, so we’ll subtract <span class="process-math">\(3z\)</span> from both sides to get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-26-3">
+<div class="displaymath process-math">
 \begin{equation*}
 2z-11=-5
 \end{equation*}
@@ -1138,7 +1138,7 @@ x\amp =2
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-27">
 <div class="para">Now since we’ve collected <span class="process-math">\(z\)</span>’s on the left, we’ll add <span class="process-math">\(11\)</span> to both sides to get rid of the <span class="process-math">\(-11\)</span> on the left:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-27-4">
+<div class="displaymath process-math">
 \begin{equation*}
 2z=6
 \end{equation*}
@@ -1147,7 +1147,7 @@ x\amp =2
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-28">
 <div class="para">And now dividing both sides by 2 we get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-28-1">
+<div class="displaymath process-math">
 \begin{equation*}
 z=3
 \end{equation*}
@@ -1172,7 +1172,7 @@ z=3
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample4-1-1">
 <div class="para">Solve for <span class="process-math">\(t\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample4-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 4t-3-7(2-t)=2(7t+5)-(t-4)
 \end{equation*}
@@ -1192,7 +1192,7 @@ z=3
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-33">
 <div class="para">Now, as mentioned in the previous example, there is a tendency to collect the variable on the left. So, if we collect the variable on the left we subtract <span class="process-math">\(13t\)</span> from both sides to get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-33-2">
+<div class="displaymath process-math">
 \begin{equation*}
 -2t-17=14
 \end{equation*}
@@ -1201,7 +1201,7 @@ z=3
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-34">
 <div class="para">Then add <span class="process-math">\(17\)</span> to both sides:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-34-2">
+<div class="displaymath process-math">
 \begin{equation*}
 -2t=31
 \end{equation*}
@@ -1211,13 +1211,13 @@ z=3
 <div class="para logical" id="FirstDegreeEquations-3-35">
 <div class="para">And now divide by <span class="process-math">\(-2\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-35-2">
+<div class="displaymath process-math">
 \begin{equation*}
 t=\frac{31}{-2}
 \end{equation*}
 </div>
 <div class="para">which is more commonly rewritten as:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-35-3">
+<div class="displaymath process-math">
 \begin{equation*}
 t=-\frac{31}{2}=\frac{-31}{2}=-15.5
 \end{equation*}
@@ -1263,7 +1263,7 @@ t=-\frac{31}{2}=\frac{-31}{2}=-15.5
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample5-1-1">
 <div class="para">Solve for <span class="process-math">\(y\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample5-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{2}{3}y-\frac{7}{5}=\frac{1}{6}y+\frac{11}{4}
 \end{equation*}
@@ -1305,7 +1305,7 @@ y\amp =\frac{249}{30}=\frac{83}{10}=8.3
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample6-1-1">
 <div class="para">Solve for <span class="process-math">\(x\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample6-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{2}{3}x-1=\frac{3}{5}\left(\frac{1}{2}x+1\right)
 \end{equation*}
@@ -1314,7 +1314,7 @@ y\amp =\frac{249}{30}=\frac{83}{10}=8.3
 </div>
 <div class="autopermalink" data-description="Example 3.1.7"><a href="#FirstDegreeEquationsExample6" title="Copy heading and permalink for Example 3.1.7" aria-label="Copy heading and permalink for Example 3.1.7">🔗</a></div></article></details><div class="para logical" id="FirstDegreeEquations-4-11">
 <div class="para">Here the lowest common denominator is <span class="process-math">\(30\text{,}\)</span> so we multiply both sides:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-11-2">
+<div class="displaymath process-math">
 \begin{equation*}
 30\left(\frac{2}{3}x-1\right)=30\left[\frac{3}{5}\left(\frac{1}{2}x+1\right)\right]
 \end{equation*}
@@ -1323,7 +1323,7 @@ y\amp =\frac{249}{30}=\frac{83}{10}=8.3
 </div>
 <div class="para logical" id="FirstDegreeEquations-4-12">
 <div class="para">When simplifying we generally work from inside parentheses out, but here we are better off multiplying 30 into the outermost parenthesis on the right first:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-12-1">
+<div class="displaymath process-math">
 \begin{equation*}
 30\left(\frac{2}{3}x-1\right)=18\left(\frac{1}{2}x+1\right)
 \end{equation*}
@@ -1347,7 +1347,7 @@ x\amp =\frac{48}{11}=4.3636..\text{.}
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample7-1-1">
 <div class="para">Solve for <span class="process-math">\(t\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample7-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{1}{4}\left(\frac{3}{8}t+1\right)=\frac{2}{3}t-1
 \end{equation*}
@@ -1393,7 +1393,7 @@ t\amp =\frac{120}{55}=\frac{24}{11}=2.1818..\text{.}
 </h3>
 <div class="para logical" id="FirstDegreeEquations-5-2">
 <div class="para">Not all problems can be solved! This fact of life shows up with equations as well. Suppose you are asked to find a solution for the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 x = x + 1
 \end{equation*}
@@ -1404,7 +1404,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-4">
 <div class="para">Now, not all inconsistent equations are as transparent as this one. For example, the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-4-1">
+<div class="displaymath process-math">
 \begin{equation*}
 5(x-2)+3(x+1)=2x+1-3(11-2x)
 \end{equation*}
@@ -1430,7 +1430,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-8">
 <div class="para">On the other hand, sometimes an equation has lots and lots of solutions. For example, consider the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-8-1">
+<div class="displaymath process-math">
 \begin{equation*}
 6x+10=2(3x+5)
 \end{equation*}
@@ -1439,7 +1439,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-9">
 <div class="para">It’s probably not immediately obvious that this is not an ordinary equation, but think about what would happen if you distributed the <span class="process-math">\(2\)</span> into the parentheses on the right. You’d wind up with the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-9-2">
+<div class="displaymath process-math">
 \begin{equation*}
 6x+10=6x+10
 \end{equation*}
@@ -1450,7 +1450,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-11">
 <div class="para">Just as many inconsistent equations are not obviously so, many identities are not obvious identities. For example, this equation is an identity:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-11-1">
+<div class="displaymath process-math">
 \begin{equation*}
 4x-2(3x-5)=7x-3(3x-3)+1
 \end{equation*}
@@ -1471,7 +1471,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-13">
 <div class="para">Now, at this point we have the same expression on both sides of the equation, which is a dead giveaway. If the two sides are the same, then they will be equal irrespective of what <span class="process-math">\(x\)</span> might be. If, though, you don’t notice that they are the same, you could continue and add <span class="process-math">\(2x\)</span> to both sides and get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-13-3">
+<div class="displaymath process-math">
 \begin{equation*}
 10=10
 \end{equation*}
@@ -1489,7 +1489,7 @@ x = x + 1
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample8-1-1">
 <div class="para">Solve for <span class="process-math">\(P\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample8-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 3P-5(4P-3)=-3(5P-1)-2P
 \end{equation*}
@@ -1505,7 +1505,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-19">
 <div class="para">At this point you may notice that we have an impossible situation in the equation, but it does no harm to continue. Adding <span class="process-math">\(17P\)</span> to both sides we get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-19-2">
+<div class="displaymath process-math">
 \begin{equation*}
 15=3
 \end{equation*}
@@ -1518,7 +1518,7 @@ x = x + 1
 </h3>
 <div class="para logical" id="FirstDegreeEquations-6-2">
 <div class="para">In <a href="AlgebraicSubstitution.html" class="internal" title="Section 1.3: Algebraic Substitution">Section 1.3</a> we used the formula:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AlgebraicSubstitution.html" id="FirstDegreeEquations-6-2-2">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AlgebraicSubstitution.html">
 \begin{equation*}
 W=210-\frac{m}{3}
 \end{equation*}
@@ -1529,7 +1529,7 @@ W=210-\frac{m}{3}
 </div>
 <div class="para logical" id="FirstDegreeEquations-6-3">
 <div class="para">This works great if you know the minutes of exercise and want to know the projected weight, but what if the situation is reversed? Suppose we have in mind a desired weight and want to know the minutes of exercise that would be needed to achieve that. For example, suppose we want to know the minutes of exercise needed to achieve a weight of <span class="process-math">\(185\)</span> pounds? Well, we could substitute in <span class="process-math">\(W=185\)</span> to get the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-6-3-3">
+<div class="displaymath process-math">
 \begin{equation*}
 185=210-\frac{m}{3}
 \end{equation*}
@@ -1564,7 +1564,7 @@ W\amp =210-\frac{m}{3}\\
 \end{align*}
 </div>
 <div class="para">which we can now rewrite as:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-6-6-2">
+<div class="displaymath process-math">
 \begin{equation*}
 m=-3W+630 \text{ or }  m=630-3W
 \end{equation*}
@@ -1589,7 +1589,7 @@ C\amp =\frac{5}{9}(F-32)\\
 </div>
 <div class="para logical" id="FirstDegreeEquations-6-10">
 <div class="para">which we can then rewrite as:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-6-10-1">
+<div class="displaymath process-math">
 \begin{equation*}
 F=\frac{9C+160}{5}
 \end{equation*}
@@ -1611,7 +1611,7 @@ P-2W\amp =2L\\
 \frac{P-2W}{2}\amp =L
 \end{align*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AlgebraicSubstitution.html" id="FirstDegreeEquations-6-15">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AlgebraicSubstitution.html">
 \begin{equation*}
 L=\frac{P-2W}{2} \text{ or }  L=\frac{1}{2}\left(P-2W\right)
 \end{equation*}
