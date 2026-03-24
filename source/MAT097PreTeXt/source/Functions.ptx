@@ -6,7 +6,7 @@
       (and mathematics in general)
       is describing and modeling the relationship between two related quantities.
       For example, we might want to:
-      <ol marker="labelcirc">
+      <ul>
         <li>
           <p>
             find the amount of grass seed we need to cover an athletic field based on its size, or
@@ -32,7 +32,7 @@
             determine the grade needed on a final exam to achieve a desired final course grade
           </p>
         </li>
-      </ol>
+      </ul>
     </p>
     <p>
       and we could easily come up with many, many more examples.
@@ -107,14 +107,10 @@
       With practice, though, these terms will become familiar.
       Let's take a look at a couple of examples to illustrate how it all works.
     </p>
-    <example xml:id="FunctionsExample1">
+    <algorithm xml:id="FunctionsExample1">
       <statement>
         <p>
-          The amount of grass seed
-          (in pounds)
-          needed to cover an athletic field can be determined based on the area
-          (in square feet).
-          Let <m>y</m> represent the amount of grass seed and let <m>A</m> represent the area.
+          The amount of grass seed (in pounds) needed to cover an athletic field can be determined based on the area (in square feet). Let <m>y</m> represent the amount of grass seed and let <m>A</m> represent the area.
           <ol marker="a">
             <li>
               <p>
@@ -128,62 +124,46 @@
             </li>
             <li>
               <p>
-                Describe the relationship by stating
-                <q>is a function of</q>
-                using both the variables and the quantities they represent.
+                Describe the relationship by stating <q>is a function of</q> using both the variables and the quantities they represent.
               </p>
             </li>
             <li>
               <p>
-                Assuming the function's name is <m>f</m>,
-                write an equation which relates the variables and the function.
+                Assuming the function's name is <m>f</m>, write an equation which relates the variables and the function.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          <ol marker="a">
+            <li>
+              <p>
+                The relationship described here says that we are going to determine the amount of seed based on the area. The question does not say we need to draw a function diagram, but it may be helpful to do this. It seems that we are meant to <q>tell</q> the function the area we need to cover, and then <q>ask</q> the function to then determine how much grass seed we need. So the function diagram would look like this:
+                <me>
+                  \text{area} \rightarrow f \rightarrow \text{grass seed}
+                </me>
+                and from this diagram it is clear that the input quantity is area (in square feet) and the input variable is <m>A</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                From the diagram we can see that the output quantity is pounds of grass seed, and the output variable is <m>y</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The phrasing always follows the pattern <q>output is a function of input</q>. So, using quantities, we would say that <q>the amount of grass seed, <m>y</m>, is a function of the area, <m>A</m></q>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Following the pattern used in the definition, we would write <m>y=f(A)</m>.
               </p>
             </li>
           </ol>
         </p>
       </statement>
-    </example>
-    <ol marker="a">
-      <li>
-        <p>
-          The relationship described here says that we are going to determine the amount of seed based on the area.
-          The question does not say we need to draw a function diagram,
-          but it may be helpful to do this.
-          It seems that we are meant to
-          <q>tell</q>
-          the function the area we need to cover, and then
-          <q>ask</q>
-          the function to then determine how much grass seed we need.
-          So the function diagram would look like this:
-          <me>
-            area \rightarrow f \rightarrow grass \text{ }  seed
-          </me>
-          and from this diagram it is clear that the input quantity is area
-          (in square feet)
-          and the input variable is <m>A</m>.
-        </p>
-      </li>
-      <li>
-        <p>
-          From the diagram we can see that the output quantity is pounds of grass seed,
-          and the output variable is <m>y</m>.
-        </p>
-      </li>
-      <li>
-        <p>
-          The phrasing always follows the patters
-          <q>output is a function of input</q>. So, using quantities, we would say that
-          <q>the amount of grass seed, <m>y</m>,
-          is a function of the area, <m>A</m></q>.
-        </p>
-      </li>
-      <li>
-        <p>
-          Following the pattern used in the definition,
-          we would write <m>y=f(A)</m>.
-        </p>
-      </li>
-    </ol>
+    </algorithm>
     <p>
       A function can be imagined as a kind of computer,
       programmed to process just the information we want.
@@ -197,12 +177,10 @@
       But until you've reached the point where this is all second nature,
       it's a good idea to follow the method shown in the example.
     </p>
-    <example xml:id="FunctionsExample2">
+    <algorithm xml:id="FunctionsExample2">
       <statement>
         <p>
-          The Fahrenheit temperature <m>F</m> can be calculated for any temperature in Celsius,
-          <m>C</m>.
-          Let the function which calculates this be called <m>T</m>.
+          The Fahrenheit temperature <m>F</m> can be calculated for any temperature in Celsius, <m>C</m>. Let the function which calculates this be called <m>T</m>.
           <ol marker="a">
             <li>
               <p>
@@ -216,13 +194,7 @@
             </li>
             <li>
               <p>
-                Describe the function using
-                <q><em>
-                <me>
-                  } is a function of \underline{
-                </me>
-                </em></q>
-                using the variables and the quantities they represent.
+                Describe the function using <q><em><m>\text{___}</m> is a function of <m>\text{___}</m></em></q> using the variables and the quantities they represent.
               </p>
             </li>
             <li>
@@ -232,47 +204,39 @@
             </li>
           </ol>
         </p>
+        <p>
+          The problem states that we want to determine Fahrenheit for a given Celsius temperature. So we want our function to do this:
+          <me>
+            C \rightarrow T \rightarrow F
+          </me>
+          <ol marker="a">
+            <li>
+              <p>
+                The input quantity is degrees Celsius, and the input variable is <m>C</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The output quantity is degrees Fahrenheit and the output variable is <m>F</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                It's always <q><em>output</em> is a function of <em>input</em></q>, so we would say <q>the Fahrenheit temperature, <m>F</m>, is a function of the Celsius temperature, <m>C</m></q>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Following the notation, the equation is <m>F = T(C)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          In this example Celsius is the input and Fahrenheit is the output. Could it be the other way around? Well, with Fahrenheit and Celsius temperatures at least, sure it could. We could figure out Celsius based on Fahrenheit just as well as Fahrenheit based on Celsius. Which is input and which is output is determined by what we are trying to do. The description of this problem made it clear that in this case we want to determine Fahrenheit for a given Celsius temperature, and that's why we set our function up that way. You have to read carefully to determine input and output – be careful!
+        </p>
       </statement>
-    </example>
-    <p>
-      The problem states that we want to determine Fahrenheit for a given Celsius temperature.
-      So we want our function to do this:
-      <me>
-        C \rightarrow T \rightarrow F
-      </me>
-      <ol marker="a">
-        <li>
-          <p>
-            The input quantity is degrees Celsius,
-            and the input variable is <m>C</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            The output quantity is degrees Fahrenheit and the output variable is <m>F</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            It's always
-            <q><em>output</em> is a function of <em>input</em></q>, so we would say
-            <q>the Fahrenheit temperature, <m>F</m>,
-            is a function of the Celsius temperature, <m>C</m></q>.
-          </p>
-        </li>
-      </ol>
-    </p>
-    <p>
-      In this example Celsius is the input and Fahrenheit is the output.
-      Could it be the other way around?
-      Well, with Fahrenheit and Celsius temperatures at least,
-      sure it could.
-      We could figure out Celsius based on Fahrenheit just as well as Fahrenheit based on Celsius.
-      Which is input and which is output is determined by what we are trying to do.
-      The description of this problem made it clear that in this case we want to determine Fahrenheit for a given Celsius temperature,
-      and that's why we set our function up that way.
-      You have to read carefully to determine input and output – be careful!
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Functions and Formulas</title>
@@ -343,50 +307,45 @@
       <q><m>f</m> of <m>5.3</m></q>
       and would understand that to mean the output you get from the function <m>f</m> if you input the value <m>5.3</m>.
     </p>
-    <example xml:id="FunctionsExample3">
+    <algorithm xml:id="FunctionsExample3">
       <statement>
         <p>
-          The Fahrenheit temperature <m>F</m> is a function of the Celsius temperature <m>C</m>.
-          The formula for this function is given by <m>T(C)=\frac{9}{5}C+32</m>.
-          Use this function formula to find the Fahrenheit temperature equivalent to <m>30 ^\circ C</m>.
+          The Fahrenheit temperature <m>F</m> is a function of the Celsius temperature <m>C</m>. The formula for this function is given by <m>T(C)=\frac{9}{5}C+32</m>. Use this function formula to find the Fahrenheit temperature equivalent to 30°C.
+        </p>
+        <p>
+          We need to use <m>C=30</m> in the formula. We get:
+          <md>
+            <mrow>T(C) \amp = \frac{9}{5}C+32</mrow>
+            <mrow>T(30) \amp = \frac{9}{5}(30)+32</mrow>
+            <mrow> \amp = 54+32 </mrow>
+            <mrow> \amp = 86</mrow>
+          </md>
+        </p>
+        <p>
+          So the Fahrenheit temperature corresponding to 30°C would be 86°F.
         </p>
       </statement>
-    </example>
-    <p>
-      We need to use <m>C=30</m> in the formula.
-      We get:
-      <md>
-        <mrow>T(C)\amp =\frac{9}{5}C+32</mrow>
-        <mrow>T(30)\amp =\frac{9}{5}(30)+32</mrow>
-        <mrow>\amp =86</mrow>
-      </md>
-    </p>
-    <p>
-      So the Fahrenheit temperature corresponding to
-      <m>30 ^\circ C</m> would be <m>86 ^\circ F</m>.
-    </p>
+    </algorithm>
     <p>
       Of course it is nice to know the purpose of a function,
       but if all we have is a formula we can still calculate outputs for inputs just the same.
     </p>
-    <example xml:id="FunctionsExample4">
+    <algorithm xml:id="FunctionsExample4">
       <statement>
         <p>
-          Suppose <m>f(x)=x^2-3x+1</m>.
-          Find <m>f(-2)</m>.
+          Suppose <m>f(x)=x^2-3x+1</m>. Find <m>f(-2)</m>.
+        </p>
+        <p>
+          <m>f(-2)</m> is the result of using <m>-2</m> as an input into this function. So:
+          <md>
+            <mrow>f(x) \amp = x^2-3x+1</mrow>
+            <mrow>f(-2) \amp = (-2)^2-3(-2)+1</mrow>
+            <mrow> \amp = 4+6+1</mrow>
+            <mrow> \amp = 11</mrow>
+          </md>
         </p>
       </statement>
-    </example>
-    <p>
-      <m>f(-2)</m> is the result of using <m>-2</m> as an input into this function.
-      So:
-      <md>
-        <mrow>f(x)\amp =x^2-3x+1</mrow>
-        <mrow>f(-2)\amp =(-2)^2-3(-2)+1</mrow>
-        <mrow>\amp =4+6+1</mrow>
-        <mrow>\amp =11</mrow>
-      </md>
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Functions Defined Verbally</title>
@@ -399,60 +358,32 @@
       but it can be expressed in other ways.
       One of these other ways is a verbal description of the rule.
     </p>
-    <example xml:id="FunctionsExample5">
+    <algorithm xml:id="FunctionsExample5">
       <statement>
         <p>
-          The sales tax rate in Ontario County, NY is <m>7.5 \%</m>.
-          Let <m>f(t)</m> be the total price including tax for a purchase of <m>t</m> dollars.
-          Find <m>f(800)</m>,
-          the price including sales tax for a laptop priced at <m>$ 800</m>.
-          Express your answer both as an answer to the question and in function notation.
+          The sales tax rate in Ontario County, NY is 7.5%. Let <m>f(t)</m> be the total price including tax for a purchase of <m>t</m> dollars. Find <m>f(800)</m>, the price including sales tax for a laptop priced at $800. Express your answer both as an answer to the question and in function notation.
+        </p>
+        <p>
+          The sales tax is 7.5% of $800 which would be <m>(0.075)(800) = 60</m>. So the total price would be <m>800 + 60 = 860</m>. So, in answer to the question, the price including tax is $860. In function notation we would write <m>f(800)=860</m>.
+        </p>
+        <p>
+          Here, we didn't have a formula, but we had enough information to calculate the output, nonetheless. If we wanted to, we could come up with a formula for this function. It is not too hard to see that this function could also be given as <m>f(t)=0.075t+t</m>. Sometimes, though, we may have a function for which a formula would be utterly impossible.
         </p>
       </statement>
-    </example>
-    <p>
-      The sales tax is <m>7.5 \%</m> of
-      <m>$800</m> which would be <m>(0.075)($800) = $60</m>.
-      So the total price would be <m>$800 + $60 = $860</m>.
-      So, in answer to the question,
-      the price including tax is <m>$860</m>.
-      In function notation we would write <m>f(800)=860</m>.
-    </p>
-    <p>
-      Here, we didn't have a formula,
-      but we had enough information to calculate the output,
-      nonetheless.
-      If we wanted to, we could come up with a formula for this function.
-      It is not too hard to see that this function could also be given as <m>f(t)=.075t+t</m>.
-      Sometimes, though,
-      we may have a function for which a formula would be utterly impossible.
-    </p>
-    <example xml:id="FunctionsExample6">
+    </algorithm>
+    <algorithm xml:id="FunctionsExample6">
       <statement>
         <p>
-          Suppose <m>f</m> is the rule which assigns to each U.S. state its capital.
-          Find <m>f(Washington)</m>.
+          Suppose <m>f</m> is the rule which assigns to each U.S. state its capital. Find <m>f(\text{Washington})</m>.
+        </p>
+        <p>
+          The function takes states as inputs and gives their capitals as outputs. There is obviously no way we could ever write an algebraic formula to <q>calculate</q> this. But, we can still determine the output for a given input. If you don't happen to know the state capital of Washington, a few moments with an atlas or surfing the web reveals that <m>f(\text{Washington})=\text{Olympia}</m>.
+        </p>
+        <p>
+          The state capital example reveals something else about functions: they don't necessarily have to involve numbers or quantities. Other pieces of information, such as states or their capitals, can be used as the inputs and outputs for a function. In mathematics, we are usually most interested in functions with numerical inputs and outputs – and most of the functions we'll see in this class will be numeric ones. But non-numeric functions like this are nonetheless perfectly good functions.
         </p>
       </statement>
-    </example>
-    <p>
-      The function takes states as inputs and gives their capitals as outputs.
-      There is obviously no way we could ever write an algebraic formula to
-      <q>calculate</q>
-      this.
-      But, we can still determine the output for a given input.
-      If you don't happen to know the state capital of Washington,
-      a few moments with an atlas or surfing the web reveals that <m>f(Washington)=Olympia</m>.
-    </p>
-    <p>
-      The state capital example reveals something else about functions:
-      they don't necessarily have to involve numbers or quantities.
-      Other pieces of information, such as states or their capitals,
-      can be used as the inputs and outputs for a function.
-      In mathematics,
-      we are usually most interested in functions with numerical inputs and outputs – and most of the functions we'll see in this class will be numeric ones.
-      But non-numeric functions like this are nonetheless perfectly good functions.
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Functions Defined by Tables</title>
@@ -479,11 +410,10 @@
     <p>
       Here is a more modest example of a table-defined function.
     </p>
-    <example xml:id="FunctionsExample7">
+    <algorithm xml:id="FunctionsExample7">
       <statement>
         <p>
-          Let <m>f(s)</m> be the fine in Pennsylvania for speeding in a <m>65 mph</m> zone.
-          A highway road sign shows the fine for speeding as a function of how fast you were going.
+          Let <m>f(s)</m> be the fine in Pennsylvania for speeding in a <m>65</m> mph zone. A highway road sign shows the fine for speeding as a function of how fast you were going.
         </p>
         <tabular>
           <row>
@@ -496,37 +426,32 @@
           </row>
           <row>
             <cell><m>70</m> mph</cell>
-            <cell><m>$45</m></cell>
+            <cell><m>\$45</m></cell>
           </row>
           <row>
             <cell><m>75</m> mph</cell>
-            <cell><m>$55</m></cell>
+            <cell><m>\$55</m></cell>
           </row>
           <row>
             <cell><m>80</m> mph</cell>
-            <cell><m>$65</m></cell>
+            <cell><m>\$65</m></cell>
           </row>
           <row>
             <cell><m>85</m> mph</cell>
-            <cell><m>$75</m></cell>
+            <cell><m>\$75</m></cell>
           </row>
         </tabular>
         <p>
-          Find <m>f(80)</m>, the fine for going <m>80</m> mph.
-          Express your result as an answer to the question and also in function notation.
+          Find <m>f(80)</m>, the fine for going <m>80</m> mph. Express your result as an answer to the question and also in function notation.
+        </p>
+        <p>
+          Reading the table we can see that the fine is <m>\$65</m>. In function notation we would write <m>f(80)=65</m>.
+        </p>
+        <p>
+          A word of warning about table-defined functions. Unless you have extra information about how the function's outputs are determined, you cannot use a table to find outputs for any inputs that are not listed in the table. Table-defined functions are limited to only the inputs listed in the table.
         </p>
       </statement>
-    </example>
-    <p>
-      Reading the table we can see that the fine is <m>$65</m>.
-      In function notation we would write <m>f(80)=65</m>.
-    </p>
-    <p>
-      A word of warning about table-defined functions.
-      Unless you have extra information about how the function's outputs are determined,
-      you cannot use a table to find outputs for any inputs that are not listed in the table.
-      Table-defined functions are limited to only the inputs listed in the table.
-    </p>
+    </algorithm>
     <p>
       For example,
       suppose you want to know the fine for going <m>90</m> mph.
@@ -610,25 +535,19 @@
       <m>\{ t \vert t \text{ is a U.S. State }  \}</m> or using any other letter.
       (You should ask your instructor whether or not you are expected to write domains and ranges in formal set-builder notation or can just give a verbal description.)
     </p>
-    <example xml:id="FunctionsExample8">
+    <algorithm xml:id="FunctionsExample8">
       <statement>
         <p>
-          Let <m>c(t)</m> be the rule that tells what day of the week each human being <m>t</m> was born on.
-          What are the domain and range of this function?
+          Let <m>c(t)</m> be the rule that tells what day of the week each human being <m>t</m> was born on. What are the domain and range of this function?
+        </p>
+        <p>
+          This function takes as inputs human beings. So the domain would be the set of all human beings, or <m>\{t \mid t \text{ is a human being }\}</m>.
+        </p>
+        <p>
+          The outputs from this function are days of the week. So the range would be the set of days of the week, or <m>\{y \mid y \text{ is a day of the week }\}</m>, or <m>\{</m>Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday<m>\}</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      This function takes as inputs human beings.
-      So the domain would be the set of all human beings,
-      or <m>\{t \vert t \text{ is a human being } \}</m>.
-    </p>
-    <p>
-      The outputs from this function are days of the week.
-      So the domain would be the set of days of the week,
-      or <m>\{y \vert y \text{ is a day of the week } \}</m>,
-      or <m>\{</m>Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday<m>\}</m>. }
-    </p>
+    </algorithm>
     <p>
       For a numerical function like
       <m>f(x)=x^2-3x+1</m> the domain would be the set of all real numbers,
@@ -646,18 +565,16 @@
       At this point in the course we are not ready to determine just what the range of this function is,
       so we will avoid questions about the ranges of functions like this one for now (we'll revisit this question later.)
     </p>
-    <example xml:id="FunctionsExample9">
+    <algorithm xml:id="FunctionsExample9">
       <statement>
         <p>
           What is the domain of the function <m>g(z)=2z+\frac{z^2}{5}</m>?
         </p>
+        <p>
+          Any real number could be substituted in to this formula and give a result. So the domain is <m>\mathbb{R}</m>, the set of all real numbers.
+        </p>
       </statement>
-    </example>
-    <p>
-      Any real number could be substituted in to this formula and give a result.
-      So the domain is <m>\mathbb{R}</m>,
-      the set of all real numbers.
-    </p>
+    </algorithm>
     <p>
       Sometimes there are real numbers that cannot be substituted in to a formula to give an output.
       For example,
@@ -675,40 +592,32 @@
       So, if a function's rule asks you to divide by or take the square root of anything involving the input variable,
       we need to make sure to exclude from its domain any values that would require doing the impossible.
     </p>
-    <example xml:id="FunctionsExample10">
+    <algorithm xml:id="FunctionsExample10">
       <statement>
         <p>
           What is the domain of the function <m>f(x)=\frac{3x^2 -5x+73}{x-3}</m>?
         </p>
+        <p>
+          The numerator looks intimidating, but it doesn't matter to us. Nothing impossible will happen in the numerator, no matter what value of <m>x</m> you input. On the other hand, we must make sure that the denominator is never zero.
+        </p>
+        <p>
+          So, to find the value we need to exclude from the domain, we solve the equation <m>x-3=0</m> and get <m>x=3</m>. So since <m>x=3</m> would give us a zero denominator, we must exclude it from the domain. So the domain is all real numbers except 3, or <m>\{x \mid x \ne 3\}</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      The numerator looks intimidating,
-      but it doesn't matter to us.
-      Nothing impossible will happen in the numerator,
-      no matter what value of <m>x</m> you input.
-      On the other hand,
-      we must make sure that the denominator is never zero.
-      So, to find the value we need to exclude from the domain,
-      we solve the equation <m>x-3=0</m> and get <m>x=3</m>.
-      So since <m>x=3</m> would give us a zero denominator,
-      we must exclude it from the domain.
-      So the domain is all real numbers except 3, or <m>\{x \vert x \ne 3\}</m>.
-    </p>
-    <example xml:id="FunctionsExample11">
+    </algorithm>
+    <algorithm xml:id="FunctionsExample11">
       <statement>
         <p>
           What is the domain of the function <m>g(x)=\sqrt{3x-2}</m>?
         </p>
+        <p>
+          Here we need to make sure that the expression in the square root is not negative, or, in other words, that it is greater than or equal to zero.
+        </p>
+        <p>
+          So we solve <m>3x-2 \ge 0</m> and get that <m>x \ge \frac{2}{3}</m>. So our domain is all real numbers greater than or equal to <m>\frac{2}{3}</m>, or <m>\{ x \mid x \ge \frac{2}{3} \}</m>, or <m>[\frac{2}{3},\infty)</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      Here we need to make sure that the expression in the square root is not negative, or,
-      in other words, that it is greater than or equal to zero.
-      So we solve <m>3x-2 \ge 0</m> and get that <m>x \ge \frac{2}{3}</m>.
-      So our domain is all real numbers greater than or equal to <m>\frac{2}{3}</m>,
-      or <m>\{ x \vert x \ge \frac{2}{3} \}</m>, or <m>[2,\infty)</m>.
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Determining Whether or Not a Rule is a Function</title>
@@ -752,44 +661,29 @@
       we try to set up a function and end up with a rule that can give more than one output for a given input.
       The following examples will illustrate a few cases where this may be a problem.
     </p>
-    <example xml:id="FunctionsExample12">
+    <algorithm xml:id="FunctionsExample12">
       <statement>
         <p>
-          Let <m>h(c)</m> be the rule that tells you the current NHL hockey team for each location that is the named home of a current NHL team.
-          Does this rule define a function?
+          Let <m>h(c)</m> be the rule that tells you the current NHL hockey team for each location that is the named home of a current NHL team. Does this rule define a function?
+        </p>
+        <p>
+          This rule is set up to process information, taking homes of NHL teams as inputs and giving the teams themselves as outputs:
+          <me>
+            \text{ home } \rightarrow h \rightarrow \text{ team }
+          </me>
+        </p>
+        <p>
+          Now for many locations this works fine. For example:
+          <me>
+            \text{ Buffalo } \rightarrow h \rightarrow \text{ Sabres }
+          </me>
+          and similarly if we input Boston, Toronto, or Montreal things work out fine; we get the Bruins, the Leafs, and the Canadiens as outputs respectively.
+        </p>
+        <p>
+          But we run into a problem if we input New York. There are two NHL teams that call New York home: the Islanders and the Rangers. Which is the output? According to our rule, they both are. This is not allowed. This <q>function</q> doesn't give us a single straight answer, and so it is not a function after all!
         </p>
       </statement>
-    </example>
-    <p>
-      This rule is set up to process information,
-      taking homes of NHL teams as inputs and giving the teams themselves as outputs:
-      <me>
-        \text{ home }  \rightarrow h \rightarrow \text{ team }
-      </me>
-    </p>
-    <p>
-      Now for many locations this works fine.
-      For example:
-      <me>
-        \text{ Buffalo }  \rightarrow h \rightarrow \text{ Sabres }
-      </me>
-      and similarly if we input Boston, Toronto,
-      or Montreal things work out fine;
-      we get the Bruins, the Leafs,
-      and the Canadiens as outputs respectively.
-    </p>
-    <p>
-      But we run into a problem if we input New York.
-      There are two NHL teams that call New York home:
-      the Islanders and the Rangers.
-      Which is the output?
-      According to our rule, they both are.
-      This is not allowed.
-      This
-      <q>function</q>
-      doesn't give us a single straight answer,
-      and so it is not a function after all!
-    </p>
+    </algorithm>
     <p>
       Now a couple of comments are important here.
       It does not matter that most of the time this rule would have given only one output.
@@ -812,46 +706,34 @@
       A rule does not have to give an output for every imaginable input to be a function.
       The rule only has to give one and only one output for each input in its domain.
     </p>
-    <example xml:id="FunctionsExample13">
+    <algorithm xml:id="FunctionsExample13">
       <statement>
         <p>
-          Let <m>k(t)</m> be the rule that assigns to each current NHL team the team's named home.
-          Is <m>k(t)</m> a function?
+          Let <m>k(t)</m> be the rule that assigns to each current NHL team the team's named home. Is <m>k(t)</m> a function?
+        </p>
+        <p>
+          This rule is set up to take teams as inputs and give homes as outputs:
+          <me>
+            \text{ team } \rightarrow k \rightarrow \text{ home }
+          </me>
+        </p>
+        <p>
+          Now, here we do not have the problem from the previous example. If you input the Sabres you get Buffalo, input the Bruins you get Boston, etc. But if you input the Rangers you get one and only one output: New York. And if you input the Islanders you also get one and only one output: New York. The fact that two distinct inputs give the same output is not a problem! Since no two teams have two named homes, this is a function.
+        </p>
+        <p>
+          It is important to contrast these last two examples. Remember: a function must give one and only one output for each input. If there is even one input that gives two outputs according to a rule, that rule is not a function. So, this is not OK:
+          <me>
+            \text{ New York } \rightarrow h \begin{cases} \text{ Rangers? } \\ \text{ Islanders? } \end{cases}
+          </me>
+        </p>
+        <p>
+          But there is absolutely nothing wrong with two inputs sharing the same output. This is OK:
+          <me>
+            \begin{cases} \text{ Rangers } \\ \text{ Islanders } \end{cases} \rightarrow k \rightarrow \text{ New York }
+          </me>
         </p>
       </statement>
-    </example>
-    <p>
-      This rule is set up to take teams as inputs and give homes as outputs:
-      <me>
-        \text{ team }  \rightarrow k \rightarrow \text{ home }
-      </me>
-    </p>
-    <p>
-      Now, here we do not have the problem from the previous example.
-      If you input the Sabres you get Buffalo,
-      input the Bruins you get Boston, etc.
-      But if you input the Rangers you get one and only one output: New York.
-      And if you input the Islanders you also get one and only one output: New York.
-      The fact that two distinct inputs give the same output is not a problem!
-      Since no two teams have two named homes, this is a function.
-    </p>
-    <p>
-      It is important to contrast these last two examples.
-      Remember: a function must give one and only one output for each input.
-      If there is even one input that gives two outputs according to a rule,
-      that rule is not a function.
-      So, this is not OK:
-      <me>
-        \text{ New York }  \rightarrow h \begin{array}{l} \rightarrow \text{ Rangers? } \\ \rightarrow \text{ Islanders? } \end{array}
-      </me>
-    </p>
-    <p>
-      But there is absolutely nothing wrong with two inputs sharing the same output.
-      This is OK:
-      <me>
-        \begin{array}{l} \text{ Rangers }  \rightarrow \\ \text{ Islanders }  \rightarrow \end{array}  k \begin{array}{l} \rightarrow \text{ New York } \\ \rightarrow  \text{ New York } \end{array}
-      </me>
-    </p>
+    </algorithm>
     <p>
       The key to functions is that they must never give an ambiguous answer.
       In the first case, is the output the Rangers or the Islanders?
@@ -861,24 +743,17 @@
       there's no ambiguity about what the output is for any input.
       So that's not a problem at all.
     </p>
-    <example xml:id="FunctionsExample14">
+    <algorithm xml:id="FunctionsExample14">
       <statement>
         <p>
-          Is the following rule a function?
-          Why or why not?
-          <m>p(x)=42</m>
+          Is the following rule a function? Why or why not?
+          <me>p(x)=42</me>
+        </p>
+        <p>
+          This rule is a bit ridiculous. No matter what you input for <m>x</m>, you always get the same output: <m>42</m>. However, that makes this a perfectly fine function. There is nothing you could possibly input for <m>x</m> that would give you two or more different outputs. There is always one and only one output for any given input. So this rule is a function.
         </p>
       </statement>
-    </example>
-    <p>
-      This rule is a bit ridiculous.
-      No matter what you input for <m>x</m>,
-      you always get the same output: <m>42</m>.
-      However, that makes this a perfectly fine function.
-      There is nothing you could possibly input for <m>x</m> that would give you two or more different outputs.
-      There is always one and only one output for any given input.
-      So this rule is a function.
-    </p>
+    </algorithm>
     <p>
       It is important to note that when you are showing that a rule is not a function,
       all you need to do is give any one input that has two outputs.
