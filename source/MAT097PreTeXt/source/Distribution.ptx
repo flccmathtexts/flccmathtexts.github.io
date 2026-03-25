@@ -36,7 +36,7 @@
         The instructions for <xref ref="DistributionAlgorithm1">this algorithm</xref> 
         explicitly told us to distribute. Usually, though, it is understood that 
         distributing whenever possible is a part of simplifying, and so you should 
-        assume that distributing is expected when you are asked to simplify an expression.
+        assume that distributing is expected when you are asked to simplify an expression as in the next example.
       </p>
     </algorithm>
     <algorithm xml:id="DistributionAlgorithm2">
@@ -76,7 +76,7 @@
         It is clear that we need to distribute <m>4x</m> into the first set of parentheses.
         In the second set, though, it is easy to make a mistake.
         It appears that we need to just distribute the <m>3x</m>,
-        which would give us the following incorrect result:
+        which would give us the following (incorrect) result:
         <me>
           \text{Incorrect: } 4x^2-12x-3x^2+6x
         </me>
@@ -156,13 +156,6 @@
         </md>
       </p>
     </algorithm>
-    
-  </introduction>
-  <subsection>
-    <title>Exercises</title>
-    <p>
-      Simplify each of the following algebraic expressions:
-    </p>
     <algorithm xml:id="DistributionAlgorithm7">
         <statement>
             <p>
@@ -178,6 +171,12 @@
             </md>
         </p>
     </algorithm>
+  </introduction>
+  <subsection>
+    <title>Exercises</title>
+    <p>
+      Simplify each of the following algebraic expressions:
+    </p>
     <exercises><exercise>
       <statement>
         <p>
