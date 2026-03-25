@@ -59,7 +59,7 @@
       There are, however,
       cases where we will have good reason to do things the other way around.
     </p>
-    <example xml:id="ImplicitFunctionsExample1">
+    <algorithm xml:id="ImplicitFunctionsExample1">
       <statement>
         <p>
           The relationship between my natural gas bill
@@ -71,27 +71,27 @@
           Is my usage a function of my bill?
           Which is the more natural way to use this formula?
         </p>
+        <p>
+          My bill is a function of my usage because for any given amount of gas used I will be billed one and only one amount.
+          Likewise, usage is a function of my bill because for any given bill amount there should be one and only one amount of usage (since if I use more I should be billed more and if I use less I should be billed less – this fits with common sense,
+          and also can be seen from the formula,
+          since a different usage would give a different bill from this formula.)
+        </p>
+        <p>
+          The formula is set up to conveniently take <m>t</m> as the input and give <m>B</m> as the output.
+          So it is more natural to treat my bill as a function of my usage.
+          In other words,
+          this formula explicitly gives my bill as a function of my usage,
+          and implicitly gives my usage as a function of my bill.
+        </p>
+        <p>
+          This view also agrees with how things actually happen;
+          you use a certain amount of gas and then the utility calculates my bill based on this.
+          So the formula is written in a way that agrees with how things are actually likely to be done.
+        </p>
       </statement>
-    </example>
-    <p>
-      My bill is a function of my usage because for any given amount of gas used I will be billed one and only one amount.
-      Likewise, usage is a function of my bill because for any given bill amount there should be one and only one amount of usage (since if I use more I should be billed more and if I use less I should be billed less – this fits with common sense,
-      and also can be seen from the formula,
-      since a different usage would give a different bill from this formula.)
-    </p>
-    <p>
-      The formula is set up to conveniently take <m>t</m> as the input and give <m>B</m> as the output.
-      So it is more natural to treat my bill as a function of my usage.
-      In other words,
-      this formula explicitly gives my bill as a function of my usage,
-      and implicitly gives my usage as a function of my bill.
-    </p>
-    <p>
-      This view also agrees with how things actually happen;
-      you I use a certain amount of gas and then the utility calculates my bill based on this.
-      So the formula is written in a way that agrees with how things are actually likely to be done. }
-    </p>
-    <example xml:id="ImplicitFunctionsExample2">
+    </algorithm>
+    <algorithm xml:id="ImplicitFunctionsExample2">
       <statement>
         <p>
           The formula for the relationship between a sphere's radius and its volume is usually written <m>V=\frac{4}{3} \pi r^3</m>,
@@ -100,23 +100,24 @@
           Is radius a function of volume?
           Which is the more natural way to use this formula?
         </p>
+        
+        <p>
+          We know that volume is a function of radius because if a sphere with a given radius can only have one volume (you can't draw a sphere in two different sizes with the same radius.)
+        </p>
+        <p>
+          Likewise, radius is a function of volume,
+          because a sphere with a given volume can only have one radius (you can't draw a sphere with a given volume in more than one different way.)
+        </p>
+        <p>
+          The formula is set up to conveniently take <m>r</m> as an input and give <m>V</m> as the output.
+          So it is more natural to treat volume as a function of radius.
+          In other words,
+          the formula gives volume explicitly as a function of radius,
+          but only implicitly gives radius as a function of volume.
+        </p>
       </statement>
-    </example>
-    <p>
-      We know that volume is a function of radius because if a sphere with a given radius can only have one volume (you can't draw a sphere in two different sizes with the same radius.)
-    </p>
-    <p>
-      Likewise, radius is a function of volume,
-      because a sphere with a given volume can only have one radius (you can't draw a sphere with a given volume in more than one different way.)
-    </p>
-    <p>
-      The formula is set up to conveniently take <m>r</m> as an input and give <m>V</m> as the output.
-      So it is more natural to treat volume as a function of radius.
-      In other words,
-      the formula gives volume explicitly as a function of radius,
-      but only implicitly gives radius as a function of volume. }
-    </p>
-    <example xml:id="ImplicitFunctionsExample3">
+    </algorithm>
+    <algorithm xml:id="ImplicitFunctionsExample3">
       <statement>
         <p>
           The formula for the relationship between the time in seconds and height in meters of a ball thrown upward
@@ -127,24 +128,25 @@
           It time a function of height?
           Which is the more natural way to use this formula?
         </p>
+        <p>
+          We know that height is a function of time because at any given time the ball will be at one and only one height (it can't be in two places at once.)
+        </p>
+        <p>
+          Time is not a function of height, though,
+          because both common sense and experience with similar examples in the past tell us that the ball can be at a given height at two different times (on the way up and on the way down.)
+        </p>
+        
+        <p>
+          We only have one choice of how to use this formula,
+          with height as a function of time.
+          Fortunately,
+          this formula is set up to conveniently take time as the input and give height as the output.
+          In other words,
+          this formula gives height explicitly as a function of time.
+          It does not give time as a function of height at all.
+        </p>
       </statement>
-    </example>
-    <p>
-      We know that height is a function of time because at any given time the ball will be at one and only one height (it can't be in two places at once.)
-    </p>
-    <p>
-      Time is not a function of height, though,
-      because both common sense and experience with similar examples in the past tell us that the ball can be at a given height at two different times (on the way up and on the way down.)
-    </p>
-    <p>
-      We only have one choice of how to use this formula,
-      with height as a function of time.
-      Fortunately,
-      this formula is set up to conveniently take time as the input and give height as the output.
-      In other words,
-      this formula gives height explicitly as a function of time.
-      It does not give time as a function of height at all. }
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Rewriting Implicit Functions in Explicit Form</title>
@@ -166,9 +168,9 @@
       Is the amount of gasoline a function of the amount of ethanol?
       Yes!
       We can see this both from common sense
-      (if I know how much ethanol was used,
+      if I know how much ethanol was used,
       there is only one possible amount of gasoline that could have been used to bring the total to 500 gallons),
-      and from algebra (if you plug in any given value for <m>E</m> you can solve the equation to get one and only one value for <m>G</m>.
+      and from algebra if you plug in any given value for <m>E</m> you can solve the equation to get one and only one value for <m>G</m>.
     </p>
     <p>
       Is the amount of ethanol a function of the amount of gasoline?
@@ -202,38 +204,38 @@
     <p>
       It's not hard to see that we could also get gasoline as a function of ethanol explicitly with the formula <m>G=500-E</m>.
     </p>
-    <example xml:id="ImplicitFunctionsExample4">
+    <algorithm xml:id="ImplicitFunctionsExample4">
       <statement>
         <p>
           The equation <m>2x+3y=6-2x</m> implicitly defines <m>x</m> as a function of <m>y</m> and also implicitly defines <m>y</m> as a function of <m>x</m>.
           Rewrite this equation to give these functions explicitly.
         </p>
+        <p>
+          First, to find <m>x</m> as a function of <m>y</m> means we want an equation that gives <m>x</m> as the output.
+          So we solve for <m>x</m>:
+          <md>
+            <mrow>2x+3y\amp =6-2x</mrow>
+            <mrow>4x+3y\amp =6</mrow>
+            <mrow>4x\amp =6-3y</mrow>
+            <mrow>x\amp =\frac{6-3y}{4}</mrow>
+          </md>
+        </p>
+        <p>
+          We can rewrite this in function notation if we want as <m>x=f(y)=\frac{6-3y}{4}</m>.
+        </p>
+        <p>
+          Now to find <m>y</m> as a function of <m>x</m> we solve for <m>y</m>:
+          <md>
+            <mrow>2x+3y\amp =6-2x</mrow>
+            <mrow>3y\amp =6-4x</mrow>
+            <mrow>y\amp =\frac{6-4x}{3}</mrow>
+          </md>
+        </p>
+        <p>
+          We can rewrite this in function notation also as <m>y=g(x)=\frac{6-4x}{3}</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      First, to find <m>x</m> as a function of <m>y</m> means we want an equation that gives <m>x</m> as the output.
-      So we solve for <m>x</m>:
-      <md>
-        <mrow>2x+3y\amp =6-2x</mrow>
-        <mrow>4x+3y\amp =6</mrow>
-        <mrow>4x\amp =6-3y</mrow>
-        <mrow>x\amp =\frac{6-3y}{4}</mrow>
-      </md>
-    </p>
-    <p>
-      We can rewrite this in function notation if we want as <m>x=f(y)=\frac{6-3y}{4}</m>.
-    </p>
-    <p>
-      Now to find <m>y</m> as a function of <m>x</m> we solve for <m>y</m>:
-      <md>
-        <mrow>2x+3y\amp =6-2x</mrow>
-        <mrow>3y\amp =6-4x</mrow>
-        <mrow>y\amp =\frac{6-4y}{3}</mrow>
-      </md>
-    </p>
-    <p>
-      We can rewrite this in function notation also as <m>y=g(x)=\frac{6-4y}{3}</m>. }
-    </p>
+    </algorithm>
     <p>
       In this last example we were told that the equation defined functions implicitly.
       What if we aren't told that?
@@ -262,80 +264,80 @@
       Because you can algebraically modify the equation to be an explicit function,
       you know the function exists.
     </p>
-    <example xml:id="ImplicitFunctionsExample5">
+    <algorithm xml:id="ImplicitFunctionsExample5">
       <statement>
         <p>
           Suppose <m>\frac{t-3}{2}=\frac{p+4}{5}</m>.
           Is <m>t</m> a function of <m>p</m>?
         </p>
+        <p>
+          If we can solve for <m>t</m> in terms of <m>p</m> explicitly,
+          then it must be.
+          So we'll try doing that.
+          <md>
+            <mrow>\frac{t-3}{2}\amp =\frac{p+4}{5}</mrow>
+            <mrow>10 \cdot \left(\frac{t-3}{2}\right)\amp =10 \cdot \left(\frac{p+4}{5}\right)</mrow>
+            <mrow>5(t-3)\amp =2(p+4)</mrow>
+            <mrow>5t-15\amp =2p+8</mrow>
+            <mrow>5t\amp =2p+23</mrow>
+            <mrow>t\amp =\frac{2p+23}{5}</mrow>
+          </md>
+        </p>
+        <p>
+          Since we can find an explicit formula for <m>t</m> as a function of <m>p</m> from this equation,
+          we can conclude that <m>t</m> is indeed a function of <m>p</m>.
+        </p>
+        <p>
+          We could also have found that <m>p</m> is a function of <m>t</m> in this example in much the same way.
+          Since that's pretty similar we won't show the work for that here,
+          but you may want to try to work that through yourself now.
+        </p>
       </statement>
-    </example>
-    <p>
-      If we can solve for <m>t</m> in terms of <m>p</m> explicitly,
-      then it must be.
-      So we'll try doing that.
-      <md>
-        <mrow>\frac{t-3}{2}\amp =\frac{p+4}{5}</mrow>
-        <mrow>10*\left(\frac{t-3}{2}\right)\amp =10*\left(\frac{p+4}{5}\right)</mrow>
-        <mrow>5(t-3)\amp =2(p+4)</mrow>
-        <mrow>5t-15\amp =2p+8</mrow>
-        <mrow>5t\amp =2p+23</mrow>
-        <mrow>t\amp =\frac{2p+23}{5}</mrow>
-      </md>
-    </p>
-    <p>
-      Since we can find an explicit formula for <m>t</m> as a function of <m>p</m> from this equation,
-      we can conclude that <m>t</m> is indeed a function of <m>p</m>. }
-    </p>
-    <p>
-      We could also have found that <m>p</m> is a function of <m>t</m> in this example in much the same way.
-      Since that's pretty similar we won't show the work for that here,
-      but you may want to try to work that through yourself now.
-    </p>
-    <example xml:id="ImplicitFunctionsExample6">
+    </algorithm>
+    <algorithm xml:id="ImplicitFunctionsExample6">
       <statement>
         <p>
           Suppose <m>3h=k^2-11</m>.
           Is <m>h</m> a function of <m>k</m>?
           Is <m>k</m> a function of <m>h</m>?
         </p>
+        <p>
+          We try to solve for <m>h</m> first.
+          That's actually pretty easy:
+          <md>
+            <mrow>3h\amp =k^2-11</mrow>
+            <mrow>h\amp =\frac{k^2-11}{3}</mrow>
+          </md>
+        </p>
+        <p>
+          So since we could get an explicit formula for <m>h</m> in terms of <m>k</m> we can say that <m>h</m> is indeed a function of <m>k</m>.
+        </p>
+        <p>
+          On the other hand,
+          we run into trouble when we try to solve for <m>k</m>:
+          <md>
+            <mrow>3h\amp =k^2-11</mrow>
+            <mrow>3h+11\amp =k^2</mrow>
+            <mrow>k^2\amp =3h+11</mrow>
+          </md>
+        </p>
+        <p>
+          To get rid of the exponent,
+          we need to take the square root of both sides of this equation.
+          However, remember that every positive number has two square roots - one positive and one negative.
+          So we get:
+          <me>
+            k=\sqrt{3h+11} \text{    OR    }  k=-\sqrt{3h+11}
+          </me>
+        </p>
+        <p>
+          This equation can be written compactly as:
+          <me>
+            k=\pm \sqrt{3h+11}
+          </me>
+        </p>
       </statement>
-    </example>
-    <p>
-      We try to solve for <m>h</m> first.
-      That's actually pretty easy:
-      <md>
-        <mrow>3h\amp =k^2-11</mrow>
-        <mrow>h\amp =\frac{k^2-11}{3}</mrow>
-      </md>
-    </p>
-    <p>
-      So since we could get an explicit formula for <m>h</m> in terms of <m>k</m> we can say that <m>h</m> is indeed a function of <m>k</m>.
-    </p>
-    <p>
-      On the other hand,
-      we run into trouble when we try to solve for <m>k</m>:
-      <md>
-        <mrow>3h\amp =k^2-11</mrow>
-        <mrow>3h+11\amp =k^2</mrow>
-        <mrow>k^2\amp =3h+11</mrow>
-      </md>
-    </p>
-    <p>
-      To get rid of the exponent,
-      we need to take the square root of both sides of this equation.
-      However, remember that every positive number has two square roots - one positive and one negative.
-      So we get:
-      <me>
-        k=\sqrt{3h+11} \text{    OR    }  k=-\sqrt{3h+11}
-      </me>
-    </p>
-    <p>
-      This equation can be written compactly as:
-      <me>
-        k=\pm \sqrt{3h+11}
-      </me>
-    </p>
+    </algorithm>
     <p>
       The symbol
       <q><m>\pm</m></q>
@@ -407,24 +409,24 @@
       It is almost always more convenient to have a formula that gives the function you want <em>explicitly</em>.
       We can accomplish this by solving for the output variable we want.
     </p>
-    <example xml:id="ImplicitFunctionsExample7">
+    <algorithm xml:id="ImplicitFunctionsExample7">
       <statement>
         <p>
           The formula <m>F=\frac{9}{5}C+32</m> implicitly gives <m>C</m> as a function of <m>F</m>.
           Find a formula that gives <m>C</m> as a function of <m>F</m> explicitly.
         </p>
+        <p>
+          Solving for <m>C</m>:
+          <md>
+            <mrow>F\amp =\frac{9}{5}C+32</mrow>
+            <mrow>F-32\amp =\frac{9}{5}C</mrow>
+            <mrow>5(F-32)\amp =5\left(\frac{9}{5}C\right)</mrow>
+            <mrow>5F-160\amp =9C</mrow>
+            <mrow>C\amp =\frac{5F-160}{9}</mrow>
+          </md>
+        </p>
       </statement>
-    </example>
-    <p>
-      Solving for <m>C</m>:
-      <md>
-        <mrow>F\amp =\frac{9}{5}C+32</mrow>
-        <mrow>F-32\amp =\frac{9}{5}C</mrow>
-        <mrow>5(F-32)\amp =5\left(\frac{9}{5}C\right)</mrow>
-        <mrow>5F-160\amp =9C</mrow>
-        <mrow>C\amp =\frac{5F-160}{9}</mrow>
-      </md>
-    </p>
+    </algorithm>
     <p>
       Functions that express the same relationship with their input and output variables switched are called inverses of each other.
       We won't be doing much with inverse functions in this course,
