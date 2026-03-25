@@ -221,7 +221,7 @@
           Evaluate <m>\displaystyle \frac{3}{7} \div \frac{4}{5}</m>
         </p>
         <p>
-          Using the rule for dividing fractions:
+          Using the above for dividing fractions:
           <md>
             <mrow>\frac{3}{7} \div \frac{4}{5} \amp = \frac{\frac{3}{7}}{\frac{4}{5}}</mrow>
             <mrow>\amp = \frac{\frac{3}{7}}{\frac{4}{5}} \left( \frac{\frac{5}{4}}{\frac{5}{4}} \right)</mrow>
