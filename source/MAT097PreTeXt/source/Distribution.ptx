@@ -116,9 +116,10 @@
         There are a lot of <q><m>-</m></q>’s to deal with here.
         Take your time and be careful!
         <md>
-          <mrow>5x(3x-1)-2(x^2-4x-3)-3(4x+2) \amp = 5x(3x-1)+(-2)(x^2-4x-3)+(-3)(4x+2)</mrow>
-          <mrow>\amp = 15x^2-5x-2x^2+8x+6-12x-6</mrow>
-          <mrow>\amp = 13x^2-9x</mrow>
+          <mrow>5x(3x-1)\amp -2(x^2-4x-3)-3(4x+2)</mrow>
+          <mrow>\amp  = 5x(3x-1)+(-2)(x^2-4x-3)+(-3)(4x+2)</mrow>
+          <mrow>\amp  = 15x^2-5x-2x^2+8x+6-12x-6</mrow>
+          <mrow>\amp  = 13x^2-9x</mrow>
         </md>
       </p>
       <p>
