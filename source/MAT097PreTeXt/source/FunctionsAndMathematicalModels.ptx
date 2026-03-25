@@ -72,7 +72,7 @@
       but this makes things much more complicated.
       So our original plan of setting up a model with volume as a function of time seems the best bet.
     </p>
-    <example xml:id="FunctionsasModelsExample1">
+    <algorithm xml:id="FunctionsasModelsExample1">
       <statement>
         <p>
           To set up a function to mathematically model each of the following,
@@ -93,50 +93,50 @@
             </li>
           </ol>
         </p>
+        <ol marker="a">
+          <li>
+            <p>
+              The two quantities are time since launch and height.
+              It is probably more natural to think of height as a function of time (i.e. you input time and the model tells you the rocket's height).
+              This also works as a function,
+              because at each time (input) the rocket can only be at one height (output) - the rocket can't be in two different places at once.
+              On the other hand,
+              if we try to use height as the input, we run into trouble,
+              since the rocket will be at the same height at more than one time.
+              If you ask, say,
+              when the rocket will be <m>15</m> feet above the ground,
+              there can be two different answers:
+              when it reaches that height on the way up and also on the way down.
+              So we cannot have a function that uses height as the input and gives time as the output.
+              So, we must set this up with time as the input and height as the output.
+              In other words, height should be a function of time.
+            </p>
+          </li>
+          <li>
+            <p>
+              This could probably be set up either way.
+              If you use a certain amount of electricity,
+              the utility company will send you one and only one bill for that use - they never send you two different bills and let you pick which you want to pay.
+              So if we input electric use, we get one and only one bill amount.
+              On the other hand, if we know your bill for the month,
+              there probably is only one amount of electric use that would give you that bill,
+              since if you use less it would probably be lower and if you use more it will probably be higher.
+              So, we could probably set this up with bill as input and electric use as output.
+              It seems more natural though,
+              to set up the function like this:
+              <me>
+                electricity \text{ } use \rightarrow f \rightarrow bill
+              </me>
+              because this more closely reflects the way you are most likely to look at this relationship.
+              In reality, you use a certain amount of electricity and then the utility uses that information to determine your bill.
+              The other way around - taking the amount of your bill and using it to determine how much electricity you use - could make sense if you were thinking about managing your electric use to fit a budget,
+              but is a less natural way of looking at things.
+              So, we would probably set this model up with the bill amount being a function of electric use.
+            </p>
+          </li>
+        </ol>
       </statement>
-    </example>
-    <ol marker="a">
-      <li>
-        <p>
-          The two quantities are time since launch and height.
-          It is probably more natural to think of height as a function of time (i.e. you input time and the model tells you the rocket's height).
-          This also works as a function,
-          because at each time (input) the rocket can only be at one height (output) - the rocket can't be in two different places at once.
-          On the other hand,
-          if we try to use height as the input, we run into trouble,
-          since the rocket will be at the same height at more than one time.
-          If you ask, say,
-          when the rocket will be <m>15</m> feet above the ground,
-          there can be two different answers:
-          when it reaches that height on the way up and also on the way down.
-          So we cannot have a function that uses height as the input and gives time as the output.
-          So, we must set this up with time as the input and height as the output.
-          In other words, height should be a function of time.
-        </p>
-      </li>
-      <li>
-        <p>
-          This could probably be set up either way.
-          If you use a certain amount of electricity,
-          the utility company will send you one and only one bill for that use - they never send you two different bills and let you pick which you want to pay.
-          So if we input electric use, we get one and only one bill amount.
-          On the other hand, if we know your bill for the month,
-          there probably is only one amount of electric use that would give you that bill,
-          since if you use less it would probably be lower and if you use more it will probably be higher.
-          So, we could probably set this up with bill as input and electric use as output.
-          It seems more natural though,
-          to set up the function like this:
-          <me>
-            electricity \text{ }  use \rightarrow f \rightarrow bill
-          </me>
-          because this more closely reflects the way you are most likely to look at this relationship.
-          In reality, you use a certain amount of electricity and then the utility uses that information to determine your bill.
-          The other way around - taking the amount of your bill and using it to determine how much electricity you use - could make sense if you were thinking about managing your electric use to fit a budget,
-          but is a less natural way of looking at things.
-          So, we would probably set this model up with the bill amount being a function of electric use.
-        </p>
-      </li>
-    </ol>
+    </algorithm>
     <p>
       Once we have determined our input and output,
       we next need to find a formula or other rule that fits the scenario we are trying to model.
@@ -178,55 +178,53 @@
       Or, phrased a little more naturally,
       <q>there are <m>6000</m> gallons of water left in the pool after the pump has been running for one hour.</q>
     </p>
-    <example xml:id="FunctionsasModelsExample2">
+    <algorithm xml:id="FunctionsasModelsExample2">
       <statement>
         <p>
           Suppose that your electric bill in dollars as a function of your monthly electric usage in kilowatt hours is given by <m>b(x)=7.95+0.1x</m>.
           Determine your electric bill if you use <m>800</m> kilowatt hours.
         </p>
+        <p>
+          Since usage is the input,
+          we need to input <m>x=800</m> into our function model.
+          So:
+          <me>
+            b(800)=7.95+.1(800)=87.95
+          </me>
+        </p>
+        <p>
+          Interpreting this we would say something like this:
+          <q>if you use <m>800</m> kilowatt hours,
+          your bill will be <m>$87.95</m>.</q>
+        </p>
       </statement>
-    </example>
-    <p>
-      Since usage is the input,
-      we need to input <m>x=800</m> into our function model.
-      So:
-      <me>
-        b(800)=7.95+.1(800)=87.95
-      </me>
-    </p>
-    <p>
-      Interpreting this we would say something like this:
-      <q>if you use <m>800</m> kilowatt hours,
-      your bill will be <m>$87.95</m>.</q>
-      }
-    </p>
-    <example xml:id="FunctionsasModelsExample3">
+    </algorithm>
+    <algorithm xml:id="FunctionsasModelsExample3">
       <statement>
         <p>
           Suppose that the height of a toy rocket in feet <m>t</m> seconds after it is launched is given by the function <m>h(t)=-16t^2+96t</m>.
           What is the rocket's height <m>3</m> seconds after launch?
         </p>
+        <p>
+          Since time is the input,
+          we know we need to input <m>t=3</m> into our function model:
+          <me>
+            h(3)=-16(3)^2+96(3)=144
+          </me>
+        </p>
+        <p>
+          Of course,
+          <q><m>h(3)=144</m></q>
+          is not a very good answer to the question asked;
+          if you asked someone what the rocket's height would be and they answered
+          <q><m>h(3)=144</m></q>
+          you'd probably find that a weird way of answering your question!
+          Interpreting the function to answer the question in a reasonable way,
+          we would say something like this:
+          <q>the height of the rocket <m>3</m> seconds after launch will be <m>144</m> feet.</q>
+        </p>
       </statement>
-    </example>
-    <p>
-      Since time is the input,
-      we know we need to input <m>t=3</m> into our function model:
-      <me>
-        h(3)=-16(3)^2+96(3)=144
-      </me>
-    </p>
-    <p>
-      Of course,
-      <q><m>h(3)=144</m></q>
-      is not a very good answer to the question asked;
-      if you asked someone what the rocket's height would be and they answered
-      <q><m>h(3)=144</m></q>
-      you'd probably find that a weird way of answering your question!
-      Interpreting the function to answer the question in a reasonable way,
-      we would say something like this:
-      <q>the height of the rocket <m>3</m> seconds after launch will be <m>144</m> feet.</q>
-      }
-    </p>
+    </algorithm>
     <p>
       In both of the examples,
       we knew the input and used our model to get the output.
@@ -270,30 +268,29 @@
       so an even better answer might be
       <q>the pool will be emptied after 6 hours of pumping</q>.
     </p>
-    <example xml:id="FunctionsasModelsExample4">
+    <algorithm xml:id="FunctionsasModelsExample4">
       <statement>
         <p>
           Suppose that your electric bill in dollars as a function of your monthly electric usage in kilowatt hours is given by <m>b(x)=7.95+0.1x</m>.
           If your electric bill last month was <m>$92.55</m>,
           how much electricity did you use?
         </p>
+        <p>
+          Since we know the bill (output) is <m>$92.55</m>,
+          we plug <m>b(x)=92.55</m> into our model and solve to find <m>x</m>:
+          <md>
+            <mrow>b(x)\amp =7.95+0.1x</mrow>
+            <mrow>92.55\amp =7.95+0.1x</mrow>
+            <mrow>84.6 \amp = 0.1x</mrow>
+            <mrow>x \amp = 846</mrow>
+          </md>
+        </p>
+        <p>
+          So, in answer to the original question:
+          <q>if your bill was <m>$92.55</m> you must have used <m>846</m> kilowatt hours of electricity.</q>
+        </p>
       </statement>
-    </example>
-    <p>
-      Since we know the bill (output) is <m>$92.55</m>,
-      we plug <m>b(x)=92.55</m> into our model and solve to find <m>x</m>:
-      <md>
-        <mrow>b(x)\amp =7.95+0.1x</mrow>
-        <mrow>92.55\amp =7.95+0.1x</mrow>
-        <mrow>84.6 \amp = 0.1x</mrow>
-        <mrow>x \amp = 846</mrow>
-      </md>
-    </p>
-    <p>
-      So, in answer to the original question:
-      <q>if your bill was <m>$92.55</m> you must have used <m>846</m> kilowatt hours of electricity.</q>
-      }
-    </p>
+    </algorithm>
     <p>
       Since function formulas are set up to give an output when you plug in an input,
       when we do the opposite we always end up with an equation to solve.
@@ -302,102 +299,143 @@
       Other times, as in the following example,
       we may need to call on graphical solution.
     </p>
-    <example xml:id="FunctionsasModelsExample5">
+    <algorithm xml:id="FunctionsasModelsExample5">
       <statement>
         <p>
           Suppose that the height of a toy rocket in feet <m>t</m> seconds after it is launched is given by the function <m>h(t)=-16t^2+96t</m>.
           When is the rocket <m>100</m> feet above the ground (rounded to two decimal places if necessary)?
         </p>
+        <p>
+          We know the height (output) we want,
+          so we plug in <m>h(t)=100</m> to get the equation:
+          <me>
+            100=-16t^2+96t
+          </me>
+        </p>
+        <p>
+          Now, if we use the standard window,
+          we don't wind up with a very helpful view of this graph.
+          What window should be use?
+          We know something about the equation we are trying to solve here;
+          we know that the input represents time since launch,
+          and the output represents height of the toy rocket.
+          This gives us good hints about how to adjust out window.
+        </p>
+        <p>
+          For the input values,
+          we are looking at values that might make sense for the time when the rocket is at <m>100</m> feet.
+          Now, we don't know when this actually happens,
+          of course, but we do have some sense of what is reasonable.
+          Certainly the rocket can't possibly have been at <m>100</m> feet before it was launched,
+          so it makes no sense to look at input values less than zero.
+          How long might it take for the rocket to hit <m>100</m> feet?
+          We can make a reasonable guess
+          (knowing that if the graph doesn't look reasonable based on this guess we can always change it.)
+          Let's say we guess 3 seconds.
+        </p>
+        <p>
+          For the output window,
+          we know we are looking for a height of <m>100</m> feet,
+          which tells us we certainly want to have a window that includes <m>100</m>.
+          Since we are talking about shooting a rocket off the ground,
+          it seems reasonable to look at heights from <m>0</m> to a bit above <m>100</m>,
+          say <m>125</m>.
+        </p>
+        <p>
+          So, we set our window to be:
+        </p>
+        <figure>
+          <caption>Window Settings</caption>
+          <image width="92.5%" source="FunctionsasModelsImages/Figure01.png">
+            <description>
+              A graphing calculator "WINDOW" settings screen. 
+              The values are set as follows: 
+              Xmin equals 0, 
+              Xmax equals 3, 
+              Xscl equals 1, 
+              Ymin equals 0, 
+              Ymax equals 125, 
+              Yscl equals 1, 
+              Xres equals 1. 
+              A black cursor block is positioned immediately after the 125 in the Ymax field.
+            </description>
+          </image>
+        </figure>
+        <p>
+          Giving the resulting graph:
+        </p>
+        <figure>
+          <caption>Graph for <m>Y_1=-16x^2+96x</m> and <m>Y_2=100</m></caption>
+          <image width="80%" source="FunctionsasModelsImages/Figure02.png">
+            <description>
+              A graphing calculator screen capture showing the first quadrant.
+              The horizontal axis has tick marks at 1 and 2 units. 
+              A parabola, Y1, starts at the origin and opens downward, curving toward the top right of the screen. 
+              A horizontal line, Y2, is positioned near the top of the viewing window. 
+              The parabola intersects the horizontal line once as it rises, with the intersection point occurring between the first and second tick marks on the x-axis.
+            </description>
+          </image>
+        </figure>
+        <p>
+          Which, using graphical solution,
+          gives us the solution <m>t=1.34</m>:
+          the rocket reaches <m>100</m> feet above the ground <m>1.34</m> seconds after launch.
+        </p>
+        <p>
+          Now, we are not done!
+          This model represents the flight of a toy rocket.
+          We've found then it hits <m>100</m> feet on the way up,
+          but common sense tells us that it will also hit <m>100</m> on the way down,
+          which we do not see in our graph.
+          It must be that the rocket falls to <m>100</m> feet some time after <m>3</m> seconds as well,
+          so we need to extend our input (X) maximum to see this.
+          We can also tell from looking at our graph that the rocket actually goes higher than <m>125</m> feet,
+          so we may want to increase the output (Y) maximum as well – though this is not really necessary to solve the equation,
+          doing so may make us feel better about the graph we're using.
+        </p>
+        <p>
+          So, adjusting out window out a ways, such as:
+        </p>
+        <figure>
+          <caption>Adjusting Window Settings</caption>
+          <image width="92.5%" source="FunctionsasModelsImages/Figure03.png">
+            <description>
+              A graphing calculator "WINDOW" settings screen. 
+              The values are set as follows: 
+              Xmin equals 0, 
+              Xmax equals 10, 
+              Xscl equals 1, 
+              Ymin equals 0, 
+              Ymax equals 200, 
+              Yscl equals 1, 
+              Xres equals 1.
+            </description>
+          </image>
+        </figure>
+        <p>
+          We get a new view of the graph:
+        </p>
+        <figure>
+          <caption>Graph for <m>Y_1=-16x^2+96x</m> and <m>Y_2=100</m></caption>
+          <image width="80%" source="FunctionsasModelsImages/Figure04.png">
+            <description>
+              A graphing calculator screen capture in a non-standard window (0 to 10 on the x-axis, 0 to 200 on the y-axis).
+              The first quadrant is shown. The horizontal axis has tick marks every 1 unit.
+              An upward-opening parabola, Y1, starts at the origin (0,0), rises to a peak near the center of the screen, and then falls, crossing back below the x-axis.
+              A horizontal line, Y2, is positioned just above the middle of the viewing window.
+              The parabola intersects the horizontal line twice: once while rising and once while falling.
+            </description>
+          </image>
+        </figure>
+        <p>
+          And solving for that second intersection we get <m>t=4.66</m>
+        </p>
+        <p>
+          So we conclude that the rocket is <m>100</m> feet above the ground <m>1.34</m> seconds after launch on the way up,
+          and <m>4.66</m> seconds after launch on the way down.
+        </p>
       </statement>
-    </example>
-    <p>
-      We know the height (output) we want,
-      so we plug in <m>h(t)=100</m> to get the equation:
-      <me>
-        100=-16t^2+96t
-      </me>
-    </p>
-    <p>
-      Now, if we use the standard window,
-      we don't wind up with a very helpful view of this graph.
-      What window should be use?
-      We know something about the equation we are trying to solve here;
-      we know that the input represents time since launch,
-      and the output represents height of the toy rocket.
-      This gives us good hints about how to adjust out window.
-    </p>
-    <p>
-      For the input values,
-      we are looking at values that might make sense for the time when the rocket is at <m>100</m> feet.
-      Now, we don't know when this actually happens,
-      of course, but we do have some sense of what is reasonable.
-      Certainly the rocket can't possibly have been at <m>100</m> feet before it was launched,
-      so it makes no sense to look at input values less than zero.
-      How long might it take for the rocket to hit <m>100</m> feet?
-      We can make a reasonable guess
-      (knowing that if the graph doesn't look reasonable based on this guess we can always change it.)
-      Let's say we guess 3 seconds.
-    </p>
-    <p>
-      For the output window,
-      we know we are looking for a height of <m>100</m> feet,
-      which tells us we certainly want to have a window that includes <m>100</m>.
-      Since we are talking about shooting a rocket off the ground,
-      it seems reasonable to look at heights from <m>0</m> to a bit above <m>100</m>,
-      say <m>125</m>.
-    </p>
-    <p>
-      So, we set our window to be:
-    </p>
-    <figure>
-      <caption>Window Settings</caption>
-      <image width="92.5%" source="FunctionsasModelsImages/Figure01.png" />
-    </figure>
-    <p>
-      Giving the resulting graph:
-    </p>
-    <figure>
-      <caption>Graph for <m>Y_1=-16x^2+96x</m> and <m>Y_2=100</m></caption>
-      <image width="80%" source="FunctionsasModelsImages/Figure02.png" />
-    </figure>
-    <p>
-      Which, using graphical solution,
-      gives us the solution <m>t=1.34</m>:
-      the rocket reaches <m>100</m> feet above the ground <m>1.34</m> seconds after launch.
-    </p>
-    <p>
-      Now, we are not done!
-      This model represents the flight of a toy rocket.
-      We've found then it hits <m>100</m> feet on the way up,
-      but common sense tells us that it will also hit <m>100</m> on the way down,
-      which we do not see in our graph.
-      It must be that the rocket falls to <m>100</m> feet some time after <m>3</m> seconds as well,
-      so we need to extend our input (X) maximum to see this.
-      We can also tell from looking at our graph that the rocket actually goes higher than <m>125</m> feet,
-      so we may want to increase the output (Y) maximum as well – though this is not really necessary to solve the equation,
-      doing so may make us feel better about the graph we're using.
-    </p>
-    <p>
-      So, adjusting out window out a ways, such as:
-    </p>
-    <figure>
-      <caption>Adjusting Window Settings</caption>
-      <image width="92.5%" source="FunctionsasModelsImages/Figure03.png" />
-    </figure>
-    <p>
-      We get a new view of the graph:
-    </p>
-    <figure>
-      <caption>Graph for <m>Y_1=-16x^2+96x</m> and <m>Y_2=100</m></caption>
-      <image width="80%" source="FunctionsasModelsImages/Figure04.png" />
-    </figure>
-    <p>
-      And solving for that second intersection we get <m>t=4.66</m>
-    </p>
-    <p>
-      So we conclude that the rocket is <m>100</m> feet above the ground <m>1.34</m> seconds after launch on the way up,
-      and <m>4.66</m> seconds after launch on the way down. }
-    </p>
+    </algorithm>
     <p>
       Having a mathematical model actually makes graphical solution easier!
       In this example,
@@ -471,7 +509,7 @@
         f(120)=4800
       </me>.
     </p>
-    <example xml:id="FunctionsasModelsExample6">
+    <algorithm xml:id="FunctionsasModelsExample6">
       <statement>
         <p>
           The amount of yeast
@@ -480,21 +518,21 @@
           (in pounds).
           Interpret <m>f(4)=6</m>
         </p>
+        <p>
+          <q>Yeast is a function of dough</q>
+          here, so yeast is the output and dough is the input.
+          Also,
+          <q><m>f(4) = 6</m></q>
+          so <m>6</m> is the output value and <m>4</m> is the input value.
+        </p>
+        <p>
+          Putting this together means we have <m>4</m> pounds of dough and <m>6</m> teaspoons of yeast.
+          Phrasing this in a reasonable way gives an answer something like
+          <q>you need 6 teaspoons of yeast to make 4 pounds of dough</q>.
+        </p>
       </statement>
-    </example>
-    <p>
-      <q>Yeast is a function of dough</q>
-      here, so yeast is the output and dough is the input.
-      Also,
-      <q><m>f(4) = 6</m></q>
-      so <m>6</m> is the output value and <m>4</m> is the input value.
-    </p>
-    <p>
-      Putting this together means we have <m>4</m> pounds of dough and <m>6</m> teaspoons of yeast.
-      Phrasing this in a reasonable way gives an answer something like
-      <q>you need 6 teaspoons of yeast to make 4 pounds of dough</q>. }
-    </p>
-    <example xml:id="FunctionsasModelsExample7">
+    </algorithm>
+    <algorithm xml:id="FunctionsasModelsExample7">
       <statement>
         <p>
           A realtor's commission is a function of the selling price of the real estate sold.
@@ -503,16 +541,16 @@
           Express this in function notation.
           Assume the function's name is <m>f(x)</m>.
         </p>
+        <p>
+          <q>Commission is a function of selling price</q>
+          so commission is the output and selling price is the input.
+        </p>
+        <p>
+          Also <m>f(\text{input})=\text{output}</m>,
+          so following this format we would write <m>f(160,000) = 4,800</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      <q>Commission is a function of selling price</q>
-      so commission is the output and selling price is the input.
-    </p>
-    <p>
-      Also<m>,f(input)=output</m>,
-      so following this format we would write <m>f(160,000) = 4,800</m>. }
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Relevant Domain and Range</title>
@@ -620,7 +658,7 @@
       and we have to accept some ambiguity.
       The following example will illustrate:
     </p>
-    <example xml:id="FunctionsasModelsExample8">
+    <algorithm xml:id="FunctionsasModelsExample8">
       <statement>
         <p>
           The speed limit on the Pennsylvania Turnpike is <m>65</m> mph.
@@ -639,168 +677,171 @@
             </li>
           </ol>
         </p>
+        <ol marker="a">
+          <li>
+            <p>
+              Any real number could be input into this formula to get one and only one output.
+              So the domain is all real numbers.
+            </p>
+          </li>
+          <li>
+            <p>
+              Since fine is a function of speed,
+              the input is speed and the output is the fine.
+              So, the relevant domain would consist of all possible speeds you could be going when caught speeding.
+              Since the speed limit is <m>65</m> mph,
+              you could not be caught speeding unless your speed was at least <m>65</m> mph.
+              Realistically, though,
+              you almost certainly wouldn't get a ticket for doing,
+              say <m>66</m> or <m>67</m> mph.
+              But it's not really possible to say exactly where the cut off is.
+              It might be reasonable to use a lower limit of <m>68</m> or <m>70</m> mph,
+              or to just keep it simple and use a lower limit of <m>65</m> mph anyway,
+              since even though you're not likely to be stopped for speeding going slightly over 65, you could be.
+              We'll use a lower limit of 65.
+              At the upper end,
+              clearly there are some speeds that you could not possibly reach.
+              I think it's pretty clear for example that no one will get a ticket for going <m>20,000</m> mph!
+              Even <m>200</m> mph is not a realistic possibility.
+              But is <m>90</m> mph possible?
+              Well, not in my car,
+              but yes it is possible that a car could be going that fast.
+              <m>100</m> mph?
+              That's pushing it, but is it possible?
+              Sure.
+              <m>110</m> mph?
+              Unlikely, but not out of the question.
+              What is the absolute upper limit?
+              It's really not possible to say.
+              Clearly, the relevant domain has some upper limit,
+              and it's probably somewhere in the low <m>100</m>'s, but it's impossible to say exactly where it is.
+              We'll use an upper limit of <m>125</m> mph.
+              Putting this all together,
+              we get a relevant domain of <m>\{s|65 \lt s \leq 125\}</m> or <m>(65,125]</m>.
+              This is a good answer – but it is not the only possible good answer.
+              We did not include 65 since going exactly 65 would not be speeding,
+              but it would still not be entirely unreasonable to include it and give the relevant domain as <m>\{s|65 \leq s \leq 125\}</m> or <m>[65,125]</m>.
+              Also, as we discussed,
+              a different lower or upper limit could be used. It would also be reasonable to give an answer of <m>\{s|67 \leq s \leq 120\}</m> or
+              <m>[67,120]</m> for example. As long as the lower and upper bounds for the relevant domain make sense as lower and upper bounds for how fast you could be going when stopped for speeding,
+              you've got a reasonable relevant domain. 
+            </p>
+            <p>
+              The relevant range has the same issues – there is not a single correct answer for this. But,
+              the fine does depend on speed,
+              so our relevant range should be consistent with the speeds we included in our relevant domain. The fine goes up with higher speeds,
+              so the lowest fine would be the fine based on the lowest speed,
+              and the highest fine would be based on the highest speed. Since we used <m>s=65</m> as the lower limit for speeds,
+              we should use <m>$75</m> as the lower limit for fines,
+              since <m>f(65)=75+5(65-65)=75</m> would be the fine for that speed. For the upper limit of <m>s=125</m>,
+              the fine would be <m>f(125)=75+5(125-65)=375</m> dollars. So our relevant range would be <m>\{f(s)|75 \leq s \leq 375\}</m> or <m>[75,375]</m>.
+              (If we used a different relevant domain,
+              we would set up the relevant range based on that.)
+            </p>
+          </li>
+        </ol>
+        <p>
+          Graphing can also be a useful tool in determining relevant domains and ranges.
+        </p>
       </statement>
-    </example>
-    <ol marker="a">
-      <li>
-        <p>
-          Any real number could be input into this formula to get one and only one output.
-          So the domain is all real numbers.
-        </p>
-      </li>
-      <li>
-        <p>
-          Since fine is a function of speed,
-          the input is speed and the output is the fine.
-          So, the relevant domain would consist of all possible speeds you could be going when caught speeding.
-          Since the speed limit is <m>65</m> mph,
-          you could not be caught speeding unless your speed was at least <m>65</m> mph.
-          Realistically, though,
-          you almost certainly wouldn't get a ticket for doing,
-          say <m>66</m> or <m>67</m> mph.
-          But it's not really possible to say exactly where the cut off is.
-          It might be reasonable to use a lower limit of <m>68</m> or <m>70</m> mph,
-          or to just keep it simple and use a lower limit of <m>65</m> mph anyway,
-          since even though you're not likely to be stopped for speeding going slightly over 65, you could be.
-          We'll use a lower limit of 65.
-          At the upper end,
-          clearly there are some speeds that you could not possibly reach.
-          I think it's pretty clear for example that no one will get a ticket for going <m>20,000</m> mph!
-          Even <m>200</m> mph is not a realistic possibility.
-          But is <m>90</m> mph possible?
-          Well, not in my car,
-          but yes it is possible that a car could be going that fast.
-          <m>100</m> mph?
-          That's pushing it, but is it possible?
-          Sure.
-          <m>110</m> mph?
-          Unlikely, but not out of the question.
-          What is the absolute upper limit?
-          It's really not possible to say.
-          Clearly, the relevant domain has some upper limit,
-          and it's probably somewhere in the low <m>100</m>'s, but it's impossible to say exactly where it is.
-          We'll use an upper limit of <m>125</m> mph.
-          Putting this all together,
-          we get a relevant domain of <m>\{s|65 \lt s \leq 125\}</m> or <m>(65,125]</m>.
-          This is a good answer – but it is not the only possible good answer.
-          We did not include 65 since going exactly 65 would not be speeding,
-          but it would still not be entirely unreasonable to include it and give the relevant domain as <m>\{s|65 \leq s \leq 125\}</m> or <m>[65,125]</m>.
-          Also, as we discussed,
-          a different lower or upper limit could be used. It would also be reasonable to give an answer of <m>\{s|67 \leq s \leq 120\}</m> or
-          <m>[67,120]</m> for example. As long as the lower and upper bounds for the relevant domain make sense as lower and upper bounds for how fast you could be going when stopped for speeding,
-          you've got a reasonable relevant domain. The relevant range has the same issues – there is not a single correct answer for this. But,
-          the fine does depend on speed,
-          so our relevant range should be consistent with the speeds we included in our relevant domain. The fine goes up with higher speeds,
-          so the lowest fine would be the fine based on the lowest speed,
-          and the highest fine would be based on the highest speed. Since we used <m>s=65</m> as the lower limit for speeds,
-          we should use <m>$75</m> as the lower limit for fines,
-          since <m>f(65)=75+5(65-65)=75</m> would be the fine for that speed. For the upper limit of <m>s=125</m>,
-          the fine would be <m>f(125)=75+5(125-65)=375</m> dollars. So our relevant range would be <m>\{f(s)|75 \leq s \leq 375\}</m> or <m>[75,375]</m>.
-          (If we used a different relevant domain,
-          we would set up the relevant range based on that.)
-        </p>
-      </li>
-    </ol>
-    <p>
-      Graphing can also be a useful tool in determining relevant domains and ranges.
-    </p>
-    <example xml:id="FunctionsasModelsExample9">
+    </algorithm>
+    <algorithm xml:id="FunctionsasModelsExample9">
       <statement>
         <p>
           A toy rocket is launched from the ground.
           Suppose that the height of a toy rocket in feet <m>t</m> seconds after it is launched is given by the function <m>h(t)=-16t^2+96t</m>.
           What would be reasonable choices for the relevant domain and relevant range of this function?
         </p>
-      </statement>
-    </example>
-    <p>
-      Time is the input and height is the output.
-      The relevant domain would be all reasonable times to use in this model,
-      which is clearly the time between when the rocket is launched and when it returns to the ground.
-      When the rocket is launched,
-      <m>t=0</m> so that is pretty clearly the lower limit for the relevant domain.
-      The upper limit would be when the rocket returns to the ground.
-      To find this we would need to plug in <m>h(t)=0</m> into the function,
-      and then solve
-      <me>
-        -16t^2+96t=0
-      </me>
-    </p>
-    <p>
-      Solving this equation with algebra is beyond our present abilities,
-      but we can solve this graphically.
-      Doing so, we find that the rocket returns to the ground at time <m>t=6</m> seconds after launch.
-    </p>
-    <p>
-      So, our relevant domain is <m>\{t|0 \leq t \leq 6\}</m> or <m>[0,6]</m>.
-      There is no ambiguity about this – this is really the only reasonable relevant domain to use.
-    </p>
-    <p>
-      Since height is the output,
-      the relevant range would be based on the heights the rocket actually reaches.
-      In this case we cannot just base this on the upper and lower limits of our domain because the height is not always increasing – the rocket hits its maximum height during its journey.
-    </p>
-    <p>
-      We can find this maximum using the graphing calculator's built-in programs,
-      following these steps:
+        <p>
+          Time is the input and height is the output.
+          The relevant domain would be all reasonable times to use in this model,
+          which is clearly the time between when the rocket is launched and when it returns to the ground.
+          When the rocket is launched,
+          <m>t=0</m> so that is pretty clearly the lower limit for the relevant domain.
+          The upper limit would be when the rocket returns to the ground.
+          To find this we would need to plug in <m>h(t)=0</m> into the function,
+          and then solve
+          <me>
+            -16t^2+96t=0
+          </me>
+        </p>
+        <p>
+          Solving this equation with algebra is beyond our present abilities,
+          but we can solve this graphically.
+          Doing so, we find that the rocket returns to the ground at time <m>t=6</m> seconds after launch.
+        </p>
+        <p>
+          So, our relevant domain is <m>\{t|0 \leq t \leq 6\}</m> or <m>[0,6]</m>.
+          There is no ambiguity about this – this is really the only reasonable relevant domain to use.
+        </p>
+        <p>
+          Since height is the output,
+          the relevant range would be based on the heights the rocket actually reaches.
+          In this case we cannot just base this on the upper and lower limits of our domain because the height is not always increasing – the rocket hits its maximum height during its journey.
+        </p>
+        <p>
+          We can find this maximum using the graphing calculator's built-in programs,
+          following these steps:
           <idx><h>Calculator:Maximum</h></idx>
-      <ul>
-        <li>
-          <p>
-            Create the graph in an appropriate window,
-            in which the maximum occurs.
-          </p>
-        </li>
-        <li>
-          <p>
-            Hit
-            <q>2nd</q>
-            <q>TRACE</q>
-            (i.e.
-            <q>CALC</q>
-            ) <m>\rightarrow</m>
-            <q>4: maximum</q>
-            <ndash />&gt;
-            <q>ENTER</q>
-          </p>
-        </li>
-        <li>
-          <p>
-            For
-            <q>Left Bound?</q>
-            choose any X-value to the left of the maximum and hit
-            <q>ENTER</q>
-          </p>
-        </li>
-        <li>
-          <p>
-            For
-            <q>Right Bound?</q>
-            choose any X-value to the right of the maximum and hit
-            <q>ENTER</q>
-          </p>
-        </li>
-        <li>
-          <p>
-            For
-            <q>Guess?</q>
-            move the blob reasonably close to the maximum if there is more than one place where the graph reaches a peak,
-            otherwise just hit
-            <q>ENTER</q>
-          </p>
-        </li>
-        <li>
-          <p>
-            The calculator will find the maximum.
-          </p>
-        </li>
-      </ul>
-    </p>
-    <p>
-      Since the maximum height is <m>144</m> feet,
-      the relevant range is <m>\{h(t)|0\leq h(t) \leq 144 \}</m>,
-      or <m>[0,144]</m>. }
-    </p>
+          <ul>
+            <li>
+              <p>
+                Create the graph in an appropriate window,
+                in which the maximum occurs.
+              </p>
+            </li>
+            <li>
+              <p>
+                Hit
+                <q>2nd</q>
+                <q>TRACE</q>
+                (i.e.
+                <q>CALC</q>
+                ) <m>\rightarrow</m>
+                <q>4: maximum</q>
+                <ndash />&gt;
+                <q>ENTER</q>
+              </p>
+            </li>
+            <li>
+              <p>
+                For
+                <q>Left Bound?</q>
+                choose any X-value to the left of the maximum and hit
+                <q>ENTER</q>
+              </p>
+            </li>
+            <li>
+              <p>
+                For
+                <q>Right Bound?</q>
+                choose any X-value to the right of the maximum and hit
+                <q>ENTER</q>
+              </p>
+            </li>
+            <li>
+              <p>
+                For
+                <q>Guess?</q>
+                move the blob reasonably close to the maximum if there is more than one place where the graph reaches a peak,
+                otherwise just hit
+                <q>ENTER</q>
+              </p>
+            </li>
+            <li>
+              <p>
+                The calculator will find the maximum.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          Since the maximum height is <m>144</m> feet,
+          the relevant range is <m>\{h(t)|0\leq h(t) \leq 144 \}</m>,
+          or <m>[0,144]</m>.
+        </p>
+      </statement>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Exercises</title>
