@@ -364,7 +364,7 @@
           Rewrite the expression <m>\displaystyle {\left(\frac{2pq^5}{-3q^2}\right)}^4</m> in simplified form.
         </p>
         <p>
-          One approach is to simplify the expression inside the parentheses using the division rule before applying the outer exponent:
+          One approach is to simplify the expression inside the parenthesis using the division rule before regrouping:
           <md>
             <mrow>{\left(\frac{2pq^5}{-3q^2}\right)}^4 \amp = {\left(\frac{2}{-3}pq^{5-2}\right)}^4</mrow>
             <mrow>\amp = {\left(-\frac{2}{3}pq^{3}\right)}^4</mrow>
