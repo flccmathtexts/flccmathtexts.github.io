@@ -32,7 +32,11 @@
     </p>
     <figure>
       <caption>Graph of <m>f(x)=2x-1</m> in the standard window</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure01.png" />
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure01.png">
+        <description>
+          A linear graph in a Cartesian coordinate system. The line passes through the y-axis at negative 1 and has a positive slope, crossing the x-axis at 0.5.
+        </description>
+      </image>
     </figure>
     <p>
       Now, remember that a graph for a function consists of all of its input-output pairs.
@@ -55,7 +59,11 @@
     </p>
     <figure>
       <caption>Graph of <m>g(x)=7</m> in the standard window</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure02.png" />
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure02.png">
+        <description>
+          A coordinate graph showing a solid horizontal line located 7 units above the x-axis. The standard window is shown with tick marks on both axes.
+        </description>
+     </image>
     </figure>
     <p>
       Now, we can graph the right-side function and left-side function together.
@@ -66,14 +74,27 @@
     </p>
     <figure>
       <caption>Entering two function in the calculator</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure03.png" />
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure03.png">
+        <description>
+          A screen capture from a graphing calculator showing the equation entry screen.
+          At the top, "Plot1," "Plot2," and "Plot3" are displayed.
+          The equations entered are:
+          Y1 equals 2X minus 1
+          Y2 equals 7
+          Subsequent lines for Y3 through Y7 are blank.
+        </description>
+      </image>
     </figure>
     <p>
       And then we get both graphed together in the same window:
     </p>
     <figure>
       <caption>Graph of <m>f(x)=2x-1</m> and <m>g(x)=7</m> in the standard window</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure04.png" />
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure04.png">
+        <description>
+          A coordinate system showing two lines. One is a solid horizontal line 7 units above the x-axis. The other is a diagonal line with a positive slope that crosses the y-axis at negative 1. The two lines intersect in the first quadrant.
+        </description>
+      </image>
     </figure>
     <p>
       Now, how does this help?
@@ -104,8 +125,20 @@
       You should see this:
     </p>
     <figure>
-      <caption>The \quotes{CALC} menu</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure05.png" />
+      <caption>The <q>CALC</q> menu</caption>
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure05.png">
+        <description>
+          A graphing calculator "CALCULATE" menu screen. 
+          The number 1 is highlighted, and the list of numbered options is: 
+          1: value, 
+          2: zero, 
+          3: minimum, 
+          4: maximum, 
+          5: intersect, 
+          6: dy/dx, 
+          7: integral of f(x)dx.
+        </description>
+      </image>
     </figure>
     <p>
       Now, select
@@ -114,7 +147,16 @@
     </p>
     <figure>
       <caption>The first step toward finding the intersection</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure06.png" />
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure06.png">
+        <description>
+          A screen capture from a graphing calculator showing a graph with axis tick marks.
+          At the top left, the text "Y1=2X-1" is displayed.
+          A small square cursor is located on the slanted line at the y-intercept.
+          At the bottom, the calculator displays the prompt:
+          "First curve?"
+          "X=0 Y=-1"
+        </description>
+      </image>
     </figure>
     <p>
       Now we are ready to work through the calculator program to find the intersection.
@@ -134,7 +176,16 @@
     </p>
     <figure>
       <caption>The second step toward finding the intersection</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure07.png" />
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure07.png">
+        <description>
+          A screen capture from a graphing calculator showing a graph with axis tick marks.
+          At the top left, the text "Y2=7" is displayed.
+          A small box cursor, and a separate crosshairs cursor, are both located on the solid horizontal line.
+          At the bottom, the calculator displays the prompt:
+          "Second curve?"
+          "X=0 Y=7"
+        </description>
+      </image>
     </figure>
     <p>
       Since
@@ -145,7 +196,17 @@
     </p>
     <figure>
       <caption>The third step toward finding the intersection</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure08.png" />
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure08.png">
+        <description>
+          A graphing calculator screen capture. 
+          The graph shows the intersection of the diagonal and horizontal lines. 
+          The text "Y2=7" remains at the top left.
+          The cursors are still positioned on the horizontal line at the y-axis.
+          The prompt at the bottom has changed to:
+          "Guess?"
+          "X=0 Y=7"
+        </description>
+      </image>
     </figure>
     <p>
       The calculator is now asking for a guess.
@@ -161,7 +222,15 @@
     </p>
     <figure>
       <caption>Found the intersection</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure09.png" />
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure09.png">
+        <description>
+          A graphing calculator screen capture showing the completed intersection calculation.
+          A crosshairs cursor is positioned exactly where the diagonal and horizontal lines cross in the first quadrant.
+          The bottom of the screen displays the final result:
+          "Intersection"
+          "X=4 Y=7"
+        </description>
+      </image>
     </figure>
     <p>
       So the intersection occurs at <m>(4,7)</m>.
@@ -184,143 +253,191 @@
       is that the graphing method works just as well if the algebra to solve the equations would be more demanding.
       We'll illustrate this with a few examples.
     </p>
-    <example xml:id="SolvingEquationsGraphicallyExample1">
+    <algorithm xml:id="SolvingEquationsGraphicallyExample1">
       <statement>
         <p>
           Solve <m>t+2=4(2t+1)-2(3t-1)</m>
         </p>
+        <p>
+          We begin by making each side of the equation a function,
+          and entering them into the calculator.
+          Remember that in the calculator the input variable must always be rewritten as
+          <q>X</q>. So we enter:
+        </p>
+        <figure>
+          <caption>Entering both sides of the equation</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure10.png">
+            <description>
+              A graphing calculator equation entry screen.
+              Y1 is set to X plus 2.
+              Y2 is set to a longer expression that wraps to a second line: 4 times the quantity 2X plus 1, minus 2 times the quantity 3X minus 1.
+              The remaining Y variables are empty.
+            </description>
+          </image>
+        </figure>
+        <p>
+          Running through the steps:
+          <ol>
+            <li>
+              <p>
+                Select
+                <q>2nd</q>
+                <q>TRACE</q>
+                (i.e.
+                <q>CALC</q>
+                ) <ndash />&gt;
+                <q>5:Intersect</q>
+              </p>
+            </li>
+            <li>
+              <p>
+                Hit
+                <q>Enter</q>
+                to confirm we want to use Y1=X+2
+              </p>
+            </li>
+            <li>
+              <p>
+                Hit
+                <q>Enter</q>
+                to confirm we want to use Y2=4(2X+1) – 2(3X – 1)
+              </p>
+            </li>
+            <li>
+              <p>
+                Hit
+                <q>Enter</q>
+                to agree to the suggested guess
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          We end up with:
+        </p>
+        <figure>
+          <caption>The intersection on the calculator</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure11.png">
+            <description>
+              A graphing calculator screen capture showing two intersecting diagonal lines. 
+              Both lines have positive slopes, with one being steeper than the other. 
+              A crosshairs cursor is positioned at their intersection point in the third quadrant. 
+              The bottom of the screen displays the calculation result: 
+              "Intersection"
+              "X=-4 Y=-2"
+            </description>
+          </image>
+        </figure>
+        <p>
+          From this we use the X-value of the intersection to conclude that the solution to the equation is <m>t=-4</m>
+        </p>
+        <p>
+          We can check this is by substituting it back into the original equation.
+          (It's not a bad idea to do this,
+          since even though the calculator will never make an error in finding the intersection,
+          it is always possible that you might make a typographical error entering the formulas.)
+        </p>
       </statement>
-    </example>
-    <p>
-      We begin by making each side of the equation a function,
-      and entering them into the calculator.
-      Remember that in the calculator the input variable must always be rewritten as
-      <q>X</q>. So we enter:
-    </p>
-    <figure>
-      <caption>Entering both sides of the equation</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure10.png" />
-    </figure>
-    <p>
-      Running through the steps:
-      <ol>
-        <li>
-          <p>
-            Select
-            <q>2nd</q>
-            <q>TRACE</q>
-            (i.e.
-            <q>CALC</q>
-            ) <ndash />&gt;
-            <q>5:Intersect</q>
-          </p>
-        </li>
-        <li>
-          <p>
-            Hit
-            <q>Enter</q>
-            to confirm we want to use Y1=X+2
-          </p>
-        </li>
-        <li>
-          <p>
-            Hit
-            <q>Enter</q>
-            to confirm we want to use Y2=4(2X+1) – 2(3X – 1)
-          </p>
-        </li>
-        <li>
-          <p>
-            Hit
-            <q>Enter</q>
-            to agree to the suggested guess
-          </p>
-        </li>
-      </ol>
-    </p>
-    <p>
-      We end up with:
-    </p>
-    <figure>
-      <caption>The intersection on the calculator</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure11.png" />
-    </figure>
-    <p>
-      From this we use the X-value of the intersection to conclude that the solution to the equation is <m>t=-4</m>
-    </p>
-    <p>
-      We can check this is by substituting it back into the original equation.
-      (It's not a bad idea to do this,
-      since even though the calculator will never make an error in finding the intersection,
-      it is always possible that you might make a typographical error entering the formulas.)
-      }
-    </p>
-    <example xml:id="SolvingEquationsGraphicallyExample2">
+    </algorithm>
+    <algorithm xml:id="SolvingEquationsGraphicallyExample2">
       <statement>
         <p>
           Solve <m>x^2-10=2x</m>.
           Round to two decimal places if necessary.
           This equation has two solutions.
         </p>
+        <p>
+          Now, this is actually a problem that we cannot (yet) solve using traditional algebra,
+          because if we try to put the <m>x</m> terms together we are unable to do so,
+          because we cannot put the <m>x^2</m> and <m>2x</m> together – they are unlike terms.
+          Graphical solution still works just fine though.
+        </p>
+        <p>
+          Starting with:
+        </p>
+        <figure>
+          <caption>Entering both sides of the equation</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure12.png">
+            <description>
+              A graphing calculator equation entry screen. 
+              Y1 is set to X squared minus 10. 
+              Y2 is set to 2X. 
+              The remaining Y variables are blank.
+            </description>
+          </image>
+        </figure>
+        <p>
+          Running the intersect program up to the
+          <q>Guess?</q>
+          step we get:
+        </p>
+        <figure>
+          <caption>Finding an intersection</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure13.png">
+            <description>
+              A graphing calculator screen capture showing a parabola opening upward and a diagonal line with a positive slope.
+              The parabola has its vertex below the x-axis.
+              The text "Y2=2X" is at the top left.
+              The cursor is at the origin (0,0).
+              The prompt at the bottom left reads:
+              "Guess?"
+              "X=0 Y=0"
+            </description>
+          </image>
+        </figure>
+        <p>
+          We can see there that there are two intersections between the graphs,
+          meaning that our equation has more than one solution.
+          We will need to run the intersect program twice,
+          once to get each of the shown solutions.
+          Now, use the arrow keys to move the blob closer to the intersection on the left.
+          You don't have to worry about getting really close to it,
+          you just need to be close enough that the calculator clearly
+          <q>understands</q>
+          which intersection you are after.
+          Then hitting enter to confirm, you get:
+        </p>
+        <figure>
+          <caption>First intersection</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure14.png">
+            <description>
+              A screen capture from a graphing calculator showing a upward-opening parabola and a diagonal line with a positive slope.
+              A small crosshairs cursor is positioned exactly where the line intersects the parabola's left arm, in the second quadrant.
+              The bottom of the screen displays the final calculation result:
+              "Intersection"
+              "X=-2.316625 Y=-4.63325"
+            </description>
+          </image>
+        </figure>
+        <p>
+          so one solution to the equation
+          (rounded to two decimal places)
+          is <m>x=-2.32</m>.
+        </p>
+        <p>
+          We now need to run through the program again.
+          Once we get to the
+          <q>Guess</q>
+          step, we will need to use the arrow keys to move the blob closer to the intersection on the right.
+          We end up with:
+        </p>
+        <figure>
+          <caption>Second intersection</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure15.png">
+            <description>
+              A screen capture from a graphing calculator showing an upward-opening parabola and a diagonal line with a positive slope.
+              A small crosshairs cursor is positioned exactly where the line intersects the parabola's right arm, in the fourth quadrant.
+              The bottom of the screen displays the final calculation result:
+              "Intersection"
+              "X=4.3166248 Y=8.6332496"
+            </description>
+          </image>
+        </figure>
+        <p>
+          So the equation's two solutions are <m>x=-2.32</m> and <m>x=4.32</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      Now, this is actually a problem that we cannot (yet) solve using traditional algebra,
-      because if we try to put the <m>x</m> terms together we are unable to do so,
-      because we cannot put the <m>x^2</m> and <m>2x</m> together – they are unlike terms.
-      Graphical solution still works just fine though.
-    </p>
-    <p>
-      Starting with:
-    </p>
-    <figure>
-      <caption>Entering both sides of the equation</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure12.png" />
-    </figure>
-    <p>
-      Running the intersect program up to the
-      <q>Guess?</q>
-      step we get:
-    </p>
-    <figure>
-      <caption>Finding an intersection</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure13.png" />
-    </figure>
-    <p>
-      We can see there that there are two intersections between the graphs,
-      meaning that our equation has more than one solution.
-      We will need to run the intersect program twice,
-      once to get each of the shown solutions.
-      Now, use the arrow keys to move the blob closer to the intersection on the left.
-      You don't have to worry about getting really close to it,
-      you just need to be close enough that the calculator clearly
-      <q>understands</q>
-      which intersection you are after.
-      Then hitting enter to confirm, you get:
-    </p>
-    <figure>
-      <caption>First intersection</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure14.png" />
-    </figure>
-    <p>
-      so one solution to the equation
-      (rounded to two decimal places)
-      is <m>x=-2.32</m>.
-    </p>
-    <p>
-      We now need to run through the program again.
-      Once we get to the
-      <q>Guess</q>
-      step, we will need to use the arrow keys to move the blob closer to the intersection on the right.
-      We end up with:
-    </p>
-    <figure>
-      <caption>Second intersection</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure15.png" />
-    </figure>
-    <p>
-      So the equation's two solutions are <m>x=-2.32</m> and <m>x=4.32</m>. }
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Window Setting for Graphical Solution</title>
@@ -334,129 +451,201 @@
       Fortunately, you're usually not flying blind when you do this.
       The graph you see in the standard window often will give you some hint about how you need to adjust.
     </p>
-    <example xml:id="SolvingEquationsGraphicallyExample3">
+    <algorithm xml:id="SolvingEquationsGraphicallyExample3">
       <statement>
         <p>
           Solve <m>\frac{1}{2}x+3=\frac{x+20}{3}</m> graphically
         </p>
+        <p>
+          We start with the standard window:
+        </p>
+        <figure>
+          <caption>Standard Window</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure16.png">
+            <description>
+              A graphing calculator screen capture in the standard window. Two lines with positive slopes are shown. The lines are nearly parallel, but the bottom line has a slightly steeper slope and is slowly approaching the top line as they move toward the left side of the screen.
+            </description>
+          </image>
+        </figure>
+        <p>
+          We don't get an intersection in the standard window,
+          but looking at the graphs but they do appear to be coming together.
+          If we try to run the intersect program here,
+          though we end up with this error:
+        </p>
+        <figure>
+          <caption>Error screen</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure17.png">
+            <description>
+              A graphing calculator error screen. The top line displays the error message: "ERR:NO SIGN CHNG". Below it, the number 1 is highlighted with the option "Quit".
+            </description>
+          </image>
+        </figure>
+        <p>
+          Not the most descriptive error code ever written,
+          but this is the error you will get whenever you try to intersect two graphs that don't intersect within your window's interval of <m>x</m>-values.
+          The intersect program will only find the intersection if it occurs within the interval of <m>x</m>-values that you have graphed.
+          The calculator is not
+          <q>smart enough</q>
+          to know to look for an intersection outside that window.
+        </p>
+        <p>
+          But the intersection does exist.
+          We just have to adjust our window to find it.
+          Looking at the graphs,
+          we can see that they appear to be getting closer together as we move up and to the right.
+          So, we need to use a larger upper limit for both X and Y to find the intersection.
+          We can't tell how much higher we need to go,
+          but we can make a reasonable guess and adjust as needed.
+          Let's try increasing both to <m>20</m>:
+        </p>
+        <figure>
+          <caption>Xmax, Ymax set from <m>10</m> to <m>20</m></caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure18.png">
+            <description>
+              A graphing calculator "WINDOW" settings screen. 
+              The values are set as follows: 
+              Xmin equals negative 10, 
+              Xmax equals 20, 
+              Xscl equals 1, 
+              Ymin equals negative 10, 
+              Ymax equals 20, 
+              Yscl equals 1, 
+              Xres equals 1. 
+              A black cursor block is positioned after the 20 in the Ymax field.
+            </description>
+          </image>
+        </figure>
+        <p>
+          which gives us this view of the graphs:
+        </p>
+        <figure>
+          <caption>New graph based on new window</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure19.png">
+            <description>
+              A screen capture from a graphing calculator showing a new graph.
+              Both the x and y axes show tick marks, but the positive axes (top and right) have many more tick marks than the negative axes (bottom and left).
+              Two diagonal lines with positive slopes are shown. One is steeper than the other, and they approach an intersection in the first quadrant, very close to the top edge of the viewing window.
+            </description>
+          </image>
+        </figure>
+        <p>
+          It's not clear whether or not they actually intersect in this window.
+          If you try to run the Intersect program,
+          though, you'll see that they don't.
+          It doesn't look like we need to go higher to get the intersection,
+          but it does appear we need to go a bit farther to the right.
+          So, adjusting Xmax up to, say,
+          <m>25</m>, and walking through the Intersect program we end up with:
+        </p>
+        <figure>
+          <caption>New graph based on new window</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure20.png">
+            <description>
+              A screen capture from a graphing calculator showing a parabola opening downward and a diagonal line with a negative slope.
+              Both curves are shown in the first, second, and fourth quadrants, with only a small portion visible in the third quadrant.
+              The parabola has its vertex at the top right of the viewing window.
+              The diagonal line is below and to the left of the vertex, and it passes through the bottom right and top left of the screen.
+            </description>
+          </image>
+        </figure>
+        <p>
+          So we can conclude the solution to this equation is <m>x=22</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      We start with the standard window:
-    </p>
-    <figure>
-      <caption>Standard Window</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure16.png" />
-    </figure>
-    <p>
-      We don't get an intersection in the standard window,
-      but looking at the graphs but they do appear to be coming together.
-      If we try to run the intersect program here,
-      though we end up with this error:
-    </p>
-    <figure>
-      <caption>Error screen</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure17.png" />
-    </figure>
-    <p>
-      Not the most descriptive error code ever written,
-      but this is the error you will get whenever you try to intersect two graphs that don't intersect within your window's interval of <m>x</m>-values.
-      The intersect program will only find the intersection if it occurs within the interval of <m>x</m>-values that you have graphed.
-      The calculator is not
-      <q>smart enough</q>
-      to know to look for an intersection outside that window.
-    </p>
-    <p>
-      But the intersection does exist.
-      We just have to adjust our window to find it.
-      Looking at the graphs,
-      we can see that they appear to be getting closer together as we move up and to the right.
-      So, we need to use a larger upper limit for both X and Y to find the intersection.
-      We can't tell how much higher we need to go,
-      but we can make a reasonable guess and adjust as needed.
-      Let's try increasing both to <m>20</m>:
-    </p>
-    <figure>
-      <caption>Xmax, Ymax set from <m>10</m> to <m>20</m></caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure18.png" />
-    </figure>
-    <p>
-      which gives us this view of the graphs:
-    </p>
-    <figure>
-      <caption>New graph based on new window</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure19.png" />
-    </figure>
-    <p>
-      It's not clear whether or not they actually intersect in this window.
-      If you try to run the Intersect program,
-      though, you'll see that they don't.
-      It doesn't look like we need to go higher to get the intersection,
-      but it does appear we need to go a bit farther to the right.
-      So, adjusting Xmax up to, say,
-      <m>25</m>, and walking through the Intersect program we end up with:
-    </p>
-    <figure>
-      <caption>New graph based on new window</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure20.png" />
-    </figure>
-    <p>
-      So we can conclude the solution to this equation is <m>x=22</m>. }
-    </p>
+    </algorithm>
     <p>
       We don't always get enough of a hint from the standard window, though.
       Sometimes we need to actually take a look at some values of the two functions to get a sense of a window where we might see the graphs.
     </p>
-    <example xml:id="SolvingEquationsGraphicallyExample4">
+    <algorithm xml:id="SolvingEquationsGraphicallyExample4">
       <statement>
         <p>
           Solve <m>\frac{5-2x}{3}=3(2x+7)-5(x-2)</m>
         </p>
+        <p>
+          We start by entering the two sides of the equation as functions:
+        </p>
+        <figure>
+          <caption>Treating both sides as functions in the calculator</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure21.png">
+            <description>
+              A graphing calculator equation entry screen.
+              Y1 is set to the expression: the quantity 50 minus 2X, divided by 3.
+              Y2 is set to a longer expression that wraps to a second line: 3 times the quantity 2X plus 7, minus 5 times the quantity X minus 2.
+              The cursor is a black block positioned at the start of the Y1 expression.
+              The remaining Y variables are empty.
+            </description>
+          </image>
+        </figure>
+        <p>
+          But if we look at these graphs in the standard window we see nothing at all!
+          These graphs both lie entirely outside the standard window.
+        </p>
+        <p>
+          To get a hint of where to look, we can create a table.
+          It doesn't much matter what values we try - we're just trying to get any glimpse of the graphs – so we'll just use an automatic table starting at zero and going up in increments of one unit:
+        </p>
+        <figure>
+          <caption>Treating both sides as functions in the calculator</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure22.png">
+            <description>
+              A graphing calculator table screen with three columns labeled X, Y1, and Y2. 
+              The X column lists integers from 0 to 6. 
+              Row 0: X=0, Y1=16.667, Y2=31. 
+              Row 1: X=1, Y1=16, Y2=32. 
+              Row 2: X=2, Y1=15.333, Y2=33. 
+              Row 3: X=3, Y1=14.667, Y2=34. 
+              Row 4: X=4, Y1=14, Y2=35. 
+              Row 5: X=5, Y1=13.333, Y2=36. 
+              Row 6: X=6, Y1=12.667, Y2=37. 
+              A black highlight is on X=0, and the bottom of the screen displays "X=0".
+            </description>
+          </image>
+        </figure>
+        <p>
+          From this we can see that if we are using X-values that fall within the standard window,
+          the Y-values are much higher than the standard window.
+          So, we might try something like switching to
+          <q>Ymin=0</q>
+          and
+          <q>Ymax=50</q>, which gives us this view:
+        </p>
+        <figure>
+          <caption>Treating both sides as functions in the calculator</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure23.png">
+            <description>
+              A graphing calculator screen capture in a non-standard, zoomed-out window.
+              Both the x and y axes show numerous tick marks.
+              Two diagonal lines with positive slopes are shown, but they are nearly parallel, with only a small angle between them.
+              The bottom line has a slightly steeper slope and is very slowly approaching the top line as they move toward the right side of the screen.
+              The intersection is visible in the first quadrant, but it is extremely far to the right, near the edge of the viewing window.
+            </description>
+          </image>
+        </figure>
+        <p>
+          Luckily, this view not only gives us a hint where the intersection might be,
+          it actually includes it.
+          Completing the process of finding the intersection, we get:
+        </p>
+        <figure>
+          <caption>Treating both sides as functions in the calculator</caption>
+          <image width="92.5%" source="SolvingEquationsGraphically/Figure24.png">
+            <description>
+              A graphing calculator screen capture showing the intersection of two diagonal lines. 
+              One line has a positive slope and the other has a negative slope. 
+              A crosshairs cursor is positioned at their intersection point in the far left of the second quadrant. 
+              The bottom of the screen displays the final calculation result: 
+              "Intersection"
+              "X equals negative 8.6, Y equals 22.4"
+            </description>
+          </image>
+        </figure>
+        <p>
+          allowing us to conclude that the solution is <m>x=-8.6</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      We start by entering the two sides of the equation as functions:
-    </p>
-    <figure>
-      <caption>Treating both sides as functions in the calculator</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure21.png" />
-    </figure>
-    <p>
-      But if we look at these graphs in the standard window we see nothing at all!
-      These graphs both lie entirely outside the standard window.
-    </p>
-    <p>
-      To get a hint of where to look, we can create a table.
-      It doesn't much matter what values we try - we're just trying to get any glimpse of the graphs – so we'll just use an automatic table starting at zero and going up in increments of one unit:
-    </p>
-    <figure>
-      <caption>Treating both sides as functions in the calculator</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure22.png" />
-    </figure>
-    <p>
-      From this we can see that if we are using X-values that fall within the standard window,
-      the Y-values are much higher than the standard window.
-      So, we might try something like switching to
-      <q>Ymin=0</q>
-      and
-      <q>Ymax=50</q>, which gives us this view:
-    </p>
-    <figure>
-      <caption>Treating both sides as functions in the calculator</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure23.png" />
-    </figure>
-    <p>
-      Luckily, this view not only gives us a hint where the intersection might be,
-      it actually includes it.
-      Completing the process of finding the intersection, we get:
-    </p>
-    <figure>
-      <caption>Treating both sides as functions in the calculator</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure24.png" />
-    </figure>
-    <p>
-      allowing us to conclude that the solution is <m>x=-8.6</m>. }
-    </p>
+    </algorithm>
     <p>
       Before concluding this discussion,
       there are a couple of additional points which we should address.
@@ -580,7 +769,7 @@
       <m>\bullet</m> The equation can be solved using algebra techniques you know &amp; <m>\bullet</m> The equation cannot be solved using algebra techniques you know.
       \hline
     </tabular>
-    <example xml:id="SolvingEquationsGraphicallyExample5">
+    <algorithm xml:id="SolvingEquationsGraphicallyExample5">
       <statement>
         <p>
           Which solution method would be the better bet for each of the following equations?
@@ -608,41 +797,41 @@
             </li>
           </ol>
         </p>
+        <ol marker="a">
+          <li>
+            <p>
+              <m>3x-5=4-2x</m> For this, traditional algebra is probably the better bet,
+              since solving this equation would not require too many steps and would probably be less work than setting up and using a graph.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>4.67(2.13t-1.15)+0.87=1.13(2.22t-9.14)</m> The numbers in this equation are awkward,
+              and solving this using traditional algebra would require quite a few steps.
+              Graphical solution would probably be less work,
+              though it does require being very careful to avoid typos when entering the two sides into the calculator.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>100,000x-50,000=75,000x+25,000</m> Here,
+              the algebra required to solve this would not be terribly demanding.
+              And since the numbers are so large it would be difficult to get an appropriate window setting for the graphs.
+              Traditional algebra is almost certainly the better bet.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{3}{2}w+(4-w)=\frac{2}{5}w-3</m> This one is really a matter of preference.
+              Because of the fractions and the simplification required,
+              solving this one with traditional algebra will require some effort.
+              But the fractions are not that bad and the amount of simplification required won't be excessive so it is debatable whether that work is more or less effort than graphical solution.
+              Either approach would be a reasonable choice.
+            </p>
+          </li>
+        </ol>
       </statement>
-    </example>
-    <ol marker="a">
-      <li>
-        <p>
-          <m>3x-5=4-2x</m> For this, traditional algebra is probably the better bet,
-          since solving this equation would not require too many steps and would probably be less work than setting up and using a graph.
-        </p>
-      </li>
-      <li>
-        <p>
-          <m>4.67(2.13t-1.15)+0.87=1.13(2.22t-9.14)</m> The numbers in this equation are awkward,
-          and solving this using traditional algebra would require quite a few steps.
-          Graphical solution would probably be less work,
-          though it does require being very careful to avoid typos when entering the two sides into the calculator.
-        </p>
-      </li>
-      <li>
-        <p>
-          <m>100,000x-50,000=75,000x+25,000</m> Here,
-          the algebra required to solve this would not be terribly demanding.
-          And since the numbers are so large it would be difficult to get an appropriate window setting for the graphs.
-          Traditional algebra is almost certainly the better bet.
-        </p>
-      </li>
-      <li>
-        <p>
-          <m>\frac{3}{2}w+(4-w)=\frac{2}{5}w-3</m> This one is really a matter of preference.
-          Because of the fractions and the simplification required,
-          solving this one with traditional algebra will require some effort.
-          But the fractions are not that bad and the amount of simplification required won't be excessive so it is debatable whether that work is more or less effort than graphical solution.
-          Either approach would be a reasonable choice.
-        </p>
-      </li>
-    </ol>
+    </algorithm>
     <p>
       Sometimes you might start with one approach,
       and then decide that maybe it wasn't the best approach after all.
@@ -659,7 +848,11 @@
     </p>
     <figure>
       <caption>A very hard to find intersection</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure25.png" />
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure25.png">
+        <description>
+          A graphing calculator screen capture in the standard window. Two diagonal lines with positive slopes are shown. The lines appear to be parallel, maintaining a consistent distance from each other as they move across the screen. There is no visible point of intersection within the current viewing window.
+        </description>
+      </image>
     </figure>
     <p>
       Now, the two graphs don't intersect in this window,
@@ -696,7 +889,11 @@
     </p>
     <figure>
       <caption>A very hard to find intersection</caption>
-      <image width="92.5%" source="SolvingEquationsGraphically/Figure26.png" />
+      <image width="92.5%" source="SolvingEquationsGraphically/Figure26.png">
+        <description>
+          A graphing calculator screen capture showing two diagonal lines with positive slopes in a standard window. The lines are very close together and appear nearly parallel. There is a small, constant vertical distance between them, and they do not intersect within the visible area of the screen.
+        </description>
+      </image>
     </figure>
     <p>
       But in fact this equation does have a solution:
