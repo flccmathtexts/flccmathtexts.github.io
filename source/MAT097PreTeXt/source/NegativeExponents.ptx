@@ -102,19 +102,39 @@
           </me>
         </p>
         <p>
-          Using the definition <m>x^{-a}=\frac{1}{x^a}</m>, we rewrite the fraction:
+          Here, we will use the definition that
+          <m>x^{-a}=\frac{1}{x^a}</m> to rewrite this expression without a negative exponent:
+        </p>
+        <p>
+          Rewriting the expression as a product again:
           <me>
-            2 \cdot \frac{1}{x^{-6}} = 2 \cdot \frac{1}{\left(\frac{1}{x^{6}}\right)}
+          \frac{10}{5x^{-6}}=2 \cdot \frac{1}{x^{-6}}
           </me>
         </p>
         <p>
-          To simplify, we multiply the numerator and denominator by the reciprocal of the denominator. The reciprocal of <m>\frac{1}{x^6}</m> is <m>x^6</m>.
+          Rewriting without the negative exponent:
           <me>
-            2 \cdot \frac{1}{\left(\frac{1}{x^{6}}\right)} = 2 \cdot \frac{1 \cdot x^6}{\left(\frac{1}{x^{6}}\right) \cdot x^6} = 2 \cdot \frac{x^6}{1} = 2x^6
+            \frac{10}{5x^{-6}}=2 \cdot \frac{1}{\left(\frac{1}{x^{6}}\right)}
           </me>
         </p>
         <p>
-          Note: It is not <q>bad</q> or incorrect to have a negative exponent. We are practicing these rewrites to reinforce what the notation actually represents.
+          Then we multiply the numerator and denominator by the reciprocal of the denominator to simplify.
+          The reciprocal of <m>\frac{1}{x^6}</m> is <m>\frac{x^6}{1}=x^6</m>.
+          <me>
+            \frac{10}{5x^{-6}}=2 \cdot \frac{1}{\left(\frac{1}{x^{6}}\right)}=2 \cdot \frac{1 \cdot x^6}{\left(\frac{1}{x^{6}}\right)\cdot\left(\frac{x^{6}}{1}\right)}=2\cdot \frac{x^6}{\left(\frac{x^6}{x^6}\right)}
+          </me>
+        </p>
+        <p>
+          Here we identify that <m>\frac{x^6}{x^6} = 1</m> and we obtain:
+          <me>
+            \frac{10}{5x^{-6}}=2\cdot\frac{x^6}{1}=2x^6
+          </me>
+        </p>
+        <p>
+          Note: it is not
+          <q>bad</q>
+          or incorrect to have a negative exponent in an expression or an equation.
+          We are practicing rewriting expressions with and without negative exponents to reinforce what they represent.
         </p>
       </statement>
     </algorithm>
@@ -133,9 +153,9 @@
           </me>
         </p>
         <p>
-          This simplifies into several equivalent expressions, but is most commonly written without negative exponents:
+          This simplifies into several equivalent expressions:
           <me>
-            \frac{64b^6c^{-4}}{4b^9c^{-7}} = 16b^{-3}c^3 = \frac{16c^3}{b^3}
+            \displaystyle \frac{64b^6c^{-4}}{4b^9c^{-7}}=16b^{-3}c^{3} = \frac{16c^3}{b^{3}}=16\frac{c^3}{b^{3}}
           </me>
         </p>
       </statement>
@@ -149,15 +169,21 @@
           </me>
         </p>
         <p>
-          Applying the power rule by distributing the <m>-2</m> to each factor:
+          Applying the power rule:
           <me>
-            {\left(3d^{-4}e^5\right)}^{-2} = 3^{-2}d^{(-4)(-2)}e^{(5)(-2)} = 3^{-2}d^8e^{-10}
+            {\left(3d^{-4}e^5\right)}^{-2}={\left(3\right)}^{-2}{\left(d^{-4}\right)}^{-2}{\left(e^5\right)}^{-2}=3^{-2}d^9e^{-10}
           </me>
         </p>
         <p>
-          Simplifying the coefficient and rewriting the terms with positive exponents:
+          Simplifying:
           <me>
-            \frac{1}{3^2} \cdot d^8 \cdot \frac{1}{e^{10}} = \frac{d^8}{9e^{10}}
+            {\left(3d^{-4}e^5\right)}^{-2}=\frac{1}{9}d^8e^{-10}
+          </me>
+        </p>
+        <p>
+          Rewriting without a negative exponent:
+          <me>
+            {\left(3d^{-4}e^5\right)}^{-2}=\frac{1d^8}{9e^{10}}
           </me>
         </p>
       </statement>
