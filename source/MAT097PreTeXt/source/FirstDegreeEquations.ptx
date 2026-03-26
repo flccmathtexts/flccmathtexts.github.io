@@ -113,7 +113,7 @@
             <mrow>3-2 \amp = 10</mrow>
             <mrow>1 \amp = 10</mrow>
           </md>
-          This is a false statement, so <m>x=1</m> does not satisfy the equation.
+          which clearly is a false statement and we see that <m>x=1</m> does not satisfy the equation.
         </p>
         <p>
           Moving on to <m>x=2</m>, we get:
@@ -122,16 +122,15 @@
             <mrow>6-2 \amp = 10</mrow>
             <mrow>4 \amp = 10</mrow>
           </md>
-          This is also a false statement, so <m>x=2</m> does not satisfy the equation.
+          which again is a false statement and we conclude that <m>x=2</m> does not satisfy the equation.
         </p>
         <p>
-          You can repeat this process for the remaining values. You should see that only <m>x=4</m> satisfies the equation:
+          You can repeat this process for the remaining values. You should see that only <m>x=4</m> satisfies the equation; the other values do not.
           <md>
             <mrow>3(4)-2 \amp = 10</mrow>
             <mrow>12-2 \amp = 10</mrow>
             <mrow>10 \amp = 10</mrow>
           </md>
-          The other given values do not.
         </p>
       </statement>
     </algorithm>
@@ -251,7 +250,7 @@
           </md>
         </p>
         <p>
-          From here, we add <m>20</m> to both sides and then divide by <m>11</m> to isolate <m>x</m>:
+          From here, we just need to add <m>20</m> and then divide by <m>11</m> to get isolate the <m>x</m>:
           <md>
             <mrow>11x-20 \amp = 2</mrow>
             <mrow>11x \amp = 22</mrow>
@@ -259,7 +258,7 @@
           </md>
         </p>
         <p>
-          It is always a good idea to check your answers by substituting your solution back into the original equation:
+          It never hurts to check your answers by substituting your solution back into the original equation:
           <md>
             <mrow>5x-11+3(2x-3) \amp = 2</mrow>
             <mrow>5(2)-11+3(2(2)-3) \amp = 2</mrow>
@@ -289,38 +288,36 @@
             5(z+1)-16=3z-5
           </me>
         </p>
+        <md>
+          <mrow>5(z+1)-16 \amp = 3z-5</mrow>
+          <mrow>5z+5-16 \amp = 3z-5</mrow>
+          <mrow>5z-11 \amp = 3z-5</mrow>
+        </md>
         <p>
-          First, we simplify the left side by distributing and combining like terms:
-          <md>
-            <mrow>5(z+1)-16 \amp = 3z-5</mrow>
-            <mrow>5z+5-16 \amp = 3z-5</mrow>
-            <mrow>5z-11 \amp = 3z-5</mrow>
-          </md>
-        </p>
-        <p>
-          It doesn't matter which side we collect the <m>z</m> terms on; either is fine. Since it is more common to collect them on the left, we will subtract <m>3z</m> from both sides:
+          It doesn't matter which side we collect the <m>z</m> terms on; either is fine. It is more common to collect them on the left, so we'll subtract <m>3z</m> from both sides to get:
           <me>
             2z-11 = -5
           </me>
         </p>
         <p>
-          Now, we add <m>11</m> to both sides to isolate the <m>z</m> term:
+          Now since we've collected <m>z</m>'s on the left,
+          we'll add <m>11</m> to both sides to get rid of the <m>-11</m> on the left:
           <me>
-            2z = 6
+            2z=6
           </me>
         </p>
         <p>
-          Finally, dividing both sides by <m>2</m>, we get:
+          And now dividing both sides by 2 we get:
           <me>
-            z = 3
+            z=3
           </me>
         </p>
         <p>
           A check confirms the result:
           <md>
-            <mrow>5(3+1)-16 \amp = 3(3)-5</mrow>
-            <mrow>5(4)-16 \amp = 9-5</mrow>
-            <mrow>4 \amp = 4</mrow>
+            <mrow>5(z+1)-16\amp =3z-5</mrow>
+            <mrow>5(3+1)-16\amp =3(3)-5</mrow>
+            <mrow>4\amp =4</mrow>
           </md>
         </p>
       </statement>
@@ -337,42 +334,72 @@
           </me>
         </p>
         <p>
-          As before, we will simplify each side first. Remember to be careful with negative signs when distributing:
+          As before, we'll simplify each side first.
+          Remember that you need to be careful about the negatives when distributing!
           <md>
-            <mrow>4t-3-7(2-t) \amp = 2(7t+5)-(t-4)</mrow>
-            <mrow>4t-3-14+7t \amp = 14t+10-t+4</mrow>
-            <mrow>11t-17 \amp = 13t+14</mrow>
+            <mrow>4t-3-7(2-t)\amp =2(7t+5)-(t-4)</mrow>
+            <mrow>4t-3-14+7t\amp =14t+10-t+4</mrow>
+            <mrow>11t-17\amp =13t+14</mrow>
           </md>
         </p>
         <p>
-          If we choose to collect the variable on the left, we subtract <m>13t</m> from both sides:
+          Now, as mentioned in the previous example,
+          there is a tendency to collect the variable on the left.
+          So, if we collect the variable on the left we subtract <m>13t</m> from both sides to get:
           <me>
             -2t-17=14
           </me>
-          Then, add <m>17</m> to both sides and divide by <m>-2</m>:
+        </p>
+        <p>
+          Then add <m>17</m> to both sides:
+          <me>
+            -2t=31
+          </me>
+        </p>
+        <p>
+          And now divide by <m>-2</m>:
+          <me>
+            t=\frac{31}{-2}
+          </me>
+          which is more commonly rewritten as:
+          <me>
+            t=-\frac{31}{2}=\frac{-31}{2}=-15.5
+          </me>
+        </p>
+        <p>
+          Some people feel a strong preference against negative coefficients if they can be avoided,
+          and so might prefer to subtract <m>11t</m> from both sides.
+          That is also fine,
+          and in fact we can do this and then switch the equation's sides if we want to.
+          So this is also a correct solution:
           <md>
-            <mrow>-2t \amp = 31</mrow>
-            <mrow>t \amp = \frac{31}{-2} = -15.5</mrow>
+            <mrow>4t-3-7(2-t)\amp =2(7t+5)-(t-4)</mrow>
+            <mrow>4t-3-14+7t\amp =14t+10-t+4</mrow>
+            <mrow>11t-17\amp =13t+14</mrow>
+            <mrow>-17\amp =2t+14</mrow>
+            <mrow>-31\amp =2t</mrow>
+            <mrow>-\frac{31}{2}\amp =t</mrow>
           </md>
         </p>
         <p>
-          Alternatively, to avoid negative coefficients, you might prefer to subtract <m>11t</m> from both sides:
+          Finally, to check.
+          We'll substitute this solution into the original equation.
+          Since the arithmetic gets tedious,
+          typing each side's expression into the calculator is probably the best choice;
+          remember though to be careful to use parentheses appropriately when substituting in this negative number:
           <md>
-            <mrow>11t-17 \amp = 13t+14</mrow>
-            <mrow>-17 \amp = 2t+14</mrow>
-            <mrow>-31 \amp = 2t</mrow>
-            <mrow>-\frac{31}{2} \amp = t</mrow>
+            <mrow>4t-3-7(2-t)\amp =2(7t+5)-(t-4)</mrow>
+            <mrow>4\left(\frac{-31}{2}\right)-3-7\left[2-\left(\frac{-31}{2}\right)\right]\amp =2\left[7\left(\frac{-31}{2}\right)+5\right]-\left[\left(\frac{-31}{2}\right)-4\right]</mrow>
+            <mrow>-187.5\amp =-187.5</mrow>
           </md>
         </p>
         <p>
-          To check the result, substitute the solution into the original equation. Given the fractions, using a calculator is efficient, provided you use parentheses correctly for the negative value:
-          <md>
-            <mrow>4\left(\frac{-31}{2}\right)-3-7\left[2-\left(\frac{-31}{2}\right)\right] \amp = 2\left[7\left(\frac{-31}{2}\right)+5\right]-\left[\left(\frac{-31}{2}\right)-4\right]</mrow>
-            <mrow>-187.5 \amp = -187.5</mrow>
-          </md>
-        </p>
-        <p>
-          As this example shows, there is often more than one correct order of operations. <em>As long as the steps you take follow the laws of algebra</em>, you will arrive at the correct solution.
+          As the choice discussed in the above example makes clear,
+          we often have some choice about the order we do things.
+          While the examples given in this book are meant to illustrate sound strategy,
+          all of these problems can be correctly solved in other ways as well.
+          <em>As long as the steps you take follow the laws of algebra</em>
+          you will arrive at a correct solutions.
         </p>
       </statement>
     </algorithm>
