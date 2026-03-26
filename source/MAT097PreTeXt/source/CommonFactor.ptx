@@ -40,26 +40,32 @@
           Factor the expression <m>10x^2+25x</m>.
         </p>
         <p>
-          We are looking for a common factor that divides both <m>10x^2</m> and <m>25x</m>. Beginning with the coefficients, <m>5</m> divides both <m>10</m> and <m>25</m>. The highest power of <m>x</m> that divides both <m>x^2</m> and <m>x</m> is <m>x</m>. Therefore, our greatest common factor (GCF) is <m>5x</m>.
-        </p>
-        <p>
+          We are looking for a common factor that divides both <m>10x^2</m> and <m>25x</m>.
+          Beginning with the coefficients,
+          <m>5</m> divides both <m>10</m> and <m>25</m> and the highest power of <m>x</m> that divides both <m>x^2</m> and <m>x</m> is <m>x</m>.
+          Therefore our common factor of <m>10x^2</m> and <m>25x</m> is <m>5x</m>.
           When we divide both terms in our original expression by <m>5x</m>, we have:
           <me>
-            \frac{10x^2}{5x} + \frac{25x}{5x} = \frac{10 \cdot x \cdot x}{5 \cdot x} + \frac{25 \cdot x}{5 \cdot x} = 2x + 5
+            \displaystyle \frac{10x^2}{5x} + \frac{25x}{5x} = \frac{\cancel{10}^{~2}\cdot \cancel{x}^{~1} \cdot x}{\cancel{5}^{~1}\cdot\cancel{x}^{~1}} + \frac{\cancel{25}^{~5}\cdot\cancel{x}^{~1}}{\cancel{5}^{~1}\cdot\cancel{x}^{~1}} = \frac{2x}{1} + \frac{5}{1} = 2x+5
           </me>
-            Thus, we obtain the factored form:
+          and we obtain:
           <me>
-            10x^2+25x=5x(2x+5)
+            10x^2+25x=5x(2x+1)
           </me>
         </p>
         <p>
-          Because the terms <m>2x</m> and <m>5</m> share no other common factors (other than 1), we have completely factored our expression. We can use the distributive law to check our work:
+          Because the terms <m>2x</m> and <m>5</m> share no other common factors
+          (other than 1)
+          we have completely factored our expression.
+          We can use the distributive law to check if our factored expression is correct:
           <me>
-            5x(2x+5)=5x(2x)+5x(5)=10x^2+25x
+            5x(2x+1)=5x(2x)+5x(5)=10x^2+25x
           </me>
         </p>
         <p>
-          Since multiplying the factors <m>5x</m> and <m>2x+5</m> returns us to the original expression, the factorization is correct.
+          When multiplying the factors <m>5x</m> and <m>2x+5</m>,
+          our product was the expression we started with,
+          so we can see we factored the expression appropriately.
         </p>
       </statement>
     </algorithm>
@@ -69,26 +75,37 @@
           Factor the expression <m>4x^3+20x^2</m>.
         </p>
         <p>
-          We are looking for a common factor that divides both <m>4x^3</m> and <m>20x^2</m>. Beginning with the coefficients, <m>2</m> is a common factor of <m>4</m> and <m>20</m>, and the highest power of <m>x</m> that divides both <m>x^3</m> and <m>x^2</m> is <m>x^2</m>.
+          We are looking for a common factor that divides both <m>4x^3</m> and <m>20x^2</m>.
+          Beginning with the coefficients,
+          both <m>2</m> is a common factor of <m>4</m> and <m>20</m> and the highest power of <m>x</m> that divides both <m>x^3</m> and <m>x^2</m> is <m>x^2</m>.
         </p>
         <p>
-          If we use the common factor <m>2x^2</m> and divide both terms in our original expression, we have:
+          We can use the common factor <m>2x^2</m>.
+          When we divide both terms in our original expression by <m>2x^2</m> we have:
           <me>
-            \frac{4x^3}{2x^2} + \frac{20x^2}{2x^2} = \frac{4 \cdot x \cdot x \cdot x}{2 \cdot x \cdot x} + \frac{20 \cdot x \cdot x}{2 \cdot x \cdot x} = 2x + 10
+            \displaystyle \frac{4x^3}{2x^2} + \frac{20x^2}{2x^2} = \frac{\cancel{4}^{~2} \cdot \cancel{x}^{~1} \cdot\cancel{x}^{~1} \cdot x}{\cancel{2}^{~1}\cdot\cancel{x}^{~1} \cdot\cancel{x}^{~1}} + \frac{\cancel{20}^{~10}\cdot\cancel{x}^{~1} \cdot\cancel{x}^{~1}}{\cancel{2}^{~1}\cdot\cancel{x}^{~1} \cdot\cancel{x}^{~1}} = \frac{2x}{1} + \frac{10}{1} = 2x+10
           </me>
-          The factorization obtained is <m>4x^3+20x^2=2x^2(2x+10)</m>.
+          so the factorization we have obtained is <m>4x^3+20x^2=2x^2(2x+10)</m>.
         </p>
         <p>
-          However, the terms inside the parentheses share another common factor of <m>2</m>, so our result is <term>not completely factored</term>. We would then have to factor out another <m>2</m>:
+          However, the terms inside the parenthesis share another common factor of <m>2</m>,
+          so our result is <em>not completely factored</em>.
+          We would then have to factor out another <m>2</m>, leaving us with:
           <me>
             4x^3+20x^2=2x^2(2x+10)=2x^2(2)(x+5)=4x^2(x+5)
           </me>
         </p>
         <p>
-          Notice that the final common factor becomes <m>4x^2</m>. If we had originally divided both terms by <m>4x^2</m>, we would have reached <m>4x^2(x+5)</m> in one step.
+          Notice that the common factor after we divided out another <m>2</m>,
+          becomes <m>4x^2</m>.
+          If we had originally divided both terms in our original expression by <m>4x^2</m>,
+          we would have <m>4x^2(x+5)</m>. }
         </p>
         <p>
-          Although we get the same result, it is more efficient to factor out <m>4x^2</m> initially. We call <m>4x^2</m> the <term>greatest common factor (GCF)</term> of <m>4x^3</m> and <m>20x^2</m> because it has the largest coefficient and the highest degree literal part that divides both terms.
+          Although we have the same result in either case,
+          it is more efficient to factor out <m>4x^2</m> initially as it has a larger coefficient than <m>2x^2</m>.
+          We can call <m>4x^2</m> the <em>greatest common factor (GCF)</em>
+          of <m>4x^3</m> and <m>20x^2</m> because that is the factor with the largest coefficient and highest degree literal part that divides both terms.
         </p>
       </statement>
     </algorithm>
@@ -98,20 +115,21 @@
           Factor the expression <m>3x+21</m>.
         </p>
         <p>
-          Beginning with the coefficients, <m>3</m> divides both <m>3</m> and <m>21</m>. Because <m>21</m> has no literal part, the variable cannot be a part of our common factor. Therefore, our greatest common factor is <m>3</m>.
-        </p>
-        <p>
+          Beginning with the coefficients,
+          <m>3</m> divides both <m>3</m> and <m>21</m> and because <m>21</m> has no literal part,
+          the variable cannot be a part of our common factor.
+          Therefore, our greatest common factor is <m>3</m>.
           When we divide both terms in our original expression by <m>3</m>, we have:
           <me>
-            \frac{3x}{3} + \frac{21}{3} = x + 7
+            \displaystyle \frac{3x}{3} + \frac{21}{3} = \frac{\cancel{3}^{~1} \cdot x}{\cancel{3}^{~1}} + \frac{\cancel{21}^{~7}}{\cancel{3}^{~1}} = \frac{x}{1} + \frac{7}{1} = x+7
           </me>
-          Thus, we obtain the factored form:
+          and we obtain:
           <me>
             3x+21=3(x+7)
           </me>
         </p>
         <p>
-          Because the terms <m>x</m> and <m>7</m> share no other common factors, our expression is factored completely.
+          Because the terms <m>x</m> and <m>7</m> share no other common factors our expression is factored completely.
         </p>
       </statement>
     </algorithm>
@@ -121,19 +139,23 @@
           Factor the expression <m>-6x+9</m>.
         </p>
         <p>
-          Both <m>-6</m> and <m>9</m> are divisible by <m>3</m>. Since the second term has no literal part, the variable will not be included in our common factor. If we factor out <m>3</m>, we have:
+          <m>-6</m> and <m>9</m> are both divisible by <m>3</m> and again,
+          the second term in the expression has no literal part so the variable will not be included in our common factor.
+          When we divide by 3 we have:
           <me>
             -6x+9=3(-2x+3)
           </me>
         </p>
         <p>
-          We can also consider a common factor of <m>-3</m>, which is often preferred when the leading term has a negative coefficient. When we factor out <m>-3</m>, we have:
+          We can also consider a common factor of <m>-3</m> being that our leading term has a negative coefficient.
+          When we divide out a -3 we have:
           <me>
             -6x+9=-3(2x-3)
           </me>
         </p>
         <p>
-          Both are factored completely. Using the distributive property, we can verify that both forms are equivalent to the original expression:
+          Both are factored completely and when using the distributive property,
+          both give back the original expression.
           <me>
             3(-2x+3)=3(-2x)+3(3)=-6x+9
           </me>
@@ -150,18 +172,12 @@
           Factor the expression <m>-6x^2-18x</m>.
         </p>
         <p>
-          The number <m>6</m> divides both <m>-6</m> and <m>-18</m>, and the highest power of <m>x</m> that divides both <m>x^2</m> and <m>x</m> is <m>x</m>. Because both terms in the original expression are negative, we use <m>-6x</m> as our greatest common factor.
-        </p>
-        <p>
-          When we factor out <m>-6x</m>, both terms inside the parentheses become positive:
+          <m>6</m> divides both <m>-6</m> and <m>-18</m> and the highest power of <m>x</m> that divides both <m>x^2</m> and <m>x</m> is <m>x</m>.
+          Because both terms in the original expression are negative,
+          we can use <m>-6x</m> as our common factor.
+          When we divide by <m>-6x</m> we have:
           <me>
             -6x^2-18x=-6x(x+3)
-          </me>
-        </p>
-        <p>
-          We can verify this by distributing <m>-6x</m> back into the binomial:
-          <me>
-            -6x(x) + (-6x)(3) = -6x^2 - 18x
           </me>
         </p>
       </statement>
@@ -172,29 +188,34 @@
           Factor the expression <m>8a^3b-24ab^2+16a^2b^3</m>.
         </p>
         <p>
-          We are looking for a common factor of <m>8a^3b</m>, <m>-24ab^2</m>, and <m>16a^2b^3</m>.
-          First, <m>8</m> divides the coefficients <m>8</m>, <m>-24</m>, and <m>16</m>.
-        </p>
-        <p>
-          Next, we consider the variables. The literal part of all three terms contains both <m>a</m> and <m>b</m>.
-          The highest power of <m>a</m> that divides <m>a^3</m>, <m>a</m>, and <m>a^2</m> is <m>a</m>.
-          The highest power of <m>b</m> that divides <m>b</m>, <m>b^2</m>, and <m>b^3</m> is <m>b</m>.
-          Therefore, our greatest common factor is <m>8ab</m>.
-        </p>
-        <p>
-          When we factor out <m>8ab</m>, we obtain:
+          We are looking for a common factor of <m>8a^3b</m>,
+          <m>-24ab^2</m>, and <m>16a^2b^3</m>.
+          <m>8</m> divides the coefficients <m>8</m>, <m>-24</m> and <m>16</m>.
+          The literal part of all three terms here contain both <m>a</m> and <m>b</m>.
+          Therefore, we need to consider both variables when looking for our common factor.
+          The highest power of <m>a</m> that divides <m>a^3</m>,
+          <m>a</m>,
+          and <m>a^2</m> is <m>a</m> and the highest power of <m>b</m> that divides <m>b</m>,
+          <m>b^2</m>, and <m>b^3</m> is <m>b</m>.
+          Therefore our common factor is <m>8ab</m>.
+          When we divide out <m>8ab</m>, we obtain:
           <me>
             8a^3b-24ab^2+16a^2b^3=8ab(a^2-3b+2ab^2)
           </me>
         </p>
         <p>
-          We can use the distributive law to check our solution:
+          We can of course use the distributive law to check our solution:
           <me>
             8ab(a^2-3b+2ab^2)=8ab(a^2)+8ab(-3b)+8ab(2ab^2)=8a^3b-24ab^2+16a^2b^3
           </me>
         </p>
         <p>
-          In some cases, it will even be appropriate to use an expression with more than one term as a common factor, much like how <m>ab + ac = a(b+c)</m> uses <m>a</m> as the common factor.
+          Looking back to the beginning of this section,
+          specifically at the expression <m>ab+ac</m>,
+          we can see that the two terms share a common factor of <m>a</m>.
+          We can then divide <m>a</m> from each term leaving us with <m>a(b+c)</m>.
+          In some cases,
+          it will be appropriate to use an expression with more than one term as our common factor.
         </p>
       </statement>
     </algorithm>
@@ -204,12 +225,9 @@
           Factor the expression <m>3x^2(x-1)+4(x-1)</m>.
         </p>
         <p>
-          <m>(x-1)</m> is a factor of both <m>3x^2(x-1)</m> and <m>4(x-1)</m>. Using the same pattern as above, we can factor this expression into:
-          <me>
-            (x-1)(3x^2+4)
-          </me>
-        </p>
-        <p>
+          <m>(x-1)</m> is a factor of both
+          <m>3x^2(x-1)</m> and <m>4(x-1)</m> using the same pattern as above,
+          we can factor this expression into <m>(x-1)(3x^2+4)</m>.
           In both forms we can see that both the <m>3x^2</m> and <m>4</m> are being distributed to the factor of <m>(x-1)</m>.
         </p>
       </statement>
@@ -228,24 +246,24 @@
           Factor <m>x^3-3x^2+2x-6</m>.
         </p>
         <p>
-          Now we are working with an expression with four terms, none of which have a common factor greater than <m>1</m>. We can split our expression into two groups of terms.
-        </p>
-        <p>
-          First, looking at <m>x^3-3x^2</m>, we notice that this expression has a common factor of <m>x^2</m>. When we factor out that term, we are left with <m>x^2(x-3)</m>.
-        </p>
-        <p>
-          Next, we look at the second group, <m>2x-6</m>. This expression has a common factor of <m>2</m>. When we factor out the <m>2</m>, we are left with <m>2(x-3)</m>.
-        </p>
-        <p>
-          Notice that we have a common factor now of <m>x-3</m>. We can then factor:
+          Now we are working with an expression with four terms,
+          none of which have a common factor greater than <m>1</m>.
+          We can split our expression into two groups of terms first looking at
+          <m>x^3-3x^2</m> and noticing that this expression has a common factor of <m>x^2</m> and when we divide out that term,
+          we are left with <m>x^2(x-3)</m>.
+          Let's now look at the second group,
+          <m>2x-6</m> and notice that this expression has a common factor of <m>2</m> and when we divide out the <m>2</m>,
+          we are left with <m>2(x-3)</m>.
+          Notice that we have a common factor now of <m>x-3</m>.
+          We can then factor:
           <me>
-            x^3-3x^2+2x-6 = x^2(x-3)+2(x-3) = (x^2+2)(x-3)
+            x^3-3x^2+2x-6=x^2(x-3)+2(x-3)=(x^2+2)(x-3)
           </me>
         </p>
         <p>
-          We can use the distributive law to check our solution:
+          We can of course use the distributive law to check our solution:
           <me>
-            (x^2+2)(x-3) = x^2(x)+x^2(-3)+2(x)+2(-3) = x^3-3x^2+2x-6
+            (x^2+2)(x-3)=x^2(x)+x^2(-3)+2(x)+2(-3)=x^3-3x^2+2x-6
           </me>
         </p>
       </statement>
@@ -256,15 +274,16 @@
           Factor the expression <m>ab-6a+2b-12</m>.
         </p>
         <p>
-          Splitting our expression into two groups, let's look at the first group <m>ab-6a</m>. We see that this expression shares a common factor of <m>a</m>, and when we factor that term out, we are left with <m>a(b-6)</m>.
-        </p>
-        <p>
-          The second group, <m>2b-12</m>, shares a common factor of <m>2</m>. When we factor that term out, we are left with <m>2(b-6)</m>.
-        </p>
-        <p>
-          Both groups share a common factor of <m>b-6</m>; therefore, we can factor:
+          Splitting our expression into two groups,
+          let's look at the first group <m>ab-6a</m>.
+          We see that this expression shares a common factor of <m>a</m>,
+          and when we divide that term out,
+          we are left with <m>a(a-6)</m>.
+          The second group <m>2b-12</m> shares a common factor of <m>2</m> and when we divide that term out,
+          we are left with <m>2(b-6)</m>.
+          Both groups share a common factor of <m>b-6</m> therefore we can factor:
           <me>
-            ab-6a+2b-12 = a(b-6)+2(b-6) = (a+2)(b-6)
+            ab-6a+2b-12=a(a-6)+2(a-b)=(a+2)(b-6)
           </me>
         </p>
       </statement>
