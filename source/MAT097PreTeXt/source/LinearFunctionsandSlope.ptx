@@ -88,31 +88,31 @@
     <p>
       An example will illustrate this formula's use.
     </p>
-    <example xml:id="LinearFunctionsandSlopeExample1">
+    <algorithm xml:id="LinearFunctionsandSlopeExample1">
       <statement>
         <p>
           Suppose <m>f(x)</m> is a linear function,
           and suppose <m>f(1)=3</m> and <m>f(5)=27</m>.
           Find its slope.
         </p>
+        <p>
+          We have two input-output pairs for the function,
+          so we can use them in the slope formula.
+          If we choose <m>a=1</m> and <m>b=5</m>, we get:
+          <md>
+            <mrow>slope \amp = \frac{\Delta output}{\Delta input} = \frac{\Delta f(x)}{\Delta x}=\frac{f(b)-f(a)}{b-a}</mrow>
+            <mrow>\amp</mrow>
+            <mrow>\amp =\frac{f(5)-f(1)}{5-1}=\frac{27-3}{5-1}</mrow>
+            <mrow>\amp</mrow>
+            <mrow>\amp =\frac{24}{4}=6</mrow>
+          </md>
+        </p>
+        <p>
+          (We usually choose <m>a</m> to be the smaller value, but we don't have to.
+          We'd have gotten the same result if we had let <m>a=5</m> and <m>b=1</m>).
+        </p>
       </statement>
-    </example>
-    <p>
-      We have two input-output pairs for the function,
-      so we can use them in the slope formula.
-      If we choose <m>a=1</m> and <m>b=5</m>, we get:
-      <md>
-        <mrow>slope \amp = \frac{\Delta output}{\Delta input} = \frac{\Delta f(x)}{\Delta x}=\frac{f(b)-f(a)}{b-a}</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp =\frac{f(5)-f(1)}{5-1}=\frac{27-3}{5-1}</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp =\frac{24}{4}=6</mrow>
-      </md>
-    </p>
-    <p>
-      (We usually choose <m>a</m> to be the smaller value, but we don't have to.
-      We'd have gotten the same result if we had let <m>a=5</m> and <m>b=1</m>). }
-    </p>
+    </algorithm>
     <p>
       When calculating average rates of change we often got different averages depending on which input-output pairs we used.
       That happens with non-linear functions.
@@ -121,7 +121,7 @@
       by definition, a constant rate of change,
       it will come out to be the same regardless of which input-output pairs we use.
     </p>
-    <example xml:id="LinearFunctionsandSlopeExample2">
+    <algorithm xml:id="LinearFunctionsandSlopeExample2">
       <statement>
         <p>
           Suppose <m>g</m> is a linear function,
@@ -150,24 +150,24 @@
             <cell>1</cell>
           </row>
         </tabular>
+        <p>
+          We have more input-output pairs than we actually need here.
+          To use the formula we only need two.
+          So we can choose any two to use.
+          Using, say, <m>a=3</m> and <m>b=8</m> we get:
+          <md>
+            <mrow>slope \amp = \frac{\Delta output}{\Delta input} = \frac{\Delta g(t)}{\Delta t}=\frac{g(b)-g(a)}{b-a}</mrow>
+            <mrow>\amp</mrow>
+            <mrow>\amp =\frac{g(8)-g(3)}{8-3}=\frac{1-11}{8-3}</mrow>
+            <mrow>\amp</mrow>
+            <mrow>\amp =\frac{-10}{5}=-2</mrow>
+          </md>
+        </p>
+        <p>
+          You can verify for yourself that choosing a different pair would give the same result.
+        </p>
       </statement>
-    </example>
-    <p>
-      We have more input-output pairs than we actually need here.
-      To use the formula we only need two.
-      So we can choose any two to use.
-      Using, say, <m>a=3</m> and <m>b=8</m> we get:
-      <md>
-        <mrow>slope \amp = \frac{\Delta output}{\Delta input} = \frac{\Delta g(t)}{\Delta t}=\frac{g(b)-g(a)}{b-a}</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp =\frac{g(8)-g(3)}{8-3}=\frac{1-11}{8-3}</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp =\frac{-10}{5}=-2</mrow>
-      </md>
-    </p>
-    <p>
-      You can verify for yourself that choosing a different pair would give the same result. }
-    </p>
+    </algorithm>
     <p>
       While the formula for slope is essentially the same as the formula for average rate of change (AROC), it is important to distinguish between slope and AROC:
       <ul>
@@ -208,7 +208,7 @@
       One of our main reasons for studying linear functions is that there are many real-world situations that can be modeled using them.
       Two of many possible examples are the following:
     </p>
-    <example xml:id="LinearFunctionsandSlopeExample3">
+    <algorithm xml:id="LinearFunctionsandSlopeExample3">
       <statement>
         <p>
           A contractor who refinishes hardwood floors calculates the prices,
@@ -221,26 +221,26 @@
           What is the slope of this pricing function <m>h(A)</m>?
           What is the rate at which he changes prices based on area?
         </p>
+        <p>
+          The function is linear so we can calculate its slope:
+          <me>
+            slope = \frac{\Delta output}{\Delta input} =\frac{h(600)-h(250)}{600-250} = \frac{1025-500}{600-250} = \frac{525}{350}=1.5
+          </me>
+        </p>
+        <p>
+          So, the slope is <m>1.5</m>.
+        </p>
+        <p>
+          The rate of change here is the slope.
+          The units of a rate of change are always
+          <q>output units per input unit</q>, and so since the output units are dollars and the input units are square feet,
+          the rate of change is <m>$1.50</m> per square foot.
+          In other words, for each additional square foot of area,
+          he raises the price of the job by <m>$1.50</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      The function is linear so we can calculate its slope:
-      <me>
-        slope = \frac{\Delta output}{\Delta input} =\frac{h(600)-h(250)}{600-2500} = \frac{1025-500}{600-250} = \frac{525}{350}=1.5
-      </me>
-    </p>
-    <p>
-      So, the slope is <m>1.5</m>.
-    </p>
-    <p>
-      The rate of change here is the slope.
-      The units of a rate of change are always
-      <q>output units per input unit</q>, and so since the output units are dollars and the input units are square feet,
-      the rate of change is <m>$1.50</m> per square foot.
-      In other words, for each additional square foot of area,
-      he raises the price of the job by <m>$1.50</m>. }
-    </p>
-    <example xml:id="LinearFunctionsandSlopeExample4">
+    </algorithm>
+    <algorithm xml:id="LinearFunctionsandSlopeExample4">
       <statement>
         <p>
           The scientist Galileo Galilei (1564-1642) discovered the principle of
@@ -251,25 +251,25 @@
           What is the slope of the function <m>v(t)</m>?
           What is the rate of change of the rock's velocity?
         </p>
+        <p>
+          Since we know the function is linear we can calculate its slope:
+          <me>
+            slope = \frac{\Delta \text{output}}{\Delta \text{input}} =\frac{v(2.5)-v(0)}{2.5-0} = \frac{80-0}{2.5-0}=32
+          </me>
+        </p>
+        <p>
+          So the slope of this function is 32.
+        </p>
+        <p>
+          The rate of change of velocity is the slope of the velocity function,
+          but to answer the question asked we should include units in the answer.
+          Remember that the units of an average rate of change
+          (and therefore the units of a slope)
+          are always
+          <q>output units per input unit</q>, so the rate of change of the rock's velocity would be 32 feet per second per second.
+        </p>
       </statement>
-    </example>
-    <p>
-      Since we know the function is linear we can calculate its slope:
-      <me>
-        slope = \frac{\Delta output}{\Delta input} =\frac{v(2.5)-v(0)}{2.5-0} = \frac{80-0}{2.5-0}=32
-      </me>
-    </p>
-    <p>
-      So the slope of this function is 32.
-    </p>
-    <p>
-      The rate of change of velocity is the slope of the velocity function,
-      but to answer the question asked we should include units in the answer.
-      Remember that the units of an average rate of change
-      (and therefore the units of a slope)
-      are always
-      <q>output units per input unit</q>, so the rate of change of the rock's velocity would be 32 feet per second per second. }
-    </p>
+    </algorithm>
     <p>
       Now, in all of the examples we've considered so far,
       we've known the function was linear because the problem specifically said it was linear.
@@ -317,7 +317,7 @@
     <p>
       A few examples will illustrate how this works.
     </p>
-    <example xml:id="LinearFunctionsandSlopeExample5">
+    <algorithm xml:id="LinearFunctionsandSlopeExample5">
       <statement>
         <p>
           An auto insurance company determines its rates for a policy based on the number of points you have on your license.
@@ -327,18 +327,18 @@
           Your insurance rate is a function of how many points you have.
           Is it a linear function?
         </p>
+        <p>
+          Your insurance rate changes as the number of points you have on your license changes,
+          and following the
+          <q>output units per input unit</q>
+          model this rate of change would be measured in dollars per point.
+          From the description it is clear that this rate of change is a constant <m>$80</m> per point,
+          and so the function is indeed linear.
+          In fact, we know that <m>$80</m> per point is its slope.
+        </p>
       </statement>
-    </example>
-    <p>
-      Your insurance rate changes as the number of points you have on your license changes,
-      and following the
-      <q>output units per input unit</q>
-      model this rate of change would be measured in dollars per point.
-      From the description it is clear that this rate of change is a constant <m>$80</m> per point,
-      and so the function is indeed linear.
-      In fact, we know that <m>$80</m> per point is its slope.
-    </p>
-    <example xml:id="LinearFunctionsandSlopeExample6">
+    </algorithm>
+    <algorithm xml:id="LinearFunctionsandSlopeExample6">
       <statement>
         <p>
           Cattarauqua Ginseng Enterprises sells wholesale premium grade American ginseng at a price of
@@ -347,19 +347,19 @@
           Cost is a function of weight.
           Is it a linear function?
         </p>
+        <p>
+          The rate of change would be how quickly the price of your order rises as its weight increases,
+          measured in dollars per pound.
+          As you add additional pounds to your order,
+          the price rises at a rate of <m>$18</m> per pound.
+          But, once you reach <m>100</m> pounds,
+          the price then rises at a rate of <m>$16</m> per pound.
+          So the rate of change itself changes.
+          So this function is not linear.
+        </p>
       </statement>
-    </example>
-    <p>
-      The rate of change would be how quickly the price of your order rises as its weight increases,
-      measured in dollars per pound.
-      As you add additional pounds to your order,
-      the price rises at a rate of <m>$18</m> per pound.
-      But, once you reach <m>100</m> pounds,
-      the price then rises at a rate of <m>$16</m> per pound.
-      So the rate of change itself changes.
-      So this function is not linear.
-    </p>
-    <example xml:id="LinearFunctionsandSlopeExample7">
+    </algorithm>
+    <algorithm xml:id="LinearFunctionsandSlopeExample7">
       <statement>
         <p>
           A landscaper needs to determine the amount of fertilizer to load into a spreader to fertilize a town's athletic fields.
@@ -370,17 +370,17 @@
           (in square yards).
           Is it a linear function?
         </p>
+        <p>
+          We need to consider the rate at which the amount of fertilizer changes as the area to be covered increases,
+          measured in pounds per square yard.
+          So we are talking about an application rate for the fertilizer.
+          Based on the information given,
+          it would seem that there would be a constant rate of application for the fertilizer,
+          so, yes, this is almost certainly a linear function.
+        </p>
       </statement>
-    </example>
-    <p>
-      We need to consider the rate at which the amount of fertilizer changes as the area to be covered increases,
-      measured in pounds per square yard.
-      So we are talking about an application rate for the fertilizer.
-      Based on the information given,
-      it would seem that there would be a constant rate of application for the fertilizer,
-      so, yes, this is almost certainly a linear function.
-    </p>
-    <example xml:id="LinearFunctionsandSlopeExample8">
+    </algorithm>
+    <algorithm xml:id="LinearFunctionsandSlopeExample8">
       <statement>
         <p>
           The circulation manager for a public library is keeping records about the total number of books checked out at any given time,
@@ -388,18 +388,18 @@
           The number of books checked out of the library is a function of time since the start of the year.
           Is it a linear function?
         </p>
+        <p>
+          The number of books checked out at any given time is of course changing,
+          and its rate of change would be measured in books per day.
+          (We are assuming time would be measured in days,
+          though it could also be measured in hours or weeks or minutes too,
+          but that doesn't affect our problem here.)
+          So, would the library always see the number of books checked out changing at the same rate of books per day?
+          That seems absurdly unlikely.
+          This function cannot possibly be linear.
+        </p>
       </statement>
-    </example>
-    <p>
-      The number of books checked out at any given time is of course changing,
-      and its rate of change would be measured in books per day.
-      (We are assuming time would be measured in days,
-      though it could also be measured in hours or weeks or minutes too,
-      but that doesn't affect our problem here.)
-      So, would the library always see the number of books checked out changing at the same rate of books per day?
-      That seems absurdly unlikely.
-      This function cannot possibly be linear.
-    </p>
+    </algorithm>
     <p>
       In the exercises you'll have the opportunity to work through some more examples,
       and we will see even more about this as we continue through the rest of the chapter.
@@ -463,7 +463,11 @@
     </p>
     <figure>
       <caption>A plot of the values in the table</caption>
-      <image width="92.5%" source="LinearFunctionsandSlopeImages/Figure01.png" />
+      <image width="92.5%" source="LinearFunctionsandSlopeImages/Figure01.png">
+        <description>
+          A black and white scatter plot on a coordinate plane showing four small square data points. The points are arranged in a straight line that increases linearly as it moves from left to right, starting near the origin. The x and y axes both have tick marks but no numerical labels.
+        </description>
+      </image>
     </figure>
     <p>
       Is this a coincidence?
@@ -501,7 +505,11 @@
     </p>
     <figure>
       <caption>Visualizing slope graphically</caption>
-      <image width="92.5%" source="LinearFunctionsandSlopeImages/Figure02.png" />
+      <image width="92.5%" source="LinearFunctionsandSlopeImages/Figure02.png">
+        <description>
+          A diagram on a coordinate plane illustrating the concept of slope. A dashed diagonal line segment connects two points, forming the hypotenuse of a right triangle. The horizontal base of the triangle is labeled "runs 1 unit," and the vertical side is labeled "rises 2 units," demonstrating a slope of 2.
+        </description>
+      </image>
     </figure>
     <p>
       We can see the same thing if we look, say,
@@ -518,7 +526,11 @@
     </p>
     <figure>
       <caption>Graph of water in tub vs. time</caption>
-      <image width="92.5%" source="LinearFunctionsandSlopeImages/Figure03.png" />
+      <image width="92.5%" source="LinearFunctionsandSlopeImages/Figure03.png">
+        <description>
+          A black and white graph on a coordinate plane showing a continuous straight line passing through four specific data points. The line starts from the origin and increases linearly at a constant rate as it moves to the right. The axes feature tick marks without numerical values.
+        </description>
+      </image>
     </figure>
     <p>
       In summary: Slope shows up in a graph as steepness.
@@ -526,7 +538,7 @@
       a linear function's graph must have constant steepness, And so,
       a function is linear if and only if its graph is a straight line.
     </p>
-    <example xml:id="LinearFunctionsandSlopeExample9">
+    <algorithm xml:id="LinearFunctionsandSlopeExample9">
       <statement>
         <p>
           The height of a sunflower is a function of time since the seed was planted.
@@ -534,22 +546,26 @@
         </p>
         <figure>
           <caption>Graph of water in tub vs. time</caption>
-          <image width="92.5%" source="LinearFunctionsandSlopeImages/Figure04.png" />
+          <image width="92.5%" source="LinearFunctionsandSlopeImages/Figure04.png">
+            <description>
+              A black and white graph on a coordinate plane showing a curved line that begins near the origin, increases with an upward concavity, then transitions to a downward concavity before leveling off into a horizontal asymptote. The x and y axes feature tick marks without numerical values.
+            </description>
+          </image>
         </figure>
         <p>
           Could this be a linear function?
           How do you know?
         </p>
+        <p>
+          If the function were linear, its graph would be a straight line.
+          This graph is not.
+          The steepness of the graph changes,
+          reflecting the fact that the plant grows more rapidly at certain times of its life cycle than at others.
+          Because the steepness and the rate of growth that it represents are not constant,
+          the function cannot possibly be linear.
+        </p>
       </statement>
-    </example>
-    <p>
-      If the function were linear, its graph would be a straight line.
-      This graph is not.
-      The steepness of the graph changes,
-      reflecting the fact that the plant grows more rapidly at certain times of its life cycle than at others.
-      Because the steepness and the rate of growth that it represents are not constant,
-      the function cannot possibly be linear.
-    </p>
+    </algorithm>
     <p>
       The steepness of a graph indicates its rate of change.
       If a function has a very large rate of change,
@@ -563,7 +579,7 @@
       If the function is decreasing,
       the slope will be negative, and the graph will slope downward.
     </p>
-    <example xml:id="LinearFunctionsandSlopeExample10">
+    <algorithm xml:id="LinearFunctionsandSlopeExample10">
       <statement>
         <p>
           Four graphs are shown in the window below.
@@ -589,74 +605,78 @@
           Which graph goes with which family's pool?
         </p>
         <figure>
-          <image width="92.5%" source="LinearFunctionsandSlopeImages/Figure05.png" />
+          <image width="92.5%" source="LinearFunctionsandSlopeImages/Figure05.png">
+            <description>
+              A black and white graph on a coordinate plane showing four distinct straight lines all originating from the same point on the y-axis. One line is steeply increasing, one is moderately increasing, one is perfectly horizontal, and one is decreasing. The axes feature tick marks without numerical values.
+            </description>
+          </image>
         </figure>
+        <p>
+          The Billingsley's are draining their pool,
+          so the amount of water in their pool is decreasing as a function of time.
+          So theirs must be the downward sloping line.
+        </p>
+        <p>
+          The Ahmed's and the Chao's are both filling their pools,
+          so they must own the rising lines.
+          Since the Chao's are filling their pool faster,
+          their slope is larger, and so their graph must be the steeper one.
+        </p>
+        <p>
+          Since the Damiani's aren't doing anything,
+          their slope is zero and their graph must be the flat one.
+        </p>
       </statement>
-    </example>
-    <p>
-      The Billingsley's are draining their pool,
-      so the amount of water in their pool is decreasing as a function of time.
-      So theirs must be the downward sloping line.
-    </p>
-    <p>
-      The Ahmed's and the Chao's are both filling their pools,
-      so they must own the rising lines.
-      Since the Chao's are filling their pool faster,
-      their slope is larger, and so their graph must be the steeper one.
-    </p>
-    <p>
-      Since the Damiani's aren't doing anything,
-      their slope is zero and their graph must be the flat one. }
-    </p>
+    </algorithm>
     <p>
       We have seen that we can find the slope of a given function based on knowing any two of its input-output pairs.
       Input-output pairs are the points on the graph of the function.
       And so, if we know any two points on a linear function's graph,
       we can calculate the function's slope.
     </p>
-    <example xml:id="LinearFunctionsandSlopeExample11">
+    <algorithm xml:id="LinearFunctionsandSlopeExample11">
       <statement>
         <p>
           Find the slope of the linear function whose graph passes through the points <m>(3,5)</m> and <m>(-4,13)</m>.
         </p>
+        <p>
+          We have two input values to use.
+          Suppose we take them in the order given and say <m>a=3</m> and <m>b=-4</m>.
+          (It doesn't matter which you call <m>a</m> and which you call <m>b</m>;
+          everything works out fine whichever you choose.)
+          Following the formula we get:
+          <me>
+            slope=\frac{\Delta output}{\Delta input} = \frac{\Delta f(x)}{\Delta x} = \frac{f(-4)-f(3)}{-4-3}=\frac{13-5}{-4-3}=\frac{8}{-7}
+          </me>
+        </p>
+        <p>
+          So the slope is <m>-\frac{8}{7}</m>.
+        </p>
+        <p>
+          Sometimes the slope formula is written differently,
+          based on the idea of using two points on the graph to determine slope.
+          If we have two points, which we call <m>(x_1,y_1)</m> and
+          <m>(x_2,y_2)</m> we can use the formula:
+          <me>
+            slope=\frac{y_2-y_1}{x_2-x_1}
+          </me>
+        </p>
+        <p>
+          It's likely that you've seen the slope formula written in this way at some point in the past.
+          While this formula is correct and it works just fine,
+          it really isn't necessary.
+          It's really just another way of writing the slope formula that we've been using.
+        </p>
+        <p>
+          In this text,
+          we'll continue to use the function-notation formula for slope we've been using.
+          There really is no advantage to this other two-point formula,
+          and the function-notation formula we've been using is both more general and also will prove more useful to you in your future mathematical career.
+          So, while it is not incorrect to use this other formula if you are used to using it,
+          it is probably going to be to your advantage to try to stick with the function-notation formula we've been using.
+        </p>
       </statement>
-    </example>
-    <p>
-      We have two input values to use.
-      Suppose we take them in the order given and say <m>a=3</m> and <m>b=-4</m>.
-      (It doesn't matter which you call <m>a</m> and which you call <m>b</m>;
-      everything works out fine whichever you choose.)
-      Following the formula we get:
-      <me>
-        slope=\frac{\Delta output}{\Delta input} = \frac{\Delta f(x)}{\Delta x} = \frac{f(-4)-f(3)}{-4-3}=\frac{13-5}{-4-3}=\frac{8}{-7}
-      </me>
-    </p>
-    <p>
-      So the slope is <m>-\frac{8}{7}</m>. }
-    </p>
-    <p>
-      Sometimes the slope formula is written differently,
-      based on the idea of using two points on the graph to determine slope.
-      If we have two points, which we call <m>(x_1,y_1)</m> and
-      <m>x_2,y_2)</m> we can use the formula:
-      <me>
-        slope=\frac{y_2-y_1}{x_2-x_1}
-      </me>
-    </p>
-    <p>
-      It's likely that you've seen the slope formula written in this way at some point in the past.
-      While this formula is correct and it works just fine,
-      it really isn't necessary.
-      It's really just another way of writing the slope formula that we've been using.
-    </p>
-    <p>
-      In this text,
-      we'll continue to use the function-notation formula for slope we've been using.
-      There really is no advantage to this other two-point formula,
-      and the function-notation formula we've been using is both more general and also will prove more useful to you in your future mathematical career.
-      So, while it is not incorrect to use this other formula if you are used to using it,
-      it is probably going to be to your advantage to try to stick with the function-notation formula we've been using.
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Exercises</title>
@@ -1033,19 +1053,35 @@
         <statement>
           
           <figure>
-            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise23a.png" />
+            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise23a.png">
+              <description>
+                A black and white graph on a coordinate plane showing a periodic sine or cosine wave. The wave oscillates symmetrically above and below the x-axis with a constant amplitude and frequency. The axes feature tick marks without numerical values.
+              </description>
+            </image>
           </figure>
           
           <figure>
-            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise23b.png" />
+            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise23b.png">
+              <description>
+                A black and white graph on a coordinate plane showing a single continuous straight line. The line has a positive slope, increasing as it moves from left to right, and crosses the y-axis below the origin. The axes feature tick marks without numerical values.
+              </description>
+            </image>
           </figure>
           
           <figure>
-            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise23c.png" />
+            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise23c.png">
+              <description>
+                A black and white graph on a coordinate plane showing a single continuous straight line. The line has a negative slope, decreasing as it moves from left to right, and crosses the y-axis above the origin. The axes feature tick marks without numerical values.
+              </description>
+            </image>
           </figure>
           
           <figure>
-            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise23d.png" />
+            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise23d.png">
+              <description>
+                A black and white graph on a coordinate plane showing a curved line that starts high on the y-axis and decreases as it moves to the right. The curve is concave up, meaning it decreases rapidly at first and then levels off as it approaches the x-axis, suggesting an exponential decay. The axes feature tick marks without numerical values.
+              </description>
+            </image>
           </figure>
           
         </statement>
@@ -1068,19 +1104,35 @@
         <statement>
           
           <figure>
-            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise24a.png" />
+            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise24a.png">
+              <description>
+                A black and white graph on a coordinate plane showing a horizontal straight line. The line is parallel to the x-axis and passes through the y-axis at a positive value. The axes feature tick marks without numerical values.
+              </description>
+            </image>
           </figure>
           
           <figure>
-            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise24b.png" />
+            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise24b.png">
+              <description>
+                A black and white graph on a coordinate plane showing a single continuous straight line with a positive slope. The line increases as it moves from left to right and crosses the y-axis at a positive value. The axes feature tick marks without numerical values.
+              </description>
+            </image>
           </figure>
           
           <figure>
-            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise24c.png" />
+            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise24c.png">
+              <description>
+                A black and white graph on a coordinate plane showing a curved line that is concave down. The curve increases as it moves toward the y-axis, reaches a maximum point on the y-axis above the origin, and then decreases as it moves to the right. The axes feature tick marks without numerical values.
+              </description>
+            </image>
           </figure>
           
           <figure>
-            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise24d.png" />
+            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise24d.png">
+              <description>
+                A black and white graph on a coordinate plane showing a curved line that is concave up. The curve begins at the origin and increases at an increasing rate as it moves to the right, suggesting a parabolic or exponential growth. The axes feature tick marks without numerical values.
+              </description>
+            </image>
           </figure>
           
         </statement>
@@ -1315,7 +1367,11 @@
             What is the function's slope?
           </p>
           <figure>
-            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise43.png" />
+            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise43.png">
+              <description>
+                A black and white digital table from a graphing calculator. The table has two columns labeled X and Y1. The data points shown are: (4, 3), (7, -4.5), (-13, 45.5), and (25, -49.5). A cursor is highlighting an empty row at the bottom of the X column, and the text "X=" is displayed at the very bottom.
+              </description>
+            </image>
           </figure>
         </statement>
         <solution>
@@ -1331,7 +1387,11 @@
             How do you know?
           </p>
           <figure>
-            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise44.png" />
+            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise44.png">
+              <description>
+                A black and white digital table from a graphing calculator with columns labeled X and Y1. The table displays a set of points where Y1 is the square of X: (0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25), and (6, 36). A black cursor highlights the first entry in the X column, and "X=0" is displayed at the bottom of the screen.
+              </description>
+            </image>
           </figure>
         </statement>
       </exercise>
@@ -1342,7 +1402,11 @@
             How do you know?
           </p>
           <figure>
-            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise45.png" />
+            <image width="92.5%" source="LinearFunctionsandSlopeImages/Exercise45.png">
+              <description>
+                A black and white digital table from a graphing calculator with two columns labeled X and Y1. The table contains four data points: (2, 8), (5, 17), (6, 20), and (10, 32). A cursor highlights an empty row at the bottom of the X column, and "X=" is shown at the bottom of the screen.
+              </description>
+            </image>
           </figure>
         </statement>
         <solution>
