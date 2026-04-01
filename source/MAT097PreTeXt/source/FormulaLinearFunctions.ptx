@@ -29,26 +29,26 @@
       So, if we know the slope and vertical intercept of a linear function,
       we can write a formula for the function simply by plugging that slope and intercept into this general form.
     </p>
-    <example xml:id="FormulaLinearFunctionsExample1">
+    <algorithm xml:id="FormulaLinearFunctionsExample1">
       <statement>
         <p>
           Suppose <m>f(x)</m> is a linear function whose slope is <m>-5</m> and vertical intercept is <m>(0, 8)</m>.
           Find a formula for <m>f(x)</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      Since it is linear, we know that
-      <m>f(x)=mx+b</m> for the appropriate values of <m>m</m> and <m>b</m>.
-      Now <m>m</m> is the slope, so we know that <m>m</m> is <m>-5</m>.
-      The vertical intercept can be given as a point, as it is here,
-      or just as the output value of that point which would be just <m>8</m>,
-      and so that's <m>b</m>.
-      So substituting thosevalues into the slope-intercept form we get that
-      <me>
-        f(x)=-5x+8
-      </me>
-    </p>
+      <p>
+        Since it is linear, we know that
+        <m>f(x)=mx+b</m> for the appropriate values of <m>m</m> and <m>b</m>.
+        Now <m>m</m> is the slope, so we know that <m>m</m> is <m>-5</m>.
+        The vertical intercept can be given as a point, as it is here,
+        or just as the output value of that point which would be just <m>8</m>,
+        and so that's <m>b</m>.
+        So substituting thosevalues into the slope-intercept form we get that
+        <me>
+          f(x)=-5x+8
+        </me>
+      </p>
+    </algorithm>
     <p>
       It really is just that simple,
       if we know the slope and vertical intercept.
@@ -58,7 +58,7 @@
       In fact, when we worked out a couple formulas at the start of <xref ref="LinearFunctionsandIntercepts">Section</xref> using common sense reasoning,
       this is in fact what we were doing.
     </p>
-    <example xml:id="FormulaLinearFunctionsExample2">
+    <algorithm xml:id="FormulaLinearFunctionsExample2">
       <statement>
         <p>
           A new bottle of vitamins contains <m>75</m> pills,
@@ -66,19 +66,19 @@
           Find a formula for the number of pills the bottle will contain after <m>t</m> full daily doses have been taken.
         </p>
       </statement>
-    </example>
-    <p>
-      The function is linear,
-      because with each full daily dose the number of pills changes by the same amount,
-      it drops by three.
-      The vertical intercept is the starting point, or more precisely,
-      it is the number of pills in the bottle when the number of daily doses taken is zero.
-      So <m>m</m> is <m>-3</m> and <m>b</m> is <m>75</m>.
-      And so:
-      <me>
-        f(t)=-3t+75
-      </me>
-    </p>
+      <p>
+        The function is linear,
+        because with each full daily dose the number of pills changes by the same amount,
+        it drops by three.
+        The vertical intercept is the starting point, or more precisely,
+        it is the number of pills in the bottle when the number of daily doses taken is zero.
+        So <m>m</m> is <m>-3</m> and <m>b</m> is <m>75</m>.
+        And so:
+        <me>
+          f(t)=-3t+75
+        </me>
+      </p>
+    </algorithm>
     <p>
       It's not unusual to change the formula a bit,
       especially when a different order might seem to better reflect the
@@ -149,72 +149,72 @@
       example just to show how this method works,
       and then will move to a real-world application example which will allow us to see both how the method works and a little bit of interpretation along the way.
     </p>
-    <example xml:id="FormulaLinearFunctionsExample3">
+    <algorithm xml:id="FormulaLinearFunctionsExample3">
       <statement>
         <p>
           Find the formula for the linear function <m>g(t)</m> given that the function's slope is <m>-4.5</m> and the function's graph passes through the point <m>(5, 12)</m>.
         </p>
       </statement>
-    </example>
-    <ol>
-      <li>
-        <p>
-          We begin with the fact that since we know <m>g(t)</m> is linear,
-          it must have a formula of the form:
-          <me>
-            g(t)=mx+b
-          </me>
-        </p>
-      </li>
-      <li>
-        <p>
-          Now since we know the slope, we can plug that in to get:
-          <me>
-            g(t)=-4.5t+b
-          </me>
-        </p>
-      </li>
-      <li>
-        <p>
-          Next, since the graph passes through the point <m>(5,12)</m> we know that <m>g(5)=12</m>,
-          and so if we plug in the input of <m>5</m> for <m>t</m> the output must be <m>12</m>.
-          Plugging those values in we get:
-          <me>
-            12=-4.5(5)+b
-          </me>
-        </p>
-      </li>
-      <li>
-        <p>
-          Now this is an equation we can solve for <m>b</m>.
-          Doing that we get:
-          <me>
-            12 = -22.5 + b
-          </me>
-          <me>
-            b=34.5
-          </me>
-        </p>
-      </li>
-      <li>
-        <p>
-          So now we know that our function's slope is <m>-4.5</m> and its vertical intercept is <m>34.5</m>.
-          So, putting these facts together,
-          we conclude that the formula is:
-          <me>
-            g(t)=-4.5t+34.5
-          </me>
-        </p>
-      </li>
-    </ol>
-    <p>
-      In this first example we listed the numbered steps of the method explicitly.
-      We won't do that in future examples,
-      but you can see that we are in fact still following them.
-      In the next example,
-      we'll use the method to find a formula where there is a real world interpretation to the linear function and see how this gives some extra insight into why this method works.
-    </p>
-    <example xml:id="FormulaLinearFunctionsExample4">
+      <ol>
+        <li>
+          <p>
+            We begin with the fact that since we know <m>g(t)</m> is linear,
+            it must have a formula of the form:
+            <me>
+              g(t)=mx+b
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            Now since we know the slope, we can plug that in to get:
+            <me>
+              g(t)=-4.5t+b
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            Next, since the graph passes through the point <m>(5,12)</m> we know that <m>g(5)=12</m>,
+            and so if we plug in the input of <m>5</m> for <m>t</m> the output must be <m>12</m>.
+            Plugging those values in we get:
+            <me>
+              12=-4.5(5)+b
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            Now this is an equation we can solve for <m>b</m>.
+            Doing that we get:
+            <me>
+              12 = -22.5 + b
+            </me>
+            <me>
+              b=34.5
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            So now we know that our function's slope is <m>-4.5</m> and its vertical intercept is <m>34.5</m>.
+            So, putting these facts together,
+            we conclude that the formula is:
+            <me>
+              g(t)=-4.5t+34.5
+            </me>
+          </p>
+        </li>
+      </ol>
+      <p>
+        In this first example we listed the numbered steps of the method explicitly.
+        We won't do that in future examples,
+        but you can see that we are in fact still following them.
+        In the next example,
+        we'll use the method to find a formula where there is a real world interpretation to the linear function and see how this gives some extra insight into why this method works.
+      </p>
+    </algorithm>
+    <algorithm xml:id="FormulaLinearFunctionsExample4">
       <statement>
         <p>
           An online music site charges a fixed monthly membership fee,
@@ -224,66 +224,66 @@
           Find a formula for the amount I pay as a function of the number of songs I download.
         </p>
       </statement>
-    </example>
-    <p>
-      First we note that this function would indeed be linear.
-      The input is music purchased
-      (counted in songs),
-      and the output is cost
-      (in dollars).
-      The rate of change would be dollars per song,
-      and we are told this is a constant <m>$0.85</m> per song.
-      So the function is linear.
-    </p>
-    <p>
-      If we let <m>s</m> be the number of songs and <m>C(s)</m> be the cost for downloading that many songs, then:
-      <me>
-        C(s)=mx+b
-      </me>
-    </p>
-    <p>
-      Plugging in the known slope we get:
-      <me>
-        C(s)=0.85s+b
-      </me>
-    </p>
-    <p>
-      Since an input of <m>32</m> songs gives and output of a <m>$35.20</m> charge, we know:
-      <me>
-        35.2 = 0.85(32)+b
-      </me>
-    </p>
-    <p>
-      And so we solve for <m>b</m> and get:
-      <me>
-        35.2 = 27.2+b
-      </me>
-      <me>
-        b=8
-      </me>
-    </p>
-    <p>
-      Putting the slope and vertical intercept together we get that the overall formula must be:
-      <me>
-        C(s)=0.85s+8
-      </me>
-    </p>
-    <p>
-      We can add some interpretation to this formula as well.
-      The vertical intercept is the charge you'd pay when the input - the number of songs you download - is zero.
-      So, we can interpret this function as telling us that you pay
-      <m>$8</m> per month just to have the service,
-      plus <m>$0.85</m> per download. }
-    </p>
-    <p>
-      This example agrees with a less-structured but commonsense way of figuring this out.
-      Rather than using the formal method we've laid out here,
-      you could have figured this formula out by reasoning that since each download costs
-      <m>$0.85</m>, I must have paid <m>32($0.85)=$27.20</m> for the downloads.
-      Since my total charge was <m>$35.20</m>,
-      the membership fee must have been <m>$35.20-$27.20 = $8</m>.
-      From this you could have easily arrived at the formula.
-    </p>
+      <p>
+        First we note that this function would indeed be linear.
+        The input is music purchased
+        (counted in songs),
+        and the output is cost
+        (in dollars).
+        The rate of change would be dollars per song,
+        and we are told this is a constant <m>$0.85</m> per song.
+        So the function is linear.
+      </p>
+      <p>
+        If we let <m>s</m> be the number of songs and <m>C(s)</m> be the cost for downloading that many songs, then:
+        <me>
+          C(s)=mx+b
+        </me>
+      </p>
+      <p>
+        Plugging in the known slope we get:
+        <me>
+          C(s)=0.85s+b
+        </me>
+      </p>
+      <p>
+        Since an input of <m>32</m> songs gives and output of a <m>$35.20</m> charge, we know:
+        <me>
+          35.2 = 0.85(32)+b
+        </me>
+      </p>
+      <p>
+        And so we solve for <m>b</m> and get:
+        <me>
+          35.2 = 27.2+b
+        </me>
+        <me>
+          b=8
+        </me>
+      </p>
+      <p>
+        Putting the slope and vertical intercept together we get that the overall formula must be:
+        <me>
+          C(s)=0.85s+8
+        </me>
+      </p>
+      <p>
+        We can add some interpretation to this formula as well.
+        The vertical intercept is the charge you'd pay when the input - the number of songs you download - is zero.
+        So, we can interpret this function as telling us that you pay
+        <m>$8</m> per month just to have the service,
+        plus <m>$0.85</m> per download.
+      </p>
+      <p>
+        This example agrees with a less-structured but commonsense way of figuring this out.
+        Rather than using the formal method we've laid out here,
+        you could have figured this formula out by reasoning that since each download costs
+        <m>$0.85</m>, I must have paid <m>32($0.85)=$27.20</m> for the downloads.
+        Since my total charge was <m>$35.20</m>,
+        the membership fee must have been <m>$35.20-$27.20 = $8</m>.
+        From this you could have easily arrived at the formula.
+      </p>
+    </algorithm>
     <p>
       Such reasoning is perfectly correct,
       and in fact if you look through the example,
@@ -382,34 +382,34 @@
     <p>
       We will illustrate the use of this method by reworking the previous two examples.
     </p>
-    <example xml:id="FormulaLinearFunctionsExample5">
+    <algorithm xml:id="FormulaLinearFunctionsExample5">
       <statement>
         <p>
           Find the formula for the linear function <m>g(t)</m> given that the function's slope is <m>-4.5</m> and the function's graph passes through the point <m>(5,12)</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      Here the input variable is <m>t</m> and so we use that in place of <m>x</m>.
-      There is no output variable given so we will use <m>y</m>.
-    </p>
-    <p>
-      We have here that <m>m=-4.5</m>,
-      <m>t_0=5</m> and <m>y_0=12</m>.
-      We plug these into the point-slope form to get:
-      <me>
-        y=m(t-t_0)+y_0\\ y=-4.5(t-5)+12
-      </me>
-      and now we simplify:
-      <me>
-        y=-4.5t+22.5 + 12\\ y=-4.5t+34.5
-      </me>
-      and finally rewriting in function form by replacing the <m>y</m> with an <m>g(t)</m>:
-      <me>
-        g(t)=-4.5t+34.5
-      </me>
-    </p>
-    <example xml:id="FormulaLinearFunctionsExample6">
+      <p>
+        Here the input variable is <m>t</m> and so we use that in place of <m>x</m>.
+        There is no output variable given so we will use <m>y</m>.
+      </p>
+      <p>
+        We have here that <m>m=-4.5</m>,
+        <m>t_0=5</m> and <m>y_0=12</m>.
+        We plug these into the point-slope form to get:
+        <me>
+          y=m(t-t_0)+y_0\\ y=-4.5(t-5)+12
+        </me>
+        and now we simplify:
+        <me>
+          y=-4.5t+22.5 + 12\\ y=-4.5t+34.5
+        </me>
+        and finally rewriting in function form by replacing the <m>y</m> with an <m>g(t)</m>:
+        <me>
+          g(t)=-4.5t+34.5
+        </me>
+      </p>
+    </algorithm>
+    <algorithm xml:id="FormulaLinearFunctionsExample6">
       <statement>
         <p>
           An online music site charges a fixed monthly membership fee,
@@ -419,37 +419,37 @@
           Find a formula for the amount I pay as a function of the number of songs I download.
         </p>
       </statement>
-    </example>
-    <p>
-      Just as we did the first time,
-      we must first note that this function would indeed be linear.
-      The input is music purchased
-      (counted in songs),
-      and the output is cost
-      (in dollars).
-      The rate of change would be dollars per song,
-      and we are told this is a constant <m>$0.85</m> per song.
-      So the function is linear.
-    </p>
-    <p>
-      If we let <m>s</m> be the number of songs and <m>C(s)</m> be the cost for downloading that many songs,
-      as we did before, and let <m>y</m> stand in as the output variable,
-      we have that <m>m=0.85</m> and the known input output pair
-      <m>(s_0,y_0)</m> is <m>(32,35.20)</m>.
-      Plugging this in to the point-slope form we get:
-      <md>
-        <mrow>y=m(s-s_0)+y_0</mrow>
-        <mrow>y=0.85(s-32)+35.2</mrow>
-        <mrow>y=0.85s-27.2+35.2</mrow>
-        <mrow>y=0.85s+8</mrow>
-      </md>
-    </p>
-    <p>
-      Which we can then rewrite in function notation as:
-      <me>
-        C(s)=0.85s+8
-      </me>
-    </p>
+      <p>
+        Just as we did the first time,
+        we must first note that this function would indeed be linear.
+        The input is music purchased
+        (counted in songs),
+        and the output is cost
+        (in dollars).
+        The rate of change would be dollars per song,
+        and we are told this is a constant <m>$0.85</m> per song.
+        So the function is linear.
+      </p>
+      <p>
+        If we let <m>s</m> be the number of songs and <m>C(s)</m> be the cost for downloading that many songs,
+        as we did before, and let <m>y</m> stand in as the output variable,
+        we have that <m>m=0.85</m> and the known input output pair
+        <m>(s_0,y_0)</m> is <m>(32,35.20)</m>.
+        Plugging this in to the point-slope form we get:
+        <md>
+          <mrow>y=m(s-s_0)+y_0</mrow>
+          <mrow>y=0.85(s-32)+35.2</mrow>
+          <mrow>y=0.85s-27.2+35.2</mrow>
+          <mrow>y=0.85s+8</mrow>
+        </md>
+      </p>
+      <p>
+        Which we can then rewrite in function notation as:
+        <me>
+          C(s)=0.85s+8
+        </me>
+      </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Formulas for Linear Models Given Two Input-Output Pairs</title>
@@ -493,63 +493,63 @@
       Essentially then we are just adding on an additional step at the start - finding the slope.
       Once we've done that, we are pretty much in the same boat as before.
     </p>
-    <example xml:id="FormulaLinearFunctionsExample7">
+    <algorithm xml:id="FormulaLinearFunctionsExample7">
       <statement>
         <p>
           Find the formula for the linear function whose graph passes through the points <m>(2,9)</m> and <m>(-1,24)</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      We first find the slope:
-      <md>
-        <mrow>m\amp =\frac{\Delta output}{\Delta input}=\frac{\Delta f(x)}{\Delta x}=\frac{f(2)=f(-1)}{2-(-1)}</mrow>
-        <mrow>\amp =\frac{9-24}{2-(-1)}</mrow>
-        <mrow>\amp =\frac{-15}{3}</mrow>
-        <mrow>\amp =-5</mrow>
-      </md>
-    </p>
-    <p>
-      We now know the slope and can use it together with either of the two given input-output pairs.
-      Here we will use <m>(2,9)</m> for no particular reason other than we have to pick one of them. (Using the other pair will work equally well).
-    </p>
-    <p>
-      We'll use the Back Substitution Method here (though using the point-slope form would work equally well.
-      You've got choices!)
-    </p>
-    <p>
-      Since the function is linear we know it can be written in the form:
-      <me>
-        f(x)=mx+b
-      </me>
-    </p>
-    <p>
-      Plugging in the slope we get:
-      <me>
-        f(x)=-5x+b
-      </me>
-    </p>
-    <p>
-      And now plugging in the input-output pair and solving for <m>b</m>:
-      <md>
-        <mrow>9\amp =-5(2)+b</mrow>
-        <mrow>9\amp =-10+b</mrow>
-        <mrow>b=19</mrow>
-      </md>
-    </p>
-    <p>
-      And finally putting this all together we get:
-      <me>
-        f(x)=-5x+19
-      </me>
-    </p>
-    <p>
-      Knowing a second input-output pair gives an opportunity to check your answer if you like.
-      If the formula is correct,
-      we know it should give <m>f(-1)=24</m> because <m>(-1,24)</m> is on its graph.
-      You can verify for yourself that this does indeed work correctly.
-    </p>
-    <example xml:id="FormulaLinearFunctionsExample8">
+      <p>
+        We first find the slope:
+        <md>
+          <mrow>m\amp =\frac{\Delta output}{\Delta input}=\frac{\Delta f(x)}{\Delta x}=\frac{f(2)=f(-1)}{2-(-1)}</mrow>
+          <mrow>\amp =\frac{9-24}{2-(-1)}</mrow>
+          <mrow>\amp =\frac{-15}{3}</mrow>
+          <mrow>\amp =-5</mrow>
+        </md>
+      </p>
+      <p>
+        We now know the slope and can use it together with either of the two given input-output pairs.
+        Here we will use <m>(2,9)</m> for no particular reason other than we have to pick one of them. (Using the other pair will work equally well).
+      </p>
+      <p>
+        We'll use the Back Substitution Method here (though using the point-slope form would work equally well.
+        You've got choices!)
+      </p>
+      <p>
+        Since the function is linear we know it can be written in the form:
+        <me>
+          f(x)=mx+b
+        </me>
+      </p>
+      <p>
+        Plugging in the slope we get:
+        <me>
+          f(x)=-5x+b
+        </me>
+      </p>
+      <p>
+        And now plugging in the input-output pair and solving for <m>b</m>:
+        <md>
+          <mrow>9\amp =-5(2)+b</mrow>
+          <mrow>9\amp =-10+b</mrow>
+          <mrow>b=19</mrow>
+        </md>
+      </p>
+      <p>
+        And finally putting this all together we get:
+        <me>
+          f(x)=-5x+19
+        </me>
+      </p>
+      <p>
+        Knowing a second input-output pair gives an opportunity to check your answer if you like.
+        If the formula is correct,
+        we know it should give <m>f(-1)=24</m> because <m>(-1,24)</m> is on its graph.
+        You can verify for yourself that this does indeed work correctly.
+      </p>
+    </algorithm>
+    <algorithm xml:id="FormulaLinearFunctionsExample8">
       <statement>
         <p>
           In patients with diabetes,
@@ -588,63 +588,63 @@
           </ol>
         </p>
       </statement>
-    </example>
-    <ol marker="a">
-      <li>
-        <p>
-          Here we know two input-output pairs,
-          and so we can use them to find the slope:
-          <md>
-            <mrow>m\amp =\frac{\Delta output}{\Delta input}=\frac{\Delta average \text{ }  blood \text{ }  sugar}{\Delta A1C}</mrow>
-            <mrow>\amp =\frac{241-154}{10-7}</mrow>
-            <mrow>\amp =\frac{87}{3}</mrow>
-            <mrow>\amp =29</mrow>
-          </md>
-          Now we can use either input-output pair together with this slope to find the vertical intercept and complete the formula.
-          Using <m>x</m> and <m>f(x)</m> for the input variable and function name we get:
-          <me>
-            f(x)=mx+b
-          </me>
-          For no reason other than we've got to pick one,
-          we'll use the pair <m>(10,241)</m>:
-          <md>
-            <mrow>241\amp =29(10)+b</mrow>
-            <mrow>241\amp =290+b</mrow>
-            <mrow>b\amp =-49</mrow>
-          </md>
-          Putting this together we get the formula:
-          <me>
-            f(x)=-29x-49
-          </me>
-        </p>
-      </li>
-      <li>
-        <p>
-          Now that we have the formula we can use it.
-          Plugging in <m>x=8.2</m> we get:
-          <md>
-            <mrow>f(x)\amp =29x-49</mrow>
-            <mrow>f(8.2)\amp =29(8.2)-49</mrow>
-            <mrow>f(8.2)\amp =188.8</mrow>
-          </md>
-          So an A1C level of <m>8.2\%</m> indicates an average blood sugar level of <m>188.8 mg/dl</m>.
-        </p>
-      </li>
-      <li>
-        <p>
-          Once again using the formula,
-          but this time substituting in an output value:
-          <md>
-            <mrow>f(x)\amp =29x-49</mrow>
-            <mrow>100\amp =29x-49</mrow>
-            <mrow>151\amp =29x</mrow>
-            <mrow>x=\frac{151}{29} \approx 5.21</mrow>
-          </md>.
-          So an average blood sugar of
-          <m>100 mg/dl</m> equates to an A1C level of approximately <m>5.21\%</m>.
-        </p>
-      </li>
-    </ol>
+      <ol marker="a">
+        <li>
+          <p>
+            Here we know two input-output pairs,
+            and so we can use them to find the slope:
+            <md>
+              <mrow>m\amp =\frac{\Delta output}{\Delta input}=\frac{\Delta average \text{ }  blood \text{ }  sugar}{\Delta A1C}</mrow>
+              <mrow>\amp =\frac{241-154}{10-7}</mrow>
+              <mrow>\amp =\frac{87}{3}</mrow>
+              <mrow>\amp =29</mrow>
+            </md>
+            Now we can use either input-output pair together with this slope to find the vertical intercept and complete the formula.
+            Using <m>x</m> and <m>f(x)</m> for the input variable and function name we get:
+            <me>
+              f(x)=mx+b
+            </me>
+            For no reason other than we've got to pick one,
+            we'll use the pair <m>(10,241)</m>:
+            <md>
+              <mrow>241\amp =29(10)+b</mrow>
+              <mrow>241\amp =290+b</mrow>
+              <mrow>b\amp =-49</mrow>
+            </md>
+            Putting this together we get the formula:
+            <me>
+              f(x)=-29x-49
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            Now that we have the formula we can use it.
+            Plugging in <m>x=8.2</m> we get:
+            <md>
+              <mrow>f(x)\amp =29x-49</mrow>
+              <mrow>f(8.2)\amp =29(8.2)-49</mrow>
+              <mrow>f(8.2)\amp =188.8</mrow>
+            </md>
+            So an A1C level of <m>8.2\%</m> indicates an average blood sugar level of <m>188.8 mg/dl</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Once again using the formula,
+            but this time substituting in an output value:
+            <md>
+              <mrow>f(x)\amp =29x-49</mrow>
+              <mrow>100\amp =29x-49</mrow>
+              <mrow>151\amp =29x</mrow>
+              <mrow>x=\frac{151}{29} \approx 5.21</mrow>
+            </md>.
+            So an average blood sugar of
+            <m>100 mg/dl</m> equates to an A1C level of approximately <m>5.21\%</m>.
+          </p>
+        </li>
+      </ol>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Exercises</title>
