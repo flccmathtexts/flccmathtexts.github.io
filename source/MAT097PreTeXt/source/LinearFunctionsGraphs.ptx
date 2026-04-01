@@ -43,7 +43,7 @@
       In the following example we will illustrate the use of graphical solution for linear equations.
       You may want to review <xref ref="SolvingEquationsGraphically">Section</xref>, Solving Equations Graphically for a refresher.
     </p>
-    <example xml:id="LinearFunctionsGraphsExample1">
+    <algorithm xml:id="LinearFunctionsGraphsExample1">
       <statement>
         <p>
           Menauhant Publishing Company has a contract that costs them a straight
@@ -59,41 +59,48 @@
           How many hours of support would they need to use to break even between the two plans?
         </p>
       </statement>
-    </example>
-    <p>
-      Under the current plan,
-      the total cost is a linear function of hours: <m>f(x)=80x</m>.
-    </p>
-    <p>
-      Under the new plan,
-      the total cost would also be a linear function of hours:
-      <m>g(x)=50x+3000</m>.
-    </p>
-    <p>
-      We are looking for the number of hours where the costs would be the same,
-      so we need to solve the equation:
-      <me>
-        80x=50x+3000
-      </me>
-    </p>
-    <p>
-      To solve this equation graphically, we set
-      <q>Y1=80X</q>
-      and
-      <q>Y2=50X+3000</q>
-      and graph the results.
-      With a little playing around to find an appropriate window,
-      we get a graph that looks like this:
-    </p>
-    <figure>
-      <caption>Graph of <m>f(x)=80x</m> and <m>g(x)=50x+3000</m></caption>
-      <image width="92.5%" source="LinearFunctionsGraphsImages/Figure01.png" />
-    </figure>
-    <p>
-      Running through the calculator Intersect program,
-      we end up with the intersection X=<m>100</m> and Y=<m>8000</m>.
-      So, the break even point is <m>100</m> hours of computer support. }
-    </p>
+      <p>
+        Under the current plan,
+        the total cost is a linear function of hours: <m>f(x)=80x</m>.
+      </p>
+      <p>
+        Under the new plan,
+        the total cost would also be a linear function of hours:
+        <m>g(x)=50x+3000</m>.
+      </p>
+      <p>
+        We are looking for the number of hours where the costs would be the same,
+        so we need to solve the equation:
+        <me>
+          80x=50x+3000
+        </me>
+      </p>
+      <p>
+        To solve this equation graphically, we set
+        <q>Y1=80X</q>
+        and
+        <q>Y2=50X+3000</q>
+        and graph the results.
+        With a little playing around to find an appropriate window,
+        we get a graph that looks like this:
+      </p>
+      <figure>
+        <caption>Graph of <m>f(x)=80x</m> and <m>g(x)=50x+3000</m></caption>
+        <image width="92.5%" source="LinearFunctionsGraphsImages/Figure01.png">
+          <description>
+            A graph on a coordinate plane showing two linear functions in the first quadrant. 
+            The first line, representing f(x) = 80x, starts at the origin (0,0) and has a steeper positive slope. 
+            The second line, representing g(x) = 50x + 3000, starts higher on the vertical y-axis at a y-intercept and has a shallower positive slope. 
+            The two lines rise to the right and eventually intersect.
+          </description>
+        </image>
+      </figure>
+      <p>
+        Running through the calculator Intersect program,
+        we end up with the intersection X=<m>100</m> and Y=<m>8000</m>.
+        So, the break even point is <m>100</m> hours of computer support.
+      </p>
+    </algorithm>
     <p>
       In this first example,
       it probably would have been easier to just solve the equation with ordinary algebra.
@@ -101,7 +108,7 @@
       with more complex equations graphical solution starts to become a more attractive option.
       Which solution method you use in any given situation is to some degree at least a matter of personal preference - and it is always good to have a choice.
     </p>
-    <example xml:id="LinearFunctionsGraphsExample2">
+    <algorithm xml:id="LinearFunctionsGraphsExample2">
       <statement>
         <p>
           Solve:
@@ -110,25 +117,31 @@
           </me>
         </p>
       </statement>
-    </example>
-    <p>
-      This is actually a linear equation;
-      we can see that if we were to simplify each side them both sides could be put into slope-intercept form.
-      We don't need to actually do this though.
-    </p>
-    <p>
-      Graphing Y1=1.43X–2.07(1.08X–2.75) and Y2=3.12+2.59(0.76X-3.55) in the standard window we get:
-    </p>
-    <figure>
-      <caption>Graph in standard window.</caption>
-      <image width="92.5%" source="LinearFunctionsGraphsImages/Figure02.png" />
-    </figure>
-    <p>
-      The intersection gives us the solution:
-      <m>x=4.24</m>
-      (rounded to two decimal places.)
-      }
-    </p>
+      <p>
+        This is actually a linear equation;
+        we can see that if we were to simplify each side them both sides could be put into slope-intercept form.
+        We don't need to actually do this though.
+      </p>
+      <p>
+        Graphing Y1=1.43X–2.07(1.08X–2.75) and Y2=3.12+2.59(0.76X-3.55) in the standard window we get:
+      </p>
+      <figure>
+        <caption>Graph in standard window.</caption>
+        <image width="92.5%" source="LinearFunctionsGraphsImages/Figure02.png">
+          <description>
+            A graph on a coordinate plane showing two linear functions intersecting. 
+            One line has a steep positive slope and crosses the vertical y-axis at a negative value. 
+            The other line has a shallower negative slope and crosses the vertical y-axis at a positive value. 
+            The two lines intersect in the first quadrant, to the right of the y-axis and above the x-axis.
+          </description>
+        </image>
+      </figure>
+      <p>
+        The intersection gives us the solution:
+        <m>x=4.24</m>
+        (rounded to two decimal places.)
+      </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Graphical Solution of Linear Inequalities</title>
@@ -149,7 +162,7 @@
     <p>
       Consider the following reworking of the first example of this section:
     </p>
-    <example xml:id="LinearFunctionsGraphsExample3">
+    <algorithm xml:id="LinearFunctionsGraphsExample3">
       <statement>
         <p>
           Menauhant Publishing Company has a contract that costs them a straight
@@ -160,44 +173,51 @@
           How many hours of support would they need to use for the new plan to be cheaper?
         </p>
       </statement>
-    </example>
-    <p>
-      Here we are not trying to find the break-even point
-      (where the old plan and new plan cost the same),
-      we instead want the new plan to be cheaper.
-      Since the new plan's cost is
-      <m>50x+3000</m> and the old plan is <m>80x</m>, we need to solve:
-      <me>
-        50x+3000=80x
-      </me>
-    </p>
-    <p>
-      Here we will solve it graphically.
-      Letting Y1 be the left side and Y2 be the right side, we get the graph:
-    </p>
-    <figure>
-      <caption>Graph of <m>f(x)=80x</m> and <m>g(X)=50x+3000</m></caption>
-      <image width="92.5%" source="LinearFunctionsGraphsImages/Figure03.png" />
-    </figure>
-    <p>
-      The two lines intersect at <m>x=100</m> but this time we are interested in what happens before and after that intersection as well.
-      We know that Y1, old new plan,
-      has a smaller slope than Y2, the new plan,
-      so Y1 is the less-steep line.
-      Now, since we want Y1 the new plan to be less than Y2, the old plan,
-      we want the less-steep line to be below the more-steep one.
-      We can see from the graph that this happens to the right of the intersection – so our inequality is satisfied whenever <m>x&gt;100</m>.
-      (We do not include the intersection itself in our solution since the problem stated that we wanted the new plan to be strictly cheaper than the old plan,
-      and at <m>100</m> hours the two plans are equal.)
-      So we conclude that this is our solution:
-      the new plan will be cheaper if the company uses more than <m>100</m> hours of computer support. }
-    </p>
+      <p>
+        Here we are not trying to find the break-even point
+        (where the old plan and new plan cost the same),
+        we instead want the new plan to be cheaper.
+        Since the new plan's cost is
+        <m>50x+3000</m> and the old plan is <m>80x</m>, we need to solve:
+        <me>
+          50x+3000=80x
+        </me>
+      </p>
+      <p>
+        Here we will solve it graphically.
+        Letting Y1 be the left side and Y2 be the right side, we get the graph:
+      </p>
+      <figure>
+        <caption>Graph of <m>f(x)=80x</m> and <m>g(X)=50x+3000</m></caption>
+        <image width="92.5%" source="LinearFunctionsGraphsImages/Figure03.png">
+          <description>
+            A graph on a coordinate plane showing two linear functions in the first quadrant. 
+            The first line, representing f(x) = 80x, starts at the origin (0,0) and has a steeper positive slope. 
+            The second line, representing g(x) = 50x + 3000, starts higher on the vertical y-axis at a positive y-intercept and has a shallower positive slope. 
+            The two lines rise to the right and intersect in the upper right portion of the graph.
+          </description>
+        </image>
+      </figure>
+      <p>
+        The two lines intersect at <m>x=100</m> but this time we are interested in what happens before and after that intersection as well.
+        We know that Y1, old new plan,
+        has a smaller slope than Y2, the new plan,
+        so Y1 is the less-steep line.
+        Now, since we want Y1 the new plan to be less than Y2, the old plan,
+        we want the less-steep line to be below the more-steep one.
+        We can see from the graph that this happens to the right of the intersection – so our inequality is satisfied whenever <m>x&gt;100</m>.
+        (We do not include the intersection itself in our solution since the problem stated that we wanted the new plan to be strictly cheaper than the old plan,
+        and at <m>100</m> hours the two plans are equal.)
+        So we conclude that this is our solution:
+        the new plan will be cheaper if the company uses more than <m>100</m> hours of computer support.
+      </p>
+    </algorithm>
     <p>
       In this example we could readily tell which graph represented which side simply by looking at the steepness and slope.
       When finding the slope would require some algebraic effort,
       though, there is another approach.
     </p>
-    <example xml:id="LinearFunctionsGraphsExample4">
+    <algorithm xml:id="LinearFunctionsGraphsExample4">
       <statement>
         <p>
           Solve:
@@ -206,35 +226,43 @@
           </me>
         </p>
       </statement>
-    </example>
-    <p>
-      This inequality has the same two sides as the equation we solved in <xref ref="LinearFunctionsGraphsExample2">Example</xref>,
-      so the graph will be the same.
-      Because neither side was in slope-intercept form,
-      though, the slopes are not obvious,
-      so we can't use the slopes to determine which line belongs to which side.
-      We could work them out by putting each side into slope-intercept form,
-      but it is not really necessary for us to do this.
-      If we hit the TRACE key on the calculator,
-      the calculator will place the blinking TRACE icon on one of the graphs
-      (usually Y1)
-      and indicate which graph you are on at the top of the screen.
-      The result should look like this:
-    </p>
-    <figure>
-      <caption>Graph showing TRACE</caption>
-      <image width="92.5%" source="LinearFunctionsGraphsImages/Figure04.png" />
-    </figure>
-    <p>
-      So now we can easily tell which side is Y1.
-      Since we wanted Y1, the left side of the inequality,
-      to be greater than or equal to Y2, the right,
-      the solution to our inequality is the intersection and everything to the right of it,
-      since Y1 is above Y2 to the right of the intersection.
-      So the solution would be <m>x \leq 4.24</m>,
-      or <m>\{x|x \leq 4.24\}</m> or <m>(- \infty, 4.24]</m>.
-      Note that since the original inequality was <m>\geq</m> we include the intersection in our solution. }
-    </p>
+      <p>
+        This inequality has the same two sides as the equation we solved in <xref ref="LinearFunctionsGraphsExample2">Example</xref>,
+        so the graph will be the same.
+        Because neither side was in slope-intercept form,
+        though, the slopes are not obvious,
+        so we can't use the slopes to determine which line belongs to which side.
+        We could work them out by putting each side into slope-intercept form,
+        but it is not really necessary for us to do this.
+        If we hit the TRACE key on the calculator,
+        the calculator will place the blinking TRACE icon on one of the graphs
+        (usually Y1)
+        and indicate which graph you are on at the top of the screen.
+        The result should look like this:
+      </p>
+      <figure>
+        <caption>Graph showing TRACE</caption>
+        <image width="92.5%" source="LinearFunctionsGraphsImages/Figure04.png">
+          <description>
+            A screenshot of a graphing calculator screen showing two intersecting linear functions. 
+            The equation Y1=1.43X-2.07(1.08X-2.75) is displayed at the top. 
+            The cursor is tracing the line with a negative slope at the y-intercept. 
+            At the bottom of the screen, the coordinates are shown as X=0 and Y=5.6925. 
+            A second line with a steep positive slope is also visible, intersecting the first line in the first quadrant.
+          </description>
+        </image>
+      </figure>
+      <p>
+        So now we can easily tell which side is Y1.
+        Since we wanted Y1, the left side of the inequality,
+        to be greater than or equal to Y2, the right,
+        the solution to our inequality is the intersection and everything to the right of it,
+        since Y1 is above Y2 to the right of the intersection.
+        So the solution would be <m>x \leq 4.24</m>,
+        or <m>\{x|x \leq 4.24\}</m> or <m>(- \infty, 4.24]</m>.
+        Note that since the original inequality was <m>\geq</m> we include the intersection in our solution.
+      </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Parallel and Perpendicular Lines</title>
@@ -284,27 +312,27 @@
     <p>
       We can use this fact to solve problems like the following.
     </p>
-    <example xml:id="LinearFunctionsGraphsExample5">
+    <algorithm xml:id="LinearFunctionsGraphsExample5">
       <statement>
         <p>
           Find the formula for the linear function whose graph passes through the point <m>(-2,5)</m> and is parallel to the graph of <m>f(x)=2x-3</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      The slope of <m>f(x)=2x-3</m> is 2.
-      So our function must also have that slope.
-      So we need to find the equation of the linear function with slope 2 and (-2,5) as an input-output pair.
-    </p>
-    <p>
-      So:
-      <me>
-        g(x)=2x+b\\5=2(-2)+b\\b=9
-      </me>
-    </p>
-    <p>
-      And so we conclude that our function is <m>g(x)=2x+9</m>}
-    </p>
+      <p>
+        The slope of <m>f(x)=2x-3</m> is 2.
+        So our function must also have that slope.
+        So we need to find the equation of the linear function with slope 2 and (-2,5) as an input-output pair.
+      </p>
+      <p>
+        So:
+        <me>
+          g(x)=2x+b\\5=2(-2)+b\\b=9
+        </me>
+      </p>
+      <p>
+        And so we conclude that our function is <m>g(x)=2x+9</m>.
+      </p>
+    </algorithm>
     <p>
       Sometimes we also have uses for lines that are perpendicular
       (that intersect in a right angle.)
@@ -335,25 +363,25 @@
     <p>
       The following example will illustrate how this can be put to use.
     </p>
-    <example xml:id="LinearFunctionsGraphsExample6">
+    <algorithm xml:id="LinearFunctionsGraphsExample6">
       <statement>
         <p>
           Find the formula for the linear function whose graph passes through the point <m>(3,-1)</m> and is perpendicular to the graph of <m>f(x)=6x+11</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      The slope of <m>f(x)=6x+11</m> is <m>6</m>.
-      So our function's slope must be
-      <m>-\frac{1}{6}</m> since that is the opposite signed reciprocal.
-      Continuing using the given input-output pair:
-      <me>
-        g(x)=-\frac{1}{6}x+b\\ \\-1=-\frac{1}{6}(3)+b\\ \\b=-\frac{1}{2}
-      </me>
-    </p>
-    <p>
-      So our function must be <m>g(x)=-\frac{1}{6}x-\frac{1}{2}</m> }
-    </p>
+      <p>
+        The slope of <m>f(x)=6x+11</m> is <m>6</m>.
+        So our function's slope must be
+        <m>-\frac{1}{6}</m> since that is the opposite signed reciprocal.
+        Continuing using the given input-output pair:
+        <me>
+          g(x)=-\frac{1}{6}x+b\\ \\-1=-\frac{1}{6}(3)+b\\ \\b=-\frac{1}{2}
+        </me>
+      </p>
+      <p>
+        So our function must be <m>g(x)=-\frac{1}{6}x-\frac{1}{2}</m>.
+      </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Exercises</title>
