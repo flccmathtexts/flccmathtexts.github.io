@@ -115,7 +115,7 @@
       you'll probably recognize a lot in the method we will use,
       though setting things up as a linear system will be new.
     </p>
-    <example xml:id="SystemsofLinearEquationsExample1">
+    <algorithm xml:id="SystemsofLinearEquationsExample1">
       <statement>
         <p>
           Menauhant Publishing Company has a contract that costs them a straight
@@ -125,62 +125,69 @@
           but they would then only be charged <m>$50</m> per hour.
         </p>
       </statement>
-    </example>
-    <p>
-      If they don't use much service,
-      obviously their current plan is better.
-      But if they use a lot of service,
-      the new plan would be better.
-      If they were to switch to the new contract,
-      how many hours of service would they have to use to break even on the switch?
-    </p>
-    <p>
-      We solved this problem in <xref ref="LinearFunctionsGraphs">Section</xref>
-      by setting up a single equation and solving it graphically.
-      Here, we'll approach this as a linear system.
-      Cost is a function of hours of service used with either contract,
-      and if we let <m>y</m> be the output (cost) variable and let <m>x</m> be the input
-      (hours of service)
-      variable, we get the following two equations:
-    </p>
-    <p>
-      Current Contract: <m>y = 80x</m>
-    </p>
-    <p>
-      New Contract: <m>y = 50x + 3000</m>
-    </p>
-    <p>
-      To determine the break even between these two options,
-      we need to figure out what number of hours would give the same cost with both of these.
-      So, we need to find out the <m>x</m> (hours) and <m>y</m> (cost) values that would come out the same with both contracts.
-    </p>
-    <p>
-      In other words,
-      we need to find a simultaneous solution to the linear system:
-      <me>
-        \begin{cases}y=80x\\y=50x+3000 \end{cases}
-      </me>
-    </p>
-    <p>
-      Now each of these equations defines a linear function.
-      The graphs of those functions are straight lines consisting of all the points that satisfy their equations.
-      So, the place where the two graphs intersect would give the values for the variables that satisfy both equations.
-      Therefore, to find the simultaneous solution to this system,
-      we find the intersection of the two graphs:
-    </p>
-    <figure>
-      <caption>graph of <m>y=80x</m> and <m>y=50x+3000</m></caption>
-      <image width="92.5%" source="SystemsofLinearEquationsImages/Figure01.png" />
-    </figure>
-    <p>
-      (For discussion of how to find the appropriate window settings,
-      refer back to <xref ref="SolvingEquationsGraphically">Section</xref>, Solving Equations Graphically)
-    </p>
-    <p>
-      The solution to this system is <m>x=100</m> and <m>y=8000</m>.
-      That is, the break even between these two contracts is <m>100</m> hours of computer support,
-      costing <m>$8000</m>. }
-    </p>
+      <p>
+        If they don't use much service,
+        obviously their current plan is better.
+        But if they use a lot of service,
+        the new plan would be better.
+        If they were to switch to the new contract,
+        how many hours of service would they have to use to break even on the switch?
+      </p>
+      <p>
+        We solved this problem in <xref ref="LinearFunctionsGraphs">Section</xref>
+        by setting up a single equation and solving it graphically.
+        Here, we'll approach this as a linear system.
+        Cost is a function of hours of service used with either contract,
+        and if we let <m>y</m> be the output (cost) variable and let <m>x</m> be the input
+        (hours of service)
+        variable, we get the following two equations:
+      </p>
+      <p>
+        Current Contract: <m>y = 80x</m>
+      </p>
+      <p>
+        New Contract: <m>y = 50x + 3000</m>
+      </p>
+      <p>
+        To determine the break even between these two options,
+        we need to figure out what number of hours would give the same cost with both of these.
+        So, we need to find out the <m>x</m> (hours) and <m>y</m> (cost) values that would come out the same with both contracts.
+      </p>
+      <p>
+        In other words,
+        we need to find a simultaneous solution to the linear system:
+        <me>
+          \begin{cases}y=80x\\y=50x+3000 \end{cases}
+        </me>
+      </p>
+      <p>
+        Now each of these equations defines a linear function.
+        The graphs of those functions are straight lines consisting of all the points that satisfy their equations.
+        So, the place where the two graphs intersect would give the values for the variables that satisfy both equations.
+        Therefore, to find the simultaneous solution to this system,
+        we find the intersection of the two graphs:
+      </p>
+      <figure>
+        <caption>graph of <m>y=80x</m> and <m>y=50x+3000</m></caption>
+        <image width="92.5%" source="SystemsofLinearEquationsImages/Figure01.png">
+          <description>
+            A graph on a coordinate plane showing two linear functions in the first quadrant. 
+            The first line, representing y = 80x, starts at the origin (0,0) and has a steeper positive slope. 
+            The second line, representing y = 50x + 3000, starts higher on the vertical y-axis at a positive y-intercept and has a shallower positive slope. 
+            The two lines rise to the right and intersect in the upper right portion of the graph.
+          </description>
+        </image>
+      </figure>
+      <p>
+        (For discussion of how to find the appropriate window settings,
+        refer back to <xref ref="SolvingEquationsGraphically">Section</xref>, Solving Equations Graphically)
+      </p>
+      <p>
+        The solution to this system is <m>x=100</m> and <m>y=8000</m>.
+        That is, the break even between these two contracts is <m>100</m> hours of computer support,
+        costing <m>$8000</m>. 
+      </p>
+    </algorithm>
     <p>
       Solving a linear system graphically is basically the same as solving a linear equation graphically.
       The main difference is that, when we are solving a linear system,
@@ -202,7 +209,7 @@
       we would first have to rewrite each equation in explicit function form.
       The next example will illustrate how this would work.
     </p>
-    <example xml:id="SystemsofLinearEquationsExample2">
+    <algorithm xml:id="SystemsofLinearEquationsExample2">
       <statement>
         <p>
           Solve the following linear system graphically:
@@ -211,31 +218,38 @@
           </me>
         </p>
       </statement>
-    </example>
-    <p>
-      We first must rewrite each equation in an explicit function form.
-      So we solve each for <m>y</m>.
-      <me>
-        2x+3y=12\\ \\3y=12-2x\\ \\y=\frac{12-2x}{3}\\ \\y=4-\frac{2}{3}x
-      </me>
-      and
-      <me>
-        5x-4y=30\\ \\-4y=30-5x\\ \\y=\frac{30-5x}{-4}\\ \\y=-\frac{15}{2}+\frac{5}{4}x
-      </me>
-    </p>
-    <p>
-      We now graph these both.
-      Since we don't have any insights into the meanings of the equations,
-      we'll simply start with the standard window and adjust if needed to find the intersection.
-      Fortunately, the standard window works:
-    </p>
-    <figure>
-      <caption>Graph to solve system</caption>
-      <image width="92.5%" source="SystemsofLinearEquationsImages/Figure02.png" />
-    </figure>
-    <p>
-      And so we see that the intersection occurs at <m>(6,0)</m> and so conclude that this system's simultaneous solution is <m>x=6</m> and <m>y=0</m>. }
-    </p>
+      <p>
+        We first must rewrite each equation in an explicit function form.
+        So we solve each for <m>y</m>.
+        <me>
+          2x+3y=12\\ \\3y=12-2x\\ \\y=\frac{12-2x}{3}\\ \\y=4-\frac{2}{3}x
+        </me>
+        and
+        <me>
+          5x-4y=30\\ \\-4y=30-5x\\ \\y=\frac{30-5x}{-4}\\ \\y=-\frac{15}{2}+\frac{5}{4}x
+        </me>
+      </p>
+      <p>
+        We now graph these both.
+        Since we don't have any insights into the meanings of the equations,
+        we'll simply start with the standard window and adjust if needed to find the intersection.
+        Fortunately, the standard window works:
+      </p>
+      <figure>
+        <caption>Graph to solve system</caption>
+        <image width="92.5%" source="SystemsofLinearEquationsImages/Figure02.png">
+          <description>
+            A graph on a coordinate plane showing two linear functions intersecting. 
+            One line has a steep positive slope and crosses the vertical y-axis at a negative value. 
+            The other line has a shallower negative slope and crosses the vertical y-axis at a positive value. 
+            The two lines intersect in the first quadrant, to the right of the y-axis and slightly above the horizontal x-axis.
+          </description>
+        </image>
+      </figure>
+      <p>
+        And so we see that the intersection occurs at <m>(6,0)</m> and so conclude that this system's simultaneous solution is <m>x=6</m> and <m>y=0</m>.
+      </p>
+    </algorithm>
     <p>
       Most of the time,
       a given linear system will have one and only one solution.
@@ -245,7 +259,7 @@
       However, sometimes something does go wrong,
       as we will see in the following example.
     </p>
-    <example xml:id="SystemsofLinearEquationsExample3">
+    <algorithm xml:id="SystemsofLinearEquationsExample3">
       <statement>
         <p>
           Solve:
@@ -254,27 +268,27 @@
           </me>
         </p>
       </statement>
-    </example>
-    <p>
-      Solving the first equation for <m>y</m> we get:
-      <me>
-        x-3y=12\\-3y=12-x\\y=\frac{1}{3}x-4
-      </me>
-    </p>
-    <p>
-      Solving the second equation for <m>y</m> we get:
-      <me>
-        -2x+6y=4\\6y=4+2x\\y=\frac{2}{3}+\frac{1}{3}x
-      </me>
-    </p>
-    <p>
-      Looking at these equations in slope-intercept form it is apparent that their graphs are parallel lines.
-      So there is no point in looking for an intersection;
-      the graphs will never intersect.
-    </p>
-    <p>
-      Therefore, this linear system has no simultaneous solution. }
-    </p>
+      <p>
+        Solving the first equation for <m>y</m> we get:
+        <me>
+          x-3y=12\\-3y=12-x\\y=\frac{1}{3}x-4
+        </me>
+      </p>
+      <p>
+        Solving the second equation for <m>y</m> we get:
+        <me>
+          -2x+6y=4\\6y=4+2x\\y=\frac{2}{3}+\frac{1}{3}x
+        </me>
+      </p>
+      <p>
+        Looking at these equations in slope-intercept form it is apparent that their graphs are parallel lines.
+        So there is no point in looking for an intersection;
+        the graphs will never intersect.
+      </p>
+      <p>
+        Therefore, this linear system has no simultaneous solution.
+      </p>
+    </algorithm>
     <p>
       So, as this example illustrates,
       not every linear system will have a solution.
@@ -473,7 +487,7 @@
         </p>
       </statement>
     </definition>
-    <example xml:id="SystemsofLinearEquationsExample4">
+    <algorithm xml:id="SystemsofLinearEquationsExample4">
       <statement>
         <p>
           I want to fence in a rectangular garden in my back yard.
@@ -482,41 +496,41 @@
           What is the largest rectangular and harmonious garden I can enclose with this fencing?
         </p>
       </statement>
-    </example>
-    <p>
-      If we let <m>W</m> represent the width and <m>L</m> the length,
-      we know that the total perimeter is <m>2L+2W</m>.
-      Since that would use the <m>300</m> feet of fencing we must have <m>2L+2W=300</m>.
-      Also, the length is twice the width, so <m>L=2w</m>.
-      So we need to solve the linear system:
-      <me>
-        \begin{cases}2L+2W=300\\L=2W \end{cases}
-      </me>
-    </p>
-    <p>
-      The second equation is already solved for <m>L</m>,
-      so we use that to substitute into the top equation and solve:
-      <me>
-        2L+2W=300\\2(2w)+2W=300\\4W+2W=300\\6W=300\\W=50
-      </me>
-    </p>
-    <p>
-      Now we substitute into the second equation because it is already solved for <m>L</m>:
-      <me>
-        L=2W
-      </me>
-      <me>
-        L=2(50)
-      </me>
-      <me>
-        L=100
-      </me>
-    </p>
-    <p>
-      So the solution to this system is <m>W=50</m> and <m>L=100</m>.
-      In other words, I should fence in a <m>100 \times 50</m> foot garden. }
-    </p>
-    <example xml:id="SystemsofLinearEquationsExample5">
+      <p>
+        If we let <m>W</m> represent the width and <m>L</m> the length,
+        we know that the total perimeter is <m>2L+2W</m>.
+        Since that would use the <m>300</m> feet of fencing we must have <m>2L+2W=300</m>.
+        Also, the length is twice the width, so <m>L=2W</m>.
+        So we need to solve the linear system:
+        <me>
+          \begin{cases}2L+2W=300\\L=2W \end{cases}
+        </me>
+      </p>
+      <p>
+        The second equation is already solved for <m>L</m>,
+        so we use that to substitute into the top equation and solve:
+        <me>
+          2L+2W=300\\2(2W)+2W=300\\4W+2W=300\\6W=300\\W=50
+        </me>
+      </p>
+      <p>
+        Now we substitute into the second equation because it is already solved for <m>L</m>:
+        <me>
+          L=2W
+        </me>
+        <me>
+          L=2(50)
+        </me>
+        <me>
+          L=100
+        </me>
+      </p>
+      <p>
+        So the solution to this system is <m>W=50</m> and <m>L=100</m>.
+        In other words, I should fence in a <m>100 \times 50</m> foot garden.
+      </p>
+    </algorithm>
+    <algorithm xml:id="SystemsofLinearEquationsExample5">
       <statement>
         <p>
           Use substitution to solve the system:
@@ -525,59 +539,59 @@
           </me>
         </p>
       </statement>
-    </example>
-    <p>
-      We need to start by solving one of these equations for one of the variables.
-      We can choose to solve either equation for either variable – the method will work regardless of what we choose.However,
-      it makes sense to pick the equation and variable that will be simplest.
-      In the top equation,
-      solving for either variable will involve dividing by either <m>11</m> or <m>3</m>,
-      and we can see that this will mean fractions will get involved.
-      In the bottom equation solving for <m>T</m> would require us to divide through by <m>12</m>,
-      which would make the coefficient of <m>P</m> a fraction.
-      But if we solve for <m>P</m> we will have to divide through by <m>4</m> and since everything in that equation is divisible by <m>4</m> that will avoid fractions.
-      So that seems the cleanest choice.
-      <md>
-        <mrow>4P+12T\amp =12</mrow>
-        <mrow>4P\amp =12-12T</mrow>
-        <mrow>P\amp =3-3T</mrow>
-      </md>
-    </p>
-    <p>
-      Now we plug this substitution into the other equation:
-      <md>
-        <mrow>11T-3P\amp =1</mrow>
-        <mrow>11T-3(3-3T)\amp =1</mrow>
-      </md>
-    </p>
-    <p>
-      And solve the result:
-      <md>
-        <mrow>11T-9+9T\amp =1</mrow>
-        <mrow>20T-9\amp =1</mrow>
-        <mrow>20T\amp =10</mrow>
-        <mrow>T\amp =\frac{1}{2}</mrow>
-      </md>
-    </p>
-    <p>
-      To solve for <m>P</m> we can plug this into either of the original equations.
-      Or, we could use the equation <m>P=3-3T</m> since that is solved for <m>P</m> already.
-      Doing this:
-      <md>
-        <mrow>P\amp =3-3T</mrow>
-        <mrow>\amp =3-3(\frac{1}{2}) \amp =\frac{3}{2}</mrow>
-      </md>
-    </p>
-    <p>
-      So the solution to the system of equations is
-      <m>P=\frac{3}{2}</m> and <m>T=\frac{1}{2}</m>. }
-    </p>
+      <p>
+        We need to start by solving one of these equations for one of the variables.
+        We can choose to solve either equation for either variable – the method will work regardless of what we choose. However,
+        it makes sense to pick the equation and variable that will be simplest.
+        In the top equation,
+        solving for either variable will involve dividing by either <m>11</m> or <m>3</m>,
+        and we can see that this will mean fractions will get involved.
+        In the bottom equation solving for <m>T</m> would require us to divide through by <m>12</m>,
+        which would make the coefficient of <m>P</m> a fraction.
+        But if we solve for <m>P</m> we will have to divide through by <m>4</m> and since everything in that equation is divisible by <m>4</m> that will avoid fractions.
+        So that seems the cleanest choice.
+        <md>
+          <mrow>4P+12T\amp =12</mrow>
+          <mrow>4P\amp =12-12T</mrow>
+          <mrow>P\amp =3-3T</mrow>
+        </md>
+      </p>
+      <p>
+        Now we plug this substitution into the other equation:
+        <md>
+          <mrow>11T-3P\amp =1</mrow>
+          <mrow>11T-3(3-3T)\amp =1</mrow>
+        </md>
+      </p>
+      <p>
+        And solve the result:
+        <md>
+          <mrow>11T-9+9T\amp =1</mrow>
+          <mrow>20T-9\amp =1</mrow>
+          <mrow>20T\amp =10</mrow>
+          <mrow>T\amp =\frac{1}{2}</mrow>
+        </md>
+      </p>
+      <p>
+        To solve for <m>P</m> we can plug this into either of the original equations.
+        Or, we could use the equation <m>P=3-3T</m> since that is solved for <m>P</m> already.
+        Doing this:
+        <md>
+          <mrow>P\amp =3-3T</mrow>
+          <mrow>\amp =3-3(\frac{1}{2}) \amp =\frac{3}{2}</mrow>
+        </md>
+      </p>
+      <p>
+        So the solution to the system of equations is
+        <m>P=\frac{3}{2}</m> and <m>T=\frac{1}{2}</m>.
+      </p>
+    </algorithm>
     <p>
       With one last example we will illustrate how things can go wrong.
       The problem will not be a problem with substitution itself – just like graphing,
       substitution always works - but there can be problems with the system itself.
     </p>
-    <example xml:id="SystemsofLinearEquationsExample6">
+    <algorithm xml:id="SystemsofLinearEquationsExample6">
       <statement>
         <p>
           Solve by substitution
@@ -586,32 +600,32 @@
           </me>
         </p>
       </statement>
-    </example>
-    <p>
-      As before, we can solve for either variable in either equation,
-      but it makes sense to go with the cleanest and simplest choice.
-      In this system,
-      that choice would be to solve for <m>x</m> in the top equation:
-      <me>
-        x+2z=5\\x=5-2z
-      </me>
-    </p>
-    <p>
-      Now substitute that into the second equation:
-      <me>
-        3x+6z=10\\3(5-2z)+6z=10\\15-6z+6z=10\\15=10
-      </me>
-    </p>
-    <p>
-      This of course is a contradiction.
-      This is not a failure of the substitution method though!
-      When we arrive at a contradiction solving a regular equation,
-      we simply conclude that the equation has no solutions.
-      We draw the same conclusion here:
-      the linear system has no solutions.
-      From our previous discussion of solution by graphing,
-      we furthermore know that this means that the graphs of the functions implicitly defined by these two equations must be parallel lines. }
-    </p>
+      <p>
+        As before, we can solve for either variable in either equation,
+        but it makes sense to go with the cleanest and simplest choice.
+        In this system,
+        that choice would be to solve for <m>x</m> in the top equation:
+        <me>
+          x+2z=5\\x=5-2z
+        </me>
+      </p>
+      <p>
+        Now substitute that into the second equation:
+        <me>
+          3x+6z=10\\3(5-2z)+6z=10\\15-6z+6z=10\\15=10
+        </me>
+      </p>
+      <p>
+        This of course is a contradiction.
+        This is not a failure of the substitution method though!
+        When we arrive at a contradiction solving a regular equation,
+        we simply conclude that the equation has no solutions.
+        We draw the same conclusion here:
+        the linear system has no solutions.
+        From our previous discussion of solution by graphing,
+        we furthermore know that this means that the graphs of the functions implicitly defined by these two equations must be parallel lines.
+      </p>
+    </algorithm>
     <p>
       Two solution methods down, there's still one more to go:
     </p>
@@ -770,57 +784,57 @@
         </p>
       </statement>
     </definition>
-    <example xml:id="SystemsofLinearEquationsExample7">
+    <algorithm xml:id="SystemsofLinearEquationsExample7">
       <statement>
         <p>
           Solve by elimination
           <me>
-            :\begin{cases}5p-7q=14\\12p+8q=-16 \end{cases}
+            \begin{cases}5p-7q=14\\12p+8q=-16 \end{cases}
           </me>
         </p>
       </statement>
-    </example>
-    <p>
-      In this system the variables are already lined up <m>p</m> above <m>p</m> and <m>q</m> above <m>q</m> so we are ready to go.
-      We can choose to eliminate either variable;
-      in this case neither one is really a better choice than the other.
-      If we want to eliminate <m>p</m> we could multiply the top equation through by <m>12</m> and the bottom through by <m>-5</m>,
-      or the top by <m>-12</m> and the bottom by <m>5</m>,
-      to make the <m>p</m> terms <m>\pm 60p</m>.
-      Or we could eliminate <m>q</m> by multiplying the top by <m>8</m> and the bottom by <m>7</m> to make the <m>q</m> terms <m>\pm56q</m>.
-    </p>
-    <p>
-      For no particular reason, we'll take the path that eliminates <m>q</m>:
-      <me>
-        \begin{cases} 8(5p-7q)=8(14)\\ 7(12p+8q)=7(-16) \end{cases} \text{    which becomes    } \begin{cases} 40p-56q=112\\ 84p+56q=-112 \end{cases}
-      </me>
-      and now we add the corresponding sides of the system to get:
-    </p>
-    <tabular>
-      {c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c}
-      &amp; 40p &amp; - &amp; 56q &amp; = &amp; 112
-      + &amp; 84p &amp; + &amp; 56q) &amp; &amp; -112
-      \hline
-      &amp; 124p &amp;  &amp;  &amp; = &amp; 0
+      <p>
+        In this system the variables are already lined up <m>p</m> above <m>p</m> and <m>q</m> above <m>q</m> so we are ready to go.
+        We can choose to eliminate either variable;
+        in this case neither one is really a better choice than the other.
+        If we want to eliminate <m>p</m> we could multiply the top equation through by <m>12</m> and the bottom through by <m>-5</m>,
+        or the top by <m>-12</m> and the bottom by <m>5</m>,
+        to make the <m>p</m> terms <m>\pm 60p</m>.
+        Or we could eliminate <m>q</m> by multiplying the top by <m>8</m> and the bottom by <m>7</m> to make the <m>q</m> terms <m>\pm56q</m>.
+      </p>
+      <p>
+        For no particular reason, we'll take the path that eliminates <m>q</m>:
+        <me>
+          \begin{cases} 8(5p-7q)=8(14)\\ 7(12p+8q)=7(-16) \end{cases} \text{    which becomes    } \begin{cases} 40p-56q=112\\ 84p+56q=-112 \end{cases}
+        </me>
+        and now we add the corresponding sides of the system to get:
+      </p>
+      <tabular>
+        {c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c}
+        &amp; 40p &amp; - &amp; 56q &amp; = &amp; 112
+        + &amp; 84p &amp; + &amp; 56q) &amp; &amp; -112
+        \hline
+        &amp; 124p &amp;  &amp;  &amp; = &amp; 0
     </tabular>
-    <p>
-      which we now solve to conclude that:
-      <me>
-        p=0
-      </me>
-    </p>
-    <p>
-      Substituting this into either equation (for no particular reason we'll choose the top one):
-      <md>
-        <mrow>5p-7q\amp =14</mrow>
-        <mrow>5(0)-7q\amp =14</mrow>
-        <mrow>-7q\amp =14</mrow>
-        <mrow>q\amp =-2</mrow>
-      </md>
-    </p>
-    <p>
-      So the system's solution is <m>p = 0</m> and <m>q = -2</m>. }
-    </p>
+      <p>
+        which we now solve to conclude that:
+        <me>
+          p=0
+        </me>
+      </p>
+      <p>
+        Substituting this into either equation (for no particular reason we'll choose the top one):
+        <md>
+          <mrow>5p-7q\amp =14</mrow>
+          <mrow>5(0)-7q\amp =14</mrow>
+          <mrow>-7q\amp =14</mrow>
+          <mrow>q\amp =-2</mrow>
+        </md>
+      </p>
+      <p>
+        So the system's solution is <m>p = 0</m> and <m>q = -2</m>.
+      </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Strategies for Solving Linear Systems</title>
