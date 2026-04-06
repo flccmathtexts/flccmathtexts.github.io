@@ -76,67 +76,66 @@
       Putting this in words makes it seem more complicated than it actually is.
       Some examples will help remind you how this all works.
     </p>
-    <example xml:id="ArithmeticwithFractionsExample1">
+    <algorithm xml:id="ArithmeticwithFractionsExample1">
       <statement>
         <p>
           Evaluate <m>\displaystyle \frac{3}{5} + \frac{4}{3}</m>.
         </p>
+        <p>
+          The denominators are <m>3</m> and <m>5</m>,
+          and so a common denominator is <m>3 \cdot 5 = 15</m>.
+          Since <m>3</m> and <m>5</m> don't have any common factors,
+          this is the smallest possible common denominator.
+        </p>
+        <p>
+          To make <m>5</m> into the common denominator of <m>15</m>,
+          we need to multiply by <m>3</m>.
+          So we'll multiply the first fraction by <m>\frac{3}{3}</m>
+          (recall that we can do this because <m>\frac{3}{3} = 1</m>,
+          and so this changes the form of the fraction but not its value,
+          since we are really just multiplying by <m>1</m>).
+          For similar reasons,
+          we'll multiply the second fraction by <m>\frac{5}{5}</m>.
+          <me>
+            \displaystyle \frac{3}{5} \left( \frac{3}{3} \right) + \frac{4}{3} \left( \frac{5}{5} \right) = \frac{9}{15} + \frac{20}{15} = \frac{29}{15}
+          </me>
+        </p>
+        <p>
+          Note that this answer is an <em>improper fraction</em>,
+          which means that its numerator is larger than its denominator.
+          This answer could be rewritten as the <em>mixed number</em>;
+          <m>1\frac{14}{15}</m>.
+          Either answer is correct.
+          In this book,
+          we will not rewrite improper fractions as mixed numbers,
+          unless there is a clear reason to do so.
+        </p>
       </statement>
-    </example>
-    <p>
-      The denominators are <m>3</m> and <m>5</m>,
-      and so a common denominator is <m>3 \cdot 5 = 15</m>.
-      Since <m>3</m> and <m>5</m> don't have any common factors,
-      this is the smallest possible common denominator.
-    </p>
-    <p>
-      To make <m>5</m> into the common denominator of <m>15</m>,
-      we need to multiply by <m>3</m>.
-      So we'll multiply the first fraction by <m>\frac{3}{3}</m>
-      (recall that we can do this because <m>\frac{3}{3} = 1</m>,
-      and so this changes the form of the fraction but not its value,
-      since we are really just multiplying by <m>1</m>).
-      For similar reasons,
-      we'll multiply the second fraction by <m>\frac{5}{5}</m>.
-      <me>
-        \displaystyle \frac{3}{5} \left( \frac{3}{3} \right) + \frac{4}{3} \left( \frac{5}{5} \right) = \frac{9}{15} + \frac{20}{15} = \frac{29}{15}
-      </me>
-    </p>
-    <p>
-      Note that this answer is an <em>improper fraction</em>,
-      which means that its numerator is larger than its denominator.
-      This answer could be rewritten as the <em>mixed number</em>;
-      <m>1\frac{14}{15}</m>.
-      Either answer is correct.
-      In this book,
-      we will not rewrite improper fractions as mixed numbers,
-      unless there is a clear reason to do so. }
-    </p>
-    <example xml:id="ArithmeticwithFractionsExample2">
+    </algorithm>
+    <algorithm xml:id="ArithmeticwithFractionsExample2">
       <statement>
         <p>
           Evaluate <m>\displaystyle \frac{3}{8} + \frac{5}{6} - \frac{2}{3}</m>
         </p>
+        <p>
+          We could use <m>8 \cdot 6 \cdot 3 = 144</m> as a common denominator, 
+          but this is larger than necessary. 
+          Since <m>8=2\cdot 2\cdot 2</m> and <m>6=3\cdot 2</m>, 
+          and <m>3</m> is just <m>3</m>, 
+          we only need to include three <m>2</m>'s 
+          (since <m>8</m> has three of them) 
+          and one <m>3</m> 
+          (since that one three will cover for both the <m>6</m> and the <m>3</m> denominators). 
+          So our least common denominator is <m>2\cdot 2\cdot 2\cdot 3=24</m>. 
+          Then:
+          <md>
+            <mrow>\frac{3}{8} + \frac{5}{6} - \frac{2}{3} \amp = \frac{3}{8} \left( \frac{3}{3} \right) + \frac{5}{6} \left( \frac{4}{4} \right) - \frac{2}{3} \left( \frac{8}{8} \right)</mrow>
+            <mrow>\amp = \frac{9}{24} + \frac{20}{24} - \frac{16}{24}</mrow>
+            <mrow>\amp = \frac{13}{24}</mrow>
+          </md>
+        </p>
       </statement>
-    </example>
-    <p>
-      We could use <m>8 \cdot 6 \cdot 3 = 142</m> as a common denominator,
-      but this is larger than necessary.
-      Since <m>8=2\cdot 2\cdot 2</m> and <m>6=3\cdot 2</m>,
-      and <m>3</m> is just <m>3</m>,
-      we only need to include three <m>2</m>'s
-      (since <m>8</m> has three of them)
-      and one <m>3</m>
-      (since that one three will cover for both the <m>6</m> and the <m>3</m> denominators.)
-      So our least common denominator is <m>2\cdot 2\cdot 2\cdot 3=24</m>.
-      Then:
-      <md>
-        <mrow>\frac{3}{8} + \frac{5}{6} - \frac{2}{3} \amp  =\frac{3}{8} \left( \frac{3}{3} \right) + \frac{5}{6} \left( \frac{4}{4} \right) - \frac{2}{3} \left( \frac{8}{8} \right)</mrow>
-        <mrow>\amp  = \frac{9}{24} + \frac{20}{24} - \frac{16}{24}</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp  = \frac{13}{24}</mrow>
-      </md>
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Multiplying and Dividing Fractions</title>
@@ -170,22 +169,22 @@
       and <xref ref="ArithmeticwithFractionsExample2" />
       we multiplied to get fractions into their common denominators).
     </p>
-    <example xml:id="ArithmeticwithFractionsExample3">
+    <algorithm xml:id="ArithmeticwithFractionsExample3">
       <statement>
         <p>
           Evaluate <m>\displaystyle \frac{3}{5} \left( \frac{2}{7} \right)</m>
         </p>
+        <p>
+          Using the rule for multiplying fractions:
+          <me>
+            \frac{3}{5} \left( \frac{2}{7} \right) = \frac{3 \cdot 2}{5 \cdot 7} = \frac{6}{35}
+          </me>
+        </p>
+        <p>
+          Dividing fractions is a little less straightforward.
+        </p>
       </statement>
-    </example>
-    <p>
-      Using the above for multiplying fractions:
-      <me>
-        \displaystyle \frac{3}{5} \left( \frac{2}{7} \right) = \frac{3\cdot 2}{5 \cdot 7} = \frac{6}{35}
-      </me>
-    </p>
-    <p>
-      Dividing fractions is a little less straightforward.
-    </p>
+    </algorithm>
     <definition>
       <statement>
         <p>
@@ -216,23 +215,23 @@
       This method is also sometimes described as the
       <q>invert and multiply rule</q>, since the result ends up being equal to the numerator of the complex fraction multiplied by the reciprocal of the complex fraction's denominator.
     </p>
-    <example xml:id="ArithmeticwithFractionsExample4">
+    <algorithm xml:id="ArithmeticwithFractionsExample4">
       <statement>
         <p>
           Evaluate <m>\displaystyle \frac{3}{7} \div \frac{4}{5}</m>
         </p>
+        <p>
+          Using the above for dividing fractions:
+          <md>
+            <mrow>\frac{3}{7} \div \frac{4}{5} \amp = \frac{\frac{3}{7}}{\frac{4}{5}}</mrow>
+            <mrow>\amp = \frac{\frac{3}{7}}{\frac{4}{5}} \left( \frac{\frac{5}{4}}{\frac{5}{4}} \right)</mrow>
+            <mrow>\amp = \frac{\frac{3 \cdot 5}{7 \cdot 4}}{\frac{4 \cdot 5}{5 \cdot 4}}</mrow>
+            <mrow>\amp = \frac{\frac{15}{28}}{1}</mrow>
+            <mrow>\amp = \frac{15}{28}</mrow>
+          </md>
+        </p>
       </statement>
-    </example>
-    <p>
-      Using the above for dividing fractions:
-      <md>
-        <mrow>\frac{3}{7} \div \frac{4}{5} \amp  = \frac{\frac{3}{7}}{\frac{4}{5}}</mrow>
-        <mrow>\amp  =\frac{\frac{3}{7}}{\frac{4}{5}} \left( \frac{\frac{5}{4}}{\frac{5}{4}} \right)</mrow>
-        <mrow>\amp  = \frac{\frac{3\cdot 5}{7 \cdot 4}}{\frac{4 \cdot 5}{5\cdot 4}}</mrow>
-        <mrow>\amp  = \frac{\frac{15}{28}}{1}</mrow>
-        <mrow>\amp  = \frac{15}{28}</mrow>
-      </md>
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Reducing Fractions to Lowest Terms</title>
@@ -322,28 +321,27 @@
       Whenever you do any fraction arithmetic,
       you should as a last step reduce the answer to lowest terms.
     </p>
-    <example xml:id="ArithmeticwithFractionsExample5">
+    <algorithm xml:id="ArithmeticwithFractionsExample5">
       <statement>
         <p>
           Evaluate <m>\displaystyle \frac{1}{6}+\frac{1}{3}-\frac{1}{8}</m>
         </p>
+        <p>
+          The least common denominator here is <m>24</m>. So:
+          <me>
+            \displaystyle \frac{1}{6}\left(\frac{4}{4}\right) + \frac{1}{3}\left(\frac{8}{8}\right) - \frac{1}{8}\left(\frac{3}{3}\right) = \frac{4}{24} + \frac{8}{24} - \frac{3}{24} = \frac{9}{24}
+          </me>
+        </p>
+        <p>
+          Now we need to see if this fraction can be reduced to lower terms. 
+          Since <m>9</m> and <m>24</m> share a common factor <m>3</m>, this should not be considered the final answer yet. 
+          We still need to reduce the fraction to lowest terms.
+          <me>
+            \frac{9}{24}=\frac{3 \cdot 3}{3 \cdot 8}=\frac{\cancel{3} \cdot 3}{\cancel{3} \cdot 8}=\frac{3}{8}
+          </me>
+        </p>
       </statement>
-    </example>
-    <p>
-      The least common denominator here is <m>24</m>.
-      So:
-      <me>
-        \displaystyle \frac{1}{6}\left(\frac{4}{4}\right) + \frac{1}{3}\left(\frac{8}{8}\right)+ \frac{1}{8}\left(\frac{3}{3}\right)=\frac{4}{24} + \frac{8}{24}-\frac{3}{24}=\frac{9}{24}
-      </me>
-    </p>
-    <p>
-      Now we need to see if this fraction can be reduced to lower terms.
-      Since <m>9</m> and <m>24</m> share a common factor <m>3</m> this should not be considered the final answer yet.
-      We still need to reduce the fraction to lowest terms.
-      <me>
-        \frac{9}{24}=\frac{3 \cdot 3}{3 \cdot 8}=\frac{\cancel{3} \cdot 3}{\cancel{3} \cdot 8}=\frac{3}{8}
-      </me>
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Fraction Arithmetic and Your Calculator</title>
@@ -399,51 +397,51 @@
       We can use this with any fractional expression we want to evaluate.
       Let's revisit <xref ref="ArithmeticwithFractionsExample5">Example</xref> now:
     </p>
-    <example xml:id="ArithmeticwithFractionsExample6">
+    <algorithm xml:id="ArithmeticwithFractionsExample6">
       <statement>
         <p>
           Evaluate <m>\displaystyle \frac{1}{6} + \frac{1}{3} - \frac{1}{8}</m> using your calculator.
         </p>
+        <p>
+          We enter:
+          <me>
+            1/6+1/3-1/8 \blacktriangleright \text{ Frac }
+          </me>
+        </p>
+        <p>
+          Hit enter and then get the result:
+          <me>
+            \frac{3}{8}
+          </me>
+        </p>
+        <p>
+          We can also use this feature to reduce a fraction to lowest terms. 
+          Since the calculator always returns the result in lowest terms, 
+          if you enter a fraction that is not, 
+          it will evaluate it as a decimal and then convert the result to a fraction in lowest terms. 
+          The end result — you've reduced your fraction.
+        </p>
       </statement>
-    </example>
-    <p>
-      We enter:
-      <me>
-        1/6+1/3-1/8 \blacktriangleright \text{ Frac }
-      </me>
-    </p>
-    <p>
-      Hit enter and then get the result:
-      <me>
-        \frac{3}{8}
-      </me>
-    </p>
-    <p>
-      We can also use this feature to reduce a fraction to lowest terms.
-      Since the calculator always returns the result in lowest terms,
-      if you enter a fraction that is not,
-      it will evaluate it as a decimal and then convert the result to a fraction in lowest terms.
-      The end result - you've reduced your fraction.
-    </p>
-    <example xml:id="ArithmeticwithFractionsExample7">
+    </algorithm>
+    <algorithm xml:id="ArithmeticwithFractionsExample7">
       <statement>
         <p>
           Reduce <m>\displaystyle \frac{5544}{22,176}</m> to lowest terms
         </p>
+        <p>
+          On the calculator:
+          <me>
+            5544/22176 \blacktriangleright \text{ Frac }
+          </me>
+        </p>
+        <p>
+          Gives the result:
+          <me>
+            \frac{1}{4}
+          </me>
+        </p>
       </statement>
-    </example>
-    <p>
-      On the calculator:
-      <me>
-        5544/22176 \blacktriangleright \text{ Frac }
-      </me>
-    </p>
-    <p>
-      Gives the result:
-      <me>
-        \frac{1}{4}
-      </me>
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Closing Thoughts</title>
