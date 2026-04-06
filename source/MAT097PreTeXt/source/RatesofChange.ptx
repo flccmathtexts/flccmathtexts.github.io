@@ -183,7 +183,7 @@
       (where the output was distance and input was time.)
       But it applies to lots of other things other than speed - it can be used to find the average rate of change for any function at all.
     </p>
-    <example xml:id="RateofChangeExample1">
+    <algorithm xml:id="RateofChangeExample1">
       <statement>
         <p>
           The official temperature at the Rochester International Airport
@@ -250,73 +250,76 @@
             </li>
           </ol>
         </p>
+        <ol marker="a">
+          <li>
+            <p>
+              Following the formula,
+              using the temperatures at midnight (i.e. at time = 0) and 6 a.m. (i.e. at time = 6):
+              <me>
+                AROC = \frac{\Delta \text{temperature}}{\Delta \text{time}} = \frac{f(6)-f(0)}{6-0} = \frac{39-48}{6-0} = -1.5
+              </me>
+              So, between midnight and 6 a.m. the temperature was changing at an average rate of <m>-1.5 \deg F</m> per hour.
+              Equivalently,
+              we could say it was dropping at average rate of <m>1.5 \deg F</m> per hour (saying
+              <q>dropping</q>
+              indicates direction and so eliminates the need for the negative sign.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Following the same approach:
+              <me>
+                AROC = \frac{\Delta \text{temperature}}{\Delta \text{time}} = \frac{f(10)-f(6)}{10-6} = \frac{48-39}{10-6} = 2.25
+              </me>
+              So, between 6 a.m. and 10 a.m. the temperature was increasing at an average rate of <m>2.25 \deg F</m> per hour.
+            </p>
+          </li>
+          <li>
+            <p>
+              Again:
+              <me>
+                AROC = \frac{\Delta \text{temperature}}{\Delta \text{time}} = \frac{f(10)-f(0)}{10-0} = \frac{48-48}{10-0} = 0
+              </me>
+              So between midnight and 10 a.m. the average rate of change of the temperature was <m>0 \deg F</m> per hour.
+              Note that this does not mean that the temperature was not changing!
+              This average rate of change means that when you average out all the changes the overall increases and decreases balance each other out.
+            </p>
+          </li>
+        </ol>
       </statement>
-    </example>
-    <ol marker="a">
-      <li>
-        <p>
-          Following the formula,
-          using the temperatures at midnight (i.e. at time = 0) and 6 a.m. (i.e. at time = 6):
-          <me>
-            AROC = \frac{\Delta temperature}{\Delta time} = \frac{f(6)-f(0)}{6-0} = \frac{39-48}{6-0} = -1.5
-          </me>
-          So, between midnight and 6 a.m. the temperature was changing at an average rate of <m>-1.5 \deg F</m> per hour.
-          Equivalently,
-          we could say it was dropping at average rate of <m>1.5 \deg F</m> per hour (saying
-          <q>dropping</q>
-          indicates direction and so eliminates the need for the negative sign.)
-        </p>
-      </li>
-      <li>
-        <p>
-          Following the same approach:
-          <me>
-            AROC = \frac{\Delta temperature}{\Delta time} = \frac{f(10)-f(6)}{10-6} = \frac{48-39}{10-6} = 2.25
-          </me>
-          So, between 6 a.m. and 10 a.m. the temperature was increasing at an average rate of <m>2.25 \deg F</m> per hour.
-        </p>
-      </li>
-      <li>
-        <p>
-          Again:
-          <me>
-            AROC = \frac{\Delta temperature}{\Delta time} = \frac{f(10)-f(0)}{10-0} = \frac{48-48}{10-0} = 0
-          </me>
-          So between midnight and 10 a.m. the average rate of change of the temperature was <m>0 \deg F</m> per hour.
-          Note that this does not mean that the temperature was not changing!
-          This average rate of change means that when you average out all the changes the overall increases and decreases balance each other out.
-        </p>
-      </li>
-    </ol>
+    </algorithm>
     <p>
       The notion of average rate of change can be applied to any function,
       regardless of whether or not we have any particular mathematical model in mind.
     </p>
-    <example xml:id="RateofChangeExample2">
+    <algorithm xml:id="RateofChangeExample2">
       <statement>
         <p>
           Find the average rate of change in
           <m>f(x)=x^2-3x+7</m> between <m>x=-1</m> and <m>x=1</m>
         </p>
+        <p>
+          To find the average rate of change we need both inputs and outputs.
+          We are given the two inputs,
+          but we need to use the function formula to find the corresponding outputs.
+          <me>
+            f(-1)=(-1)^2-3(-1)+7=11
+          </me>
+          <me>
+            f(1)=(1)^2-3(1)+7=5
+          </me>
+        </p>
+        <p>
+          Using these in the AROC formula we get:
+          <me>
+            AROC=\frac{\Delta f(x)}{\Delta x} = \frac{f(1)-f(-1)}{1-(-1)} = \frac{5-11}{1-(-1)} = \frac{-6}{2} = -3
+          </me>
+        </p>
+        <p>
+          So the average rate of change of this function between <m>x=-1</m> and <m>x=1</m> is <m>-3</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      To find the average rate of change we need both inputs and outputs.
-      We are given the two inputs,
-      but we need to use the function formula to find the corresponding outputs.
-      <me>
-        f(-1)=(-1)^2-3(-1)+7=11\\ f(1)=(1)^2-3(1)+7=5
-      </me>
-    </p>
-    <p>
-      Using these in the AROC formula we get:
-      <me>
-        AROC=\frac{\Delta f(x)}{\Delta x} = \frac{f(1)-f(-1)}{1-(-1)} = \frac{5-11}{1-(-1)} = \frac{-6}{2} = -3
-      </me>
-    </p>
-    <p>
-      So the average rate of change of this function between <m>x=-1</m> and <m>x=1</m> is <m>-3</m>. }
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Interpreting Average Rates of Change</title>
@@ -380,7 +383,7 @@
         </p>
       </statement>
     </definition>
-    <example xml:id="RateofChangeExample3">
+    <algorithm xml:id="RateofChangeExample3">
       <statement>
         <p>
           As I drive down the highway,
@@ -422,22 +425,22 @@
           What are the units?
           What does this average rate of change tell you in practical terms?
         </p>
+        <p>
+          We are treating distance as a function of gasoline,
+          so distance is the output and gasoline is the input.
+          So, using the AROC formula we get:
+          <me>
+            AROC = \frac{\Delta \text{output}}{\Delta \text{input}} = \frac{\Delta \text{distance}}{\Delta \text{gasoline}} = \frac{255.8-108.6}{7.5-3.2} = \frac{147.2}{4.3} = 34.2
+          </me>
+        </p>
+        <p>
+          The units are always
+          <q>output units per input unit</q>
+          so this means the average rate of change is actually
+          <q>34.2 miles per gallon</q>.
+        </p>
       </statement>
-    </example>
-    <p>
-      We are treating distance as a function of gasoline,
-      so distance is the output and gasoline is the input.
-      So, using the AROC formula we get:
-      <me>
-        AROC = \frac{\Delta output}{\Delta input} = \frac{\Delta distance}{\Delta gasoline} = \frac{255.8-108.6}{7.5-3.2} = \frac{147.2}{4.3} = 34.2
-      </me>
-    </p>
-    <p>
-      The units are always
-      <q>output units per input unit</q>
-      so this means the average rate of change is actually
-      <q>34.2 miles per gallon</q>.
-    </p>
+    </algorithm>
     <p>
       The average rate of change tells us the rate at which distance is changing as the amount of gas used changes.
       In other words, how far you go versus how much gas you burn.
@@ -451,7 +454,7 @@
       As in this example,
       the units of the average rate of change often give us a big hint about what the average rate of change actually means.
     </p>
-    <example xml:id="RateofChangeExample4">
+    <algorithm xml:id="RateofChangeExample4">
       <statement>
         <p>
           Mobile phones contain small amounts of valuable metals,
@@ -469,16 +472,16 @@
           What does this average rate of change tell you in a practical sense?
         </p>
       </statement>
-    </example>
-    <p>
-      Silver is a function of phones,
-      <me>
-        AROC = \frac{\Delta output}{\Delta input} = \frac{\Delta silver}{\Delta phones} = \frac{32.7-16.1}{10-5} = \frac{16.6}{5} = 3.32
-      </me>
-      the units are
-      <q>output units per input unit</q>, so using this and rounding we conclude that the average rate of change is
-      <q>3.3 kilograms of silver per ton of recycled phones</q>.
-    </p>
+      <p>
+        Silver is a function of phones,
+        <me>
+          AROC = \frac{\Delta \text{output}}{\Delta \text{input}} = \frac{\Delta \text{silver}}{\Delta \text{phones}} = \frac{32.7-16.1}{10-5} = \frac{16.6}{5} = 3.32
+        </me>
+        the units are
+        <q>output units per input unit</q>, so using this and rounding we conclude that the average rate of change is
+        <q>3.3 kilograms of silver per ton of recycled phones</q>.
+      </p>
+    </algorithm>
     <p>
       To interpret this,
       we know that the amount of expected silver to be recovered changes relative to the amount of phones,
@@ -532,7 +535,7 @@
       We'll close this chapter by noting this and offering an example where this happens.
       We'll have a lot more to say about functions with constant rates of change in the following chapter!
     </p>
-    <example xml:id="RateofChangeExample5">
+    <algorithm xml:id="RateofChangeExample5">
       <statement>
         <p>
           The amount of a residential electric bill
@@ -546,47 +549,50 @@
           Does it seem likely that the rate of change will always be the same?
         </p>
       </statement>
-    </example>
-    <p>
-      To determine the change in usage from <m>x=720</m> to <m>x=860</m> kilowatt hours,
-      we need to know the amount of the bills for those usage levels.
-      <me>
-        A(720) = 12.75+0.12(720) = 99.15\\ A(860) = 12.75+0.12(860) = 115.95
-      </me>
-    </p>
-    <p>
-      So the average rate of change is
-      <md>
-        <mrow>AROC \amp = \frac{\Delta bill}{\Delta usage} = \frac{\Delta A(x)}{\Delta x}</mrow>
-        <mrow>\amp = \frac{A(860)-A(720)}{860-720}</mrow>
-        <mrow>\amp = \frac{115.95-99.15}{860-720}</mrow>
-        <mrow>\amp =\frac{16.80}{140}</mrow>
-        <mrow>\amp =0.12</mrow>
-      </md>
-    </p>
-    <p>
-      So we would conclude that as usage changes from 720 to 860 kilowatt hours,
-      the bill changes at an average rate of <m>$0.12</m> per kilowatt hour.
-    </p>
-    <p>
-      Calculating the bill for 585 kilowatt hours we get:
-      <me>
-        A(585)=12.75+0.12(585)=82.95
-      </me>
-    </p>
-    <p>
-      And then:
-      <md>
-        <mrow>AROC \amp = \frac{\Delta bill}{\Delta usage} = \frac{\Delta A(x)}{\Delta x}</mrow>
-        <mrow>\amp = \frac{A(585)-A(860)}{585-860}</mrow>
-        <mrow>\amp = \frac{82.95-115.95}{585-860}</mrow>
-        <mrow>\amp =\frac{-33}{-260}</mrow>
-        <mrow>\amp =0.12</mrow>
-      </md>
-    </p>
-    <p>
-      So as the usage goes from 860 to 585 kilowatt hours the average rate of change is again <m>$0.12</m> per kilowatt hour. }
-    </p>
+      <p>
+        To determine the change in usage from <m>x=720</m> to <m>x=860</m> kilowatt hours,
+        we need to know the amount of the bills for those usage levels.
+        <me>
+          A(720) = 12.75+0.12(720) = 99.15
+        </me>
+        <me>
+          A(860) = 12.75+0.12(860) = 115.95
+        </me>
+      </p>
+      <p>
+        So the average rate of change is
+        <md>
+          <mrow>AROC \amp = \frac{\Delta \text{bill}}{\Delta \text{usage}} = \frac{\Delta A(x)}{\Delta x}</mrow>
+          <mrow>\amp = \frac{A(860)-A(720)}{860-720}</mrow>
+          <mrow>\amp = \frac{115.95-99.15}{860-720}</mrow>
+          <mrow>\amp =\frac{16.80}{140}</mrow>
+          <mrow>\amp =0.12</mrow>
+        </md>
+      </p>
+      <p>
+        So we would conclude that as usage changes from 720 to 860 kilowatt hours,
+        the bill changes at an average rate of <m>$0.12</m> per kilowatt hour.
+      </p>
+      <p>
+        Calculating the bill for 585 kilowatt hours we get:
+        <me>
+          A(585)=12.75+0.12(585)=82.95
+        </me>
+      </p>
+      <p>
+        And then:
+        <md>
+          <mrow>AROC \amp = \frac{\Delta \text{bill}}{\Delta \text{usage}} = \frac{\Delta A(x)}{\Delta x}</mrow>
+          <mrow>\amp = \frac{A(585)-A(860)}{585-860}</mrow>
+          <mrow>\amp = \frac{82.95-115.95}{585-860}</mrow>
+          <mrow>\amp =\frac{-33}{-275}</mrow>
+          <mrow>\amp =0.12</mrow>
+        </md>
+      </p>
+      <p>
+        So as the usage goes from 860 to 585 kilowatt hours the average rate of change is again <m>$0.12</m> per kilowatt hour.
+      </p>
+    </algorithm>
     <p>
       The fact that these two average rates of change are the same could be a coincidence,
       but there is reason to think something more might be going on here.
