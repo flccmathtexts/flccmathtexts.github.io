@@ -49,7 +49,7 @@
         f(x)=20x
       </me>
     </p>
-    <example xml:id="LinearFunctionsandInterceptsExample1">
+    <algorithm xml:id="LinearFunctionsandInterceptsExample1">
       <statement>
         <p>
           A landscaper sells firewood for <m>$75</m> per face cord<fn>
@@ -60,18 +60,18 @@
           Find a formula for the price for a load of firewood as a function of the number of face cords.
         </p>
       </statement>
-    </example>
-    <p>
-      Since the price changes at a constant rate,
-      this is a linear function with slope <m>$75</m> per face cord.
-      Applying the same logic we used in the water pumping discussion above,
-      it stands to reason that the cost of a load of firewood will be calculated by multiplying this slope by the number of face cords,
-      so the function's formula will be
-      <me>
-        f(x)=75x
-      </me>
-      where <m>x</m> is the number of face cords and <m>f(x)</m> is the price. }
-    </p>
+      <p>
+        Since the price changes at a constant rate,
+        this is a linear function with slope <m>$75</m> per face cord.
+        Applying the same logic we used in the water pumping discussion above,
+        it stands to reason that the cost of a load of firewood will be calculated by multiplying this slope by the number of face cords,
+        so the function's formula will be
+        <me>
+          f(x)=75x
+        </me>
+        where <m>x</m> is the number of face cords and <m>f(x)</m> is the price.
+      </p>
+    </algorithm>
   </introduction>
   <subsection>
     <title>The Vertical Intercept</title>
@@ -128,7 +128,7 @@
         g(x)=20x+800
       </me>
     </p>
-    <example xml:id="LinearFunctionsandInterceptsExample2">
+    <algorithm xml:id="LinearFunctionsandInterceptsExample2">
       <statement>
         <p>
           A landscaper sells firewood delivered to your home for
@@ -136,17 +136,17 @@
           Find a formula for the price for a load of firewood as a function of the number of face cords.
         </p>
       </statement>
-    </example>
-    <p>
-      Following the reasoning we used in the pool-filling example above we can see that the price would be calculated by multiplying the slope of
-      <m>$75</m> per face cord by the number of face cords,
-      and then adding the <m>$60</m> delivery charge.
-      So a formula for this function would be:
-      <me>
-        g(x)=75x+60
-      </me>
-      where <m>x</m> is the number of face cords and <m>g(x)</m> is the total cost of the order. }
-    </p>
+      <p>
+        Following the reasoning we used in the pool-filling example above we can see that the price would be calculated by multiplying the slope of
+        <m>$75</m> per face cord by the number of face cords,
+        and then adding the <m>$60</m> delivery charge.
+        So a formula for this function would be:
+        <me>
+          g(x)=75x+60
+        </me>
+        where <m>x</m> is the number of face cords and <m>g(x)</m> is the total cost of the order.
+      </p>
+    </algorithm>
     <p>
       From these examples we can see that,
       in addition to their constant rates of change,
@@ -180,12 +180,19 @@
       To plot <m>(0,800)</m> we would not move at all to the left of right of the origin,
       since the input coordinate value is 0.
       And then we would move up 800 units to reach the output coordinate value of 800.
-      So our point would be located right here (using the window setting
+      So our point would be located right here using the window setting
       <m>-1 \leq x \leq 5</m> and <m>0 \leq g(x) \leq 1000</m>:
     </p>
     <figure>
       <caption>Graph showing <m>(0,800)</m></caption>
-      <image width="92.5%" source="LinearFunctionsandInterceptsImages/Figure01.png" />
+      <image width="92.5%" source="LinearFunctionsandInterceptsImages/Figure01.png">
+        <description>
+          A graph on a coordinate plane with a horizontal x-axis and a vertical y-axis. 
+          The x-axis has several tick marks extending to the right. 
+          A single point is plotted as a solid black square on the vertical y-axis. 
+          This point represents the y-intercept at the coordinates (0, 800).
+        </description>
+      </image>
     </figure>
     <p>
       Notice that this point lies on the output axis
@@ -195,13 +202,19 @@
     </p>
     <figure>
       <caption>Graph of <m>g(x)=20x+800</m></caption>
-      <image width="92.5%" source="LinearFunctionsandInterceptsImages/Figure02.png" />
+      <image width="92.5%" source="LinearFunctionsandInterceptsImages/Figure02.png">
+        <description>
+          A graph on a coordinate plane showing a linear function. 
+          The vertical y-axis and horizontal x-axis are shown with tick marks. 
+          A solid line with a positive slope rises from left to right, crossing the y-axis at a y-intercept indicated by a solid black square at (0, 800).
+        </description>
+      </image>
     </figure>
     <p>
       we can see that this point can be thought of as the place where the graph intersects the vertical axis (i.e. the output axis).
       And so we call it the vertical intercept.
     </p>
-    <example xml:id="LinearFunctionsandInterceptsExample3">
+    <algorithm xml:id="LinearFunctionsandInterceptsExample3">
       <statement>
         <p>
           A landscaper sells firewood delivered to your home.
@@ -210,26 +223,26 @@
           What is the vertical intercept of this function?
         </p>
       </statement>
-    </example>
-    <p>
-      The vertical intercept is the
-      <q>starting point</q>
-      for the function,
-      and we know from looking at this example before that the price starts at
-      <m>$60</m> for delivery and then we add on the cost for the amount of firewood ordered.
-      Using that logic, we know that the vertical intercept is 60.
-    </p>
-    <p>
-      We could also see this from the function itself.
-      We know the vertical intercept is the value you get when your graph hits the vertical (output) axis,
-      which happens when the input value is <m>x=0</m>.
-      So, plugging in we would get:
-      <me>
-        g(0)=75(0)+60=60
-      </me>
-      which means that the point <m>(0,60)</m> is on the graph,
-      and that the vertical intercept is therefore 60. }
-    </p>
+      <p>
+        The vertical intercept is the
+        <q>starting point</q>
+        for the function,
+        and we know from looking at this example before that the price starts at
+        <m>$60</m> for delivery and then we add on the cost for the amount of firewood ordered.
+        Using that logic, we know that the vertical intercept is 60.
+      </p>
+      <p>
+        We could also see this from the function itself.
+        We know the vertical intercept is the value you get when your graph hits the vertical (output) axis,
+        which happens when the input value is <m>x=0</m>.
+        So, plugging in we would get:
+        <me>
+          g(0)=75(0)+60=60
+        </me>
+        which means that the point <m>(0,60)</m> is on the graph,
+        and that the vertical intercept is therefore 60.
+      </p>
+    </algorithm>
     <p>
       The term
       <q>vertical intercept</q>
@@ -252,27 +265,27 @@
       <q><m>(0,60)</m></q>
       a correct answer.
     </p>
-    <example xml:id="LinearFunctionsandInterceptsExample4">
+    <algorithm xml:id="LinearFunctionsandInterceptsExample4">
       <statement>
         <p>
           What is the vertical intercept for the linear function <m>h(t)=3t-17</m>?
         </p>
       </statement>
-    </example>
-    <p>
-      Here we don't know the intended meaning of the function,
-      so we can't rely on that to tell us the
-      <q>starting point</q>. But we do know that the <m>y</m>-intercept happens where the input value is <m>t=0</m>.
-      So, substituting in we get:
-      <me>
-        h(0)=3(0)-17=-17
-      </me>
-    </p>
-    <p>
-      And so we conclude that the vertical intercept is <m>-17</m>.
-      Or, we could equally correctly say that the vertical intercept is <m>(0, -17)</m>. }
-    </p>
-    <example xml:id="LinearFunctionsandInterceptsExample5">
+      <p>
+        Here we don't know the intended meaning of the function,
+        so we can't rely on that to tell us the
+        <q>starting point</q>. But we do know that the <m>y</m>-intercept happens where the input value is <m>t=0</m>.
+        So, substituting in we get:
+        <me>
+          h(0)=3(0)-17=-17
+        </me>
+      </p>
+      <p>
+        And so we conclude that the vertical intercept is <m>-17</m>.
+        Or, we could equally correctly say that the vertical intercept is <m>(0, -17)</m>.
+      </p>
+    </algorithm>
+    <algorithm xml:id="LinearFunctionsandInterceptsExample5">
       <statement>
         <p>
           The daily dose of insulin required by a diabetic is a linear function of the grams of carbohydrate consumed.
@@ -284,21 +297,21 @@
           of insulin needed before even considering any carbohydrates consumed?
         </p>
       </statement>
-    </example>
-    <p>
-      This
-      <q>starting amount</q>
-      is the vertical intercept.
-      This would be the amount of insulin needed even if the patient consumed <m>x=0</m> grams.
-      Substituting in we get:
-      <me>
-        f(0)=\frac{1}{6}(0)+18=18
-      </me>
-    </p>
-    <p>
-      So the vertical intercept is <m>18</m>,
-      which we would interpret here as <m>18</m> units of insulin. }
-    </p>
+      <p>
+        This
+        <q>starting amount</q>
+        is the vertical intercept.
+        This would be the amount of insulin needed even if the patient consumed <m>x=0</m> grams.
+        Substituting in we get:
+        <me>
+          f(0)=\frac{1}{6}(0)+18=18
+        </me>
+      </p>
+      <p>
+        So the vertical intercept is <m>18</m>,
+        which we would interpret here as <m>18</m> units of insulin.
+      </p>
+    </algorithm>
     <p>
       It is often very helpful to think of the vertical intercept as the
       <q>starting point</q>, but sometimes this interpretation is not completely clear,
@@ -310,7 +323,7 @@
       The vertical intercept is the output value of the function when the input is zero.
       This will be useful in the following example.
     </p>
-    <example xml:id="LinearFunctionsandInterceptsExample6">
+    <algorithm xml:id="LinearFunctionsandInterceptsExample6">
       <statement>
         <p>
           The temperature in degrees Fahrenheit is a linear function of the temperature in degrees Celsius,
@@ -319,48 +332,48 @@
           and what does it mean in terms of Fahrenheit and Celsius temperatures?
         </p>
       </statement>
-    </example>
-    <p>
-      The vertical intercept is clearly <m>32</m>,
-      but it's not immediately clear what a
-      <q>starting point</q>
-      of <m>32</m> would mean.
-      Remember, though, that this is the output
-      (in degrees Fahrenheit)
-      that you get when the input
-      (in degrees Celsius)
-      is <m>0</m>.
-      So, when the input temperature is <m>0^\circ C</m>,
-      the output temperature is <m>32^\circ F</m>.
-      This doesn't really lend itself well to a
-      <q>starting point</q>
-      interpretation,
-      but it does make sense - the vertical intercept here is based on the freezing point of water,
-      which happens to be <m>0^\circ C</m>.
-    </p>
-    <p>
-      Because it is traditional
-      (though as we've repeatedly seen certainly not necessary)
-      to call the input variable of a function <m>x</m> and the output variable <m>y</m>,
-      the vertical axis can often be called the <m>y</m>-axis,
-      and likewise the vertical intercept is often called the <m>y</m>-intercept.
-      This is so ingrained that this name is often used even if the output variable has a different name!
-      For example,
-      if we were looking at the linear relationship given by the formula:
-      <me>
-        p=3x+12
-      </me>
-      the natural way to look at this would be as defining <m>p</m> as a linear function of <m>x</m>.
-      The vertical intercept of this function is 12.
-      Since the output variable is <m>p</m> the vertical (output) axis could also be called the <m>p</m>-axis,
-      and it would be reasonable to also call 12 the <m>p</m>-intercept.
-      And in fact this is correct usage.
-      Calling it either the
-      <q>vertical intercept</q>
-      or the
-      <q><m>p</m>-intercept</q>
-      would be equally correct, and we will feel free to use either term.
-    </p>
+      <p>
+        The vertical intercept is clearly <m>32</m>,
+        but it's not immediately clear what a
+        <q>starting point</q>
+        of <m>32</m> would mean.
+        Remember, though, that this is the output
+        (in degrees Fahrenheit)
+        that you get when the input
+        (in degrees Celsius)
+        is <m>0</m>.
+        So, when the input temperature is <m>0^\circ C</m>,
+        the output temperature is <m>32^\circ F</m>.
+        This doesn't really lend itself well to a
+        <q>starting point</q>
+        interpretation,
+        but it does make sense - the vertical intercept here is based on the freezing point of water,
+        which happens to be <m>0^\circ C</m>.
+      </p>
+      <p>
+        Because it is traditional
+        (though as we've repeatedly seen certainly not necessary)
+        to call the input variable of a function <m>x</m> and the output variable <m>y</m>,
+        the vertical axis can often be called the <m>y</m>-axis,
+        and likewise the vertical intercept is often called the <m>y</m>-intercept.
+        This is so ingrained that this name is often used even if the output variable has a different name!
+        For example,
+        if we were looking at the linear relationship given by the formula:
+        <me>
+          p=3x+12
+        </me>
+        the natural way to look at this would be as defining <m>p</m> as a linear function of <m>x</m>.
+        The vertical intercept of this function is 12.
+        Since the output variable is <m>p</m> the vertical (output) axis could also be called the <m>p</m>-axis,
+        and it would be reasonable to also call 12 the <m>p</m>-intercept.
+        And in fact this is correct usage.
+        Calling it either the
+        <q>vertical intercept</q>
+        or the
+        <q><m>p</m>-intercept</q>
+        would be equally correct, and we will feel free to use either term.
+      </p>
+    </algorithm>
     <p>
       It really is not correct to call 12 the
       <q><m>y</m>-intercept</q>
@@ -494,23 +507,23 @@
       <q>beginning</q>. (That's not really where it comes from,
       but it's a handy thing to remember anyway.)
     </p>
-    <example xml:id="LinearFunctionsandInterceptsExample7">
+    <algorithm xml:id="LinearFunctionsandInterceptsExample7">
       <statement>
         <p>
-          the function <m>h(x)=8x+5</m> linear?
+          Is the function <m>h(x)=8x+5</m> linear?
           If so, what is its slope, and what is its vertical intercept?
         </p>
       </statement>
-    </example>
-    <p>
-      The formula for this function is recognizable as being in the <m>f(x)=mx+b</m> form,
-      and so we know it is indeed a linear function.
-      We can see that <m>m</m> is 8 so the slope is 8, and we can see that <m>b</m> is 5 and so the vertical intercept is 5.
-    </p>
-    <p>
-      Combining this slope-intercept form with what we already know about the interpretation of slope and vertical intercept can give us insights into the interpretation of a function from its formula.
-    </p>
-    <example xml:id="LinearFunctionsandInterceptsExample8">
+      <p>
+        The formula for this function is recognizable as being in the <m>f(x)=mx+b</m> form,
+        and so we know it is indeed a linear function.
+        We can see that <m>m</m> is 8 so the slope is 8, and we can see that <m>b</m> is 5 and so the vertical intercept is 5.
+      </p>
+      <p>
+        Combining this slope-intercept form with what we already know about the interpretation of slope and vertical intercept can give us insights into the interpretation of a function from its formula.
+      </p>
+    </algorithm>
+    <algorithm xml:id="LinearFunctionsandInterceptsExample8">
       <statement>
         <p>
           An equipment company rents power equipment by the day.
@@ -520,34 +533,34 @@
           What do they mean in terms of this equipment rental?
         </p>
       </statement>
-    </example>
-    <p>
-      The formula for the function fits the slope-intercept (<m>f(x)=mx+b</m>) form,
-      with the slope <m>m</m> being <m>27.5</m> and the vertical intercept <m>b</m> being <m>15</m>.
-      (The input variable here is <m>t</m> instead of <m>x</m>,
-      but the name of the variable doesn't matter.)
-    </p>
-    <p>
-      The slope is the rate of change,
-      with units in output units per input unit.
-      So, since the output is cost in dollars and the input is days,
-      the slope is <m>$27.50</m> per day.
-      The company charges <m>$27.50</m> per day to rent the tamper.
-    </p>
-    <p>
-      The vertical intercept is the base, or starting point,
-      and since it is added in as part of the formula to get the output,
-      it must be in the output units.
-      So the vertical intercept is <m>$15</m>.
-      The company starts with a basic charge of <m>$15</m> to rent the tamper,
-      regardless of how long it is kept out. }
-    </p>
+      <p>
+        The formula for the function fits the slope-intercept (<m>f(x)=mx+b</m>) form,
+        with the slope <m>m</m> being <m>27.5</m> and the vertical intercept <m>b</m> being <m>15</m>.
+        (The input variable here is <m>t</m> instead of <m>x</m>,
+        but the name of the variable doesn't matter.)
+      </p>
+      <p>
+        The slope is the rate of change,
+        with units in output units per input unit.
+        So, since the output is cost in dollars and the input is days,
+        the slope is <m>$27.50</m> per day.
+        The company charges <m>$27.50</m> per day to rent the tamper.
+      </p>
+      <p>
+        The vertical intercept is the base, or starting point,
+        and since it is added in as part of the formula to get the output,
+        it must be in the output units.
+        So the vertical intercept is <m>$15</m>.
+        The company starts with a basic charge of <m>$15</m> to rent the tamper,
+        regardless of how long it is kept out.
+      </p>
+    </algorithm>
     <p>
       It is important to note that a function is linear if and only if it's output can be written in slope-intercept (<m>mx+b</m>) form.
       A function that is not written in this form may still be linear,
       so long as we can put it into this form by simplification.
     </p>
-    <example xml:id="LinearFunctionsandInterceptsExample9">
+    <algorithm xml:id="LinearFunctionsandInterceptsExample9">
       <statement>
         <p>
           Is the function <m>g(t)=5(t-7)+4t-2(7t-5)</m> linear?
@@ -555,33 +568,33 @@
           If not, how do you know it is not?
         </p>
       </statement>
-    </example>
-    <p>
-      The function is clearly not currently in slope-intercept (<m>f(x)=mx+b</m>) form.
-      But, with some algebraic simplification,
-      we see that it can be rewritten:
-      <md>
-        <mrow>g(t)\amp =5(t-7)+4t-2(7t-5)</mrow>
-        <mrow>\amp =5t-35+4t-14t+10</mrow>
-        <mrow>\amp =-5t-25</mrow>
-      </md>
-    </p>
-    <p>
-      Which is very close to slope-intercept form,
-      except that it is a minus sign (<m>-</m>) between the terms instead of a addition sign <m>+</m>.
-      But we can rewrite this as
-      <m>g(t)=-5t+(-25)</m> which does fit the form with slope <m>m=-5</m> and vertical intercept <m>b=-25</m>.
-      So the function is linear. }
-    </p>
-    <p>
-      NOTE: Most of the time,
-      we don't bother rewriting the subtraction as addition of a negative as we did here.
-      From this point forward, we will just recognize that
-      <q><m>-5t-25</m></q>
-      is in fact in slope intercept form with a negative vertical intercept without actually bothering to rewrite it as
-      <q><m>-5t+(-25)</m></q>.
-    </p>
-    <example xml:id="LinearFunctionsandInterceptsExample10">
+      <p>
+        The function is clearly not currently in slope-intercept (<m>f(x)=mx+b</m>) form.
+        But, with some algebraic simplification,
+        we see that it can be rewritten:
+        <md>
+          <mrow>g(t)\amp =5(t-7)+4t-2(7t-5)</mrow>
+          <mrow>\amp =5t-35+4t-14t+10</mrow>
+          <mrow>\amp =-5t-25</mrow>
+        </md>
+      </p>
+      <p>
+        Which is very close to slope-intercept form,
+        except that it is a minus sign (<m>-</m>) between the terms instead of a addition sign <m>+</m>.
+        But we can rewrite this as
+        <m>g(t)=-5t+(-25)</m> which does fit the form with slope <m>m=-5</m> and vertical intercept <m>b=-25</m>.
+        So the function is linear.
+      </p>
+      <p>
+        NOTE: Most of the time,
+        we don't bother rewriting the subtraction as addition of a negative as we did here.
+        From this point forward, we will just recognize that
+        <q><m>-5t-25</m></q>
+        is in fact in slope intercept form with a negative vertical intercept without actually bothering to rewrite it as
+        <q><m>-5t+(-25)</m></q>.
+      </p>
+    </algorithm>
+    <algorithm xml:id="LinearFunctionsandInterceptsExample10">
       <statement>
         <p>
           Is the function <m>f(x)=2x(4x-5)+3(x-7)</m> linear?
@@ -589,27 +602,27 @@
           If not, how do you know it is not?
         </p>
       </statement>
-    </example>
-    <p>
-      It certainly is not in slope-intercept form now,
-      but perhaps with some simplification we can get it there:
-      <md>
-        <mrow>f(x) \amp = 2x(4x-5)+3(x-7)</mrow>
-        <mrow>\amp =8x^2-10x+3x-21</mrow>
-        <mrow>\amp =8x^2-7x-21</mrow>
-      </md>
-    </p>
-    <p>
-      Here we have reached an impasse.
-      The first term, <m>8x^2</m> contains an exponent,
-      something not allowed in the slope-intercept form.
-      If there were other like terms to combine it with there might be some hope of getting rid of this
-      <q>squared</q>
-      term, but there is none.
-      We cannot simplify this any further,
-      and so we know it cannot be put into slope-intercept form.
-      Therefore this function is not linear. }
-    </p>
+      <p>
+        It certainly is not in slope-intercept form now,
+        but perhaps with some simplification we can get it there:
+        <md>
+          <mrow>f(x) \amp = 2x(4x-5)+3(x-7)</mrow>
+          <mrow>\amp =8x^2-10x+3x-21</mrow>
+          <mrow>\amp =8x^2-7x-21</mrow>
+        </md>
+      </p>
+      <p>
+        Here we have reached an impasse.
+        The first term, <m>8x^2</m> contains an exponent,
+        something not allowed in the slope-intercept form.
+        If there were other like terms to combine it with there might be some hope of getting rid of this
+        <q>squared</q>
+        term, but there is none.
+        We cannot simplify this any further,
+        and so we know it cannot be put into slope-intercept form.
+        Therefore this function is not linear.
+      </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>The Horizontal Intercept</title>
@@ -654,32 +667,32 @@
     <p>
       The following example will illustrate.
     </p>
-    <example xml:id="LinearFunctionsandInterceptsExample11">
+    <algorithm xml:id="LinearFunctionsandInterceptsExample11">
       <statement>
         <p>
           What is the horizontal intercept for the linear function <m>f(t)=3t+12</m>?
         </p>
       </statement>
-    </example>
-    <p>
-      Setting the output value <m>f</m> equal to <m>0</m> we get:
-      <me>
-        f(t)=3t+12\\ 0=3t+12
-      </me>
-      an equation we can now solve for <m>t</m>:
-      <md>
-        <mrow>0\amp =3t+12</mrow>
-        <mrow>-3t\amp =12</mrow>
-        <mrow>t\amp =-4</mrow>
-      </md>
-    </p>
-    <p>
-      And so we conclude that the horizontal intercept is <m>-4</m>.
-      Or, equally correctly,
-      we could say that the horizontal intercept is <m>(-4,0)</m>.
-      (Note that it is the output value,
-      not the input value, that is <m>0</m>.)
-    </p>
+      <p>
+        Setting the output value <m>f</m> equal to <m>0</m> we get:
+        <me>
+          f(t)=3t+12\\ 0=3t+12
+        </me>
+        an equation we can now solve for <m>t</m>:
+        <md>
+          <mrow>0\amp =3t+12</mrow>
+          <mrow>-3t\amp =12</mrow>
+          <mrow>t\amp =-4</mrow>
+        </md>
+      </p>
+      <p>
+        And so we conclude that the horizontal intercept is <m>-4</m>.
+        Or, equally correctly,
+        we could say that the horizontal intercept is <m>(-4,0)</m>.
+        (Note that it is the output value,
+        not the input value, that is <m>0</m>.)
+      </p>
+    </algorithm>
     <p>
       It would also be correct to call this the <m>t</m>-intercept in this context,
       since the horizontal (input) axis can be called the <m>t</m>-axis since the input variable is <m>t</m>. }
@@ -690,7 +703,7 @@
       Whether or not this is of much interest really depends on whether or not the output variable being equal to <m>0</m> is of much interest.
       The following example will illustrate.
     </p>
-    <example xml:id="LinearFunctionsandInterceptsExample12">
+    <algorithm xml:id="LinearFunctionsandInterceptsExample12">
       <statement>
         <p>
           Jaye's electric bill is a function of his electric usage
@@ -716,52 +729,52 @@
           </ol>
         </p>
       </statement>
-    </example>
-    <ol marker="a">
-      <li>
-        <p>
-          The slope can be seen from the fact that the formula is in slope-intercept form.
-          Its units are, as always, output units per input unit.
-          So the slope is <m>$0.10</m> per kilowatt hour.
-          The slope represents how much he pays for each additional kilowatt hour of electricity used.
-        </p>
-      </li>
-      <li>
-        <p>
-          The vertical intercept can also be seen from the slope-intercept form.
-          It is <m>$12.50</m>.
-          This would be his bill is his usage were 0 kilowatt hours.
-          So this is a flat rate charged regardless of usage,
-          which he pays just to have electric service to his house.
-        </p>
-      </li>
-      <li>
-        <p>
-          To find the horizontal intercept,
-          we set the output value to <m>0</m> and solve:
-          <md>
-            <mrow>0\amp =0.1x+12.5</mrow>
-            <mrow>-0.1x\amp =12.5</mrow>
-            <mrow>x\amp =-125</mrow>
-          </md>
-          Since the input to this function is electricity usage measured in kilowatt-hours,
-          this horizontal intercept would be interpreted to be <m>-125</m> kilowatt hours.
-          This would happen if his bill were <m>$0</m>.
-          So, the horizontal intercept is telling us that in order for Jaye to have a <m>$0</m> electric bill,
-          he would have to use negative 125 kilowatt-hours of electricity.
-          For most people, this makes no sense at all.
-          You cannot use negative electricity!
-          And probably the horizontal intercept is not of much interest to Jaye.
-          In this situation we would simply say that there is no practical interpretation of the horizontal intercept in this context.
-          But, on the other hand, maybe not.
-          If Jaye was mistakenly overbilled last month,
-          it actually might be possible for his electric use to show up as a negative number - to reflect the prior month's overbilling.
-          Or, if Jaye has solar panels on his roof which generate electricity,
-          it is possible that the panels could generate 125 kilowatt-hours more electricity than he actually uses,
-          resulting in a bill for negative kilowatt-hours.
-        </p>
-      </li>
-    </ol>
+      <ol marker="a">
+        <li>
+          <p>
+            The slope can be seen from the fact that the formula is in slope-intercept form.
+            Its units are, as always, output units per input unit.
+            So the slope is <m>$0.10</m> per kilowatt hour.
+            The slope represents how much he pays for each additional kilowatt hour of electricity used.
+          </p>
+        </li>
+        <li>
+          <p>
+            The vertical intercept can also be seen from the slope-intercept form.
+            It is <m>$12.50</m>.
+            This would be his bill is his usage were 0 kilowatt hours.
+            So this is a flat rate charged regardless of usage,
+            which he pays just to have electric service to his house.
+          </p>
+        </li>
+        <li>
+          <p>
+            To find the horizontal intercept,
+            we set the output value to <m>0</m> and solve:
+            <md>
+              <mrow>0\amp =0.1x+12.5</mrow>
+              <mrow>-0.1x\amp =12.5</mrow>
+              <mrow>x\amp =-125</mrow>
+            </md>
+            Since the input to this function is electricity usage measured in kilowatt-hours,
+            this horizontal intercept would be interpreted to be <m>-125</m> kilowatt hours.
+            This would happen if his bill were <m>$0</m>.
+            So, the horizontal intercept is telling us that in order for Jaye to have a <m>$0</m> electric bill,
+            he would have to use negative 125 kilowatt-hours of electricity.
+            For most people, this makes no sense at all.
+            You cannot use negative electricity!
+            And probably the horizontal intercept is not of much interest to Jaye.
+            In this situation we would simply say that there is no practical interpretation of the horizontal intercept in this context.
+            But, on the other hand, maybe not.
+            If Jaye was mistakenly overbilled last month,
+            it actually might be possible for his electric use to show up as a negative number - to reflect the prior month's overbilling.
+            Or, if Jaye has solar panels on his roof which generate electricity,
+            it is possible that the panels could generate 125 kilowatt-hours more electricity than he actually uses,
+            resulting in a bill for negative kilowatt-hours.
+          </p>
+        </li>
+      </ol>
+    </algorithm>
     <p>
       This example illustrates the horizontal intercept often is not of much interest,
       but sometimes might be.
