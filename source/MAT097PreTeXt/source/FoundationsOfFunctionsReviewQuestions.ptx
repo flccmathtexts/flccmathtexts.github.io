@@ -884,7 +884,11 @@
           </row>
         </tabular>
         <p>
-          <image width="92.5%" source="FunctionsReviewQuestionsImages/Question39Figure01.png" />
+          <image width="92.5%" source="FunctionsReviewQuestionsImages/Question39Figure01.png">
+            <description>
+              A graph on a coordinate plane shows several green points forming a parabola opening upward. The x-axis ranges from -9 to 9, and the y-axis ranges from -8 to 100. The points are labeled with their coordinates: (-8, 81), (-6, 49), (-4, 25), (-2, 9), (0, 1), (2, 1), (4, 9), and (6, 25). The vertex of the shape is located between x equals 0 and x equals 2 at a height of y equals 0.
+            </description>
+          </image>
         </p>
       </solution>
     </exercise>
@@ -930,7 +934,11 @@
           </row>
         </tabular>
         <p>
-          <image width="92.5%" source="FunctionsReviewQuestionsImages/Question40Figure01.png" />
+          <image width="92.5%" source="FunctionsReviewQuestionsImages/Question40Figure01.png">
+            <description>
+              A graph on a coordinate plane with five green points plotted. The x-axis ranges from -9 to 9 and the y-axis ranges from -9 to 29. The points are labeled with their coordinates: (-4, 24), (-2, 6), (0, -4), (2, -6), and (4, 0). The points are positioned such that they suggest a curve decreasing from the left, reaching a minimum near (2, -6), and then starting to increase.
+            </description>
+          </image>
         </p>
       </solution>
     </exercise>
@@ -1067,9 +1075,30 @@
         </p>
         <tabular>
           <row>
-            <cell>a. <image width="60%" source="FunctionsReviewQuestionsImages/Question48Figure01.png" /></cell>
-            <cell>b. <image width="60%" source="FunctionsReviewQuestionsImages/Question48Figure02.png" /></cell>
-            <cell>c. <image width="60%" source="FunctionsReviewQuestionsImages/Question48Figure03.png" /></cell>
+            <cell>
+              a. 
+              <image width="60%" source="FunctionsReviewQuestionsImages/Question48Figure01.png">
+                <description>
+                  A graph of a parabola opening upward with its vertex at the origin of a coordinate plane.
+                </description>
+              </image>
+            </cell>
+            <cell>
+              b. 
+              <image width="60%" source="FunctionsReviewQuestionsImages/Question48Figure02.png">
+                <description>
+                  A graph on a coordinate plane showing three distinct curved branches separated by two vertical asymptotes. Each branch increases from left to right.
+                </description>
+              </image>
+            </cell>
+            <cell>
+              c. 
+              <image width="60%" source="FunctionsReviewQuestionsImages/Question48Figure03.png">
+                <description>
+                  A graph of a parabola opening to the right with its vertex at the origin of a coordinate plane.
+                </description>
+              </image>
+            </cell>
           </row>
         </tabular>
       </statement>
