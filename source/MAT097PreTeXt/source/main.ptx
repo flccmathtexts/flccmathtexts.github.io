@@ -41,10 +41,13 @@ IIIII}
   <book>
     <title>Algebra and Introduction to Functions</title>
     <frontmatter>
-      <titlepage>
+      <bibinfo>
         <author>
           <personname>FLCC Mathematics Department</personname>
         </author>
+      </bibinfo>
+      <titlepage>
+        <titlepage-items />
       </titlepage>
     </frontmatter>
     <xi:include href="./FoundationsOfArithmetic.ptx"/>

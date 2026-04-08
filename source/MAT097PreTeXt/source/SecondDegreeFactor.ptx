@@ -5,7 +5,7 @@
   <introduction>
     <p>
       Recall the distribution rules from <xref ref="Distribution">Section</xref>
-      <xref ref="DistributionExample5">Example</xref>:
+      <xref ref="DistributionAlgorithm5">Example</xref>:
       <md>
         <mrow>(x+2)(x+3) \amp  = x(x+3)+2(x+3)</mrow>
         <mrow>\amp</mrow>

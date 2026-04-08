@@ -651,11 +651,11 @@
       there are a couple of additional points which we should address.
     </p>
     <p>
-      We saw in <xref ref="FunctionsandGraphsExample2">Example</xref>
+      We saw in <xref ref="SolvingEquationsGraphicallyExample2">Example</xref>
       that it's possible for an equation to have multiple solutions.
       Which raises the question:
-      how do we know in <xref ref="FunctionsandGraphsExample3">Examples</xref>
-      and <xref ref="FunctionsandGraphsExample4" />
+      how do we know in <xref ref="SolvingEquationsGraphicallyExample3">Examples</xref>
+      and <xref ref="SolvingEquationsGraphicallyExample4" />
       that we got all the solutions?
       We adjusted our window to find a solution ... but how do we know that we wouldn't find another if we looked elsewhere?
     </p>
@@ -670,7 +670,7 @@
       So, while we can't say for sure just by looking at the graphs whether or not there are other solutions out there,
       what we know about algebra assures us that we don't have to worry about this with these examples.
       For equations that are not first degree,
-      such as the one in <xref ref="FunctionsandGraphsExample2">Example</xref>,
+      such as the one in <xref ref="SolvingEquationsGraphicallyExample2">Example</xref>,
       you need to know more about how they behave algebraically and graphically to know how many solutions you are looking for.
       We will explore this in later chapters of this book;
       for the time being,
@@ -686,7 +686,7 @@
       but it actually can find the intersection if it falls above or below the window.
       So sometimes if you don't have the intersection in the window but run the intersect program,
       you get the answer anyway.
-      This actually would have happened in <xref ref="FunctionsandGraphsExample4">Example</xref>
+      This actually would have happened in <xref ref="SolvingEquationsGraphicallyExample4">Example</xref>
       if we had not adjusted the window to see the intersection.
       But since you can't really rely on that happening,
       it's probably best to always try to get a window that the intersection falls within.
