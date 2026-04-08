@@ -101,39 +101,39 @@
       Common sense also tells us that these must be the only two solutions to the equation,
       since the ball would not be at this height at any other time.
     </p>
-    <example xml:id="FirstDegreeEquationsExample1">
+    <algorithm xml:id="FirstDegreeEquationsExample1">
       <statement>
         <p>
-          Determine which,
-          if any, of the values <m>1</m>, <m>2</m>, <m>3</m>,
-          <m>4</m>, or <m>5</m> satisfy the equation <m>3x-2=10</m>
+          Determine which, if any, of the values <m>1</m>, <m>2</m>, <m>3</m>, <m>4</m>, or <m>5</m> satisfy the equation <m>3x-2=10</m>.
+        </p>
+        <p>
+          To do this, we will need to substitute each of the given values into the equation. Plugging in <m>x=1</m> we get:
+          <md>
+            <mrow>3(1)-2 \amp = 10</mrow>
+            <mrow>3-2 \amp = 10</mrow>
+            <mrow>1 \amp = 10</mrow>
+          </md>
+          which clearly is a false statement and we see that <m>x=1</m> does not satisfy the equation.
+        </p>
+        <p>
+          Moving on to <m>x=2</m>, we get:
+          <md>
+            <mrow>3(2)-2 \amp = 10</mrow>
+            <mrow>6-2 \amp = 10</mrow>
+            <mrow>4 \amp = 10</mrow>
+          </md>
+          which again is a false statement and we conclude that <m>x=2</m> does not satisfy the equation.
+        </p>
+        <p>
+          You can repeat this process for the remaining values. You should see that only <m>x=4</m> satisfies the equation; the other values do not.
+          <md>
+            <mrow>3(4)-2 \amp = 10</mrow>
+            <mrow>12-2 \amp = 10</mrow>
+            <mrow>10 \amp = 10</mrow>
+          </md>
         </p>
       </statement>
-    </example>
-    <p>
-      To do this, we will need to substitute each of the given values into the given equation.
-      Plugging in <m>x=1</m> we get:
-      <md>
-        <mrow>3(1)-2 \amp  = 10</mrow>
-        <mrow>3-2 \amp  = 10</mrow>
-        <mrow>1 \amp  = 10</mrow>
-      </md>
-      which clearly is a false statement and we see that <m>x=1</m> does not satisfy the equation.
-    </p>
-    <p>
-      Moving on to <m>x=2</m>, we get:
-      <md>
-        <mrow>3(2)-2 \amp  = 10</mrow>
-        <mrow>4-2 \amp  = 10</mrow>
-        <mrow>4 \amp  = 10</mrow>
-      </md>
-      which again is a false statement and we conclude that <m>x=2</m> does not satisfy the equation.
-    </p>
-    <p>
-      You can repeat this process yourself for the remaining values to try.
-      You should see that only <m>x=4</m> satisfies the equation;
-      the other given values do not. }
-    </p>
+    </algorithm>
   </introduction>
   <subsection>
     <title>Solving Equations Using the Balance Principle</title>
@@ -144,16 +144,11 @@
       how would we have known to try it?
       This is the great challenge of algebra.
     </p>
-    <p>
-      \begin{SCfigure}[0.6][H]
-    </p>
-    <p>
-      \ifx\undefined\undefined \ifx\undefined\undefined \relax \else \fi \else \fi \global \global
-    </p>
-    <image source="FirstDegreeEquationsImages/TextPage.png" />
-    <p>
-      \end{SCfigure}
-    </p>
+    <image source="FirstDegreeEquationsImages/TextPage.png">
+      <description>
+        An aged, rectangular piece of parchment with handwritten Arabic calligraphy in black and red ink.
+      </description>
+    </image>
     <p>
       <q>Balancing</q>
       is one of the most fundamental principles used in algebra.
@@ -238,7 +233,7 @@
       the strategies to use to get the variable by itself may be more involved.
       The following examples will illustrate how the principle of balance can be used effectively with some of these more complicated equations.
     </p>
-    <example xml:id="FirstDegreeEquationsExample2">
+    <algorithm xml:id="FirstDegreeEquationsExample2">
       <statement>
         <p>
           Solve for <m>x</m>:
@@ -246,38 +241,37 @@
             5x-11+3(2x-3)=2
           </me>
         </p>
+        <p>
+          Before putting the principle of balance to work on this, it is best to simplify by distributing and combining like terms:
+          <md>
+            <mrow>5x-11+3(2x-3) \amp = 2</mrow>
+            <mrow>5x-11+6x-9 \amp = 2</mrow>
+            <mrow>11x-20 \amp = 2</mrow>
+          </md>
+        </p>
+        <p>
+          From here, we just need to add <m>20</m> and then divide by <m>11</m> to get isolate the <m>x</m>:
+          <md>
+            <mrow>11x-20 \amp = 2</mrow>
+            <mrow>11x \amp = 22</mrow>
+            <mrow>x \amp = 2</mrow>
+          </md>
+        </p>
+        <p>
+          It never hurts to check your answers by substituting your solution back into the original equation:
+          <md>
+            <mrow>5x-11+3(2x-3) \amp = 2</mrow>
+            <mrow>5(2)-11+3(2(2)-3) \amp = 2</mrow>
+            <mrow>10-11+3(4-3) \amp = 2</mrow>
+            <mrow>-1+3(1) \amp = 2</mrow>
+            <mrow>2 \amp = 2</mrow>
+          </md>
+        </p>
+        <p>
+          Since the equation holds true when we substitute in <m>x=2</m>, the solution is correct.
+        </p>
       </statement>
-    </example>
-    <p>
-      Before putting the principle of balance to work on this,
-      it would be best to simplify by distributing and combining like terms.
-      So:
-      <md>
-        <mrow>5x-11+3(2x-3)\amp =2</mrow>
-        <mrow>5x-11+6x-9\amp =2</mrow>
-        <mrow>11x-20\amp =2</mrow>
-      </md>
-    </p>
-    <p>
-      From here, we just need to add <m>20</m> and then divide by <m>11</m> to get isolate the <m>x</m>:
-      <md>
-        <mrow>11x-20\amp =2</mrow>
-        <mrow>11x\amp =22</mrow>
-        <mrow>x\amp =2</mrow>
-      </md>
-    </p>
-    <p>
-      It never hurts to check your answers by substituting your solution back into the original equation:
-      <md>
-        <mrow>5x-11+3(2x-3)\amp =2</mrow>
-        <mrow>5(2)-11+3(2(2)-3)\amp =2</mrow>
-        <mrow>2\amp =2</mrow>
-      </md>
-    </p>
-    <p>
-      Since the equation holds true when we substitute in <m>x=2</m>,
-      the solution checks as correct. }
-    </p>
+    </algorithm>
     <p>
       Often we run into equations where the variable appears on both sides.
       In those cases,
@@ -286,7 +280,7 @@
       and all the non-variable terms on the other.
       The following example will illustrate:
     </p>
-    <example xml:id="FirstDegreeEquationsExample3">
+    <algorithm xml:id="FirstDegreeEquationsExample3">
       <statement>
         <p>
           Solve for <m>z</m>:
@@ -294,47 +288,44 @@
             5(z+1)-16=3z-5
           </me>
         </p>
+        <md>
+          <mrow>5(z+1)-16 \amp = 3z-5</mrow>
+          <mrow>5z+5-16 \amp = 3z-5</mrow>
+          <mrow>5z-11 \amp = 3z-5</mrow>
+        </md>
+        <p>
+          It doesn't matter which side we collect the <m>z</m> terms on; either is fine. It is more common to collect them on the left, so we'll subtract <m>3z</m> from both sides to get:
+          <me>
+            2z-11 = -5
+          </me>
+        </p>
+        <p>
+          Now since we've collected <m>z</m>'s on the left,
+          we'll add <m>11</m> to both sides to get rid of the <m>-11</m> on the left:
+          <me>
+            2z=6
+          </me>
+        </p>
+        <p>
+          And now dividing both sides by 2 we get:
+          <me>
+            z=3
+          </me>
+        </p>
+        <p>
+          A check confirms the result:
+          <md>
+            <mrow>5(z+1)-16\amp =3z-5</mrow>
+            <mrow>5(3+1)-16\amp =3(3)-5</mrow>
+            <mrow>4\amp =4</mrow>
+          </md>
+        </p>
       </statement>
-    </example>
-    <md>
-      <mrow>5(z+1)-16\amp =3z-5</mrow>
-      <mrow>5z+5-16\amp =3z-5</mrow>
-      <mrow>5z-11\amp =3z-5</mrow>
-    </md>
-    <p>
-      It doesn't matter which side we collect the <m>z</m>'s on;
-      either is fine.
-      It is more common to collect them on the left,
-      so we'll subtract <m>3z</m> from both sides to get:
-      <me>
-        2z-11=-5
-      </me>
-    </p>
-    <p>
-      Now since we've collected <m>z</m>'s on the left,
-      we'll add <m>11</m> to both sides to get rid of the <m>-11</m> on the left:
-      <me>
-        2z=6
-      </me>
-    </p>
-    <p>
-      And now dividing both sides by 2 we get:
-      <me>
-        z=3
-      </me>
-    </p>
-    <p>
-      A check confirms the result:
-      <md>
-        <mrow>5(z+1)-16\amp =3z-5</mrow>
-        <mrow>5(3+1)-16\amp =3(3)-5</mrow>
-        <mrow>4\amp =4</mrow>
-      </md>
-    </p>
+    </algorithm>
     <p>
       Let's try one more example before moving on.
     </p>
-    <example xml:id="FirstDegreeEquationsExample4">
+    <algorithm xml:id="FirstDegreeEquationsExample4">
       <statement>
         <p>
           Solve for <m>t</m>:
@@ -342,76 +333,76 @@
             4t-3-7(2-t)=2(7t+5)-(t-4)
           </me>
         </p>
+        <p>
+          As before, we'll simplify each side first.
+          Remember that you need to be careful about the negatives when distributing!
+          <md>
+            <mrow>4t-3-7(2-t)\amp =2(7t+5)-(t-4)</mrow>
+            <mrow>4t-3-14+7t\amp =14t+10-t+4</mrow>
+            <mrow>11t-17\amp =13t+14</mrow>
+          </md>
+        </p>
+        <p>
+          Now, as mentioned in the previous example,
+          there is a tendency to collect the variable on the left.
+          So, if we collect the variable on the left we subtract <m>13t</m> from both sides to get:
+          <me>
+            -2t-17=14
+          </me>
+        </p>
+        <p>
+          Then add <m>17</m> to both sides:
+          <me>
+            -2t=31
+          </me>
+        </p>
+        <p>
+          And now divide by <m>-2</m>:
+          <me>
+            t=\frac{31}{-2}
+          </me>
+          which is more commonly rewritten as:
+          <me>
+            t=-\frac{31}{2}=\frac{-31}{2}=-15.5
+          </me>
+        </p>
+        <p>
+          Some people feel a strong preference against negative coefficients if they can be avoided,
+          and so might prefer to subtract <m>11t</m> from both sides.
+          That is also fine,
+          and in fact we can do this and then switch the equation's sides if we want to.
+          So this is also a correct solution:
+          <md>
+            <mrow>4t-3-7(2-t)\amp =2(7t+5)-(t-4)</mrow>
+            <mrow>4t-3-14+7t\amp =14t+10-t+4</mrow>
+            <mrow>11t-17\amp =13t+14</mrow>
+            <mrow>-17\amp =2t+14</mrow>
+            <mrow>-31\amp =2t</mrow>
+            <mrow>-\frac{31}{2}\amp =t</mrow>
+          </md>
+        </p>
+        <p>
+          Finally, to check.
+          We'll substitute this solution into the original equation.
+          Since the arithmetic gets tedious,
+          typing each side's expression into the calculator is probably the best choice;
+          remember though to be careful to use parentheses appropriately when substituting in this negative number:
+          <md>
+            <mrow>4t-3-7(2-t)\amp =2(7t+5)-(t-4)</mrow>
+            <mrow>4\left(\frac{-31}{2}\right)-3-7\left[2-\left(\frac{-31}{2}\right)\right]\amp =2\left[7\left(\frac{-31}{2}\right)+5\right]-\left[\left(\frac{-31}{2}\right)-4\right]</mrow>
+            <mrow>-187.5\amp =-187.5</mrow>
+          </md>
+        </p>
+        <p>
+          As the choice discussed in the above example makes clear,
+          we often have some choice about the order we do things.
+          While the examples given in this book are meant to illustrate sound strategy,
+          all of these problems can be correctly solved in other ways as well.
+          <em>As long as the steps you take follow the laws of algebra</em>
+          you will arrive at a correct solutions.
+        </p>
       </statement>
-    </example>
-    <p>
-      As before, we'll simplify each side first.
-      Remember that you need to be careful about the negatives when distributing!
-      <md>
-        <mrow>4t-3-7(2-t)\amp =2(7t+5)-(t-4)</mrow>
-        <mrow>4t-3-14+7t\amp =14t+10-t+4</mrow>
-        <mrow>11t-17\amp =13t+14</mrow>
-      </md>
-    </p>
-    <p>
-      Now, as mentioned in the previous example,
-      there is a tendency to collect the variable on the left.
-      So, if we collect the variable on the left we subtract <m>13t</m> from both sides to get:
-      <me>
-        -2t-17=14
-      </me>
-    </p>
-    <p>
-      Then add <m>17</m> to both sides:
-      <me>
-        -2t=31
-      </me>
-    </p>
-    <p>
-      And now divide by <m>-2</m>:
-      <me>
-        t=\frac{31}{-2}
-      </me>
-      which is more commonly rewritten as:
-      <me>
-        t=-\frac{31}{2}=\frac{-31}{2}=-15.5
-      </me>
-    </p>
-    <p>
-      Some people feel a strong preference against negative coefficients if they can be avoided,
-      and so might prefer to subtract <m>11t</m> from both sides.
-      That is also fine,
-      and in fact we can do this and then switch the equation's sides if we want to.
-      So this is also a correct solution:
-      <md>
-        <mrow>4t-3-7(2-t)\amp =2(7t+5)-(t-4)</mrow>
-        <mrow>4t-3-14+7t\amp =14t+10-t+4</mrow>
-        <mrow>11t-17\amp =13t+14</mrow>
-        <mrow>-17\amp =2t+14</mrow>
-        <mrow>-31\amp =2t</mrow>
-        <mrow>-\frac{31}{2}\amp =t</mrow>
-      </md>
-    </p>
-    <p>
-      Finally, to check.
-      We'll substitute this solution into the original equation.
-      Since the arithmetic gets tedious,
-      typing each side's expression into the calculator is probably the best choice;
-      remember though to be careful to use parentheses appropriately when substituting in this negative number:
-      <md>
-        <mrow>4t-3-7(2-t)\amp =2(7t+5)-(t-4)</mrow>
-        <mrow>4\left(\frac{-31}{2}\right)-3-7\left[2-\left(\frac{-31}{2}\right)\right]\amp =2\left[7\left(\frac{-31}{2}\right)+5\right]-\left[\left(\frac{-31}{2}\right)-4\right]</mrow>
-        <mrow>-187.5\amp =-187.5</mrow>
-      </md>
-    </p>
-    <p>
-      As the choice discussed in the above example makes clear,
-      we often have some choice about the order we do things.
-      While the examples given in this book are meant to illustrate sound strategy,
-      all of these problems can be correctly solved in other ways as well.
-      <em>As long as the steps you take follow the laws of algebra</em>
-      you will arrive at a correct solutions.
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Solving Equations Involving Fractions</title>
@@ -426,7 +417,7 @@
       This technique is known as <em>clearing the fractions</em>.
       The following example will illustrate.
     </p>
-    <example xml:id="FirstDegreeEquationsExample5">
+    <algorithm xml:id="FirstDegreeEquationsExample5">
       <statement>
         <p>
           Solve for <m>y</m>:
@@ -434,36 +425,29 @@
             \frac{2}{3}y-\frac{7}{5}=\frac{1}{6}y+\frac{11}{4}
           </me>
         </p>
+        <p>
+          Among the denominators <m>3, 5, 6</m>, and <m>4</m> is 60. So, to clear the fractions, we start by multiplying both sides by 60.
+          <md>
+            <mrow>60\left(\frac{2}{3}y-\frac{7}{5}\right) \amp = 60\left(\frac{1}{6}y+\frac{11}{4}\right)</mrow>
+            <mrow>60\left(\frac{2}{3}y\right)-60\left(\frac{7}{5}\right) \amp = 60\left(\frac{1}{6}y\right)+60\left(\frac{11}{4}\right)</mrow>
+            <mrow>\frac{120}{3}y-\frac{420}{5} \amp = \frac{60}{6}y+\frac{660}{4}</mrow>
+            <mrow>40y-84 \amp = 10y+165</mrow>
+          </md>
+        </p>
+        <p>
+          Now, notice what happened when we multiplied; because all of the denominators divide 60 evenly, the result in each term is a whole number. Now we can just continue as we have before:
+          <md>
+            <mrow>40y-84 \amp = 10y+165</mrow>
+            <mrow>30y-84 \amp = 165</mrow>
+            <mrow>30y \amp = 249</mrow>
+            <mrow>y \amp = \frac{249}{30}=\frac{83}{10}=8.3</mrow>
+          </md>
+        </p>
+        <p>
+          The reduction of the fraction to lowest terms is useful for expressing the exact answer to the equation. This answer can be checked by substituting back into the original equation (use your calculator for the arithmetic!).
+        </p>
       </statement>
-    </example>
-    <p>
-      Among the denominators <m>3,5,6</m>, and <m>4</m> is 60.
-      So, to clear the fractions, we start by multiplying both sides by 60.
-      <md>
-        <mrow>60\left(\frac{2}{3}y-\frac{7}{5}\right)\amp =60\left(\frac{1}{6}y+\frac{11}{4}\right)</mrow>
-        <mrow>60\left(\frac{2}{3}y\right)-60\left(\frac{7}{5}\right)\amp =60\left(\frac{1}{6}y\right)+60\left(\frac{11}{4}\right)</mrow>
-        <mrow>\frac{120}{3}y-\frac{420}{5}\amp =\frac{60}{6}y+\frac{660}{4}</mrow>
-        <mrow>40y-84\amp =10y+165</mrow>
-      </md>
-    </p>
-    <p>
-      Now, notice what happened when we multiplied;
-      because all of the denominators divide 60 evenly,
-      the result in each term is a whole number.
-      Now we can just continue as we have before:
-      <md>
-        <mrow>40y-84\amp =10y+165</mrow>
-        <mrow>30y-84\amp =165</mrow>
-        <mrow>30y\amp =249</mrow>
-        <mrow>y\amp =\frac{249}{30}=\frac{83}{10}=8.3</mrow>
-      </md>
-    </p>
-    <p>
-      The reduction of the fraction to lowest terms is useful for expressing the exact answer to the equation.
-      This answer can be checked by substituting back into the original equation
-      (use your calculator for the arithmetic!)
-      }
-    </p>
+    </algorithm>
     <p>
       It is not absolutely necessary to use the lowest common denominator to clear the fractions from an equation;
       any common denominator will work.
@@ -480,7 +464,7 @@
       sometimes you may need to multiply through by a common denominator more than once to fully clear all the fractions.
       The following two examples will illustrate this.
     </p>
-    <example xml:id="FirstDegreeEquationsExample6">
+    <algorithm xml:id="FirstDegreeEquationsExample6">
       <statement>
         <p>
           Solve for <m>x</m>:
@@ -488,32 +472,30 @@
             \frac{2}{3}x-1=\frac{3}{5}\left(\frac{1}{2}x+1\right)
           </me>
         </p>
+        <p>
+          Here the lowest common denominator is <m>30</m>, so we multiply both sides:
+          <me>
+            30\left(\frac{2}{3}x-1\right)=30\left[\frac{3}{5}\left(\frac{1}{2}x+1\right)\right]
+          </me>
+        </p>
+        <p>
+          When simplifying we generally work from inside parentheses out, but here we are better off multiplying 30 into the outermost parenthesis on the right first:
+          <me>
+            30\left(\frac{2}{3}x-1\right)=18\left(\frac{1}{2}x+1\right)
+          </me>
+        </p>
+        <p>
+          Now continuing as we have before:
+          <md>
+            <mrow>20x-30 \amp = 9x+18</mrow>
+            <mrow>11x-30 \amp = 18</mrow>
+            <mrow>11x \amp = 48</mrow>
+            <mrow>x \amp = \frac{48}{11} \approx 4.3636</mrow>
+          </md>
+        </p>
       </statement>
-    </example>
-    <p>
-      Here the lowest common denominator is <m>30</m>,
-      so we multiply both sides:
-      <me>
-        30\left(\frac{2}{3}x-1\right)=30\left[\frac{3}{5}\left(\frac{1}{2}x+1\right)\right]
-      </me>
-    </p>
-    <p>
-      When simplifying we generally work from inside parentheses out,
-      but here we are better off multiplying 30 into the outermost parenthesis on the right first:
-      <me>
-        30\left(\frac{2}{3}x-1\right)=18\left(\frac{1}{2}x+1\right)
-      </me>
-    </p>
-    <p>
-      Now continuing as we have before:
-      <md>
-        <mrow>20x-30\amp =9x+18</mrow>
-        <mrow>11x-30\amp =18</mrow>
-        <mrow>11x\amp =48</mrow>
-        <mrow>x\amp =\frac{48}{11}=4.3636..</mrow>
-      </md>.
-    </p>
-    <example xml:id="FirstDegreeEquationsExample7">
+    </algorithm>
+    <algorithm xml:id="FirstDegreeEquationsExample7">
       <statement>
         <p>
           Solve for <m>t</m>:
@@ -521,34 +503,32 @@
             \frac{1}{4}\left(\frac{3}{8}t+1\right)=\frac{2}{3}t-1
           </me>
         </p>
+        <p>
+          Here the lowest common denominator is <m>24</m>, so we multiply both sides:
+          <md>
+            <mrow>24\left[\frac{1}{4}\left(\frac{3}{8}t+1\right)\right] \amp = 24\left(\frac{2}{3}t-1\right)</mrow>
+            <mrow>6\left(\frac{3}{8}t+1\right) \amp = 24\left(\frac{2}{3}t-1\right)</mrow>
+            <mrow>\frac{18}{8}t+6 \amp = 16t-24</mrow>
+            <mrow>\frac{9}{4}t+6 \amp = 16t-24</mrow>
+          </md>
+        </p>
+        <p>
+          Now the fractions turn out to not be fully cleared out. So, we have to multiply a second time, this time by <m>4</m> to get:
+          <md>
+            <mrow>4\left(\frac{9}{4}t+6\right) \amp = 4\left(16t-24\right)</mrow>
+            <mrow>9t+24 \amp = 64t-96</mrow>
+          </md>
+        </p>
+        <p>
+          Now, with the fractions cleared, we proceed:
+          <md>
+            <mrow>24+96 \amp = 64t-9t</mrow>
+            <mrow>120 \amp = 55t</mrow>
+            <mrow>t \amp = \frac{120}{55}=\frac{24}{11} \approx 2.1818</mrow>
+          </md>
+        </p>
       </statement>
-    </example>
-    <p>
-      Here the lowest common denominator is <m>24</m>,
-      so we multiply both sides:
-      <md>
-        <mrow>24\left[\frac{1}{4}\left(\frac{3}{8}t+1\right)\right]\amp =24\left(\frac{2}{3}t-1\right)</mrow>
-        <mrow>6\left(\frac{3}{8}t+1\right)\amp =24\left(\frac{2}{3}t-1\right)</mrow>
-        <mrow>\frac{9}{4}t+6\amp =16t-24</mrow>
-      </md>
-    </p>
-    <p>
-      Now the fractions turn out to no be fully cleared out.
-      So, we have to multiply a second time,
-      this time by <m>4</m> to get:
-      <md>
-        <mrow>4\left(\frac{9}{4}t+6\right)\amp =4\left(16t-24\right)</mrow>
-        <mrow>9t+24\amp =64t-96</mrow>
-      </md>
-    </p>
-    <p>
-      Now, with the fractions cleared, we proceed:
-      <md>
-        <mrow>9t+24\amp =64t-96</mrow>
-        <mrow>120\amp =55t</mrow>
-        <mrow>t\amp =\frac{120}{55}=\frac{24}{11}=2.1818..</mrow>
-      </md>.
-    </p>
+    </algorithm>
     <p>
       Clearing the fractions is optional.
       All of the above examples can be done without it,
@@ -701,7 +681,7 @@
       <idx><h>Equation</h><h>Conditional</h></idx>)
       the algebra will take you there, too.
     </p>
-    <example xml:id="FirstDegreeEquationsExample8">
+    <algorithm xml:id="FirstDegreeEquationsExample8">
       <statement>
         <p>
           Solve for <m>P</m>:
@@ -709,25 +689,23 @@
             3P-5(4P-3)=-3(5P-1)-2P
           </me>
         </p>
+        <p>
+          Simplifying each side:
+          <md>
+            <mrow>3P-5(4P-3) \amp = -3(5P-1)-2P</mrow>
+            <mrow>3P-20P+15 \amp = -15P+3-2P</mrow>
+            <mrow>-17P+15 \amp = -17P+3</mrow>
+          </md>
+        </p>
+        <p>
+          At this point you may notice that we have an impossible situation in the equation, but it does no harm to continue. Adding <m>17P</m> to both sides we get:
+          <me>
+            15=3
+          </me>
+          which is clearly impossible, no matter what value we might substitute in for <m>P</m>. The equation is a contradiction; its solution set is <m>\emptyset</m>.
+        </p>
       </statement>
-    </example>
-    <md>
-      <mrow>3P-5(4P-3)\amp =-3(5P-1)-2P</mrow>
-      <mrow>3P-20P+15\amp =-15P+3-2P</mrow>
-      <mrow>-17P+15\amp =-17P+3</mrow>
-    </md>
-    <p>
-      At this point you may notice that we have an impossible situation in the equation,
-      but it does no harm to continue.
-      Adding <m>17P</m> to both sides we get:
-      <me>
-        15=3
-      </me>
-      which is clearly impossible,
-      no matter what value we might substitute in for <m>P</m>.
-      The equation is a contradiction;
-      its solution set is <m>\emptyset</m>. }
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Solving for One Variable in Terms of Others</title>
@@ -791,55 +769,54 @@
     <p>
       It should be apparent that this new equation is set up to give values of <m>m</m> readily once a value of <m>W</m> is plugged in.
     </p>
-    <example xml:id="FirstDegreeEquationsExample9">
+    <algorithm xml:id="FirstDegreeEquationsExample9">
       <statement>
         <p>
-          The equation <m>C=\frac{5}{9}(F-32)</m> gives <m>C</m>,
-          the temperature in degrees Celsius,
-          in terms of <m>F</m>, the temperature in degrees Fahrenheit.
-          Solve this equation for <m>F</m> in terms of <m>C</m>.
+          The equation <m>C=\frac{5}{9}(F-32)</m> gives <m>C</m>, the temperature in degrees Celsius, in terms of <m>F</m>, the temperature in degrees Fahrenheit. Solve this equation for <m>F</m> in terms of <m>C</m>.
+        </p>
+        <p>
+          <md>
+            <mrow>C \amp = \frac{5}{9}(F-32)</mrow>
+            <mrow>9C \amp = 9\left(\frac{5}{9}(F-32)\right)</mrow>
+            <mrow>9C \amp = 5(F-32)</mrow>
+            <mrow>9C \amp = 5F-160</mrow>
+            <mrow>9C+160 \amp = 5F</mrow>
+            <mrow>\frac{9C+160}{5} \amp = F</mrow>
+          </md>
+        </p>
+        <p>
+          which we can then rewrite as:
+          <me>
+            F=\frac{9C+160}{5}
+          </me>
+        </p>
+        <p>
+          This is a correct solution. It would also be fine to divide the <m>5</m> into each term, giving a final answer of <m>F=\frac{9}{5}C+32</m>, or to rewrite the division by <m>5</m> as multiplication by <m>\frac{1}{5}</m>, giving a final answer of <m>F=\frac{1}{5}\left(9C+160\right)</m>.
+        </p>
+        <p>
+          Most of the time in this course our equations will involve at most two variables, but there is no reason we can't do this with equations involving more variables.
         </p>
       </statement>
-    </example>
-    <md>
-      <mrow>C\amp =\frac{5}{9}(F-32)</mrow>
-      <mrow>9C\amp =9\left(\frac{5}{9}(F-32)\right)</mrow>
-      <mrow>9C\amp =5(F-32)</mrow>
-      <mrow>9C\amp =5F-160</mrow>
-      <mrow>9C+160\amp =5F</mrow>
-      <mrow>\frac{9C+160}{5}\amp =F</mrow>
-    </md>
-    <p>
-      which we can then rewrite as:
-      <me>
-        F=\frac{9C+160}{5}
-      </me>
-    </p>
-    <p>
-      This is a correct solution.
-      It would also be fine to divide the <m>5</m> into each term,
-      giving a final answer of <m>F=\frac{9}{5}C+32</m> or to rewrite the division by <m>5</m> as multiplication by <m>\frac{1}{5}</m>,
-      giving a final answer of <m>F=\frac{1}{5}\left(9C+160\right)</m>. }
-    </p>
-    <p>
-      Most of the time in this course our equations will involve at most two variables,
-      but there is no reason we can't do this with equations involving more variables.
-    </p>
-    <example xml:id="FirstDegreeEquationsExample10">
+    </algorithm>
+    <algorithm xml:id="FirstDegreeEquationsExample10">
       <statement>
         <p>
-          Solve for <m>L</m> in terms of the other variables in <m>P=2L+2W</m>
+          Solve for <m>L</m> in terms of the other variables in <m>P=2L+2W</m>.
+        </p>
+        <p>
+          <md>
+            <mrow>P \amp = 2L+2W</mrow>
+            <mrow>P-2W \amp = 2L</mrow>
+            <mrow>\frac{P-2W}{2} \amp = L</mrow>
+          </md>
+        </p>
+        <p>
+          <me>
+            L=\frac{P-2W}{2} \text{ or } L=\frac{1}{2}\left(P-2W\right)
+          </me>
         </p>
       </statement>
-    </example>
-    <md>
-      <mrow>P\amp =2L+2W</mrow>
-      <mrow>P-2W\amp =2L</mrow>
-      <mrow>\frac{P-2W}{2}\amp =L</mrow>
-    </md>
-    <me>
-      L=\frac{P-2W}{2} \text{ or }  L=\frac{1}{2}\left(P-2W\right)
-    </me>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Exercises</title>
