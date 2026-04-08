@@ -102,15 +102,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.14';
+eBookConfig.runestone_version = '7.13.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/prefix-runtime.56158f4758afd49f.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.46363294e9238f09.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -960,107 +960,110 @@ IIIII}
 </div>
 <div class="para" id="FirstDegreeEquations-2-9">Most first-degree equations have only one solution, but equations can have multiple solutions. For example, suppose that using physics someone has determined that the expression <span class="process-math">\(64t - 16t^2\)</span> gives the height of a ball (in feet) <span class="process-math">\(t\)</span> seconds after it is thrown upward, and we want to know when the ball will be at a height of <span class="process-math">\(48\)</span> feet. So we would need to know the solution set for the equation <span class="process-math">\(64-16t^2 = 48\text{.}\)</span> (Note that this is not a first-degree equation, because of the squared term). It turns out that this equation has two solutions, <span class="process-math">\(t=1\)</span> and <span class="process-math">\(t=3\text{,}\)</span> so the ball is at a height of <span class="process-math">\(48\)</span> feet <span class="process-math">\(1\)</span> second and <span class="process-math">\(3\)</span> seconds after it is thrown. So the solution set is <span class="process-math">\(\{1,3\}\text{.}\)</span> It makes perfect sense that there would be two solutions for this equation, since the ball would reach this height twice, once on the way up, and once on the way down. Common sense also tells us that these must be the only two solutions to the equation, since the ball would not be at this height at any other time.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="FirstDegreeEquationsExample1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<article class="algorithm theorem-like" id="FirstDegreeEquationsExample1"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3></summary><article class="example example-like knowl__content"><div class="para" id="FirstDegreeEquationsExample1-1-1">Determine which, if any, of the values <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(2\text{,}\)</span> <span class="process-math">\(3\text{,}\)</span> <span class="process-math">\(4\text{,}\)</span> or <span class="process-math">\(5\)</span> satisfy the equation <span class="process-math">\(3x-2=10\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 3.1.1"><a href="#FirstDegreeEquationsExample1" title="Copy heading and permalink for Example 3.1.1" aria-label="Copy heading and permalink for Example 3.1.1">🔗</a></div></article></details><div class="para logical" id="FirstDegreeEquations-2-11">
-<div class="para">To do this, we will need to substitute each of the given values into the given equation. Plugging in <span class="process-math">\(x=1\)</span> we get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-2-11-2">
+</h3>
+<div class="para" id="FirstDegreeEquationsExample1-1-1">Determine which, if any, of the values <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(2\text{,}\)</span> <span class="process-math">\(3\text{,}\)</span> <span class="process-math">\(4\text{,}\)</span> or <span class="process-math">\(5\)</span> satisfy the equation <span class="process-math">\(3x-2=10\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample1-1-2">
+<div class="para">To do this, we will need to substitute each of the given values into the equation. Plugging in <span class="process-math">\(x=1\)</span> we get:</div>
+<div class="displaymath process-math" id="FirstDegreeEquationsExample1-1-2-2">
 \begin{align*}
-3(1)-2 \amp  = 10\\
-3-2 \amp  = 10\\
-1 \amp  = 10
+3(1)-2 \amp = 10\\
+3-2 \amp = 10\\
+1 \amp = 10
 \end{align*}
 </div>
 <div class="para">which clearly is a false statement and we see that <span class="process-math">\(x=1\)</span> does not satisfy the equation.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-2-12">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample1-1-3">
 <div class="para">Moving on to <span class="process-math">\(x=2\text{,}\)</span> we get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-2-12-2">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample1-1-3-2">
 \begin{align*}
-3(2)-2 \amp  = 10\\
-4-2 \amp  = 10\\
-4 \amp  = 10
+3(2)-2 \amp = 10\\
+6-2 \amp = 10\\
+4 \amp = 10
 \end{align*}
 </div>
 <div class="para">which again is a false statement and we conclude that <span class="process-math">\(x=2\)</span> does not satisfy the equation.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample1-1-4">
+<div class="para">You can repeat this process for the remaining values. You should see that only <span class="process-math">\(x=4\)</span> satisfies the equation; the other values do not.</div>
+<div class="displaymath process-math" id="FirstDegreeEquationsExample1-1-4-2">
+\begin{align*}
+3(4)-2 \amp = 10\\
+12-2 \amp = 10\\
+10 \amp = 10
+\end{align*}
 </div>
-<div class="para" id="FirstDegreeEquations-2-13">You can repeat this process yourself for the remaining values to try. You should see that only <span class="process-math">\(x=4\)</span> satisfies the equation; the other given values do not. }<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><section class="subsection" id="FirstDegreeEquations-3"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.1.1"><a href="#FirstDegreeEquationsExample1" title="Copy heading and permalink for Example 3.1.1" aria-label="Copy heading and permalink for Example 3.1.1">🔗</a></div></article></section><section class="subsection" id="FirstDegreeEquations-3"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Equations Using the Balance Principle</span>
 </h3>
 <div class="para" id="FirstDegreeEquations-3-2">Of course, it’s one thing to check whether or not a given value satisfies an equation. It’s quite another to figure out an equation’s solution(s) without being given values to try. If we had not been given the value of <span class="process-math">\(m=500\)</span> to try in our phone care example, how would we have known to try it? This is the great challenge of algebra.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-3-3">\begin{SCfigure}[0.6][H]<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/FirstDegreeEquationsImages/TextPage.png" class="contained" alt="An aged, rectangular piece of parchment with handwritten Arabic calligraphy in black and red ink."></div>
+<div class="para" id="FirstDegreeEquations-3-4">“Balancing” is one of the most fundamental principles used in algebra. The basic idea is this: think of an equation as a balanced scale. The two sides of the equation are equal, and so if we placed them on an imaginary scale, the scale would balance. If you change the value of one side of the equation (say by adding or subtracting something to it, or multiplying or dividing it by something) the scale will no longer be in balance. But you can recover that balance by making the same change to the other side.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-3-4">\ifx\undefined\undefined \ifx\undefined\undefined \relax \else \fi \else \fi \global \global<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-3-5">This all boils down to the following rule:<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/FirstDegreeEquationsImages/TextPage.png" class="contained"></div>
-<div class="para" id="FirstDegreeEquations-3-6">\end{SCfigure}<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="FirstDegreeEquations-3-7">“Balancing” is one of the most fundamental principles used in algebra. The basic idea is this: think of an equation as a balanced scale. The two sides of the equation are equal, and so if we placed them on an imaginary scale, the scale would balance. If you change the value of one side of the equation (say by adding or subtracting something to it, or multiplying or dividing it by something) the scale will no longer be in balance. But you can recover that balance by making the same change to the other side.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="FirstDegreeEquations-3-8">This all boils down to the following rule:<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<article class="definition definition-like" id="FirstDegreeEquations-3-9"><h4 class="heading">
+<article class="definition definition-like" id="FirstDegreeEquations-3-6"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="FirstDegreeEquations-3-9-1-1"> <em class="emphasis"><em class="emphasis">The Balance Principle</em></em><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="FirstDegreeEquations-3-9-1-2">You can make any change you like to one side of an equation, as long as you make an equivalent change to the other side.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-9-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-3-6-1-1"> <em class="emphasis"><em class="emphasis">The Balance Principle</em></em><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="FirstDegreeEquations-3-6-1-2">You can make any change you like to one side of an equation, as long as you make an equivalent change to the other side.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 3.1.2"><a href="#FirstDegreeEquations-3-9" title="Copy heading and permalink for Definition 3.1.2" aria-label="Copy heading and permalink for Definition 3.1.2">🔗</a></div></article><div class="para" id="FirstDegreeEquations-3-10">In algebra, we exploit this rule all the time. Let’s walk through a very basic example to review how it works, and then we’ll proceed to some more complicated problems.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 3.1.2"><a href="#FirstDegreeEquations-3-6" title="Copy heading and permalink for Definition 3.1.2" aria-label="Copy heading and permalink for Definition 3.1.2">🔗</a></div></article><div class="para" id="FirstDegreeEquations-3-7">In algebra, we exploit this rule all the time. Let’s walk through a very basic example to review how it works, and then we’ll proceed to some more complicated problems.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="FirstDegreeEquations-3-11">
+<div class="para logical" id="FirstDegreeEquations-3-8">
 <div class="para">Suppose we want to solve:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-11-1">
+<div class="displaymath process-math" id="FirstDegreeEquations-3-8-1">
 \begin{equation*}
 25 - 0.03m = 10
 \end{equation*}
 </div>
 <div class="para">and let’s also forget that anyone ever said anything about trying any particular values as solutions. Let’s just suppose we are given the equation and are asked to determine its solution.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-3-12">So, our goal is to get an equation which directly tells us the correct value of <span class="process-math">\(m\text{.}\)</span> So, what we will do here is to try to transform the given equation into something that just has the variable <span class="process-math">\(m\)</span> isolated on one side, and a number on the other side.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-3-9">So, our goal is to get an equation which directly tells us the correct value of <span class="process-math">\(m\text{.}\)</span> So, what we will do here is to try to transform the given equation into something that just has the variable <span class="process-math">\(m\)</span> isolated on one side, and a number on the other side.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="FirstDegreeEquations-3-13">
+<div class="para logical" id="FirstDegreeEquations-3-10">
 <div class="para">Let’s begin by getting rid of the <span class="process-math">\(25\text{.}\)</span> We can eliminate that <span class="process-math">\(25\)</span> on the left by subtracting it - and we are allowed to do that so long as we also subtract <span class="process-math">\(25\)</span> from the right, to keep the equation balanced. So:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-13-4">
+<div class="displaymath process-math" id="FirstDegreeEquations-3-10-4">
 \begin{align*}
 25-0.03m-25 \amp  = 10-25\\
 -0.03m \amp  = -15
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="FirstDegreeEquations-3-14">
+<div class="para logical" id="FirstDegreeEquations-3-11">
 <div class="para">Now, we don’t have <span class="process-math">\(m\)</span> isolated yet, but we’re closer. We now just have to get rid of the coefficient <span class="process-math">\(-0.03\text{.}\)</span> Now, it is a common mistake to try to do this by adding <span class="process-math">\(0.03\)</span> to both sides, but that won’t work because <span class="process-math">\(-0.03m\)</span> and <span class="process-math">\(0.03\)</span> are not like terms, and so they cannot be combined. But we can divide both sides by <span class="process-math">\(-0.03\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-14-7">
+<div class="displaymath process-math" id="FirstDegreeEquations-3-11-7">
 \begin{equation*}
 \frac{-0.03m}{-0.03} = \frac{-15}{-0.03}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="FirstDegreeEquations-3-15">
+<div class="para logical" id="FirstDegreeEquations-3-12">
 <div class="para">Which gives us:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-15-1">
+<div class="displaymath process-math" id="FirstDegreeEquations-3-12-1">
 \begin{equation*}
 m = 500
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-3-16">So we conclude that the solution is <span class="process-math">\(m = 500\text{.}\)</span> Stating this solution in terms appropriate for the question at hand we might phrase it as “<span class="process-math">\(500\)</span> minutes of usage”. We can also feel confident that this is the only solution, because this is the only solution that we arrived at by following the methods of algebra.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-3-13">So we conclude that the solution is <span class="process-math">\(m = 500\text{.}\)</span> Stating this solution in terms appropriate for the question at hand we might phrase it as “<span class="process-math">\(500\)</span> minutes of usage”. We can also feel confident that this is the only solution, because this is the only solution that we arrived at by following the methods of algebra.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-3-17">Using the principle of balance to transform an equation into one which explicitly states its solution is one of the primary methods of algebra, and really the only technique we will be using in this chapter. However, with more complicated equations, the strategies to use to get the variable by itself may be more involved. The following examples will illustrate how the principle of balance can be used effectively with some of these more complicated equations.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-3-14">Using the principle of balance to transform an equation into one which explicitly states its solution is one of the primary methods of algebra, and really the only technique we will be using in this chapter. However, with more complicated equations, the strategies to use to get the variable by itself may be more involved. The following examples will illustrate how the principle of balance can be used effectively with some of these more complicated equations.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="FirstDegreeEquationsExample2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="FirstDegreeEquationsExample2"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample2-1-1">
+</h4>
+<div class="para logical" id="FirstDegreeEquationsExample2-1-1">
 <div class="para">Solve for <span class="process-math">\(x\text{:}\)</span>
 </div>
 <div class="displaymath process-math" id="FirstDegreeEquationsExample2-1-1-2">
@@ -1069,48 +1072,47 @@ m = 500
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 3.1.3"><a href="#FirstDegreeEquationsExample2" title="Copy heading and permalink for Example 3.1.3" aria-label="Copy heading and permalink for Example 3.1.3">🔗</a></div></article></details><div class="para logical" id="FirstDegreeEquations-3-19">
-<div class="para">Before putting the principle of balance to work on this, it would be best to simplify by distributing and combining like terms. So:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-19-1">
+</div> <div class="para logical" id="FirstDegreeEquationsExample2-1-2">
+<div class="para">Before putting the principle of balance to work on this, it is best to simplify by distributing and combining like terms:</div>
+<div class="displaymath process-math" id="FirstDegreeEquationsExample2-1-2-1">
 \begin{align*}
-5x-11+3(2x-3)\amp =2\\
-5x-11+6x-9\amp =2\\
-11x-20\amp =2
+5x-11+3(2x-3) \amp = 2\\
+5x-11+6x-9 \amp = 2\\
+11x-20 \amp = 2
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-3-20">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample2-1-3">
 <div class="para">From here, we just need to add <span class="process-math">\(20\)</span> and then divide by <span class="process-math">\(11\)</span> to get isolate the <span class="process-math">\(x\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-20-4">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample2-1-3-4">
 \begin{align*}
-11x-20\amp =2\\
-11x\amp =22\\
-x\amp =2
+11x-20 \amp = 2\\
+11x \amp = 22\\
+x \amp = 2
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-3-21">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample2-1-4">
 <div class="para">It never hurts to check your answers by substituting your solution back into the original equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-21-1">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample2-1-4-1">
 \begin{align*}
-5x-11+3(2x-3)\amp =2\\
-5(2)-11+3(2(2)-3)\amp =2\\
-2\amp =2
+5x-11+3(2x-3) \amp = 2\\
+5(2)-11+3(2(2)-3) \amp = 2\\
+10-11+3(4-3) \amp = 2\\
+-1+3(1) \amp = 2\\
+2 \amp = 2
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="FirstDegreeEquationsExample2-1-5">Since the equation holds true when we substitute in <span class="process-math">\(x=2\text{,}\)</span> the solution is correct.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample2-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-3-22">Since the equation holds true when we substitute in <span class="process-math">\(x=2\text{,}\)</span> the solution checks as correct. }<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 3.1.3"><a href="#FirstDegreeEquationsExample2" title="Copy heading and permalink for Example 3.1.3" aria-label="Copy heading and permalink for Example 3.1.3">🔗</a></div></article><div class="para" id="FirstDegreeEquations-3-16">Often we run into equations where the variable appears on both sides. In those cases, the best strategy is usually to first simply both sides as much as possible, and then collect all the variable terms together on one side, and all the non-variable terms on the other. The following example will illustrate:<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-3-23">Often we run into equations where the variable appears on both sides. In those cases, the best strategy is usually to first simply both sides as much as possible, and then collect all the variable terms together on one side, and all the non-variable terms on the other. The following example will illustrate:<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<details id="FirstDegreeEquationsExample3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="FirstDegreeEquationsExample3"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample3-1-1">
+</h4>
+<div class="para logical" id="FirstDegreeEquationsExample3-1-1">
 <div class="para">Solve for <span class="process-math">\(z\text{:}\)</span>
 </div>
 <div class="displaymath process-math" id="FirstDegreeEquationsExample3-1-1-2">
@@ -1120,56 +1122,54 @@ x\amp =2
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 3.1.4"><a href="#FirstDegreeEquationsExample3" title="Copy heading and permalink for Example 3.1.4" aria-label="Copy heading and permalink for Example 3.1.4">🔗</a></div></article></details><div class="displaymath process-math" id="FirstDegreeEquations-3-25">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample3-1-2">
 \begin{align*}
-5(z+1)-16\amp =3z-5\\
-5z+5-16\amp =3z-5\\
-5z-11\amp =3z-5
+5(z+1)-16 \amp = 3z-5\\
+5z+5-16 \amp = 3z-5\\
+5z-11 \amp = 3z-5
 \end{align*}
 </div>
-<div class="para logical" id="FirstDegreeEquations-3-26">
-<div class="para">It doesn’t matter which side we collect the <span class="process-math">\(z\)</span>’s on; either is fine. It is more common to collect them on the left, so we’ll subtract <span class="process-math">\(3z\)</span> from both sides to get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-26-3">
+<div class="para logical" id="FirstDegreeEquationsExample3-1-3">
+<div class="para">It doesn’t matter which side we collect the <span class="process-math">\(z\)</span> terms on; either is fine. It is more common to collect them on the left, so we’ll subtract <span class="process-math">\(3z\)</span> from both sides to get:</div>
+<div class="displaymath process-math" id="FirstDegreeEquationsExample3-1-3-3">
 \begin{equation*}
-2z-11=-5
+2z-11 = -5
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-3-27">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample3-1-4">
 <div class="para">Now since we’ve collected <span class="process-math">\(z\)</span>’s on the left, we’ll add <span class="process-math">\(11\)</span> to both sides to get rid of the <span class="process-math">\(-11\)</span> on the left:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-27-4">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample3-1-4-4">
 \begin{equation*}
 2z=6
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-3-28">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample3-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample3-1-5">
 <div class="para">And now dividing both sides by 2 we get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-28-1">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample3-1-5-1">
 \begin{equation*}
 z=3
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-3-29">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample3-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample3-1-6">
 <div class="para">A check confirms the result:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-29-1">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample3-1-6-1">
 \begin{align*}
 5(z+1)-16\amp =3z-5\\
 5(3+1)-16\amp =3(3)-5\\
 4\amp =4
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample3-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-3-30">Let’s try one more example before moving on.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 3.1.4"><a href="#FirstDegreeEquationsExample3" title="Copy heading and permalink for Example 3.1.4" aria-label="Copy heading and permalink for Example 3.1.4">🔗</a></div></article><div class="para" id="FirstDegreeEquations-3-18">Let’s try one more example before moving on.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="FirstDegreeEquationsExample4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="FirstDegreeEquationsExample4"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample4-1-1">
+</h4>
+<div class="para logical" id="FirstDegreeEquationsExample4-1-1">
 <div class="para">Solve for <span class="process-math">\(t\text{:}\)</span>
 </div>
 <div class="displaymath process-math" id="FirstDegreeEquationsExample4-1-1-2">
@@ -1178,55 +1178,50 @@ z=3
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 3.1.5"><a href="#FirstDegreeEquationsExample4" title="Copy heading and permalink for Example 3.1.5" aria-label="Copy heading and permalink for Example 3.1.5">🔗</a></div></article></details><div class="para logical" id="FirstDegreeEquations-3-32">
+</div> <div class="para logical" id="FirstDegreeEquationsExample4-1-2">
 <div class="para">As before, we’ll simplify each side first. Remember that you need to be careful about the negatives when distributing!</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-32-1">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample4-1-2-1">
 \begin{align*}
 4t-3-7(2-t)\amp =2(7t+5)-(t-4)\\
 4t-3-14+7t\amp =14t+10-t+4\\
 11t-17\amp =13t+14
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-3-33">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample4-1-3">
 <div class="para">Now, as mentioned in the previous example, there is a tendency to collect the variable on the left. So, if we collect the variable on the left we subtract <span class="process-math">\(13t\)</span> from both sides to get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-33-2">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample4-1-3-2">
 \begin{equation*}
 -2t-17=14
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-3-34">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample4-1-4">
 <div class="para">Then add <span class="process-math">\(17\)</span> to both sides:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-34-2">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample4-1-4-2">
 \begin{equation*}
 -2t=31
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-3-35">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample4-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample4-1-5">
 <div class="para">And now divide by <span class="process-math">\(-2\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-35-2">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample4-1-5-2">
 \begin{equation*}
 t=\frac{31}{-2}
 \end{equation*}
 </div>
 <div class="para">which is more commonly rewritten as:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-35-3">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample4-1-5-3">
 \begin{equation*}
 t=-\frac{31}{2}=\frac{-31}{2}=-15.5
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-3-36">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample4-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample4-1-6">
 <div class="para">Some people feel a strong preference against negative coefficients if they can be avoided, and so might prefer to subtract <span class="process-math">\(11t\)</span> from both sides. That is also fine, and in fact we can do this and then switch the equation’s sides if we want to. So this is also a correct solution:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-36-2">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample4-1-6-2">
 \begin{align*}
 4t-3-7(2-t)\amp =2(7t+5)-(t-4)\\
 4t-3-14+7t\amp =14t+10-t+4\\
@@ -1236,31 +1231,30 @@ t=-\frac{31}{2}=\frac{-31}{2}=-15.5
 -\frac{31}{2}\amp =t
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-3-37">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample4-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample4-1-7">
 <div class="para">Finally, to check. We’ll substitute this solution into the original equation. Since the arithmetic gets tedious, typing each side’s expression into the calculator is probably the best choice; remember though to be careful to use parentheses appropriately when substituting in this negative number:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-37-1">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample4-1-7-1">
 \begin{align*}
 4t-3-7(2-t)\amp =2(7t+5)-(t-4)\\
 4\left(\frac{-31}{2}\right)-3-7\left[2-\left(\frac{-31}{2}\right)\right]\amp =2\left[7\left(\frac{-31}{2}\right)+5\right]-\left[\left(\frac{-31}{2}\right)-4\right]\\
 -187.5\amp =-187.5
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample4-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="FirstDegreeEquationsExample4-1-8">As the choice discussed in the above example makes clear, we often have some choice about the order we do things. While the examples given in this book are meant to illustrate sound strategy, all of these problems can be correctly solved in other ways as well. <em class="emphasis">As long as the steps you take follow the laws of algebra</em> you will arrive at a correct solutions.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample4-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-3-38">As the choice discussed in the above example makes clear, we often have some choice about the order we do things. While the examples given in this book are meant to illustrate sound strategy, all of these problems can be correctly solved in other ways as well. <em class="emphasis">As long as the steps you take follow the laws of algebra</em> you will arrive at a correct solutions.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-3-38" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Subsection 3.1.1: Solving Equations Using the Balance Principle"><a href="#FirstDegreeEquations-3" title="Copy heading and permalink for Subsection 3.1.1: Solving Equations Using the Balance Principle" aria-label="Copy heading and permalink for Subsection 3.1.1: Solving Equations Using the Balance Principle">🔗</a></div></section><section class="subsection" id="FirstDegreeEquations-4"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Example 3.1.5"><a href="#FirstDegreeEquationsExample4" title="Copy heading and permalink for Example 3.1.5" aria-label="Copy heading and permalink for Example 3.1.5">🔗</a></div></article><div class="autopermalink" data-description="Subsection 3.1.1: Solving Equations Using the Balance Principle"><a href="#FirstDegreeEquations-3" title="Copy heading and permalink for Subsection 3.1.1: Solving Equations Using the Balance Principle" aria-label="Copy heading and permalink for Subsection 3.1.1: Solving Equations Using the Balance Principle">🔗</a></div></section><section class="subsection" id="FirstDegreeEquations-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Equations Involving Fractions</span>
 </h3>
 <div class="para" id="FirstDegreeEquations-4-2">When equations involve fractions, the same principles apply, but the arithmetic can quickly become tedious. Arithmetic with fractions is much more work than arithmetic with whole numbers, even when using a calculator.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="FirstDegreeEquations-4-3">We can avoid fraction arithmetic by multiplying both sides of the equation through by a common denominator. This technique is known as <em class="emphasis">clearing the fractions</em>. The following example will illustrate.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="FirstDegreeEquationsExample5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="FirstDegreeEquationsExample5"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample5-1-1">
+</h4>
+<div class="para logical" id="FirstDegreeEquationsExample5-1-1">
 <div class="para">Solve for <span class="process-math">\(y\text{:}\)</span>
 </div>
 <div class="displaymath process-math" id="FirstDegreeEquationsExample5-1-1-2">
@@ -1269,40 +1263,38 @@ t=-\frac{31}{2}=\frac{-31}{2}=-15.5
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 3.1.6"><a href="#FirstDegreeEquationsExample5" title="Copy heading and permalink for Example 3.1.6" aria-label="Copy heading and permalink for Example 3.1.6">🔗</a></div></article></details><div class="para logical" id="FirstDegreeEquations-4-5">
-<div class="para">Among the denominators <span class="process-math">\(3,5,6\text{,}\)</span> and <span class="process-math">\(4\)</span> is 60. So, to clear the fractions, we start by multiplying both sides by 60.</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-5-3">
+</div> <div class="para logical" id="FirstDegreeEquationsExample5-1-2">
+<div class="para">Among the denominators <span class="process-math">\(3, 5, 6\text{,}\)</span> and <span class="process-math">\(4\)</span> is 60. So, to clear the fractions, we start by multiplying both sides by 60.</div>
+<div class="displaymath process-math" id="FirstDegreeEquationsExample5-1-2-3">
 \begin{align*}
-60\left(\frac{2}{3}y-\frac{7}{5}\right)\amp =60\left(\frac{1}{6}y+\frac{11}{4}\right)\\
-60\left(\frac{2}{3}y\right)-60\left(\frac{7}{5}\right)\amp =60\left(\frac{1}{6}y\right)+60\left(\frac{11}{4}\right)\\
-\frac{120}{3}y-\frac{420}{5}\amp =\frac{60}{6}y+\frac{660}{4}\\
-40y-84\amp =10y+165
+60\left(\frac{2}{3}y-\frac{7}{5}\right) \amp = 60\left(\frac{1}{6}y+\frac{11}{4}\right)\\
+60\left(\frac{2}{3}y\right)-60\left(\frac{7}{5}\right) \amp = 60\left(\frac{1}{6}y\right)+60\left(\frac{11}{4}\right)\\
+\frac{120}{3}y-\frac{420}{5} \amp = \frac{60}{6}y+\frac{660}{4}\\
+40y-84 \amp = 10y+165
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-4-6">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample5-1-3">
 <div class="para">Now, notice what happened when we multiplied; because all of the denominators divide 60 evenly, the result in each term is a whole number. Now we can just continue as we have before:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-6-1">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample5-1-3-1">
 \begin{align*}
-40y-84\amp =10y+165\\
-30y-84\amp =165\\
-30y\amp =249\\
-y\amp =\frac{249}{30}=\frac{83}{10}=8.3
+40y-84 \amp = 10y+165\\
+30y-84 \amp = 165\\
+30y \amp = 249\\
+y \amp = \frac{249}{30}=\frac{83}{10}=8.3
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="FirstDegreeEquationsExample5-1-4">The reduction of the fraction to lowest terms is useful for expressing the exact answer to the equation. This answer can be checked by substituting back into the original equation (use your calculator for the arithmetic!).<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample5-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-4-7">The reduction of the fraction to lowest terms is useful for expressing the exact answer to the equation. This answer can be checked by substituting back into the original equation (use your calculator for the arithmetic!) }<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 3.1.6"><a href="#FirstDegreeEquationsExample5" title="Copy heading and permalink for Example 3.1.6" aria-label="Copy heading and permalink for Example 3.1.6">🔗</a></div></article><div class="para" id="FirstDegreeEquations-4-5">It is not absolutely necessary to use the lowest common denominator to clear the fractions from an equation; any common denominator will work. So in the previous example, we could also have just multiplied all the denominators together to get a common denominator and so multiplied both sides by <span class="process-math">\((3)(5)(6)(4) = 360\text{.}\)</span> This would have worked out just fine, though the numbers we would have gotten would have been larger after clearing. The benefit of using the lowest common denominator is that it keeps the numbers as small as possible. That is nice, but not mandatory.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-4-8">It is not absolutely necessary to use the lowest common denominator to clear the fractions from an equation; any common denominator will work. So in the previous example, we could also have just multiplied all the denominators together to get a common denominator and so multiplied both sides by <span class="process-math">\((3)(5)(6)(4) = 360\text{.}\)</span> This would have worked out just fine, though the numbers we would have gotten would have been larger after clearing. The benefit of using the lowest common denominator is that it keeps the numbers as small as possible. That is nice, but not mandatory.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-4-6">Be careful when clearing the fractions if the original equation contains parentheses. When fractions fall inside parentheses, sometimes you may need to multiply through by a common denominator more than once to fully clear all the fractions. The following two examples will illustrate this.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-4-9">Be careful when clearing the fractions if the original equation contains parentheses. When fractions fall inside parentheses, sometimes you may need to multiply through by a common denominator more than once to fully clear all the fractions. The following two examples will illustrate this.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<details id="FirstDegreeEquationsExample6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="FirstDegreeEquationsExample6"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample6-1-1">
+</h4>
+<div class="para logical" id="FirstDegreeEquationsExample6-1-1">
 <div class="para">Solve for <span class="process-math">\(x\text{:}\)</span>
 </div>
 <div class="displaymath process-math" id="FirstDegreeEquationsExample6-1-1-2">
@@ -1311,40 +1303,38 @@ y\amp =\frac{249}{30}=\frac{83}{10}=8.3
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 3.1.7"><a href="#FirstDegreeEquationsExample6" title="Copy heading and permalink for Example 3.1.7" aria-label="Copy heading and permalink for Example 3.1.7">🔗</a></div></article></details><div class="para logical" id="FirstDegreeEquations-4-11">
+</div> <div class="para logical" id="FirstDegreeEquationsExample6-1-2">
 <div class="para">Here the lowest common denominator is <span class="process-math">\(30\text{,}\)</span> so we multiply both sides:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-11-2">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample6-1-2-2">
 \begin{equation*}
 30\left(\frac{2}{3}x-1\right)=30\left[\frac{3}{5}\left(\frac{1}{2}x+1\right)\right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-4-12">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample6-1-3">
 <div class="para">When simplifying we generally work from inside parentheses out, but here we are better off multiplying 30 into the outermost parenthesis on the right first:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-12-1">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample6-1-3-1">
 \begin{equation*}
 30\left(\frac{2}{3}x-1\right)=18\left(\frac{1}{2}x+1\right)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-4-13">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample6-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample6-1-4">
 <div class="para">Now continuing as we have before:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-13-1">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample6-1-4-1">
 \begin{align*}
-20x-30\amp =9x+18\\
-11x-30\amp =18\\
-11x\amp =48\\
-x\amp =\frac{48}{11}=4.3636..\text{.}
+20x-30 \amp = 9x+18\\
+11x-30 \amp = 18\\
+11x \amp = 48\\
+x \amp = \frac{48}{11} \approx 4.3636
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample6-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="FirstDegreeEquationsExample7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="autopermalink" data-description="Example 3.1.7"><a href="#FirstDegreeEquationsExample6" title="Copy heading and permalink for Example 3.1.7" aria-label="Copy heading and permalink for Example 3.1.7">🔗</a></div></article><article class="algorithm theorem-like" id="FirstDegreeEquationsExample7"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample7-1-1">
+</h4>
+<div class="para logical" id="FirstDegreeEquationsExample7-1-1">
 <div class="para">Solve for <span class="process-math">\(t\text{:}\)</span>
 </div>
 <div class="displaymath process-math" id="FirstDegreeEquationsExample7-1-1-2">
@@ -1353,40 +1343,38 @@ x\amp =\frac{48}{11}=4.3636..\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 3.1.8"><a href="#FirstDegreeEquationsExample7" title="Copy heading and permalink for Example 3.1.8" aria-label="Copy heading and permalink for Example 3.1.8">🔗</a></div></article></details><div class="para logical" id="FirstDegreeEquations-4-15">
+</div> <div class="para logical" id="FirstDegreeEquationsExample7-1-2">
 <div class="para">Here the lowest common denominator is <span class="process-math">\(24\text{,}\)</span> so we multiply both sides:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-15-2">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample7-1-2-2">
 \begin{align*}
-24\left[\frac{1}{4}\left(\frac{3}{8}t+1\right)\right]\amp =24\left(\frac{2}{3}t-1\right)\\
-6\left(\frac{3}{8}t+1\right)\amp =24\left(\frac{2}{3}t-1\right)\\
-\frac{9}{4}t+6\amp =16t-24
+24\left[\frac{1}{4}\left(\frac{3}{8}t+1\right)\right] \amp = 24\left(\frac{2}{3}t-1\right)\\
+6\left(\frac{3}{8}t+1\right) \amp = 24\left(\frac{2}{3}t-1\right)\\
+\frac{18}{8}t+6 \amp = 16t-24\\
+\frac{9}{4}t+6 \amp = 16t-24
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-4-16">
-<div class="para">Now the fractions turn out to no be fully cleared out. So, we have to multiply a second time, this time by <span class="process-math">\(4\)</span> to get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-16-2">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample7-1-3">
+<div class="para">Now the fractions turn out to not be fully cleared out. So, we have to multiply a second time, this time by <span class="process-math">\(4\)</span> to get:</div>
+<div class="displaymath process-math" id="FirstDegreeEquationsExample7-1-3-2">
 \begin{align*}
-4\left(\frac{9}{4}t+6\right)\amp =4\left(16t-24\right)\\
-9t+24\amp =64t-96
+4\left(\frac{9}{4}t+6\right) \amp = 4\left(16t-24\right)\\
+9t+24 \amp = 64t-96
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="FirstDegreeEquations-4-17">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample7-1-4">
 <div class="para">Now, with the fractions cleared, we proceed:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-17-1">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample7-1-4-1">
 \begin{align*}
-9t+24\amp =64t-96\\
-120\amp =55t\\
-t\amp =\frac{120}{55}=\frac{24}{11}=2.1818..\text{.}
+24+96 \amp = 64t-9t\\
+120 \amp = 55t\\
+t \amp = \frac{120}{55}=\frac{24}{11} \approx 2.1818
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample7-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-4-18">Clearing the fractions is optional. All of the above examples can be done without it, just working through the algebra with fraction arithmetic. Most people find it easier to clear the fractions instead, but this is a matter of choice not necessity. The choice is yours.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 3.1.8"><a href="#FirstDegreeEquationsExample7" title="Copy heading and permalink for Example 3.1.8" aria-label="Copy heading and permalink for Example 3.1.8">🔗</a></div></article><div class="para" id="FirstDegreeEquations-4-9">Clearing the fractions is optional. All of the above examples can be done without it, just working through the algebra with fraction arithmetic. Most people find it easier to clear the fractions instead, but this is a matter of choice not necessity. The choice is yours.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 3.1.2: Solving Equations Involving Fractions"><a href="#FirstDegreeEquations-4" title="Copy heading and permalink for Subsection 3.1.2: Solving Equations Involving Fractions" aria-label="Copy heading and permalink for Subsection 3.1.2: Solving Equations Involving Fractions">🔗</a></div></section><section class="subsection" id="FirstDegreeEquations-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Identities and Contradictions</span>
@@ -1484,9 +1472,10 @@ x = x + 1
 </div>
 <div class="para" id="FirstDegreeEquations-5-16">When given an equation to solve, it is always a possibility that the equation may turn out to be an inconsistent equation or an identity. But if it is, that will become apparent as you work to solve it. If it is inconsistent, that will become apparent once the algebra leads you to an absurd equation; if it is inconsistent that will become apparent once the algebra leads you to an equation whose sides are both the same. If it is an ordinary equation with a solution (called a <em class="emphasis">conditional equation</em> ) the algebra will take you there, too.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-5-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="FirstDegreeEquationsExample8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="FirstDegreeEquationsExample8"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample8-1-1">
+</h4>
+<div class="para logical" id="FirstDegreeEquationsExample8-1-1">
 <div class="para">Solve for <span class="process-math">\(P\text{:}\)</span>
 </div>
 <div class="displaymath process-math" id="FirstDegreeEquationsExample8-1-1-2">
@@ -1495,25 +1484,28 @@ x = x + 1
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 3.1.9"><a href="#FirstDegreeEquationsExample8" title="Copy heading and permalink for Example 3.1.9" aria-label="Copy heading and permalink for Example 3.1.9">🔗</a></div></article></details><div class="displaymath process-math" id="FirstDegreeEquations-5-18">
+</div> <div class="para logical" id="FirstDegreeEquationsExample8-1-2">
+<div class="para">Simplifying each side:</div>
+<div class="displaymath process-math" id="FirstDegreeEquationsExample8-1-2-1">
 \begin{align*}
-3P-5(4P-3)\amp =-3(5P-1)-2P\\
-3P-20P+15\amp =-15P+3-2P\\
--17P+15\amp =-17P+3
+3P-5(4P-3) \amp = -3(5P-1)-2P\\
+3P-20P+15 \amp = -15P+3-2P\\
+-17P+15 \amp = -17P+3
 \end{align*}
 </div>
-<div class="para logical" id="FirstDegreeEquations-5-19">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample8-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample8-1-3">
 <div class="para">At this point you may notice that we have an impossible situation in the equation, but it does no harm to continue. Adding <span class="process-math">\(17P\)</span> to both sides we get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-19-2">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample8-1-3-2">
 \begin{equation*}
 15=3
 \end{equation*}
 </div>
-<div class="para">which is clearly impossible, no matter what value we might substitute in for <span class="process-math">\(P\text{.}\)</span> The equation is a contradiction; its solution set is <span class="process-math">\(\emptyset\text{.}\)</span> }</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-5-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">which is clearly impossible, no matter what value we might substitute in for <span class="process-math">\(P\text{.}\)</span> The equation is a contradiction; its solution set is <span class="process-math">\(\emptyset\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Subsection 3.1.3: Identities and Contradictions"><a href="#FirstDegreeEquations-5" title="Copy heading and permalink for Subsection 3.1.3: Identities and Contradictions" aria-label="Copy heading and permalink for Subsection 3.1.3: Identities and Contradictions">🔗</a></div></section><section class="subsection" id="FirstDegreeEquations-6"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample8-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.1.9"><a href="#FirstDegreeEquationsExample8" title="Copy heading and permalink for Example 3.1.9" aria-label="Copy heading and permalink for Example 3.1.9">🔗</a></div></article><div class="autopermalink" data-description="Subsection 3.1.3: Identities and Contradictions"><a href="#FirstDegreeEquations-5" title="Copy heading and permalink for Subsection 3.1.3: Identities and Contradictions" aria-label="Copy heading and permalink for Subsection 3.1.3: Identities and Contradictions">🔗</a></div></section><section class="subsection" id="FirstDegreeEquations-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving for One Variable in Terms of Others</span>
 </h3>
 <div class="para logical" id="FirstDegreeEquations-6-2">
@@ -1573,50 +1565,55 @@ m=-3W+630 \text{ or }  m=630-3W
 </div>
 <div class="para" id="FirstDegreeEquations-6-7">It should be apparent that this new equation is set up to give values of <span class="process-math">\(m\)</span> readily once a value of <span class="process-math">\(W\)</span> is plugged in.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-6-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="FirstDegreeEquationsExample9" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="FirstDegreeEquationsExample9"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="FirstDegreeEquationsExample9-1-1">The equation <span class="process-math">\(C=\frac{5}{9}(F-32)\)</span> gives <span class="process-math">\(C\text{,}\)</span> the temperature in degrees Celsius, in terms of <span class="process-math">\(F\text{,}\)</span> the temperature in degrees Fahrenheit. Solve this equation for <span class="process-math">\(F\)</span> in terms of <span class="process-math">\(C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 3.1.10"><a href="#FirstDegreeEquationsExample9" title="Copy heading and permalink for Example 3.1.10" aria-label="Copy heading and permalink for Example 3.1.10">🔗</a></div></article></details><div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AlgebraicSubstitution.html" id="FirstDegreeEquations-6-9">
+</h4>
+<div class="para" id="FirstDegreeEquationsExample9-1-1">The equation <span class="process-math">\(C=\frac{5}{9}(F-32)\)</span> gives <span class="process-math">\(C\text{,}\)</span> the temperature in degrees Celsius, in terms of <span class="process-math">\(F\text{,}\)</span> the temperature in degrees Fahrenheit. Solve this equation for <span class="process-math">\(F\)</span> in terms of <span class="process-math">\(C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample9-1-2">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample9-1-2-1">
 \begin{align*}
-C\amp =\frac{5}{9}(F-32)\\
-9C\amp =9\left(\frac{5}{9}(F-32)\right)\\
-9C\amp =5(F-32)\\
-9C\amp =5F-160\\
-9C+160\amp =5F\\
-\frac{9C+160}{5}\amp =F
+C \amp = \frac{5}{9}(F-32)\\
+9C \amp = 9\left(\frac{5}{9}(F-32)\right)\\
+9C \amp = 5(F-32)\\
+9C \amp = 5F-160\\
+9C+160 \amp = 5F\\
+\frac{9C+160}{5} \amp = F
 \end{align*}
 </div>
-<div class="para logical" id="FirstDegreeEquations-6-10">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample9-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample9-1-3">
 <div class="para">which we can then rewrite as:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-6-10-1">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample9-1-3-1">
 \begin{equation*}
 F=\frac{9C+160}{5}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-6-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample9-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="FirstDegreeEquationsExample9-1-4">This is a correct solution. It would also be fine to divide the <span class="process-math">\(5\)</span> into each term, giving a final answer of <span class="process-math">\(F=\frac{9}{5}C+32\text{,}\)</span> or to rewrite the division by <span class="process-math">\(5\)</span> as multiplication by <span class="process-math">\(\frac{1}{5}\text{,}\)</span> giving a final answer of <span class="process-math">\(F=\frac{1}{5}\left(9C+160\right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample9-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="FirstDegreeEquationsExample9-1-5">Most of the time in this course our equations will involve at most two variables, but there is no reason we can’t do this with equations involving more variables.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample9-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-6-11">This is a correct solution. It would also be fine to divide the <span class="process-math">\(5\)</span> into each term, giving a final answer of <span class="process-math">\(F=\frac{9}{5}C+32\)</span> or to rewrite the division by <span class="process-math">\(5\)</span> as multiplication by <span class="process-math">\(\frac{1}{5}\text{,}\)</span> giving a final answer of <span class="process-math">\(F=\frac{1}{5}\left(9C+160\right)\text{.}\)</span> }<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-6-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="FirstDegreeEquations-6-12">Most of the time in this course our equations will involve at most two variables, but there is no reason we can’t do this with equations involving more variables.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-6-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<details id="FirstDegreeEquationsExample10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="autopermalink" data-description="Example 3.1.10"><a href="#FirstDegreeEquationsExample9" title="Copy heading and permalink for Example 3.1.10" aria-label="Copy heading and permalink for Example 3.1.10">🔗</a></div></article><article class="algorithm theorem-like" id="FirstDegreeEquationsExample10"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="FirstDegreeEquationsExample10-1-1">Solve for <span class="process-math">\(L\)</span> in terms of the other variables in <span class="process-math">\(P=2L+2W\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Example 3.1.11"><a href="#FirstDegreeEquationsExample10" title="Copy heading and permalink for Example 3.1.11" aria-label="Copy heading and permalink for Example 3.1.11">🔗</a></div></article></details><div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AlgebraicSubstitution.html" id="FirstDegreeEquations-6-14">
+</h4>
+<div class="para" id="FirstDegreeEquationsExample10-1-1">Solve for <span class="process-math">\(L\)</span> in terms of the other variables in <span class="process-math">\(P=2L+2W\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample10-1-2">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample10-1-2-1">
 \begin{align*}
-P\amp =2L+2W\\
-P-2W\amp =2L\\
-\frac{P-2W}{2}\amp =L
+P \amp = 2L+2W\\
+P-2W \amp = 2L\\
+\frac{P-2W}{2} \amp = L
 \end{align*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AlgebraicSubstitution.html" id="FirstDegreeEquations-6-15">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample10-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="FirstDegreeEquationsExample10-1-3">
+<div class="displaymath process-math" id="FirstDegreeEquationsExample10-1-3-1">
 \begin{equation*}
-L=\frac{P-2W}{2} \text{ or }  L=\frac{1}{2}\left(P-2W\right)
+L=\frac{P-2W}{2} \text{ or } L=\frac{1}{2}\left(P-2W\right)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Subsection 3.1.4: Solving for One Variable in Terms of Others"><a href="#FirstDegreeEquations-6" title="Copy heading and permalink for Subsection 3.1.4: Solving for One Variable in Terms of Others" aria-label="Copy heading and permalink for Subsection 3.1.4: Solving for One Variable in Terms of Others">🔗</a></div></section><section class="subsection" id="FirstDegreeEquations-7"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquationsExample10-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.1.11"><a href="#FirstDegreeEquationsExample10" title="Copy heading and permalink for Example 3.1.11" aria-label="Copy heading and permalink for Example 3.1.11">🔗</a></div></article><div class="autopermalink" data-description="Subsection 3.1.4: Solving for One Variable in Terms of Others"><a href="#FirstDegreeEquations-6" title="Copy heading and permalink for Subsection 3.1.4: Solving for One Variable in Terms of Others" aria-label="Copy heading and permalink for Subsection 3.1.4: Solving for One Variable in Terms of Others">🔗</a></div></section><section class="subsection" id="FirstDegreeEquations-7"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
 </h3>
 <section class="subsubsection" id="FirstDegreeEquations-7-2"><h4 class="heading hide-type">
