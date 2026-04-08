@@ -352,7 +352,13 @@
     </p>
     <figure>
       <caption>Calculator Formula Input Screen</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorFormulaScreen.png" />
+        <image source="AlgebraicSubstitutionImages/CalculatorFormulaScreen.png">
+            <description>
+                A TI-84 graphing calculator screen showing the "Y=" function editor. 
+                The list of equations from Y1 through Y7 is currently blank, with a 
+                black rectangular cursor blinking next to the Y1 equals sign.
+            </description>
+        </image>
     </figure>
     <p>
       If there are any formulas already entered,
@@ -384,7 +390,13 @@
     </p>
     <figure>
       <caption>Formula Entered into Calculator</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorFormulaEx6Small.png" />
+        <image source="AlgebraicSubstitutionImages/CalculatorFormulaEx6Small.png">
+            <description>
+                A TI-84 graphing calculator screen in the "Y=" editor. The expression 
+                210 minus X divided by 3 is entered into the Y1 field, with the cursor 
+                positioned at the end of the line.
+            </description>
+        </image>
     </figure>
     <p>
       Now, to set up the table.
@@ -400,7 +412,13 @@
     </p>
     <figure>
       <caption>Calculator Table Setup Screen</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorTableSetupDefault.svg" />
+        <image source="AlgebraicSubstitutionImages/CalculatorTableSetupDefault.svg">
+            <description>
+                A TI-84 graphing calculator screen showing the "TABLE SETUP" menu. 
+                The settings are: TblStart equals 0, Delta Tbl equals 1, and both 
+                Indpnt and Depend are set to "Auto" with the "Auto" options highlighted.
+            </description>
+        </image>
     </figure>
     <p>
       For our table,
@@ -434,7 +452,13 @@
     </p>
     <figure>
       <caption>Calculator Table Setup Screen</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorTableSetupAuto.png" />
+        <image source="AlgebraicSubstitutionImages/CalculatorTableSetupAuto.png">
+            <description>
+                A TI-84 graphing calculator screen showing the "TABLE SETUP" menu. 
+                The settings are: TblStart equals 0, Delta Tbl equals 30, and both 
+                Indpnt and Depend are set to "Auto" with the "Auto" options highlighted.
+            </description>
+        </image>
     </figure>
     <p>
       Now we are ready to see our table.
@@ -447,7 +471,14 @@
     </p>
     <figure>
       <caption>Calculator Automatically Generated Table</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorTableEx6.png" />
+        <image source="AlgebraicSubstitutionImages/CalculatorTableEx6.png">
+            <description>
+                A TI-84 graphing calculator screen showing a table of values with two columns: X and Y1. 
+                The X column counts by 30s starting at 0, 30, 60, up to 180. 
+                The Y1 column shows the corresponding calculated values: 210, 200, 190, 180, 170, 160, and 150. 
+                The cursor is highlighting the X value of 0 at the top of the list.
+            </description>
+        </image>
     </figure>
     <p>
       Note that even though we only wanted to go as far as 120 minutes,
@@ -587,7 +618,13 @@
     </p>
     <figure>
       <caption>Calculator Formula Entered on Formula Screen</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorFormulaEx7.png" />
+        <image source="AlgebraicSubstitutionImages/CalculatorFormulaEx7.png">
+            <description>
+                A TI-84 graphing calculator screen in the "Y=" editor. The formula 
+                for Celsius conversion, (5/9)(X-32), is entered into the Y1 field. 
+                The cursor is at the end of the expression.
+            </description>
+        </image>
     </figure>
     <p>
       Now, since there is no set increment between the input values we want to use,
@@ -596,7 +633,14 @@
     </p>
     <figure>
       <caption>Calculator Table Setup Screen</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorTableSetupEx7.png" />
+        <image source="AlgebraicSubstitutionImages/CalculatorTableSetupEx7.png">
+                <description>
+                    A TI-84 graphing calculator screen in the "TABLE SETUP" menu. 
+                    TblStart is 0 and Delta Tbl is 30. The "Indpnt" (Independent) setting 
+                    has been changed from "Auto" to "Ask," with the "Ask" option 
+                    highlighted by a black cursor box. The "Depend" setting remains on "Auto."
+                </description>
+            </image>
     </figure>
     <p>
       Now, we got to the table, and enter the input values we want.
@@ -605,7 +649,14 @@
     </p>
     <figure>
       <caption>Calculator Table Generated from Entered Values</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorTableEx7.png" />
+        <image source="AlgebraicSubstitutionImages/CalculatorTableEx7.png">
+            <description>
+                A TI-84 graphing calculator screen showing a table of values in "Ask" mode. 
+                The X column contains specific Fahrenheit temperatures: 0, 32, 68, 98.6, and 212. 
+                The Y1 column displays the corresponding Celsius conversions: -17.78, 0, 20, 37, and 100. 
+                A black rectangular cursor is active in the next blank row of the X column.
+            </description>
+        </image>
     </figure>
     </statement>
     </algorithm>
