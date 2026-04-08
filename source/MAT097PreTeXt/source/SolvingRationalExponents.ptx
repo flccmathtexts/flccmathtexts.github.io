@@ -50,40 +50,37 @@
     <p>
       Let's look at another example:
     </p>
-    <example xml:id="SolveHigherOrderEquationsExample4">
+    <algorithm xml:id="SolveHigherOrderEquationsExample4">
       <statement>
         <p>
           Solve <m>x^3=64</m>
         </p>
+        <p>
+          We want to isolate that variable on the left side and it is being raised to the third power. We need to think what can I multiply <m>3</m> by to give me <m>1</m>? <m>3 \cdot \frac{1}{3} = 1</m>!
+        </p>
+        <p>
+          Let's take this approach:
+          <me>
+            \left({x^3}\right)^{\frac{1}{3}}=64^{\frac{1}{3}}
+          </me>
+        </p>
+        <p>
+          Using the power rule:
+          <me>
+            x^{3\cdot\frac{1}{3}}=64^{\frac{1}{3}}
+          </me>
+        </p>
+        <p>
+          Remember that <m>64^{\frac{1}{3}}</m> can be entered into the calculator as <q><m>64^\wedge(1/3)</m></q> and we get:
+          <me>
+            x^1=x=4
+          </me>
+        </p>
+        <p>
+          It is important to realize that because <m>x^{\frac{1}{3}}=\sqrt[3]{x}</m>, taking the cube or third root of both sides would have given us the same solution!
+        </p>
       </statement>
-    </example>
-    <p>
-      We want to isolate that variable on the left side and it is being raised to the third power.
-      We need to think what can I multiply <m>3</m> by to give me <m>1</m>?
-      <m>3 \cdot \frac{1}{3} = 1</m>!
-      Let's take this approach:
-      <me>
-        \left({x^3}\right)^{\frac{1}{3}}=64^{\frac{1}{3}}
-      </me>
-    </p>
-    <p>
-      Using the power rule:
-      <me>
-        x^{3\cdot\frac{1}{3}}=64^{\frac{1}{3}}
-      </me>
-    </p>
-    <p>
-      Remember that <m>64^{\frac{1}{3}}</m> can be entered into the calculator as
-      <q><m>64^\wedge(1/3)</m></q>
-      and we get:
-      <me>
-        x^1=x=4
-      </me>
-    </p>
-    <p>
-      It is important to realize that because <m>x^{\frac{1}{3}}=\sqrt[3]{x}</m>,
-      taking the cube or third root of both sides would have given us the same solution!
-    </p>
+    </algorithm>
   </introduction>
   <subsection>
     <title>One Solution or Multiple Solutions</title>
@@ -122,55 +119,49 @@
         (-4) \cdot (-4)  \cdot (-4)= -64
       </me>
     </p>
-    <example xml:id="SolveHigherOrderEquationsExample5">
+    <algorithm xml:id="SolveHigherOrderEquationsExample5">
       <statement>
         <p>
           Solve <m>2x^3=128</m>
         </p>
+        <p>
+          Let's look at this equation very carefully. The left side reads <q>two times <m>x</m> to the third power</q>. We absolutely want to use the balance principal to help us isolate that <m>x</m>, but it is important to realize that only the variable is being raised to the third power, not the coefficient out front.
+        </p>
+        <p>
+          For that reason, we need to start here first before we worry about that power. We take the same steps we would take if we had an <m>x</m> with a power of <m>1</m> on the left side. If we are multiplying, we transform this equation using division:
+          <me>
+            2x^3 = 128
+          </me>
+        </p>
+        <p>
+          Divide by <m>2</m> on both sides to begin:
+          <md>
+            <mrow>\frac{2x^3}{2} \amp = \frac{128}{2}</mrow>
+            <mrow>x^3 \amp = 64</mrow>
+            <mrow>{(x^3)}^{\frac{1}{3}} \amp = (64)^{\frac{1}{3}}</mrow>
+            <mrow>x \amp = 4</mrow>
+          </md>
+        </p>
       </statement>
-    </example>
-    <p>
-      Let's look at this equation very carefully.
-      The left side reads
-      <q>two times <m>x</m> to the third power</q>. We absolutely want to use the balance principal to help us isolate that <m>x</m>,
-      but it is important to realize that only the variable is being raised to the third power,
-      not the coefficient out front.
-      For that reason,
-      we need to start here first before we worry about that power.
-      We take the same steps we would take if we had an <m>x</m> with a power of <m>1</m> on the left side.
-      If we are multiplying, we transform this equation using division:
-      <me>
-        2x^3 = 128
-      </me>
-    </p>
-    <p>
-      Divide by <m>2</m> on both sides to begin:
-      <md>
-        <mrow>\frac{2x^3}{2} \amp = \frac{128}{2}</mrow>
-        <mrow>x^3 \amp = 64</mrow>
-        <mrow>{(x^3)}^{\frac{1}{3}}\amp  = (64)^{\frac{1}{3}}</mrow>
-        <mrow>x \amp = 4</mrow>
-      </md>
-    </p>
-    <example xml:id="SolveHigherOrderEquationsExample6">
+    </algorithm>
+    <algorithm xml:id="SolveHigherOrderEquationsExample6">
       <statement>
         <p>
           Solve <m>6p^5-10=182</m>
         </p>
+        <p>
+          Thinking of this equation where the variable was raised to the first power, the first step we would take would be to add <m>10</m> to both sides and then to divide by <m>6</m>:
+          <md>
+            <mrow>6p^5 - 10 + 10 \amp = 182 + 10</mrow>
+            <mrow>6p^5 \amp = 192</mrow>
+            <mrow>\frac{6p^5}{6} \amp = \frac{192}{6}</mrow>
+            <mrow>p^5 \amp = 32</mrow>
+            <mrow>{(p^5)}^{\frac{1}{5}} \amp = (32)^{\frac{1}{5}}</mrow>
+            <mrow>p \amp = 2</mrow>
+          </md>
+        </p>
       </statement>
-    </example>
-    <p>
-      Thinking of this equation where the variable was raised to the first power,
-      the first step we would take would be to add <m>10</m> to both sides and then to divide by <m>6</m>:
-      <md>
-        <mrow>6p^5 - 10 + 10 \amp = 182 + 10</mrow>
-        <mrow>6p^5 \amp = 192</mrow>
-        <mrow>\frac{6p^5}{6} \amp = \frac{192}{6}</mrow>
-        <mrow>p^5 \amp = 32</mrow>
-        <mrow>{(p^5)}^{\frac{1}{5}} \amp = (32)^{\frac{1}{5}}</mrow>
-        <mrow>p \amp = 2</mrow>
-      </md>
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Exercises</title>
