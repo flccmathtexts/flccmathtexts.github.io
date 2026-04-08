@@ -75,7 +75,7 @@
     <p>
       (the curly brackets are used to indicate that this is a set of coordinate pairs).
     </p>
-    <example xml:id="FunctionsandGraphsExample1">
+    <algorithm xml:id="FunctionsandGraphsAlgorithm1">
       <statement>
         <p>
           Rewrite the function given in the table below as a set of coordinate pairs.
@@ -106,61 +106,61 @@
             <cell>6</cell>
           </row>
         </tabular>
-      </statement>
-    </example>
-    <p>
-      Following the pattern of <m>(\text{ input } , \text{ output } )</m> we would write <m>\{(4,0), (7,0), (3,2), (9, -4), (1,6)\}</m>.
-    </p>
-    <example xml:id="FunctionsandGraphsExample2">
-      <statement>
         <p>
-          Suppose that for a given function <m>h(3)=5</m>.
-          Express this as a coordinate pair.
+          Following the pattern of <m>(\text{ input } , \text{ output } )</m> we would write <m>\{(4,0), (7,0), (3,2), (9, -4), (1,6)\}</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      Following the pattern again,
-      we would write this as the coordinate pair <m>(3,5)</m>.
-    </p>
-    <p>
-      You may notice that coordinate pairs look an exactly like interval notation,
-      <m>(3,5)</m> read as a coordinate pair means
-      <q>the input <m>3</m> gives the output <m>5</m></q>; but <m>(3,5)</m> read as an interval means
-      <q>all the real numbers between <m>3</m> and <m>5</m> not including <m>3</m> and <m>5</m> themselves.</q>
-      It is really unfortunate that the same notation can be correctly interpreted as two completely different things.
-      Fortunately, though,
-      this is almost never a problem because it is just about always clear from context whether we are talking about a coordinate pair or an interval.
-    </p>
+    </algorithm>
+    <algorithm xml:id="FunctionsandGraphsAlgorithm2">
+      <statement>
+        <p>
+          Suppose that for a given function <m>h(3)=5</m>. 
+          Express this as a coordinate pair.
+        </p>
+        <p>
+          Following the pattern again, 
+          we would write this as the coordinate pair <m>(3,5)</m>.
+        </p>
+        <p>
+          You may notice that coordinate pairs look exactly like interval notation. 
+          <m>(3,5)</m> read as a coordinate pair means 
+          <q>the input <m>3</m> gives the output <m>5</m></q>; but <m>(3,5)</m> read as an interval means 
+          <q>all the real numbers between <m>3</m> and <m>5</m> not including <m>3</m> and <m>5</m> themselves.</q> 
+          It is really unfortunate that the same notation can be correctly interpreted as two completely different things. 
+          Fortunately, though, 
+          this is almost never a problem because it is just about always clear from context whether we are talking about a coordinate pair or an interval.
+        </p>
+      </statement>
+    </algorithm>
     <p>
       Any function that can be described with a table can be described with coordinate pairs.
       And so, anything we can do with a function as a table we can do with a function as a set of coordinate pairs.
     </p>
-    <example xml:id="FunctionsandGraphsExample3">
+    <algorithm xml:id="FunctionsandGraphsAlgorithm3">
       <statement>
         <p>
           Is <m>\{(0,3), (1,3), (2,5), (3,6), (5,11)\}</m> a function?
         </p>
+        <p>
+          In this set of coordinate pairs, 
+          each distinct input has one and only one output. 
+          Therefore this is a function.
+        </p>
       </statement>
-    </example>
-    <p>
-      In this set of coordinate pairs,
-      each distinct input has one and only one output.
-      Therefore this is a function.
-    </p>
-    <example xml:id="FunctionsandGraphsExample4">
+    </algorithm>
+    <algorithm xml:id="FunctionsandGraphsAlgorithm4">
       <statement>
         <p>
           Is <m>\{(0,5), (1,-3), (3,6), (-2,7), (1,0)\}</m> a function?
         </p>
+        <p>
+          In this set of coordinate pairs we have both <m>(1,-3)</m> and <m>(1,0)</m>. 
+          This means that the input <m>1</m> gets both <m>-3</m> and <m>0</m> as outputs. 
+          A function cannot give two different outputs for the same input. 
+          This is not a function.
+        </p>
       </statement>
-    </example>
-    <p>
-      In this set of coordinate pairs we have both <m>(1,-3)</m> and <m>(1,0)</m>.
-      This means that the input <m>1</m> gets both <m>-3</m> and <m>0</m> as outputs.
-      A function cannot give two different outputs for the same input.
-      This is not a function.
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Graphs</title>
@@ -251,11 +251,19 @@
     </p>
     <figure>
       <caption>A visualization of all real numbers</caption>
-      <image width="73%" source="FunctionsandGraphsImages/Figure01.png" />
+      <image width="73%" source="FunctionsandGraphsImages/Figure01.png">
+        <description>
+          A horizontal number line with arrows on both ends indicating it extends infinitely in both directions. The line has tick marks at regular intervals labeled with integers ranging from -10 on the left to 10 on the right, with 0 positioned in the center.
+        </description>
+      </image>
     </figure>
     <figure>
       <caption>Descartes: He thought, therefore he was. Source: wikipedia.org</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure02.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure02.png">
+        <description>
+          A classic oil painting portrait of René Descartes.
+        </description>
+      </image>
     </figure>
     <p>
       Descartes' innovation was to draw two number lines,
@@ -282,7 +290,11 @@
     </p>
     <figure>
       <caption>A set of coordinate axes.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure03.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure03.png">
+        <description>
+          An image of a blank graph.
+        </description>
+      </image>
     </figure>
     <p>
       Any coordinate pair can be represented as a point in this plane.
@@ -294,7 +306,11 @@
     </p>
     <figure>
       <caption>The point <m>(3,-2)</m> marked on a set of axes.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure04.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure04.png">
+        <description>
+          A set of blank coordinate axes with a single point plotted in the fourth quadrant. The point is located three tick marks to the right of the vertical axis and two tick marks below the horizontal axis, corresponding to the coordinates (3, -2).
+        </description>
+      </image>
     </figure>
     <p>
       Now, we can represent any numerical table as a collection of points in the plane.
@@ -303,7 +319,11 @@
     </p>
     <figure>
       <caption>Some input-output pairs for <m>f(x)=2x</m>.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure05.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure05.png">
+        <description>
+          A coordinate plane showing several plotted points that represent input-output pairs for the function f(x) = 2x. Starting from the origin (0,0), the points are plotted in the first quadrant, showing a consistent upward and rightward trend: (1,2), (2,4), (3,6), (4,8), and (5,10). Each point is represented by a small square.
+        </description>
+      </image>
     </figure>
     <p>
       Now here's the infinitely clever part.
@@ -314,7 +334,11 @@
     </p>
     <figure>
       <caption>The line formed by input-output pairs for <m>f(x)=2x</m>.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure06.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure06.png">
+        <description>
+          A coordinate plane showing a solid straight line passing through the origin (0,0). The line has a positive slope, extending from the bottom-left quadrant (III) through the origin and into the top-right quadrant (I). The line represents the continuous set of all input-output pairs for the function f(x) = 2x.
+        </description>
+      </image>
     </figure>
     <p>
       Note that for the time being,
@@ -366,7 +390,11 @@
     </p>
     <figure>
       <caption>Some of the input-output pairs for the function <m>g(x)=x^2</m>.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure07.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure07.png">
+        <description>
+          A coordinate plane showing several plotted points for the function g(x) = x squared. The points are symmetrical across the vertical y-axis, forming a U-shape. Plotted points include (0,0) at the origin, (1,1) and (-1,1), (2,4) and (-2,4), and (3,9) and (-3,9). Each point is represented by a small square.
+        </description>
+      </image>
     </figure>
     <p>
       which clearly can't be made to fit any straight line.
@@ -375,7 +403,11 @@
     </p>
     <figure>
       <caption>The shape formed by the input-output pairs for <m>g(x)=x^2</m>.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure08.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure08.png">
+        <description>
+          A coordinate plane showing a solid parabolic curve for the function g(x) = x squared. The curve is symmetric across the vertical y-axis, with its lowest point, the vertex, at the origin (0,0). The two arms of the parabola open upward, extending into the first and second quadrants.
+        </description>
+      </image>
     </figure>
     <p>
       Even though that's not a straight line,
@@ -409,52 +441,63 @@
     </p>
     <figure>
       <caption>The quadrants of the Cartesian Plane.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure09.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure09.png">
+        <description>
+          An illustration of the Cartesian Plane divided into four quadrants by the x and y axes. Each quadrant is labeled with a Roman numeral in counter-clockwise order: Quadrant I is in the top-right, Quadrant II is in the top-left, Quadrant III is in the bottom-left, and Quadrant IV is in the bottom-right.
+        </description>
+      </image>
     </figure>
     <p>
       Quadrant I is called the <em>first quadrant</em>,
       quadrant II is called the <em>second quadrant</em>, etc.
     </p>
-    <example xml:id="FunctionsandGraphsExample5">
+    <algorithm xml:id="FunctionsandGraphsAlgorithm5">
       <statement>
         <p>
-          Sketch the location of the point <m>(-3,1)</m> in the Cartesian plane.
+          Sketch the location of the point <m>(-3,1)</m> in the Cartesian plane. 
           In which quadrant is this point located?
         </p>
+        <p>
+          To locate this point we follow the input (horizontal) axis from the origin to the left to <m>-3</m> and then follow the output (vertical) axis up to a height of <m>+1</m>.
+        </p>
+        <figure>
+          <caption>The location of <m>(-3,1)</m> in the Cartesian Plane</caption>
+          <image width="92.5%" source="FunctionsandGraphsImages/Figure10.png">
+            <description>
+              A coordinate plane with a single point plotted in Quadrant II. The point is located three tick marks to the left of the vertical axis and one tick mark above the horizontal axis, representing the coordinates (-3, 1). The Roman numeral II is displayed in the upper-left corner of the plane.
+            </description>
+          </image>
+        </figure>
+        <p>
+          This point lies in the second quadrant (i.e. Quadrant II).
+        </p>
       </statement>
-    </example>
-    <p>
-      To locate this point we follow the input (horizontal) axis from the origin to the left to <m>-3</m> and then follow the output (vertical) axis up to a height of <m>+1</m>.
-    </p>
-    <figure>
-      <caption>The location of <m>(-3,1)</m> in the Cartesian Plane</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure10.png" />
-    </figure>
-    <p>
-      This point lies in the second quadrant (i.e.
-      Quadrant II). }
-    </p>
-    <example xml:id="FunctionsandGraphsExample6">
+    </algorithm>
+    <algorithm xml:id="FunctionsandGraphsAlgorithm6">
       <statement>
         <p>
-          Sketch the location of the point <m>(0,-2)</m> in the Cartesian plane.
+          Sketch the location of the point <m>(0,-2)</m> in the Cartesian plane. 
           In which quadrant is this point located?
         </p>
+        <p>
+          Because the first coordinate is <m>0</m>, 
+          we don't move at all to the right or left from the origin. 
+          We then follow the output (vertical) axis down to <m>-2</m>.
+        </p>
+        <figure>
+          <caption>The location of <m>(0,-2)</m> in the Cartesian Plane</caption>
+          <image width="92.5%" source="FunctionsandGraphsImages/Figure11.png">
+            <description>
+              A coordinate plane with a single point plotted on the vertical y-axis. The point is located two tick marks below the origin, representing the coordinates (0, -2). The Roman numeral III is displayed in the bottom-left corner and the Roman numeral IV is displayed in the bottom-right corner.
+            </description>
+          </image>
+        </figure>
+        <p>
+          This point does not lie in any quadrant. 
+          It is located directly on the output (vertical) axis between Quadrants III and IV.
+        </p>
       </statement>
-    </example>
-    <p>
-      Because the first coordinate is <m>0</m>,
-      we don't move at all to the right or left from the origin.
-      We then follow the output (vertical) axis down to <m>-2</m>.
-    </p>
-    <figure>
-      <caption>The location of <m>(0,-2)</m> in the Cartesian Plane</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure11.png" />
-    </figure>
-    <p>
-      This point does not lie in any quadrant.
-      It is located directly on the output (vertical) axis between Quadrants III and IV. }
-    </p>
+    </algorithm>
     <p>
       We can create graphs for functions whose formulas we know
       (more on that later).
@@ -479,7 +522,11 @@
     </p>
     <figure>
       <caption>Graph of water in the tub as a function of time</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure12.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure12.png">
+        <description>
+          A line graph where the horizontal axis is labeled "time" and the vertical axis is labeled "water". The graph begins at the origin (0,0) and rises at a constant, positive slope, forming a straight diagonal line. After reaching a certain height, the line becomes perfectly horizontal, extending to the right, indicating that the amount of water remains constant as time continues to pass.
+        </description>
+      </image>
     </figure>
     <p>
       Now, we can't put numbers on this graph because we don't have that information;
@@ -502,7 +549,7 @@
       If other information is available,
       that may be included as well.
     </p>
-    <example xml:id="FunctionsandGraphsExample7">
+    <algorithm xml:id="FunctionsandGraphsAlgorithm7">
       <statement>
         <p>
           A radioactive isotope of iodine decays with a half life of 8 hours
@@ -510,74 +557,90 @@
           A lab has a 20 gram sample of this isotope.
           Sketch a graph of the remaining amount of the isotope as a function of time.
         </p>
+        <p>
+          The amount is decreasing, so our graph should move downward.
+          It cannot move down in a straight line, though,
+          because if it did the graph would eventually fall below the horizontal axis – meaning a negative amount of iodine,
+          which is ridiculous.
+          So, the graph must curve downward.
+        </p>
+        <p>
+          We can get a sense of how this would work by plotting a few points based on the information we have.
+          Since the amount is reduced by half every 8 hours,
+          we can figure out the amounts we have at 8 hour intervals:
+        </p>
+        <tabular>
+          <row>
+            <cell>Time (hours)</cell>
+            <cell>Amount (grams)</cell>
+          </row>
+          <row bottom="minor">
+            <cell />
+            <cell />
+          </row>
+          <row>
+            <cell>0</cell>
+            <cell>20</cell>
+          </row>
+          <row>
+            <cell>8</cell>
+            <cell>10</cell>
+          </row>
+          <row>
+            <cell>16</cell>
+            <cell>5</cell>
+          </row>
+          <row>
+            <cell>24</cell>
+            <cell>2.5</cell>
+          </row>
+        </tabular>
+        <p>
+          Roughly plotting these points:
+        </p>
+        <figure>
+          <image width="92.5%" source="FunctionsandGraphsImages/Figure13.png">
+            <description>
+              A scatter plot with the horizontal axis labeled "time (hrs)" and the vertical axis labeled "amount (grams)". Four points are plotted, showing a decreasing trend. The first point is on the vertical axis at a high value. The subsequent three points move to the right and downward, with each step down becoming smaller, suggesting an exponential decay or a similar decreasing relationship.
+            </description>
+          </image>
+        </figure>
+        <p>
+          gives us a sense of what the graph must look like.
+          Connecting these dots into a smooth shape and labeling we should end up with a graph something like this:
+        </p>
+        <figure>
+          <image width="92.5%" source="FunctionsandGraphsImages/Figure14.png">
+            <description>
+              A coordinate plane with the horizontal axis labeled "time (hrs)" and the vertical axis labeled "amount (grams)". A smooth, solid curve is drawn through the four points from the previous scatter plot. The curve starts high on the vertical axis and slopes downward to the right, leveling off as it approaches the horizontal axis, illustrating a continuous exponential decay over time.
+            </description>
+          </image>
+        </figure>
+        <p>
+          It is not necessary and probably not even desirable to show all the plotted points specifically labeled;
+          but it would be good to label a few values to give a sense of scale.
+          A graph such as this would be a good choice:
+        </p>
+        <figure>
+          <image width="92.5%" source="FunctionsandGraphsImages/Figure15.png">
+            <description>
+              A coordinate plane with the horizontal axis labeled "time (hrs)" and the vertical axis labeled "amount (grams)". A smooth curve shows exponential decay, starting from a point on the vertical axis marked with the number 20. On the horizontal axis, a specific tick mark is labeled with the number 8, representing a time of 8 hours. The curve continues to decrease as it moves to the right.
+            </description>
+          </image>
+        </figure>
       </statement>
-    </example>
-    <p>
-      The amount is decreasing, so our graph should move downward.
-      It cannot move down in a straight line, though,
-      because if it did the graph would eventually fall below the horizontal axis – meaning a negative amount of iodine,
-      which is ridiculous.
-      So, the graph must curve downward.
-    </p>
-    <p>
-      We can get a sense of how this would work by plotting a few points based on the information we have.
-      Since the amount is reduced by half every 8 hours,
-      we can figure out the amounts we have at 8 hour intervals:
-    </p>
-    <tabular>
-      <row>
-        <cell>Time (hours)</cell>
-        <cell>Amount (grams)</cell>
-      </row>
-      <row bottom="minor">
-        <cell />
-        <cell />
-      </row>
-      <row>
-        <cell>0</cell>
-        <cell>20</cell>
-      </row>
-      <row>
-        <cell>8</cell>
-        <cell>10</cell>
-      </row>
-      <row>
-        <cell>16</cell>
-        <cell>5</cell>
-      </row>
-      <row>
-        <cell>24</cell>
-        <cell>2.5</cell>
-      </row>
-    </tabular>
-    <p>
-      Roughly plotting these points:
-    </p>
-    <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure13.png" />
-    </figure>
-    <p>
-      gives us a sense of what the graph must look like.
-      Connecting these dots into a smooth shape and labeling we should end up with a graph something like this:
-    </p>
-    <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure14.png" />
-    </figure>
-    <p>
-      It is not necessary and probably not even desirable to show all the plotted points specifically labeled;
-      but it would be good to label a few values to give a sense of scale.
-      A graph such as this would be a good choice:
-    </p>
-    <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure15.png" />
-    </figure>
+    </algorithm>
     <p>
       Graphs can take on all sorts of shapes.
       For example,
       here is graph for the closing price of the Dow Jones Industrial Average (a reflection of the US stock market) as a function of time over the years 2008-2009:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure16.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure16.png">
+        <description>
+          A detailed line graph showing the fluctuations of a value over time, specifically from early 2008 through late 2009. The vertical axis ranges from 0 to 14,000 in increments of 2,000. The horizontal axis is labeled with dates such as 1/2/2008, 5/2/2008, 1/2/2009, and 11/2/2009. The blue line starts near 13,000, experiences a sharp and significant drop starting around September 2008, reaching a low point near 6,500 in early 2009, before gradually trending upward through the remainder of the year.
+        </description>
+      </image>
     </figure>
     <p>
       And of course wilder shapes are possible.
@@ -588,7 +651,11 @@
     </p>
     <figure>
       <caption>Could this be a graph of a function?</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure17.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure17.png">
+        <description>
+          A coordinate plane showing a circle centered at the origin (0,0). The circle has a radius of approximately 4 units, passing through the points (4,0), (0,4), (-4,0), and (0,-4). The graph illustrates a relation that fails the vertical line test, as many vertical lines would intersect the circle at two different points.
+        </description>
+      </image>
     </figure>
     <p>
       This is a nice, smooth, geometrically pretty shape.
@@ -630,7 +697,11 @@
     </p>
     <figure>
       <caption>Drawing a vertical line shows how the input value we've drawn it through has two outputs</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure18.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure18.png">
+        <description>
+          A coordinate plane showing a circle centered at the origin. A solid vertical line is drawn through the left side of the circle, intersecting it at two distinct points: one in the second quadrant and one in the third quadrant. This visual demonstrates that for a single input value (x-coordinate), there are two different output values (y-coordinates), confirming that the circle does not represent a function.
+        </description>
+      </image>
     </figure>
     <p>
       The observation we are making here is sometimes referred to as the vertical line test.
@@ -700,7 +771,11 @@
       <q>X</q>. The resulting screen should look like this:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure19.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure19.png">
+        <description>
+          A screenshot of the "Y=" editor screen on a TI-84 Plus graphing calculator. At the top, "Plot1", "Plot2", and "Plot3" are listed. Below, several function slots are shown, with "Y1=2X" entered in the first slot. The remaining slots, "Y2" through "Y7", are empty. The equal sign next to Y1 is highlighted, indicating that the function is selected to be graphed.
+        </description>
+      </image>
     </figure>
     <p>
           <idx><h>Calculator:Window Settings</h></idx> <em>Step 2: Set the window.</em> The Cartesian plane extends out to infinity in all directions, and many graphs do as well.
@@ -713,7 +788,11 @@
       and it will take you to a screen that should look like this (though the specific numbers you see may not be the same):
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure20.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure20.png">
+        <description>
+          A screenshot of the "WINDOW" settings screen on a TI-84 Plus graphing calculator. The settings are: Xmin=-8, Xmax=8, Xscl=1, Ymin=-6, Ymax=6, Yscl=1, and Xres=1. This defines the coordinate range and scale that will be visible on the graph screen.
+        </description>
+      </image>
     </figure>
     <p>
       The
@@ -754,7 +833,11 @@
       we would want the following settings:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure21.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure21.png">
+        <description>
+          A screenshot of the "WINDOW" settings screen on a TI-84 Plus graphing calculator, showing the "Standard" viewing window values. The settings are: Xmin=-10, Xmax=10, Xscl=1, Ymin=-10, Ymax=10, Yscl=1, and Xres=1. A black cursor box is positioned over the negative sign of the Xmin value.
+        </description>
+      </image>
     </figure>
     <p>
       <em>Step 3: Get the graph.</em>
@@ -762,7 +845,11 @@
       <q>GRAPH</q>. Hit that key now and you should see this:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure22.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure22.png">
+        <description>
+          A screenshot of a TI-84 Plus graphing calculator screen showing the graph of the function Y1=2X. The graph is a straight line passing through the origin (0,0) with a positive slope. The axes are visible with tick marks based on the previously defined window settings, showing the line extending from the bottom-left to the top-right of the display.
+        </description>
+      </image>
     </figure>
     <p>
           <idx><h>Calculator:Zoom</h></idx>
@@ -772,7 +859,11 @@
       <q>6: ZStandard</q>:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure23.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure23.png">
+        <description>
+          A screenshot of the "ZOOM" menu on a TI-84 Plus graphing calculator. The menu shows several options: 1:ZBox, 2:Zoom In, 3:Zoom Out, 4:ZDecimal, 5:ZSquare, 6:ZStandard, and 7:ZTrig. The first option, "1:ZBox", is highlighted with a black cursor box.
+        </description>
+      </image>
     </figure>
     <p>
       This will take you directly to the graph in the standard window,
@@ -809,7 +900,11 @@
       and the input and output values of its coordinates:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure24.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure24.png">
+        <description>
+          A screenshot of a TI-84 Plus graphing calculator screen showing the "Trace" function on the graph of Y1=2X. A cursor is positioned on the line in the first quadrant. At the top-left, the function "Y1=2X" is displayed. At the bottom of the screen, the coordinates for the cursor's current position are shown: X=2.7659574 and Y=5.5319149.
+        </description>
+      </image>
     </figure>
     <p>
       If you don't see the coordinate values, hit
@@ -820,7 +915,11 @@
       ) and make sure your settings are like this:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure25.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure25.png">
+        <description>
+          A screenshot of the "FORMAT" menu on a TI-84 Plus graphing calculator. The menu displays various toggle options for the graph's appearance: RectGC or PolarGC, CoordOn or CoordOff, GridOff or GridOn, AxesOn or AxesOff, LabelOff or LabelOn, and ExprOn or ExprOff. Currently, RectGC, CoordOn, GridOff, AxesOn, LabelOff, and ExprOn are selected, as indicated by the black highlighting.
+        </description>
+      </image>
     </figure>
     <p>
       You can now move around to different points on the graph by using the right and left directional keys in the upper right portion of your calculator.
@@ -837,7 +936,11 @@
       ) in the top row to get this menu:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure26.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure26.png">
+        <description>
+          A screenshot of the "CALCULATE" menu on a TI-84 Plus graphing calculator. The menu lists several computational options: 1:value, 2:zero, 3:minimum, 4:maximum, 5:intersect, 6:dy/dx, and 7:∫f(x)dx. The first option, "1:value", is currently highlighted with a black cursor box.
+        </description>
+      </image>
     </figure>
     <p>
       Select
@@ -845,7 +948,11 @@
       and you'll be returned to the graph with a screen that looks like this:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure27.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure27.png">
+        <description>
+          A screenshot of a TI-84 Plus graphing calculator screen showing the graph of Y1=2X with a prompt for input. In the bottom-left corner, "X=" is displayed, indicating the calculator is waiting for the user to enter a specific x-value to calculate the corresponding y-value on the line.
+        </description>
+      </image>
     </figure>
     <p>
       Now you can enter the input (<m>x</m>) value you want to visit.
@@ -853,54 +960,70 @@
       to visit the point that goes with <m>x=-3</m> we get:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure28.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure28.png">
+        <description>
+          A screenshot of a TI-84 Plus graphing calculator screen showing the result of the "value" calculation for the function Y1=2X. A cursor is positioned on the line in the third quadrant at X=-3. In the bottom-left, "X=-3" is displayed, and in the bottom-right, the calculated result "Y=-6" is shown, confirming the point (-3, -6) on the graph.
+        </description>
+      </image>
     </figure>
-    <example xml:id="FunctionsandGraphsExample8">
+    <algorithm xml:id="FunctionsandGraphsAlgorithm8">
       <statement>
         <p>
-          Obtain a graph for <m>h(t)=\frac{t^3+3t^2}{12}</m> in the standard window,
-          and use this graph to find <m>h(2)</m>
+          Obtain a graph for <m>h(t)=\frac{t^3+3t^2}{12}</m> in the standard window, 
+          and use this graph to find <m>h(2)</m>.
+        </p>
+        <p>
+          Following the steps outlined above, 
+          we first need to enter the function's formula into the calculator. 
+          Recall that the calculator only understands X as the input value, 
+          so we need to rewrite that formula replacing the <m>t</m> with an X:
+        </p>
+        <figure>
+          <image width="92.5%" source="FunctionsandGraphsImages/Figure29.png">
+            <description>
+              A screenshot of the "Y=" editor screen on a TI-84 Plus graphing calculator. A complex rational function is entered into the Y1 slot. The expression shown is "(X^3+3X^2)/12". The remaining slots, Y2 through Y6, are empty, and the equal sign for Y1 is highlighted, indicating it is selected for graphing.
+            </description>
+          </image>
+        </figure>
+        <p>
+          Now, either directly adjusting the window setting to the standard window and hitting 
+          <q>GRAPH</q>, or just using 
+          <q>ZOOM</q> 
+          <ndash />&gt; 
+          <q>6: ZStandard</q>, we get:
+        </p>
+        <figure>
+          <image width="92.5%" source="FunctionsandGraphsImages/Figure30.png">
+            <description>
+              A screenshot of a TI-84 Plus graphing calculator screen showing the graph of the rational function (X^3+3X^2)/12. The curve passes through the origin (0,0) and has a local maximum in the second quadrant. It crosses the x-axis at x=-3 and x=0. To the right of the origin, the graph rises steeply into the first quadrant, while to the left of x=-3, it falls steeply into the third quadrant.
+            </description>
+          </image>
+        </figure>
+        <p>
+          Then using 
+          <q>2nd</q> 
+          <q>TRACE</q> 
+          (that is, 
+          <q>CALC</q>
+          ) <ndash />&gt; 
+          <q>1: value</q> 
+          and entering 
+          <q>X=2</q> 
+          we get:
+        </p>
+        <figure>
+          <image width="92.5%" source="FunctionsandGraphsImages/Figure31.png">
+            <description>
+              A screenshot of a TI-84 Plus graphing calculator screen showing the result of the "value" calculation for the function Y1=(X^3+3X^2)/12. A cursor is positioned on the curve in the first quadrant at X=2. In the bottom-left, "X=2" is displayed, and in the bottom-right, the calculated result "Y=1.6666667" is shown, which represents the fraction 5/3.
+            </description>
+          </image>
+        </figure>
+        <p>
+          So, we conclude that <m>h(2)=1.6666667</m> which we would either recognize as 
+          <m>h(2)=\frac{5}{3}</m> or round to something reasonable such as <m>h(2) = 1.67</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      Following the steps outlined above,
-      we first need to enter the function's formula into the calculator.
-      Recall that the calculator only understands X as the input value,
-      so we need to rewrite that formula replacing the <m>t</m> with an X:
-    </p>
-    <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure29.png" />
-    </figure>
-    <p>
-      Now, either directly adjusting the window setting to the standard window and hitting
-      <q>GRAPH</q>, or just using
-      <q>ZOOM</q>
-      <ndash />&gt;
-      <q>6: ZStandard</q>, we get:
-    </p>
-    <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure30.png" />
-    </figure>
-    <p>
-      Then using
-      <q>2nd</q>
-      <q>TRACE</q>
-      (that is,
-      <q>CALC</q>
-      ) <ndash />&gt;
-      <q>1: value</q>
-      and entering
-      <q>X=2</q>
-      we get:
-    </p>
-    <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure31.png" />
-    </figure>
-    <p>
-      So, we conclude that <m>h(2)=1.6666667</m> which we would either recognize as
-      <m>h(2)=\frac{5}{3}</m> or round t0 something reasonable such as <m>h(2) = 1.67</m>. }
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Exercises</title>
@@ -1172,10 +1295,18 @@
             \end{array}
           </me>
           <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer15a.png" />
+            <image width="92.5%" source="FunctionsandGraphsImages/Answer15a.png">
+              <description>
+                A coordinate plane showing a set of plotted points forming a U-shape, similar to a parabola but shifted downward. The points are symmetrical across the vertical y-axis. Plotted points include (0,-1) on the y-axis, (1,0) and (-1,0) on the x-axis, (2,3) and (-2,3), and (3,8) and (-3,8). Each point is represented by a small square.
+              </description>
+            </image>
           </figure>
           <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer15b.png" />
+            <image width="92.5%" source="FunctionsandGraphsImages/Answer15b.png">
+              <description>
+                A coordinate plane showing a solid parabolic curve drawn through a set of plotted points. The parabola is symmetrical across the vertical y-axis with its vertex at (0, -1). The curve opens upward, passing through the x-intercepts at (1, 0) and (-1, 0), and continues through points (2, 3) and (-2, 3) as it extends into the first and second quadrants.
+              </description>
+            </image>
           </figure>
         </solution>
       </exercise>
@@ -1225,7 +1356,11 @@
                 <p>
                   First quadrant
                   <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17a.png" />
+                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17a.png">
+                      <description>
+                        A coordinate plane with a single point plotted in Quadrant I. The point is located two tick marks to the right of the vertical axis and one tick mark above the horizontal axis, representing the coordinates (2, 1).
+                      </description>
+                    </image>
                   </figure>
                 </p>
               </li>
@@ -1233,7 +1368,11 @@
                 <p>
                   Second quadrant
                   <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17b.png" />
+                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17b.png">
+                      <description>
+                        A coordinate plane with a single point plotted in Quadrant II. The point is located one tick mark to the left of the vertical axis and two tick marks above the horizontal axis, representing the coordinates (-1, 2).
+                      </description>
+                    </image>
                   </figure>
                 </p>
               </li>
@@ -1241,7 +1380,11 @@
                 <p>
                   Fourth quadrant
                   <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17c.png" />
+                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17c.png">
+                      <description>
+                        A coordinate plane with a single point plotted in Quadrant IV. The point is located four tick marks to the right of the vertical axis and one tick mark below the horizontal axis, representing the coordinates (4, -1).
+                      </description>
+                    </image>
                   </figure>
                 </p>
               </li>
@@ -1249,7 +1392,11 @@
                 <p>
                   none, between first and second quadrants
                   <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17d.png" />
+                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17d.png">
+                      <description>
+                        A coordinate plane with a single point plotted on the positive vertical axis (y-axis). The point is located two tick marks above the horizontal axis (x-axis), representing the coordinates (0, 2).
+                      </description>
+                    </image>
                   </figure>
                 </p>
               </li>
@@ -1319,21 +1466,33 @@
               <li>
                 <p>
                   <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer19a.png" />
+                    <image width="92.5%" source="FunctionsandGraphsImages/Answer19a.png">
+                      <description>
+                        A coordinate plane showing a single curve in the first quadrant. The curve starts at a point on the positive vertical axis and curves downward and to the right, eventually meeting the positive horizontal axis. The shape represents the upper-right portion of a circle or a concave-down decreasing function.
+                      </description>
+                    </image>
                   </figure>
                 </p>
               </li>
               <li>
                 <p>
                   <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer19b.png" />
+                    <image width="92.5%" source="FunctionsandGraphsImages/Answer19b.png">
+                      <description>
+                        A coordinate plane showing a single curve in the first quadrant. The curve starts at a point on the positive vertical axis (y-intercept) and increases as it moves to the right. The curve is concave up, meaning its slope becomes steeper as the x-values increase. The horizontal axis includes several tick marks indicating scale.
+                      </description>
+                    </image>
                   </figure>
                 </p>
               </li>
               <li>
                 <p>
                   <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer19c.png" />
+                    <image width="92.5%" source="FunctionsandGraphsImages/Answer19c.png">
+                      <description>
+                        A coordinate plane showing a single curve in the first quadrant, resembling an S-shape or logistic growth curve. The curve begins near the origin, increases slowly at first, then more rapidly, and finally levels off as it approaches a horizontal asymptote at the top of the graph.
+                      </description>
+                    </image>
                   </figure>
                 </p>
               </li>
@@ -1462,9 +1621,30 @@
           </p>
           <tabular>
             <row>
-              <cell>a. <image width="60%" source="FunctionsandGraphsImages/Question23a.png" /></cell>
-              <cell>b. <image width="60%" source="FunctionsandGraphsImages/Question23b.png" /></cell>
-              <cell>c. <image width="60%" source="FunctionsandGraphsImages/Question23c.png" /></cell>
+              <cell>
+                a. 
+                <image width="60%" source="FunctionsandGraphsImages/Question23a.png">
+                  <description>
+                    A coordinate plane showing a periodic wave function, likely a sine or cosine curve. The wave oscillates symmetrically above and below the horizontal x-axis, passing through the origin (0,0).
+                  </description>
+                </image>
+              </cell>
+              <cell>
+                b. 
+                <image width="60%" source="FunctionsandGraphsImages/Question23b.png">
+                  <description>
+                    A coordinate plane showing two curves that are reflections of each other across the x-axis. Both curves meet at the origin. One curve opens to the right and left in the upper half-plane (resembling a sideways parabola), while the other does the same in the lower half-plane. This relation fails the vertical line test.
+                  </description>
+                </image>
+              </cell>
+              <cell>
+                c. 
+                <image width="60%" source="FunctionsandGraphsImages/Question23c.png">
+                  <description>
+                    A coordinate plane showing a cubic-style function. The curve enters from the top-left (Quadrant II), crosses the x-axis to form a local minimum in Quadrant III, passes through the origin, reaches a local maximum in Quadrant I, and then falls steeply through the x-axis into Quadrant IV.
+                  </description>
+                </image>
+              </cell>
             </row>
           </tabular>
         </statement>
@@ -1482,9 +1662,30 @@
           </p>
           <tabular>
             <row>
-              <cell>a. <image width="60%" source="FunctionsandGraphsImages/Question24a.png" /></cell>
-              <cell>b. <image width="60%" source="FunctionsandGraphsImages/Question24b.png" /></cell>
-              <cell>c. <image width="60%" source="FunctionsandGraphsImages/Question24c.png" /></cell>
+              <cell>
+                a. 
+                <image width="60%" source="FunctionsandGraphsImages/Question24a.png">
+                  <description>
+                    A coordinate plane showing a bell-shaped curve, similar to a normal distribution. The curve is symmetrical across the vertical y-axis, reaching its peak on the y-axis and tapering off toward the horizontal x-axis on both the left and right sides.
+                  </description>
+                </image>
+              </cell>
+              <cell>
+                b. 
+                <image width="60%" source="FunctionsandGraphsImages/Question24b.png">
+                  <description>
+                    A coordinate plane displaying two different linear segments that meet. One line passes through the origin with a shallow positive slope. In the first quadrant, a second line with a much steeper positive slope branches off from the first line, creating a "V" or "kinked" shape.
+                  </description>
+                </image>
+              </cell>
+              <cell>
+                c. 
+                <image width="60%" source="FunctionsandGraphsImages/Question24c.png">
+                  <description>
+                    A coordinate plane showing two overlapping curves. One is a semicircle centered at the origin, sitting entirely above the x-axis. The second is an upward-opening parabola with its vertex at the origin. The parabola resides inside the semicircle near the origin but eventually intersects and extends beyond it.
+                  </description>
+                </image>
+              </cell>
             </row>
           </tabular>
         </statement>
@@ -1631,7 +1832,11 @@
             Here is one possibility:
           </p>
           <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer35.png" />
+            <image width="92.5%" source="FunctionsandGraphsImages/Answer35.png">
+              <description>
+                A coordinate plane showing a single curve in the first quadrant that represents a sigmoid or logistic function. The curve starts near the origin, rises with an increasing slope that eventually reaches an inflection point, and then becomes concave down as it approaches a horizontal asymptote at the top of the frame.
+              </description>
+            </image>
           </figure>
         </solution>
       </exercise>
@@ -1658,7 +1863,11 @@
             Here is one possible graph:
           </p>
           <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer37.png" />
+            <image width="92.5%" source="FunctionsandGraphsImages/Answer37.png">
+              <description>
+                A coordinate plane showing a curve in the first quadrant that represents an exponential or logarithmic growth function. The curve starts at a point on the vertical y-axis and rises steeply at first. As the x-values increase, the rate of growth slows down, and the curve becomes concave down, approaching a horizontal asymptote at the top of the graph. The horizontal axis is marked with several tick marks.
+              </description>
+            </image>
           </figure>
         </solution>
       </exercise>
@@ -1681,7 +1890,11 @@
             The graph
           </p>
           <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer39.png" />
+            <image width="92.5%" source="FunctionsandGraphsImages/Answer39.png">
+              <description>
+                A coordinate plane showing a cubic-style curve passing through the origin. The curve is symmetrical about the origin (odd symmetry). It enters from the third quadrant, curves upward with a decreasing slope as it approaches the origin, passes through (0,0), and then continues into the first quadrant with an increasing slope. The graph resembles the function y = x cubed.
+              </description>
+            </image>
           </figure>
         </solution>
       </exercise>
@@ -1705,7 +1918,11 @@
             The graph
           </p>
           <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer41.png" />
+            <image width="92.5%" source="FunctionsandGraphsImages/Answer41.png">
+              <description>
+                A coordinate plane showing a single straight line with a negative slope. The line passes through the positive vertical axis (y-axis) at approximately 3 units above the origin and crosses the positive horizontal axis (x-axis) at approximately 4 units to the right of the origin. The line extends from the top-left to the bottom-right of the graph.
+              </description>
+            </image>
           </figure>
           <p>
             <m>h(8.2)=-7.3</m>, <m>h(0)=5</m>, and <m>h(-9.6)=19.4</m>
