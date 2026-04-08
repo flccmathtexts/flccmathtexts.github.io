@@ -52,99 +52,92 @@
       This method can be applied to other equations,
       as the following example will illustrate:
     </p>
-    <example xml:id="SolveSecondDegreeExample1">
+    <algorithm xml:id="SolveSecondDegreeExample1">
       <statement>
         <p>
           Solve <m>4x^2-25=11</m>
         </p>
+        <p>
+          To apply the square root property we need to solve for <m>x^2</m> as if it were simply a variable. Thus, we start by adding <m>25</m> to both sides of the equation to obtain:
+          <me>
+            4x^2=36
+          </me>
+          and then we divide both sides by <m>4</m> so that:
+          <me>
+            x^2=9
+          </me>.
+        </p>
+        <p>
+          Applying the square root property now gives:
+          <me>
+            x=\pm \sqrt{9}
+          </me>
+          <me>
+            x=\pm 3
+          </me>
+        </p>
       </statement>
-    </example>
-    <p>
-      To apply the square root property we need to solve for <m>x^2</m> as if it were simply a variable.
-      Thus, we start by adding <m>25</m> to both sides of the equation to obtain:
-      <me>
-        4x^2=36
-      </me>
-      and then we divide both sides by <m>4</m> so that:
-      <me>
-        x^2=9
-      </me>.
-    </p>
-    <p>
-      Applying the square root property now gives:
-      <me>
-        x=\pm \sqrt{9}
-      </me>
-      <me>
-        x=\pm 3
-      </me>
-    </p>
-    <example xml:id="SolveSecondDegreeExample2">
+    </algorithm>
+    <algorithm xml:id="SolveSecondDegreeExample2">
       <statement>
         <p>
           Solve <m>2x^2+7=39</m>
         </p>
+        <p>
+          We start by subtracting <m>7</m> from both sides:
+          <me>
+            2x^2=32
+          </me>
+        </p>
+        <p>
+          To get <m>x^2</m> by itself, we divide by <m>2</m>:
+          <me>
+            x^2=16
+          </me>
+        </p>
+        <p>
+          Applying the square root property now gives:
+          <me>
+            x=\pm \sqrt{16}
+          </me>
+          <me>
+            x=\pm 4
+          </me>
+        </p>
       </statement>
-    </example>
-    <p>
-      We start by subtracting <m>7</m> from both sides:
-      <me>
-        2x^2=32
-      </me>
-    </p>
-    <p>
-      To get <m>x^2</m> by itself, we divide by <m>2</m>:
-      <me>
-        x^2=16
-      </me>
-    </p>
-    <p>
-      Applying the square root property now gives:
-      <me>
-        x=\pm \sqrt{16}
-      </me>
-      <me>
-        x=\pm 4
-      </me>
-    </p>
-    <example xml:id="SolveSecondDegreeExample3">
+    </algorithm>
+    <algorithm xml:id="SolveSecondDegreeExample3">
       <statement>
         <p>
           Solve <m>3z^2-9=z^2+6</m>
         </p>
+        <p>
+          To do this we first use ordinary algebra to solve for <m>z^2</m>, so subtract <m>z^2</m> from both sides:
+          <me>
+            2z^2-9=6
+          </me>
+          and then add <m>9</m> to both sides:
+          <me>
+            2z^2=15
+          </me>
+        </p>
+        <p>
+          Now to get <m>z^2</m> by itself we divide by 2:
+          <me>
+            z^2=\frac{15}{2}
+          </me>
+        </p>
+        <p>
+          Now we are ready to use the square root property. Doing so we end up with two solutions:
+          <me>
+            z=\pm \sqrt{\frac{15}{2}}
+          </me>
+        </p>
+        <p>
+          Since neither <m>15</m> nor <m>2</m> is a perfect square we are stuck on simplifying this any further. This is a perfectly fine way to express the answer. If, however, you would like to have a decimal approximation, it can be obtained using your calculator as <m>z \approx \pm 2.7386</m>. The problem with converting to a decimal is that it does typically require rounding so it is often preferable to leave your answer in radical notation as that is the exact answer and can be rounded to any level of precision later on.
+        </p>
       </statement>
-    </example>
-    <p>
-      To do this we first use ordinary algebra to solve for <m>z^2</m>,
-      so subtract <m>z^2</m> from both sides:
-      <me>
-        2z^2-9=6
-      </me>
-      and then add <m>9</m> to both sides:
-      <me>
-        2z^2=15
-      </me>
-    </p>
-    <p>
-      Now to get <m>z^2</m> by itself we divide by 2:
-      <me>
-        z^2=\frac{15}{2}
-      </me>
-    </p>
-    <p>
-      Now we are ready to use the square root property.
-      Doing so we end up with two solutions
-      <me>
-        z=\pm \sqrt{\frac{15}{2}}
-      </me>
-    </p>
-    <p>
-      Since neither <m>15</m> nor <m>2</m> is a perfect square we are stuck on simplifying this any further.
-      This is a perfectly fine way to express the answer.
-      If, however,
-      you would like to have a decimal approximation. it can be obtained using your calculator as
-      <m>z=\pm 2.7386</m>.... The problem with converting to a decimal is that it does typically require rounding so it is often preferable to leave your answer in radical notation as that is the exact answer and can be rounded to any level of precision later on. }
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Factor to Solve a Second-Degree Equation</title>
@@ -197,24 +190,22 @@
       we can find the solutions simply by setting each of the factors equal to zero and solving.
       Here is another example:
     </p>
-    <example xml:id="SolveSecondDegreeExample4">
+    <algorithm xml:id="SolveSecondDegreeExample4">
       <statement>
         <p>
           Solve: <m>5(2x-3)(x+7)=0</m>
         </p>
+        <p>
+          To solve <m>5(2x-3)(x+7)=0</m> we set each factor equal to zero and determine if that leads to a consistent equation. Since the product is zero, we can apply the zero product principle to conclude that either <m>5=0</m> or <m>2x-3=0</m> or <m>x+7=0</m>.
+        </p>
+        <p>
+          Since the first factor is a number and it is not equal to zero, we get a contradiction as <m>5 \ne 0</m>. Thus, the first factor does not lead to a solution to the equation in question.
+        </p>
+        <p>
+          The second factor, <m>2x-3</m> is zero when <m>x=\frac{3}{2}</m>. The third factor <m>x+7</m> is zero when <m>x=-7</m>. Thus, there are two solutions to the equation: <m>x=\frac{3}{2}</m> and <m>x=-7</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      To solve <m>5(2x-3)(x+7)=0</m> we set each factor equal to zero and determine if that leads to a consistent equation.
-      Since the product is zero,
-      we can apply the zero product principle to conclude that either <m>5=0</m> or <m>2x-3=0</m> or <m>x+7=0</m>.
-      Since the first factor is a number and it is not equal to zero,
-      we get a contradiction as <m>5 \ne 0</m>.
-      Thus, the first factor does not lead to a solution to the equation in question.
-      The second factor, <m>2x-3</m> is zero when <m>x=\frac{3}{2}</m>.
-      The third factor <m>x+7</m> is zero when <m>x=-7</m>.
-      Thus, there are two solutions to the equation <m>x=\frac{3}{2}</m> and <m>x=-7</m>.
-    </p>
+    </algorithm>
     <p>
       As we saw in <xref ref="SecondDegreeFactor">section</xref>
       this second-degree equation is written as the product of expressions,
@@ -266,25 +257,34 @@
         </p>
       </statement>
     </definition>
-    <example xml:id="SolveSecondDegreeExample5">
+    <algorithm xml:id="SolveSecondDegreeExample5">
       <statement>
         <p>
           Factor <m>x^2-5x+6</m>
         </p>
+        <p>
+          We need to consider all possible pairs of integers whose product is <m>6</m> and then look at their sum to see if it is possible to obtain a sum of the factors equal to <m>-5</m>.
+        </p>
+        <p>
+          We consider all possible pairs:
+          <ul>
+            <li>
+              <p><m>1</m> and <m>6</m> (sum <m>7</m>)</p>
+            </li>
+            <li>
+              <p><m>-1</m> and <m>-6</m> (sum <m>-7</m>)</p>
+            </li>
+            <li>
+              <p><m>2</m> and <m>3</m> (sum <m>5</m>)</p>
+            </li>
+            <li>
+              <p><m>-2</m> and <m>-3</m> (sum <m>-5</m>)</p>
+            </li>
+          </ul>
+          The last pair of factors are the factors that we want and <m>x^2-5x+6=(x-2)(x-3)</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      We need to consider all possible pairs of integers whose product is <m>6</m> and then look at their sum to see if it is possible to obtain a sum of the factors equal to <m>-5</m>.
-      We consider all possible pairs <m>1</m> and <m>6</m>
-      (sum <m>7</m>),
-      <m>-1</m> and <m>-6</m>
-      (sum <m>-7</m>),
-      <m>2</m> and <m>3</m>
-      (sum <m>5</m>),
-      and <m>-2</m> and <m>-3</m>
-      (sum <m>-5</m>).
-      The last pair of factors are the factors that we want and <m>x^2-5x+6=(x-2)(x-3)</m>
-    </p>
+    </algorithm>
     <p>
       In this case, there were not many possibilities to consider,
       and one of those possibilities worked.
@@ -294,70 +294,57 @@
       In the special case where the expression can be readily factored,
       solving by factoring is a reasonable method to use.
     </p>
-    <example xml:id="SolveSecondDegreeExample6">
+    <algorithm xml:id="SolveSecondDegreeExample6">
       <statement>
         <p>
-          Solve <m>x^2-5x+6=0</m> using factoring
+          Solve <m>x^2-5x+6=0</m> using factoring.
+        </p>
+        <p>
+          Using <xref ref="SolveSecondDegreeExample5" />, we can factor the left side of the equation as <m>(x-2)(x-3)=0</m>.
+        </p>
+        <p>
+          Applying the zero product principle, we see that the solutions to the equation come from <m>x-2=0</m> or <m>x-3=0</m>. Thus, the solutions we are looking for are <m>x=2</m> and <m>x=3</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      Using <xref ref="SolveSecondDegreeExample5">example</xref>,
-      we can factor the left side of the equation as <m>(x-2)(x-3)=0</m>.
-      Applying the zero product principle we see that the solutions to the equation come from <m>x-2=0</m> or <m>x-3=0</m>.
-      Thus, the solutions we are looking for are <m>x=2</m> and <m>x=3</m>.
-    </p>
-    <example xml:id="SolveSecondDegreeExample7">
+    </algorithm>
+    <algorithm xml:id="SolveSecondDegreeExample7">
       <statement>
         <p>
           Solve <m>x^2+8x+7=0</m> using factoring
         </p>
+        <p>
+          There are not too many possibilities to consider here, since <m>7</m> is prime, and so the only pairs to consider are <m>7</m> and <m>1</m> or <m>-7</m> and <m>-1</m>.
+        </p>
+        <p>
+          Since <m>7 + 1 = 8</m> we can factor this expression as <m>(x+1)(x+7)</m>, so we need to consider:
+          <me>
+            (x+1)(x+7)=0
+          </me>
+        </p>
+        <p>
+          Setting each factor equal to zero, we solve <m>(x+1)(x+7)=0</m>. So either <m>x+1=0</m> in which case <m>x=-1</m> or <m>x+7=0</m> in which case <m>x=-7</m>. So the solutions are <m>x=-1</m> and <m>x=-7</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      There are not too many possibilities to consider here,
-      since <m>7</m> is prime,
-      and so the only pairs to consider are <m>7</m> and <m>1</m> or <m>-7</m> and <m>-1</m>.
-      Since <m>7 + 1 = 8</m> we can factor this expression in
-      <m>(x+1)(x+7)</m> so we need to consider:
-      <me>
-        (x+1)(x+7)=0
-      </me>
-    </p>
-    <p>
-      Setting each factor equal to zero,
-      we solve <m>(x+1)(x+7)=0</m>.
-      So either <m>x+1=0</m> in which case <m>x=-1</m> or <m>x+7=0</m> in which case <m>x=-7</m>.
-      So the solutions are <m>x=-1</m> and <m>x=-7</m>. }
-    </p>
-    <example xml:id="SolveSecondDegreeExample8">
+    </algorithm>
+    <algorithm xml:id="SolveSecondDegreeExample8">
       <statement>
         <p>
           Solve <m>x^2-9x+20=0</m> using factoring
         </p>
+        <p>
+          We consider the possibilities that factors of <m>20</m> which are <m>4</m> and <m>5</m> (sum <m>9</m>), <m>-4</m> and <m>-5</m> (sum <m>-9</m>), <m>10</m> and <m>2</m> (sum <m>12</m>), <m>-10</m> and <m>-2</m> (sum <m>-12</m>), <m>20</m> and <m>1</m> (sum <m>21</m>), or <m>-20</m> and <m>-1</m> (sum <m>-21</m>).
+        </p>
+        <p>
+          We need the pairs whose sum equals <m>-9</m> so we use <m>-4</m> and <m>-5</m>, we can factor this into:
+          <me>
+            (x-4)(x-5)=0
+          </me>
+        </p>
+        <p>
+          Setting each factor equal to zero, we solve <m>(x-4)(x-5)=0</m> by saying either <m>x-4=0</m> in which case <m>x=4</m> or <m>x-5=0</m> in which case <m>x=5</m>. So the solutions are <m>x=4</m> and <m>x=5</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      We consider the possibilities that factors of <m>20</m> which are <m>4</m> and <m>5</m> (sum <m>9</m>),
-      <m>-4</m> and <m>-5</m> (sum <m>-9</m>), <m>10</m> and <m>2</m>
-      (sum <m>12</m>),
-      <m>-10</m> and <m>-2</m>
-      (sum <m>-12</m>),
-      <m>20</m> and <m>1</m>
-      (sum <m>21</m>),
-      or <m>-20</m> and <m>-1</m>
-      (sum <m>-21</m>).
-      We need the pairs whose sum equals <m>-9</m> so we use <m>-4</m> and <m>-5</m>,
-      we can factor this into
-      <me>
-        (x-4)(x-5)=0
-      </me>
-    </p>
-    <p>
-      Setting each factor equal to zero,
-      we solve <m>(x-4)(x-5)=0</m> by saying either <m>x-4=0</m> in which case <m>x=4</m> or <m>x-5=0</m> in which case <m>x=5</m>.
-      So the solutions are <m>x=4</m> and <m>x=5</m>. }
-    </p>
+    </algorithm>
   </subsection>
   <subsection>
     <title>Exercises</title>
