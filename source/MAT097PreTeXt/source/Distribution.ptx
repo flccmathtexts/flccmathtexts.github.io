@@ -20,45 +20,41 @@
       The distributive law is often put to use in simplifying algebraic expressions,
       as the next few examples will illustrate.
     </p>
-    <example xml:id="DistributionExample1">
+    <algorithm xml:id="DistributionAlgorithm1">
       <statement>
         <p>
           Distribute and then simplify the expression <m>5(2x+3y)</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      Following the distributive law,
-      we can multiply 5 by each term inside the parentheses:
-      <me>
-        5(2x+3y)=5(2x)+5(3y)=10x+15y
-      </me>
-    </p>
-    <p>
-      The instructions for <xref ref="DistributionExample1">example</xref>
-      explicitly told us to distribute.
-      Usually, though,
-      it is understood that distributing whenever possible is a part of simplifying,
-      and so you should assume that distributing is expected when you are asked to simplify an expression as in the next example.
-    </p>
-    <example xml:id="DistributionExample2">
+      <p>
+        Following the distributive law, we can multiply 5 by each term inside the parentheses:
+        <me>
+          5(2x+3y)=5(2x)+5(3y)=10x+15y
+        </me>
+      </p>
+      <p>
+        The instructions for <xref ref="DistributionAlgorithm1">this algorithm</xref> 
+        explicitly told us to distribute. Usually, though, it is understood that 
+        distributing whenever possible is a part of simplifying, and so you should 
+        assume that distributing is expected when you are asked to simplify an expression as in the next example.
+      </p>
+    </algorithm>
+    <algorithm xml:id="DistributionAlgorithm2">
       <statement>
         <p>
           Simplify <m>5x(2x^2+3x+1)+3x(2x-5)</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      We'll distribute first, and then simplify each of the resulting terms.
-      Finally, we will combine like terms.
-      <md>
-        <mrow>5x(2x^2+3x+1)+3x(2x-5) \amp  = 5x(2x^2)+5x(3x)+5x(1))+3x(2x)+3x(-5)</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp  = 10x^3+15x^2+5x+6x^2+-15x</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp  = 10x^3 + 21x^2 -10x</mrow>
-      </md>
-    </p>
+      <p>
+        We'll distribute first, and then simplify each of the resulting terms. 
+        Finally, we will combine like terms.
+        <md>
+          <mrow>5x(2x^2+3x+1)+3x(2x-5) \amp = 5x(2x^2)+5x(3x)+5x(1)+3x(2x)+3x(-5)</mrow>
+          <mrow>\amp = 10x^3+15x^2+5x+6x^2-15x</mrow>
+          <mrow>\amp = 10x^3 + 21x^2 -10x</mrow>
+        </md>
+      </p>
+    </algorithm>
     <p>
       Usually we don't actually write out the step shown on the second line in the example above.
       We usually just combine the steps of distributing into each term and simplifying,
@@ -70,134 +66,118 @@
       The following example will illustrate a very important point about distributing when a subtraction is involved.
       Pay particular attention to this next example!
     </p>
-    <example xml:id="DistributionExample3">
+    <algorithm xml:id="DistributionAlgorithm3">
       <statement>
         <p>
-          Simplify <m>4x(x-3)-3x(x+2)</m>
+          Simplify <m>4x(x-3)-3x(x+2)</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      It is clear that we need to distribute <m>4x</m> into the first set of parentheses.
-      In the second set, though, it is easy to make a mistake.
-      It appears that we need to just distribute the <m>3x</m>,
-      which would give us the following (incorrect) result:
-      <me>
-        \text{\underline{Incorrect:}    }  4x^2-12x-3x^2+6x
-      </me>
-    </p>
-    <p>
-      The error here is that the
-      <q><m>-</m></q>
-      is only being applied to the first part of what's inside those parentheses.
-      The
-      <q><m>x</m></q>
-      got the negative, but the
-      <q><m>+2</m></q>
-      did not.
-    </p>
-    <p>
-      To treat this correctly,
-      in theory what we should do is to rewrite
-      <m>4x(x-3)-3x(x+2)</m> as <m>4x(x-3)+(-3x)(x+2)</m>,
-      using the fact that subtracting is the same as adding a negative.
-      Then we would distribute the <m>-3x</m> in and everything would get the negative.
-      In practice,
-      most people just remember that when you distribute,
-      the minus gets distributed as well.
-    </p>
-    <p>
-      In this case, that means that we'd bring along the
-      <q><m>-</m></q>
-      and distribute a <m>-3x</m> into the <m>(x+2)</m>.
-      Whichever way you choose to look at it, the result is the same:
-      <me>
-        \text{\underline{Correct:}    }  4x(x-3)-3x(x+2)=4x^2-12x-3x^2-6x=x^2-18x
-      </me>
-    </p>
+      <p>
+        It is clear that we need to distribute <m>4x</m> into the first set of parentheses.
+        In the second set, though, it is easy to make a mistake.
+        It appears that we need to just distribute the <m>3x</m>,
+        which would give us the following (incorrect) result:
+        <me>
+          \text{Incorrect: } 4x^2-12x-3x^2+6x
+        </me>
+      </p>
+      <p>
+        The error here is that the <q><m>-</m></q> is only being applied to the first part 
+        of what's inside those parentheses. The <m>x</m> got the negative, but the 
+        <m>+2</m> did not.
+      </p>
+      <p>
+        To treat this correctly, in theory what we should do is to rewrite
+        <m>4x(x-3)-3x(x+2)</m> as <m>4x(x-3)+(-3x)(x+2)</m>,
+        using the fact that subtracting is the same as adding a negative.
+        Then we would distribute the <m>-3x</m> in and everything would get the negative.
+        In practice, most people just remember that when you distribute,
+        the minus gets distributed as well.
+      </p>
+      <p>
+        In this case, that means that we'd bring along the <q><m>-</m></q>
+        and distribute a <m>-3x</m> into the <m>(x+2)</m>.
+        Whichever way you choose to look at it, the result is the same:
+        <me>
+          \text{Correct: } 4x(x-3)-3x(x+2)=4x^2-12x-3x^2-6x=x^2-18x
+        </me>
+      </p>
+    </algorithm>
     <p>
       Let's try one additional example before moving on:
     </p>
-    <example xml:id="DistributionExample4">
+    <algorithm xml:id="DistributionAlgorithm4">
       <statement>
         <p>
           Simplify <m>5x(3x-1)-2(x^2-4x-3)-3(4x+2)</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      There are a lot of
-      <q><m>-</m></q>
-      's to deal with here.
-      Take your time and be careful!
-      <md>
-        <mrow>5x(3x-1)\amp -2(x^2-4x-3)-3(4x+2)</mrow>
-        <mrow>\amp  = 5x(3x-1)+(-2)(x^2-4x-3)+(-3)(4x+2)</mrow>
-        <mrow>\amp  = 15x^2-5x-2x^2+8x+6-12x-6</mrow>
-        <mrow>\amp  = 13x^2-9x</mrow>
-      </md>
-    </p>
-    <p>
-      The notion of distribution extends from simple terms as demonstrated in the following examples:
-    </p>
-    <example xml:id="DistributionExample5">
+      <p>
+        There are a lot of <q><m>-</m></q>’s to deal with here.
+        Take your time and be careful!
+        <md>
+          <mrow>5x(3x-1)\amp -2(x^2-4x-3)-3(4x+2)</mrow>
+          <mrow>\amp  = 5x(3x-1)+(-2)(x^2-4x-3)+(-3)(4x+2)</mrow>
+          <mrow>\amp  = 15x^2-5x-2x^2+8x+6-12x-6</mrow>
+          <mrow>\amp  = 13x^2-9x</mrow>
+        </md>
+      </p>
+      <p>
+        The notion of distribution extends from simple terms as demonstrated 
+        in the following examples:
+      </p>
+    </algorithm>
+    <algorithm xml:id="DistributionAlgorithm5">
       <statement>
         <p>
-          Simplify <m>(x+2)(x+3)</m>
+          Simplify <m>(x+2)(x+3)</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      We begin by distributing the second expression across the addition in the first:
-      <md>
-        <mrow>(x+2)(x+3)\amp  = x(x+3)+2(x+3)</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp  = x^2+3x+2x+6</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp  = x^2+5x+6</mrow>
-      </md>
-    </p>
-    <example xml:id="DistributionExample6">
+      <p>
+        We begin by distributing the second expression across the addition in the first:
+        <md>
+          <mrow>(x+2)(x+3) \amp = x(x+3)+2(x+3)</mrow>
+          <mrow>\amp = x^2+3x+2x+6</mrow>
+          <mrow>\amp = x^2+5x+6</mrow>
+        </md>
+      </p>
+    </algorithm>
+    <algorithm xml:id="DistributionAlgorithm6">
       <statement>
         <p>
-          Simplify <m>(2x-4)(3x-1)</m>
+          Simplify <m>(2x-4)(3x-1)</m>.
         </p>
       </statement>
-    </example>
-    <p>
-      We distribute and combine like terms:
-      <md>
-        <mrow>(2x-4)(3x-1) \amp  = 2x(3x-1)-4(3x-1)</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp  = 6x^2-2x-12x+4</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp  = 6x^2-14x+4</mrow>
-      </md>
-    </p>
-    <example xml:id="DistributionExample7">
-      <statement>
+      <p>
+        We distribute and combine like terms:
+        <md>
+          <mrow>(2x-4)(3x-1) \amp = 2x(3x-1)-4(3x-1)</mrow>
+          <mrow>\amp = 6x^2-2x-12x+4</mrow>
+          <mrow>\amp = 6x^2-14x+4</mrow>
+        </md>
+      </p>
+    </algorithm>
+    <algorithm xml:id="DistributionAlgorithm7">
+        <statement>
+            <p>
+                Simplify <m>(x-2)(2x^2+3x+4)</m>.
+            </p>
+        </statement>
         <p>
-          Simplify <m>(x-2)(2x^2+3x+4)</m>
+            We distribute and combine like terms:
+            <md>
+                <mrow>(x-2)(2x^2+3x+4) \amp = x(2x^2+3x+4)-2(2x^2+3x+4)</mrow>
+                <mrow>\amp = 2x^3+3x^2+4x-4x^2-6x-8</mrow>
+                <mrow>\amp = 2x^3-x^2-2x-8</mrow>
+            </md>
         </p>
-      </statement>
-    </example>
-    <p>
-      We distribute and combine like terms:
-      <md>
-        <mrow>(x-2)(2x^2+3x+4) \amp  = x(2x^2+3x+4)-2(2x^2+3x+4)</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp  = 2x^3+3x^2+4x-4x^2-6x-8</mrow>
-        <mrow>\amp</mrow>
-        <mrow>\amp  = 2x^3-x^2-2x-8</mrow>
-      </md>
-    </p>
+    </algorithm>
   </introduction>
   <subsection>
     <title>Exercises</title>
     <p>
       Simplify each of the following algebraic expressions:
     </p>
-    
     <exercises><exercise>
       <statement>
         <p>
