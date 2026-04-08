@@ -99,44 +99,41 @@
         </p>
       </statement>
     </definition>
-    <example xml:id="SolveHigherOrderEquationsExample1">
+    <algorithm xml:id="SolveHigherOrderEquationsExample1">
       <statement>
         <p>
           Find <m>\sqrt[4]{81}</m>
         </p>
+        <p>
+          Using the rational exponent rule, we have that <m>\sqrt[4]{81}=81^{\frac{1}{4}}</m>. Using a calculator one finds that <m>81^{\frac{1}{4}}=81^\wedge (1/4)=3</m> and it is readily verified that <m>3 \cdot 3 \cdot 3 \cdot 3 = 81</m>.
+        </p>
       </statement>
-    </example>
-    <p>
-      Using the ration exponent rule,
-      we have that <m>\sqrt[4]{81}=81^{\frac{1}{4}}</m>.
-      Using a calculator one finds that
-      <m>81^{\frac{1}{4}}=81^\wedge (1/4)=3</m> and it is readily verified that <m>3 \cdot 3 \cdot 3 \cdot 3 =81</m>.
-    </p>
-    <example xml:id="SolveHigherOrderEquationsExample2">
+    </algorithm>
+    <algorithm xml:id="SolveHigherOrderEquationsExample2">
       <statement>
         <p>
           Rewrite the expression <m>\sqrt[3]{2x}</m> using fractional exponents
         </p>
+        <p>
+          Both the <m>2</m> and the <m>x</m> are being ‘cube rooted' so:
+          <me>
+            \sqrt[3]{2x}=(2x)^{\frac{1}{3}}
+          </me>
+        </p>
       </statement>
-    </example>
-    <p>
-      Both the <m>2</m> and the <m>x</m> are being ‘cube rooted' so
-      <me>
-        \sqrt[3]{2x}=(2x)^{\frac{1}{3}}
-      </me>
-    </p>
-    <example xml:id="SolveHigherOrderEquationsExample3">
+    </algorithm>
+    <algorithm xml:id="SolveHigherOrderEquationsExample3">
       <statement>
         <p>
           Rewrite the expression <m>(5c^2d)^{\frac{1}{6}}</m> in radical form.
         </p>
+        <p>
+          Everything inside the parenthesis is being raised to the <m>\frac{1}{6}</m> power, so:
+          <me>
+            (5c^2d)^{\frac{1}{6}}=\sqrt[6]{5c^2d}
+          </me>
+        </p>
       </statement>
-    </example>
-    <p>
-      Everything inside the parenthesis is being raised to the <m>\frac{1}{6}</m> power, so;
-      <me>
-        (5c^2d)^{\frac{1}{6}}=\sqrt[6]{5c^2d}
-      </me>
-    </p>
+    </algorithm>
   </subsection>
 </section>
