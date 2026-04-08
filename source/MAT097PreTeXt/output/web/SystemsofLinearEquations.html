@@ -63,7 +63,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -80,7 +80,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Algebra and Introduction to Functions">
 <meta property="book:author" content="FLCC Mathematics Department">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,16 +102,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.19';
+eBookConfig.runestone_version = '7.13.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.56158f4758afd49f.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.46363294e9238f09.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -921,7 +921,7 @@ IIIII}
 </h3>
 <div class="para logical" id="SystemsofLinearEquations-3-2">
 <div class="para">A linear equation is an equation that either explicitly or implicitly defines a linear function. For example</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-3-2-1">
 \begin{equation*}
 :y=3x+5
 \end{equation*}
@@ -931,13 +931,13 @@ IIIII}
 </div>
 <div class="para logical" id="SystemsofLinearEquations-3-3">
 <div class="para">The equation</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-3-3-1">
 \begin{equation*}
 :2x+3y=12
 \end{equation*}
 </div>
 <div class="para">is also a linear equation, because it implicitly defines a linear function. We can solve this equation to get:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-3-3-2">
 \begin{equation*}
 y=-\frac{2}{3}x+4
 \end{equation*}
@@ -950,7 +950,7 @@ y=-\frac{2}{3}x+4
 </div>
 <div class="para logical" id="SystemsofLinearEquations-3-5">
 <div class="para">A <em class="emphasis">system of linear equations, or linear system</em> ,  is simply any collection of one or more linear equations. For example:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-3-5-3">
 \begin{equation*}
 \begin{cases}2x+3y=12\\5x-4y=30 \end{cases}
 \end{equation*}
@@ -960,13 +960,13 @@ y=-\frac{2}{3}x+4
 </div>
 <div class="para logical" id="SystemsofLinearEquations-3-6">
 <div class="para">A solution to an equation is any pair of values for its variables that satisfy the equation (that is, any pair of values for its variables that make the equation true when substituted in). For example, <span class="process-math">\(x=3\)</span> and <span class="process-math">\(y=2\)</span>is a solution for the equation <span class="process-math">\(2x+3y=12\)</span> because when we substitute these values in we get:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-3-6-4">
 \begin{equation*}
 2(3) + 3(2) = 12 \\ 6 + 6 = 12 \\ 12 = 12
 \end{equation*}
 </div>
 <div class="para">which is true. However, this is not a solution to <span class="process-math">\(5x-4y=30\)</span> because if we plug these values into this equation we get:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-3-6-6">
 \begin{equation*}
 5(3)-4(2)=30\\18-8=30\\7=30
 \end{equation*}
@@ -976,7 +976,7 @@ y=-\frac{2}{3}x+4
 </div>
 <div class="para logical" id="SystemsofLinearEquations-3-7">
 <div class="para">A <em class="emphasis">simultaneous solution</em> to a linear system (sometimes just called a <em class="emphasis">solution</em>  to the system) is any pair of values that satisfies all of the equations in the system. For example, <span class="process-math">\(x=3\)</span> and <span class="process-math">\(y=2\)</span> is not a simultaneous solution to the system:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-3-7-6">
 \begin{equation*}
 \begin{cases}2x+3y=12\\5x-4y=30 \end{cases}
 \end{equation*}
@@ -986,13 +986,13 @@ y=-\frac{2}{3}x+4
 </div>
 <div class="para logical" id="SystemsofLinearEquations-3-8">
 <div class="para">One the other hand, <span class="process-math">\(x=6\)</span> and <span class="process-math">\(y=0\)</span> is a simultaneous solution to this system, because both:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-3-8-3">
 \begin{equation*}
 2(6) + 3(0) = 12\\12 + 0 = 12\\12 = 12
 \end{equation*}
 </div>
 <div class="para">and:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-3-8-4">
 \begin{equation*}
 5(6) - 4(0) = 30\\30 - 0 = 30\\30 = 30
 \end{equation*}
@@ -1007,127 +1007,130 @@ y=-\frac{2}{3}x+4
 </h3>
 <div class="para" id="SystemsofLinearEquations-4-2">The graphical solution methods we used in <a href="LinearFunctionsGraphs.html" class="internal" title="Section 5.4: Linear Functions and Their Graphs">Section 5.4</a> can often be used to solve linear systems. We will present this method by way of an example, and then give a general description of how to use this method. Read through this example carefully; you’ll probably recognize a lot in the method we will use, though setting things up as a linear system will be new.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="SystemsofLinearEquationsExample1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="SystemsofLinearEquationsExample1"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="SystemsofLinearEquationsExample1-1-1">Menauhant Publishing Company has a contract that costs them a straight <span class="process-math">\($80\)</span> per hour for computer support over the phone. They are considering switching to a new contract that would require them to pay an annual fee of <span class="process-math">\($3,000\)</span> regardless of how much service they use, but they would then only be charged <span class="process-math">\($50\)</span> per hour.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h4>
+<div class="para" id="SystemsofLinearEquationsExample1-1-1">Menauhant Publishing Company has a contract that costs them a straight <span class="process-math">\($80\)</span> per hour for computer support over the phone. They are considering switching to a new contract that would require them to pay an annual fee of <span class="process-math">\($3,000\)</span> regardless of how much service they use, but they would then only be charged <span class="process-math">\($50\)</span> per hour.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.5.1"><a href="#SystemsofLinearEquationsExample1" title="Copy heading and permalink for Example 5.5.1" aria-label="Copy heading and permalink for Example 5.5.1">🔗</a></div></article></details><div class="para" id="SystemsofLinearEquations-4-4">If they don’t use much service, obviously their current plan is better. But if they use a lot of service, the new plan would be better. If they were to switch to the new contract, how many hours of service would they have to use to break even on the switch?<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample1-2">If they don’t use much service, obviously their current plan is better. But if they use a lot of service, the new plan would be better. If they were to switch to the new contract, how many hours of service would they have to use to break even on the switch?<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-5">We solved this problem in <a href="LinearFunctionsGraphs.html" class="internal" title="Section 5.4: Linear Functions and Their Graphs">Section 5.4</a> by setting up a single equation and solving it graphically. Here, we’ll approach this as a linear system. Cost is a function of hours of service used with either contract, and if we let <span class="process-math">\(y\)</span> be the output (cost) variable and let <span class="process-math">\(x\)</span> be the input (hours of service) variable, we get the following two equations:<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample1-3">We solved this problem in <a href="LinearFunctionsGraphs.html" class="internal" title="Section 5.4: Linear Functions and Their Graphs">Section 5.4</a> by setting up a single equation and solving it graphically. Here, we’ll approach this as a linear system. Cost is a function of hours of service used with either contract, and if we let <span class="process-math">\(y\)</span> be the output (cost) variable and let <span class="process-math">\(x\)</span> be the input (hours of service) variable, we get the following two equations:<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-6">Current Contract: <span class="process-math">\(y = 80x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample1-4">Current Contract: <span class="process-math">\(y = 80x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-7">New Contract: <span class="process-math">\(y = 50x + 3000\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample1-5">New Contract: <span class="process-math">\(y = 50x + 3000\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-8">To determine the break even between these two options, we need to figure out what number of hours would give the same cost with both of these. So, we need to find out the <span class="process-math">\(x\)</span> (hours) and <span class="process-math">\(y\)</span> (cost) values that would come out the same with both contracts.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample1-6">To determine the break even between these two options, we need to figure out what number of hours would give the same cost with both of these. So, we need to find out the <span class="process-math">\(x\)</span> (hours) and <span class="process-math">\(y\)</span> (cost) values that would come out the same with both contracts.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-4-9">
+<div class="para logical" id="SystemsofLinearEquationsExample1-7">
 <div class="para">In other words, we need to find a simultaneous solution to the linear system:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample1-7-1">
 \begin{equation*}
 \begin{cases}y=80x\\y=50x+3000 \end{cases}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-10">Now each of these equations defines a linear function. The graphs of those functions are straight lines consisting of all the points that satisfy their equations. So, the place where the two graphs intersect would give the values for the variables that satisfy both equations. Therefore, to find the simultaneous solution to this system, we find the intersection of the two graphs:<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample1-8">Now each of these equations defines a linear function. The graphs of those functions are straight lines consisting of all the points that satisfy their equations. So, the place where the two graphs intersect would give the values for the variables that satisfy both equations. Therefore, to find the simultaneous solution to this system, we find the intersection of the two graphs:<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="SystemsofLinearEquations-4-11"><div class="image-box" style="width: 92.5%; margin-left: 3.75%; margin-right: 3.75%;"><img src="external/SystemsofLinearEquationsImages/Figure01.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>graph of <span class="process-math">\(y=80x\)</span> and <span class="process-math">\(y=50x+3000\)</span><div class="autopermalink" data-description="Figure 5.5.2"><a href="#SystemsofLinearEquations-4-11" title="Copy heading and permalink for Figure 5.5.2" aria-label="Copy heading and permalink for Figure 5.5.2">🔗</a></div></figcaption></figure><div class="para" id="SystemsofLinearEquations-4-12">(For discussion of how to find the appropriate window settings, refer back to <a href="SolvingEquationsGraphically.html" class="internal" title="Section 4.3: Solving Equations Graphically">Section 4.3</a>, Solving Equations Graphically)<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="figure figure-like" id="SystemsofLinearEquationsExample1-9"><div class="image-box" style="width: 92.5%; margin-left: 3.75%; margin-right: 3.75%;"><img src="external/SystemsofLinearEquationsImages/Figure01.png" class="contained" alt="A graph on a coordinate plane showing two linear functions in the first quadrant. The first line, representing y = 80x, starts at the origin (0,0) and has a steeper positive slope. The second line, representing y = 50x + 3000, starts higher on the vertical y-axis at a positive y-intercept and has a shallower positive slope. The two lines rise to the right and intersect in the upper right portion of the graph."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>graph of <span class="process-math">\(y=80x\)</span> and <span class="process-math">\(y=50x+3000\)</span><div class="autopermalink" data-description="Figure 5.5.2"><a href="#SystemsofLinearEquationsExample1-9" title="Copy heading and permalink for Figure 5.5.2" aria-label="Copy heading and permalink for Figure 5.5.2">🔗</a></div></figcaption></figure><div class="para" id="SystemsofLinearEquationsExample1-10">(For discussion of how to find the appropriate window settings, refer back to <a href="SolvingEquationsGraphically.html" class="internal" title="Section 4.3: Solving Equations Graphically">Section 4.3</a>, Solving Equations Graphically)<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample1-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-13">The solution to this system is <span class="process-math">\(x=100\)</span> and <span class="process-math">\(y=8000\text{.}\)</span> That is, the break even between these two contracts is <span class="process-math">\(100\)</span> hours of computer support, costing <span class="process-math">\($8000\text{.}\)</span> }<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample1-11">The solution to this system is <span class="process-math">\(x=100\)</span> and <span class="process-math">\(y=8000\text{.}\)</span> That is, the break even between these two contracts is <span class="process-math">\(100\)</span> hours of computer support, costing <span class="process-math">\($8000\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample1-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-14">Solving a linear system graphically is basically the same as solving a linear equation graphically. The main difference is that, when we are solving a linear system, we start with the two different linear functions – one coming from each equation. We don’t need the step of setting up a linear function based on each side of an equation.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 5.5.1"><a href="#SystemsofLinearEquationsExample1" title="Copy heading and permalink for Example 5.5.1" aria-label="Copy heading and permalink for Example 5.5.1">🔗</a></div></article><div class="para" id="SystemsofLinearEquations-4-4">Solving a linear system graphically is basically the same as solving a linear equation graphically. The main difference is that, when we are solving a linear system, we start with the two different linear functions – one coming from each equation. We don’t need the step of setting up a linear function based on each side of an equation.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-4-15">
+<div class="para logical" id="SystemsofLinearEquations-4-5">
 <div class="para">The shortcoming of the approach to solving a linear system is that it requires us to have the equations already in a form that explicitly defines a linear function. The system in <a href="SystemsofLinearEquations.html#SystemsofLinearEquationsExample1" class="xref" data-knowl="./knowl/xref/SystemsofLinearEquationsExample1.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.5.1">Example 5.5.1</a> had both equations already set up in “<span class="process-math">\(y=\)</span>” form. When the equations are set up to explicitly define a function, you are ready to go. However, for a linear system whose equations only implicitly define functions, like:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/SystemsofLinearEquationsExample1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/SystemsofLinearEquationsExample1.html" id="SystemsofLinearEquations-4-5-3">
 \begin{equation*}
 \begin{cases}2x+3y=12\\5x-4y=30 \end{cases}
 \end{equation*}
 </div>
 <div class="para">we would first have to rewrite each equation in explicit function form. The next example will illustrate how this would work.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="SystemsofLinearEquationsExample2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="SystemsofLinearEquationsExample2"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="SystemsofLinearEquationsExample2-1-1">
+</h4>
+<div class="para logical" id="SystemsofLinearEquationsExample2-1-1">
 <div class="para">Solve the following linear system graphically:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample2-1-1-1">
 \begin{equation*}
 \begin{cases}2x+3y=12\\5x-4y=30 \end{cases}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.5.3"><a href="#SystemsofLinearEquationsExample2" title="Copy heading and permalink for Example 5.5.3" aria-label="Copy heading and permalink for Example 5.5.3">🔗</a></div></article></details><div class="para logical" id="SystemsofLinearEquations-4-17">
+<div class="para logical" id="SystemsofLinearEquationsExample2-2">
 <div class="para">We first must rewrite each equation in an explicit function form. So we solve each for <span class="process-math">\(y\text{.}\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample2-2-2">
 \begin{equation*}
 2x+3y=12\\ \\3y=12-2x\\ \\y=\frac{12-2x}{3}\\ \\y=4-\frac{2}{3}x
 \end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample2-2-3">
 \begin{equation*}
 5x-4y=30\\ \\-4y=30-5x\\ \\y=\frac{30-5x}{-4}\\ \\y=-\frac{15}{2}+\frac{5}{4}x
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-18">We now graph these both. Since we don’t have any insights into the meanings of the equations, we’ll simply start with the standard window and adjust if needed to find the intersection. Fortunately, the standard window works:<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample2-3">We now graph these both. Since we don’t have any insights into the meanings of the equations, we’ll simply start with the standard window and adjust if needed to find the intersection. Fortunately, the standard window works:<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="SystemsofLinearEquations-4-19"><div class="image-box" style="width: 92.5%; margin-left: 3.75%; margin-right: 3.75%;"><img src="external/SystemsofLinearEquationsImages/Figure02.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graph to solve system<div class="autopermalink" data-description="Figure 5.5.4"><a href="#SystemsofLinearEquations-4-19" title="Copy heading and permalink for Figure 5.5.4" aria-label="Copy heading and permalink for Figure 5.5.4">🔗</a></div></figcaption></figure><div class="para" id="SystemsofLinearEquations-4-20">And so we see that the intersection occurs at <span class="process-math">\((6,0)\)</span> and so conclude that this system’s simultaneous solution is <span class="process-math">\(x=6\)</span> and <span class="process-math">\(y=0\text{.}\)</span> }<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="figure figure-like" id="SystemsofLinearEquationsExample2-4"><div class="image-box" style="width: 92.5%; margin-left: 3.75%; margin-right: 3.75%;"><img src="external/SystemsofLinearEquationsImages/Figure02.png" class="contained" alt="A graph on a coordinate plane showing two linear functions intersecting. One line has a steep positive slope and crosses the vertical y-axis at a negative value. The other line has a shallower negative slope and crosses the vertical y-axis at a positive value. The two lines intersect in the first quadrant, to the right of the y-axis and slightly above the horizontal x-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graph to solve system<div class="autopermalink" data-description="Figure 5.5.4"><a href="#SystemsofLinearEquationsExample2-4" title="Copy heading and permalink for Figure 5.5.4" aria-label="Copy heading and permalink for Figure 5.5.4">🔗</a></div></figcaption></figure><div class="para" id="SystemsofLinearEquationsExample2-5">And so we see that the intersection occurs at <span class="process-math">\((6,0)\)</span> and so conclude that this system’s simultaneous solution is <span class="process-math">\(x=6\)</span> and <span class="process-math">\(y=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-21">Most of the time, a given linear system will have one and only one solution. Each of the equations will define a linear function, those linear functions have graphs that are straight lines, and straight lines can only intersect in one place. However, sometimes something does go wrong, as we will see in the following example.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 5.5.3"><a href="#SystemsofLinearEquationsExample2" title="Copy heading and permalink for Example 5.5.3" aria-label="Copy heading and permalink for Example 5.5.3">🔗</a></div></article><div class="para" id="SystemsofLinearEquations-4-7">Most of the time, a given linear system will have one and only one solution. Each of the equations will define a linear function, those linear functions have graphs that are straight lines, and straight lines can only intersect in one place. However, sometimes something does go wrong, as we will see in the following example.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="SystemsofLinearEquationsExample3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="SystemsofLinearEquationsExample3"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="SystemsofLinearEquationsExample3-1-1">
+</h4>
+<div class="para logical" id="SystemsofLinearEquationsExample3-1-1">
 <div class="para">Solve:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample3-1-1-1">
 \begin{equation*}
 \begin{cases}x-3y=12\\-2x+6y=-4 \end{cases}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.5.5"><a href="#SystemsofLinearEquationsExample3" title="Copy heading and permalink for Example 5.5.5" aria-label="Copy heading and permalink for Example 5.5.5">🔗</a></div></article></details><div class="para logical" id="SystemsofLinearEquations-4-23">
+<div class="para logical" id="SystemsofLinearEquationsExample3-2">
 <div class="para">Solving the first equation for <span class="process-math">\(y\)</span> we get:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample3-2-2">
 \begin{equation*}
 x-3y=12\\-3y=12-x\\y=\frac{1}{3}x-4
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-4-24">
+<div class="para logical" id="SystemsofLinearEquationsExample3-3">
 <div class="para">Solving the second equation for <span class="process-math">\(y\)</span> we get:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample3-3-2">
 \begin{equation*}
 -2x+6y=4\\6y=4+2x\\y=\frac{2}{3}+\frac{1}{3}x
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-25">Looking at these equations in slope-intercept form it is apparent that their graphs are parallel lines. So there is no point in looking for an intersection; the graphs will never intersect.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample3-4">Looking at these equations in slope-intercept form it is apparent that their graphs are parallel lines. So there is no point in looking for an intersection; the graphs will never intersect.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-26">Therefore, this linear system has no simultaneous solution. }<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample3-5">Therefore, this linear system has no simultaneous solution.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-4-27">
+<div class="autopermalink" data-description="Example 5.5.5"><a href="#SystemsofLinearEquationsExample3" title="Copy heading and permalink for Example 5.5.5" aria-label="Copy heading and permalink for Example 5.5.5">🔗</a></div></article><div class="para logical" id="SystemsofLinearEquations-4-9">
 <div class="para">So, as this example illustrates, not every linear system will have a solution. Each linear equation has a line as its graph. The lines can intersect once, giving a unique solution to the system. The lines can be parallel, giving no solution. And there is a third possibility: the two lines can turn out to actually be the same. For example, if we were trying to solve the system:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-4-9-1">
 \begin{equation*}
 \begin{cases}x-3y=12\\-2x+6y=24 \end{cases}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-28">We’d see after solving both for <span class="process-math">\(y\)</span> that both of these equations actually turn into the same linear function: <span class="process-math">\(y=\frac{1}{3}x-4\text{.}\)</span> In this case, since the two equations actually implicitly define the same function, any solution for the one equation also must be a solution for the other. In this case there are infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquations-4-10">We’d see after solving both for <span class="process-math">\(y\)</span> that both of these equations actually turn into the same linear function: <span class="process-math">\(y=\frac{1}{3}x-4\text{.}\)</span> In this case, since the two equations actually implicitly define the same function, any solution for the one equation also must be a solution for the other. In this case there are infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-4-29">In summary, there are three possible results we can run into when solving a linear system:<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquations-4-11">In summary, there are three possible results we can run into when solving a linear system:<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr>
@@ -1167,51 +1170,51 @@ x-3y=12\\-3y=12-x\\y=\frac{1}{3}x-4
 <td class="l m b1 r0 l0 t0 lines"></td>
 </tr>
 </table></div>
-<div class="para" id="SystemsofLinearEquations-4-31">We will now summarize this solution method.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquations-4-13">We will now summarize this solution method.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="SystemsofLinearEquations-4-32"><h4 class="heading">
+<article class="definition definition-like" id="SystemsofLinearEquations-4-14"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="SystemsofLinearEquations-4-32-1-1">
-<em class="emphasis">Solving a Linear System Graphically</em><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-32-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para logical" id="SystemsofLinearEquations-4-32-1-2">
-<ol class="decimal" id="SystemsofLinearEquations-4-32-1-2-2">
-<li id="SystemsofLinearEquations-4-32-1-2-2-1">
-<div class="para" id="SystemsofLinearEquations-4-32-1-2-2-1-1">If the equations are not already in explicit function form, put both equations in this form by solving them for one of the variables. If <span class="process-math">\(y\)</span> is one of the variables, that’s usually the one we solve for. (It does not actually matter which variable you solve for, except that it should be the same one in both equations.)<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-32-1-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquations-4-14-1-1">
+<em class="emphasis">Solving a Linear System Graphically</em><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="SystemsofLinearEquations-4-14-1-2">
+<ol class="decimal" id="SystemsofLinearEquations-4-14-1-2-2">
+<li id="SystemsofLinearEquations-4-14-1-2-2-1">
+<div class="para" id="SystemsofLinearEquations-4-14-1-2-2-1-1">If the equations are not already in explicit function form, put both equations in this form by solving them for one of the variables. If <span class="process-math">\(y\)</span> is one of the variables, that’s usually the one we solve for. (It does not actually matter which variable you solve for, except that it should be the same one in both equations.)<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-14-1-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#SystemsofLinearEquations-4-32-1-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#SystemsofLinearEquations-4-14-1-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="SystemsofLinearEquations-4-32-1-2-2-2">
-<div class="para" id="SystemsofLinearEquations-4-32-1-2-2-2-1">If both functions have the same slope but different vertical intercepts, the graphs are parallel lines. The linear system does not have a solution.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-32-1-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="SystemsofLinearEquations-4-14-1-2-2-2">
+<div class="para" id="SystemsofLinearEquations-4-14-1-2-2-2-1">If both functions have the same slope but different vertical intercepts, the graphs are parallel lines. The linear system does not have a solution.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-14-1-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#SystemsofLinearEquations-4-32-1-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#SystemsofLinearEquations-4-14-1-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
-<li id="SystemsofLinearEquations-4-32-1-2-2-3">
-<div class="para" id="SystemsofLinearEquations-4-32-1-2-2-3-1">If both functions have the same slope and the same vertical intercept, they are actually both the same function. The system then has infinitely many solutions - any of the infinitely many solutions to this equation will actually be a solution to the system.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-32-1-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="SystemsofLinearEquations-4-14-1-2-2-3">
+<div class="para" id="SystemsofLinearEquations-4-14-1-2-2-3-1">If both functions have the same slope and the same vertical intercept, they are actually both the same function. The system then has infinitely many solutions - any of the infinitely many solutions to this equation will actually be a solution to the system.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-14-1-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#SystemsofLinearEquations-4-32-1-2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#SystemsofLinearEquations-4-14-1-2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
-<li id="SystemsofLinearEquations-4-32-1-2-2-4">
-<div class="para" id="SystemsofLinearEquations-4-32-1-2-2-4-1">Otherwise, graph both of the functions on your graphing calculator, and use the methods of graphical solution to find the intersection.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-32-1-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="SystemsofLinearEquations-4-14-1-2-2-4">
+<div class="para" id="SystemsofLinearEquations-4-14-1-2-2-4-1">Otherwise, graph both of the functions on your graphing calculator, and use the methods of graphical solution to find the intersection.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-14-1-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4"><a href="#SystemsofLinearEquations-4-32-1-2-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+<div class="autopermalink" data-description="Item 4"><a href="#SystemsofLinearEquations-4-14-1-2-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
 </li>
-<li id="SystemsofLinearEquations-4-32-1-2-2-5">
-<div class="para" id="SystemsofLinearEquations-4-32-1-2-2-5-1">The intersection is the simultaneous solution to the system.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-32-1-2-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="SystemsofLinearEquations-4-14-1-2-2-5">
+<div class="para" id="SystemsofLinearEquations-4-14-1-2-2-5-1">The intersection is the simultaneous solution to the system.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-14-1-2-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 5"><a href="#SystemsofLinearEquations-4-32-1-2-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+<div class="autopermalink" data-description="Item 5"><a href="#SystemsofLinearEquations-4-14-1-2-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-32-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-14-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5.5.6"><a href="#SystemsofLinearEquations-4-32" title="Copy heading and permalink for Definition 5.5.6" aria-label="Copy heading and permalink for Definition 5.5.6">🔗</a></div></article><div class="para" id="SystemsofLinearEquations-4-33">Graphical solution always works, but sometimes it is not the most efficient way to solve a linear system. In the rest of this chapter we will present two alternative solution methods.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 5.5.6"><a href="#SystemsofLinearEquations-4-14" title="Copy heading and permalink for Definition 5.5.6" aria-label="Copy heading and permalink for Definition 5.5.6">🔗</a></div></article><div class="para" id="SystemsofLinearEquations-4-15">Graphical solution always works, but sometimes it is not the most efficient way to solve a linear system. In the rest of this chapter we will present two alternative solution methods.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-4-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 5.5.2: Solving Linear Systems Graphically"><a href="#SystemsofLinearEquations-4" title="Copy heading and permalink for Subsection 5.5.2: Solving Linear Systems Graphically" aria-label="Copy heading and permalink for Subsection 5.5.2: Solving Linear Systems Graphically">🔗</a></div></section><section class="subsection" id="SystemsofLinearEquations-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Linear Systems by Substitution</span>
 </h3>
 <div class="para logical" id="SystemsofLinearEquations-5-2">
 <div class="para">Suppose you are confronted with the following linear system:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-5-2-1">
 \begin{equation*}
 \begin{cases}5x+3y=1\\y=2x-7 \end{cases}
 \end{equation*}
@@ -1220,7 +1223,7 @@ x-3y=12\\-3y=12-x\\y=\frac{1}{3}x-4
 </div>
 <div class="para logical" id="SystemsofLinearEquations-5-3">
 <div class="para">We could of course solve this graphically. But notice that the second equation is solved for <span class="process-math">\(y\)</span> already. We know from it what <span class="process-math">\(y\)</span> must be in terms of <span class="process-math">\(x\)</span> for any solution to the system. So, we could replace the <span class="process-math">\(y\)</span> in the top equation with the <span class="process-math">\(2x-7\)</span> that we know must be equal to it. If we do this we get:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-5-3-6">
 \begin{equation*}
 5x+3y=1\\5x+3(2x-7)=1
 \end{equation*}
@@ -1229,13 +1232,13 @@ x-3y=12\\-3y=12-x\\y=\frac{1}{3}x-4
 </div>
 <div class="para logical" id="SystemsofLinearEquations-5-4">
 <div class="para">Now the result of doing this is an equation with only one variable, which we can solve with ordinary algebra. We simplify the left side:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-5-4-1">
 \begin{equation*}
 5x+6x-21=11x-21=11
 \end{equation*}
 </div>
 <div class="para">and then finish solving to get:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-5-4-2">
 \begin{equation*}
 11x=22\\x=2
 \end{equation*}
@@ -1244,7 +1247,7 @@ x-3y=12\\-3y=12-x\\y=\frac{1}{3}x-4
 </div>
 <div class="para logical" id="SystemsofLinearEquations-5-5">
 <div class="para">Now this gives us one variable, but we need both to have a complete solution. But since we know <span class="process-math">\(x\)</span> we can substitute that value into either of the original equations and then use that to find <span class="process-math">\(y\text{.}\)</span> Either one works, but the equation already solved for <span class="process-math">\(y\)</span> would be easiest:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-5-5-4">
 \begin{equation*}
 y=2x-7\\y=2(2)=7\\y=-3
 \end{equation*}
@@ -1283,85 +1286,87 @@ y=2x-7\\y=2(2)=7\\y=-3
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5.5.7"><a href="#SystemsofLinearEquations-5-7" title="Copy heading and permalink for Definition 5.5.7" aria-label="Copy heading and permalink for Definition 5.5.7">🔗</a></div></article><details id="SystemsofLinearEquationsExample4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="autopermalink" data-description="Definition 5.5.7"><a href="#SystemsofLinearEquations-5-7" title="Copy heading and permalink for Definition 5.5.7" aria-label="Copy heading and permalink for Definition 5.5.7">🔗</a></div></article><article class="algorithm theorem-like" id="SystemsofLinearEquationsExample4"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="SystemsofLinearEquationsExample4-1-1">I want to fence in a rectangular garden in my back yard. My feng shui adviser tells me the garden will be most harmonious if the length is twice the width. I have <span class="process-math">\(300\)</span> feet of fencing. What is the largest rectangular and harmonious garden I can enclose with this fencing?<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h4>
+<div class="para" id="SystemsofLinearEquationsExample4-1-1">I want to fence in a rectangular garden in my back yard. My feng shui adviser tells me the garden will be most harmonious if the length is twice the width. I have <span class="process-math">\(300\)</span> feet of fencing. What is the largest rectangular and harmonious garden I can enclose with this fencing?<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.5.8"><a href="#SystemsofLinearEquationsExample4" title="Copy heading and permalink for Example 5.5.8" aria-label="Copy heading and permalink for Example 5.5.8">🔗</a></div></article></details><div class="para logical" id="SystemsofLinearEquations-5-9">
-<div class="para">If we let <span class="process-math">\(W\)</span> represent the width and <span class="process-math">\(L\)</span> the length, we know that the total perimeter is <span class="process-math">\(2L+2W\text{.}\)</span> Since that would use the <span class="process-math">\(300\)</span> feet of fencing we must have <span class="process-math">\(2L+2W=300\text{.}\)</span> Also, the length is twice the width, so <span class="process-math">\(L=2w\text{.}\)</span> So we need to solve the linear system:</div>
-<div class="displaymath process-math">
+<div class="para logical" id="SystemsofLinearEquationsExample4-2">
+<div class="para">If we let <span class="process-math">\(W\)</span> represent the width and <span class="process-math">\(L\)</span> the length, we know that the total perimeter is <span class="process-math">\(2L+2W\text{.}\)</span> Since that would use the <span class="process-math">\(300\)</span> feet of fencing we must have <span class="process-math">\(2L+2W=300\text{.}\)</span> Also, the length is twice the width, so <span class="process-math">\(L=2W\text{.}\)</span> So we need to solve the linear system:</div>
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample4-2-7">
 \begin{equation*}
 \begin{cases}2L+2W=300\\L=2W \end{cases}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-5-10">
+<div class="para logical" id="SystemsofLinearEquationsExample4-3">
 <div class="para">The second equation is already solved for <span class="process-math">\(L\text{,}\)</span> so we use that to substitute into the top equation and solve:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample4-3-2">
 \begin{equation*}
-2L+2W=300\\2(2w)+2W=300\\4W+2W=300\\6W=300\\W=50
+2L+2W=300\\2(2W)+2W=300\\4W+2W=300\\6W=300\\W=50
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-5-11">
+<div class="para logical" id="SystemsofLinearEquationsExample4-4">
 <div class="para">Now we substitute into the second equation because it is already solved for <span class="process-math">\(L\text{:}\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample4-4-2">
 \begin{equation*}
 L=2W
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample4-4-3">
 \begin{equation*}
 L=2(50)
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample4-4-4">
 \begin{equation*}
 L=100
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-5-12">So the solution to this system is <span class="process-math">\(W=50\)</span> and <span class="process-math">\(L=100\text{.}\)</span> In other words, I should fence in a <span class="process-math">\(100 \times 50\)</span> foot garden. }<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample4-5">So the solution to this system is <span class="process-math">\(W=50\)</span> and <span class="process-math">\(L=100\text{.}\)</span> In other words, I should fence in a <span class="process-math">\(100 \times 50\)</span> foot garden.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="SystemsofLinearEquationsExample5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="autopermalink" data-description="Example 5.5.8"><a href="#SystemsofLinearEquationsExample4" title="Copy heading and permalink for Example 5.5.8" aria-label="Copy heading and permalink for Example 5.5.8">🔗</a></div></article><article class="algorithm theorem-like" id="SystemsofLinearEquationsExample5"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="SystemsofLinearEquationsExample5-1-1">
+</h4>
+<div class="para logical" id="SystemsofLinearEquationsExample5-1-1">
 <div class="para">Use substitution to solve the system:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample5-1-1-1">
 \begin{equation*}
 \begin{cases}11T-3P=1\\4P+12T=12 \end{cases}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.5.9"><a href="#SystemsofLinearEquationsExample5" title="Copy heading and permalink for Example 5.5.9" aria-label="Copy heading and permalink for Example 5.5.9">🔗</a></div></article></details><div class="para logical" id="SystemsofLinearEquations-5-14">
-<div class="para">We need to start by solving one of these equations for one of the variables. We can choose to solve either equation for either variable – the method will work regardless of what we choose.However, it makes sense to pick the equation and variable that will be simplest. In the top equation, solving for either variable will involve dividing by either <span class="process-math">\(11\)</span> or <span class="process-math">\(3\text{,}\)</span> and we can see that this will mean fractions will get involved. In the bottom equation solving for <span class="process-math">\(T\)</span> would require us to divide through by <span class="process-math">\(12\text{,}\)</span> which would make the coefficient of <span class="process-math">\(P\)</span> a fraction. But if we solve for <span class="process-math">\(P\)</span> we will have to divide through by <span class="process-math">\(4\)</span> and since everything in that equation is divisible by <span class="process-math">\(4\)</span> that will avoid fractions. So that seems the cleanest choice.</div>
-<div class="displaymath process-math" id="SystemsofLinearEquations-5-14-9">
+<div class="para logical" id="SystemsofLinearEquationsExample5-2">
+<div class="para">We need to start by solving one of these equations for one of the variables. We can choose to solve either equation for either variable – the method will work regardless of what we choose. However, it makes sense to pick the equation and variable that will be simplest. In the top equation, solving for either variable will involve dividing by either <span class="process-math">\(11\)</span> or <span class="process-math">\(3\text{,}\)</span> and we can see that this will mean fractions will get involved. In the bottom equation solving for <span class="process-math">\(T\)</span> would require us to divide through by <span class="process-math">\(12\text{,}\)</span> which would make the coefficient of <span class="process-math">\(P\)</span> a fraction. But if we solve for <span class="process-math">\(P\)</span> we will have to divide through by <span class="process-math">\(4\)</span> and since everything in that equation is divisible by <span class="process-math">\(4\)</span> that will avoid fractions. So that seems the cleanest choice.</div>
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample5-2-9">
 \begin{align*}
 4P+12T\amp =12\\
 4P\amp =12-12T\\
 P\amp =3-3T
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-5-15">
+<div class="para logical" id="SystemsofLinearEquationsExample5-3">
 <div class="para">Now we plug this substitution into the other equation:</div>
-<div class="displaymath process-math" id="SystemsofLinearEquations-5-15-1">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample5-3-1">
 \begin{align*}
 11T-3P\amp =1\\
 11T-3(3-3T)\amp =1
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-5-16">
+<div class="para logical" id="SystemsofLinearEquationsExample5-4">
 <div class="para">And solve the result:</div>
-<div class="displaymath process-math" id="SystemsofLinearEquations-5-16-1">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample5-4-1">
 \begin{align*}
 11T-9+9T\amp =1\\
 20T-9\amp =1\\
@@ -1369,61 +1374,62 @@ P\amp =3-3T
 T\amp =\frac{1}{2}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-5-17">
+<div class="para logical" id="SystemsofLinearEquationsExample5-5">
 <div class="para">To solve for <span class="process-math">\(P\)</span> we can plug this into either of the original equations. Or, we could use the equation <span class="process-math">\(P=3-3T\)</span> since that is solved for <span class="process-math">\(P\)</span> already. Doing this:</div>
-<div class="displaymath process-math" id="SystemsofLinearEquations-5-17-4">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample5-5-4">
 \begin{align*}
 P\amp =3-3T\\
 \amp =3-3(\frac{1}{2}) \amp =\frac{3}{2}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-5-18">So the solution to the system of equations is <span class="process-math">\(P=\frac{3}{2}\)</span> and <span class="process-math">\(T=\frac{1}{2}\text{.}\)</span> }<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample5-6">So the solution to the system of equations is <span class="process-math">\(P=\frac{3}{2}\)</span> and <span class="process-math">\(T=\frac{1}{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-5-19">With one last example we will illustrate how things can go wrong. The problem will not be a problem with substitution itself – just like graphing, substitution always works - but there can be problems with the system itself.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 5.5.9"><a href="#SystemsofLinearEquationsExample5" title="Copy heading and permalink for Example 5.5.9" aria-label="Copy heading and permalink for Example 5.5.9">🔗</a></div></article><div class="para" id="SystemsofLinearEquations-5-10">With one last example we will illustrate how things can go wrong. The problem will not be a problem with substitution itself – just like graphing, substitution always works - but there can be problems with the system itself.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="SystemsofLinearEquationsExample6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="algorithm theorem-like" id="SystemsofLinearEquationsExample6"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="SystemsofLinearEquationsExample6-1-1">
+</h4>
+<div class="para logical" id="SystemsofLinearEquationsExample6-1-1">
 <div class="para">Solve by substitution</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample6-1-1-1">
 \begin{equation*}
 \begin{cases}x+2z=5\\3x+6z=10 \end{cases}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.5.10"><a href="#SystemsofLinearEquationsExample6" title="Copy heading and permalink for Example 5.5.10" aria-label="Copy heading and permalink for Example 5.5.10">🔗</a></div></article></details><div class="para logical" id="SystemsofLinearEquations-5-21">
+<div class="para logical" id="SystemsofLinearEquationsExample6-2">
 <div class="para">As before, we can solve for either variable in either equation, but it makes sense to go with the cleanest and simplest choice. In this system, that choice would be to solve for <span class="process-math">\(x\)</span> in the top equation:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample6-2-2">
 \begin{equation*}
 x+2z=5\\x=5-2z
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-5-22">
+<div class="para logical" id="SystemsofLinearEquationsExample6-3">
 <div class="para">Now substitute that into the second equation:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample6-3-1">
 \begin{equation*}
 3x+6z=10\\3(5-2z)+6z=10\\15-6z+6z=10\\15=10
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-5-23">This of course is a contradiction. This is not a failure of the substitution method though! When we arrive at a contradiction solving a regular equation, we simply conclude that the equation has no solutions. We draw the same conclusion here: the linear system has no solutions. From our previous discussion of solution by graphing, we furthermore know that this means that the graphs of the functions implicitly defined by these two equations must be parallel lines. }<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample6-4">This of course is a contradiction. This is not a failure of the substitution method though! When we arrive at a contradiction solving a regular equation, we simply conclude that the equation has no solutions. We draw the same conclusion here: the linear system has no solutions. From our previous discussion of solution by graphing, we furthermore know that this means that the graphs of the functions implicitly defined by these two equations must be parallel lines.<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-5-24">Two solution methods down, there’s still one more to go:<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 5.5.10"><a href="#SystemsofLinearEquationsExample6" title="Copy heading and permalink for Example 5.5.10" aria-label="Copy heading and permalink for Example 5.5.10">🔗</a></div></article><div class="para" id="SystemsofLinearEquations-5-12">Two solution methods down, there’s still one more to go:<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-5-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 5.5.3: Solving Linear Systems by Substitution"><a href="#SystemsofLinearEquations-5" title="Copy heading and permalink for Subsection 5.5.3: Solving Linear Systems by Substitution" aria-label="Copy heading and permalink for Subsection 5.5.3: Solving Linear Systems by Substitution">🔗</a></div></section><section class="subsection" id="SystemsofLinearEquations-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Linear Systems by Elimination</span>
 </h3>
 <div class="para logical" id="SystemsofLinearEquations-6-2">
 <div class="para">Suppose you are presented with the linear system:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-6-2-1">
 \begin{equation*}
 \begin{cases}5x+2y=1\\3x-2y=7 \end{cases}
 \end{equation*}
@@ -1439,12 +1445,12 @@ x+2z=5\\x=5-2z
 <div class="tabular-box natural-width"><table class="tabular"></table></div>
 <div class="para logical" id="SystemsofLinearEquations-6-7">
 <div class="para">So by doing this we’ve created a new equation where one of the variables (<span class="process-math">\(y\)</span>) has been eliminated! The result is easily solved for the remaining variable:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-6-7-2">
 \begin{equation*}
 8x=8
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-6-7-3">
 \begin{equation*}
 x=1
 \end{equation*}
@@ -1453,7 +1459,7 @@ x=1
 </div>
 <div class="para logical" id="SystemsofLinearEquations-6-8">
 <div class="para">So we have our <span class="process-math">\(x\text{.}\)</span> Now to get the other variable, we can substitute this value for <span class="process-math">\(x\)</span> into either of the original equations:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-6-8-3">
 \begin{equation*}
 5x+2y=1\\ 5(1)+2y=1\\ 5+2y=1\\ 2y=-4\\ y=-2
 \end{equation*}
@@ -1464,7 +1470,7 @@ x=1
 </div>
 <div class="para logical" id="SystemsofLinearEquations-6-10">
 <div class="para">Now this was a pretty special case. This approach worked because the coefficients of <span class="process-math">\(y\)</span> in the two equations just happened to be <span class="process-math">\(\pm\)</span> of each other. That usually won’t happen. But we can force it to happen if we want to. Suppose we were up against the system:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-6-10-3">
 \begin{equation*}
 \begin{cases}2p+7q=9\\p+3q=5 \end{cases}
 \end{equation*}
@@ -1474,13 +1480,13 @@ x=1
 <div class="para logical" id="SystemsofLinearEquations-6-11">
 <div class="para">If we were to multiply both sides of the bottom equation through by <span class="process-math">\(-2\)</span> we’d make the <span class="process-math">\(p\)</span> term of that equation <span class="process-math">\(-2p\text{,}\)</span> perfectly set up to cancel with the top equation’s <span class="process-math">\(2p\text{:}\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-6-11-5">
 \begin{equation*}
 \begin{cases}2p+7q=9\\-2(p+3q)=-2(5) \end{cases}
 \end{equation*}
 </div>
 <div class="para">which makes the system become:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-6-11-6">
 \begin{equation*}
 \begin{cases}2p+7q=9\\-2p-6q=-10 \end{cases}
 \end{equation*}
@@ -1493,7 +1499,7 @@ x=1
 </div>
 <div class="para logical" id="SystemsofLinearEquations-6-14">
 <div class="para">Now in this system multiplying the bottom equation by <span class="process-math">\(-2\)</span> and eliminating <span class="process-math">\(p\)</span> was the simplest solution. But we could have done it other ways too. For example, if we had multiplied the top equation by <span class="process-math">\(3\)</span> and the bottom one by <span class="process-math">\(-7\)</span> we would have gotten:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-6-14-5">
 \begin{equation*}
 \begin{cases} 3(2p+7q)=3(9)\\ -7(p+3q)=-7(5) \end{cases} \text{    which becomes    } \begin{cases} 6p+21q=27\\ -7p-21q=-35 \end{cases}
 \end{equation*}
@@ -1536,43 +1542,44 @@ x=1
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-6-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5.5.11"><a href="#SystemsofLinearEquations-6-15" title="Copy heading and permalink for Definition 5.5.11" aria-label="Copy heading and permalink for Definition 5.5.11">🔗</a></div></article><details id="SystemsofLinearEquationsExample7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="autopermalink" data-description="Definition 5.5.11"><a href="#SystemsofLinearEquations-6-15" title="Copy heading and permalink for Definition 5.5.11" aria-label="Copy heading and permalink for Definition 5.5.11">🔗</a></div></article><article class="algorithm theorem-like" id="SystemsofLinearEquationsExample7"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="SystemsofLinearEquationsExample7-1-1">
+</h4>
+<div class="para logical" id="SystemsofLinearEquationsExample7-1-1">
 <div class="para">Solve by elimination</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample7-1-1-1">
 \begin{equation*}
-:\begin{cases}5p-7q=14\\12p+8q=-16 \end{cases}
+\begin{cases}5p-7q=14\\12p+8q=-16 \end{cases}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 5.5.12"><a href="#SystemsofLinearEquationsExample7" title="Copy heading and permalink for Example 5.5.12" aria-label="Copy heading and permalink for Example 5.5.12">🔗</a></div></article></details><div class="para" id="SystemsofLinearEquations-6-17">In this system the variables are already lined up <span class="process-math">\(p\)</span> above <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> above <span class="process-math">\(q\)</span> so we are ready to go. We can choose to eliminate either variable; in this case neither one is really a better choice than the other. If we want to eliminate <span class="process-math">\(p\)</span> we could multiply the top equation through by <span class="process-math">\(12\)</span> and the bottom through by <span class="process-math">\(-5\text{,}\)</span> or the top by <span class="process-math">\(-12\)</span> and the bottom by <span class="process-math">\(5\text{,}\)</span> to make the <span class="process-math">\(p\)</span> terms <span class="process-math">\(\pm 60p\text{.}\)</span> Or we could eliminate <span class="process-math">\(q\)</span> by multiplying the top by <span class="process-math">\(8\)</span> and the bottom by <span class="process-math">\(7\)</span> to make the <span class="process-math">\(q\)</span> terms <span class="process-math">\(\pm56q\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-6-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample7-2">In this system the variables are already lined up <span class="process-math">\(p\)</span> above <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> above <span class="process-math">\(q\)</span> so we are ready to go. We can choose to eliminate either variable; in this case neither one is really a better choice than the other. If we want to eliminate <span class="process-math">\(p\)</span> we could multiply the top equation through by <span class="process-math">\(12\)</span> and the bottom through by <span class="process-math">\(-5\text{,}\)</span> or the top by <span class="process-math">\(-12\)</span> and the bottom by <span class="process-math">\(5\text{,}\)</span> to make the <span class="process-math">\(p\)</span> terms <span class="process-math">\(\pm 60p\text{.}\)</span> Or we could eliminate <span class="process-math">\(q\)</span> by multiplying the top by <span class="process-math">\(8\)</span> and the bottom by <span class="process-math">\(7\)</span> to make the <span class="process-math">\(q\)</span> terms <span class="process-math">\(\pm56q\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-6-18">
+<div class="para logical" id="SystemsofLinearEquationsExample7-3">
 <div class="para">For no particular reason, we’ll take the path that eliminates <span class="process-math">\(q\text{:}\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample7-3-2">
 \begin{equation*}
 \begin{cases} 8(5p-7q)=8(14)\\ 7(12p+8q)=7(-16) \end{cases} \text{    which becomes    } \begin{cases} 40p-56q=112\\ 84p+56q=-112 \end{cases}
 \end{equation*}
 </div>
 <div class="para">and now we add the corresponding sides of the system to get:</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-6-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="tabular-box natural-width"><table class="tabular"></table></div>
-<div class="para logical" id="SystemsofLinearEquations-6-20">
+<div class="para logical" id="SystemsofLinearEquationsExample7-5">
 <div class="para">which we now solve to conclude that:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample7-5-1">
 \begin{equation*}
 p=0
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-6-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample7-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SystemsofLinearEquations-6-21">
+<div class="para logical" id="SystemsofLinearEquationsExample7-6">
 <div class="para">Substituting this into either equation (for no particular reason we’ll choose the top one):</div>
-<div class="displaymath process-math" id="SystemsofLinearEquations-6-21-1">
+<div class="displaymath process-math" id="SystemsofLinearEquationsExample7-6-1">
 \begin{align*}
 5p-7q\amp =14\\
 5(0)-7q\amp =14\\
@@ -1580,11 +1587,11 @@ p=0
 q\amp =-2
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-6-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample7-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SystemsofLinearEquations-6-22">So the system’s solution is <span class="process-math">\(p = 0\)</span> and <span class="process-math">\(q = -2\text{.}\)</span> }<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-6-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SystemsofLinearEquationsExample7-7">So the system’s solution is <span class="process-math">\(p = 0\)</span> and <span class="process-math">\(q = -2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquationsExample7-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 5.5.4: Solving Linear Systems by Elimination"><a href="#SystemsofLinearEquations-6" title="Copy heading and permalink for Subsection 5.5.4: Solving Linear Systems by Elimination" aria-label="Copy heading and permalink for Subsection 5.5.4: Solving Linear Systems by Elimination">🔗</a></div></section><section class="subsection" id="SystemsofLinearEquations-7"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Example 5.5.12"><a href="#SystemsofLinearEquationsExample7" title="Copy heading and permalink for Example 5.5.12" aria-label="Copy heading and permalink for Example 5.5.12">🔗</a></div></article><div class="autopermalink" data-description="Subsection 5.5.4: Solving Linear Systems by Elimination"><a href="#SystemsofLinearEquations-6" title="Copy heading and permalink for Subsection 5.5.4: Solving Linear Systems by Elimination" aria-label="Copy heading and permalink for Subsection 5.5.4: Solving Linear Systems by Elimination">🔗</a></div></section><section class="subsection" id="SystemsofLinearEquations-7"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Strategies for Solving Linear Systems</span>
 </h3>
 <div class="para" id="SystemsofLinearEquations-7-2">So we now have three methods to solve linear systems. All three methods always work - no matter which method you choose to use, if the system has a solution you will find it, and if there is no solution or are infinitely many solutions each system has a way of telling you that as well. So, in the face of a given linear system, how do you choose which method to use?<div class="autopermalink" data-description="Paragraph"><a href="#SystemsofLinearEquations-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1593,7 +1600,7 @@ q\amp =-2
 </div>
 <div class="para logical" id="SystemsofLinearEquations-7-4">
 <div class="para">This system is also set up nicely for substitution, since both equations are already solved for <span class="process-math">\(w\text{,}\)</span> making it easy to replace the <span class="process-math">\(w\)</span> in either equation to get the equation</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-7-4-3">
 \begin{equation*}
 3z-1=-5z+2
 \end{equation*}
@@ -1604,7 +1611,7 @@ q\amp =-2
 </div>
 <div class="para logical" id="SystemsofLinearEquations-7-6">
 <div class="para">For a different example, consider this system:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-7-6-1">
 \begin{equation*}
 \begin{cases}5p-4q=3\\p=q+1 \end{cases}
 \end{equation*}
@@ -1615,7 +1622,7 @@ q\amp =-2
 </div>
 <div class="para logical" id="SystemsofLinearEquations-7-8">
 <div class="para">Elimination on the other hand would take more doing. We would first have to rearrange the bottom equation so that the variables would line up, getting:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-7-8-1">
 \begin{equation*}
 \begin{cases}5p-4q=3\\p-q=1 \end{cases}
 \end{equation*}
@@ -1625,7 +1632,7 @@ q\amp =-2
 </div>
 <div class="para logical" id="SystemsofLinearEquations-7-9">
 <div class="para">Now, which method would be the best bet with this system?</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-7-9-1">
 \begin{equation*}
 \begin{cases}3x-11y=28\\2x-9y=22 \end{cases}
 \end{equation*}
@@ -1654,7 +1661,7 @@ q\amp =-2
 <article class="exercise exercise-like" id="SystemsofLinearEquations-8-2-2-1"><h6 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
 <div class="para logical" id="SystemsofLinearEquations-8-2-2-1-1-1">
 <div class="para">Determine whether or not each of the given input-output pairs is a solution to the linear system.</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-8-2-2-1-1-1-1">
 \begin{equation*}
 \begin{cases}x+3y=5\\x-2y=0 \end{cases}
 \end{equation*}
@@ -1695,7 +1702,7 @@ q\amp =-2
 <div class="autopermalink" data-description="Exercise 5.5.6.1.1"><a href="#SystemsofLinearEquations-8-2-2-1" title="Copy heading and permalink for Exercise 5.5.6.1.1" aria-label="Copy heading and permalink for Exercise 5.5.6.1.1">🔗</a></div></article><article class="exercise exercise-like" id="SystemsofLinearEquations-8-2-2-2"><h6 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
 <div class="para logical" id="SystemsofLinearEquations-8-2-2-2-1-1">
 <div class="para">Determine whether or not each of the given input-output pairs is a solution to the linear system.</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-8-2-2-2-1-1-1">
 \begin{equation*}
 \begin{cases}2x+3y=11\\x-5y=25 \end{cases}
 \end{equation*}
@@ -2199,13 +2206,13 @@ q\amp =-2
 <div class="autopermalink" data-description="Exercise 5.5.6.6.8"><a href="#SystemsofLinearEquations-8-7-3-8" title="Copy heading and permalink for Exercise 5.5.6.6.8" aria-label="Copy heading and permalink for Exercise 5.5.6.6.8">🔗</a></div></article><article class="exercise exercise-like" id="SystemsofLinearEquations-8-7-3-9"><h6 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
 <div class="para logical" id="SystemsofLinearEquations-8-7-3-9-1-1">
 <div class="para">Katrina set out to solve the linear system:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-8-7-3-9-1-1-1">
 \begin{equation*}
 \begin{cases}2x-y=7\\3x+2y=28 \end{cases}
 \end{equation*}
 </div>
 <div class="para">using substitution. She solved the first equation for <span class="process-math">\(y\)</span> to get:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="SystemsofLinearEquations-8-7-3-9-1-1-3">
 \begin{equation*}
 y=2x-7
 \end{equation*}
