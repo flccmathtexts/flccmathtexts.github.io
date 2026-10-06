@@ -1,0 +1,552 @@
+<section xml:id="LinearFunctionsReviewQuestions">
+  <title>Linear Functions Review Questions</title>
+  <subsection>
+    <title>Slope</title>
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>g(x)</m> is a linear function with
+          <m>g(-1) = 5</m> and <m>g(4) = -6</m>.
+          Find its slope.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-2.2</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x)</m> is a linear function with
+          <m>f(-5) = -14</m> and <m>f(1) = -2</m>.
+          Find its slope.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>2</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>g(t)</m> is a linear function with
+          <m>g(2) = -19</m> and <m>g(8) = -49</m>.
+          Find its slope.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-5</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Suppose <m>k(m)</m> is linear.
+          Use the table below to find its slope.
+          <me>
+            \begin{array}{c|c} m \amp  k(m) \\ \hline -7 \amp  3,000 \\ 10 \amp  -400 \\ 250 \amp  -48,400 \end{array}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-200</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Given the table below, find the slope of the linear function.
+          <me>
+            \begin{array}{c|c} x \amp  f(x) \\ \hline -2 \amp  6 \\ 2 \amp  -4 \\ 7 \amp  -16.5 \\ 10 \amp  -24 \end{array}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-2.5</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the slope of the linear function whose graph passes through the points <m>(4,1)</m> and <m>(10, -8)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-1.5</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the slope of the linear function whose graph passes through the points
+          <m>(0, -12)</m> and <m>(14, -8.5)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>0.25</m>
+        </p>
+      </solution>
+    </exercise>
+  </exercises></subsection>
+  <subsection>
+    <title>Intercepts</title>
+    <exercises><exercise>
+      <statement>
+        <p>
+          Determine the vertical and horizontal intercepts for each of the linear functions.
+          <ol marker="a">
+            <li>
+              <p>
+                <m>g(t) = -5t + 20</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>f(q) = 16 - \frac{3}{4}q</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>h(k) = -1.2(k - 3) + 4</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>j = \frac{2x}{5}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>h(t) = -2t + 4</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>g(n) = 2n - 7</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>f(b) = \frac{1}{2}b + \frac{7}{3}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          a. Vertical: <m>(0,20)</m>, Horizontal: <m>(4,0)</m> \b.
+          Vertical: <m>(0,16)</m>, Horizontal:
+          <m>(\frac{64}{3},0)=(21.33,0)</m> c.
+          Vertical: <m>(0,7.6)</m>, Horizontal:
+          <m>(\frac{19}{3},0)=(6.33,0)</m> d.
+          Vertical: <m>(0,0)</m>, Horizontal: <m>(0,0)</m> e.
+          Vertical: <m>(0,-7)</m>, Horizontal: <m>(3.5,0)</m> f.
+          Vertical: <m>(0,\frac{7}{3})=(0, 2.33)</m>, Horizontal:
+          <m>(-\frac{14}{3},0)=(-4.67,0)</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If the function is linear, state the slope and vertical intercept.
+          <ol>
+            <li>
+              <p>
+                <m>a(b) = 34 - 50b</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>c = 10 - 2(x + 4)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>d(f) = 15(f - 2) + 4(2f + 6)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>h(x) = 2(x - 2) + x(x + 4)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          a. Slope: <m>-50</m>, Vertical: <m>(0,34)</m> b.
+          Slope: <m>-2</m>, Vertical: <m>(0,2)</m> c.
+          Slope: <m>23</m>, Vertical: <m>(0,-6)</m> d.
+          Not linear
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The number of bags of fertilizer needed to fertilize a lawn of size <m>A</m> acres is given by the function <m>f(A) = 11A</m>.
+          Write a sentence interpreting the vertical intercept and slope.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Slope: The number of bags of fertilizer needed increases by <m>11</m> bags per acre.
+          Vertical: No bags of fertilizer are needed for zero acres.
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The monthly water bill for a resident of the town of Williamson is given by the function <m>w(g) = 25 + 0.005g</m>.
+          Write a sentence interpreting the vertical intercept and slope.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Slope: The residents of the town of Williamson are charged an additional
+          <m>$0.005</m> per additional gallon of water used each month.
+          Vertical: The residents of the town of Williamson are charged a monthly fee of <m>$25</m> for water.
+        </p>
+      </solution>
+    </exercise>
+    <exercise xml:id="LinearFunctionsReviewExercise5">
+      <statement>
+        <p>
+          The cost for a cab ride is a function of the distance traveled.
+          It costs <m>25.50</m> to travel <m>15</m> miles and <m>34.50</m> to travel <m>21</m> miles.
+          Find the slope and vertical intercept and interpret both given the context of this function.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Slope: The cost for a cab ride increase by<m>$1.50</m> for each additional mile.
+          Vertical: It costs <m>$3.00</m> to have the cab pick you up.
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          For the question above <xref ref="LinearFunctionsReviewExercise5" />, find the horizontal intercept.
+          Does that have a realistic meaning here?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(-2,0)</m>; no
+        </p>
+      </solution>
+    </exercise>
+  </exercises></subsection>
+  <subsection>
+    <title>Formula</title>
+    <exercises><exercise>
+      <statement>
+        <p>
+          Find the equation of a linear function whose slope is
+          <m>-\frac{2}{9}</m> with a vertical intercept of <m>(0,-5)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>y=-\frac{2}{9}x-5</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the formula of a linear function whose slope is <m>5</m> and its graph passes through the point <m>f(6) = 15</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>y=5x-15</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Suppose <m>h(x)</m> is linear,
+          and its graph passes through the points <m>(-5, 0.2)</m> and <m>(3, 10)</m>.
+          Find a formula for this function.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>y=1.225x+6.325</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find a formula for the linear function whose slope is <m>6</m> and passes through the point <m>(0, -10)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>y=6x-10</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find a formula for the linear function whose graph passes through the points <m>(-3,24)</m> and <m>(3,0)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>y=-4x+12</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Given that <m>w(t)</m> is linear and,
+          <m>w(-5) = -85</m> and <m>w(10) = 95</m>,
+          find a formula for this function.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>w(t)=12t-25</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The price of a first class stamp in 1971 was <m>0.07</m>.
+          By 2018 it rose to <m>0.50</m>.
+          Assuming the price of a stamp is a linear function of years since 1971,
+          write an equation that models this relationship.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>y=0.009t+0.07</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The cost to refinish a hardwood floor is a linear function of the size of the room,
+          in square feet.
+          It costs <m>$700</m> to refinish a room <m>100</m> sq. feet.
+          And <m>$950</m> for a room <m>150</m> sq. feet.
+          Find a formula for this linear function.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>r(s)=5s+200</m>
+        </p>
+      </solution>
+    </exercise>
+  </exercises></subsection>
+  <subsection>
+    <title>Graphs</title>
+    <p>
+      Solve the following equations graphically and algebraically.
+    </p>
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>2x - 5 = 7x + 6</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>4=-5.5</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-3(y - 5) = 6(7 - 2y)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>y=3</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>1000 + 50z = 25(5z + 120)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>z=-\frac{80}{3} \approx -26.67</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>5x - 7 = 6x + 1</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>x=-8</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2(4 - x) + 1 = 7 + 3(-x + 5)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>x=13</m>
+        </p>
+      </solution>
+    </exercise>
+  </exercises></subsection>
+  <subsection>
+    <title>System of Linear Equations</title>
+    <p>
+      Solve the system of equations using an algebraic method.
+    </p>
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>\begin{cases}6x - 2y = 12 \\ 2x + 2y = 36 \end{cases}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>x=6</m> and <m>y=12</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\begin{cases}3a = 7 + b \\ 2a + b = 8 \end{cases}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>a=3</m> and <m>b=2</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\begin{cases}5c + 8d = -16 \\ 17c - 2d = 4 \end{cases}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>c=0</m> and <m>d=-2</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\begin{cases}5f - 7g = 89 \\ 7g = -8 + 5f \end{cases}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          No Solution
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\begin{cases}20x - 6y = 8 \\ 8x - 2y = 4 \end{cases}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>x=1</m> and <m>y=2</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\begin{cases}-3x + 15y = 33 \\ 3x - 6y = -6 \end{cases}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>x=4</m> and <m>y=3</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\begin{cases}10x - 4y = 20 \\ 2x - 2y = -2 \end{cases}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>x=4</m> and <m>y=5</m>
+        </p>
+      </solution>
+    </exercise>
+    </exercises><p>
+      Solve the system of equations using graphically.
+    </p>
+    <exercises><exercise>
+      <statement>
+        <p>
+          <m>\begin{cases}x + y = 7 \\ x + 2y = 11 \end{cases}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>x=3</m> and <m>y=4</m>
+        </p>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\begin{cases}2z + 3a = 5 \\ z + a = 4 \end{cases}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>z=7</m> and <m>a=-3</m>
+        </p>
+      </solution>
+    </exercise>
+  </exercises></subsection>
+</section>
