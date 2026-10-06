@@ -165,6 +165,8 @@
   </subsection>
   <subsection>
     <title>Exercises</title>
+    <subsubsection>
+    <title>Radicals to Fractional Exponents</title>
     <p>
       Express each of the following using fractional exponents.
     </p>
@@ -253,7 +255,10 @@
       </statement>
     </exercise>
     
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Fractional Exponents to Radicals</title>
+    <p>
       Write each of the following expressions without fractional exponents
       (in radical form).
     </p>
@@ -342,7 +347,10 @@
       </statement>
     </exercise>
     
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Solving Equations</title>
+    <p>
       Solve the following equations for the given variable.
     </p>
     
@@ -493,5 +501,5 @@
       </statement>
     </exercise>
     
-  </exercises></subsection>
+  </exercises></subsubsection></subsection>
 </section>

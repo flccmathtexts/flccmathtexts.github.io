@@ -464,6 +464,8 @@
   </subsection>
   <subsection>
     <title>Exercises</title>
+    <subsubsection>
+    <title>Fraction Arithmetic by Hand</title>
     <p>
       Evaluate the following arithmetic expressions without using the
       <q><m>\blacktriangleright</m>Frac</q>
@@ -743,7 +745,10 @@
       </statement>
     </exercise>
     
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Reducing Fractions to Lowest Terms</title>
+    <p>
       Reduce the following fractions to lowest terms without using the
       <q><m>\blacktriangleright</m>Frac</q>
       command on your calculator.
@@ -791,7 +796,10 @@
       </statement>
     </exercise>
     
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Mixed Practice with a Calculator</title>
+    <p>
       Evaluate the following arithmetic expressions,
       expressing your answers as fractions in lowest terms.
       Use your calculator as much or as little as you like.
@@ -1049,5 +1057,5 @@
       </statement>
     </exercise>
     
-  </exercises></subsection>
+  </exercises></subsubsection></subsection>
 </section>

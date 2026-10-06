@@ -1354,17 +1354,17 @@
           <p>
             <m>x^2-2x+8=8</m>
           </p>
+          <p>
+            (NOTE: This equation has two solutions.)
+          </p>
         </statement>
+        <solution>
+          <p>
+            <m>x=0</m> and <m>x=2</m>
+          </p>
+        </solution>
       </exercise>
-      </exercises><p>
-        (NOTE: This equation has two solutions.)
-      </p>
-      <solution>
-        <p>
-          <m>x=0</m> and <m>x=2</m>
-        </p>
-      </solution>
-      <exercises><exercise>
+      <exercise>
         <statement>
           <p>
             <m>180k-32,000=160k+48,000</m>
@@ -1388,12 +1388,12 @@
           <p>
             <m>z^2=3z+1</m>
           </p>
+          <p>
+            (NOTE: This equation has two solutions.)
+          </p>
         </statement>
       </exercise>
-      </exercises><p>
-        (NOTE: This equation has two solutions.)
-      </p>
-      <exercises><exercise>
+      <exercise>
         <statement>
           <p>
             <m>\frac{19x-5}{10}=\frac{39x+50}{40}</m>

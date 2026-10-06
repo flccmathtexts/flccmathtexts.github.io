@@ -434,6 +434,8 @@
   </exercises></subsection>
   <subsection>
     <title>System of Linear Equations</title>
+    <subsubsection>
+    <title>Solving Algebraically</title>
     <p>
       Solve the system of equations using an algebraic method.
     </p>
@@ -521,7 +523,10 @@
         </p>
       </solution>
     </exercise>
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Solving Graphically</title>
+    <p>
       Solve the system of equations using graphically.
     </p>
     <exercises><exercise>
@@ -548,5 +553,6 @@
         </p>
       </solution>
     </exercise>
-  </exercises></subsection>
+  </exercises></subsubsection>
+  </subsection>
 </section>

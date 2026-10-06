@@ -2,6 +2,8 @@
   <title>Foundations of Functions Review Questions</title>
   <subsection>
     <title>Function Terminology</title>
+    <subsubsection>
+    <title>Describing Functions from Context</title>
     <p>
       Each of the following relationships can be represented by a function.
       For each relationship
@@ -251,7 +253,10 @@
         </p>
       </solution>
     </exercise>
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Describing Functions from an Equation</title>
+    <p>
       In each of the following problems,
       two variables and the quantities they represent are given,
       and an equation relating these variables with a function is also given.
@@ -397,7 +402,8 @@
         </p>
       </solution>
     </exercise>
-  </exercises></subsection>
+  </exercises></subsubsection>
+  </subsection>
   <subsection>
     <title>Functions and Formulas</title>
     <exercises><exercise>
@@ -1230,6 +1236,8 @@
   </exercises></subsection>
   <subsection>
     <title>Function Models</title>
+    <subsubsection>
+    <title>Evaluating in Context</title>
     <p>
       For the following,
       evaluate and state your answers in ordinary English.
@@ -1279,7 +1287,10 @@
         </p>
       </solution>
     </exercise>
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Interpreting Function Notation</title>
+    <p>
       Give an interpretation in ordinary English for the following information given in function notation:
     </p>
     <exercises><exercise>
@@ -1323,7 +1334,10 @@
         </p>
       </solution>
     </exercise>
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Expressing in Function Notation</title>
+    <p>
       Express the following information using function notation.
     </p>
     <exercises><exercise>
@@ -1366,7 +1380,10 @@
         </p>
       </solution>
     </exercise>
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Relevant Domain and Range</title>
+    <p>
       For the following scenarios give the relevant domain and relevant range:
     </p>
     <exercises><exercise>
@@ -1411,7 +1428,8 @@
         </p>
       </solution>
     </exercise>
-  </exercises></subsection>
+  </exercises></subsubsection>
+  </subsection>
   <subsection>
     <title>Implicit Functions</title>
     <exercises><exercise>

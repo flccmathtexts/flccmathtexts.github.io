@@ -822,11 +822,16 @@
     <title>Exercises</title>
     <subsubsection>
       <title>Solutions to Equations</title>
+      <exercises>
+      <exercisegroup>
+      <title>Checking Solutions</title>
+      <introduction>
       <p>
         Determine which,
         if any, of the given values satisfy the given equations.
       </p>
-      <exercises><exercise>
+      </introduction>
+      <exercise>
         <statement>
           <p>
             <m>3x-7=8</m>; <m>x=1,2,3,4,\text{ or } 5</m>
@@ -864,11 +869,16 @@
           </p>
         </statement>
       </exercise>
-      </exercises><p>
+      </exercisegroup>
+      <exercisegroup>
+      <title>Applications</title>
+      <introduction>
+      <p>
         Answer each of the following questions based on the information given.
         Justify your answers.
       </p>
-      <exercises><exercise>
+      </introduction>
+      <exercise>
         <statement>
           <p>
             A technology sales rep quotes the costs for backup data storage systems using the formula
@@ -933,6 +943,7 @@
           </p>
         </statement>
       </exercise>
+      </exercisegroup>
     </exercises></subsubsection>
     <subsubsection>
       <title>Solving Equations Using the Balance Principle</title>

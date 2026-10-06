@@ -1016,12 +1016,16 @@
           </p>
         </statement>
       </exercise>
-      </exercises><p>
+      <exercisegroup>
+      <title>Evaluating in Context</title>
+      <introduction>
+      <p>
         <em>17-30:</em> Each of the following questions defines a function,
         and asks you to determine something based on that function.
         State your answers in ordinary English (i.e. without using function notation or mathematical jargon.) Where necessary round your answers to two decimal places.
       </p>
-      <exercises><exercise>
+      </introduction>
+      <exercise>
         <statement>
           <p>
             A club is planning a field trip to Washington D.C. The total cost of the trip is a function of the number of members who will be going,
@@ -1222,6 +1226,7 @@
           </p>
         </statement>
       </exercise>
+      </exercisegroup>
     </exercises></subsubsection>
     <subsubsection>
       <title>Interpreting Function Notation</title>
@@ -1308,11 +1313,15 @@
           </p>
         </statement>
       </exercise>
-      </exercises><p>
+      <exercisegroup>
+      <title>Expressing in Function Notation</title>
+      <introduction>
+      <p>
         <em>37-42:</em> Express the situation described in each of the following questions in function notation.
         Assume the name of the function is always <m>f(x)</m>.
       </p>
-      <exercises><exercise>
+      </introduction>
+      <exercise>
         <statement>
           <p>
             The dose of a medication a patient requires is a function of her weight.
@@ -1373,6 +1382,7 @@
           </p>
         </statement>
       </exercise>
+      </exercisegroup>
     </exercises></subsubsection>
     <subsubsection>
       <title>Relevant Domain and Range</title>

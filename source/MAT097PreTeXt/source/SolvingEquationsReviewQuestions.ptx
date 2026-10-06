@@ -2,6 +2,8 @@
   <title>Solving Equations Review Questions</title>
   <subsection>
     <title>Linear Equations</title>
+    <subsubsection>
+    <title>Checking Solutions</title>
     <p>
       Determine which,
       if any, of the given values satisfy the given equations.
@@ -66,10 +68,13 @@
         </p>
       </solution>
     </exercise>
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Solving for the Variable</title>
+    <p>
       Solve each of the following equations for the variable.
     </p>
-    
+
     <exercises><exercise>
       <statement>
         <p>
@@ -304,11 +309,14 @@
       </solution>
     </exercise>
     
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Identities and Contradictions</title>
+    <p>
       State whether the equation is an identity,
       contradiction, or neither.
     </p>
-    
+
     <exercises><exercise>
       <statement>
         <p>
@@ -348,10 +356,13 @@
       </solution>
     </exercise>
     
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Solving for One Variable in Terms of Another</title>
+    <p>
       Solve each of the following equations for the requested variable in terms of the other variable(s).
     </p>
-    
+
     <exercises><exercise>
       <statement>
         <p>
@@ -482,7 +493,8 @@
       </solution>
     </exercise>
     
-  </exercises></subsection>
+  </exercises></subsubsection>
+  </subsection>
   <subsection>
     <title>Second Degree Equations</title>
     <p>

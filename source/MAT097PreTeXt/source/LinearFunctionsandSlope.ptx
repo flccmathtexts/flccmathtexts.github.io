@@ -1137,13 +1137,16 @@
           
         </statement>
       </exercise>
-      </exercises><p>
+      <exercisegroup>
+      <introduction>
+      <p>
         25-38: if the answer is not a whole number,
         express your answer either as a decimal
         (rounded to two decimal places as needed)
         or a reduced fraction.
       </p>
-      <exercises><exercise>
+      </introduction>
+      <exercise>
         <statement>
           <p>
             Find the slope of the linear function whose graph passes through the points <m>(0,2)</m> and <m>(3,14)</m>.
@@ -1356,6 +1359,7 @@
           </p>
         </statement>
       </exercise>
+      </exercisegroup>
     </exercises></subsubsection>
     <subsubsection>
       <title>Grab Bag</title>

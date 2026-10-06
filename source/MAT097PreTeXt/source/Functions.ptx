@@ -1012,7 +1012,10 @@
           </p>
         </statement>
       </exercise>
-      </exercises><p>
+      <exercisegroup>
+      <title>Describing Functions from an Equation</title>
+      <introduction>
+      <p>
         In each of the following problems,
         two variables and the quantities they represent are given,
         and an equation relating these variables with a function is also given.
@@ -1040,7 +1043,8 @@
           </li>
         </ol>
       </p>
-      <exercises><exercise>
+      </introduction>
+      <exercise>
         <statement>
           <p>
             <m>h</m> is the number of minutes needed to walk to school at a given pace,
@@ -1230,6 +1234,7 @@
           </p>
         </statement>
       </exercise>
+      </exercisegroup>
     </exercises></subsubsection>
     <subsubsection>
       <title>Functions and Formulas</title>
@@ -1440,6 +1445,10 @@
     </exercises></subsubsection>
     <subsubsection>
       <title>Function Defined by Tables</title>
+      <exercises>
+      <exercisegroup>
+      <title>Lunch Special Prices</title>
+      <introduction>
       <p>
         Answer the following questions based on the table below,
         which gives the price of each lunch special as a function of the entree ordered.
@@ -1471,7 +1480,8 @@
           <cell><m>$7.50</m></cell>
         </row>
       </tabular>
-      <exercises><exercise>
+      </introduction>
+      <exercise>
         <statement>
           <p>
             Find <m>p(\text{ Szechuan tofu } )</m>,
@@ -1495,7 +1505,11 @@
           </p>
         </statement>
       </exercise>
-      </exercises><p>
+      </exercisegroup>
+      <exercisegroup>
+      <title>Height and Weight Guidelines</title>
+      <introduction>
+      <p>
         Answer the following questions based on the table below,
         which gives the weight in pounds at which a <m>35</m> year old man is considered
         <q>obese</q>
@@ -1528,7 +1542,8 @@
           <cell><m>221</m></cell>
         </row>
       </tabular>
-      <exercises><exercise>
+      </introduction>
+      <exercise>
         <statement>
           <p>
             Find <m>f(70)</m>,
@@ -1552,6 +1567,7 @@
           </p>
         </statement>
       </exercise>
+      </exercisegroup>
     </exercises></subsubsection>
     <subsubsection>
       <title>Domain and Range</title>
@@ -1672,14 +1688,12 @@
         </statement>
         <solution>
           <p>
-            Domain is all real numbers greater than or equal to 3, or <m>\{x \vert x \ge 3 \}</m>
+            Domain is all real numbers greater than or equal to 3, or <m>\{x \vert x \ge 3 \}</m>,
+            or <m>[3,\infty)</m>
           </p>
         </solution>
       </exercise>
-      </exercises><p>,
-        or <m>[3,\infty)</m>]
-      </p>
-      <exercises><exercise>
+      <exercise>
         <statement>
           <p>
             What is the domain of <m>f(t)=\sqrt{2t-5}</m>?

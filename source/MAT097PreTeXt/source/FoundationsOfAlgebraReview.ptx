@@ -2,11 +2,13 @@
   <title>Foundations of Algebra Review</title>
   <subsection>
     <title>Algebraic Expressions</title>
+    <subsubsection>
+    <title>Terms, Coefficients, and Literal Parts</title>
     <p>
       Determine the number of terms in the algebraic expression.
       For each term, state the coefficient and literal part.
     </p>
-    
+
     <exercises><exercise>
       <statement>
         <p>
@@ -232,10 +234,13 @@
       </solution>
     </exercise>
     
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Multiplying Monomials</title>
+    <p>
       Rewrite each of the following in simplified form.
     </p>
-    
+
     <exercises><exercise>
       <statement>
         <p>
@@ -496,10 +501,13 @@
       </solution>
     </exercise>
     
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Combining Like Terms</title>
+    <p>
       Simplify the following by combining like terms:
     </p>
-    
+
     <exercises><exercise>
       <statement>
         <p>
@@ -552,10 +560,13 @@
       </solution>
     </exercise>
     
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Simplifying Expressions</title>
+    <p>
       Simplify the following expressions
     </p>
-    
+
     <exercises><exercise>
       <statement>
         <p>
@@ -725,7 +736,8 @@
       </solution>
     </exercise>
     
-  </exercises></subsection>
+  </exercises></subsubsection>
+  </subsection>
   <subsection>
     <title>Exponents</title>
     <p>
@@ -982,10 +994,12 @@
   </exercises></subsection>
   <subsection>
     <title>Negative Exponents</title>
+    <subsubsection>
+    <title>Rewriting Negative Exponents</title>
     <p>
       Express each of the following without negative exponents.
     </p>
-    
+
     <exercises><exercise>
       <statement>
         <p>
@@ -1155,10 +1169,13 @@
       </solution>
     </exercise>
     
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Radicals to Fractional Exponents</title>
+    <p>
       Express each of the following using fractional exponents.
     </p>
-    
+
     <exercises><exercise>
       <statement>
         <p>
@@ -1237,10 +1254,13 @@
       </solution>
     </exercise>
     
-    </exercises><p>
+    </exercises></subsubsection>
+    <subsubsection>
+    <title>Fractional Exponents to Radicals</title>
+    <p>
       Express each of the following without fractional exponents.
     </p>
-    
+
     <exercises><exercise>
       <statement>
         <p>
@@ -1332,7 +1352,8 @@
       </solution>
     </exercise>
     
-  </exercises></subsection>
+  </exercises></subsubsection>
+  </subsection>
   <subsection>
     <title>Factoring</title>
     <p>
