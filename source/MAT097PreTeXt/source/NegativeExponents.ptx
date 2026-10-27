@@ -19,7 +19,13 @@
     <definition>
       <statement>
         <p>
-              <idx><h>Exponents</h><h>Negative</h></idx> <em><em>Negative Exponents</em></em>
+          <idx>
+            <h>Exponents</h>
+            <h>Negative</h>
+          </idx>
+          <em>
+            <em>Negative Exponents</em>
+          </em>
         </p>
         <p>
           We define
@@ -192,201 +198,186 @@
       </me>
     </p>
   </introduction>
-  <subsection>
+  <exercises>
     <title>Exercises</title>
-    <p>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
       Simplify each of the following.
       Express both with and without negative exponents.
     </p>
-    
-    <exercises><exercise>
-      <statement>
-        <p>
-          <m>3^{-2}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>3^{-2}=\frac{1}{9}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5^{-2}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{b^5}{b^{15}}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>b^{-5}=\frac{1}{b^5}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{1}{a^{-4}}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{c^{-9}}{c^2}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>c^{-11}=\frac{1}{c^{11}}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{2^{-3}}{2^{-5}}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2d^{-3}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>2d^{-3}=\frac{2}{d^3}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\left(2d\right)^{-3}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{3e^5}{15e^{-5}}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>5^{-1}e^{10}=\frac{e^{10}}{5}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{f^7f^{-3}}{f^{-6}}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{g^{-4}g^9}{g^{15}}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>g^{-5}=\frac{1}{g^5}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{-4h^{-2}j^{-6}}{16h^7j^{-10}}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{3}{4k^{-4}}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>3\cdot4^{-1}k^4 = \frac{3}{4}k^4</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{3k^{-4}}{4}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{1}{2m^{-4}}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>2^{-1}m^4=\frac{m^4}{2}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{1}{(2m)^{-4}}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>{\left(2n^{-3}\right)}^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>4n^{-6}=\frac{4}{n^6}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>{\left(2n^{-3}\right)}^{-2}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-  </exercises></subsection>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>3^{-2}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>3^{-2}=\frac{1}{9}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5^{-2}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{b^5}{b^{15}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>b^{-10}=\frac{1}{b^{10}}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{a^{-4}}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{c^{-9}}{c^2}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>c^{-11}=\frac{1}{c^{11}}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{2^{-3}}{2^{-5}}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2d^{-3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>2d^{-3}=\frac{2}{d^3}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\left(2d\right)^{-3}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3e^5}{15e^{-5}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>5^{-1}e^{10}=\frac{e^{10}}{5}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{f^7f^{-3}}{f^{-6}}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{g^{-4}g^9}{g^{15}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>g^{-10}=\frac{1}{g^{10}}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{-4h^{-2}j^{-6}}{16h^7j^{-10}}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3}{4k^{-4}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>3\cdot4^{-1}k^4 = \frac{3}{4}k^4</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3k^{-4}}{4}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{2m^{-4}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>2^{-1}m^4=\frac{m^4}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{(2m)^{-4}}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>{\left(2n^{-3}\right)}^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>4n^{-6}=\frac{4}{n^6}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>{\left(2n^{-3}\right)}^{-2}</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+  </exercises>
 </section>

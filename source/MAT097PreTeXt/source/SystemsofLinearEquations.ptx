@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <section xml:id="SystemsofLinearEquations">
   <title>Systems of Linear Equations</title>
   <introduction>
@@ -42,7 +43,9 @@
     </p>
     <p>
       A <em>system of linear equations, or linear system</em> ,
-          <idx><h>System of Linear Equations</h></idx>
+          <idx>
+        <h>System of Linear Equations</h>
+      </idx>
       is simply any collection of one or more linear equations.
       For example:
       <me>
@@ -75,7 +78,10 @@
     <p>
       A <em>simultaneous solution</em> to a linear system
       (sometimes just called a <em>solution</em>
-          <idx><h>System of Linear Equations</h><h>Solution</h></idx>
+      <idx>
+        <h>System of Linear Equations</h>
+        <h>Solution</h>
+      </idx>
       to the system)
       is any pair of values that satisfies all of the equations in the system.
       For example,
@@ -119,10 +125,10 @@
       <statement>
         <p>
           Menauhant Publishing Company has a contract that costs them a straight
-          <m>$80</m> per hour for computer support over the phone.
+          <m>\$80</m> per hour for computer support over the phone.
           They are considering switching to a new contract that would require them to pay an annual fee of
-          <m>$3,000</m> regardless of how much service they use,
-          but they would then only be charged <m>$50</m> per hour.
+          <m>\$3,000</m> regardless of how much service they use,
+          but they would then only be charged <m>\$50</m> per hour.
         </p>
       </statement>
     </example>
@@ -169,8 +175,9 @@
       we find the intersection of the two graphs:
     </p>
     <figure>
-      <caption>graph of <m>y=80x</m> and <m>y=50x+3000</m></caption>
-      <image width="92.5%" source="SystemsofLinearEquationsImages/Figure01.png" />
+      <caption>graph of <m>y=80x</m> and <m>y=50x+3000</m>
+      </caption>
+      <image width="92.5%" source="SystemsofLinearEquationsImages/Figure01.png"/>
     </figure>
     <p>
       (For discussion of how to find the appropriate window settings,
@@ -179,7 +186,7 @@
     <p>
       The solution to this system is <m>x=100</m> and <m>y=8000</m>.
       That is, the break even between these two contracts is <m>100</m> hours of computer support,
-      costing <m>$8000</m>. }
+      costing <m>\$8000</m>. }
     </p>
     <p>
       Solving a linear system graphically is basically the same as solving a linear equation graphically.
@@ -191,7 +198,9 @@
       The shortcoming of the approach to solving a linear system is that it requires us to have the equations already in a form that explicitly defines a linear function.
       The system in <xref ref="SystemsofLinearEquationsExample1">Example</xref>
       had both equations already set up in
-      <q><m>y=</m></q>
+      <q>
+        <m>y=</m>
+      </q>
       form.
       When the equations are set up to explicitly define a function,
       you are ready to go.
@@ -231,7 +240,7 @@
     </p>
     <figure>
       <caption>Graph to solve system</caption>
-      <image width="92.5%" source="SystemsofLinearEquationsImages/Figure02.png" />
+      <image width="92.5%" source="SystemsofLinearEquationsImages/Figure02.png"/>
     </figure>
     <p>
       And so we see that the intersection occurs at <m>(6,0)</m> and so conclude that this system's simultaneous solution is <m>x=6</m> and <m>y=0</m>. }
@@ -302,40 +311,40 @@
     </p>
     <tabular>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
         <cell>If the graphs:</cell>
         <cell>Then the linear system has:</cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
         <cell>Have one intersection</cell>
         <cell>One unique solution</cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
         <cell>Are parallel lines</cell>
         <cell>No solutions</cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
         <cell>Are the same line</cell>
         <cell>Infinitely many solutions</cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
     </tabular>
     <p>
@@ -347,7 +356,10 @@
           <em>Solving a Linear System Graphically</em>
         </p>
         <p>
-              <idx><h>System of Linear Equations</h><h>Graphical Solution</h></idx>
+          <idx>
+            <h>System of Linear Equations</h>
+            <h>Graphical Solution</h>
+          </idx>
           <ol>
             <li>
               <p>
@@ -440,7 +452,13 @@
     <definition>
       <statement>
         <p>
-              <idx><h>System of Linear Equations</h><h>Substitution Solution</h></idx> <em><em>Solving a Linear System by Substitution</em></em>
+          <idx>
+            <h>System of Linear Equations</h>
+            <h>Substitution Solution</h>
+          </idx>
+          <em>
+            <em>Solving a Linear System by Substitution</em>
+          </em>
           <ol>
             <li>
               <p>
@@ -645,13 +663,11 @@
       and add <m>3x+2y</m> to its left side,
       and <m>7</m> to its right:
     </p>
-    <tabular>
-      {c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c}
-      &amp; 5x &amp;+ &amp; 2y &amp; = &amp; 1
-      + &amp; (3x &amp;- &amp; 2y) &amp; &amp; +7
-      \hline
-      &amp; 8x &amp; + &amp; 0y &amp; = &amp; 8
-    </tabular>
+    <md>
+      <mrow>5x+2y \amp =1</mrow>
+      <mrow>3x-2y \amp =7</mrow>
+      <mrow>8x \amp =8</mrow>
+    </md>
     <p>
       So by doing this we've created a new equation where one of the variables (<m>y</m>) has been eliminated!
       The result is easily solved for the remaining variable:
@@ -698,13 +714,11 @@
       adding the left side of the bottom equation to the left side of the top,
       and the right side of the bottom to the right side of the top to get:
     </p>
-    <tabular>
-      {c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c}
-      &amp; 2p &amp; + &amp; 7q &amp; = &amp; 9
-      + &amp; (-2p &amp; - &amp; 6y) &amp; &amp; (-10)
-      \hline
-      &amp;  &amp;  &amp; q &amp; = &amp; -1
-    </tabular>
+    <md>
+      <mrow>2p+7q \amp =9</mrow>
+      <mrow>-2p-6q \amp =-10</mrow>
+      <mrow>q \amp =-1</mrow>
+    </md>
     <p>
       So the value of <m>q</m> actually falls out here beautifully.
       Plugging it back into either of the original equations we can solve for <m>p</m>,
@@ -727,7 +741,13 @@
     <definition>
       <statement>
         <p>
-              <idx><h>System of Linear Equations</h><h>Elimination Solution</h></idx> <em><em>Solving a Linear System by Elimination</em></em>
+          <idx>
+            <h>System of Linear Equations</h>
+            <h>Elimination Solution</h>
+          </idx>
+          <em>
+            <em>Solving a Linear System by Elimination</em>
+          </em>
           <ol>
             <li>
               <p>
@@ -796,13 +816,11 @@
       </me>
       and now we add the corresponding sides of the system to get:
     </p>
-    <tabular>
-      {c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c@{<nbsp />}c}
-      &amp; 40p &amp; - &amp; 56q &amp; = &amp; 112
-      + &amp; 84p &amp; + &amp; 56q) &amp; &amp; -112
-      \hline
-      &amp; 124p &amp;  &amp;  &amp; = &amp; 0
-    </tabular>
+    <md>
+      <mrow>40p-56q \amp =112</mrow>
+      <mrow>84p+56q \amp =-112</mrow>
+      <mrow>124p \amp =0</mrow>
+    </md>
     <p>
       which we now solve to conclude that:
       <me>
@@ -930,151 +948,153 @@
     <title>Exercises</title>
     <subsubsection>
       <title>Linear Systems and their Solutions</title>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             Determine whether or not each of the given input-output pairs is a solution to the linear system.
             <me>
               \begin{cases}x+3y=5\\x-2y=0 \end{cases}
             </me>
-            <ol marker="a">
-              <li>
-                <p>
-                  <m>x=5</m>, <m>y=0</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>x=2</m>, <m>y=1</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>x=1</m>, <m>y=1</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>x=3</m>, <m>y=-1</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
+              <ol marker="a">
+                <li>
+                  <p>
+                    <m>x=5</m>, <m>y=0</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>x=2</m>, <m>y=1</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>x=1</m>, <m>y=1</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>x=3</m>, <m>y=-1</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
             a,c, and d are not; b is
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Determine whether or not each of the given input-output pairs is a solution to the linear system.
             <me>
               \begin{cases}2x+3y=11\\x-5y=25 \end{cases}
             </me>
-            <ol marker="a">
-              <li>
-                <p>
-                  <m>x=10</m>, <m>y=3</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>x=-10</m>, <m>y=7</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>x=-10</m>, <m>y=-7</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>x=10</m>, <m>y=-3</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+              <ol marker="a">
+                <li>
+                  <p>
+                    <m>x=10</m>, <m>y=3</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>x=-10</m>, <m>y=7</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>x=-10</m>, <m>y=-7</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>x=10</m>, <m>y=-3</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Ticket prices for a play cost
-            <m>$15</m> for kids under 12 and <m>$25</m> for everyone else.
-            Two hundred tickets were sold for a total of <m>$4200</m>.
+            <m>\$15</m> for kids under 12 and <m>\$25</m> for everyone else.
+            Two hundred tickets were sold for a total of <m>\$4200</m>.
             Let <m>k</m> be the number of kids' tickets and let <m>a</m> be the number of regular tickets sold.
             Based on this information,
             the number of tickets sold must satisfy the equations <m>k+a=200</m> and <m>15k+25a=4200</m>.
             Which of the following could be the number of each type ticket sold?
             <ol marker="a">
-              <li>
-                <p>
-                  <m>50</m> kids tickets and <m>150</m> regular
+                <li>
+                  <p>
+                    <m>50</m> kids tickets and <m>150</m> regular
                 </p>
-              </li>
-              <li>
-                <p>
-                  <m>100</m> of each type of ticket
+                </li>
+                <li>
+                  <p>
+                    <m>100</m> of each type of ticket
                 </p>
-              </li>
-              <li>
-                <p>
-                  <m>80</m> kids tickets and <m>120</m> regular
+                </li>
+                <li>
+                  <p>
+                    <m>80</m> kids tickets and <m>120</m> regular
                 </p>
-              </li>
-              <li>
-                <p>
-                  <m>80</m> regular and <m>120</m> kids tickets.
+                </li>
+                <li>
+                  <p>
+                    <m>80</m> regular and <m>120</m> kids tickets.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
             c is possible; a, b, and d are not
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Ticket prices for a play cost
-            <m>$10</m> for kids under <m>12</m> and <m>$25</m> for everyone else.
-            Two hundred tickets were sold for a total of <m>$3500</m>.
+            <m>\$10</m> for kids under <m>12</m> and <m>\$25</m> for everyone else.
+            Two hundred tickets were sold for a total of <m>\$3500</m>.
             Let <m>k</m> be the number of kids' tickets and let <m>a</m> be the number of regular tickets sold.
             Based on this information,
             the number of tickets sold must satisfy the equations <m>k+a=200</m> and <m>10k+25a=3500</m>.
             Which of the following could be the number of each type ticket sold?
             <ol marker="a">
-              <li>
-                <p>
-                  <m>50</m> kids tickets at <m>150</m> regular
+                <li>
+                  <p>
+                    <m>50</m> kids tickets at <m>150</m> regular
                 </p>
-              </li>
-              <li>
-                <p>
-                  <m>100</m> of each type of ticket
+                </li>
+                <li>
+                  <p>
+                    <m>100</m> of each type of ticket
                 </p>
-              </li>
-              <li>
-                <p>
-                  <m>80</m> kids tickets and <m>120</m> regular
+                </li>
+                <li>
+                  <p>
+                    <m>80</m> kids tickets and <m>120</m> regular
                 </p>
-              </li>
-              <li>
-                <p>
-                  <m>80</m> regular and <m>120</m> kids tickets.
+                </li>
+                <li>
+                  <p>
+                    <m>80</m> regular and <m>120</m> kids tickets.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Solving Linear Systems Graphically</title>
       <p>
@@ -1082,83 +1102,85 @@
         When necessary,
         express your final answers either with fractions in lowest terms or decimals rounded to two places.
       </p>
-      <exercises><exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}y=3x+2\\y=5x-2 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>x=2</m> and <m>y=8</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}y=-2x+2\\y=7x-7 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}x+y=5\\8x-2y=0 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>x=1</m> and <m>y=4</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}4y-x=8\\2y+4x=13 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}3M-2N=16\\8M+2N=6 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>M=2</m> and <m>N=-5</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}3K+5E=9\\2K-11E=6 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}4x+2y=0\\6x=5-3y \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}y=3x+2\\y=5x-2 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>x=2</m> and <m>y=8</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}y=-2x+2\\y=7x-7 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}x+y=5\\8x-2y=0 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>x=1</m> and <m>y=4</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}4y-x=8\\2y+4x=13 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}3M-2N=16\\8M+2N=6 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>M=2</m> and <m>N=-5</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}3K+5E=9\\2K-11E=6 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}4x+2y=0\\6x=5-3y \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             No solutions
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}F-3G=5\\2F=6G+10 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}F-3G=5\\2F=6G+10 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Solving Linear Systems by Substitution</title>
       <p>
@@ -1166,83 +1188,85 @@
         When necessary,
         express your final answers either with fractions in lowest terms or decimals rounded to two places.
       </p>
-      <exercises><exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}3x-7y=2\\y=2x-5 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>x=3</m> and <m>y=1</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}2y-5x=21\\y=x-2 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}R=4S-3\\2R-6S=-42 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>R=-75</m> and <m>S=-18</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}z=5y+1\\ 24=2z-4y \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}3t+2p=9\\2t+2p=16 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>t=-7</m> and <m>p=15</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}6h+2q=10\\7h-3q=1 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}15t-6w=36\\5t=12+2w \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}3x-7y=2\\y=2x-5 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>x=3</m> and <m>y=1</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}2y-5x=21\\y=x-2 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}R=4S-3\\2R-6S=-42 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>R=-75</m> and <m>S=-18</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}z=5y+1\\ 24=2z-4y \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}3t+2p=9\\2t+2p=16 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>t=-7</m> and <m>p=15</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}6h+2q=10\\7h-3q=1 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}15t-6w=36\\5t=12+2w \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             identity; infinitely many solutions
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}3x-4z=13\\12z-9x=9 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}3x-4z=13\\12z-9x=9 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Solving Linear Systems by Elimination</title>
       <p>
@@ -1250,239 +1274,243 @@
         When necessary,
         express your final answers either with fractions in lowest terms or decimals rounded to two places.
       </p>
-      <exercises><exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}3x-5y=11\\4x+5y=3 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>x=2</m> and <m>y=-1</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}2x+9y=5\\-2x-7y=3 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}2x+5y=11\\x-3y=0 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>x=3</m> and <m>y=1</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}3x-2y=5\\x+5y=7 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}5y-4x=18\\10y-8x=36 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}3x-5y=11\\4x+5y=3 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>x=2</m> and <m>y=-1</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}2x+9y=5\\-2x-7y=3 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}2x+5y=11\\x-3y=0 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>x=3</m> and <m>y=1</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}3x-2y=5\\x+5y=7 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}5y-4x=18\\10y-8x=36 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             identity; infinitely many solutions
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}x+3y=7\\2x+6y=14 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}3A+5B=2\\4A+8B=0 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>A=4</m> and <m>B=-2</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}9t-4p=7\\-5t+6p=1 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}12z+11t=19\\30z+8t=25 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>t=\frac{45}{39}</m> and <m>z\frac{41}{78}</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}15p-36q=0\\12p-17q=25 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}x+3y=7\\2x+6y=14 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}3A+5B=2\\4A+8B=0 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>A=4</m> and <m>B=-2</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}9t-4p=7\\-5t+6p=1 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}12z+11t=19\\30z+8t=25 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>t=\frac{45}{39}</m> and <m>z=\frac{41}{78}</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}15p-36q=0\\12p-17q=25 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Strategies for Solving Linear Systems</title>
       <p>
         Decide which solution method you feel would be the best approach to solving each of the following linear systems.
         You do not need to actually solve them.
       </p>
-      <exercises><exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}3x+2y=11\\2x-7y=9 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}3x+2y=11\\2x-7y=9 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             elimination is probably the best
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}3x-7y=15\\x=2+y \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}y=3x-5\\y=x+2 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}3x-7y=15\\x=2+y \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}y=3x-5\\y=x+2 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             any of the three methods would be fine;
             graphing and substitution are probably the best
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}100x-30y=500\\40x+45y=800 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}5x+8p=15\\x-2p=8 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}100x-30y=500\\40x+45y=800 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}5x+8p=15\\x-2p=8 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             elimination would probably be the best choice,
             but substitution would also work well
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}p=2m-1\\p=11-6m \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}6t-8p=5\\p=3t+1 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}p=2m-1\\p=11-6m \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}6t-8p=5\\p=3t+1 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             substitution since the second equation is already solved for one of the variables
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}t=5k+1\\16t-11k=8 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}J=3K+9\\3J+11K=-6 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}t=5k+1\\16t-11k=8 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}J=3K+9\\3J+11K=-6 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             substitution since the first equation is already solved for one of the variables
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}r-3(s+2)=11\\5r-3s=8-2r \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}N-3M=19\\N+4M=17 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}r-3(s+2)=11\\5r-3s=8-2r \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}N-3M=19\\N+4M=17 \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             elimination would be a very good choice,
             but either substitution or graphing would also work well.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}3f+9p=0\\5f-2p=7 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\begin{cases}x=4y-1\\x=5-2y \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}3f+9p=0\\5f-2p=7 \end{cases}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>\begin{cases}x=4y-1\\x=5-2y \end{cases}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             any of the three methods would be fine,
             but graphing or substitution would probably be best
           </p>
-        </solution>
-      </exercise>
-    </exercises></subsubsection>
+          </solution>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Grab Bag</title>
       <p>
@@ -1491,66 +1519,67 @@
         When necessary,
         express your final answers either with fractions in lowest terms or decimals rounded to two places.
       </p>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             Solve <m>\begin{cases}3t-11p=22\\6t-5p=10 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Solve <m>\begin{cases}5x+y=16\\x=11y-8 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>x=3</m> and <m>y=1</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>x=3</m> and <m>y=1</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Solve <m>\begin{cases}2x+5y=20\\2x=y+8 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Solve <m>\begin{cases}x=3y+1\\x=4y-2 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>x=10</m> and <m>y=3</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>x=10</m> and <m>y=3</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Solve <m>\begin{cases}h=9-2t\\h=t+1 \end{cases}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Solve <m>\begin{cases}6x+2y=22\\5x+3y=45 \end{cases}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <m>x=-3</m> and <m>y=20</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>x=-3</m> and <m>y=20</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             An office manager needs to buy software licenses.
             The vendor only sells licenses in packs.
             A
@@ -1560,82 +1589,82 @@
             <q>Analyst Pack</q>
             includes <m>12</m> spreadsheet and <m>8</m> word processing licenses.
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   Let <m>P</m> be the number of Professional Packs he buys,
                   and let <m>A</m> be the number of Analyst Packs he buys.
                   Write an algebraic expression which gives the number of spreadsheet licenses he would receive.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   Using the same variables as in <m>(a)</m> write an algebraic expression which gives the number of word processing licenses he would receive.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   Suppose he needs <m>200</m> spreadsheet licenses and <m>240</m> word processing licenses.
                   Use your answers to <m>(a)</m> and <m>(b)</m> together with this information to write two equations.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   Solve the linear system you got from <m>(c)</m>.
                   How many of each type of license pack should the office manager order?
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Tim has just gone on the SuperCarboStarver Diet.
             He must plan his meals to precisely contain the exact amounts of fat and protein that the diet calls for.
             He has two types of food to eat for lunch.
             Each serving of B-B-Q pork rinds contains <m>5</m> grams of fat and <m>2</m> gram of protein.
             Each Teriyaki Turkey Jurkey Stick contains <m>2</m> grams of fat at <m>6</m> grams of protein.
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   Let <m>P</m> be the number of servings of pork rinds he will eat,
                   and let <m>J</m> be the number of turkey jurkey sticks.
                   Write an algebraic expression which gives the number of grams of fat he will get from his meal.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   Using the same variables as in <m>(a)</m> write an algebraic expression for the number of grams of protein he will get.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   Suppose that according to his diet he should eat <m>20</m> grams of fat and <m>34</m> grams of protein for dinner.
                   Use your answers to <m>(a)</m> and <m>(b)</m> together with this information two write as system of two equations.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   Solve the linear system you got from <m>(c)</m>.
                   What should Tim have for dinner?
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
             a. <m>5P+2J</m> b.
             <m>2P+6J</m> c.
             <m>\begin{cases}5P+2J=20\\2P+6J=34 \end{cases}</m> d. a green salad and a diet sprite.
             But according to this linear system he should have 5 turkey jurkey sticks and two servings of pork rinks.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Katrina set out to solve the linear system:
             <me>
               \begin{cases}2x-y=7\\3x+2y=28 \end{cases}
@@ -1647,18 +1676,19 @@
             </me>
             and then substituted to get:
             <md>
-              <mrow>2x-y\amp =7</mrow>
-              <mrow>2x-(2x-7)\amp =7</mrow>
-              <mrow>7=7</mrow>
-            </md>
+                <mrow>2x-y\amp =7</mrow>
+                <mrow>2x-(2x-7)\amp =7</mrow>
+                <mrow>7=7</mrow>
+              </md>
             and so, she concluded, since this is an identity,
             that the linear system has infinitely many solutions.
             However, the correct answer is that this system has only one solution,
             <m>x=6</m> and <m>y=5</m>.
             Where did she go wrong?
           </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
   </subsection>
 </section>

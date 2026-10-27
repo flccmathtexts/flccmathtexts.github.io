@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <section xml:id="OrderofOperations">
   <title>Order of Operations</title>
   <introduction>
@@ -45,63 +46,102 @@
     <definition>
       <statement>
         <p>
-              <idx><h>Order of Operations</h></idx> <em><em>Order of Operations</em></em>
+          <idx>
+            <h>Order of Operations</h>
+          </idx>
+          <em>
+            <em>Order of Operations</em>
+          </em>
         </p>
         <tabular>
+          <col width="27.0%"/>
+          <col width="63.0%"/>
           <row bottom="minor">
-            <cell />
-            <cell />
+            <cell/>
+            <cell/>
           </row>
           <row>
-            <cell>Operations</cell>
-            <cell>What to Do</cell>
+            <cell>
+              <p>Operations</p>
+            </cell>
+            <cell>
+              <p>What to Do</p>
+            </cell>
           </row>
           <row bottom="minor">
-            <cell />
-            <cell />
+            <cell/>
+            <cell/>
           </row>
           <row>
-            <cell>Parenthesis</cell>
-            <cell>Any operations inside of parentheses must be done before any operations outside of parentheses.  What is inside of the parentheses takes priority over every other operation.</cell>
+            <cell>
+              <p>Parenthesis</p>
+            </cell>
+            <cell>
+              <p>Any operations inside of parentheses must be done before any operations outside of parentheses.  What is inside of the parentheses takes priority over every other operation.</p>
+            </cell>
           </row>
           <row bottom="minor">
-            <cell />
-            <cell />
+            <cell/>
+            <cell/>
           </row>
           <row>
-            <cell>Exponents</cell>
-            <cell>Exponents are evaluated before any other operation</cell>
+            <cell>
+              <p>Exponents</p>
+            </cell>
+            <cell>
+              <p>Exponents are evaluated before any other operation</p>
+            </cell>
           </row>
           <row bottom="minor">
-            <cell />
-            <cell />
+            <cell/>
+            <cell/>
           </row>
           <row>
-            <cell>Multiplication and Division</cell>
-            <cell>Multiplications and divisions are done next. If there is more than one to do, work from left to right.</cell>
+            <cell>
+              <p>Multiplication and Division</p>
+            </cell>
+            <cell>
+              <p>Multiplications and divisions are done next. If there is more than one to do, work from left to right.</p>
+            </cell>
           </row>
           <row bottom="minor">
-            <cell />
-            <cell />
+            <cell/>
+            <cell/>
           </row>
           <row>
-            <cell>Addition and Subtraction</cell>
-            <cell>Lastly do additions and subtractions. If there is more than one to do, work from left to right.</cell>
+            <cell>
+              <p>Addition and Subtraction</p>
+            </cell>
+            <cell>
+              <p>Lastly do additions and subtractions. If there is more than one to do, work from left to right.</p>
+            </cell>
           </row>
           <row bottom="minor">
-            <cell />
-            <cell />
+            <cell/>
+            <cell/>
           </row>
         </tabular>
       </statement>
     </definition>
     <p>
       The order can be remembered using the acronym <em>PEMDAS</em>
-      (for <em><em>P</em></em>arentheses,
-      <em><em>E</em></em>xponents,
-      <em><em>M</em></em>ultiplication and
-      <em><em>D</em></em>ivision,
-      <em><em>A</em></em>ddition and <em><em>S</em></em>ubtraction).
+      (for <em>
+        <em>P</em>
+      </em>arentheses,
+      <em>
+        <em>E</em>
+      </em>xponents,
+      <em>
+        <em>M</em>
+      </em>ultiplication and
+      <em>
+        <em>D</em>
+      </em>ivision,
+      <em>
+        <em>A</em>
+      </em>ddition and <em>
+        <em>S</em>
+      </em>ubtraction).
     </p>
     <p>
       Given this order,
@@ -137,40 +177,42 @@
       A few examples will further illustrate.
     </p>
     <algorithm xml:id="OrderofOperationsExample1">
-        <statement>
-            <p>
-                <em>Evaluate <m>4-2^3+7(2-3)</m></em>
-            </p>
-            <p>
+      <statement>
+        <p>
+          <em>Evaluate <m>4-2^3+7(2-3)</m>
+          </em>
+        </p>
+        <p>
                 Following order of operations we will (a) do what is inside parentheses,
                 then (b) apply the exponent,
                 then (c) multiply, and then (d) add and subtract, left to right:
                 <md>
-                    <mrow>4-2^3+7(2-3) \amp = 4-2^3+7(-1)</mrow>
-                    <mrow>\amp = 4-8+7(-1)</mrow>
-                    <mrow>\amp = 4-8-7</mrow>
-                    <mrow>\amp = -4-7</mrow>
-                    <mrow>\amp = -11</mrow>
-                </md>
-            </p>
-        </statement>
+            <mrow>4-2^3+7(2-3) \amp = 4-2^3+7(-1)</mrow>
+            <mrow>\amp = 4-8+7(-1)</mrow>
+            <mrow>\amp = 4-8-7</mrow>
+            <mrow>\amp = -4-7</mrow>
+            <mrow>\amp = -11</mrow>
+          </md>
+        </p>
+      </statement>
     </algorithm>
     <algorithm xml:id="OrderofOperationsExample2">
-        <statement>
-            <p>
-                <em>Evaluate <m>(5-2)^3+7(2)-3</m></em>
-            </p>
-            <p>
+      <statement>
+        <p>
+          <em>Evaluate <m>(5-2)^3+7(2)-3</m>
+          </em>
+        </p>
+        <p>
                 We again follow order of operations:
                 <md>
-                    <mrow>(5-2)^3+7(2)-3 \amp = (3)^3+7(2)-3</mrow>
-                    <mrow>\amp = 27+7(2)-3</mrow>
-                    <mrow>\amp = 27+14-3</mrow>
-                    <mrow>\amp = 41-3</mrow>
-                    <mrow>\amp = 38</mrow>
-                </md>
-            </p>
-        </statement>
+            <mrow>(5-2)^3+7(2)-3 \amp = (3)^3+7(2)-3</mrow>
+            <mrow>\amp = 27+7(2)-3</mrow>
+            <mrow>\amp = 27+14-3</mrow>
+            <mrow>\amp = 41-3</mrow>
+            <mrow>\amp = 38</mrow>
+          </md>
+        </p>
+      </statement>
     </algorithm>
     <p>
       You may wonder why the order of operations is what it is.
@@ -218,16 +260,17 @@
       </p>
       <algorithm xml:id="OrderofOperationsExample3">
         <statement>
-            <p>
-                <em>Evaluate <m>20 \div 4 * 3</m></em>
-            </p>
-            <p>
+          <p>
+            <em>Evaluate <m>20 \div 4 * 3</m>
+            </em>
+          </p>
+          <p>
                 We carry out the division and then the multiplication since this is how they appear from left to right in the expression:
                 <md>
-                    <mrow>20 \div 4 * 3 \amp = 5 * 3</mrow>
-                    <mrow>\amp = 15</mrow>
-                </md>
-            </p>
+              <mrow>20 \div 4 * 3 \amp = 5 * 3</mrow>
+              <mrow>\amp = 15</mrow>
+            </md>
+          </p>
         </statement>
       </algorithm>
     </subsubsection>
@@ -245,25 +288,26 @@
       </p>
       <algorithm xml:id="OrderofOperationsExample4">
         <statement>
-            <p>
-                <em>Evaluate <m>4-2[7-3(4+2)^2]</m></em>
-            </p>
-            <p>
+          <p>
+            <em>Evaluate <m>4-2[7-3(4+2)^2]</m>
+            </em>
+          </p>
+          <p>
                 Recall that the different shapes [ ] and ( ) for the parentheses have no significance; 
                 the different shapes are just used to make the expression easier to read.
             </p>
-            <p>
+          <p>
                 Looking at the expression overall, we need to do what is inside the [ ] parentheses first. 
                 Once inside those parentheses, what do we do first? We do what is inside the ( ) parentheses of course!
                 <md>
-                    <mrow>4-2[7-3(4+2)^2] \amp = 4-2[7-3(6)^2]</mrow>
-                    <mrow>\amp = 4-2[7-3(36)]</mrow>
-                    <mrow>\amp = 4-2[7-108]</mrow>
-                    <mrow>\amp = 4-2[-101]</mrow>
-                    <mrow>\amp = 4+202</mrow>
-                    <mrow>\amp = 206</mrow>
-                </md>
-            </p>
+              <mrow>4-2[7-3(4+2)^2] \amp = 4-2[7-3(6)^2]</mrow>
+              <mrow>\amp = 4-2[7-3(36)]</mrow>
+              <mrow>\amp = 4-2[7-108]</mrow>
+              <mrow>\amp = 4-2[-101]</mrow>
+              <mrow>\amp = 4+202</mrow>
+              <mrow>\amp = 206</mrow>
+            </md>
+          </p>
         </statement>
       </algorithm>
     </subsubsection>
@@ -313,17 +357,18 @@
       </p>
       <algorithm xml:id="OrderofOperationsExample5">
         <statement>
-            <p>
-                <em>Evaluate <m>-5^2+(-3)^2-(-4^2)</m></em>
-            </p>
-            <p>
+          <p>
+            <em>Evaluate <m>-5^2+(-3)^2-(-4^2)</m>
+            </em>
+          </p>
+          <p>
                 Using the discussion above on exponents and signs:
                 <md>
-                    <mrow>-5^2+(-3)^2-(-4^2) \amp = -25+9 -(-16)</mrow>
-                    <mrow>\amp = -25+9+16</mrow>
-                    <mrow>\amp = 0</mrow>
-                </md>
-            </p>
+              <mrow>-5^2+(-3)^2-(-4^2) \amp = -25+9 -(-16)</mrow>
+              <mrow>\amp = -25+9+16</mrow>
+              <mrow>\amp = 0</mrow>
+            </md>
+          </p>
         </statement>
       </algorithm>
     </subsubsection>
@@ -334,15 +379,16 @@
       </p>
       <algorithm xml:id="OrderofOperationsExample6">
         <statement>
-            <p>
-                <em>Evaluate <m>\displaystyle \frac{30-16}{4+3}</m></em>
-            </p>
-            <p>
+          <p>
+            <em>Evaluate <m>\displaystyle \frac{30-16}{4+3}</m>
+            </em>
+          </p>
+          <p>
                 We evaluate the numerator and denominator before carrying out the division:
                 <me>
                     \frac{30-16}{4+3}=\frac{14}{7}=2
                 </me>
-            </p>
+          </p>
         </statement>
       </algorithm>
       <p>
@@ -393,15 +439,16 @@
       </p>
       <algorithm xml:id="OrderofOperationsExample7">
         <statement>
-            <p>
-                <em>Evaluate <m>\displaystyle \frac{4+|5-13|}{\sqrt{7+2}+1}</m></em>
-            </p>
-            <p>
+          <p>
+            <em>Evaluate <m>\displaystyle \frac{4+|5-13|}{\sqrt{7+2}+1}</m>
+            </em>
+          </p>
+          <p>
                 Following order of operations, we have:
                 <me>
                     \frac{4+|5-13|}{\sqrt{7+2}+1}=\frac{4+|-8|}{\sqrt{9}+1}=\frac{4+8}{3+1}=\frac{12}{4}=3
                 </me>
-            </p>
+          </p>
         </statement>
       </algorithm>
     </subsubsection>
@@ -433,11 +480,15 @@
     <p>
       Suppose you need to square the number <m>3</m>.
       You type
-      <q><m>3 ^\wedge 2</m></q>
+      <q>
+        <m>3 ^\wedge 2</m>
+      </q>
       into your calculator and get the correct answer, <m>9</m>.
       But now suppose you need to square <m>-3</m>.
       You type
-      <q><m>-3 ^\wedge 2</m></q>
+      <q>
+        <m>-3 ^\wedge 2</m>
+      </q>
       into your calculator just as you did with <m>3</m>.
       But since your calculator follows order of operations,
       it will interpret this according to those rules,
@@ -446,28 +497,34 @@
       If you want to square <m>-3</m>,
       you need to insert parentheses to tell the calculator that is what you mean.
       So you need to enter:
-      <q><m>(-3) ^\wedge 2</m></q>
+      <q>
+        <m>(-3) ^\wedge 2</m>
+      </q>
       to arrive at the correct result.
     </p>
     <p>
       Implied groupings are also an issue with the calculator as the following example will illustrate.
     </p>
     <algorithm xml:id="OrderofOperationsExample8">
-        <statement>
-            <p>
+      <statement>
+        <p>
                 To evaluate <m>\displaystyle \frac{8+10}{5-3}</m> Jessie typed
-                <q><m>8+10/5-3</m></q>
+                <q>
+            <m>8+10/5-3</m>
+          </q>
                 into her calculator, and got an answer of 7.
                 This is not the correct answer.
                 What went wrong and how do we correct it?
             </p>
-        </statement>
-      </algorithm>
+      </statement>
+    </algorithm>
     <p>
       When we as human beings see the <m>8+10</m> written as a numerator and <m>5-3</m> as the denominator,
       we understand that there is an implied grouping at work.
       But when she typed
-      <q><m>8+10/5-3</m></q>, the machine had no way of knowing about that grouping,
+      <q>
+        <m>8+10/5-3</m>
+      </q>, the machine had no way of knowing about that grouping,
       and so it followed order of operations,
       dividing before adding and subtracting:
       <me>
@@ -476,7 +533,9 @@
     </p>
     <p>
       To correct this, Jessie needs to insert those implied parentheses into what she types into the calculator:
-      <q><m>(8+10)/(5-3)</m></q>. The calculator will then do what was intended:
+      <q>
+        <m>(8+10)/(5-3)</m>
+      </q>. The calculator will then do what was intended:
       <me>
         (8+10)/(5-3)=18/2=9
       </me>
@@ -491,29 +550,32 @@
       The next example will illustrate.
     </p>
     <algorithm xml:id="OrderofOperationsExample9">
-        <statement>
-            <p>
-                <em>Evaluate <m>\displaystyle \frac{-5+2(3-1)^2}{7+4(3^2-5)}</m></em>
-            </p>
-            <p>
+      <statement>
+        <p>
+          <em>Evaluate <m>\displaystyle \frac{-5+2(3-1)^2}{7+4(3^2-5)}</m>
+          </em>
+        </p>
+        <p>
                 To enter this into the calculator all at once, 
                 you would need to insert the implied parentheses, and then enter: 
-                <q><m>(-5+2(3-1) ^\wedge 2)/(7+4(3 ^\wedge 2-5))</m></q>.
+                <q>
+            <m>(-5+2(3-1) ^\wedge 2)/(7+4(3 ^\wedge 2-5))</m>
+          </q>.
             </p>
-            <p>
+        <p>
                 That works, but it is such a long entry that it would be easy to make a typo entering it, 
                 and hard to notice that it happened. It might be better to evaluate the numerator and denominator separately, 
                 and then divide the results:
                 <md>
-                    <mrow>-5+2(3-1) ^\wedge 2 \amp = 3</mrow>
-                    <mrow>7+4(3 ^\wedge 2-5) \amp = 23</mrow>
-                </md>
-            </p>
-            <p>
+            <mrow>-5+2(3-1) ^\wedge 2 \amp = 3</mrow>
+            <mrow>7+4(3 ^\wedge 2-5) \amp = 23</mrow>
+          </md>
+        </p>
+        <p>
                 The final answer then is <m>3/23</m>. 
                 Dividing this and rounding to 4 decimal places gives a final answer of <m>0.1304</m>.
             </p>
-        </statement>
+      </statement>
     </algorithm>
     <p>
       There is another advantage to doing the top and bottom separately.
@@ -529,2415 +591,2233 @@
       In general we won't worry about these sorts of discrepancies. }
     </p>
   </subsection>
-  <subsection>
+  <exercises>
     <title>Exercises</title>
-    
-    <exercises><exercise>
-      <statement>
-        <p>
-          <m>3+5-2+4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>10</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>6-2+7-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2+8-4+3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>9</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5-1+4-2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>7+3-2-6</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>2</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>6-3+2-1-7</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-2-3-6</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-3</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>9-2-1-4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+6-1+5-2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>11</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>4-2+6-1+3</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+6-1+5-2-4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>7</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-5)-2+4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)-2+7-1</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-2</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2+(-8)-4+3</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)-1+4-2+6</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>2</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>7+3-(-2)+5-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)-3+2-1+4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-4</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8+2-(-3)+4-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-9)-2+1-4+3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-11</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-6)-1+5-2+4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-5)\times2-4+7</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-4</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)\times3+6-2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2-7+(-3)\times4+5</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-12</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>6-(-2)\times3+4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-3)\times4+2-1\times7</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-17</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-3)\times2+5</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-2)\times3+4-5\times2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-12</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-4)\times2-(-1)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)+2\times3-4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-4</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)\times2+7-3</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>4-(-3)+2\times5</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>17</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3\times(-2)+4+6</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-7)+3\times(-2)-1</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-14</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5\times(-2)-3+7</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)\times2+6-(-3)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>1</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-2)+5\times(-1)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)\times2+7-3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-8</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-2)\times4-(-1)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)\times2+4+(-3)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-9</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2\times(-3)+5-(-2)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-5)\cdot2-4+7-(-2)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-2</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)\cdot3+6-2+1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2-7+(-3)\cdot4+5\cdot(-2)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-27</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>6-(-2)\cdot3+4-(-1)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-3)\cdot4+2-1\cdot7-3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-20</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-3)\cdot2+5-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-2)\cdot3+4-5\cdot2+3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-9</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-4)\cdot2-(-1)\cdot2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)+2\cdot3-4-1</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-5</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)\cdot2+7-3-2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>4-(-3)+2\cdot5+1</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>18</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3\cdot(-2)+4+6+2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-7)+3\cdot(-2)-1+3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-11</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5\cdot(-2)-3+7-4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)\cdot2+6-(-3)-2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-1</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-2)+5\cdot(-1)+1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)\cdot2+7-3-4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-12</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-2)\cdot4-(-1)\cdot2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)\cdot2+4+(-3)\cdot2+2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-10</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2\cdot(-3)+5-(-2)-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-5)(2)-4+7-(-2)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-2</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)(3)+6-2+1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2-7+(-3)(4)+5(-2)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-27</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>6-(-2)(3)+4-(-1)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-3)(4)+2-1(7)-3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-27</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-3)(2)+5-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-2)(3)+4-5(2)+3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-9</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-4)(2)-(-1)(2)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)+2(3)-4-1</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-5</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)(2)+7-3-2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>4-(-3)+2(5)+1</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>18</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3(-2)+4+6+2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-7)+3(-2)-1+3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>18</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5(-2)-3+7-4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)(2)+6-(-3)-2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-11</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-2)+5(-1)+1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)(2)+7-3-4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-12</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-2)(4)-(-1)(2)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)(2)+4+(-3)(2)+2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-10</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2(-3)+5-(-2)-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-5)\times(2-4)+7-(-2)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-10</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)\times3+6-2\times1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2-(7+(-3)\cdot4)+5\cdot(-2)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-3</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>6-(-2)\times(3+4)-(-1)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-3)\times4+2-1\times(7-3)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-14</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-3)\times(2+5)-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-2)\times(3+4)-5\times2+3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-21</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-4)\times2-(-1)\times2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)+2\times(3-4)-1</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-9</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)\times2+7-3-2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>4-(-3)+2\times(5+1)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>19</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3\times(-2)+4+6+2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-7)+3\times(-2)-1+3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-11</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5\times(-2)-3+7-4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)\times2+6-(-3)-2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-1</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-2)+5\cdot(-1)+1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)\times2+7-3-4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-12</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-2)\times(4-(-1))</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)\times2+4+(-3)\times(2+2)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-18</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2\times(-3)+5-(-2)-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-5)(2-4)+7-(-2)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>22</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)(3+6)-2+1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2-(7+(-3)(4-5))\cdot(-2)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>22</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>6-(-2)(3+4-(-1))</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-3)(4+2-1)+(7-3)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-11</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-3)(2+5)-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-2)(3+4)-5(2+3)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-39</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-4)(2-(-1))-2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)+2(3-4)-1</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-9</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)(2+7-3)-2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>4-(-3)+2(5+1)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>19</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3(-2)+4+6+2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-7)+3(-2)-1+3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-11</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5(-2)-3+7-4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)(2+6-(-3))-2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-46</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-2)+5(-1)+1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)(2+7-3)-4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-40</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-2)(4-(-1))-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)(2+4-3)(2+2)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-60</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2(-3)+5-(-2)-1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-5)(2-4)+7-(-2)+1</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>23</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)(3+6)-2+1-(-3)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2-(7+(-3)(4-5))(-2)+4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>26</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>6-(-2)(3+4-(-1))+5-(-3)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-3)(4+2-1)+(7-3)+6</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-5</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-3)(2+5)-1-(-2)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-2)(3+4)-5(2+3)+7</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-32</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-4)(2-(-1))-2-(-3)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)+2(3-4)-1+8</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-1</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)(2+7-3)-2+9</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>4-(-3)+2(5+1)+3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>22</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3(-2)+4+6+2+(-5)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-7)+3(-2)-1+3+4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-7</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5(-2)-3+7-4+(-6)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)(2+6-(-3))-2+5</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-41</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-(-2)+5(-1)+1-3</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-6)(2+7-3)-4+2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-38</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-2)(4-(-1))-1+(-4)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)(2+4-3)(2+2)+1</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-59</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2(-3)+5-(-2)-1-(-7)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3+(-5)[2-(4-1)]+7-(-2)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>17</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-4)(3+6)-(2+1)-(-3)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5+3(2-5)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-4</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8+4(3-1)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>7(5+1)+3(2-6)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>30</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5(12-9)+2(3+1)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3(4-7)-2(3-7)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>3</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>9(11-9)-12(3-5)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5-2(2-3)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>7</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-5(4+1)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5-3^2-4(3-5)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>4</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>7^2-5(16-10)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5-(2+1)^3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-22</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(3-1)^2-(5-3)^2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>16+3(2+1)^2+7</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>50</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>6+10 \div (7-5)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8+12 \div 2^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>11</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>4-(12-5*2)^2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>25-10+5</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>20</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>100-80-5+25</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>16-3(2+1)^2+7</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-4</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>23-3^2+(11-9)^2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5-5\times 5+5</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-15</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5\div 5\times 5-5+5</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5+2[5-2(3+1)]</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-1</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>7-2[3-5(7-8)]</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(3-2)^3-4[2(3-4)+1]</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>5</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(7-3)^2-5[7-2(8-9)]</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>14-2[9-3(4+2)^2]</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>212</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5^2-3[2-3(5-2)]</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2-[5(3-4)-2(10-7)]</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>13</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>10-[(5-6)(4-7)+2]</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>4-(2-5)^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-5</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>20+(8-13)^2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>-4^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-16</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>-3^4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>-3^2-3^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-17</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>-2^4-3^2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>-3^2-3^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-18</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>-2^4-3^2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{8-2}{2+1}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>2</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{10+15}{2+3}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{8-2(4+5)}{4-2(5-4)}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-5</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{20-4(3-1)}{10-2(5-3)}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{72-3^2}{9-2^2}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>12.6</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{3^3-3^2}{3-3}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>|5-3|</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>2</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>|-6+2|</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>11-3|5-4(3-1)|</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>2</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2-2|2(5-3)-4(6-1)|</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>11-3(2+7)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-16</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>16-4(2+3)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>11^2-5(3-5)+6(3-5)^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>155</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8^3-7(14+2^2)-3(4-1)^3</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{9-4}{2+3}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>1</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{12+20}{10-2}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{15+1}{3+1}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>4</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{87+13}{28-3}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{7(3-2)+4(5-3)}{5(2+1)}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>1</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{10(2+1)}{11(5-2)-6(11-8)}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{2(3^2+4^2)}{13-12}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>50</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{10^2-6^2}{4}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{2[3-5(2-1)]}{6-4}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-2</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{36}{3[11-3(5-2)]}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-2)^6</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>64</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(-5)^4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5-2^3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-3</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>-3^4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>12-2(3)\div (7-3)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>10.5</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>15-3[23-5(4-9)]</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3-4[5-3(2-7)]</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-77</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{5+23-3}{3(12-2)-8(9-4)}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>-4^2-5^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-41</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(8-1)(3-5)^2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>7+2(4)-3^3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-12</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{100-40}{10-2}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{16+20}{4+5}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>4</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>7-7^2+7\div 7</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>15-3+2-5+1</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>10</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>12[2-3^2-2(3-5)]</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>(9-2)^2(-3+1)^3</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-392</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>8-5(2+1)^2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{12-6(5-20)}{3^2-3}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>17</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5-3[4+2(7-4)-1]+2[11-6(3^2-5)]</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>100-10^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>0</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>100-(-10)^2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>42+3[2(5-2)-7]-4[(3-2)(11-14)]</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>51</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>25+75-5(2)\div (3-3)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>|8-3(5)|</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>7</m>
-        </p>
-      </solution>
-    </exercise>
-    
-  </exercises></subsection>
+    <exercisegroup cols="2">
+      <title>Addition and subtraction</title>
+      <introduction>
+        <p>Evaluate each expression using the order of operations. If an expression is undefined, state why.</p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+5-2+4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>10</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6-2+7-1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2+8-4+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>9</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5-1+4-2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>7+3-2-6</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6-3+2-1-7</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-2-3-6</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-3</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>9-2-1-4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+6-1+5-2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>11</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4-2+6-1+3</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+6-1+5-2-4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>7</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-5)-2+4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)-2+7-1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2+(-8)-4+3</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)-1+4-2+6</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>7+3-(-2)+5-1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)-3+2-1+4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-4</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8+2-(-3)+4-1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-9)-2+1-4+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-11</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-6)-1+5-2+4</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Multiplication written with a cross</title>
+      <introduction>
+        <p>Evaluate each expression using the order of operations. If an expression is undefined, state why.</p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-5)\times2-4+7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-4</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)\times3+6-2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2-7+(-3)\times4+5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-12</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6-(-2)\times3+4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-3)\times4+2-1\times7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-17</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-3)\times2+5</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-2)\times3+4-5\times2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-12</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-4)\times2-(-1)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)+2\times3-4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-4</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)\times2+7-3</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4-(-3)+2\times5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>17</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3\times(-2)+4+6</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-7)+3\times(-2)-1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-14</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5\times(-2)-3+7</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)\times2+6-(-3)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-2)+5\times(-1)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)\times2+7-3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-8</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-2)\times4-(-1)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)\times2+4+(-3)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-9</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\times(-3)+5-(-2)</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Multiplication written with a dot</title>
+      <introduction>
+        <p>Evaluate each expression using the order of operations. If an expression is undefined, state why.</p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-5)\cdot2-4+7-(-2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)\cdot3+6-2+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2-7+(-3)\cdot4+5\cdot(-2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-27</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6-(-2)\cdot3+4-(-1)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-3)\cdot4+2-1\cdot7-3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-20</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-3)\cdot2+5-1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-2)\cdot3+4-5\cdot2+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-9</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-4)\cdot2-(-1)\cdot2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)+2\cdot3-4-1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-5</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)\cdot2+7-3-2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4-(-3)+2\cdot5+1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>18</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3\cdot(-2)+4+6+2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-7)+3\cdot(-2)-1+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-11</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5\cdot(-2)-3+7-4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)\cdot2+6-(-3)-2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-2)+5\cdot(-1)+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)\cdot2+7-3-4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-12</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-2)\cdot4-(-1)\cdot2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)\cdot2+4+(-3)\cdot2+2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-10</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\cdot(-3)+5-(-2)-1</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Implied multiplication</title>
+      <introduction>
+        <p>Evaluate each expression using the order of operations. If an expression is undefined, state why.</p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-5)(2)-4+7-(-2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)(3)+6-2+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2-7+(-3)(4)+5(-2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-27</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6-(-2)(3)+4-(-1)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-3)(4)+2-1(7)-3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-20</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-3)(2)+5-1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-2)(3)+4-5(2)+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-9</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-4)(2)-(-1)(2)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)+2(3)-4-1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-5</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)(2)+7-3-2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4-(-3)+2(5)+1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>18</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3(-2)+4+6+2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-7)+3(-2)-1+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-11</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5(-2)-3+7-4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)(2)+6-(-3)-2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-2)+5(-1)+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)(2)+7-3-4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-12</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-2)(4)-(-1)(2)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)(2)+4+(-3)(2)+2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-10</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2(-3)+5-(-2)-1</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Grouping and explicit multiplication</title>
+      <introduction>
+        <p>Evaluate each expression using the order of operations. If an expression is undefined, state why.</p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-5)\times(2-4)+7-(-2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>22</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)\times3+6-2\times1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2-(7+(-3)\cdot4)+5\cdot(-2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-3</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6-(-2)\times(3+4)-(-1)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-3)\times4+2-1\times(7-3)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-14</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-3)\times(2+5)-1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-2)\times(3+4)-5\times2+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-21</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-4)\times2-(-1)\times2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)+2\times(3-4)-1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-9</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)\times2+7-3-2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4-(-3)+2\times(5+1)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>19</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3\times(-2)+4+6+2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-7)+3\times(-2)-1+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-11</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5\times(-2)-3+7-4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)\times2+6-(-3)-2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-2)+5\cdot(-1)+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)\times2+7-3-4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-12</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-2)\times(4-(-1))</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)\times2+4+(-3)\times(2+2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-18</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\times(-3)+5-(-2)-1</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Grouping and implied multiplication</title>
+      <introduction>
+        <p>Evaluate each expression using the order of operations. If an expression is undefined, state why.</p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-5)(2-4)+7-(-2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>22</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)(3+6)-2+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2-(7+(-3)(4-5))\cdot(-2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>22</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6-(-2)(3+4-(-1))</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-3)(4+2-1)+(7-3)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-11</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-3)(2+5)-1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-2)(3+4)-5(2+3)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-39</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-4)(2-(-1))-2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)+2(3-4)-1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-9</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)(2+7-3)-2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4-(-3)+2(5+1)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>19</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3(-2)+4+6+2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-7)+3(-2)-1+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-11</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5(-2)-3+7-4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)(2+6-(-3))-2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-46</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-2)+5(-1)+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)(2+7-3)-4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-40</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-2)(4-(-1))-1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)(2+4-3)(2+2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-60</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2(-3)+5-(-2)-1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-5)(2-4)+7-(-2)+1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>23</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)(3+6)-2+1-(-3)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2-(7+(-3)(4-5))(-2)+4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>26</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6-(-2)(3+4-(-1))+5-(-3)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-3)(4+2-1)+(7-3)+6</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-5</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-3)(2+5)-1-(-2)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-2)(3+4)-5(2+3)+7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-32</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-4)(2-(-1))-2-(-3)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)+2(3-4)-1+8</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)(2+7-3)-2+9</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4-(-3)+2(5+1)+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>22</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3(-2)+4+6+2+(-5)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-7)+3(-2)-1+3+4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-7</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5(-2)-3+7-4+(-6)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)(2+6-(-3))-2+5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-41</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-(-2)+5(-1)+1-3</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-6)(2+7-3)-4+2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-38</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-2)(4-(-1))-1+(-4)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)(2+4-3)(2+2)+1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-59</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2(-3)+5-(-2)-1-(-7)</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Powers, fractions, and absolute values</title>
+      <introduction>
+        <p>Evaluate each expression using the order of operations. If an expression is undefined, state why.</p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>3+(-5)[2-(4-1)]+7-(-2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>17</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-4)(3+6)-(2+1)-(-3)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5+3(2-5)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-4</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8+4(3-1)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>7(5+1)+3(2-6)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>30</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5(12-9)+2(3+1)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3(4-7)-2(3-7)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>9(11-9)-12(3-5)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5-2(2-3)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>7</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-5(4+1)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5-3^2-4(3-5)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>4</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>7^2-5(16-10)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5-(2+1)^3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-22</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(3-1)^2-(5-3)^2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>16+3(2+1)^2+7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>50</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6+10 \div (7-5)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8+12 \div 2^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>11</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4-(12-5*2)^2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>25-10+5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>20</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>100-80-5+25</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>16-3(2+1)^2+7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-4</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>23-3^2+(11-9)^2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5-5\times 5+5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-15</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5\div 5\times 5-5+5</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5+2[5-2(3+1)]</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>7-2[3-5(7-8)]</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(3-2)^3-4[2(3-4)+1]</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>5</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(7-3)^2-5[7-2(8-9)]</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>14-2[9-3(4+2)^2]</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>212</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5^2-3[2-3(5-2)]</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2-[5(3-4)-2(10-7)]</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>13</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>10-[(5-6)(4-7)+2]</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4-(2-5)^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-5</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>20+(8-13)^2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-4^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-16</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-3^4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-3^2-3^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-18</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-2^4-3^2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-3^2-3^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-18</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-2^4-3^2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{8-2}{2+1}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{10+15}{2+3}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{8-2(4+5)}{4-2(5-4)}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-5</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{20-4(3-1)}{10-2(5-3)}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{72-3^2}{9-2^2}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>12.6</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3^3-3^2}{3-3}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>|5-3|</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>|-6+2|</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>11-3|5-4(3-1)|</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2-2|2(5-3)-4(6-1)|</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Mixed practice</title>
+      <introduction>
+        <p>Evaluate each expression using the order of operations. If an expression is undefined, state why.</p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>11-3(2+7)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-16</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>16-4(2+3)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>11^2-5(3-5)+6(3-5)^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>155</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8^3-7(14+2^2)-3(4-1)^3</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{9-4}{2+3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{12+20}{10-2}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{15+1}{3+1}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>4</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{87+13}{28-3}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{7(3-2)+4(5-3)}{5(2+1)}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{10(2+1)}{11(5-2)-6(11-8)}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{2(3^2+4^2)}{13-12}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>50</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{10^2-6^2}{4}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{2[3-5(2-1)]}{6-4}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-2</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{36}{3[11-3(5-2)]}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-2)^6</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>64</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(-5)^4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5-2^3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-3</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-3^4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>12-2(3)\div (7-3)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>10.5</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>15-3[23-5(4-9)]</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3-4[5-3(2-7)]</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-77</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{5+23-3}{3(12-2)-8(9-4)}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-4^2-5^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-41</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(8-1)(3-5)^2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>7+2(4)-3^3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-12</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{100-40}{10-2}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{16+20}{4+5}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>4</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>7-7^2+7\div 7</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>15-3+2-5+1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>10</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>12[2-3^2-2(3-5)]</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(9-2)^2(-3+1)^3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-392</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>8-5(2+1)^2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{12-6(5-20)}{3^2-3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>17</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5-3[4+2(7-4)-1]+2[11-6(3^2-5)]</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>100-10^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>0</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>100-(-10)^2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>42+3[2(5-2)-7]-4[(3-2)(11-14)]</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>51</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>25+75-5(2)\div (3-3)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>|8-3(5)|</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>7</m>
+          </p>
+        </solution>
+      </exercise>
+    </exercisegroup>
+  </exercises>
 </section>

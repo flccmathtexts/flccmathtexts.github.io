@@ -62,8 +62,8 @@
       How can we determine the slope?
       It turns out that we already know how!
       If everyone working for a company makes the same hourly rate,
-      and the average wage is <m>$12.50</m> per hour,
-      then logically it must be that everybody makes the same as the average <mdash /> <m>$12.50</m> per hour.
+      and the average wage is <m>\$12.50</m> per hour,
+      then logically it must be that everybody makes the same as the average <mdash /> <m>\$12.50</m> per hour.
       By the same sort of logic, if a function always has the same rate of change,
       then that rate of change must be the same as the average rate of change.
       So, if a function is linear we can find its slope by finding its average rate of change.
@@ -236,9 +236,9 @@
       The rate of change here is the slope.
       The units of a rate of change are always
       <q>output units per input unit</q>, and so since the output units are dollars and the input units are square feet,
-      the rate of change is <m>$1.50</m> per square foot.
+      the rate of change is <m>\$1.50</m> per square foot.
       In other words, for each additional square foot of area,
-      he raises the price of the job by <m>$1.50</m>. }
+      he raises the price of the job by <m>\$1.50</m>. }
     </p>
     <example xml:id="LinearFunctionsandSlopeExample4">
       <statement>
@@ -274,7 +274,7 @@
       Now, in all of the examples we've considered so far,
       we've known the function was linear because the problem specifically said it was linear.
       But could we have known that without specifically being told?
-      Surely the contractor knows that he's pricing jobs using a rate of <m>$1.50</m> per square foot,
+      Surely the contractor knows that he's pricing jobs using a rate of <m>\$1.50</m> per square foot,
       but it's not at all certain that he knows that he's using the slope of a linear function.
       And we know for certain that Galileo wasn't thinking about linear functions when he was studying the speed at which objects fall – because the concept of a
       <q>linear function</q>
@@ -322,8 +322,8 @@
         <p>
           An auto insurance company determines its rates for a policy based on the number of points you have on your license.
           They start with a base rate of
-          <m>$600</m> which you would pay regardless of how many points you have,
-          and then they add a fixed dollar surcharge of <m>$80</m> for each point.
+          <m>\$600</m> which you would pay regardless of how many points you have,
+          and then they add a fixed dollar surcharge of <m>\$80</m> for each point.
           Your insurance rate is a function of how many points you have.
           Is it a linear function?
         </p>
@@ -334,16 +334,16 @@
       and following the
       <q>output units per input unit</q>
       model this rate of change would be measured in dollars per point.
-      From the description it is clear that this rate of change is a constant <m>$80</m> per point,
+      From the description it is clear that this rate of change is a constant <m>\$80</m> per point,
       and so the function is indeed linear.
-      In fact, we know that <m>$80</m> per point is its slope.
+      In fact, we know that <m>\$80</m> per point is its slope.
     </p>
     <example xml:id="LinearFunctionsandSlopeExample6">
       <statement>
         <p>
           Cattarauqua Ginseng Enterprises sells wholesale premium grade American ginseng at a price of
-          <m>$18</m> per pound for the first <m>100</m> pounds,
-          and then each additional pound over <m>100</m> pounds costs <m>$16</m>.
+          <m>\$18</m> per pound for the first <m>100</m> pounds,
+          and then each additional pound over <m>100</m> pounds costs <m>\$16</m>.
           Cost is a function of weight.
           Is it a linear function?
         </p>
@@ -353,9 +353,9 @@
       The rate of change would be how quickly the price of your order rises as its weight increases,
       measured in dollars per pound.
       As you add additional pounds to your order,
-      the price rises at a rate of <m>$18</m> per pound.
+      the price rises at a rate of <m>\$18</m> per pound.
       But, once you reach <m>100</m> pounds,
-      the price then rises at a rate of <m>$16</m> per pound.
+      the price then rises at a rate of <m>\$16</m> per pound.
       So the rate of change itself changes.
       So this function is not linear.
     </p>
@@ -862,7 +862,7 @@
         </statement>
         <solution>
           <p>
-            <m>-\frac{3}{100}=0.03</m>
+            <m>-\frac{3}{100}=-0.03</m>
           </p>
         </solution>
       </exercise>
@@ -894,7 +894,7 @@
         <solution>
           <p>
             <m>\frac{1}{10}=0.1</m>,
-            units are dollars per word so this is best written as <m>$0.10/word</m>.
+            units are dollars per word so this is best written as <m>\$0.10/word</m>.
             This represents how much the amount that they pay changes based on the number of words in the article,
             or, in more common terms, how much they pay per word.
           </p>
@@ -983,7 +983,7 @@
           <p>
             Yes, it is linear.
             The amount your tax changes as your income increases is always
-            <m>$0.053</m> tax per dollar or income.
+            <m>\$0.053</m> tax per dollar or income.
           </p>
         </solution>
       </exercise>
@@ -1202,10 +1202,8 @@
           </p>
         </statement>
         <solution>
-          <p>
-            <m>-\frac{155}{282}=0.55</m>
-          </p>
-        </solution>
+        <p><m>-\frac{155}{282}\approx-0.55</m></p>
+      </solution>
       </exercise>
       <exercise>
         <statement>
@@ -1375,10 +1373,8 @@
           </p>
         </statement>
         <solution>
-          <p>
-            <m>frac{9^\circ \text{F} }{5^\circ \text{C} }=1.8 \frac{^\circ \text{F} }{^\circ \text{C} }</m>
-          </p>
-        </solution>
+        <p><m>\frac{9}{5}=1.8</m> degrees Fahrenheit per degree Celsius.</p>
+      </solution>
       </exercise>
       <exercise>
         <statement>
@@ -1399,10 +1395,8 @@
           </p>
         </statement>
         <solution>
-          <p>
-            <m>3</m>
-          </p>
-        </solution>
+        <p><m>-3</m></p>
+      </solution>
       </exercise>
       <exercise>
         <statement>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
   <docinfo>
+<math-package latex-name="cancel" mathjax-name="cancel"/>
 <macros>
 \newcommand{\executeiffilenewer}[3]{
 \ifnum\pdfstrcmp{\pdffilemoddate{#1}}
@@ -53,7 +54,6 @@ IIIII}
     <xi:include href="./FoundationsOfFunctions.ptx"/>
     <xi:include href="./LinearFunctions.ptx"/>
     <backmatter>
-      <xi:include href="./bibliography.ptx"/>
       <index>
         <title>Index</title>
         <index-list/>

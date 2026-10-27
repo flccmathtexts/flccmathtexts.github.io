@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <section xml:id="FunctionsandGraphs">
   <title>Functions and Graphs</title>
   <introduction>
@@ -39,25 +40,45 @@
     </p>
     <tabular>
       <row>
-        <cell><m>x</m></cell>
-        <cell><m>0</m></cell>
-        <cell><m>1</m></cell>
-        <cell><m>2</m></cell>
-        <cell><m>3</m></cell>
+        <cell>
+          <m>x</m>
+        </cell>
+        <cell>
+          <m>0</m>
+        </cell>
+        <cell>
+          <m>1</m>
+        </cell>
+        <cell>
+          <m>2</m>
+        </cell>
+        <cell>
+          <m>3</m>
+        </cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
-        <cell />
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
+        <cell/>
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell><m>f(x)</m></cell>
-        <cell><m>5</m></cell>
-        <cell><m>4</m></cell>
-        <cell><m>9</m></cell>
-        <cell><m>-2</m></cell>
+        <cell>
+          <m>f(x)</m>
+        </cell>
+        <cell>
+          <m>5</m>
+        </cell>
+        <cell>
+          <m>4</m>
+        </cell>
+        <cell>
+          <m>9</m>
+        </cell>
+        <cell>
+          <m>-2</m>
+        </cell>
       </row>
     </tabular>
     <p>
@@ -82,7 +103,9 @@
         </p>
         <tabular>
           <row>
-            <cell><m>x</m></cell>
+            <cell>
+              <m>x</m>
+            </cell>
             <cell>4</cell>
             <cell>7</cell>
             <cell>3</cell>
@@ -90,15 +113,17 @@
             <cell>1</cell>
           </row>
           <row bottom="minor">
-            <cell />
-            <cell />
-            <cell />
-            <cell />
-            <cell />
-            <cell />
+            <cell/>
+            <cell/>
+            <cell/>
+            <cell/>
+            <cell/>
+            <cell/>
           </row>
           <row>
-            <cell><m>g(x)</m></cell>
+            <cell>
+              <m>g(x)</m>
+            </cell>
             <cell>0</cell>
             <cell>0</cell>
             <cell>2</cell>
@@ -109,7 +134,8 @@
       </statement>
     </example>
     <p>
-      Following the pattern of <m>(\text{ input } , \text{ output } )</m> we would write <m>\{(4,0), (7,0), (3,2), (9, -4), (1,6)\}</m>.
+      Following the pattern of <m>(\text{ input } , \text{ output } )</m>, we would write
+      <me>\{(4,0), (7,0), (3,2), (9, -4), (1,6)\}.</me>
     </p>
     <example xml:id="FunctionsandGraphsExample2">
       <statement>
@@ -126,7 +152,8 @@
     <p>
       You may notice that coordinate pairs look an exactly like interval notation,
       <m>(3,5)</m> read as a coordinate pair means
-      <q>the input <m>3</m> gives the output <m>5</m></q>; but <m>(3,5)</m> read as an interval means
+      <q>the input <m>3</m> gives the output <m>5</m>
+      </q>; but <m>(3,5)</m> read as an interval means
       <q>all the real numbers between <m>3</m> and <m>5</m> not including <m>3</m> and <m>5</m> themselves.</q>
       It is really unfortunate that the same notation can be correctly interpreted as two completely different things.
       Fortunately, though,
@@ -193,13 +220,13 @@
         <cell>5</cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
-        <cell />
-        <cell />
-        <cell />
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
+        <cell/>
+        <cell/>
+        <cell/>
+        <cell/>
+        <cell/>
       </row>
       <row>
         <cell>f(x)</cell>
@@ -251,38 +278,49 @@
     </p>
     <figure>
       <caption>A visualization of all real numbers</caption>
-      <image width="73%" source="FunctionsandGraphsImages/Figure01.png" />
+      <image width="73%" source="FunctionsandGraphsImages/Figure01.png"/>
     </figure>
     <figure>
       <caption>Descartes: He thought, therefore he was. Source: wikipedia.org</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure02.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure02.png"/>
     </figure>
     <p>
       Descartes' innovation was to draw two number lines,
       one perpendicular to the other,
       to create a plane, called the <em>coordinate plane</em>,
-          <idx><h>Coordinate Plane</h></idx>
+          <idx>
+        <h>Coordinate Plane</h>
+      </idx>
       or, in his honor, the <em>Cartesian plane</em>
-          <idx><h>Cartesian Plane</h></idx>
+      <idx>
+        <h>Cartesian Plane</h>
+      </idx>
       <fn>
       \quotes{Cartesian} is derived from the name \quotes{Descartes}. The \quotes{Des} is left off for reasons having to do with the Latin form of his name.
       </fn>.
       The horizontal number line is used to represent all the possible input values of a function.
       It is known as the <em>horizontal axis, or the input axis</em>,
-          <idx><h>Coordinate Plane</h><h>Horizontal Axis</h></idx>
+          <idx>
+        <h>Coordinate Plane</h>
+        <h>Horizontal Axis</h>
+      </idx>
       or, since the most common variable name to use for inputs is <m>x</m>,
-      the <em><m>x</m>-axis</em>.
+      the <em>
+        <m>x</m>-axis</em>.
     </p>
     <p>
       The output values for the function are represented using the vertical number line,
       known as the <em>vertical axis, or output axis</em>,
-          <idx><h>Coordinate Plane</h><h>Vertical Axis</h></idx>
+          <idx>
+        <h>Coordinate Plane</h>
+        <h>Vertical Axis</h>
+      </idx>
       or, since the most common variable name to use for outputs is <m>y</m>,
       <em>the <m>y</m>-axis</em>.
     </p>
     <figure>
       <caption>A set of coordinate axes.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure03.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure03.png"/>
     </figure>
     <p>
       Any coordinate pair can be represented as a point in this plane.
@@ -294,7 +332,7 @@
     </p>
     <figure>
       <caption>The point <m>(3,-2)</m> marked on a set of axes.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure04.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure04.png"/>
     </figure>
     <p>
       Now, we can represent any numerical table as a collection of points in the plane.
@@ -303,7 +341,7 @@
     </p>
     <figure>
       <caption>Some input-output pairs for <m>f(x)=2x</m>.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure05.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure05.png"/>
     </figure>
     <p>
       Now here's the infinitely clever part.
@@ -314,7 +352,7 @@
     </p>
     <figure>
       <caption>The line formed by input-output pairs for <m>f(x)=2x</m>.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure06.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure06.png"/>
     </figure>
     <p>
       Note that for the time being,
@@ -331,7 +369,9 @@
     </p>
     <tabular>
       <row>
-        <cell><m>x</m></cell>
+        <cell>
+          <m>x</m>
+        </cell>
         <cell>-3</cell>
         <cell>-2</cell>
         <cell>-1</cell>
@@ -341,17 +381,19 @@
         <cell>3</cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
-        <cell />
-        <cell />
-        <cell />
-        <cell />
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
+        <cell/>
+        <cell/>
+        <cell/>
+        <cell/>
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell><m>g(x)</m></cell>
+        <cell>
+          <m>g(x)</m>
+        </cell>
         <cell>9</cell>
         <cell>4</cell>
         <cell>1</cell>
@@ -366,7 +408,7 @@
     </p>
     <figure>
       <caption>Some of the input-output pairs for the function <m>g(x)=x^2</m>.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure07.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure07.png"/>
     </figure>
     <p>
       which clearly can't be made to fit any straight line.
@@ -375,7 +417,7 @@
     </p>
     <figure>
       <caption>The shape formed by the input-output pairs for <m>g(x)=x^2</m>.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure08.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure08.png"/>
     </figure>
     <p>
       Even though that's not a straight line,
@@ -386,7 +428,9 @@
     </p>
     <p>
       The collection of all the input-output pairs for a function plotted in a coordinate plane is called a <em>graph</em>
-          <idx><h>Graph</h></idx>
+      <idx>
+        <h>Graph</h>
+      </idx>
       of the function.
       We will see in the upcoming chapters of this book that graphs are an incredibly powerful tools for working with functions.
     </p>
@@ -394,7 +438,10 @@
       Before moving on,
       there are a few terms that are commonly used with graphs and the coordinate plane that we should define.
       The point <m>(0,0)</m> that lies in the center where the two axes intersect is called the <em>origin</em>.
-          <idx><h>Coordinate Plane</h><h>Origin</h></idx>
+          <idx>
+        <h>Coordinate Plane</h>
+        <h>Origin</h>
+      </idx>
       You can think of the origin as the
       <q>starting point</q>
       from which we move to the coordinates of other points.
@@ -402,14 +449,17 @@
     <p>
       Also, the two axes naturally divide the coordinate plan into four quarters,
       which are called <em>quadrants</em>.
-          <idx><h>Coordinate Plane</h><h>Quadrants</h></idx>
+          <idx>
+        <h>Coordinate Plane</h>
+        <h>Quadrants</h>
+      </idx>
       The quadrants are numbered, usually with Roman numerals,
       starting in the upper right and moving around counter-clockwise,
       as shown below:
     </p>
     <figure>
       <caption>The quadrants of the Cartesian Plane.</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure09.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure09.png"/>
     </figure>
     <p>
       Quadrant I is called the <em>first quadrant</em>,
@@ -428,7 +478,7 @@
     </p>
     <figure>
       <caption>The location of <m>(-3,1)</m> in the Cartesian Plane</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure10.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure10.png"/>
     </figure>
     <p>
       This point lies in the second quadrant (i.e.
@@ -449,7 +499,7 @@
     </p>
     <figure>
       <caption>The location of <m>(0,-2)</m> in the Cartesian Plane</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure11.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure11.png"/>
     </figure>
     <p>
       This point does not lie in any quadrant.
@@ -479,7 +529,7 @@
     </p>
     <figure>
       <caption>Graph of water in the tub as a function of time</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure12.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure12.png"/>
     </figure>
     <p>
       Now, we can't put numbers on this graph because we don't have that information;
@@ -530,8 +580,8 @@
         <cell>Amount (grams)</cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
         <cell>0</cell>
@@ -554,14 +604,14 @@
       Roughly plotting these points:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure13.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure13.png"/>
     </figure>
     <p>
       gives us a sense of what the graph must look like.
       Connecting these dots into a smooth shape and labeling we should end up with a graph something like this:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure14.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure14.png"/>
     </figure>
     <p>
       It is not necessary and probably not even desirable to show all the plotted points specifically labeled;
@@ -569,7 +619,7 @@
       A graph such as this would be a good choice:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure15.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure15.png"/>
     </figure>
     <p>
       Graphs can take on all sorts of shapes.
@@ -577,7 +627,7 @@
       here is graph for the closing price of the Dow Jones Industrial Average (a reflection of the US stock market) as a function of time over the years 2008-2009:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure16.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure16.png"/>
     </figure>
     <p>
       And of course wilder shapes are possible.
@@ -588,7 +638,7 @@
     </p>
     <figure>
       <caption>Could this be a graph of a function?</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure17.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure17.png"/>
     </figure>
     <p>
       This is a nice, smooth, geometrically pretty shape.
@@ -630,7 +680,7 @@
     </p>
     <figure>
       <caption>Drawing a vertical line shows how the input value we've drawn it through has two outputs</caption>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure18.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure18.png"/>
     </figure>
     <p>
       The observation we are making here is sometimes referred to as the vertical line test.
@@ -638,7 +688,12 @@
     <definition>
       <statement>
         <p>
-              <idx><h>Vertical Line Test</h></idx> <em><em>The Vertical Line Test</em></em>
+          <idx>
+            <h>Vertical Line Test</h>
+          </idx>
+          <em>
+            <em>The Vertical Line Test</em>
+          </em>
         </p>
         <p>
           A graph is the graph of a function if, and only if,
@@ -677,10 +732,12 @@
       We can use the calculator to obtain a graph of this function using the following process.
     </p>
     <p>
-          <idx><h>Calculator:Graphing</h></idx>
+      <idx>
+        <h>Calculator:Graphing</h>
+      </idx>
       <em>Step 1: Enter the function formula into the calculator.</em>
       We first need to tell the calculator the formula for the function we want to graph.
-      (We do this the same way that we entered formulas to create tables in Chapter ??.)
+      (We do this the same way that we entered formulas to create tables in <xref ref="AlgebraicSubstitution"/>.)
       First, hit the
       <q>Y=</q>
       key in the upper left corner of your TI-83 or 84,
@@ -700,10 +757,13 @@
       <q>X</q>. The resulting screen should look like this:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure19.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure19.png"/>
     </figure>
     <p>
-          <idx><h>Calculator:Window Settings</h></idx> <em>Step 2: Set the window.</em> The Cartesian plane extends out to infinity in all directions, and many graphs do as well.
+      <idx>
+        <h>Calculator:Window Settings</h>
+      </idx>
+      <em>Step 2: Set the window.</em> The Cartesian plane extends out to infinity in all directions, and many graphs do as well.
       So of course there is no way to display the whole plane on the calculator screen.
       We need to tell the calculator what portion of the plane we want it to display.
     </p>
@@ -713,7 +773,7 @@
       and it will take you to a screen that should look like this (though the specific numbers you see may not be the same):
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure20.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure20.png"/>
     </figure>
     <p>
       The
@@ -754,7 +814,7 @@
       we would want the following settings:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure21.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure21.png"/>
     </figure>
     <p>
       <em>Step 3: Get the graph.</em>
@@ -762,17 +822,19 @@
       <q>GRAPH</q>. Hit that key now and you should see this:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure22.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure22.png"/>
     </figure>
     <p>
-          <idx><h>Calculator:Zoom</h></idx>
+      <idx>
+        <h>Calculator:Zoom</h>
+      </idx>
       As an alternative, when you want a graph in the standard window, you can just hit the
       <q>ZOOM</q>
       key in your calculator's upper row, and select
       <q>6: ZStandard</q>:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure23.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure23.png"/>
     </figure>
     <p>
       This will take you directly to the graph in the standard window,
@@ -809,7 +871,7 @@
       and the input and output values of its coordinates:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure24.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure24.png"/>
     </figure>
     <p>
       If you don't see the coordinate values, hit
@@ -820,7 +882,7 @@
       ) and make sure your settings are like this:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure25.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure25.png"/>
     </figure>
     <p>
       You can now move around to different points on the graph by using the right and left directional keys in the upper right portion of your calculator.
@@ -837,7 +899,7 @@
       ) in the top row to get this menu:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure26.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure26.png"/>
     </figure>
     <p>
       Select
@@ -845,7 +907,7 @@
       and you'll be returned to the graph with a screen that looks like this:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure27.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure27.png"/>
     </figure>
     <p>
       Now you can enter the input (<m>x</m>) value you want to visit.
@@ -853,7 +915,7 @@
       to visit the point that goes with <m>x=-3</m> we get:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure28.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure28.png"/>
     </figure>
     <example xml:id="FunctionsandGraphsExample8">
       <statement>
@@ -870,17 +932,17 @@
       so we need to rewrite that formula replacing the <m>t</m> with an X:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure29.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure29.png"/>
     </figure>
     <p>
       Now, either directly adjusting the window setting to the standard window and hitting
       <q>GRAPH</q>, or just using
       <q>ZOOM</q>
-      <ndash />&gt;
+      <ndash/>&gt;
       <q>6: ZStandard</q>, we get:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure30.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure30.png"/>
     </figure>
     <p>
       Then using
@@ -888,14 +950,14 @@
       <q>TRACE</q>
       (that is,
       <q>CALC</q>
-      ) <ndash />&gt;
+      ) <ndash/>&gt;
       <q>1: value</q>
       and entering
       <q>X=2</q>
       we get:
     </p>
     <figure>
-      <image width="92.5%" source="FunctionsandGraphsImages/Figure31.png" />
+      <image width="92.5%" source="FunctionsandGraphsImages/Figure31.png"/>
     </figure>
     <p>
       So, we conclude that <m>h(2)=1.6666667</m> which we would either recognize as
@@ -906,140 +968,149 @@
     <title>Exercises</title>
     <subsubsection>
       <title>Coordinates</title>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             Rewrite the function given in the table below as a set of coordinate pairs.
           </p>
-          <tabular>
-            <row bottom="minor">
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-            </row>
-            <row>
-              <cell><m>x</m></cell>
-              <cell>1</cell>
-              <cell>2</cell>
-              <cell>4</cell>
-              <cell>8</cell>
-              <cell>12</cell>
-            </row>
-            <row bottom="minor">
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-            </row>
-            <row>
-              <cell><m>g(x)</m></cell>
-              <cell>2</cell>
-              <cell>2</cell>
-              <cell>7</cell>
-              <cell>1</cell>
-              <cell>0</cell>
-            </row>
-            <row bottom="minor">
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-            </row>
-          </tabular>
-        </statement>
-        <solution>
-          <p>
-            <m>\{(1,2), (2,2), (4,7), (8,1), (12,0)\}</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            <tabular>
+              <row bottom="minor">
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell>
+                  <m>x</m>
+                </cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>4</cell>
+                <cell>8</cell>
+                <cell>12</cell>
+              </row>
+              <row bottom="minor">
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell>
+                  <m>g(x)</m>
+                </cell>
+                <cell>2</cell>
+                <cell>2</cell>
+                <cell>7</cell>
+                <cell>1</cell>
+                <cell>0</cell>
+              </row>
+              <row bottom="minor">
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+            </tabular>
+          </statement>
+          <solution>
+            <p>
+              <m>\{(1,2), (2,2), (4,7), (8,1), (12,0)\}</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Rewrite the function given in the table below as a set of coordinate pairs.
           </p>
-          <tabular>
-            <row bottom="minor">
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-            </row>
-            <row>
-              <cell><m>t</m></cell>
-              <cell>0</cell>
-              <cell>-3</cell>
-              <cell>6</cell>
-              <cell>4</cell>
-              <cell>3</cell>
-            </row>
-            <row bottom="minor">
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-            </row>
-            <row>
-              <cell><m>h(t)</m></cell>
-              <cell>5</cell>
-              <cell>7</cell>
-              <cell>6</cell>
-              <cell>11</cell>
-              <cell>-1</cell>
-            </row>
-            <row bottom="minor">
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-            </row>
-          </tabular>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            <tabular>
+              <row bottom="minor">
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell>
+                  <m>t</m>
+                </cell>
+                <cell>0</cell>
+                <cell>-3</cell>
+                <cell>6</cell>
+                <cell>4</cell>
+                <cell>3</cell>
+              </row>
+              <row bottom="minor">
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell>
+                  <m>h(t)</m>
+                </cell>
+                <cell>5</cell>
+                <cell>7</cell>
+                <cell>6</cell>
+                <cell>11</cell>
+                <cell>-1</cell>
+              </row>
+              <row bottom="minor">
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+            </tabular>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>f(2) = -1</m>.
             Express this as a coordinate pair.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>(2, -1)</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <m>(2, -1)</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>g(0) = 3</m>.
             Express this as a coordinate pair.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Rewrite the function given by the following set of coordinate pairs as a table,
             assume <m>f(x)</m>:
             <m>\{(1,3), (2,5), (3,-1), (5,-2)\}</m>.
           </p>
-        </statement>
-        <solution>
-          <me>
+          </statement>
+          <solution>
+            <me>
             \begin{array}{c|c}
             x \amp  f(x) \\
             \hline
@@ -1049,116 +1120,118 @@
             5 \amp  -2
             \end{array}
           </me>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Rewrite the function given by the following set of coordinate pairs as a table,
             assume <m>g(t)</m>:
             <m>\{(1,5), (2,-1), (4,6), (7,-3)\}</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The coordinate pair <m>(5,3)</m> gives an input and output for the function <m>f(x)</m>.
             Does this mean <m>f(3)=5</m> or that <m>f(5) = 3</m>?
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>f(5)=3</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <m>f(5)=3</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The coordinate pair <m>(2, -7)</m> gives an input and output for the function <m>g(t)</m>.
             Does this mean <m>g(2) = -7</m> or <m>g(-7)=2</m>?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Is <m>\{(0,2), (-1,3), (1, -3), (2,8), (-2, -8)\}</m> a function?
             Why or why not?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Yes, each input has one and only one corresponding output.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Is <m>\{(0,5), (2,3), (2,5), (4,6), (4,8)\}</m> a function?
             Why or why not?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Is <m>\{(1,1), (2,1), (3,1)\}</m> a function?
             Why or why not?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Yes, each input has one and only one corresponding output.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Is <m>\{(1,1), (1,2), (1,3)\}</m> a function?
             Why or why not?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Is <m>\{(0,0), (0,1), (1,2), (2,3), (3,4)\}</m> a function?
             Why or why not?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             No, because the input <m>0</m> has two different outputs
             (<m>0</m> and <m>1</m>).
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Is <m>\{(-1,2), (-2,2), (-3,2), (-4,2)\}</m> a function?
             Why or why not?
           </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Graphs</title>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to create a table of values for the function <m>f(x)=(x+1)(x-1)</m> for the inputs
             <m>x = -3, -2, -1, 0, 1, 2, 3</m> or create the table yourself by hand.
             Then sketch a coordinate plane and plot these points on it.
             Use the points you plotted to sketch what the graph of <m>f(x)</m> appears to be.
           </p>
-        </statement>
-        <solution>
-          <me>
+          </statement>
+          <solution>
+            <me>
             \begin{array}{c|c}
             x \amp  f(x) \\
             \hline
@@ -1171,210 +1244,210 @@
             3 \amp  8
             \end{array}
           </me>
-          <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer15a.png" />
-          </figure>
-          <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer15b.png" />
-          </figure>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            <figure>
+              <image width="92.5%" source="FunctionsandGraphsImages/Answer15a.png"/>
+            </figure>
+            <figure>
+              <image width="92.5%" source="FunctionsandGraphsImages/Answer15b.png"/>
+            </figure>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to create a table of values for the function <m>f(x)=x-3(x-1)</m> for the inputs
             <m>x = -3, -2, -1, 0, 1, 2, 3</m> or create the table yourself by hand.
             Then sketch a coordinate plane and plot these points on it.
             Use the points you plotted to sketch what the graph of <m>f(x)</m> appears to be.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Sketch the location of each of the following points in the Cartesian plan,
             and state the quadrant in which each is located.
             <ol marker="a">
-              <li>
-                <p>
-                  <m>(2,1)</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>(-1,2)</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>(5,-1)</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>(0,2)</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
+                    <m>(2,1)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>(-1,2)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>(5,-1)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>(0,2)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   First quadrant
                   <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17a.png" />
-                  </figure>
-                </p>
-              </li>
-              <li>
-                <p>
+                      <image width="92.5%" source="FunctionsandGraphsImages/Answer17a.png"/>
+                    </figure>
+                  </p>
+                </li>
+                <li>
+                  <p>
                   Second quadrant
                   <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17b.png" />
-                  </figure>
-                </p>
-              </li>
-              <li>
-                <p>
+                      <image width="92.5%" source="FunctionsandGraphsImages/Answer17b.png"/>
+                    </figure>
+                  </p>
+                </li>
+                <li>
+                  <p>
                   Fourth quadrant
                   <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17c.png" />
-                  </figure>
-                </p>
-              </li>
-              <li>
-                <p>
+                      <image width="92.5%" source="FunctionsandGraphsImages/Answer17c.png"/>
+                    </figure>
+                  </p>
+                </li>
+                <li>
+                  <p>
                   none, between first and second quadrants
                   <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer17d.png" />
-                  </figure>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                      <image width="92.5%" source="FunctionsandGraphsImages/Answer17d.png"/>
+                    </figure>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Sketch the location of each of the following points in the Cartesian plan,
             and state the quadrant in which each is located.
             <ol marker="a">
-              <li>
-                <p>
-                  <m>(-3,1)</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>(1,-3)</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>(-1,-3)</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>(-2,0)</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                <li>
+                  <p>
+                    <m>(-3,1)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>(1,-3)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>(-1,-3)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>(-2,0)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Sketch a possible graph for each of the functions described.
             Label your axes, and, if available,
             include any other relevant information in your graph as well.
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   the remaining balance on a mortgage as a function of time as the loan is being paid
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   the monthly sales of hybrid cars as a function of the price per gallon of gasoline
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   the height of a sunflower as a function of time since the seed was planted
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
             Possible graphs, answers will vary
             <ol marker="a">
-              <li>
-                <p>
-                  <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer19a.png" />
-                  </figure>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer19b.png" />
-                  </figure>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <figure>
-                    <image width="92.5%" source="FunctionsandGraphsImages/Answer19c.png" />
-                  </figure>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                <li>
+                  <p>
+                    <figure>
+                      <image width="92.5%" source="FunctionsandGraphsImages/Answer19a.png"/>
+                    </figure>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <figure>
+                      <image width="92.5%" source="FunctionsandGraphsImages/Answer19b.png"/>
+                    </figure>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <figure>
+                      <image width="92.5%" source="FunctionsandGraphsImages/Answer19c.png"/>
+                    </figure>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Sketch a possible graph for each of the functions described.
             Label your axes, and, if available,
             include any other relevant information in your graph as well.
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   the height of a ball as a function of time since it was thrown upward
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   the risk of a heart attack as a function of a man's weight
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   the amount of oil in a reservoir as a function of time since production from the reservoir began
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             For each of the given scenarios,
             make a reasonable sketch of what the graph of noise in the college's basketball area as function of time might look like:
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   Everyone was excited at the start of the game,
                   since the two teams were bitter rivals in close competition for the league championship.
                   The first half was close,
@@ -1383,9 +1456,9 @@
                   the home team quickly fell behind and never even got close again,
                   finally losing by 18 points.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   No one really expected much from this game,
                   since the visiting team was heavily favored,
                   but the home team hung in there and kept the game close through the first half and the first part of the second half.
@@ -1394,33 +1467,33 @@
                   taking the lead again just before the buzzer,
                   but the home team put the game away on a last second 3 pointer.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   The visiting team already had the league championship locked up,
                   and for the home team this was the last game of a disappointing season.
                   The visitors quickly built up a sizeable lead,
                   and the game never was even competitive.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
             There are many possible answers,
             but all should show the noise level getting higher when the game is more exciting and lower when the game is less exciting
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             For each of the given scenarios,
             make a reasonable sketch of what the graph of Zarofire Systems' stock price might look like as a function of time:
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   The stock began the year at a price of $2 per share,
                   and stayed pretty much flat for several months.
                   Then the company reported blow out earnings,
@@ -1428,9 +1501,9 @@
                   after which it continued to rise gradually for the next few months,
                   before leveling off through the end of the year and ending the year at $10 per share.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   The stock began the year at around $2 per share,
                   and over the first few months of the year slowly and gradually faded downward.
                   About mid–year it started to move upward again for a month or so,
@@ -1439,9 +1512,9 @@
                   Finally, the company unexpectedly filed for bankruptcy,
                   and on that news the stock fell dramatically and ended the year nearly worthless.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   The stock began the year at around $2 per share,
                   and gradually wavered between $1.75 and $2.25 for the first half of the year.
                   A bit past midyear,
@@ -1449,295 +1522,323 @@
                   and the stock immediately shot up to nearly that price,
                   where it remained until the deal was completed at year's end.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Which of the following could be the graph of a function?
             Explain your reasoning.
           </p>
-          <tabular>
-            <row>
-              <cell>a. <image width="60%" source="FunctionsandGraphsImages/Question23a.png" /></cell>
-              <cell>b. <image width="60%" source="FunctionsandGraphsImages/Question23b.png" /></cell>
-              <cell>c. <image width="60%" source="FunctionsandGraphsImages/Question23c.png" /></cell>
-            </row>
-          </tabular>
-        </statement>
-        <solution>
-          <p>
+            <tabular>
+              <col width="30%"/>
+              <col width="30%"/>
+              <col width="30%"/>
+              <row>
+                <cell>
+                  <p>a. <image width="60%" source="FunctionsandGraphsImages/Question23a.png"/>
+                  </p>
+                </cell>
+                <cell>
+                  <p>b. <image width="60%" source="FunctionsandGraphsImages/Question23b.png"/>
+                  </p>
+                </cell>
+                <cell>
+                  <p>c. <image width="60%" source="FunctionsandGraphsImages/Question23c.png"/>
+                  </p>
+                </cell>
+              </row>
+            </tabular>
+          </statement>
+          <solution>
+            <p>
             a. is a function b. is not a function c. is a function
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Which of the following could be the graph of a function?
             Explain your reasoning.
           </p>
-          <tabular>
-            <row>
-              <cell>a. <image width="60%" source="FunctionsandGraphsImages/Question24a.png" /></cell>
-              <cell>b. <image width="60%" source="FunctionsandGraphsImages/Question24b.png" /></cell>
-              <cell>c. <image width="60%" source="FunctionsandGraphsImages/Question24c.png" /></cell>
-            </row>
-          </tabular>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+            <tabular>
+              <col width="30%"/>
+              <col width="30%"/>
+              <col width="30%"/>
+              <row>
+                <cell>
+                  <p>a. <image width="60%" source="FunctionsandGraphsImages/Question24a.png"/>
+                  </p>
+                </cell>
+                <cell>
+                  <p>b. <image width="60%" source="FunctionsandGraphsImages/Question24b.png"/>
+                  </p>
+                </cell>
+                <cell>
+                  <p>c. <image width="60%" source="FunctionsandGraphsImages/Question24c.png"/>
+                  </p>
+                </cell>
+              </row>
+            </tabular>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Graphing Calculator</title>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to obtain a graph for
             <m>f(x)=5-x</m> in the standard window.
             Use your graph to find <m>f(2.4)</m>,
             <m>f(-1.3)</m>, and <m>f(-7.2)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>f(2.4)=2.6</m>, <m>f(-1.3)=6.3</m>, and <m>f(-7.2)=12.2</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <m>f(2.4)=2.6</m>, <m>f(-1.3)=6.3</m>, and <m>f(-7.2)=12.2</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to obtain a graph for the function
             <m>g(x)=7-x/2</m> in the standard window.
             Use your graph to find <m>g(-3.2)</m>,
             <m>g(1.8)</m> and <m>g(-9.8)</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to create a graph for the function whose graph you sketched in Exercise <m>15</m>.
             Does the calculator's graph agree with your sketch?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             The graph should match.
             (The scale may be different.)
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to create a graph for the function whose graph you sketched in Exercise <m>16</m>.
             Does the calculator's graph agree with your sketch?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to obtain a graph for the function
             <m>h(t)=-16t^2+64t+5</m> in the window <m>0 \leq t \leq 4, 0 \leq h(t) \leq 160</m>.
             Use your graph to find <m>h(1.75)</m> and <m>h(3.8)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>h(1.75)=68</m> and <m>h(3.8)=17.16</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <m>h(1.75)=68</m> and <m>h(3.8)=17.16</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to obtain a graph for the function
             <m>j(s)=-4.9s^2+19.6s+2</m> in the window <m>0 \leq s \leq 4, 0 \leq j(s) \leq 75</m>.
             Use your graph to find <m>j(1.75)</m> and <m>j(3.8)</m>.
           </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Grab Bag</title>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             If possible,
             give a value for <m>q</m> that would make the following set of coordinate pairs a function:
             <m>\{(0,13), (1,9), (2,14), (q, 9)\}</m>.
             If it is not possible to do this, explain.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             You can use any value except <m>q=0</m> or <m>q=2</m>.
             If you used <m>q=1</m>, then you would have a redundant pair <m>(1,9)</m>,
             but it would still be a function.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If possible,
             give a value for <m>q</m> that would make the following set of coordinate pairs not a function:
             <m>\{(0,13), (1,9), (2,14), (q, 9)\}</m>.
             If it is not possible to do this, explain.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If possible,
             give a value for <m>x</m> that would make the following set of coordinate pairs a function:
             <m>\{(0,1), (1,5), (x, 1)\}</m>.
             If it is not possible to do this, explain.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             You can use any value except <m>x=1</m>.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If possible,
             give a value for <m>x</m> that would make the following set of coordinate pairs not a function:
             <m>\{(0,1), (1,5), (x, 1)\}</m>.
             If it is not possible to do this, explain.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Sketch a possible graph for <m>s(t)</m>,
             the speed of your car as a function of time since you got on the thruway.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             There are several possibilities,
             but any such graph should show you speeding up when getting on the thruway.
             Here is one possibility:
           </p>
-          <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer35.png" />
-          </figure>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            <figure>
+              <image width="92.5%" source="FunctionsandGraphsImages/Answer35.png"/>
+            </figure>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to obtain a graph for
             <m>f(x)=10-\frac{x^2}{10}</m> in the standard window.
             Use your graph to find <m>f(3)</m>,
             <m>f(-5)</m>, and <m>f(-8.2)</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Sketch a possible graph for the temperature inside an oven as a function of time since the oven was turned on.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             There are several possibilities,
             but any such graph should show the oven starting at room temperature and heating up to the set temperature and pretty much staying at that temperature.
             Here is one possible graph:
           </p>
-          <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer37.png" />
-          </figure>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            <figure>
+              <image width="92.5%" source="FunctionsandGraphsImages/Answer37.png"/>
+            </figure>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Sketch a possible graph for the temperature inside a hot oven as a function of time since the oven was turned off.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to obtain a graph for
             <m>g(t)=t^3</m> in the window <m>-3 \leq t \leq 3, -50 \leq g(t) \leq 50</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+            </p>
+          </statement>
+          <solution>
+            <p>
             The graph
           </p>
-          <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer39.png" />
-          </figure>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            <figure>
+              <image width="92.5%" source="FunctionsandGraphsImages/Answer39.png"/>
+            </figure>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Sketch a possible graph for the volume of water in a backyard pool as a function of the depth of the water in the pool.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to obtain a graph for in the standard window for <m>h(t)=\frac{10-3t}{2}</m>.
             Use your graph to find <m>h(8.2)</m>,
             <m>h(0)</m>, and <m>h(-9.6)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             The graph
           </p>
-          <figure>
-            <image width="92.5%" source="FunctionsandGraphsImages/Answer41.png" />
-          </figure>
-          <p>
-            <m>h(8.2)=-7.3</m>, <m>h(0)=5</m>, and <m>h(-9.6)=19.4</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            <figure>
+              <image width="92.5%" source="FunctionsandGraphsImages/Answer41.png"/>
+            </figure>
+            <p>
+              <m>h(8.2)=-7.3</m>, <m>h(0)=5</m>, and <m>h(-9.6)=19.4</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Use your calculator to obtain a graph for
             <m>p(w)=w-2^w</m> in the window <m>-2 \leq w \leq 4, -20 \leq p(w) \leq 5</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             In January, the temperature in Frostbite Falls never went above <m>0 \deg C</m>.
             Let <m>f(t)</m> be the temperature there as a function of time since the start of the year.
             If you were to sketch the graph of <m>f(t)</m> for the month of January,
             in which quadrant would the graph be located?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Quadrant IV
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             An agricultural scientist is developing a new fertilizer for corn.
             She will be conducting a study where different amounts of this fertilizer are applied to several hundred test plots.
             The expected yield
@@ -1746,213 +1847,214 @@
             (in pounds).
             The scientist's expected results are given in the table below:
           </p>
-          <tabular>
-            <row bottom="minor">
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-            </row>
-            <row>
-              <cell>Fertilizer (pounds)</cell>
-              <cell>0</cell>
-              <cell>1</cell>
-              <cell>2</cell>
-              <cell>3</cell>
-              <cell>4</cell>
-            </row>
-            <row bottom="minor">
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-            </row>
-            <row>
-              <cell>Expected Yield (bushels)</cell>
-              <cell>5</cell>
-              <cell>8</cell>
-              <cell>9</cell>
-              <cell>8</cell>
-              <cell>5</cell>
-            </row>
-            <row bottom="minor">
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-              <cell />
-            </row>
-          </tabular>
-          <p>
+            <tabular>
+              <row bottom="minor">
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell>Fertilizer (pounds)</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+              </row>
+              <row bottom="minor">
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell>Expected Yield (bushels)</cell>
+                <cell>5</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>8</cell>
+                <cell>5</cell>
+              </row>
+              <row bottom="minor">
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+            </tabular>
+            <p>
             Let <m>x</m> be the amount of fertilizer applied,
             and let <m>f(x)</m> be the expected yield.
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   Sketch a graph of this function by plotting the points for the data given in the table and making a reasonable guess about the shape of the graph based on these points.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   This table gives expected yield as a function of fertilizer applied.
                   Would the actual yield of corn be a function of fertilizer applied?
                   Why or why not?
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>p(t)</m> is the population of New York City as a function of time since the start of this year.
             Would the graph of <m>p(t)</m> pass through the origin?
             Why or why not?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             No it would not.
             The origin is <m>(0,0)</m>,
             so if the graph pass through this point then <m>p(0)=0</m> meaning the population of NYC was 0 at the beginning of the year.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>d(t)</m> is the distance I've travelled on a road trip as a function of time since I left my house.
             Would the graph of <m>d(t)</m> pass through the origin?
             Why or why not?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Which of the following shapes could be the graph of a function?
             Explain your reasoning.
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   a circle
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   a horizontal line
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   a triangle
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   a semicircle
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   a vertical line
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
             a horizontal line and a semicircle that is either the top half or the bottom half of a circle (any other semicircle would fail to be a function)
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Which of the following upper-case letters could be the shape of the graph of a function?
             Explain your reasoning.
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   V
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   W
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   E
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   O
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   C
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>f(5)=-2</m>.
             Express this as a coordinate pair.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>(5,-2</m>)
+          </statement>
+          <solution>
+            <p>
+              <m>(5,-2</m>)
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The point <m>(-3,8)</m> is on the graph of <m>g(t)</m>.
             Does this mean <m>g(8)=-3</m>?
             Why or why not.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The point <m>(2,7)</m> is on the graph of <m>f(x)</m>.
             Does this mean <m>f(2)=7</m>?
             Why or why not.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Yes.
             The first value is the input and the second value is the output.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>f(2)=3</m>, <m>f(3)=5</m>, and <m>f(5)=2</m>.
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>f(2)=3</m>, <m>f(3)=5</m>, and <m>f(5)=2</m>.
             Express this as a set of coordinate pairs.
           </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
   </subsection>
 </section>

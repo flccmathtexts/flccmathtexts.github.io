@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <section xml:id="Functions">
   <title>Functions</title>
   <introduction>
@@ -71,7 +72,12 @@
     <definition>
       <statement>
         <p>
-              <idx><h>Function</h></idx> <em><em>Function Definition</em></em>
+          <idx>
+            <h>Function</h>
+          </idx>
+          <em>
+            <em>Function Definition</em>
+          </em>
         </p>
         <p>
           A function is a rule which processes information by assigning one and only one output to each input.
@@ -79,7 +85,8 @@
           the output variable is <m>y</m>,
           and the name of the function is <m>f</m>,
           we write <m>y=f(x)</m> which is read as
-          <q><m>y</m> equals <m>f</m> of <m>x</m>.</q>
+          <q>
+            <m>y</m> equals <m>f</m> of <m>x</m>.</q>
           (Other letters can be used for any of the quantities involved,
           but whatever letters are used they follow the same pattern.)
         </p>
@@ -174,7 +181,8 @@
           The phrasing always follows the patters
           <q>output is a function of input</q>. So, using quantities, we would say that
           <q>the amount of grass seed, <m>y</m>,
-          is a function of the area, <m>A</m></q>.
+          is a function of the area, <m>A</m>
+          </q>.
         </p>
       </li>
       <li>
@@ -217,11 +225,11 @@
             <li>
               <p>
                 Describe the function using
-                <q><em>
-                <me>
-                  } is a function of \underline{
-                </me>
-                </em></q>
+                <q>
+                  <em>
+                the output is a function of the input
+                </em>
+                </q>
                 using the variables and the quantities they represent.
               </p>
             </li>
@@ -255,9 +263,12 @@
         <li>
           <p>
             It's always
-            <q><em>output</em> is a function of <em>input</em></q>, so we would say
+            <q>
+              <em>output</em> is a function of <em>input</em>
+            </q>, so we would say
             <q>the Fahrenheit temperature, <m>F</m>,
-            is a function of the Celsius temperature, <m>C</m></q>.
+            is a function of the Celsius temperature, <m>C</m>
+            </q>.
           </p>
         </li>
       </ol>
@@ -328,19 +339,31 @@
     <p>
       Before we move on,
       notice that we substituted for <m>s</m> both in the formula itself and also inside the
-      <q><m>f()</m>.</q>
+      <q>
+        <m>f()</m>.</q>
       This left us with the expression
-      <q><m>f(10)</m></q>
+      <q>
+        <m>f(10)</m>
+      </q>
       on the left side.
       This will happen whenever we replace the input variable with a specific value.
       So wherever we might run into the expression
-      <q><m>f(10)</m></q>
+      <q>
+        <m>f(10)</m>
+      </q>
       we would understand that to mean
-      <q>the specific output you get from the function <m>f</m> with the input <m>10</m></q>. A shorter way of saying that is
-      <q><m>f</m> of <m>10</m></q>. Likewise, we would read
-      <q><m>f(5.3)</m></q>
+      <q>the specific output you get from the function <m>f</m> with the input <m>10</m>
+      </q>. A shorter way of saying that is
+      <q>
+        <m>f</m> of <m>10</m>
+      </q>. Likewise, we would read
+      <q>
+        <m>f(5.3)</m>
+      </q>
       as
-      <q><m>f</m> of <m>5.3</m></q>
+      <q>
+        <m>f</m> of <m>5.3</m>
+      </q>
       and would understand that to mean the output you get from the function <m>f</m> if you input the value <m>5.3</m>.
     </p>
     <example xml:id="FunctionsExample3">
@@ -405,17 +428,17 @@
           The sales tax rate in Ontario County, NY is <m>7.5 \%</m>.
           Let <m>f(t)</m> be the total price including tax for a purchase of <m>t</m> dollars.
           Find <m>f(800)</m>,
-          the price including sales tax for a laptop priced at <m>$ 800</m>.
+          the price including sales tax for a laptop priced at <m>\$ 800</m>.
           Express your answer both as an answer to the question and in function notation.
         </p>
       </statement>
     </example>
     <p>
       The sales tax is <m>7.5 \%</m> of
-      <m>$800</m> which would be <m>(0.075)($800) = $60</m>.
-      So the total price would be <m>$800 + $60 = $860</m>.
+      <m>\$800</m> which would be <m>(0.075)(\$800) = \$60</m>.
+      So the total price would be <m>\$800 + \$60 = \$860</m>.
       So, in answer to the question,
-      the price including tax is <m>$860</m>.
+      the price including tax is <m>\$860</m>.
       In function notation we would write <m>f(800)=860</m>.
     </p>
     <p>
@@ -461,7 +484,7 @@
       Functions can also be defined using a table which lists inputs and gives their corresponding outputs.
       We don't need to know what the rationale
       (if any)
-      was for assigning any particular input its output <mdash /> we only need to be able to determine what the output is.
+      was for assigning any particular input its output <mdash/> we only need to be able to determine what the output is.
     </p>
     <p>
       One common example of a table-defined function might be US Social Security numbers.
@@ -491,24 +514,36 @@
             <cell>Fine</cell>
           </row>
           <row bottom="minor">
-            <cell />
-            <cell />
+            <cell/>
+            <cell/>
           </row>
           <row>
-            <cell><m>70</m> mph</cell>
-            <cell><m>$45</m></cell>
+            <cell>
+              <m>70</m> mph</cell>
+            <cell>
+              <m>\$45</m>
+            </cell>
           </row>
           <row>
-            <cell><m>75</m> mph</cell>
-            <cell><m>$55</m></cell>
+            <cell>
+              <m>75</m> mph</cell>
+            <cell>
+              <m>\$55</m>
+            </cell>
           </row>
           <row>
-            <cell><m>80</m> mph</cell>
-            <cell><m>$65</m></cell>
+            <cell>
+              <m>80</m> mph</cell>
+            <cell>
+              <m>\$65</m>
+            </cell>
           </row>
           <row>
-            <cell><m>85</m> mph</cell>
-            <cell><m>$75</m></cell>
+            <cell>
+              <m>85</m> mph</cell>
+            <cell>
+              <m>\$75</m>
+            </cell>
           </row>
         </tabular>
         <p>
@@ -518,7 +553,7 @@
       </statement>
     </example>
     <p>
-      Reading the table we can see that the fine is <m>$65</m>.
+      Reading the table we can see that the fine is <m>\$65</m>.
       In function notation we would write <m>f(80)=65</m>.
     </p>
     <p>
@@ -531,14 +566,14 @@
       For example,
       suppose you want to know the fine for going <m>90</m> mph.
       There is no way to tell this from the given table.
-      It seems that for every <m>5</m> mph increase in speed the fine goes up <m>$10</m>,
-      so it might be reasonable to guess the fine would be <m>$85</m>.
+      It seems that for every <m>5</m> mph increase in speed the fine goes up <m>\$10</m>,
+      so it might be reasonable to guess the fine would be <m>\$85</m>.
       But that is only a guess.
-      It could also be that the maximum fine for speeding is <m>$75</m>,
+      It could also be that the maximum fine for speeding is <m>\$75</m>,
       so that might be the fine for a <m>90</m> mph speed.
       Or, maybe the state has an extra fine tacked on for really excessive speeds,
-      making the fine for <m>90</m> mph <m>$100</m>,
-      or <m>$150</m>, or <m>$250</m>?
+      making the fine for <m>90</m> mph <m>\$100</m>,
+      or <m>\$150</m>, or <m>\$250</m>?
       There just is no way of knowing for sure.
       Based on this table,
       you cannot determine the fine for a <m>90 mph</m> speed.
@@ -587,9 +622,17 @@
     <definition>
       <statement>
         <p>
-              <idx><h>Function</h><h>Domain</h></idx>
-              <idx><h>Function</h><h>Range</h></idx>
-          <em><em>Domain and Range</em></em>
+          <idx>
+            <h>Function</h>
+            <h>Domain</h>
+          </idx>
+          <idx>
+            <h>Function</h>
+            <h>Range</h>
+          </idx>
+          <em>
+            <em>Domain and Range</em>
+          </em>
         </p>
         <p>
           The set of all possible inputs for a function is called its <em>domain</em>.
@@ -606,7 +649,7 @@
       More formally we could write this as <m>\{ x \vert x \text{ is a U.S. State }  \}</m>.
       The range would be the set of all U.S. state capitals;
       formally <m>\{ y \vert y \text{ is a U.S. state capital } \}</m>.
-      Note that the letters used in the formal set descriptions don't matter <mdash /> the domain could also have been written
+      Note that the letters used in the formal set descriptions don't matter <mdash/> the domain could also have been written
       <m>\{ t \vert t \text{ is a U.S. State }  \}</m> or using any other letter.
       (You should ask your instructor whether or not you are expected to write domains and ranges in formal set-builder notation or can just give a verbal description.)
     </p>
@@ -911,11 +954,11 @@
           <li>
             <p>
               describe the relationship as a function using the phrasing
-              <q><em>
-              <me>
-                } is a function of \underline{
-              </me>
-              </em></q>
+              <q>
+                <em>
+              the output is a function of the input
+              </em>
+              </q>
               using both the variables and the quantities they represent, and
             </p>
           </li>
@@ -927,217 +970,219 @@
           </li>
         </ol>
       </p>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             The price <m>P</m> for a shipment of <m>x</m> gallons of paint can be determined using a function called <m>f</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   input <m>x</m>, gallons of paint
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   output <m>P</m>, price
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   price, <m>P</m>, is a function of gallons of paint, <m>x</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>P=f(x)</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>P=f(x)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The cost <m>C</m> to produce <m>z</m> litres of solvent can be calculated using the function <m>g</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The number of coaches <m>y</m> for a youth soccer league is determined based on the number of kids enrolled in the league,
             <m>t</m>.
             The function used to determine this is called <m>C</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   input <m>t</m>, number of kids
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   output <m>y</m>, number of coaches
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   number of coaches,
                   <m>y</m>, is a function of the number of kids, <m>t</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>y=C(t)</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>y=C(t)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The number of hours <m>h</m> Jayden needs to work to earn <m>d</m> dollars at his job is determined by the function <m>w</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The number of barrels of oil <m>B</m> needed to produce <m>G</m> gallons of gasoline can be calculated using the function <m>r</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   input <m>G</m>, gallons of gasoline
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   output <m>B</m>, barrels of oil
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   barrels of oil needed, <m>B</m>,
                   is a function of gallons of gasoline, <m>G</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>B=r(G)</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>B=r(G)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The number of seconds <m>s</m> it takes a computer network to transmit <m>d</m> terabytes of data is determined by the function <m>T</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The function <m>f</m> calculates the speed <m>s</m> of a rocket
             (in miles per hour)
             <m>t</m> seconds after it is launched.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   input <m>t</m>, seconds since launch
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   output <m>s</m>, speed of the rocket
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   speed, <m>s</m>, is a function of time since launch, <m>t</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>s=f(t)</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>s=f(t)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The function <m>h</m> determines the height <m>y</m> of a baseball
             (in feet)
             <m>t</m> seconds after it is thrown upward.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If you know <m>Q</m> the number of questions on a multiple choice test,
             you can figure out the number <m>x</m> you need to answer correctly to pass the test using the function <m>P</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   input <m>Q</m>, number of questions
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   output <m>x</m>, number you need to answer correctly
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   number of questions you need to answer correctly,
                   <m>x</m>, is a function of the number of questions, <m>Q</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>x=P(Q)</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>x=P(Q)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If you know <m>d</m> the distance you need to travel on the thruway you can calculate the toll <m>t</m> you will have to pay using the function <m>f</m>.
           </p>
-        </statement>
-      </exercise>
-      </exercises><p>
+          </statement>
+        </exercise>
+      </exercises>
+      <p>
         In each of the following problems,
         two variables and the quantities they represent are given,
         and an equation relating these variables with a function is also given.
@@ -1155,414 +1200,420 @@
           <li>
             <p>
               describe the relationship as a function using the phrasing
-              <q><em>
-              <me>
-                } is a function of \underline{
-              </me>
-              </em></q>
+              <q>
+                <em>
+              the output is a function of the input
+              </em>
+              </q>
               using both the variables and the quantities they represent, and
             </p>
           </li>
         </ol>
       </p>
-      <exercises><exercise>
-        <statement>
-          <p>
-            <m>h</m> is the number of minutes needed to walk to school at a given pace,
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
+              <m>h</m> is the number of minutes needed to walk to school at a given pace,
             <m>d</m> is the distance to school in miles, and <m>h = f(d)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   input <m>d</m>, miles to school
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   output <m>h</m>, minutes need to walk
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   minutes to walk,
-                  <m>h</m>, is a function of miles to school, <m>x</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>w</m> is the number of weeks required to install <m>m</m> miles of fiber optic cable,
+                  <m>h</m>, is a function of miles to school, <m>d</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>w</m> is the number of weeks required to install <m>m</m> miles of fiber optic cable,
             and <m>w = f(m)</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>y</m> is the number of months it will take to pay off a credit card with balance <m>B</m> paying the minimum payment,
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>y</m> is the number of months it will take to pay off a credit card with balance <m>B</m> paying the minimum payment,
             and <m>y = f(B)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   input <m>B</m>, balance
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   output <m>y</m>, months to pay off
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   months to pay off, <m>y</m>, is a function of balance, <m>B</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>T</m> is the total amount paid over the life of a car loan,
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>T</m> is the total amount paid over the life of a car loan,
             <m>C</m> is the amount borrowed, and <m>T = f(C)</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>t</m> is the time in seconds that it takes for a race car to accelerate to a speed of <m>m</m> miles per hour,
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>t</m> is the time in seconds that it takes for a race car to accelerate to a speed of <m>m</m> miles per hour,
             and <m>t = a(m)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   input <m>m</m>, speed
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   output <m>t</m>, time to accelerate
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   time to accelerate, <m>t</m>,
                   is a function of speed, <m>m</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>K</m> is the temperature in degrees Kelvin,
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>K</m> is the temperature in degrees Kelvin,
             <m>F</m> is the temperature in degrees Fahrenheit, and <m>K = g(F)</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>m</m> is the velocity a race car needs to accelerate up to,
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>m</m> is the velocity a race car needs to accelerate up to,
             <m>t</m> is the time required to do this, and <m>t = a(m)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   input <m>m</m>, velocity
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   output <m>t</m>, time to accelerate
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   time to accelerate, <m>t</m>,
                   is a function of velocity, <m>m</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>F</m> is the temperature in degrees Fahrenheit,
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>F</m> is the temperature in degrees Fahrenheit,
             <m>K</m> is the temperature in degrees Kelvin, and <m>F = g(K)</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>C</m> is the amount borrowed on a car loan,
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>C</m> is the amount borrowed on a car loan,
             <m>I</m> is the total amount of interest on the loan, and <m>I = f(C)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   input <m>C</m>, amount borrowed
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   output <m>I</m>, amount of interest
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   amount of interest, <m>I</m>,
                   is a function of amount borrowed, <m>C</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>B</m> is the balance on a credit card,
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>B</m> is the balance on a credit card,
             <m>y</m> is the number of months it will take to pay it off making the minimum monthly payment,
             and <m>y = f(B)</m>.
           </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Functions and Formulas</title>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             The annual property tax on residential property in the Town of Townsville is calculated using the function <m>f(x)=0.018x+75</m>,
             where <m>x</m> is the property's assessed value.
-            Use this function to determine the annual property tax on a home assessed at <m>$175,000</m>.
+            Use this function to determine the annual property tax on a home assessed at <m>\$175,000</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>$3,225</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <m>\$3,225</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The annual property tax on residential property in the Village of Villageport is calculated using the function
             <m>f(x)=0.021x+350</m> where <m>x</m> is the property's assessed value.
-            Use this function to determine the annual property tax on a home assessed at <m>$154,000</m>.
+            Use this function to determine the annual property tax on a home assessed at <m>\$154,000</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The height in feet of a ball thrown upward with an initial upward velocity of 75 feet per second can be calculated using the function <m>h(t)=-16t^2+75t</m>,
             where <m>t</m> is the number of seconds since the ball was thrown.
             Use this function to find the ball's height <m>2</m> seconds after being thrown.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>86</m> feet
+          </statement>
+          <solution>
+            <p>
+              <m>86</m> feet
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The height of a ball thrown upward with an initial velocity of 18 meters per second can be calculated using the function <m>h(t)=-4.9t^2+18t</m>,
             where <m>t</m> is the number of seconds since the ball was thrown.
             Use this function to find the ball's height <m>2</m> seconds after being thrown
             (round to one decimal place).
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If <m>f(x)=3x+7</m>, find <m>f(5)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>f(5)=22</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <m>f(5)=22</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If <m>f(x)=11-5x</m>, find <m>f(3)</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If <m>g(x)=x^2-2x+1</m>, find <m>g(1)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>g(1)=0</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <m>g(1)=0</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If <m>g(x)=2x^2-5x+3</m>, find <m>g(2)</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If <m>g(t)=7t+t^2</m>, find <m>g(-1)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>g(-1)=-6</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <m>g(-1)=-6</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If <m>g(t)=5-t^2</m>, find <m>g(-3)</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If <m>h(z)=3-2z</m>, find <m>h(0)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>h(1)=3</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <m>h(0)=3</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If <m>r(x)=150+2x</m>, find <m>r(5)</m>.
           </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Functions Defined Verbally</title>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             Let <m>r</m> be the rule that rounds each real number <m>x</m> to the nearest whole integer.
             Find (a) <m>r(0.54)</m>, (b)
             <m>r(227.1396)</m>, and (c) <m>r(-2.93)</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
-                  <m>r(0.54) = 1</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>r(227.1396) = 227</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>r(-2.93) = -3</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
+                    <m>r(0.54) = 1</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>r(227.1396) = 227</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>r(-2.93) = -3</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>d</m> be the rule that rounds each real number <m>x</m> to one decimal place.
             Find (a) <m>d(1.76)</m>, (b)
             <m>d(22.43)</m>, and (c) <m>d(-11.55)</m>.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>a</m> be the rule that assigns to each English word the first letter in the word.
             Find (a) <m>a(\text{ bicycle } )</m>, (b) <m>a(\text{ porcupine } )</m>,
             and (c) <m>a(\text{ plastic } )</m>.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
-                  <m>a(\text{ bicycle } )=\text{b}</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>a(\text{ porcupine } )=\text{p}</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>a(\text{ plastic } )=\text{p}</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
+                    <m>a(\text{ bicycle } )=\text{b}</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>a(\text{ porcupine } )=\text{p}</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>a(\text{ plastic } )=\text{p}</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>f</m> be the rule that assigns to each English word the last letter in the word.
             Find (a) <m>f(\text{ bicycle } )</m>, (b) <m>f(\text{ porcupine } )</m>,
             and (c) <m>f(\text{ plastic } )</m>.
           </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Function Defined by Tables</title>
       <p>
@@ -1571,56 +1622,88 @@
         Assume the function's name is <m>p</m>.
       </p>
       <tabular>
+        <col width="45.0%"/>
+        <col width="45.0%"/>
         <row>
-          <cell>Lunch Special</cell>
-          <cell>Price (includes soup, eggroll, or can of soda)</cell>
+          <cell>
+            <p>Lunch Special</p>
+          </cell>
+          <cell>
+            <p>Price (includes soup, eggroll, or can of soda)</p>
+          </cell>
         </row>
         <row bottom="minor">
-          <cell />
-          <cell />
+          <cell/>
+          <cell/>
         </row>
         <row>
-          <cell>Beef with broccoli</cell>
-          <cell><m>$7.95</m></cell>
+          <cell>
+            <p>Beef with broccoli</p>
+          </cell>
+          <cell>
+            <p>
+              <m>\$7.95</m>
+            </p>
+          </cell>
         </row>
         <row>
-          <cell>Kung pao chicken</cell>
-          <cell><m>$6.95</m></cell>
+          <cell>
+            <p>Kung pao chicken</p>
+          </cell>
+          <cell>
+            <p>
+              <m>\$6.95</m>
+            </p>
+          </cell>
         </row>
         <row>
-          <cell>Shrimp with lobster sauce</cell>
-          <cell><m>$8.95</m></cell>
+          <cell>
+            <p>Shrimp with lobster sauce</p>
+          </cell>
+          <cell>
+            <p>
+              <m>\$8.95</m>
+            </p>
+          </cell>
         </row>
         <row>
-          <cell>Szechuan tofu</cell>
-          <cell><m>$7.50</m></cell>
+          <cell>
+            <p>Szechuan tofu</p>
+          </cell>
+          <cell>
+            <p>
+              <m>\$7.50</m>
+            </p>
+          </cell>
         </row>
       </tabular>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             Find <m>p(\text{ Szechuan tofu } )</m>,
             the price of the Szechuan tofu lunch special.
             Express your answer both in ordinary English and in function notation.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>p(\text{ Szechuan tofu } )=7.50</m>;
-            the price of the Szechuan tofulunch special is <m>$7.50</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <m>p(\text{ Szechuan tofu } )=7.50</m>;
+            the price of the Szechuan tofulunch special is <m>\$7.50</m>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Find <m>p(\text{ Kung pao chicken } )</m>,
             the price of the Kung pao chicken lunch special.
             Express your answer both in ordinary English and in function notation.
           </p>
-        </statement>
-      </exercise>
-      </exercises><p>
+          </statement>
+        </exercise>
+      </exercises>
+      <p>
         Answer the following questions based on the table below,
         which gives the weight in pounds at which a <m>35</m> year old man is considered
         <q>obese</q>
@@ -1633,205 +1716,227 @@
           <cell>Weight (pounds)</cell>
         </row>
         <row bottom="minor">
-          <cell />
-          <cell />
+          <cell/>
+          <cell/>
         </row>
         <row>
-          <cell><m>66</m></cell>
-          <cell><m>186</m></cell>
+          <cell>
+            <m>66</m>
+          </cell>
+          <cell>
+            <m>186</m>
+          </cell>
         </row>
         <row>
-          <cell><m>68</m></cell>
-          <cell><m>197</m></cell>
+          <cell>
+            <m>68</m>
+          </cell>
+          <cell>
+            <m>197</m>
+          </cell>
         </row>
         <row>
-          <cell><m>70</m></cell>
-          <cell><m>209</m></cell>
+          <cell>
+            <m>70</m>
+          </cell>
+          <cell>
+            <m>209</m>
+          </cell>
         </row>
         <row>
-          <cell><m>72</m></cell>
-          <cell><m>221</m></cell>
+          <cell>
+            <m>72</m>
+          </cell>
+          <cell>
+            <m>221</m>
+          </cell>
         </row>
       </tabular>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             Find <m>f(70)</m>,
             the weight at which a <m>70</m> inch tall man would be considered obese.
             Express your answer both in ordinary English and in function notation.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>f(70)=209</m>;
+          </statement>
+          <solution>
+            <p>
+              <m>f(70)=209</m>;
             a <m>70</m> inch tall man would be considered obese at a weight of <m>209</m> pounds
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Find <m>f(66)</m>,
             the weight at which a <m>66</m> inch tall man would be considered obese.
             Express your answer both in ordinary English and in function notation.
           </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Domain and Range</title>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             Let <m>M</m> be the function that assigns to each living human being their legal date of birth
             (month and day).
             What is the domain of <m>M</m>?
             What is the range of <m>M</m>?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Domain is all living human beings;
             range is all possible dates (month and day)
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>p</m> be the rule that assigns to each vehicle registered in the state of New York its license plate number.
             What is the domain of <m>p</m>?
             What is the range of <m>p</m>?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>r</m> be the rule that gives the rank of each current member of the U.S. Army.
             What is the domain of <m>r</m>?
             What is the range of <m>r</m>?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Domain is all current members of the US Army;
             range is all possible ranks
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>W</m> be the rule that gives the wedding date
             (month and day)
             of each legally married American married couple.
             What is the domain of <m>W</m>?
             What is the range of <m>W</m>?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>f(x)=x^2-3x+5</m>?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Domain is all real numbers or <m>\mathbb{R}</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>f(x)=2x-5</m>?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>g(x)=\frac{17x-5}{x-1}</m>?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Domain is all real numbers except <m>1</m>,
             or <m>\{x \vert x \ne 1 \}</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>g(x)=\frac{x^2-3x+17}{x+2}</m>?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>h(x)=\frac{x}{2}+\frac{2}{x}</m>?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Domain is all real numbers except 0, or <m>\{x \vert x \ne 0 \}</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>h(x)=\frac{x-3}{x-5}-\frac{3}{4}</m>?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>f(t)=2+\sqrt{t-3}</m>?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Domain is all real numbers greater than or equal to 3, or <m>\{x \vert x \ge 3 \}</m>
-          </p>
-        </solution>
-      </exercise>
-      </exercises><p>,
+            </p>
+          </solution>
+        </exercise>
+      </exercises>
+      <p>,
         or <m>[3,\infty)</m>]
       </p>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>f(t)=\sqrt{2t-5}</m>?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>h(t)=\frac{t}{2t-1}</m>?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Domain is all real numbers except <m>\frac{1}{2}</m>,
             or <m>\{x \vert x \ne \frac{1}{2} \}</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>g(t)=\frac{6t+1}{2t-3}</m>?
           </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Determining Whether or Not a Rule is a Function</title>
       <p>
@@ -1839,648 +1944,636 @@
         Determine whether or not the given rule is a function.
         Clearly justify your answer.
       </p>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             Let <m>f</m> be the rule that names the biological father of each living human being.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Yes this is a function.
             Each input (living human being) has one and only one biological father.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>m</m> be the rule that gives the legal spouse of every legally married American.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>c</m> be the rule that assigns to each biological father his child.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             No, this is not a function.
             There are some inputs
             (biological fathers)
             who have more than one child.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>w</m> be the rule that assigns to each person who has ever gotten married the person they married.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>P</m> be the rule that determines the current selling price for each item in stock at the Macedon, NY Walmart store.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Yes, this is a function.
             Each item has one and only one price (when the cashier rings it up there is only one price that comes up.)
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>D</m> be the rule that determines the current selling price for each item in stock at a dollar store.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>g</m> be the rule that gives each student who completes this course his or her final course grade.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Yes, this is a function.
             Each input (student) gets only one final grade.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>k</m> be the rule that gives each student enrolled at this college his or her current grade point average.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>m</m> be the rule that assigns to each dog owner his or her dog.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             No, this is not a function.
             Some inputs
             (dog owners)
             have more than one output (dogs they own.)
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>n</m> be the rule that assigns to each owned dog its owner.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>f(x)=(x-3)(x+2)</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>f(x)=(x-3)(x+2)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             Yes, this is a function.
             If you input any real number and evaluate the result,
             you get one and only one answer.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>g(x)=3x^2+1</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>g(t)=\frac{2t+1}{t-1}</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>g(x)=3x^2+1</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>g(t)=\frac{2t+1}{t-1}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             Yes, this is a function.
             If you input any real number except <m>t=1</m>,
             you get one and only one answer. (<m>t=1</m> is not a problem because it is excluded from the domain,
             and even if you ignored this fact and input <m>t=1</m> you would give you no output,
             not more than one)
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>h(x)=\frac{x^2-1}{x-1}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>f(x)=0</m>
-          </p>
-        </statement>
-        <solution>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>h(x)=\frac{x^2-1}{x-1}</m>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>f(x)=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
             Yes, this is a function.
             No matter what you use as input,
             you get only one output (the output is always zero.)
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>c(t)=42</m>
-          </p>
-        </statement>
-      </exercise>
-    </exercises></subsubsection>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>c(t)=42</m>
+            </p>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsubsection>
     <subsubsection>
       <title>Grab Bag</title>
-      <exercises><exercise>
-        <statement>
-          <p>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>f(x)=x^2-3x</m>.
             Calculate:
             <ol marker="a">
-              <li>
-                <p>
-                  <m>f(3)</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>f(-2)</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>f(0)</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
-                  <m>f(3)=0</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>f(-2)=10</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>f(0)=0</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                <li>
+                  <p>
+                    <m>f(3)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>f(-2)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>f(0)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
+                    <m>f(3)=0</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>f(-2)=10</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>f(0)=0</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The cost of roaming data on a cellular plan is a function of the amount of data downloaded.
-            The cost is <m>$15.36</m> per megabyte.
+            The cost is <m>\$15.36</m> per megabyte.
             Use this function to determine how much it would cost to download <m>3.5</m> megabytes on this plan.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Let <m>C</m> be the cost of roaming data on a cellular plan,
             let <m>d</m> be the amount of data downloaded
             (in megabytes)
             and suppose <m>C=f(d)</m>.
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   State the input variable and quantity,
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   state the output variable and quantity, and
                 </p>
-              </li>
-              <li>
-                <p>
-                  describe the relationship using both the variables and the quantities they represent using the phrasing
-                  <q><em>
-                  <me>
-                    } is a function of \underline{
-                  </me>
-                  </em></q>.
+                </li>
+                <li>
+                  <p>
+                  describe the relationship using both the variables and the quantities they represent using the phrasing <q>the output is a function of the input</q>.
+        </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
+                    <m>d</m>, The amount of data
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
-                  <m>d</m>, The amount of data
+                </li>
+                <li>
+                  <p>
+                    <m>C</m>, the cost
                 </p>
-              </li>
-              <li>
-                <p>
-                  <m>C</m>, the cost
-                </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   The cost of roaming data, <m>C</m>,
                   is a function of the amount of data downloaded, <m>d</m>.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>g(x)=x^2+3x-1</m>?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             For the table given below:
             <md>
-              <mrow>\begin{array}{c|cccccc} X \amp  0 \amp  1 \amp  2 \amp  3 \amp  4 \amp  5</mrow>
-              <mrow>\hline Y \amp  6 \amp  2 \amp  -1 \amp  4 \amp  7 \amp  2 \end{array}</mrow>
-            </md>
-            <ol marker="a">
-              <li>
-                <p>
+                <mrow>\begin{array}{c|cccccc} X \amp  0 \amp  1 \amp  2 \amp  3 \amp  4 \amp  5</mrow>
+                <mrow>\hline Y \amp  6 \amp  2 \amp  -1 \amp  4 \amp  7 \amp  2 \end{array}</mrow>
+              </md>
+              <ol marker="a">
+                <li>
+                  <p>
                   Is <m>Y</m> a function of <m>X</m>?
                   Justify your answer.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   Is <m>X</m> a function of <m>Y</m>?
                   Justify your answer.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
-                  <m>Y</m> is a function of <m>X</m>, Each input (<m>X</m>) has only one output value
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
+                    <m>Y</m> is a function of <m>X</m>, Each input (<m>X</m>) has only one output value
                   (<m>Y</m>).
                 </p>
-              </li>
-              <li>
-                <p>
-                  <m>X</m> is not a function of <m>Y</m>.
+                </li>
+                <li>
+                  <p>
+                    <m>X</m> is not a function of <m>Y</m>.
                   The input <m>Y=2</m> corresponds to two different outputs (<m>X=1</m> and <m>X=5</m>)
                 </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Give an example of a rule that does not define a function.
             Explain why the rule fails to define a function.
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Does the rule <m>f(x)=\frac{3}{x}</m> define a function?
             Why or why not.
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             Yes, <m>f</m> is a function.
             Each input <m>x</m> gives one and only one output.
             (<m>x=0</m> is excluded from the domain.)
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>f(x)=8-x^2</m>.
             Calculate:
             <ol marker="a">
-              <li>
-                <p>
-                  <m>f(3)</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>f(-2)</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>f(0)</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                <li>
+                  <p>
+                    <m>f(3)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>f(-2)</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>f(0)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The rated range of an electric vehicle is a function of the storage capacity of its battery.
             Suppose an electric car is expected to travel <m>4.5</m> miles per kilowatt hour.
             Use this function to determine its range if it has a <m>28</m> kwh battery.
           </p>
-        </statement>
-        <solution>
-          <p>
-            <m>126</m> miles
+          </statement>
+          <solution>
+            <p>
+              <m>126</m> miles
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>R</m> is the range
             (in miles)
             of an electric vehicle,
             let <m>E</m> be the storage capacity of its battery in kilowatt hours,
             and suppose <m>R=g(E)</m>.
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   State the input variable and quantity,
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   state the output variable and quantity, and
                 </p>
-              </li>
-              <li>
-                <p>
-                  describe the relationship using both the variables and the quantities they represent using the phrasing
-                  <q><em>
-                  <me>
-                    } is a function of \underline{
-                  </me>
-                  </em></q>.
-                </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                </li>
+                <li>
+                  <p>
+                  describe the relationship using both the variables and the quantities they represent using the phrasing <q>the output is a function of the input</q>.
+        </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of <m>f(x)=\frac{x+2}{x-5}</m>?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             All real numbers except <m>5</m>,
             or <m>\{x \vert x \ne 5\}</m>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             For the table given below:
             <md>
-              <mrow>\begin{array}{c|c} \text{ Agent }  \amp  \text{ Listing }</mrow>
-              <mrow>\hline \text{ Loman }  \amp   742 \text{ Evergreen }</mrow>
-              <mrow>\text{ Mays }  \amp  1313 \text{ Mockingbird }</mrow>
-              <mrow>\text{ Popeil }  \amp  10 \text{ Stigwood }</mrow>
-              <mrow>\text{ Mays }  \amp  342 \text{ Gravelpit }</mrow>
-              <mrow>\text{ Hill }  \amp  518 \text{ Crestview }</mrow>
-              <mrow>\text{ Hill }  \amp  704 \text{ Hauser } \end{array}</mrow>
-            </md>
-            <ol marker="a">
-              <li>
-                <p>
+                <mrow>\begin{array}{c|c} \text{ Agent }  \amp  \text{ Listing }</mrow>
+                <mrow>\hline \text{ Loman }  \amp   742 \text{ Evergreen }</mrow>
+                <mrow>\text{ Mays }  \amp  1313 \text{ Mockingbird }</mrow>
+                <mrow>\text{ Popeil }  \amp  10 \text{ Stigwood }</mrow>
+                <mrow>\text{ Mays }  \amp  342 \text{ Gravelpit }</mrow>
+                <mrow>\text{ Hill }  \amp  518 \text{ Crestview }</mrow>
+                <mrow>\text{ Hill }  \amp  704 \text{ Hauser } \end{array}</mrow>
+              </md>
+              <ol marker="a">
+                <li>
+                  <p>
                   Is agent a function of listing?
                   Justify your answer.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   Is listing a function of agent?
                   Justify your answer.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Fill in the table below so that <m>x</m> is a function of <m>y</m> and <m>y</m> is also a function of <m>x</m>.
             <md>
-              <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
-              <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
-            </md>
-          </p>
-        </statement>
-        <solution>
-          <p>
+                <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
+                <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
+              </md>
+            </p>
+          </statement>
+          <solution>
+            <p>
             There are many possible correct answers.
             As long as no value appears more than once in either the <m>x</m> or <m>y</m> row,
             it works.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Fill in the table below so that <m>x</m> is a function of <m>y</m> but <m>y</m> is not a function of <m>x</m>.
             <md>
-              <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
-              <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
-            </md>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
+                <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
+              </md>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Fill in the table below so that <m>x</m> is not a function of <m>y</m> but <m>y</m> is a function of <m>x</m>.
             <md>
-              <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
-              <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
-            </md>
-          </p>
-        </statement>
-        <solution>
-          <p>
+                <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
+                <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
+              </md>
+            </p>
+          </statement>
+          <solution>
+            <p>
             There are many possible correct answers.
             As long as no value appears more than once in the <m>x</m> row but at least one value does appear more than once in the <m>y</m> row,
             it works.
           </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Fill in the table below so that <m>x</m> is not a function of <m>y</m> and <m>y</m> is also not a function of <m>x</m>.
             <md>
-              <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
-              <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
-            </md>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                <mrow>\begin{array}{c|c|c|c|c|c|} x \amp   \amp   \amp   \amp   \amp</mrow>
+                <mrow>\hline y \amp  \amp  \amp  \amp  \amp \end{array}</mrow>
+              </md>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>h</m> is the function which gives the number of electoral votes that each state gets in the Electoral College.
             Determine <m>h(\text{ Florida } )</m>,
             <m>h(\text{ Wyoming } )</m> and
             <m>h(\text{ Massachusetts } )</m>. (NOTE: Unless you happen to have this information memorized for some reason,
             look it up in a reference book or on the internet.)
           </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
-                  <m>h(\text{ Florida } )=30</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>h(\text{ Wyoming } )=3</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>h(\text{ Massachusetts } )=11</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
+                    <m>h(\text{ Florida } )=30</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>h(\text{ Wyoming } )=3</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>h(\text{ Massachusetts } )=11</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             What is the domain of the function <m>q(t)=\frac{t+5}{t-5}</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             The mass in kilograms <m>m</m> of an object can be determined based on its weight <m>w</m> in pounds,
             using a function called <m>C</m>.
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   State the input variable and quantity,
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   state the output variable and quantity, and
                 </p>
-              </li>
-              <li>
-                <p>
-                  describe the relationship using both the variables and the quantities they represent using the phrasing
-                  <q><em>
-                  <me>
-                    } is a function of \underline{
-                  </me>
-                  </em></q>.
-                </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
+                  describe the relationship using both the variables and the quantities they represent using the phrasing <q>the output is a function of the input</q>.
+        </p>
+                </li>
+                <li>
+                  <p>
                   Write an equation which relates the variables and the function.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a">
+                <li>
+                  <p>
                   input <m>w</m>, weight in pounds
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   output <m>m</m>, mass in kilograms
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   mass, <m>m</m> is a function of weight <m>w</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>m=C(w)</m>
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>m=C(w)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>f</m> is defined to be a function which takes as inputs the last name of each student in a college's freshman class and gives as an output that student's academic advisor.
             Does <m>f(\text{ Smith } ) = \text{ Jones }</m> mean (a) that Smith is Jones' academic advisor or (b) that Jones is Smith's academic advisor?
           </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>H</m> is a function that gives the first name of each student in a class as a function of that student's last name.
             <ol marker="a">
-              <li>
-                <p>
+                <li>
+                  <p>
                   Since <m>H</m> is a function,
                   which of the following must be true:
                   that no two students share the same last name,
@@ -2488,9 +2581,9 @@
                   or that no two students share either the same first name or last name?
                   Justify your answer.
                 </p>
-              </li>
-              <li>
-                <p>
+                </li>
+                <li>
+                  <p>
                   Rewrite each of the following function equations as a student's name
                   (such as
                   <q>Mary Jones</q>
@@ -2499,61 +2592,49 @@
                   <m>H(\text{ Li } ) = \text{ Huang }</m>,
                   and <m>H(\text{ Bradley } ) = \text{ Cooper }</m>.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol marker="a">
-              <li>
-                <p>
-                  No two students share the same last name
-                </p>
-              </li>
-              <li>
-                <p>
-                  George James, Huang Li, Cooper Bradley
-                </p>
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>None of the three restrictions is necessary. For the rule to be a function, every last name that occurs must correspond to exactly one first name. Two students may share both names.</p>
+            <p>George James, Huang Li, Cooper Bradley.</p>
+          </solution>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             Suppose <m>f(x)=\frac{2}{3}x-1</m>.
             Find
             <ol marker="a">
-              <li>
-                <p>
-                  <m>f(0)</m>,
+                <li>
+                  <p>
+                    <m>f(0)</m>,
                 </p>
-              </li>
-              <li>
-                <p>
-                  <m>f(-9)</m> and
+                </li>
+                <li>
+                  <p>
+                    <m>f(-9)</m> and
                 </p>
-              </li>
-              <li>
-                <p>
-                  <m>f(5)</m>.
+                </li>
+                <li>
+                  <p>
+                    <m>f(5)</m>.
                 </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
             If <m>f(x) = x^2</m> find two different input values which give the same output value.
             Does the fact that you can do this mean <m>f(x)</m> is not a function?
           </p>
-        </statement>
-        <solution>
-          <p>
+          </statement>
+          <solution>
+            <p>
             There are many possible answers.
             Take any positive number and the corresponding negative number.
             <m>3</m> and <m>-3</m> for example,
@@ -2561,8 +2642,9 @@
             This is not a problem,
             since it is fine for two different inputs to give the same output.
           </p>
-        </solution>
-      </exercise>
-    </exercises></subsubsection>
+          </solution>
+        </exercise>
+      </exercises>
+    </subsubsection>
   </subsection>
 </section>

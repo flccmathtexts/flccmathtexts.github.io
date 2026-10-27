@@ -147,17 +147,7 @@
         </p>
       </statement>
       <solution>
-        <p>
-          a. Vertical: <m>(0,20)</m>, Horizontal: <m>(4,0)</m> \b.
-          Vertical: <m>(0,16)</m>, Horizontal:
-          <m>(\frac{64}{3},0)=(21.33,0)</m> c.
-          Vertical: <m>(0,7.6)</m>, Horizontal:
-          <m>(\frac{19}{3},0)=(6.33,0)</m> d.
-          Vertical: <m>(0,0)</m>, Horizontal: <m>(0,0)</m> e.
-          Vertical: <m>(0,-7)</m>, Horizontal: <m>(3.5,0)</m> f.
-          Vertical: <m>(0,\frac{7}{3})=(0, 2.33)</m>, Horizontal:
-          <m>(-\frac{14}{3},0)=(-4.67,0)</m>
-        </p>
+        <p>a. Vertical: <m>(0,20)</m>; horizontal: <m>(4,0)</m>.</p><p>b. Vertical: <m>(0,16)</m>; horizontal: <m>(\frac{64}{3},0)</m>.</p><p>c. Vertical: <m>(0,7.6)</m>; horizontal: <m>(\frac{19}{3},0)</m>.</p><p>d. Both intercepts: <m>(0,0)</m>.</p><p>e. Vertical: <m>(0,4)</m>; horizontal: <m>(2,0)</m>.</p><p>f. Vertical: <m>(0,-7)</m>; horizontal: <m>(\frac72,0)</m>.</p><p>g. Vertical: <m>(0,\frac73)</m>; horizontal: <m>(-\frac{14}{3},0)</m>.</p>
       </solution>
     </exercise>
     <exercise>
@@ -221,8 +211,8 @@
       <solution>
         <p>
           Slope: The residents of the town of Williamson are charged an additional
-          <m>$0.005</m> per additional gallon of water used each month.
-          Vertical: The residents of the town of Williamson are charged a monthly fee of <m>$25</m> for water.
+          <m>\$0.005</m> per additional gallon of water used each month.
+          Vertical: The residents of the town of Williamson are charged a monthly fee of <m>\$25</m> for water.
         </p>
       </solution>
     </exercise>
@@ -236,8 +226,8 @@
       </statement>
       <solution>
         <p>
-          Slope: The cost for a cab ride increase by<m>$1.50</m> for each additional mile.
-          Vertical: It costs <m>$3.00</m> to have the cab pick you up.
+          Slope: The cost for a cab ride increase by<m>\$1.50</m> for each additional mile.
+          Vertical: It costs <m>\$3.00</m> to have the cab pick you up.
         </p>
       </solution>
     </exercise>
@@ -354,8 +344,8 @@
         <p>
           The cost to refinish a hardwood floor is a linear function of the size of the room,
           in square feet.
-          It costs <m>$700</m> to refinish a room <m>100</m> sq. feet.
-          And <m>$950</m> for a room <m>150</m> sq. feet.
+          It costs <m>\$700</m> to refinish a room <m>100</m> sq. feet.
+          And <m>\$950</m> for a room <m>150</m> sq. feet.
           Find a formula for this linear function.
         </p>
       </statement>
@@ -378,9 +368,7 @@
         </p>
       </statement>
       <solution>
-        <p>
-          <m>4=-5.5</m>
-        </p>
+        <p><m>x=-\frac{11}{5}=-2.2</m></p>
       </solution>
     </exercise>
     <exercise>

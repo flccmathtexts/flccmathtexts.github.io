@@ -6,7 +6,9 @@
     </p>
     <p>
       When it comes to multiplying, a <em>factor</em>
-          <idx><h>Factor</h></idx>
+      <idx>
+        <h>Factor</h>
+      </idx>
       is one of the things being multiplied and the <em>product</em>
       is the result that is obtained from multiplying.
       For example in the equation <m>2 \cdot 6 = 12</m>,
@@ -29,7 +31,10 @@
       A common factor is a term that divides each term of the expression.
       We are looking for our result to be
       <em>factored completely</em> ,
-          <idx><h>Factor</h><h>Completely</h></idx>
+          <idx>
+        <h>Factor</h>
+        <h>Completely</h>
+      </idx>
       meaning that there are no other factors that can be divided out.
       When looking at the example above,
       <m>3</m> is a common factor of the expression <m>3x+15</m> because <m>3</m> divides both <m>3x</m> and <m>15</m> evenly.
@@ -289,218 +294,209 @@
       </me>
     </p>
   </subsection>
-  <subsection>
+  <exercises>
     <title>Exercises</title>
-    
-    <exercises><exercise>
-      <statement>
-        <p>
-          <m>18x^2-2x</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>2x(9x-1)</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2t^2+8t</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>9y^3-y^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>y^2(9y-1)</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>6ab-4ad+12ac</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3x^3y^2-18x^2y^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>3x^2y^2(x-6)</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>4x^2y^3-18x^5y^2+2xy^4</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>5x^2y^3+15x^3y^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>5x^2y^2(y+3x)</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>12a^4-21a^3-9a^2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>6cd+9df-3cf</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>3(2cd+3df-cf)</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>25p^2q-45pq^3</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>2x^3-10x^2+14x^4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>(2x^2)(x-5+7x^2)</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>-5x^4y+20x^3y^2-20x^2y^3</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>18a^2bc+24ab^2c^2-6a^2bc^2</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>6abc(3a+4bc-ac)</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>-p^3-4p^2+p</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>4x^2y^3-18x^5y^2+2xy^4</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>2xy^2(2xy-9x^4+y^2)</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>ax-5x+5a-25</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3x^3-6x^2+5x-10</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>(3x^2+5)(x-2)</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>10x^2-5x+10x-5</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>ac-bc+a^2-ab</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>(a-b)(c+a)</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>10x^3-2x^2-15x+3</m>
-        </p>
-      </statement>
-    </exercise>
-    
-  </exercises></subsection>
+    <exercisegroup cols="2">
+      <title>Common factors</title>
+      <introduction>
+        <p>Factor each expression completely.</p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>18x^2-2x</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>2x(9x-1)</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2t^2+8t</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>9y^3-y^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>y^2(9y-1)</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6ab-4ad+12ac</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3x^3y^2-18x^2y^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>3x^2y^2(x-6)</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4x^2y^3-18x^5y^2+2xy^4</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5x^2y^3+15x^3y^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>5x^2y^2(y+3x)</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>12a^4-21a^3-9a^2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6cd+9df-3cf</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>3(2cd+3df-cf)</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>25p^2q-45pq^3</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2x^3-10x^2+14x^4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>(2x^2)(x-5+7x^2)</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-5x^4y+20x^3y^2-20x^2y^3</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>18a^2bc+24ab^2c^2-6a^2bc^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>6abc(3a+4bc-ac)</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-p^3-4p^2+p</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4x^2y^3-18x^5y^2+2xy^4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>2xy^2(2xy-9x^4+y^2)</m>
+          </p>
+        </solution>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Factoring by grouping</title>
+      <introduction>
+        <p>Factor each expression completely.</p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>ax-5x+5a-25</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3x^3-6x^2+5x-10</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>(3x^2+5)(x-2)</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>10x^2-5x+10x-5</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>ac-bc+a^2-ab</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>(a-b)(c+a)</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>10x^3-2x^2-15x+3</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+  </exercises>
 </section>

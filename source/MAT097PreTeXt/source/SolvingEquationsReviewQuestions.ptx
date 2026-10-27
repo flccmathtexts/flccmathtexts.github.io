@@ -259,9 +259,7 @@
         </p>
       </statement>
       <solution>
-        <p>
-          <m>p=34</m>
-        </p>
+        <p><m>p=\frac{153}{2}=76.5</m></p>
       </solution>
     </exercise>
     
@@ -476,9 +474,7 @@
         </p>
       </statement>
       <solution>
-        <p>
-          <m>y=\frac{wz}{x}</m>
-        </p>
+        <p><m>z=\frac{xy}{w}</m>, for <m>w\ne 0</m>.</p>
       </solution>
     </exercise>
     
@@ -497,7 +493,7 @@
       </statement>
       <solution>
         <p>
-          <m>a=-4</m> or <m>a=3</m>
+          <m>a=-4</m> or <m>a=-3</m>
         </p>
       </solution>
     </exercise>

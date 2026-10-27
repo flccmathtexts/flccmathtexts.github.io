@@ -1,7 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-
 <section xml:id="AlgebraicSubstitution">
-
   <title>Algebraic Substitution</title>
   <introduction>
     <p>
@@ -14,7 +12,8 @@
       and the trench has a length of 5 ninda and is one-half ninda deep,
       and if a worker's daily load of earth costs 10 gin to move,
       and his daily wages are 6 se of silver,
-      then how wide is the canal?</q><fn>
+      then how wide is the canal?</q>
+      <fn>
       Source: Exhibition Review: \quotes{Masters of Math,
       from Old Babylon} by Edward Rothstein.
       New York Times. 11/26/10
@@ -71,7 +70,9 @@
     </p>
     <p>
       An <em>algebraic expression</em>
-          <idx><h>Algebraic Expression</h></idx>
+      <idx>
+        <h>Algebraic Expression</h>
+      </idx>
       is any collection of variables and/or numbers tied together by arithmetic operations.
       In the above equation, we used the algebraic expression
       <q>LW</q>
@@ -88,7 +89,9 @@
     <p>
       <q>Plugging in</q>
       specific values for the variables and evaluating the result is more formally known as
-          <idx><h>Algebraic Substitution</h></idx>
+          <idx>
+        <h>Algebraic Substitution</h>
+      </idx>
       <em>algebraic substitution</em>.
     </p>
     <algorithm xml:id="AlgebraicSubstitutionExample1">
@@ -159,8 +162,8 @@
       the equation <m>A=LW</m> is the formula for the area of a rectangle.
       On the other hand,
       we would probably not call the algebraic expressions in <xref ref="AlgebraicSubstitutionExample1">Examples</xref>,
-      <xref ref="AlgebraicSubstitutionExample2" />
-      and <xref ref="AlgebraicSubstitutionExample3" /> formulas,
+      <xref ref="AlgebraicSubstitutionExample2"/>
+      and <xref ref="AlgebraicSubstitutionExample3"/> formulas,
       because we don't really have any sense of those expressions' purposes or meanings.
     </p>
     <p>
@@ -194,17 +197,23 @@
     <p>
       Since we know the units involved here,
       it would be most appropriate to state the final answer as
-      <q>the temperature is <m>-10^\circ \text{C}</m></q>
+      <q>the temperature is <m>-10^\circ \text{C}</m>
+      </q>
       or simply
-      <q><m>-10^\circ \text{C}</m>.</q>
+      <q>
+        <m>-10^\circ \text{C}</m>.</q>
     </p>
     <p>
-      <q><m>C=-10</m></q>
+      <q>
+        <m>C=-10</m>
+      </q>
       would probably not be a satisfactory answer in this situation.
       If you asked someone
       <q>What is <m>14^\circ</m> Fahrenheit in Celsius</q>
       and they answered
-      <q><m>C=-10</m></q>
+      <q>
+        <m>C=-10</m>
+      </q>
       you'd probably find that a pretty strange way of talking. }
     </p>
     <p>
@@ -230,9 +239,12 @@
     </md>
     <p>
       In this case, the best we can do is say
-      <q>the energy stored is <m>W=125,000</m></q>
+      <q>the energy stored is <m>W=125,000</m>
+      </q>
       or even just
-      <q><m>W=125,000</m></q>, since we don't know the units.
+      <q>
+        <m>W=125,000</m>
+      </q>, since we don't know the units.
       If we don't know the units or the meaning for a formula,
       obviously we can't be expected to use them in the final answer.
       If, however, we did know the units,
@@ -279,57 +291,73 @@
       something like this:
     </p>
     <tabular>
+      <col width="45.0%"/>
+      <col width="45.0%"/>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>If his average daily vigorous exercise is:</cell>
-        <cell>His projected weight in one year would be:</cell>
+        <cell>
+          <p>If his average daily vigorous exercise is:</p>
+        </cell>
+        <cell>
+          <p>His projected weight in one year would be:</p>
+        </cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>none</cell>
-        <cell />
+        <cell>
+          <p>none</p>
+        </cell>
+        <cell/>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>30</cell>
-        <cell />
+        <cell>
+          <p>30</p>
+        </cell>
+        <cell/>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>60</cell>
-        <cell />
+        <cell>
+          <p>60</p>
+        </cell>
+        <cell/>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>90</cell>
-        <cell />
+        <cell>
+          <p>90</p>
+        </cell>
+        <cell/>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>120</cell>
-        <cell />
+        <cell>
+          <p>120</p>
+        </cell>
+        <cell/>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
     </tabular>
     <p>
@@ -352,7 +380,7 @@
     </p>
     <figure>
       <caption>Calculator Formula Input Screen</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorFormulaScreen.png" />
+      <image source="AlgebraicSubstitutionImages/CalculatorFormulaScreen.png"/>
     </figure>
     <p>
       If there are any formulas already entered,
@@ -379,12 +407,14 @@
       part of the formula.
       You can do that now using the calculator keypad.
       For the X, you'll notice a key labeled
-      <q><m>\text{X} ,\text{T} ,\theta,\text{n}</m></q>. Hitting that key will give you the X you need.
+      <q>
+        <m>\text{X} ,\text{T} ,\theta,\text{n}</m>
+      </q>. Hitting that key will give you the X you need.
       The result should look like this:
     </p>
     <figure>
       <caption>Formula Entered into Calculator</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorFormulaEx6Small.png" />
+      <image source="AlgebraicSubstitutionImages/CalculatorFormulaEx6Small.png"/>
     </figure>
     <p>
       Now, to set up the table.
@@ -400,7 +430,7 @@
     </p>
     <figure>
       <caption>Calculator Table Setup Screen</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorTableSetupDefault.svg" />
+      <image source="AlgebraicSubstitutionImages/CalculatorTableSetupDefault.png"/>
     </figure>
     <p>
       For our table,
@@ -408,10 +438,13 @@
       So, set the value for
       <q>TblStart</q>
       to 0, and
-      <q><m>\Delta</m>Tbl</q>
+      <q>
+        <m>\Delta</m>Tbl</q>
       to 30.
       The
-      <q><m>\Delta</m></q>
+      <q>
+        <m>\Delta</m>
+      </q>
       is the Greek letter delta,
       which is commonly used in math and science to represent
       <q>change</q>
@@ -434,7 +467,7 @@
     </p>
     <figure>
       <caption>Calculator Table Setup Screen</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorTableSetupAuto.png" />
+      <image source="AlgebraicSubstitutionImages/CalculatorTableSetupAuto.png"/>
     </figure>
     <p>
       Now we are ready to see our table.
@@ -447,7 +480,7 @@
     </p>
     <figure>
       <caption>Calculator Automatically Generated Table</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorTableEx6.png" />
+      <image source="AlgebraicSubstitutionImages/CalculatorTableEx6.png"/>
     </figure>
     <p>
       Note that even though we only wanted to go as far as 120 minutes,
@@ -459,57 +492,83 @@
       And so, now we are ready to put it all together and make that presentation to our phys ed class:
     </p>
     <tabular>
+      <col width="45.0%"/>
+      <col width="45.0%"/>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>If his average daily vigorous exercise is:</cell>
-        <cell>His projected weight in one year would be:</cell>
+        <cell>
+          <p>If his average daily vigorous exercise is:</p>
+        </cell>
+        <cell>
+          <p>His projected weight in one year would be:</p>
+        </cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>none</cell>
-        <cell>210 lbs</cell>
+        <cell>
+          <p>none</p>
+        </cell>
+        <cell>
+          <p>210 lbs</p>
+        </cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>30</cell>
-        <cell>200 lbs</cell>
+        <cell>
+          <p>30</p>
+        </cell>
+        <cell>
+          <p>200 lbs</p>
+        </cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>60</cell>
-        <cell>190 lbs</cell>
+        <cell>
+          <p>60</p>
+        </cell>
+        <cell>
+          <p>190 lbs</p>
+        </cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>90</cell>
-        <cell>180 lbs</cell>
+        <cell>
+          <p>90</p>
+        </cell>
+        <cell>
+          <p>180 lbs</p>
+        </cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
       <row>
-        <cell>120</cell>
-        <cell>170 lbs</cell>
+        <cell>
+          <p>120</p>
+        </cell>
+        <cell>
+          <p>170 lbs</p>
+        </cell>
       </row>
       <row bottom="minor">
-        <cell />
-        <cell />
+        <cell/>
+        <cell/>
       </row>
     </tabular>
     <p>
@@ -518,7 +577,13 @@
     <definition>
       <statement>
         <p>
-              <idx><h>Calculator</h><h>Table</h></idx> <em><em>Creating an Input-Output Table on a TI-83/84</em></em>
+          <idx>
+            <h>Calculator</h>
+            <h>Table</h>
+          </idx>
+          <em>
+            <em>Creating an Input-Output Table on a TI-83/84</em>
+          </em>
           <ol>
             <li>
               <p>
@@ -577,37 +642,36 @@
           <m>32^\circ \text{F}</m>, <m>68^\circ \text{F}</m>,
           <m>98.6^\circ \text{F}</m>, and <m>212^\circ \text{F}</m>.
         </p>
-      
-    <p>
+        <p>
       First we enter the formula, replacing the input variable,
       using Y1 in place of C and X in pace of F. We will put parentheses around the fraction 5/9 to make it clear that the (X-32) is not part of the denominator.
       (This is actually not needed in this case,
       since order of operations would evaluate it with only the 9 in the denominator,
       but it is still clearer with the extra parentheses.)
     </p>
-    <figure>
-      <caption>Calculator Formula Entered on Formula Screen</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorFormulaEx7.png" />
-    </figure>
-    <p>
+        <figure>
+          <caption>Calculator Formula Entered on Formula Screen</caption>
+          <image source="AlgebraicSubstitutionImages/CalculatorFormulaEx7.png"/>
+        </figure>
+        <p>
       Now, since there is no set increment between the input values we want to use,
       we will set the Independent variable to Ask. (It does not matter what your TblStart and <m>\Delta</m>Tbl are set to;
       the calculator will ignore them.):
     </p>
-    <figure>
-      <caption>Calculator Table Setup Screen</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorTableSetupEx7.png" />
-    </figure>
-    <p>
+        <figure>
+          <caption>Calculator Table Setup Screen</caption>
+          <image source="AlgebraicSubstitutionImages/CalculatorTableSetupEx7.png"/>
+        </figure>
+        <p>
       Now, we got to the table, and enter the input values we want.
       (If your calculator already has some X values in place you can just type over them.)
       The result should look like this:
     </p>
-    <figure>
-      <caption>Calculator Table Generated from Entered Values</caption>
-      <image source="AlgebraicSubstitutionImages/CalculatorTableEx7.png" />
-    </figure>
-    </statement>
+        <figure>
+          <caption>Calculator Table Generated from Entered Values</caption>
+          <image source="AlgebraicSubstitutionImages/CalculatorTableEx7.png"/>
+        </figure>
+      </statement>
     </algorithm>
   </subsection>
   <subsection>
@@ -616,7 +680,7 @@
       The examples we've done here with tables both involved formulas where there was just one input variable.
       Could we create a table for a formula where we needed to input more than one value,
       such as the <m>W=\frac{1}{2}cv^2</m> we used in <xref ref="AlgebraicSubstitutionExample4">Examples</xref>
-      and <xref ref="AlgebraicSubstitutionExample5" />?
+      and <xref ref="AlgebraicSubstitutionExample5"/>?
     </p>
     <p>
       The TI-83 and 84 calculators can do this,
@@ -628,28 +692,28 @@
       Any time we need to substitute in multiple values,
       we will do this by substituting and evaluating,
       as we did in <xref ref="AlgebraicSubstitutionExample4">Examples</xref>
-      and <xref ref="AlgebraicSubstitutionExample5" />.
+      and <xref ref="AlgebraicSubstitutionExample5"/>.
     </p>
   </subsection>
-  <subsection>
+  <exercises>
     <title>Exercises</title>
-    <subsubsection>
+    <exercisegroup>
       <title>Substituting into Algebraic Expressions</title>
-      <p>
+      <introduction>
+        <p>
         Evaluate the given algebraic expressions by substituting in the given variable values.
       </p>
-      
-      <exercises><exercise>
+      </introduction>
+      <exercise>
         <statement>
           <p>
             Evaluate <m>3x-1</m> if <m>x=8</m>
           </p>
         </statement>
         <solution>
-        <p>23</p>
+          <p>23</p>
         </solution>
       </exercise>
-      
       <exercise>
         <statement>
           <p>
@@ -657,7 +721,6 @@
           </p>
         </statement>
       </exercise>
-      
       <exercise>
         <statement>
           <p>
@@ -665,10 +728,9 @@
           </p>
         </statement>
         <solution>
-        <p>42</p>
+          <p>42</p>
         </solution>
       </exercise>
-      
       <exercise>
         <statement>
           <p>
@@ -676,7 +738,6 @@
           </p>
         </statement>
       </exercise>
-      
       <exercise>
         <statement>
           <p>
@@ -684,10 +745,9 @@
           </p>
         </statement>
         <solution>
-        <p>19</p>
+          <p>19</p>
         </solution>
       </exercise>
-      
       <exercise>
         <statement>
           <p>
@@ -695,7 +755,6 @@
           </p>
         </statement>
       </exercise>
-      
       <exercise>
         <statement>
           <p>
@@ -703,10 +762,9 @@
           </p>
         </statement>
         <solution>
-        <p>41</p>
+          <p>41</p>
         </solution>
       </exercise>
-      
       <exercise>
         <statement>
           <p>
@@ -714,7 +772,6 @@
           </p>
         </statement>
       </exercise>
-      
       <exercise>
         <statement>
           <p>
@@ -722,10 +779,9 @@
           </p>
         </statement>
         <solution>
-        <p>550</p>
+          <p>550</p>
         </solution>
       </exercise>
-      
       <exercise>
         <statement>
           <p>
@@ -733,7 +789,6 @@
           </p>
         </statement>
       </exercise>
-      
       <exercise>
         <statement>
           <p>
@@ -742,10 +797,9 @@
           </p>
         </statement>
         <solution>
-        <p>10.5</p>
+          <p>10.5</p>
         </solution>
       </exercise>
-      
       <exercise>
         <statement>
           <p>
@@ -753,16 +807,17 @@
           </p>
         </statement>
       </exercise>
-      
-    </exercises></subsubsection>
-    <subsubsection>
+    </exercisegroup>
+    <exercisegroup>
       <title>Formulas</title>
-      <p>
+      <introduction>
+        <p>
         Use the given formulas and information to answer the questions posed.
         Phrase your answers appropriately for the information given.
         Round appropriately if necessary.
       </p>
-      <exercises><exercise>
+      </introduction>
+      <exercise>
         <statement>
           <p>
             A publisher's printing cost <m>C</m>
@@ -773,7 +828,7 @@
         </statement>
         <solution>
           <p>
-            <m>$6350</m>
+            <m>\$6350</m>
           </p>
         </solution>
       </exercise>
@@ -842,7 +897,7 @@
       <exercise>
         <statement>
           <p>
-            The kinetic energy <m>E</m> in joules possessed by an object with mass <m>m</m> kilograms moving at <m>v</m> meters per second is given by the formula <m>E=]frac{1}{2}mv^2</m>.
+            The kinetic energy <m>E</m> in joules possessed by an object with mass <m>m</m> kilograms moving at <m>v</m> meters per second is given by the formula <m>E=\frac{1}{2}mv^2</m>.
             Determine the kinetic energy of a 30 kilogram object moving at 12 meters per second.
           </p>
         </statement>
@@ -868,13 +923,11 @@
             but will cost much less to operate each year than her current system.
             The time <m>T</m> in years that it will take to recoup the extra cost of installing the system is given by the formula
             <m>T=\frac{12000}{K-300}</m> where <m>K</m> is the annual cost of operating her current system.
-            How long will it take to recoup the cost if her current system costs <m>$1800</m> to operate?
+            How long will it take to recoup the cost if her current system costs <m>\$1800</m> to operate?
           </p>
         </statement>
         <solution>
-          <p>
-            <m>15</m> years
-          </p>
+          <p>8 years</p>
         </solution>
       </exercise>
       <exercise>
@@ -885,7 +938,7 @@
             but will cost less to operate.
             The time <m>T</m> in months that it will take to recoup the additional cost of the LED lighting is given by the formula
             <m>T=\frac{4200}{D-170}</m> where <m>D</m> is the monthly cost of the current lighting.
-            How long will it take to recoup the LED system's cost if the current lighting costs <m>$380</m> per month?
+            How long will it take to recoup the LED system's cost if the current lighting costs <m>\$380</m> per month?
           </p>
         </statement>
       </exercise>
@@ -900,7 +953,7 @@
         </statement>
         <solution>
           <p>
-            <m>$25.69</m>
+            <m>\$25.69</m>
           </p>
         </solution>
       </exercise>
@@ -910,17 +963,19 @@
             A printer's average cost per brochure <m>a</m>
             (in dollars)
             to produce <m>x</m> copies of a travel brochure is given by the formula <m>a=\frac{275+.24x}{x}</m>.
-            What would be the cost to print 2500 copies of the brochure?
+            What would be the average cost per brochure in a print run of 2500 copies of the brochure?
           </p>
         </statement>
       </exercise>
-    </exercises></subsubsection>
-    <subsubsection>
+    </exercisegroup>
+    <exercisegroup>
       <title>Input-Output Tables</title>
-      <p>
+      <introduction>
+        <p>
         Create an Input-Output table in each of the following situations
       </p>
-      <exercises><exercise>
+      </introduction>
+      <exercise>
         <statement>
           <p>
             A travel agent sells travelers checks denominated in foreign currencies to their customers.
@@ -930,43 +985,66 @@
             €<m> 1250</m> and €<m> 1500</m> worth of travelers' checks.
             Create the table he is looking for.
             (Note:
-            <q>€<m></m></q>
+            <q>€<m/>
+            </q>
             is the symbol for euros.)
           </p>
         </statement>
         <solution>
           <tabular>
             <row>
-              <cell><m>x</m></cell>
-              <cell><m>y</m></cell>
+              <cell>
+                <m>x</m>
+              </cell>
+              <cell>
+                <m>y</m>
+              </cell>
             </row>
             <row bottom="minor">
-              <cell />
-              <cell />
+              <cell/>
+              <cell/>
             </row>
             <row>
-              <cell>€<m> 250</m></cell>
-              <cell><m>$363.75</m></cell>
+              <cell>€<m> 250</m>
+              </cell>
+              <cell>
+                <m>\$363.75</m>
+              </cell>
             </row>
             <row>
-              <cell>€<m> 500</m></cell>
-              <cell><m>$700.00</m></cell>
+              <cell>€<m> 500</m>
+              </cell>
+              <cell>
+                <m>\$700.00</m>
+              </cell>
             </row>
             <row>
-              <cell>€<m> 750</m></cell>
-              <cell><m>$1036.25</m></cell>
+              <cell>€<m> 750</m>
+              </cell>
+              <cell>
+                <m>\$1036.25</m>
+              </cell>
             </row>
             <row>
-              <cell>€<m> 1000</m></cell>
-              <cell><m>$1372.50</m></cell>
+              <cell>€<m> 1000</m>
+              </cell>
+              <cell>
+                <m>\$1372.50</m>
+              </cell>
             </row>
             <row>
-              <cell>€<m> 1250</m></cell>
-              <cell><m>$1708.75</m></cell>
+              <cell>€<m> 1250</m>
+              </cell>
+              <cell>
+                <m>\$1708.75</m>
+              </cell>
             </row>
             <row>
-              <cell>€<m> 1500</m></cell>
-              <cell><m>$2045.00</m></cell>
+              <cell>€<m> 1500</m>
+              </cell>
+              <cell>
+                <m>\$2045.00</m>
+              </cell>
             </row>
           </tabular>
         </solution>
@@ -974,7 +1052,7 @@
       <exercise>
         <statement>
           <p>
-            A flooring store wants to promote a sale in which they will install any amount of carpeting for just <m>$75</m>
+            A flooring store wants to promote a sale in which they will install any amount of carpeting for just <m>\$75</m>
             (plus the cost of the carpeting).
             During this sale,
             for their most popular carpet style the cost to carpet <m>x</m> square feet can be found using the formula <m>y=3.98x+75</m>.
@@ -995,40 +1073,58 @@
         <solution>
           <tabular>
             <row>
-              <cell><m>t</m></cell>
-              <cell><m>h</m></cell>
+              <cell>
+                <m>t</m>
+              </cell>
+              <cell>
+                <m>h</m>
+              </cell>
             </row>
             <row bottom="minor">
-              <cell />
-              <cell />
+              <cell/>
+              <cell/>
             </row>
             <row>
-              <cell><m>0.0</m> seconds</cell>
-              <cell><m>7</m> feet</cell>
+              <cell>
+                <m>0.0</m> seconds</cell>
+              <cell>
+                <m>7</m> feet</cell>
             </row>
             <row>
-              <cell><m>0.5</m> seconds</cell>
-              <cell><m>33</m> feet</cell>
+              <cell>
+                <m>0.5</m> seconds</cell>
+              <cell>
+                <m>33</m> feet</cell>
             </row>
             <row>
-              <cell><m>1.0</m> seconds</cell>
-              <cell><m>51</m> feet</cell>
+              <cell>
+                <m>1.0</m> seconds</cell>
+              <cell>
+                <m>51</m> feet</cell>
             </row>
             <row>
-              <cell><m>1.5</m> seconds</cell>
-              <cell><m>61</m> feet</cell>
+              <cell>
+                <m>1.5</m> seconds</cell>
+              <cell>
+                <m>61</m> feet</cell>
             </row>
             <row>
-              <cell><m>2.0</m> seconds</cell>
-              <cell><m>63</m> feet</cell>
+              <cell>
+                <m>2.0</m> seconds</cell>
+              <cell>
+                <m>63</m> feet</cell>
             </row>
             <row>
-              <cell><m>2.5</m> seconds</cell>
-              <cell><m>57</m> feet</cell>
+              <cell>
+                <m>2.5</m> seconds</cell>
+              <cell>
+                <m>57</m> feet</cell>
             </row>
             <row>
-              <cell><m>3.0</m> seconds</cell>
-              <cell><m>43</m> feet</cell>
+              <cell>
+                <m>3.0</m> seconds</cell>
+              <cell>
+                <m>43</m> feet</cell>
             </row>
           </tabular>
         </solution>
@@ -1043,6 +1139,6 @@
           </p>
         </statement>
       </exercise>
-    </exercises></subsubsection>
-  </subsection>
+    </exercisegroup>
+  </exercises>
 </section>

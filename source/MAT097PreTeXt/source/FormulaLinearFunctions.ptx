@@ -219,8 +219,8 @@
         <p>
           An online music site charges a fixed monthly membership fee,
           which allows unlimited streaming.
-          Members can also download songs for <m>$0.85</m> each.
-          Last month I downloaded <m>32</m> songs and paid <m>$35.20</m>.
+          Members can also download songs for <m>\$0.85</m> each.
+          Last month I downloaded <m>32</m> songs and paid <m>\$35.20</m>.
           Find a formula for the amount I pay as a function of the number of songs I download.
         </p>
       </statement>
@@ -232,7 +232,7 @@
       and the output is cost
       (in dollars).
       The rate of change would be dollars per song,
-      and we are told this is a constant <m>$0.85</m> per song.
+      and we are told this is a constant <m>\$0.85</m> per song.
       So the function is linear.
     </p>
     <p>
@@ -248,7 +248,7 @@
       </me>
     </p>
     <p>
-      Since an input of <m>32</m> songs gives and output of a <m>$35.20</m> charge, we know:
+      Since an input of <m>32</m> songs gives and output of a <m>\$35.20</m> charge, we know:
       <me>
         35.2 = 0.85(32)+b
       </me>
@@ -272,16 +272,16 @@
       We can add some interpretation to this formula as well.
       The vertical intercept is the charge you'd pay when the input - the number of songs you download - is zero.
       So, we can interpret this function as telling us that you pay
-      <m>$8</m> per month just to have the service,
-      plus <m>$0.85</m> per download. }
+      <m>\$8</m> per month just to have the service,
+      plus <m>\$0.85</m> per download. }
     </p>
     <p>
       This example agrees with a less-structured but commonsense way of figuring this out.
       Rather than using the formal method we've laid out here,
       you could have figured this formula out by reasoning that since each download costs
-      <m>$0.85</m>, I must have paid <m>32($0.85)=$27.20</m> for the downloads.
-      Since my total charge was <m>$35.20</m>,
-      the membership fee must have been <m>$35.20-$27.20 = $8</m>.
+      <m>\$0.85</m>, I must have paid <m>32(\$0.85)=\$27.20</m> for the downloads.
+      Since my total charge was <m>\$35.20</m>,
+      the membership fee must have been <m>\$35.20-\$27.20 = \$8</m>.
       From this you could have easily arrived at the formula.
     </p>
     <p>
@@ -414,8 +414,8 @@
         <p>
           An online music site charges a fixed monthly membership fee,
           which allows unlimited streaming.
-          Members can also download songs for <m>$0.85</m> each.
-          Last month I downloaded <m>32</m> songs and paid <m>$35.20</m>.
+          Members can also download songs for <m>\$0.85</m> each.
+          Last month I downloaded <m>32</m> songs and paid <m>\$35.20</m>.
           Find a formula for the amount I pay as a function of the number of songs I download.
         </p>
       </statement>
@@ -428,7 +428,7 @@
       and the output is cost
       (in dollars).
       The rate of change would be dollars per song,
-      and we are told this is a constant <m>$0.85</m> per song.
+      and we are told this is a constant <m>\$0.85</m> per song.
       So the function is linear.
     </p>
     <p>
@@ -690,7 +690,7 @@
         </statement>
         <solution>
           <p>
-            <m>g(t)=\frac{3}{5}t+\frac{11}{3}</m>
+            <m>g(t)=-\frac{3}{5}t+\frac{11}{3}</m>
           </p>
         </solution>
       </exercise>
@@ -707,8 +707,8 @@
         <statement>
           <p>
             A car rental agency charges
-            <m>$17.50</m> to rent a subcompact car for a day,
-            plus <m>$0.20</m> per mile.
+            <m>\$17.50</m> to rent a subcompact car for a day,
+            plus <m>\$0.20</m> per mile.
             The cost of a daily rental is a function of the miles driven.
             Find a formula for this function.
           </p>
@@ -723,8 +723,8 @@
         <statement>
           <p>
             To print a textbook, a printer charges a flat
-            <m>$5.75</m> regardless of its length,
-            plus a charge of <m>$0.02</m> per page.
+            <m>\$5.75</m> regardless of its length,
+            plus a charge of <m>\$0.02</m> per page.
             Give a formula for the charge to print a book as a function of the number of pages it contains.
           </p>
         </statement>
@@ -849,7 +849,7 @@
         </statement>
         <solution>
           <p>
-            <m>f(x)=\frac-{5}{2}x+125</m>
+            <m>f(x)=-\frac{5}{2}x+125</m>
           </p>
         </solution>
       </exercise>
@@ -992,7 +992,7 @@
         </statement>
         <solution>
           <p>
-            <m>f(x)=-{14}{9}x+\frac{29}{18}</m>
+            <m>f(x)=-\frac{14}{9}x+\frac{29}{18}</m>
           </p>
         </solution>
       </exercise>
@@ -1009,8 +1009,8 @@
         <statement>
           <p>
             The cost of shipping a load of freight includes a set base fee charged regardless of the amount shipped plus a set cost per ton.
-            If it costs <m>$800</m> to ship <m>2.5</m> tons and it costs
-            <m>$2000</m> to ship <m>10</m> tons,
+            If it costs <m>\$800</m> to ship <m>2.5</m> tons and it costs
+            <m>\$2000</m> to ship <m>10</m> tons,
             <ol marker="a">
               <li>
                 <p>
@@ -1024,7 +1024,7 @@
               </li>
               <li>
                 <p>
-                  determine how much a shipment weighed if it cost <m>$3000</m> to ship.
+                  determine how much a shipment weighed if it cost <m>\$3000</m> to ship.
                 </p>
               </li>
             </ol>
@@ -1035,7 +1035,7 @@
             a. <m>f(x)=160x+400</m>
           </p>
           <p>
-            b. <m>$8400</m>
+            b. <m>\$8400</m>
           </p>
           <p>
             c. <m>16.25</m> tons
@@ -1086,7 +1086,7 @@
               </li>
               <li>
                 <p>
-                  How many widgets could be produced in 12 hours?
+                  How many crates of widgets could be produced in 12 hours?
                 </p>
               </li>
               <li>
@@ -1219,8 +1219,8 @@
       <statement>
         <p>
           This question is based on a poster at an amusement park advertising
-          <m>$0.99</m> refills after buying a souvenir cup for
-          <m>$6.99</m> with the initial fill-up.
+          <m>\$0.99</m> refills after buying a souvenir cup for
+          <m>\$6.99</m> with the initial fill-up.
           <ol marker="a">
             <li>
               <p>
@@ -1269,8 +1269,8 @@
         <p>
           Airaloft Airlines offers a credit card,
           where users receive a set number of frequent flier miles for each dollar they charge to the card.
-          If you charge a total of <m>$20,000</m> you would earn <m>40,000</m> miles.
-          If you charge a total of <m>$10,000</m> you would earn <m>25,000</m> miles.
+          If you charge a total of <m>\$20,000</m> you would earn <m>40,000</m> miles.
+          If you charge a total of <m>\$10,000</m> you would earn <m>25,000</m> miles.
           <ol marker="a">
             <li>
               <p>
@@ -1279,7 +1279,7 @@
             </li>
             <li>
               <p>
-                How many miles would you earn if you charge <m>$30,000</m>?
+                How many miles would you earn if you charge <m>\$30,000</m>?
               </p>
             </li>
             <li>
@@ -1304,7 +1304,7 @@
           b. <m>55,000</m> miles
         </p>
         <p>
-          c. <m>$46,666.67</m>
+          c. <m>\$46,666.67</m>
         </p>
         <p>
           d. You earn <m>10,000</m> miles for opening a charge card account.
@@ -1316,8 +1316,8 @@
         <p>
           Property taxes in the Town of Townsville are calculated by charging a flat amount for each property,
           plus a set rate per square foot of living space.
-          A <m>1200</m> square foot house would be charged <m>$2400</m> in taxes.
-          A <m>2000</m> square foot house would pay <m>$3800</m>.
+          A <m>1200</m> square foot house would be charged <m>\$2400</m> in taxes.
+          A <m>2000</m> square foot house would pay <m>\$3800</m>.
           What would the taxes be for an <m>1800</m> square foot house?
         </p>
       </statement>
@@ -1407,9 +1407,9 @@
       <statement>
         <p>
           A fruit wholesaler charges grocers
-          <m>$0.40</m> per pound for bananas,
+          <m>\$0.40</m> per pound for bananas,
           plus a delivery charge which is the same set amount regardless of how many bananas he delivers.
-          Yummi's Greenmarket bought <m>350</m> pounds of bananas and paid <m>$165</m>.
+          Yummi's Greenmarket bought <m>350</m> pounds of bananas and paid <m>\$165</m>.
           What is the delivery charge?
           Find a formula for the cost of an order of <m>x</m> pounds of bananas.
         </p>
@@ -1419,17 +1419,15 @@
       <statement>
         <p>
           An internet discount coupon promoter charges merchants a flat
-          <m>$50</m> fee to send out an email promotion,
+          <m>\$50</m> fee to send out an email promotion,
           and then receives a set amount for each discount coupon purchased.
-          If <m>40</m> were purchased, Harry's Haberdashery would pay a total of <m>$250</m>.
+          If <m>40</m> were purchased, Harry's Haberdashery would pay a total of <m>\$250</m>.
           Find a formula for the total Harry's would pay as a function of discount coupons purchased,
           and use this formula to determine how much they would pay if <m>84</m> were purchased.
         </p>
       </statement>
       <solution>
-        <p>
-          <m>C(x)=50+5x</m>
-        </p>
+        <p><m>C(x)=50+5x</m>. For <m>84</m> coupons, <m>C(84)=470</m> dollars.</p>
       </solution>
     </exercise>
     <exercise>
@@ -1442,14 +1440,14 @@
           suppose that a small ice cream company is trying to mathematically model its profits.
           The company has fixed costs
           (that is, costs that they have to pay regardless of how much ice cream they sell)
-          of <m>$4,000</m> per month.
-          They sell their ice cream for <m>$3.50</m> per pint,
-          and it costs them <m>$2.25</m> to make each pint of ice cream.
+          of <m>\$4,000</m> per month.
+          They sell their ice cream for <m>\$3.50</m> per pint,
+          and it costs them <m>\$2.25</m> to make each pint of ice cream.
           Ben says:
           <q>Well, our profit is clearly a linear function of the number of pints of ice cream we sell.
-          Since <m>$3.50</m> -
-          <m>$2.25</m> = <m>$1.25</m>,
-          we make the same, steady <m>$1.25</m> per pint sold.
+          Since <m>\$3.50</m> -
+          <m>\$2.25</m> = <m>\$1.25</m>,
+          we make the same, steady <m>\$1.25</m> per pint sold.
           Since our profits as a function of pints sold increase at a constant rate,
           the function is linear.</q>
         </p>
@@ -1459,22 +1457,22 @@
           I agree that if our profit per pint sold were constant,
           the function would be linear, but it's not!
           If we sell, say, <m>5000</m> pints,
-          we take in <m>5000($3.50) = $17,500</m>.
-          It costs us <m>5000($2.25) = $11,250</m> to make that ice cream,
-          plus our fixed costs are <m>$4,000</m>,
-          for a total of <m>$15,250</m>.
-          So we make <m>$17,500 - $15,250 = $2,250</m> profit.
-          And that would be <m>$2,250/5000</m> pints = <m>$0.45</m> per pint.
+          we take in <m>5000(\$3.50) = \$17,500</m>.
+          It costs us <m>5000(\$2.25) = \$11,250</m> to make that ice cream,
+          plus our fixed costs are <m>\$4,000</m>,
+          for a total of <m>\$15,250</m>.
+          So we make <m>\$17,500 - \$15,250 = \$2,250</m> profit.
+          And that would be <m>\$2,250/5000</m> pints = <m>\$0.45</m> per pint.
           But now if we sell just <m>2000</m> pints,
-          we take in <m>2000($3.50) = $7,000</m>.
-          That ice cream costs <m>2000($2.25) = $4,500</m> to make,
-          and so when you add in our fixed costs our costs are <m>$8,500</m> in total.
+          we take in <m>2000(\$3.50) = \$7,000</m>.
+          That ice cream costs <m>2000(\$2.25) = \$4,500</m> to make,
+          and so when you add in our fixed costs our costs are <m>\$8,500</m> in total.
           So our ``make</q>
-          <m>$7,000 - $8,500 = -$1,500</m>.
+          <m>\$7,000 - \$8,500 = -\$1,500</m>.
           So our
           <q>profit</q>
-          is <m>-$1,500/2000 = -$0.75</m> per pint.
-          A loss of <m>75</m> cents a pint sure ain't the same as a profit of <m>$0.45</m> per pint!''
+          is <m>-\$1,500/2000 = -\$0.75</m> per pint.
+          A loss of <m>75</m> cents a pint sure ain't the same as a profit of <m>\$0.45</m> per pint!''
         </p>
         <p>
           Who is right?

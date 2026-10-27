@@ -52,7 +52,7 @@
     <example xml:id="LinearFunctionsandInterceptsExample1">
       <statement>
         <p>
-          A landscaper sells firewood for <m>$75</m> per face cord<fn>
+          A landscaper sells firewood for <m>\$75</m> per face cord<fn>
           A face cord is a unit of volume commonly used for firewood;
           one face cord is a stacked wood pile measuring 4 feet high, 8 feet wide,
           and 16 inches in depth.
@@ -63,7 +63,7 @@
     </example>
     <p>
       Since the price changes at a constant rate,
-      this is a linear function with slope <m>$75</m> per face cord.
+      this is a linear function with slope <m>\$75</m> per face cord.
       Applying the same logic we used in the water pumping discussion above,
       it stands to reason that the cost of a load of firewood will be calculated by multiplying this slope by the number of face cords,
       so the function's formula will be
@@ -132,15 +132,15 @@
       <statement>
         <p>
           A landscaper sells firewood delivered to your home for
-          <m>$75</m> per face cord plus a <m>$60</m> delivery charge.
+          <m>\$75</m> per face cord plus a <m>\$60</m> delivery charge.
           Find a formula for the price for a load of firewood as a function of the number of face cords.
         </p>
       </statement>
     </example>
     <p>
       Following the reasoning we used in the pool-filling example above we can see that the price would be calculated by multiplying the slope of
-      <m>$75</m> per face cord by the number of face cords,
-      and then adding the <m>$60</m> delivery charge.
+      <m>\$75</m> per face cord by the number of face cords,
+      and then adding the <m>\$60</m> delivery charge.
       So a formula for this function would be:
       <me>
         g(x)=75x+60
@@ -216,7 +216,7 @@
       <q>starting point</q>
       for the function,
       and we know from looking at this example before that the price starts at
-      <m>$60</m> for delivery and then we add on the cost for the amount of firewood ordered.
+      <m>\$60</m> for delivery and then we add on the cost for the amount of firewood ordered.
       Using that logic, we know that the vertical intercept is 60.
     </p>
     <p>
@@ -531,15 +531,15 @@
       The slope is the rate of change,
       with units in output units per input unit.
       So, since the output is cost in dollars and the input is days,
-      the slope is <m>$27.50</m> per day.
-      The company charges <m>$27.50</m> per day to rent the tamper.
+      the slope is <m>\$27.50</m> per day.
+      The company charges <m>\$27.50</m> per day to rent the tamper.
     </p>
     <p>
       The vertical intercept is the base, or starting point,
       and since it is added in as part of the formula to get the output,
       it must be in the output units.
-      So the vertical intercept is <m>$15</m>.
-      The company starts with a basic charge of <m>$15</m> to rent the tamper,
+      So the vertical intercept is <m>\$15</m>.
+      The company starts with a basic charge of <m>\$15</m> to rent the tamper,
       regardless of how long it is kept out. }
     </p>
     <p>
@@ -722,14 +722,14 @@
         <p>
           The slope can be seen from the fact that the formula is in slope-intercept form.
           Its units are, as always, output units per input unit.
-          So the slope is <m>$0.10</m> per kilowatt hour.
+          So the slope is <m>\$0.10</m> per kilowatt hour.
           The slope represents how much he pays for each additional kilowatt hour of electricity used.
         </p>
       </li>
       <li>
         <p>
           The vertical intercept can also be seen from the slope-intercept form.
-          It is <m>$12.50</m>.
+          It is <m>\$12.50</m>.
           This would be his bill is his usage were 0 kilowatt hours.
           So this is a flat rate charged regardless of usage,
           which he pays just to have electric service to his house.
@@ -746,8 +746,8 @@
           </md>
           Since the input to this function is electricity usage measured in kilowatt-hours,
           this horizontal intercept would be interpreted to be <m>-125</m> kilowatt hours.
-          This would happen if his bill were <m>$0</m>.
-          So, the horizontal intercept is telling us that in order for Jaye to have a <m>$0</m> electric bill,
+          This would happen if his bill were <m>\$0</m>.
+          So, the horizontal intercept is telling us that in order for Jaye to have a <m>\$0</m> electric bill,
           he would have to use negative 125 kilowatt-hours of electricity.
           For most people, this makes no sense at all.
           You cannot use negative electricity!
@@ -864,11 +864,8 @@
           </p>
         </statement>
         <solution>
-          <p>
-            <m>3000</m>;
-            when he began his morning break he had cut <m>3000</m> square feet.
-          </p>
-        </solution>
+        <p>The vertical intercept is <m>(0,3000)</m>. When he returned from his morning break, he had already cut <m>3000</m> square yards.</p>
+      </solution>
       </exercise>
       <exercise>
         <statement>
@@ -1236,8 +1233,8 @@
         </statement>
         <solution>
           <p>
-            Slope: <m>-3</m>; The machine is processing three answer sheets per minute
-            (the number of sheets left to be processed is changing at -3 sheets per minute).
+            Slope: <m>-3</m>; The machine is processing three answer sheets per second
+            (the number of sheets left to be processed is changing at -3 sheets per second).
           </p>
           <p>
             Vertical Intercept:
@@ -1270,15 +1267,15 @@
             Yes, it is a linear function
           </p>
           <p>
-            Slope: <m>30</m>; The cost to rent the kayak is increasing at <m>$30</m> per hour.
+            Slope: <m>30</m>; The cost to rent the kayak is increasing at <m>\$30</m> per hour.
             Or, in simpler terms, there is a charge of
-            <m>$30</m> per hour to rent the kayak.
+            <m>\$30</m> per hour to rent the kayak.
           </p>
           <p>
             Vertical Intercept: <m>15</m>; When you first rent the kayak,
-            there is a <m>$15</m> charge.
+            there is a <m>\$15</m> charge.
             Or, in simpler terms, there is a flat fee charge of
-            <m>$15</m> in addition to the hourly rate.
+            <m>\$15</m> in addition to the hourly rate.
           </p>
         </solution>
       </exercise>
@@ -1408,7 +1405,7 @@
         </statement>
         <solution>
           <p>
-            <m>14.29</m>; This would be the number of visits after which his card balance would reach <m>$0</m>.
+            <m>14.29</m>; This would be the number of visits after which his card balance would reach <m>\$0</m>.
             Since he cannot make a fractional visit,
             we would interpret this to mean that his card will allow him 14 visits before it is exhausted.
           </p>
@@ -1541,7 +1538,7 @@
         <statement>
           <p>
             Boyan Sea Cruises normally charges
-            <m>$2500</m> for a 7 day Caribbean cruise,
+            <m>\$2500</m> for a 7 day Caribbean cruise,
             but it offers a discount for customers who refer other people to the cruise line.
             If you refer <m>x</m> people who also take the cruise,
             you will pay <m>2500 - 250x</m> dollars for your own cruise.
@@ -1580,18 +1577,18 @@
         <solution>
           <p>
             Slope: <m>3.2</m>; Her profits increase by
-            <m>$3.20</m> for each face painting that she does.
+            <m>\$3.20</m> for each face painting that she does.
           </p>
           <p>
-            Vertical Intercept: <m>-80</m>; Her profits would be <m>$-80</m>,
+            Vertical Intercept: <m>-80</m>; Her profits would be <m>\$-80</m>,
             or in other words she would have a loss of
-            <m>$80</m> if she did no face painting.
+            <m>\$80</m> if she did no face painting.
             This probably represents how much it costs her for the booth rental, travel,
             supplies, etc.
           </p>
           <p>
             c. Horizontal Intercept:
-            <m>25</m>; When she does 25 face paintings her profit is <m>$0</m>.
+            <m>25</m>; When she does 25 face paintings her profit is <m>\$0</m>.
             In plainer terms this means that she needs to do 25 face paintings to break even.
           </p>
         </solution>
@@ -1601,22 +1598,22 @@
           <p>
             Sid and Nancy are trying to make sense of their electric bill.
             The electric company charges them
-            <m>$10</m> each month for providing electric service,
+            <m>\$10</m> each month for providing electric service,
             regardless of how much electricity they use,
-            and then <m>$0.10</m> per kilowatt hour used.
+            and then <m>\$0.10</m> per kilowatt hour used.
           </p>
           <p>
             Nancy says that their electric bill is a linear function of their electric usage,
-            because the rate per kilowatt-hour is always the same <m>$0.10</m>.
+            because the rate per kilowatt-hour is always the same <m>\$0.10</m>.
             Since the rate per kilowatt-hour is always the same, the function is linear.
           </p>
           <p>
             Sid disagrees.
-            Sid calculates that if they use 100 kilowatt-hours they would pay <m>$20</m>,
-            and <m>$20</m> divided by 100 kilowatt hours is <m>$0.20</m> per kilowatt-hour.
+            Sid calculates that if they use 100 kilowatt-hours they would pay <m>\$20</m>,
+            and <m>\$20</m> divided by 100 kilowatt hours is <m>\$0.20</m> per kilowatt-hour.
             But if they use, say, 400 kilowatt-hours,
-            their bill would be <m>$50</m>,
-            and <m>$50</m> divided by 400 kilowatt-hours works out to <m>$0.125</m> per kilowatt-hour.
+            their bill would be <m>\$50</m>,
+            and <m>\$50</m> divided by 400 kilowatt-hours works out to <m>\$0.125</m> per kilowatt-hour.
             So the rate per kilowatt hour is not always the same,
             and so it's not a linear function after all.
           </p>

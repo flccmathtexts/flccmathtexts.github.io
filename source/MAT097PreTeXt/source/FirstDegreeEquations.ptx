@@ -14,7 +14,7 @@
     <p>
       Before we begin reviewing,
       let's review some of the terminology we'll need to use.
-      Suppose you have a <m>$25</m> balance on a pre-paid phone card,
+      Suppose you have a <m>\$25</m> balance on a pre-paid phone card,
       and usage costs <m>3</m> cents per minute.
       You can write an algebraic expression for the balance on your card based on minutes used.
       If we represent the minutes used by the variable <m>m</m>,
@@ -25,7 +25,7 @@
       And so on.
     </p>
     <p>
-      But now suppose you want to know how many minutes you can use before your balance falls to <m>$10</m>.
+      But now suppose you want to know how many minutes you can use before your balance falls to <m>\$10</m>.
       So, in other words, you need to solve the equation:
       <me>
         25 - 0.03m = 10
@@ -41,8 +41,8 @@
       </md>
       which is nonsense.
       If you use <m>200</m> minutes,
-      we can see that your remaining balance is <m>$19</m>,
-      not the <m>$10</m> we were looking for.
+      we can see that your remaining balance is <m>\$19</m>,
+      not the <m>\$10</m> we were looking for.
       <m>200</m> minutes is not the amount of usage you were looking for.
     </p>
     <p>
@@ -54,7 +54,7 @@
       </md>
       which is exactly what we would have hoped for.
       If you use <m>500</m> minutes,
-      your remaining balance is <m>$10</m>.
+      your remaining balance is <m>\$10</m>.
       <m>500</m> minutes is the amount of usage you were looking for.
     </p>
     <p>
@@ -77,7 +77,7 @@
       The set of all solutions for a given equation is called its solution set.
       We would say that the solution set of <m>25 - 0.03m = 10</m> is <m>\{500\}</m>
       (this solution set has just one member.)
-      We know that <m>500</m> must be the only member of this solution set because common sense tells us that there is only one amount of usage that would result in having <m>$10</m> left.
+      We know that <m>500</m> must be the only member of this solution set because common sense tells us that there is only one amount of usage that would result in having <m>\$10</m> left.
     </p>
     <p>
       Most first-degree equations have only one solution,
@@ -915,7 +915,7 @@
           <p>
             My water bill <m>W</m> is calculated using the formula
             <m>W=0.02g+5</m> where <m>g</m> is the number of gallons used during the month.
-            Last month my bill was <m>$25</m>,
+            Last month my bill was <m>\$25</m>,
             but I'm not sure whether I used
             <m>500, 1000, 1500</m>, or <m>2000</m> gallons.
             Which of these possibilities,
@@ -935,10 +935,8 @@
           </p>
         </statement>
         <solution>
-          <p>
-            20 liters
-          </p>
-        </solution>
+        <p>The formula gives <m>x=176/44=4</m> liters. None of the listed tank sizes holds exactly 176 grams under this model.</p>
+      </solution>
       </exercise>
       <exercise>
         <statement>
@@ -1191,7 +1189,7 @@
         <statement>
           <p>
             A technology sales rep quotes the costs for backup data storage systems using the formula<m>C=50+0.12d</m> where<m>d</m> is the number of gigabytes of storage used.
-            She wrote up a quote showing a cost of <m>$1850</m>,
+            She wrote up a quote showing a cost of <m>\$1850</m>,
             but the quote doesn't show the amount of storage that's based on,
             and I can't remember what she used to determine the quote.
             What amount of storage is the quote based on?
@@ -1208,7 +1206,7 @@
           <p>
             My water bill<m>W</m> is calculated using the formula
             <m>W=0.02g+5</m> where <m>g</m> is the number of gallons used during the month.
-            Last month my bill was <m>$37.68</m>,
+            Last month my bill was <m>\$37.68</m>,
             but I'm not sure how much water I used.
             How many gallons did I use last month?
           </p>
@@ -1295,7 +1293,7 @@
         </statement>
         <solution>
           <p>
-            <m>p=\frac-{16}{7}</m>
+            <m>p=-\frac{16}{7}</m>
           </p>
         </solution>
       </exercise>
@@ -1632,7 +1630,7 @@
             A landscaper estimates that the time required to cut the grass in an athletic field, <m>h</m>
             (in hours)
             based on the size of the field, <m>A</m>,
-            in square yards is given by the formula <m>h=\frac{h}{800}+1</m>.
+            in square yards is given by the formula <m>h=\frac{A}{800}+1</m>.
             He wants a formula which gives the size of the field based on the time it takes to mow it.
             Solve the equation for <m>A</m> in terms of <m>h</m> to create the formula he wants.
           </p>
@@ -1715,7 +1713,7 @@
           <p>
             The daily profit for a tour operator <m>p</m> depends on the number of paying customers taking his tour <m>t</m>.
             The relationship is expressed by the equation <m>p=65t-350</m>.
-            Yesterday he made a profit of <m>$820</m>.
+            Yesterday he made a profit of <m>\$820</m>.
             How many paying customers did he have that day?
           </p>
         </statement>
@@ -1733,7 +1731,7 @@
         </statement>
         <solution>
           <p>
-            <m>t=\frac{t+350}{65}</m>
+            <m>t=\frac{p+350}{65}</m>
           </p>
         </solution>
       </exercise>
@@ -1848,7 +1846,7 @@
             based on <m>m</m> minutes of usage,
             is given by the formula <m>C=1.08(4.95+0.05m)</m>.
             If my bill for the month is
-            <m>$67.99</m> how many minutes did I use?
+            <m>\$67.99</m> how many minutes did I use?
           </p>
         </statement>
         <solution>

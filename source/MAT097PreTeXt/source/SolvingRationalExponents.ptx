@@ -312,7 +312,7 @@
     <exercise>
       <statement>
         <p>
-          <m>{(6-q))}^{\frac{1}{6}}</m>
+          <m>{(6-q)}^{\frac{1}{6}}</m>
         </p>
       </statement>
       <solution>
@@ -383,9 +383,7 @@
         </p>
       </statement>
       <solution>
-        <p>
-          <m>s=-8</m>
-        </p>
+        <p><m>s=-4</m></p>
       </solution>
     </exercise>
     

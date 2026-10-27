@@ -197,7 +197,7 @@
     <p>
       Interpreting this we would say something like this:
       <q>if you use <m>800</m> kilowatt hours,
-      your bill will be <m>$87.95</m>.</q>
+      your bill will be <m>\$87.95</m>.</q>
       }
     </p>
     <example xml:id="FunctionsasModelsExample3">
@@ -274,13 +274,13 @@
       <statement>
         <p>
           Suppose that your electric bill in dollars as a function of your monthly electric usage in kilowatt hours is given by <m>b(x)=7.95+0.1x</m>.
-          If your electric bill last month was <m>$92.55</m>,
+          If your electric bill last month was <m>\$92.55</m>,
           how much electricity did you use?
         </p>
       </statement>
     </example>
     <p>
-      Since we know the bill (output) is <m>$92.55</m>,
+      Since we know the bill (output) is <m>\$92.55</m>,
       we plug <m>b(x)=92.55</m> into our model and solve to find <m>x</m>:
       <md>
         <mrow>b(x)\amp =7.95+0.1x</mrow>
@@ -291,7 +291,7 @@
     </p>
     <p>
       So, in answer to the original question:
-      <q>if your bill was <m>$92.55</m> you must have used <m>846</m> kilowatt hours of electricity.</q>
+      <q>if your bill was <m>\$92.55</m> you must have used <m>846</m> kilowatt hours of electricity.</q>
       }
     </p>
     <p>
@@ -499,7 +499,7 @@
         <p>
           A realtor's commission is a function of the selling price of the real estate sold.
           Suppose the realtor receives
-          <m>$4,800</m> for selling a property for <m>$160,000</m>.
+          <m>\$4,800</m> for selling a property for <m>\$160,000</m>.
           Express this in function notation.
           Assume the function's name is <m>f(x)</m>.
         </p>
@@ -693,7 +693,7 @@
           so our relevant range should be consistent with the speeds we included in our relevant domain. The fine goes up with higher speeds,
           so the lowest fine would be the fine based on the lowest speed,
           and the highest fine would be based on the highest speed. Since we used <m>s=65</m> as the lower limit for speeds,
-          we should use <m>$75</m> as the lower limit for fines,
+          we should use <m>\$75</m> as the lower limit for fines,
           since <m>f(65)=75+5(65-65)=75</m> would be the fine for that speed. For the upper limit of <m>s=125</m>,
           the fine would be <m>f(125)=75+5(125-65)=375</m> dollars. So our relevant range would be <m>\{f(s)|75 \leq s \leq 375\}</m> or <m>[75,375]</m>.
           (If we used a different relevant domain,
@@ -990,7 +990,7 @@
         </statement>
         <solution>
           <p>
-            <m>$16,100</m>
+            <m>\$16,100</m>
           </p>
         </solution>
       </exercise>
@@ -1067,13 +1067,13 @@
           <p>
             Your total state income tax is a function of your taxable income,
             and can be calculated from the formula
-            <m>f(x)=1000+0.08(x-30,000)</m> when your taxable income exceeds <m>$30,000</m>.
-            Determine your income tax if your taxable income is <m>$42,000</m>.
+            <m>f(x)=1000+0.08(x-30,000)</m> when your taxable income exceeds <m>\$30,000</m>.
+            Determine your income tax if your taxable income is <m>\$42,000</m>.
           </p>
         </statement>
         <solution>
           <p>
-            <m>$1,960</m>
+            <m>\$1,960</m>
           </p>
         </solution>
       </exercise>
@@ -1082,7 +1082,7 @@
           <p>
             A club is planning a field trip to Washington D.C. The total cost of the trip is a function of the number of members who will be going,
             and is given by the formula <m>c(x)=1850+475x</m>.
-            If the club has budgeted a total cost of <m>$18,950</m>,
+            If the club has budgeted a total cost of <m>\$18,950</m>,
             how many people are they expecting will go?
           </p>
         </statement>
@@ -1163,7 +1163,7 @@
         <solution>
           <p>
             14 feet (Solve graphically;
-            there actually is a second intersection at <m>x=-14</m>,
+            there actually is a second intersection at <m>x=-26</m>,
             but that cannot possibly be the pool's side length.)
           </p>
         </solution>
@@ -1308,7 +1308,7 @@
         <statement>
           <p>
             A magazine pays short story authors based on story length.
-            An author will be paid <m>$228</m> for a <m>2,810</m>-word story.
+            An author will be paid <m>\$228</m> for a <m>2,810</m>-word story.
           </p>
         </statement>
       </exercise>
@@ -1414,7 +1414,7 @@
             The relevant domain should be between the start time of 0 up to a reasonable maximum number of hours for a blizzard to last,
             and the relevant range should run from 0 inches up to the maximum number of inches that might fall in a blizzard.
             Since I am from buffalo, I'd say
-            <m>\{x|x \leq x \leq 72\}</m> for the relevant domain and
+            <m>\{x|0 \leq x \leq 72\}</m> for the relevant domain and
             <m>\{f(x)| 0 \leq f(x) \leq 100\}</m> for the relevant range.
           </p>
         </solution>
@@ -1463,7 +1463,7 @@
             (excluding tips)
             is a function of the number of heads of hair he cuts.
             He pays $75 per day to the shop owner,
-            so his daily revenue excluding tips is modeled by the function <m>f(x) = 20x - 75</m>.
+            so his daily profit after the shop fee, excluding tips, is modeled by the function <m>f(x) = 20x - 75</m>.
             <ol>
               <li>
                 <p>
@@ -1481,22 +1481,8 @@
           </p>
         </statement>
         <solution>
-          <p>
-            a. all real numbers
-          </p>
-          <p>
-            b. relevant domain should run from 0 up till the maximum number of haircuts he can do in a day.
-            Assuming 4 cuts per hour and a 10 hour day
-            (both probably on the high end of reasonable),
-            the relevant dome would be <m>\{x|0 \leq x \leq 40\}</m>.
-            Actually, more specifically, since he cannot do a fractional haircut,
-            we might say <m>\{x|x \text{ is a whole number and } 0 \leq x \leq 40\}</m> though we often do not bother with that specificity.
-            The relevant range should be based on the lowest and highest profits he can earn based on the relevant domain.
-            <m>\{f(x)|-75 \leq f(x) \leq 725\}</m> would be reasonable.
-            Again we could be more precise and say <m>\{f(x)|f(x) \text{ is a whole number and } -75 \leq f(x) \leq 725\}</m>,
-            but this is not necessary.
-          </p>
-        </solution>
+        <p>a. All real numbers.</p><p>b. Assuming at most 40 haircuts per day, the relevant domain is the integers <m>0,1,\ldots,40</m>. The corresponding range is <m>\{20x-75:x=0,1,\ldots,40\}</m>, from <m>-75</m> to <m>725</m> dollars in steps of <m>20</m> dollars.</p>
+      </solution>
       </exercise>
       <exercise>
         <statement>
@@ -1549,7 +1535,7 @@
           <p>
             A movie theater operator has hired a business consultant to help determine price strategy.
             The consultant developed a model which projects the theatre's monthly profits as a function of the regular adult ticket price.
-            Suppose her model uses the function <m>p(t) = 800(-x^2 + 20x - 64)</m>.
+            Suppose her model uses the function <m>p(x) = 800(-x^2 + 20x - 64)</m>.
             <ol>
               <li>
                 <p>
@@ -1671,15 +1657,15 @@
             It makes no sense that the fee for a $2.75 charge would be $100.
           </p>
           <p>
-            b. <m>$2.46</m>
+            b. <m>\$2.46</m>
           </p>
           <p>
-            c. <m>$78</m>
+            c. <m>\$78</m>
           </p>
           <p>
             d. Yes, because charges close to
-            <m>$78</m> would also round to the same fee.
-            For example <m>$77.99</m>
+            <m>\$78</m> would also round to the same fee.
+            For example <m>\$77.99</m>
           </p>
         </solution>
       </exercise>
@@ -1799,7 +1785,7 @@
         </statement>
         <solution>
           <p>
-            a. <m>$111</m>
+            a. <m>\$111</m>
           </p>
           <p>
             b. 90 minutes
@@ -1810,7 +1796,7 @@
           </p>
           <p>
             d. Relevant range should be based on the costs for the service call lengths included in the domain.
-            A 0 minute service call (i.e. the cost for just showing up) is <m>$75</m>.
+            A 0 minute service call (i.e. the cost for just showing up) is <m>\$75</m>.
             The charge for a <m>240</m> minute call is <m>267</m>.
             So based on my relevant domain,
             the relevant range would be <m>\{f(t)|75 \leq f(t) \leq 267\}</m>.
@@ -1821,7 +1807,7 @@
         <statement>
           <p>
             A club is planning a field trip to Washington D.C. The cost per person for the trip is a function of the number of members who will be going.
-            This function is given by the formula <m>f(x) = 1850 + 475x</m>.
+            This function is given by the formula <m>f(x) = \frac{1850 + 475x}{x}</m>.
             If the cost per person is $549, how many members are going?
             Solve this problem.
           </p>

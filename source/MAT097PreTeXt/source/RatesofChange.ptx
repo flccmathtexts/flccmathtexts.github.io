@@ -566,7 +566,7 @@
     </p>
     <p>
       So we would conclude that as usage changes from 720 to 860 kilowatt hours,
-      the bill changes at an average rate of <m>$0.12</m> per kilowatt hour.
+      the bill changes at an average rate of <m>\$0.12</m> per kilowatt hour.
     </p>
     <p>
       Calculating the bill for 585 kilowatt hours we get:
@@ -585,7 +585,7 @@
       </md>
     </p>
     <p>
-      So as the usage goes from 860 to 585 kilowatt hours the average rate of change is again <m>$0.12</m> per kilowatt hour. }
+      So as the usage goes from 860 to 585 kilowatt hours the average rate of change is again <m>\$0.12</m> per kilowatt hour. }
     </p>
     <p>
       The fact that these two average rates of change are the same could be a coincidence,
@@ -1211,7 +1211,7 @@
         </statement>
         <solution>
           <p>
-            <m>-0.04</m> (predicted) pounds per daily Calorie.
+            <m>0.04</m> (predicted) pounds per daily Calorie.
             Going between 2400 and 2100 Calories per day, Tony is predicted to lose on average 0.04 pounds over the course of the year for each Calorie he cuts from his daily total.
           </p>
         </solution>
@@ -1294,10 +1294,10 @@
         </statement>
         <solution>
           <p>
-            a. <m>$35</m> per guest
+            a. <m>\$35</m> per guest
           </p>
           <p>
-            b. <m>$35</m> per guest
+            b. <m>\$35</m> per guest
           </p>
           <p>
             c. It is reasonable to expect that it would be,

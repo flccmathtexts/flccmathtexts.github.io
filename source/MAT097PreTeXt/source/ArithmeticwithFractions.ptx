@@ -35,7 +35,13 @@
     <definition>
       <statement>
         <p>
-              <idx><h>Fractions</h><h>Addition</h></idx> <em><em>Adding and Subtracting Fractions</em></em>
+          <idx>
+            <h>Fractions</h>
+            <h>Addition</h>
+          </idx>
+          <em>
+            <em>Adding and Subtracting Fractions</em>
+          </em>
           <ul>
             <li>
               <p>
@@ -147,8 +153,13 @@
     <definition>
       <statement>
         <p>
-          <em><idx><h>Fractions</h><h>Multiplying</h></idx>
-          </em> <em>Multiplying Fractions</em>
+          <em>
+            <idx>
+              <h>Fractions</h>
+              <h>Multiplying</h>
+            </idx>
+          </em>
+          <em>Multiplying Fractions</em>
           <ul>
             <li>
               <p>
@@ -167,7 +178,7 @@
     <p>
       In fact, we've already multiplied some fractions in this chapter
       (in <xref ref="ArithmeticwithFractionsExample1">Examples</xref>
-      and <xref ref="ArithmeticwithFractionsExample2" />
+      and <xref ref="ArithmeticwithFractionsExample2"/>
       we multiplied to get fractions into their common denominators).
     </p>
     <example xml:id="ArithmeticwithFractionsExample3">
@@ -189,7 +200,9 @@
     <definition>
       <statement>
         <p>
-          <em><em>Dividing Fractions</em></em>
+          <em>
+            <em>Dividing Fractions</em>
+          </em>
           <ul>
             <li>
               <p>
@@ -240,7 +253,8 @@
       There are <m>60</m> minutes in an hour,
       and so <m>30</m> minutes is <m>\frac{30}{60}</m> of an hour.
       But no one would actually say
-      <q><m>\frac{30}{60}</m> of an hour</q>; of course you'd say <m>30</m> minutes is <m>\frac{1}{2}</m> of an hour.
+      <q>
+        <m>\frac{30}{60}</m> of an hour</q>; of course you'd say <m>30</m> minutes is <m>\frac{1}{2}</m> of an hour.
       The fractions <m>\frac{30}{60}</m> and
       <m>\frac{1}{2}</m> are equal to each other,
       so either would be technically correct,
@@ -250,7 +264,10 @@
       When we replace a fraction like
       <m>\frac{30}{60}</m> to an equal fraction with a smaller numerator and denominator,
       we say that we <em>reduce</em>
-          <idx><h>Fractions</h><h>Reduced</h></idx>
+      <idx>
+        <h>Fractions</h>
+        <h>Reduced</h>
+      </idx>
       it.
       When a fraction cannot be reduced any further,
       we say it is written in <em>lowest terms</em>.
@@ -295,7 +312,9 @@
     <definition>
       <statement>
         <p>
-          <em><em>Method for Reducing Fractions</em></em>
+          <em>
+            <em>Method for Reducing Fractions</em>
+          </em>
           <ul>
             <li>
               <p>
@@ -316,7 +335,7 @@
     </definition>
     <p>
       <xref ref="ArithmeticwithFractionsExample1">Examples</xref>
-      through <xref ref="ArithmeticwithFractionsExample4" />
+      through <xref ref="ArithmeticwithFractionsExample4"/>
       were intentionally set up so that the final answer would come out to be in lowest terms.
       You cannot always assume that this will happen, though.
       Whenever you do any fraction arithmetic,
@@ -449,7 +468,8 @@
     <title>Closing Thoughts</title>
     <p>
       With the
-      <q><m>\blacktriangleright</m>Frac</q>
+      <q>
+        <m>\blacktriangleright</m>Frac</q>
       feature of the calculator available to us,
       we can easily handle otherwise tedious fraction arithmetic.
       This is really, really good news.
@@ -464,592 +484,549 @@
       you'll have much more trouble dealing with algebraic fractions later on!
     </p>
   </subsection>
-  <subsection>
+  <exercises>
     <title>Exercises</title>
-    <p>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
       Evaluate the following arithmetic expressions without using the
-      <q><m>\blacktriangleright</m>Frac</q>
+      <q>
+            <m>\blacktriangleright</m>Frac</q>
       command on your calculator.
     </p>
-    
-    <exercises><exercise>
-      <statement>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{2}+\frac{1}{3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{5}{6}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{2}{7}+\frac{1}{5}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3}{5}+\frac{1}{8}-\frac{1}{4}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{19}{40}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{6}{7}-\frac{3}{4}+\frac{3}{14}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{11}{8}-\frac{13}{16}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{9}{16}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{11}{9}+\frac{2}{27}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{7}{30}+\frac{5}{6}-\frac{11}{12}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{3}{20}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{13}{15}-\frac{2}{25}-\frac{4}{9}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3-\frac{7}{5}-\frac{3}{10}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{13}{10}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3}{8}-\frac{1}{12}+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{4}{5}\left(\frac{1}{3}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{4}{15}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{2}{7}\left(\frac{3}{5}\right)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{3}\left(\frac{5}{6}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{5}{18}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{5}{3}\left(\frac{2}{9}\right)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3}{5}\div\frac{11}{2}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{6}{55}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{7}{2}\div\frac{5}{3}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{9}{11}\div\frac{2}{3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{27}{22}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{4}{5}\div\frac{3}{2}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{7}{2}\div 5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{7}{10}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{7}{13}\div 2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3}{8}+\frac{3}{2}-\frac{5}{8}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{5}{4}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{5}{2}+\frac{1}{3}-\frac{5}{6}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{4}{5}\left(\frac{25}{8}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{5}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{9}{16}\left(\frac{10}{3}\right)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{10}{27}\div\frac{25}{9}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{2}{15}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{18}{35}\div\frac{9}{49}</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
         <p>
-          <m>\frac{1}{2}+\frac{1}{3}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{5}{6}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{2}{7}+\frac{1}{5}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{3}{5}+\frac{1}{8}-\frac{1}{4}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{19}{40}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{6}{7}-\frac{3}{4}+\frac{3}{14}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{11}{8}-\frac{13}{16}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{9}{16}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{11}{9}+\frac{2}{27}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{7}{30}+\frac{5}{6}-\frac{11}{12}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{3}{20}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{13}{15}-\frac{2}{25}-\frac{4}{9}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3-\frac{7}{5}-\frac{3}{10}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{13}{10}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{3}{8}-\frac{1}{12}+1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{4}{5}\left(\frac{1}{3}\right)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{4}{15}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{2}{7}\left(\frac{3}{5}\right)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{1}{3}\left(\frac{5}{6}\right)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{5}{18}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{5}{3}\left(\frac{2}{9}\right)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{3}{5}\div\frac{11}{2}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{6}{55}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{7}{2}\div\frac{5}{3}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{9}{11}\div\frac{2}{3}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{27}{22}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{4}{5}\div\frac{3}{2}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{7}{2}\div 5</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{7}{10}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{7}{13}\div 2</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{3}{8}+\frac{3}{2}-\frac{5}{8}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{5}{4}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{5}{2}+\frac{1}{3}-\frac{5}{6}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{4}{5}\left(\frac{25}{8}\right)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{5}{2}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{9}{16}\left(\frac{10}{3}\right)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{10}{27}\div\frac{25}{9}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{2}{15}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{18}{35}\div\frac{9}{49}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    </exercises><p>
       Reduce the following fractions to lowest terms without using the
-      <q><m>\blacktriangleright</m>Frac</q>
+      <q>
+            <m>\blacktriangleright</m>Frac</q>
       command on your calculator.
     </p>
-    
-    <exercises><exercise>
-      <statement>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{20}{60}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{1}{3}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{100}{80}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{72}{140}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{18}{35}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{54}{72}</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
         <p>
-          <m>\frac{20}{60}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{1}{3}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{100}{80}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{72}{140}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{18}{35}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{54}{72}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    </exercises><p>
       Evaluate the following arithmetic expressions,
       expressing your answers as fractions in lowest terms.
       Use your calculator as much or as little as you like.
     </p>
-    
-    <exercises><exercise>
-      <statement>
-        <p>
-          <m>\frac{27}{4}\left(\frac{100}{81}\right)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{25}{3}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{162}{125}\left(\frac{200}{243}\right)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{15}{48}-\frac{3}{8}+\frac{5}{6}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{37}{48}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{21}{25}-\frac{31}{125}+\frac{3}{10}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{17}{75}-\frac{3}{10}+\frac{41}{250}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{34}{375}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{45}{132}-\frac{157}{430}+\frac{1}{4}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{7}{4}-\frac{3}{8}+\frac{2}{5}\left(\frac{5}{16}\right)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{3}{2}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{1}{2}-\frac{3}{32}+\frac{5}{96}\left(\frac{2}{35}\right)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{24}{75}\left(\frac{27}{80}\right)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{27}{250}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{312}{49}\left(\frac{63}{78}\right)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{824}{49}\div\frac{404}{32}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{6592}{4949}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{14}{29}\div\frac{105}{58}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{5}{7}\left(\frac{14}{25}\right)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{2}{5}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{13}{4}-\frac{5}{2}+1</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{13}{8}-\frac{1}{4}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{11}{8}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{7}{2}\left(\frac{81}{21}\right)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{9}{8}+\frac{3}{16}-2\left(\frac{5}{32}\right)</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>1</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{17}{32}\div\frac{54}{68}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{6}{5}-\frac{3}{10}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{9}{10}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{243}{1000}+\frac{243}{750}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{243}{1000}\div\frac{243}{750}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>\frac{3}{4}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{13}{15}-\frac{3}{25}\div\frac{5}{2}</m>
-        </p>
-      </statement>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>3-\frac{7}{16}\div\frac{1}{8}</m>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <m>-\frac{1}{2}</m>
-        </p>
-      </solution>
-    </exercise>
-    
-    <exercise>
-      <statement>
-        <p>
-          <m>\frac{3}{4}\left(\frac{45}{6}\right)\left(\frac{1}{9}\right)</m>
-        </p>
-      </statement>
-    </exercise>
-    
-  </exercises></subsection>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{27}{4}\left(\frac{100}{81}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{25}{3}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{162}{125}\left(\frac{200}{243}\right)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{15}{48}-\frac{3}{8}+\frac{5}{6}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{37}{48}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{21}{25}-\frac{31}{125}+\frac{3}{10}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{17}{75}-\frac{3}{10}+\frac{41}{250}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{34}{375}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{45}{132}-\frac{157}{430}+\frac{1}{4}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{7}{4}-\frac{3}{8}+\frac{2}{5}\left(\frac{5}{16}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{3}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{2}-\frac{3}{32}+\frac{5}{96}\left(\frac{2}{35}\right)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{24}{75}\left(\frac{27}{80}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{27}{250}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{312}{49}\left(\frac{63}{78}\right)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{824}{49}\div\frac{404}{32}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{6592}{4949}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{14}{29}\div\frac{105}{58}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{5}{7}\left(\frac{14}{25}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{2}{5}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{13}{4}-\frac{5}{2}+1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{13}{8}-\frac{1}{4}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{11}{8}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{7}{2}\left(\frac{81}{21}\right)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{9}{8}+\frac{3}{16}-2\left(\frac{5}{32}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>1</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{17}{32}\div\frac{54}{68}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{6}{5}-\frac{3}{10}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{9}{10}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{243}{1000}+\frac{243}{750}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{243}{1000}\div\frac{243}{750}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{3}{4}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{13}{15}-\frac{3}{25}\div\frac{5}{2}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3-\frac{7}{16}\div\frac{1}{8}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-\frac{1}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3}{4}\left(\frac{45}{6}\right)\left(\frac{1}{9}\right)</m>
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+  </exercises>
 </section>
