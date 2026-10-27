@@ -63,7 +63,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js"
+      "pretext": "_static/pretext/js/lib"
     }
   },
   "startup": {
@@ -80,7 +80,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Algebra and Introduction to Functions">
 <meta property="book:author" content="FLCC Mathematics Department">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,16 +102,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.14';
+eBookConfig.runestone_version = '8.3.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -119,7 +119,7 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="root-1-2.html"><span class="title">Algebra and Introduction to Functions</span></a></h1>
 <p class="byline">FLCC Mathematics Department</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="root-1-2-8-2.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="root-1-2-8-1.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
 <div class="search-results-controls">
@@ -131,7 +131,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="SolvingEquations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="SolvingEquations.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="SolveSecondDegree.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\executeiffilenewer}[3]{
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\newcommand{\executeiffilenewer}[3]{
 \ifnum\pdfstrcmp{\pdffilemoddate{#1}}
 {\pdffilemoddate{#2}}&gt;0
 {\immediate\write18{#3}}\fi}
@@ -176,10 +176,7 @@ IIIII}
 </ul>
 </li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-4" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Order of Operation and Your Calculator</span></a></div></li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-5" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Exercises</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-5-2" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="OrderofOperations.html#OrderofOperations-5" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -190,14 +187,7 @@ IIIII}
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-5" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Reducing Fractions to Lowest Terms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-6" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Fraction Arithmetic and Your Calculator</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-7" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Closing Thoughts</span></a></div></li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-8" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Exercises</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-8-3" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-8-5" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-8-7" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ArithmeticwithFractions.html#ArithmeticwithFractions-8" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -207,36 +197,14 @@ IIIII}
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-4" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Formulas</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-5" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Input-Output and Your Calculator</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-6" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Tables with Multiple Inputs</span></a></div></li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Exercises</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection">
-<div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-2" class="internal"><span class="codenumber">1.3.5.1</span> <span class="title">Substituting into Algebraic Expressions</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-2-3" class="internal"><span class="codenumber">1.3.5.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li class="toc-item toc-subsubsection">
-<div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-3" class="internal"><span class="codenumber">1.3.5.2</span> <span class="title">Formulas</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-3-3" class="internal"><span class="codenumber">1.3.5.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li class="toc-item toc-subsubsection">
-<div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-4" class="internal"><span class="codenumber">1.3.5.3</span> <span class="title">Input-Output Tables</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7-4-3" class="internal"><span class="codenumber">1.3.5.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicSubstitution.html#AlgebraicSubstitution-7" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Foundation of Arithmetic Review Questions</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html#FoundationOfArithmeticReviewQuestions-2" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Order of Operations</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html#FoundationOfArithmeticReviewQuestions-2-3" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html#FoundationOfArithmeticReviewQuestions-3" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Algebraic Substitution</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html#FoundationOfArithmeticReviewQuestions-3-3" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html#FoundationOfArithmeticReviewQuestions-2" class="internal"><span class="codenumber">1.4</span> <span class="title">Order of Operations</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationOfArithmeticReviewQuestions.html#FoundationOfArithmeticReviewQuestions-3" class="internal"><span class="codenumber">1.4</span> <span class="title">Algebraic Substitution</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -250,29 +218,12 @@ IIIII}
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-3" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Terms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-4" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Simplifying Terms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-5" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Combining Like Terms</span></a></div></li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Exercises</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-2" class="internal"><span class="codenumber">2.1.4.1</span> <span class="title">Terms</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-3" class="internal"><span class="codenumber">2.1.4.2</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-subsubsection">
-<div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-4" class="internal"><span class="codenumber">2.1.4.3</span> <span class="title">Simplifying Terms</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-4-4" class="internal"><span class="codenumber">2.1.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li class="toc-item toc-subsubsection">
-<div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-5" class="internal"><span class="codenumber">2.1.4.4</span> <span class="title">Combining Like Terms</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6-5-3" class="internal"><span class="codenumber">2.1.4.4</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicExpressions.html#AlgebraicExpressions-6" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="Distribution.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Distribution</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="Distribution.html#Distribution-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Exercises</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Distribution.html#Distribution-3-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Distribution.html#Distribution-3" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Algebraic Expressions Exponents</span></a></div>
@@ -281,65 +232,32 @@ IIIII}
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-3" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Exponents and Division</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-4" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Exponents and Expressions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-5" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Exponents and Fractions</span></a></div></li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-6" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Exercises</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-6-3" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AlgebraicExpressionsExponents.html#AlgebraicExpressionsExponents-6" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="NegativeExponents.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Negative Exponents</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="NegativeExponents.html#NegativeExponents-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Exercises</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="NegativeExponents.html#NegativeExponents-3-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="NegativeExponents.html#NegativeExponents-3" class="internal"><span class="codenumber">2.4</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="CommonFactor.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Factoring: Common Factor</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CommonFactor.html#CommonFactor-3" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Common Factor</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CommonFactor.html#CommonFactor-4" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Factor by Grouping</span></a></div></li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="CommonFactor.html#CommonFactor-5" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Exercises</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="CommonFactor.html#CommonFactor-5-2" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="CommonFactor.html#CommonFactor-5" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="SecondDegreeFactor.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Factoring: Second Degree Expression</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="SecondDegreeFactor.html#SecondDegreeFactor-3" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Exercises</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SecondDegreeFactor.html#SecondDegreeFactor-3-2" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SecondDegreeFactor.html#SecondDegreeFactor-3" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Foundations of Algebra Review</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-2" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Algebraic Expressions</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-2-3" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-2-5" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-2-7" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-2-9" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-3" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Exponents</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-3-3" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-4" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Negative Exponents</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-4-3" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-4-5" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-4-7" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-5" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Factoring</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-5-3" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-2" class="internal"><span class="codenumber">2.7</span> <span class="title">Algebraic Expressions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-3" class="internal"><span class="codenumber">2.7</span> <span class="title">Exponents</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-4" class="internal"><span class="codenumber">2.7</span> <span class="title">Negative Exponents</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="FoundationsOfAlgebraReview.html#FoundationsOfAlgebraReview-5" class="internal"><span class="codenumber">2.7</span> <span class="title">Factoring</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -560,8 +478,8 @@ IIIII}
 <div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-5" class="internal"><span class="codenumber">4.3.4.4</span> <span class="title">Grab Bag</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-5-3" class="internal"><span class="codenumber">4.3.4.4</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-5-4" class="internal"><span class="codenumber">4.3.4.4</span> <span class="title">Exercises</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-5-6" class="internal"><span class="codenumber">4.3.4.4</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="SolvingEquationsGraphically.html#SolvingEquationsGraphically-6-5-8" class="internal"><span class="codenumber">4.3.4.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -906,10 +824,7 @@ IIIII}
 </li>
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="root-1-2-8.html" class="internal"><span class="title">Back Matter</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-references"><div class="toc-title-box"><a href="root-1-2-8-1.html" class="internal"><span class="title">Bibliography</span></a></div></li>
-<li class="toc-item toc-index"><div class="toc-title-box"><a href="root-1-2-8-2.html" class="internal"><span class="title">Index</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-index"><div class="toc-title-box"><a href="root-1-2-8-1.html" class="internal"><span class="title">Index</span></a></div></li></ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="FirstDegreeEquations"><h2 class="heading hide-type">
@@ -917,11 +832,11 @@ IIIII}
 </h2>
 <section class="introduction" id="FirstDegreeEquations-2"><div class="para" id="FirstDegreeEquations-2-1">Usually our main goal in algebra is to solve problems by solving equations. In this book we’ll spend quite a bit of time working on techniques to do this, but you should already have some experience. In this chapter we will review techniques of solving first-degree equations. Speaking a bit loosely, a <em class="emphasis">first-degree equation</em>  can be defined to be one where we don’t need to deal with exponents, roots, variables in denominators, or anything like that.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-2-2">Before we begin reviewing, let’s review some of the terminology we’ll need to use. Suppose you have a <span class="process-math">\($25\)</span> balance on a pre-paid phone card, and usage costs <span class="process-math">\(3\)</span> cents per minute. You can write an algebraic expression for the balance on your card based on minutes used. If we represent the minutes used by the variable <span class="process-math">\(m\text{,}\)</span> your remaining balance would be <span class="process-math">\(25 - 0.03m\text{.}\)</span> You can find out what your balance would be after any number of minutes of usage just by plugging in different values for <span class="process-math">\(m\text{.}\)</span> How much would you have after <span class="process-math">\(200\)</span> minutes? Plug in <span class="process-math">\(m = 200\text{!}\)</span> And so on.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-2-2">Before we begin reviewing, let’s review some of the terminology we’ll need to use. Suppose you have a <span class="process-math">\(\$25\)</span> balance on a pre-paid phone card, and usage costs <span class="process-math">\(3\)</span> cents per minute. You can write an algebraic expression for the balance on your card based on minutes used. If we represent the minutes used by the variable <span class="process-math">\(m\text{,}\)</span> your remaining balance would be <span class="process-math">\(25 - 0.03m\text{.}\)</span> You can find out what your balance would be after any number of minutes of usage just by plugging in different values for <span class="process-math">\(m\text{.}\)</span> How much would you have after <span class="process-math">\(200\)</span> minutes? Plug in <span class="process-math">\(m = 200\text{!}\)</span> And so on.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="FirstDegreeEquations-2-3">
-<div class="para">But now suppose you want to know how many minutes you can use before your balance falls to <span class="process-math">\($10\text{.}\)</span> So, in other words, you need to solve the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-2-3-2">
+<div class="para">But now suppose you want to know how many minutes you can use before your balance falls to <span class="process-math">\(\$10\text{.}\)</span> So, in other words, you need to solve the equation:</div>
+<div class="displaymath process-math">
 \begin{equation*}
 25 - 0.03m = 10
 \end{equation*}
@@ -937,7 +852,7 @@ IIIII}
 19 \amp  = 10
 \end{align*}
 </div>
-<div class="para">which is nonsense. If you use <span class="process-math">\(200\)</span> minutes, we can see that your remaining balance is <span class="process-math">\($19\text{,}\)</span> not the <span class="process-math">\($10\)</span> we were looking for. <span class="process-math">\(200\)</span> minutes is not the amount of usage you were looking for.</div>
+<div class="para">which is nonsense. If you use <span class="process-math">\(200\)</span> minutes, we can see that your remaining balance is <span class="process-math">\(\$19\text{,}\)</span> not the <span class="process-math">\(\$10\)</span> we were looking for. <span class="process-math">\(200\)</span> minutes is not the amount of usage you were looking for.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="FirstDegreeEquations-2-5">
@@ -949,14 +864,14 @@ IIIII}
 10 \amp  = 10
 \end{align*}
 </div>
-<div class="para">which is exactly what we would have hoped for. If you use <span class="process-math">\(500\)</span> minutes, your remaining balance is <span class="process-math">\($10\text{.}\)</span> <span class="process-math">\(500\)</span> minutes is the amount of usage you were looking for.</div>
+<div class="para">which is exactly what we would have hoped for. If you use <span class="process-math">\(500\)</span> minutes, your remaining balance is <span class="process-math">\(\$10\text{.}\)</span> <span class="process-math">\(500\)</span> minutes is the amount of usage you were looking for.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="FirstDegreeEquations-2-6">In algebra, we say that a given value <em class="emphasis">satisfies</em>  an equation if and only if the result is true when we plug that value into the equation. We can also say that a given value is a solution for the equation. So, in this example, we would say that “<span class="process-math">\(500\)</span> satisfies the equation <span class="process-math">\(25 - 0.03m = 10\)</span>” or that “<span class="process-math">\(500\)</span> is a solution for this equation.”<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="FirstDegreeEquations-2-7">Likewise we would say that “<span class="process-math">\(200\)</span> does not satisfy (or is not a solution for) this equation.”<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="FirstDegreeEquations-2-8">The set of all solutions for a given equation is called its solution set. We would say that the solution set of <span class="process-math">\(25 - 0.03m = 10\)</span> is <span class="process-math">\(\{500\}\)</span> (this solution set has just one member.) We know that <span class="process-math">\(500\)</span> must be the only member of this solution set because common sense tells us that there is only one amount of usage that would result in having <span class="process-math">\($10\)</span> left.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-2-8">The set of all solutions for a given equation is called its solution set. We would say that the solution set of <span class="process-math">\(25 - 0.03m = 10\)</span> is <span class="process-math">\(\{500\}\)</span> (this solution set has just one member.) We know that <span class="process-math">\(500\)</span> must be the only member of this solution set because common sense tells us that there is only one amount of usage that would result in having <span class="process-math">\(\$10\)</span> left.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="FirstDegreeEquations-2-9">Most first-degree equations have only one solution, but equations can have multiple solutions. For example, suppose that using physics someone has determined that the expression <span class="process-math">\(64t - 16t^2\)</span> gives the height of a ball (in feet) <span class="process-math">\(t\)</span> seconds after it is thrown upward, and we want to know when the ball will be at a height of <span class="process-math">\(48\)</span> feet. So we would need to know the solution set for the equation <span class="process-math">\(64-16t^2 = 48\text{.}\)</span> (Note that this is not a first-degree equation, because of the squared term). It turns out that this equation has two solutions, <span class="process-math">\(t=1\)</span> and <span class="process-math">\(t=3\text{,}\)</span> so the ball is at a height of <span class="process-math">\(48\)</span> feet <span class="process-math">\(1\)</span> second and <span class="process-math">\(3\)</span> seconds after it is thrown. So the solution set is <span class="process-math">\(\{1,3\}\text{.}\)</span> It makes perfect sense that there would be two solutions for this equation, since the ball would reach this height twice, once on the way up, and once on the way down. Common sense also tells us that these must be the only two solutions to the equation, since the ball would not be at this height at any other time.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1015,7 +930,7 @@ IIIII}
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-11">
 <div class="para">Suppose we want to solve:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-11-1">
+<div class="displaymath process-math">
 \begin{equation*}
 25 - 0.03m = 10
 \end{equation*}
@@ -1038,7 +953,7 @@ IIIII}
 <div class="para logical" id="FirstDegreeEquations-3-14">
 <div class="para">Now, we don’t have <span class="process-math">\(m\)</span> isolated yet, but we’re closer. We now just have to get rid of the coefficient <span class="process-math">\(-0.03\text{.}\)</span> Now, it is a common mistake to try to do this by adding <span class="process-math">\(0.03\)</span> to both sides, but that won’t work because <span class="process-math">\(-0.03m\)</span> and <span class="process-math">\(0.03\)</span> are not like terms, and so they cannot be combined. But we can divide both sides by <span class="process-math">\(-0.03\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-14-7">
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{-0.03m}{-0.03} = \frac{-15}{-0.03}
 \end{equation*}
@@ -1047,7 +962,7 @@ IIIII}
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-15">
 <div class="para">Which gives us:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-15-1">
+<div class="displaymath process-math">
 \begin{equation*}
 m = 500
 \end{equation*}
@@ -1063,7 +978,7 @@ m = 500
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample2-1-1">
 <div class="para">Solve for <span class="process-math">\(x\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample2-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 5x-11+3(2x-3)=2
 \end{equation*}
@@ -1113,7 +1028,7 @@ x\amp =2
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample3-1-1">
 <div class="para">Solve for <span class="process-math">\(z\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample3-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 5(z+1)-16=3z-5
 \end{equation*}
@@ -1129,7 +1044,7 @@ x\amp =2
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-26">
 <div class="para">It doesn’t matter which side we collect the <span class="process-math">\(z\)</span>’s on; either is fine. It is more common to collect them on the left, so we’ll subtract <span class="process-math">\(3z\)</span> from both sides to get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-26-3">
+<div class="displaymath process-math">
 \begin{equation*}
 2z-11=-5
 \end{equation*}
@@ -1138,7 +1053,7 @@ x\amp =2
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-27">
 <div class="para">Now since we’ve collected <span class="process-math">\(z\)</span>’s on the left, we’ll add <span class="process-math">\(11\)</span> to both sides to get rid of the <span class="process-math">\(-11\)</span> on the left:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-27-4">
+<div class="displaymath process-math">
 \begin{equation*}
 2z=6
 \end{equation*}
@@ -1147,7 +1062,7 @@ x\amp =2
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-28">
 <div class="para">And now dividing both sides by 2 we get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-28-1">
+<div class="displaymath process-math">
 \begin{equation*}
 z=3
 \end{equation*}
@@ -1172,7 +1087,7 @@ z=3
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample4-1-1">
 <div class="para">Solve for <span class="process-math">\(t\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample4-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 4t-3-7(2-t)=2(7t+5)-(t-4)
 \end{equation*}
@@ -1192,7 +1107,7 @@ z=3
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-33">
 <div class="para">Now, as mentioned in the previous example, there is a tendency to collect the variable on the left. So, if we collect the variable on the left we subtract <span class="process-math">\(13t\)</span> from both sides to get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-33-2">
+<div class="displaymath process-math">
 \begin{equation*}
 -2t-17=14
 \end{equation*}
@@ -1201,7 +1116,7 @@ z=3
 </div>
 <div class="para logical" id="FirstDegreeEquations-3-34">
 <div class="para">Then add <span class="process-math">\(17\)</span> to both sides:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-34-2">
+<div class="displaymath process-math">
 \begin{equation*}
 -2t=31
 \end{equation*}
@@ -1211,13 +1126,13 @@ z=3
 <div class="para logical" id="FirstDegreeEquations-3-35">
 <div class="para">And now divide by <span class="process-math">\(-2\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-35-2">
+<div class="displaymath process-math">
 \begin{equation*}
 t=\frac{31}{-2}
 \end{equation*}
 </div>
 <div class="para">which is more commonly rewritten as:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-3-35-3">
+<div class="displaymath process-math">
 \begin{equation*}
 t=-\frac{31}{2}=\frac{-31}{2}=-15.5
 \end{equation*}
@@ -1263,7 +1178,7 @@ t=-\frac{31}{2}=\frac{-31}{2}=-15.5
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample5-1-1">
 <div class="para">Solve for <span class="process-math">\(y\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample5-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{2}{3}y-\frac{7}{5}=\frac{1}{6}y+\frac{11}{4}
 \end{equation*}
@@ -1305,7 +1220,7 @@ y\amp =\frac{249}{30}=\frac{83}{10}=8.3
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample6-1-1">
 <div class="para">Solve for <span class="process-math">\(x\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample6-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{2}{3}x-1=\frac{3}{5}\left(\frac{1}{2}x+1\right)
 \end{equation*}
@@ -1314,7 +1229,7 @@ y\amp =\frac{249}{30}=\frac{83}{10}=8.3
 </div>
 <div class="autopermalink" data-description="Example 3.1.7"><a href="#FirstDegreeEquationsExample6" title="Copy heading and permalink for Example 3.1.7" aria-label="Copy heading and permalink for Example 3.1.7">🔗</a></div></article></details><div class="para logical" id="FirstDegreeEquations-4-11">
 <div class="para">Here the lowest common denominator is <span class="process-math">\(30\text{,}\)</span> so we multiply both sides:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-11-2">
+<div class="displaymath process-math">
 \begin{equation*}
 30\left(\frac{2}{3}x-1\right)=30\left[\frac{3}{5}\left(\frac{1}{2}x+1\right)\right]
 \end{equation*}
@@ -1323,7 +1238,7 @@ y\amp =\frac{249}{30}=\frac{83}{10}=8.3
 </div>
 <div class="para logical" id="FirstDegreeEquations-4-12">
 <div class="para">When simplifying we generally work from inside parentheses out, but here we are better off multiplying 30 into the outermost parenthesis on the right first:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-4-12-1">
+<div class="displaymath process-math">
 \begin{equation*}
 30\left(\frac{2}{3}x-1\right)=18\left(\frac{1}{2}x+1\right)
 \end{equation*}
@@ -1347,7 +1262,7 @@ x\amp =\frac{48}{11}=4.3636..\text{.}
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample7-1-1">
 <div class="para">Solve for <span class="process-math">\(t\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample7-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 \frac{1}{4}\left(\frac{3}{8}t+1\right)=\frac{2}{3}t-1
 \end{equation*}
@@ -1393,7 +1308,7 @@ t\amp =\frac{120}{55}=\frac{24}{11}=2.1818..\text{.}
 </h3>
 <div class="para logical" id="FirstDegreeEquations-5-2">
 <div class="para">Not all problems can be solved! This fact of life shows up with equations as well. Suppose you are asked to find a solution for the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 x = x + 1
 \end{equation*}
@@ -1404,7 +1319,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-4">
 <div class="para">Now, not all inconsistent equations are as transparent as this one. For example, the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-4-1">
+<div class="displaymath process-math">
 \begin{equation*}
 5(x-2)+3(x+1)=2x+1-3(11-2x)
 \end{equation*}
@@ -1430,7 +1345,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-8">
 <div class="para">On the other hand, sometimes an equation has lots and lots of solutions. For example, consider the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-8-1">
+<div class="displaymath process-math">
 \begin{equation*}
 6x+10=2(3x+5)
 \end{equation*}
@@ -1439,7 +1354,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-9">
 <div class="para">It’s probably not immediately obvious that this is not an ordinary equation, but think about what would happen if you distributed the <span class="process-math">\(2\)</span> into the parentheses on the right. You’d wind up with the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-9-2">
+<div class="displaymath process-math">
 \begin{equation*}
 6x+10=6x+10
 \end{equation*}
@@ -1450,7 +1365,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-11">
 <div class="para">Just as many inconsistent equations are not obviously so, many identities are not obvious identities. For example, this equation is an identity:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-11-1">
+<div class="displaymath process-math">
 \begin{equation*}
 4x-2(3x-5)=7x-3(3x-3)+1
 \end{equation*}
@@ -1471,7 +1386,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-13">
 <div class="para">Now, at this point we have the same expression on both sides of the equation, which is a dead giveaway. If the two sides are the same, then they will be equal irrespective of what <span class="process-math">\(x\)</span> might be. If, though, you don’t notice that they are the same, you could continue and add <span class="process-math">\(2x\)</span> to both sides and get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-13-3">
+<div class="displaymath process-math">
 \begin{equation*}
 10=10
 \end{equation*}
@@ -1489,7 +1404,7 @@ x = x + 1
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="FirstDegreeEquationsExample8-1-1">
 <div class="para">Solve for <span class="process-math">\(P\text{:}\)</span>
 </div>
-<div class="displaymath process-math" id="FirstDegreeEquationsExample8-1-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 3P-5(4P-3)=-3(5P-1)-2P
 \end{equation*}
@@ -1505,7 +1420,7 @@ x = x + 1
 </div>
 <div class="para logical" id="FirstDegreeEquations-5-19">
 <div class="para">At this point you may notice that we have an impossible situation in the equation, but it does no harm to continue. Adding <span class="process-math">\(17P\)</span> to both sides we get:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-5-19-2">
+<div class="displaymath process-math">
 \begin{equation*}
 15=3
 \end{equation*}
@@ -1518,7 +1433,7 @@ x = x + 1
 </h3>
 <div class="para logical" id="FirstDegreeEquations-6-2">
 <div class="para">In <a href="AlgebraicSubstitution.html" class="internal" title="Section 1.3: Algebraic Substitution">Section 1.3</a> we used the formula:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AlgebraicSubstitution.html" id="FirstDegreeEquations-6-2-2">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AlgebraicSubstitution.html">
 \begin{equation*}
 W=210-\frac{m}{3}
 \end{equation*}
@@ -1529,7 +1444,7 @@ W=210-\frac{m}{3}
 </div>
 <div class="para logical" id="FirstDegreeEquations-6-3">
 <div class="para">This works great if you know the minutes of exercise and want to know the projected weight, but what if the situation is reversed? Suppose we have in mind a desired weight and want to know the minutes of exercise that would be needed to achieve that. For example, suppose we want to know the minutes of exercise needed to achieve a weight of <span class="process-math">\(185\)</span> pounds? Well, we could substitute in <span class="process-math">\(W=185\)</span> to get the equation:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-6-3-3">
+<div class="displaymath process-math">
 \begin{equation*}
 185=210-\frac{m}{3}
 \end{equation*}
@@ -1564,7 +1479,7 @@ W\amp =210-\frac{m}{3}\\
 \end{align*}
 </div>
 <div class="para">which we can now rewrite as:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-6-6-2">
+<div class="displaymath process-math">
 \begin{equation*}
 m=-3W+630 \text{ or }  m=630-3W
 \end{equation*}
@@ -1589,7 +1504,7 @@ C\amp =\frac{5}{9}(F-32)\\
 </div>
 <div class="para logical" id="FirstDegreeEquations-6-10">
 <div class="para">which we can then rewrite as:</div>
-<div class="displaymath process-math" id="FirstDegreeEquations-6-10-1">
+<div class="displaymath process-math">
 \begin{equation*}
 F=\frac{9C+160}{5}
 \end{equation*}
@@ -1611,7 +1526,7 @@ P-2W\amp =2L\\
 \frac{P-2W}{2}\amp =L
 \end{align*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AlgebraicSubstitution.html" id="FirstDegreeEquations-6-15">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AlgebraicSubstitution.html">
 \begin{equation*}
 L=\frac{P-2W}{2} \text{ or }  L=\frac{1}{2}\left(P-2W\right)
 \end{equation*}
@@ -1670,13 +1585,13 @@ L=\frac{P-2W}{2} \text{ or }  L=\frac{1}{2}\left(P-2W\right)
 <div class="autopermalink" data-description="Solution 3.1.5.1.1.1"><a href="#FirstDegreeEquations-7-2-5-1-2" title="Copy heading and permalink for Solution 3.1.5.1.1.1" aria-label="Copy heading and permalink for Solution 3.1.5.1.1.1">🔗</a></div>
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 3.1.5.1.1"><a href="#FirstDegreeEquations-7-2-5-1" title="Copy heading and permalink for Exercise 3.1.5.1.1" aria-label="Copy heading and permalink for Exercise 3.1.5.1.1">🔗</a></div></article><article class="exercise exercise-like" id="FirstDegreeEquations-7-2-5-2"><h6 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
-<div class="para" id="FirstDegreeEquations-7-2-5-2-1-1">My water bill <span class="process-math">\(W\)</span> is calculated using the formula <span class="process-math">\(W=0.02g+5\)</span> where <span class="process-math">\(g\)</span> is the number of gallons used during the month. Last month my bill was <span class="process-math">\($25\text{,}\)</span> but I’m not sure whether I used <span class="process-math">\(500, 1000, 1500\text{,}\)</span> or <span class="process-math">\(2000\)</span> gallons. Which of these possibilities, if any, was my actual usage?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-2-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-7-2-5-2-1-1">My water bill <span class="process-math">\(W\)</span> is calculated using the formula <span class="process-math">\(W=0.02g+5\)</span> where <span class="process-math">\(g\)</span> is the number of gallons used during the month. Last month my bill was <span class="process-math">\(\$25\text{,}\)</span> but I’m not sure whether I used <span class="process-math">\(500, 1000, 1500\text{,}\)</span> or <span class="process-math">\(2000\)</span> gallons. Which of these possibilities, if any, was my actual usage?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-2-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Exercise 3.1.5.1.2"><a href="#FirstDegreeEquations-7-2-5-2" title="Copy heading and permalink for Exercise 3.1.5.1.2" aria-label="Copy heading and permalink for Exercise 3.1.5.1.2">🔗</a></div></article><article class="exercise exercise-like" id="FirstDegreeEquations-7-2-5-3"><h6 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
 <div class="para" id="FirstDegreeEquations-7-2-5-3-1-1">The mass of carbon dioxide <span class="process-math">\(m\)</span> in grams in a pressurized tank at room temperature is given by the formula <span class="process-math">\(m=44x\)</span> where <span class="process-math">\(x\)</span> is the volume of the tank in liters. A supplier can provide pressurized tanks with volumes of <span class="process-math">\(5,10,20\text{,}\)</span> or <span class="process-math">\(50\)</span> liters. A chemist wrote down that he needed to order a tank with <span class="process-math">\(176\)</span> grams of carbon dioxide, but didn’t write down the volume tank this was based on. What size tank does he need to order?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-2-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="FirstDegreeEquations-7-2-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="FirstDegreeEquations-7-2-5-3-2-1">20 liters<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-2-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-7-2-5-3-2-1">The formula gives <span class="process-math">\(x=176/44=4\)</span> liters. None of the listed tank sizes holds exactly 176 grams under this model.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-2-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 3.1.5.1.3.1"><a href="#FirstDegreeEquations-7-2-5-3-2" title="Copy heading and permalink for Solution 3.1.5.1.3.1" aria-label="Copy heading and permalink for Solution 3.1.5.1.3.1">🔗</a></div>
 </div></details></div>
@@ -1844,7 +1759,7 @@ L=\frac{P-2W}{2} \text{ or }  L=\frac{1}{2}\left(P-2W\right)
 <span class="process-math">\(6(2t-3)-5(3t+1)=3(2t+1)+7(t-3)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-3-2-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Exercise 3.1.5.2.22"><a href="#FirstDegreeEquations-7-3-2-22" title="Copy heading and permalink for Exercise 3.1.5.2.22" aria-label="Copy heading and permalink for Exercise 3.1.5.2.22">🔗</a></div></article><article class="exercise exercise-like" id="FirstDegreeEquations-7-3-2-23"><h6 class="heading"><span class="codenumber">23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
-<div class="para" id="FirstDegreeEquations-7-3-2-23-1-1">A technology sales rep quotes the costs for backup data storage systems using the formula<span class="process-math">\(C=50+0.12d\)</span> where<span class="process-math">\(d\)</span> is the number of gigabytes of storage used. She wrote up a quote showing a cost of <span class="process-math">\($1850\text{,}\)</span> but the quote doesn’t show the amount of storage that’s based on, and I can’t remember what she used to determine the quote. What amount of storage is the quote based on?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-3-2-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-7-3-2-23-1-1">A technology sales rep quotes the costs for backup data storage systems using the formula<span class="process-math">\(C=50+0.12d\)</span> where<span class="process-math">\(d\)</span> is the number of gigabytes of storage used. She wrote up a quote showing a cost of <span class="process-math">\(\$1850\text{,}\)</span> but the quote doesn’t show the amount of storage that’s based on, and I can’t remember what she used to determine the quote. What amount of storage is the quote based on?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-3-2-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="FirstDegreeEquations-7-3-2-23-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="FirstDegreeEquations-7-3-2-23-2-1">
@@ -1853,7 +1768,7 @@ L=\frac{P-2W}{2} \text{ or }  L=\frac{1}{2}\left(P-2W\right)
 <div class="autopermalink" data-description="Solution 3.1.5.2.23.1"><a href="#FirstDegreeEquations-7-3-2-23-2" title="Copy heading and permalink for Solution 3.1.5.2.23.1" aria-label="Copy heading and permalink for Solution 3.1.5.2.23.1">🔗</a></div>
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 3.1.5.2.23"><a href="#FirstDegreeEquations-7-3-2-23" title="Copy heading and permalink for Exercise 3.1.5.2.23" aria-label="Copy heading and permalink for Exercise 3.1.5.2.23">🔗</a></div></article><article class="exercise exercise-like" id="FirstDegreeEquations-7-3-2-24"><h6 class="heading"><span class="codenumber">24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
-<div class="para" id="FirstDegreeEquations-7-3-2-24-1-1">My water bill<span class="process-math">\(W\)</span> is calculated using the formula <span class="process-math">\(W=0.02g+5\)</span> where <span class="process-math">\(g\)</span> is the number of gallons used during the month. Last month my bill was <span class="process-math">\($37.68\text{,}\)</span> but I’m not sure how much water I used. How many gallons did I use last month?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-3-2-24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-7-3-2-24-1-1">My water bill<span class="process-math">\(W\)</span> is calculated using the formula <span class="process-math">\(W=0.02g+5\)</span> where <span class="process-math">\(g\)</span> is the number of gallons used during the month. Last month my bill was <span class="process-math">\(\$37.68\text{,}\)</span> but I’m not sure how much water I used. How many gallons did I use last month?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-3-2-24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Exercise 3.1.5.2.24"><a href="#FirstDegreeEquations-7-3-2-24" title="Copy heading and permalink for Exercise 3.1.5.2.24" aria-label="Copy heading and permalink for Exercise 3.1.5.2.24">🔗</a></div></article><article class="exercise exercise-like" id="FirstDegreeEquations-7-3-2-25"><h6 class="heading"><span class="codenumber">25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
 <div class="para" id="FirstDegreeEquations-7-3-2-25-1-1">The mass of carbon dioxide <span class="process-math">\(m\)</span> in grams in a pressurized tank at room temperature is given by the formula <span class="process-math">\(m=44x\)</span> where<span class="process-math">\(x\)</span> is the volume of the tank in liters. A chemist wrote down that he needed to order a tank with <span class="process-math">\(880\)</span> grams of carbon dioxide, but didn’t write down the volume tank this was based on. What size tank does he need to order?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-3-2-25-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1907,7 +1822,7 @@ L=\frac{P-2W}{2} \text{ or }  L=\frac{1}{2}\left(P-2W\right)
 </div>
 <div class="solutions"><details id="FirstDegreeEquations-7-4-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="FirstDegreeEquations-7-4-2-5-2-1">
-<span class="process-math">\(p=\frac-{16}{7}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-4-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(p=-\frac{16}{7}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-4-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 3.1.5.3.5.1"><a href="#FirstDegreeEquations-7-4-2-5-2" title="Copy heading and permalink for Solution 3.1.5.3.5.1" aria-label="Copy heading and permalink for Solution 3.1.5.3.5.1">🔗</a></div>
 </div></details></div>
@@ -2133,7 +2048,7 @@ L=\frac{P-2W}{2} \text{ or }  L=\frac{1}{2}\left(P-2W\right)
 <div class="autopermalink" data-description="Solution 3.1.5.5.15.1"><a href="#FirstDegreeEquations-7-6-3-15-2" title="Copy heading and permalink for Solution 3.1.5.5.15.1" aria-label="Copy heading and permalink for Solution 3.1.5.5.15.1">🔗</a></div>
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 3.1.5.5.15"><a href="#FirstDegreeEquations-7-6-3-15" title="Copy heading and permalink for Exercise 3.1.5.5.15" aria-label="Copy heading and permalink for Exercise 3.1.5.5.15">🔗</a></div></article><article class="exercise exercise-like" id="FirstDegreeEquations-7-6-3-16"><h6 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
-<div class="para" id="FirstDegreeEquations-7-6-3-16-1-1">A landscaper estimates that the time required to cut the grass in an athletic field, <span class="process-math">\(h\)</span> (in hours) based on the size of the field, <span class="process-math">\(A\text{,}\)</span> in square yards is given by the formula <span class="process-math">\(h=\frac{h}{800}+1\text{.}\)</span> He wants a formula which gives the size of the field based on the time it takes to mow it. Solve the equation for <span class="process-math">\(A\)</span> in terms of <span class="process-math">\(h\)</span> to create the formula he wants.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-6-3-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-7-6-3-16-1-1">A landscaper estimates that the time required to cut the grass in an athletic field, <span class="process-math">\(h\)</span> (in hours) based on the size of the field, <span class="process-math">\(A\text{,}\)</span> in square yards is given by the formula <span class="process-math">\(h=\frac{A}{800}+1\text{.}\)</span> He wants a formula which gives the size of the field based on the time it takes to mow it. Solve the equation for <span class="process-math">\(A\)</span> in terms of <span class="process-math">\(h\)</span> to create the formula he wants.<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-6-3-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Exercise 3.1.5.5.16"><a href="#FirstDegreeEquations-7-6-3-16" title="Copy heading and permalink for Exercise 3.1.5.5.16" aria-label="Copy heading and permalink for Exercise 3.1.5.5.16">🔗</a></div></article><div class="autopermalink" data-description="Exercises 3.1.5.5"><a href="#FirstDegreeEquations-7-6-3" title="Copy heading and permalink for Exercises 3.1.5.5" aria-label="Copy heading and permalink for Exercises 3.1.5.5">🔗</a></div></section><div class="autopermalink" data-description="Subsubsection 3.1.5.5: Solving for One Variable in Terms of Others"><a href="#FirstDegreeEquations-7-6" title="Copy heading and permalink for Subsubsection 3.1.5.5: Solving for One Variable in Terms of Others" aria-label="Copy heading and permalink for Subsubsection 3.1.5.5: Solving for One Variable in Terms of Others">🔗</a></div></section><section class="subsubsection" id="FirstDegreeEquations-7-7"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.5.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">General Exercises</span>
@@ -2186,14 +2101,14 @@ L=\frac{P-2W}{2} \text{ or }  L=\frac{1}{2}\left(P-2W\right)
 <div class="autopermalink" data-description="Solution 3.1.5.6.7.1"><a href="#FirstDegreeEquations-7-7-2-7-2" title="Copy heading and permalink for Solution 3.1.5.6.7.1" aria-label="Copy heading and permalink for Solution 3.1.5.6.7.1">🔗</a></div>
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 3.1.5.6.7"><a href="#FirstDegreeEquations-7-7-2-7" title="Copy heading and permalink for Exercise 3.1.5.6.7" aria-label="Copy heading and permalink for Exercise 3.1.5.6.7">🔗</a></div></article><article class="exercise exercise-like" id="FirstDegreeEquations-7-7-2-8"><h6 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
-<div class="para" id="FirstDegreeEquations-7-7-2-8-1-1">The daily profit for a tour operator <span class="process-math">\(p\)</span> depends on the number of paying customers taking his tour <span class="process-math">\(t\text{.}\)</span> The relationship is expressed by the equation <span class="process-math">\(p=65t-350\text{.}\)</span> Yesterday he made a profit of <span class="process-math">\($820\text{.}\)</span> How many paying customers did he have that day?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-7-2-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-7-7-2-8-1-1">The daily profit for a tour operator <span class="process-math">\(p\)</span> depends on the number of paying customers taking his tour <span class="process-math">\(t\text{.}\)</span> The relationship is expressed by the equation <span class="process-math">\(p=65t-350\text{.}\)</span> Yesterday he made a profit of <span class="process-math">\(\$820\text{.}\)</span> How many paying customers did he have that day?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-7-2-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Exercise 3.1.5.6.8"><a href="#FirstDegreeEquations-7-7-2-8" title="Copy heading and permalink for Exercise 3.1.5.6.8" aria-label="Copy heading and permalink for Exercise 3.1.5.6.8">🔗</a></div></article><article class="exercise exercise-like" id="FirstDegreeEquations-7-7-2-9"><h6 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
 <div class="para" id="FirstDegreeEquations-7-7-2-9-1-1">The daily profit for a tour operator <span class="process-math">\(p\)</span> depends on the number of paying customers taking his tour <span class="process-math">\(t\text{.}\)</span> The relationship is expressed by the equation <span class="process-math">\(p=65t-350\text{.}\)</span> This equation is set up to most easily give profit based on the number of paying customers. The tour operator would like to have a formula which is set up to give the number of customers needed based on the amount of profit, so that he can easily figure out how many customers he needs to draw to reach his profit goals. Find such a formula, by solving for <span class="process-math">\(t\)</span> in terms of <span class="process-math">\(p\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-7-2-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="FirstDegreeEquations-7-7-2-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="FirstDegreeEquations-7-7-2-9-2-1">
-<span class="process-math">\(t=\frac{t+350}{65}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-7-2-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(t=\frac{p+350}{65}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-7-2-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 3.1.5.6.9.1"><a href="#FirstDegreeEquations-7-7-2-9-2" title="Copy heading and permalink for Solution 3.1.5.6.9.1" aria-label="Copy heading and permalink for Solution 3.1.5.6.9.1">🔗</a></div>
 </div></details></div>
@@ -2260,7 +2175,7 @@ L=\frac{P-2W}{2} \text{ or }  L=\frac{1}{2}\left(P-2W\right)
 <div class="para" id="FirstDegreeEquations-7-7-2-20-1-1">What is the solution set of the equation <span class="process-math">\(3x+9=3(x+3)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-7-2-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Exercise 3.1.5.6.20"><a href="#FirstDegreeEquations-7-7-2-20" title="Copy heading and permalink for Exercise 3.1.5.6.20" aria-label="Copy heading and permalink for Exercise 3.1.5.6.20">🔗</a></div></article><article class="exercise exercise-like" id="FirstDegreeEquations-7-7-2-21"><h6 class="heading"><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
-<div class="para" id="FirstDegreeEquations-7-7-2-21-1-1">The cost of mobile phone service for the month depends on the number of minutes used. The cost <span class="process-math">\(C\)</span> in dollars, including tax, based on <span class="process-math">\(m\)</span> minutes of usage, is given by the formula <span class="process-math">\(C=1.08(4.95+0.05m)\text{.}\)</span> If my bill for the month is <span class="process-math">\($67.99\)</span> how many minutes did I use?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-7-2-21-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="FirstDegreeEquations-7-7-2-21-1-1">The cost of mobile phone service for the month depends on the number of minutes used. The cost <span class="process-math">\(C\)</span> in dollars, including tax, based on <span class="process-math">\(m\)</span> minutes of usage, is given by the formula <span class="process-math">\(C=1.08(4.95+0.05m)\text{.}\)</span> If my bill for the month is <span class="process-math">\(\$67.99\)</span> how many minutes did I use?<div class="autopermalink" data-description="Paragraph"><a href="#FirstDegreeEquations-7-7-2-21-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="FirstDegreeEquations-7-7-2-21-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="FirstDegreeEquations-7-7-2-21-2-1">
