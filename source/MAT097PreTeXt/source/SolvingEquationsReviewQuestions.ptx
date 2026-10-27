@@ -33,7 +33,7 @@
     <exercise>
       <statement>
         <p>
-          <m>c^2 - c = 12; c = -4, -3, \text{ or } 4</m>
+          <m>c^{2} - c = 12; c = -4, -3, \text{ or } 4</m>
         </p>
       </statement>
       <solution>
@@ -57,7 +57,7 @@
     <exercise>
       <statement>
         <p>
-          <m>2x^2 + 1 = 19; x = -6, -4, -3, 0, 2, \text{ or } 3</m>
+          <m>2x^{2} + 1 = 19; x = -6, -4, -3, 0, 2, \text{ or } 3</m>
         </p>
       </statement>
       <solution>
@@ -488,7 +488,7 @@
     <exercises><exercise>
       <statement>
         <p>
-          <m>a^2 + 7a = -12</m>
+          <m>a^{2} + 7a = -12</m>
         </p>
       </statement>
       <solution>
@@ -501,7 +501,7 @@
     <exercise>
       <statement>
         <p>
-          <m>2b^2 - 72 = 0</m>
+          <m>2b^{2} - 72 = 0</m>
         </p>
       </statement>
       <solution>
@@ -514,7 +514,7 @@
     <exercise>
       <statement>
         <p>
-          <m>-77 = -c^2 - 4c</m>
+          <m>-77 = -c^{2} - 4c</m>
         </p>
       </statement>
       <solution>
@@ -527,7 +527,7 @@
     <exercise>
       <statement>
         <p>
-          <m>d^2 - 25 = 0</m>
+          <m>d^{2} - 25 = 0</m>
         </p>
       </statement>
       <solution>
@@ -540,7 +540,7 @@
     <exercise>
       <statement>
         <p>
-          <m>2f^2 - 6f - 80 = 0</m>
+          <m>2f^{2} - 6f - 80 = 0</m>
         </p>
       </statement>
       <solution>
@@ -566,7 +566,7 @@
     <exercise>
       <statement>
         <p>
-          <m>(h + 4)^2 - 3 = 22</m>
+          <m>(h + 4)^{2} - 3 = 22</m>
         </p>
       </statement>
       <solution>
@@ -579,7 +579,7 @@
     <exercise>
       <statement>
         <p>
-          <m>3(j - 6)^2 + 10 = 37</m>
+          <m>3(j - 6)^{2} + 10 = 37</m>
         </p>
       </statement>
       <solution>
@@ -592,7 +592,7 @@
     <exercise>
       <statement>
         <p>
-          <m>2p^2 - 8 = 0</m>
+          <m>2p^{2} - 8 = 0</m>
         </p>
       </statement>
       <solution>
@@ -618,7 +618,7 @@
     <exercise>
       <statement>
         <p>
-          <m>r^2 + r - 42 = 0</m>
+          <m>r^{2} + r - 42 = 0</m>
         </p>
       </statement>
       <solution>
@@ -631,7 +631,7 @@
     <exercise>
       <statement>
         <p>
-          <m>g^2 - 64 = 0</m>
+          <m>g^{2} - 64 = 0</m>
         </p>
       </statement>
       <solution>
@@ -651,7 +651,7 @@
     <exercises><exercise>
       <statement>
         <p>
-          <m>u^3 = 125</m>
+          <m>u^{3} = 125</m>
         </p>
       </statement>
       <solution>
@@ -664,7 +664,7 @@
     <exercise>
       <statement>
         <p>
-          <m>-s^3 = 64</m>
+          <m>-s^{3} = 64</m>
         </p>
       </statement>
       <solution>
@@ -677,7 +677,7 @@
     <exercise>
       <statement>
         <p>
-          <m>v^3 + 7 = 34</m>
+          <m>v^{3} + 7 = 34</m>
         </p>
       </statement>
       <solution>
@@ -690,7 +690,7 @@
     <exercise>
       <statement>
         <p>
-          <m>3h^4 - 8 = 760</m>
+          <m>3h^{4} - 8 = 760</m>
         </p>
       </statement>
       <solution>
@@ -703,7 +703,7 @@
     <exercise>
       <statement>
         <p>
-          <m>t^3 - 7 = -1</m>
+          <m>t^{3} - 7 = -1</m>
         </p>
       </statement>
       <solution>
@@ -716,7 +716,7 @@
     <exercise>
       <statement>
         <p>
-          <m>4q^4 + 10 = 2510</m>
+          <m>4q^{4} + 10 = 2510</m>
         </p>
       </statement>
       <solution>
@@ -729,7 +729,7 @@
     <exercise>
       <statement>
         <p>
-          <m>5x^3 + 9 = 2x^3 + 225</m>
+          <m>5x^{3} + 9 = 2x^{3} + 225</m>
         </p>
       </statement>
       <solution>
@@ -742,7 +742,7 @@
     <exercise>
       <statement>
         <p>
-          <m>3z^3 - 40 + 9z^3 = -100</m>
+          <m>3z^{3} - 40 + 9z^{3} = -100</m>
         </p>
       </statement>
       <solution>

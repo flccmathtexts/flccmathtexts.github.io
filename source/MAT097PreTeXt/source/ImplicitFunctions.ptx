@@ -94,7 +94,7 @@
     <example xml:id="ImplicitFunctionsExample2">
       <statement>
         <p>
-          The formula for the relationship between a sphere's radius and its volume is usually written <m>V=\frac{4}{3} \pi r^3</m>,
+          The formula for the relationship between a sphere's radius and its volume is usually written <m>V=\frac{4}{3} \pi r^{3}</m>,
           where <m>V</m> is the volume and <m>r</m> is the radius.
           Is volume a function of radius?
           Is radius a function of volume?
@@ -121,7 +121,7 @@
         <p>
           The formula for the relationship between the time in seconds and height in meters of a ball thrown upward
           (with an initial upward velocity of 30 meters per second)
-          can be expressed by the formula <m>h=-4.9t^2+30t</m>,
+          can be expressed by the formula <m>h=-4.9t^{2}+30t</m>,
           where <m>h</m> is the height and <m>t</m> is the time.
           Is height a function of time?
           It time a function of height?
@@ -295,7 +295,7 @@
     <example xml:id="ImplicitFunctionsExample6">
       <statement>
         <p>
-          Suppose <m>3h=k^2-11</m>.
+          Suppose <m>3h=k^{2}-11</m>.
           Is <m>h</m> a function of <m>k</m>?
           Is <m>k</m> a function of <m>h</m>?
         </p>
@@ -305,8 +305,8 @@
       We try to solve for <m>h</m> first.
       That's actually pretty easy:
       <md>
-        <mrow>3h\amp =k^2-11</mrow>
-        <mrow>h\amp =\frac{k^2-11}{3}</mrow>
+        <mrow>3h\amp =k^{2}-11</mrow>
+        <mrow>h\amp =\frac{k^{2}-11}{3}</mrow>
       </md>
     </p>
     <p>
@@ -316,9 +316,9 @@
       On the other hand,
       we run into trouble when we try to solve for <m>k</m>:
       <md>
-        <mrow>3h\amp =k^2-11</mrow>
-        <mrow>3h+11\amp =k^2</mrow>
-        <mrow>k^2\amp =3h+11</mrow>
+        <mrow>3h\amp =k^{2}-11</mrow>
+        <mrow>3h+11\amp =k^{2}</mrow>
+        <mrow>k^{2}\amp =3h+11</mrow>
       </md>
     </p>
     <p>
@@ -361,7 +361,7 @@
       There might be times, though,
       where you try to solve for a variable and are simply unable to do it.
       Returning to <xref ref="ImplicitFunctionsExample3">Example</xref>,
-      where we had the formula <m>h=-4.9t^2+30t</m>,
+      where we had the formula <m>h=-4.9t^{2}+30t</m>,
       we determined based on the meaning of the formula that <m>t</m> is not a function of <m>h</m>.
       If you try to solve this equation for <m>t</m> in terms of <m>h</m> you probably won't meet with much success.
       Could you also conclude that it is not a function from an inability to solve for <m>t</m>?
@@ -379,7 +379,7 @@
     <p>
       But other times we may not be able to solve and the relationship may still be a function.
       For example,
-      the equation <m>p-10=2^t</m> implicitly defines <m>p</m> as a function of <m>t</m> (that's not hard to show),
+      the equation <m>p-10=2^{t}</m> implicitly defines <m>p</m> as a function of <m>t</m> (that's not hard to show),
       but it also defines <m>t</m> as a function of <m>p</m>
       (though solving this equation for <m>t</m> requires tools that lie far beyond the scope of this course.)
       To be able to say that <m>t</m> is a function of <m>p</m> here would require either those more advanced tools,
@@ -451,7 +451,7 @@
       <exercise>
         <statement>
           <p>
-            In the formula <m>p = 7t^2 - 5t - 4</m> which is the more natural choice for the input variable,
+            In the formula <m>p = 7t^{2} - 5t - 4</m> which is the more natural choice for the input variable,
             and which is the more natural choice of output variable?
           </p>
         </statement>
@@ -459,7 +459,7 @@
       <exercise>
         <statement>
           <p>
-            In the formula <m>\frac{1}{2}v^2 - 2v = E</m> what would be the most natural choices for input and output variable?
+            In the formula <m>\frac{1}{2}v^{2} - 2v = E</m> what would be the most natural choices for input and output variable?
           </p>
         </statement>
         <solution>
@@ -471,7 +471,7 @@
       <exercise>
         <statement>
           <p>
-            In the formula <m>k^3 = z</m> what would be the most natural choices for input and output variable?
+            In the formula <m>k^{3} = z</m> what would be the most natural choices for input and output variable?
           </p>
         </statement>
       </exercise>
@@ -514,7 +514,7 @@
         <statement>
           <p>
             The hours of daylight,
-            <m>D</m> in Ithaca, New York <m>t</m> days after the Spring Equinox is approximated by the formula <m>D=12+\frac{18}{365}t-\frac{38}{49000000}t^3+\frac{1}{32000000000}t^5</m>.
+            <m>D</m> in Ithaca, New York <m>t</m> days after the Spring Equinox is approximated by the formula <m>D=12+\frac{18}{365}t-\frac{38}{49000000}t^{3}+\frac{1}{32000000000}t^{5}</m>.
             Is <m>D</m> a function of <m>t</m>?
             Is <m>t</m> a function of <m>D</m>?
             Which is the more natural way to look at this relationship?
@@ -662,7 +662,7 @@
           <ol marker="a">
             <li>
               <p>
-                In the equation <m>x^2 + y = 5</m>,
+                In the equation <m>x^{2} + y = 5</m>,
                 is <m>y</m> a function of <m>x</m>?
                 Justify your answer.
               </p>
@@ -693,7 +693,7 @@
           <ol marker="a">
             <li>
               <p>
-                Suppose <m>3x^2 = 5y^2 - 8</m>.
+                Suppose <m>3x^{2} = 5y^{2} - 8</m>.
                 Is <m>y</m> a function of <m>x</m>?
                 How do you know?
               </p>
@@ -777,12 +777,12 @@
               </li>
               <li>
                 <p>
-                  <m>x^2 - 3y = 5 - 2y</m>
+                  <m>x^{2} - 3y = 5 - 2y</m>
                 </p>
               </li>
               <li>
                 <p>
-                  <m>11x - 3y^2 = 18 - y^2</m>
+                  <m>11x - 3y^{2} = 18 - y^{2}</m>
                 </p>
               </li>
               <li>
@@ -876,7 +876,7 @@
           <p>
             A movie theater operator has hired a business consultant to help determine price strategy.
             The consultant developed a model which projects the theatre's monthly profits as a function of the regular adult ticket price.
-            Suppose her model uses the function <m>p(t) = 800(-t^2 + 20t - 64)</m>.
+            Suppose her model uses the function <m>p(t) = 800(-t^{2} + 20t - 64)</m>.
             <ol marker="a">
               <li>
                 <p>

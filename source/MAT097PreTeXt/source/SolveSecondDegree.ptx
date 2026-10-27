@@ -4,21 +4,21 @@
     <title>The Square Root Property</title>
     <p>
       In order to solve a second-degree equation,
-      or an equation with an <m>x^2</m> term,
+      or an equation with an <m>x^{2}</m> term,
       we have to get rid of the exponent to be able to solve for <m>x</m>.
       In many second-degree equations,
       we can do this simply by taking the square root of both sides of the equation.
       For example, to solve the following:
       <me>
-        x^2=25
+        x^{2}=25
       </me>
     </p>
     <p>
       We could undo the squaring of <m>x</m> by taking the square root of both sides.
       There is, though, a wrinkle in this approach.
       There are actually two solutions to this equation:
-      <m>x</m> could be <m>5</m> since <m>5^2=25</m>,
-      but <m>x</m> could also be <m>-5</m> because <m>(-5)^2=25</m> as well.
+      <m>x</m> could be <m>5</m> since <m>5^{2}=25</m>,
+      but <m>x</m> could also be <m>-5</m> because <m>(-5)^{2}=25</m> as well.
       The square root function, which is usually denoted using the radical symbol
       <q><m>\sqrt{}</m></q>, is interpreted to mean just the positive square root.
       Yet the positive square root is not the only solution to the equation,
@@ -30,7 +30,7 @@
       We usually do this using the symbol
       <q><m>\pm</m></q>
       which is read as
-      <q>plus or minus</q>. So the next step in solving <m>x^2=25</m> would be:
+      <q>plus or minus</q>. So the next step in solving <m>x^{2}=25</m> would be:
       <me>
         x=\pm \sqrt{25}
       </me>
@@ -42,7 +42,7 @@
     <p>
       It is important to understand that this notation is actually telling us that there are two solutions to the equation.
       There is no such number as <m>\pm 5</m>.
-      This notation is just a compact way of expressing that there are to the equation <m>x^2=25</m>,
+      This notation is just a compact way of expressing that there are to the equation <m>x^{2}=25</m>,
       specifically it is compact notation for the expression:
       <me>
         x=5 \text{ or }  x=-5
@@ -55,19 +55,19 @@
     <example xml:id="SolveSecondDegreeExample1">
       <statement>
         <p>
-          Solve <m>4x^2-25=11</m>
+          Solve <m>4x^{2}-25=11</m>
         </p>
       </statement>
     </example>
     <p>
-      To apply the square root property we need to solve for <m>x^2</m> as if it were simply a variable.
+      To apply the square root property we need to solve for <m>x^{2}</m> as if it were simply a variable.
       Thus, we start by adding <m>25</m> to both sides of the equation to obtain:
       <me>
-        4x^2=36
+        4x^{2}=36
       </me>
       and then we divide both sides by <m>4</m> so that:
       <me>
-        x^2=9
+        x^{2}=9
       </me>.
     </p>
     <p>
@@ -82,20 +82,20 @@
     <example xml:id="SolveSecondDegreeExample2">
       <statement>
         <p>
-          Solve <m>2x^2+7=39</m>
+          Solve <m>2x^{2}+7=39</m>
         </p>
       </statement>
     </example>
     <p>
       We start by subtracting <m>7</m> from both sides:
       <me>
-        2x^2=32
+        2x^{2}=32
       </me>
     </p>
     <p>
-      To get <m>x^2</m> by itself, we divide by <m>2</m>:
+      To get <m>x^{2}</m> by itself, we divide by <m>2</m>:
       <me>
-        x^2=16
+        x^{2}=16
       </me>
     </p>
     <p>
@@ -110,25 +110,25 @@
     <example xml:id="SolveSecondDegreeExample3">
       <statement>
         <p>
-          Solve <m>3z^2-9=z^2+6</m>
+          Solve <m>3z^{2}-9=z^{2}+6</m>
         </p>
       </statement>
     </example>
     <p>
-      To do this we first use ordinary algebra to solve for <m>z^2</m>,
-      so subtract <m>z^2</m> from both sides:
+      To do this we first use ordinary algebra to solve for <m>z^{2}</m>,
+      so subtract <m>z^{2}</m> from both sides:
       <me>
-        2z^2-9=6
+        2z^{2}-9=6
       </me>
       and then add <m>9</m> to both sides:
       <me>
-        2z^2=15
+        2z^{2}=15
       </me>
     </p>
     <p>
-      Now to get <m>z^2</m> by itself we divide by 2:
+      Now to get <m>z^{2}</m> by itself we divide by 2:
       <me>
-        z^2=\frac{15}{2}
+        z^{2}=\frac{15}{2}
       </me>
     </p>
     <p>
@@ -227,7 +227,7 @@
     <definition>
       <statement>
         <p>
-          <em><em>Factoring Second Degree Expressions of the Form <m>x^2+bx+c</m></em></em>
+          <em><em>Factoring Second Degree Expressions of the Form <m>x^{2}+bx+c</m></em></em>
           <ol>
             <li>
               <title><m>\cdot</m></title>
@@ -259,9 +259,9 @@
           you can just add the exponents
         </p>
         <p>
-          (make sure to remember that a ‘plain' <m>x</m> is actually <m>x^1</m>).
+          (make sure to remember that a ‘plain' <m>x</m> is actually <m>x^{1}</m>).
           <me>
-            x^a \cdot x^b = x^{a+b}
+            x^{a} \cdot x^{b} = x^{a+b}
           </me>
         </p>
       </statement>
@@ -269,7 +269,7 @@
     <example xml:id="SolveSecondDegreeExample5">
       <statement>
         <p>
-          Factor <m>x^2-5x+6</m>
+          Factor <m>x^{2}-5x+6</m>
         </p>
       </statement>
     </example>
@@ -283,7 +283,7 @@
       (sum <m>5</m>),
       and <m>-2</m> and <m>-3</m>
       (sum <m>-5</m>).
-      The last pair of factors are the factors that we want and <m>x^2-5x+6=(x-2)(x-3)</m>
+      The last pair of factors are the factors that we want and <m>x^{2}-5x+6=(x-2)(x-3)</m>
     </p>
     <p>
       In this case, there were not many possibilities to consider,
@@ -297,7 +297,7 @@
     <example xml:id="SolveSecondDegreeExample6">
       <statement>
         <p>
-          Solve <m>x^2-5x+6=0</m> using factoring
+          Solve <m>x^{2}-5x+6=0</m> using factoring
         </p>
       </statement>
     </example>
@@ -310,7 +310,7 @@
     <example xml:id="SolveSecondDegreeExample7">
       <statement>
         <p>
-          Solve <m>x^2+8x+7=0</m> using factoring
+          Solve <m>x^{2}+8x+7=0</m> using factoring
         </p>
       </statement>
     </example>
@@ -333,7 +333,7 @@
     <example xml:id="SolveSecondDegreeExample8">
       <statement>
         <p>
-          Solve <m>x^2-9x+20=0</m> using factoring
+          Solve <m>x^{2}-9x+20=0</m> using factoring
         </p>
       </statement>
     </example>
@@ -370,7 +370,7 @@
       <exercises><exercise>
         <statement>
           <p>
-            <m>x^2=49</m>
+            <m>x^{2}=49</m>
           </p>
         </statement>
         <solution>
@@ -383,7 +383,7 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2=81</m>
+            <m>x^{2}=81</m>
           </p>
         </statement>
       </exercise>
@@ -391,7 +391,7 @@
       <exercise>
         <statement>
           <p>
-            <m>4x^2=324</m>
+            <m>4x^{2}=324</m>
           </p>
         </statement>
         <solution>
@@ -404,7 +404,7 @@
       <exercise>
         <statement>
           <p>
-            <m>3y^2=48</m>
+            <m>3y^{2}=48</m>
           </p>
         </statement>
       </exercise>
@@ -412,7 +412,7 @@
       <exercise>
         <statement>
           <p>
-            <m>2z^2-38=12</m>
+            <m>2z^{2}-38=12</m>
           </p>
         </statement>
         <solution>
@@ -425,7 +425,7 @@
       <exercise>
         <statement>
           <p>
-            <m>4t^2+75=139</m>
+            <m>4t^{2}+75=139</m>
           </p>
         </statement>
       </exercise>
@@ -433,7 +433,7 @@
       <exercise>
         <statement>
           <p>
-            <m>(2x-1)^2=49</m>
+            <m>(2x-1)^{2}=49</m>
           </p>
         </statement>
         <solution>
@@ -446,7 +446,7 @@
       <exercise>
         <statement>
           <p>
-            <m>(3y-7)^2=144</m>
+            <m>(3y-7)^{2}=144</m>
           </p>
         </statement>
       </exercise>
@@ -454,7 +454,7 @@
       <exercise>
         <statement>
           <p>
-            <m>(2y+5)^2-3=33</m>
+            <m>(2y+5)^{2}-3=33</m>
           </p>
         </statement>
         <solution>
@@ -467,7 +467,7 @@
       <exercise>
         <statement>
           <p>
-            <m>(2z+3)^2+19=100</m>
+            <m>(2z+3)^{2}+19=100</m>
           </p>
         </statement>
       </exercise>
@@ -482,7 +482,7 @@
       <exercises><exercise>
         <statement>
           <p>
-            <m>z^2-4z-12=0</m>
+            <m>z^{2}-4z-12=0</m>
           </p>
         </statement>
         <solution>
@@ -495,7 +495,7 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2-9x-10=0</m>
+            <m>x^{2}-9x-10=0</m>
           </p>
         </statement>
       </exercise>
@@ -503,7 +503,7 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2+7x+12=0</m>
+            <m>x^{2}+7x+12=0</m>
           </p>
         </statement>
         <solution>
@@ -516,7 +516,7 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2+3x+2=0</m>
+            <m>x^{2}+3x+2=0</m>
           </p>
         </statement>
       </exercise>
@@ -524,7 +524,7 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2+6x+9=0</m>
+            <m>x^{2}+6x+9=0</m>
           </p>
         </statement>
         <solution>
@@ -537,7 +537,7 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2-6x-7=0</m>
+            <m>x^{2}-6x-7=0</m>
           </p>
         </statement>
       </exercise>
@@ -558,7 +558,7 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2-8x+12=0</m>
+            <m>x^{2}-8x+12=0</m>
           </p>
         </statement>
       </exercise>
@@ -566,7 +566,7 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2+2x-8=0</m>
+            <m>x^{2}+2x-8=0</m>
           </p>
         </statement>
         <solution>
@@ -587,7 +587,7 @@
       <exercise>
         <statement>
           <p>
-            <m>2a^2-18a+28=0</m>
+            <m>2a^{2}-18a+28=0</m>
           </p>
         </statement>
         <solution>
@@ -600,7 +600,7 @@
       <exercise>
         <statement>
           <p>
-            <m>3g^2-6g-9=0</m>
+            <m>3g^{2}-6g-9=0</m>
           </p>
         </statement>
       </exercise>
@@ -608,7 +608,7 @@
       <exercise>
         <statement>
           <p>
-            <m>2r^2+4r-30=0</m>
+            <m>2r^{2}+4r-30=0</m>
           </p>
         </statement>
         <solution>
@@ -621,7 +621,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y^2-y=42</m>
+            <m>y^{2}-y=42</m>
           </p>
         </statement>
       </exercise>
@@ -629,7 +629,7 @@
       <exercise>
         <statement>
           <p>
-            <m>r^2-9=8r</m>
+            <m>r^{2}-9=8r</m>
           </p>
         </statement>
         <solution>
@@ -642,7 +642,7 @@
       <exercise>
         <statement>
           <p>
-            <m>3a^2+3a-60=0</m>
+            <m>3a^{2}+3a-60=0</m>
           </p>
         </statement>
       </exercise>

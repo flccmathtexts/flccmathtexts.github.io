@@ -6,7 +6,7 @@
       If a rule gives one and only one output for each input,
       it's a function.
       A useful application is not required.
-      <m>f(x)=x^2</m> is a perfectly good function because whenever you square a number you get one and only one result.
+      <m>f(x)=x^{2}</m> is a perfectly good function because whenever you square a number you get one and only one result.
       This is true regardless of whether or not we have any useful reason for squaring numbers.
     </p>
     <p>
@@ -203,7 +203,7 @@
     <example xml:id="FunctionsasModelsExample3">
       <statement>
         <p>
-          Suppose that the height of a toy rocket in feet <m>t</m> seconds after it is launched is given by the function <m>h(t)=-16t^2+96t</m>.
+          Suppose that the height of a toy rocket in feet <m>t</m> seconds after it is launched is given by the function <m>h(t)=-16t^{2}+96t</m>.
           What is the rocket's height <m>3</m> seconds after launch?
         </p>
       </statement>
@@ -212,7 +212,7 @@
       Since time is the input,
       we know we need to input <m>t=3</m> into our function model:
       <me>
-        h(3)=-16(3)^2+96(3)=144
+        h(3)=-16(3)^{2}+96(3)=144
       </me>
     </p>
     <p>
@@ -305,7 +305,7 @@
     <example xml:id="FunctionsasModelsExample5">
       <statement>
         <p>
-          Suppose that the height of a toy rocket in feet <m>t</m> seconds after it is launched is given by the function <m>h(t)=-16t^2+96t</m>.
+          Suppose that the height of a toy rocket in feet <m>t</m> seconds after it is launched is given by the function <m>h(t)=-16t^{2}+96t</m>.
           When is the rocket <m>100</m> feet above the ground (rounded to two decimal places if necessary)?
         </p>
       </statement>
@@ -314,7 +314,7 @@
       We know the height (output) we want,
       so we plug in <m>h(t)=100</m> to get the equation:
       <me>
-        100=-16t^2+96t
+        100=-16t^{2}+96t
       </me>
     </p>
     <p>
@@ -357,7 +357,7 @@
       Giving the resulting graph:
     </p>
     <figure>
-      <caption>Graph for <m>Y_1=-16x^2+96x</m> and <m>Y_2=100</m></caption>
+      <caption>Graph for <m>Y_1=-16x^{2}+96x</m> and <m>Y_2=100</m></caption>
       <image width="80%" source="FunctionsasModelsImages/Figure02.png" />
     </figure>
     <p>
@@ -388,7 +388,7 @@
       We get a new view of the graph:
     </p>
     <figure>
-      <caption>Graph for <m>Y_1=-16x^2+96x</m> and <m>Y_2=100</m></caption>
+      <caption>Graph for <m>Y_1=-16x^{2}+96x</m> and <m>Y_2=100</m></caption>
       <image width="80%" source="FunctionsasModelsImages/Figure04.png" />
     </figure>
     <p>
@@ -708,7 +708,7 @@
       <statement>
         <p>
           A toy rocket is launched from the ground.
-          Suppose that the height of a toy rocket in feet <m>t</m> seconds after it is launched is given by the function <m>h(t)=-16t^2+96t</m>.
+          Suppose that the height of a toy rocket in feet <m>t</m> seconds after it is launched is given by the function <m>h(t)=-16t^{2}+96t</m>.
           What would be reasonable choices for the relevant domain and relevant range of this function?
         </p>
       </statement>
@@ -723,7 +723,7 @@
       To find this we would need to plug in <m>h(t)=0</m> into the function,
       and then solve
       <me>
-        -16t^2+96t=0
+        -16t^{2}+96t=0
       </me>
     </p>
     <p>
@@ -1156,7 +1156,7 @@
             (in square feet)
             is a function of the length of the pool's side
             (in feet),
-            and is given by the formula <m>A(x)=x^2+12x+36</m>.
+            and is given by the formula <m>A(x)=x^{2}+12x+36</m>.
             Determine the pool's side if the total area taken up will be <m>400</m> square feet.
           </p>
         </statement>
@@ -1176,7 +1176,7 @@
             (in square feet)
             is a function of the radius of the pool
             (in feet),
-            and is given by the formula <m>A(x)=\pi (x+4)^2</m>.
+            and is given by the formula <m>A(x)=\pi (x+4)^{2}</m>.
             Determine the pool's radius if the total area taken up will be <m>380</m> square feet.
           </p>
         </statement>
@@ -1492,7 +1492,7 @@
             watered by a sprinkler is a function of its range
             (the maximum distance the water shoots from it)
             in yards.
-            This function is given by the formula <m>A(r) = \pi r^2</m>.
+            This function is given by the formula <m>A(r) = \pi r^{2}</m>.
             What would be a reasonable relevant domain and relevant range for this function?
           </p>
         </statement>
@@ -1502,12 +1502,12 @@
           <ol>
             <li>
               <p>
-                What is the domain of the function <m>P(t) = 16,000 + 500t - 20t^2</m>?
+                What is the domain of the function <m>P(t) = 16,000 + 500t - 20t^{2}</m>?
               </p>
             </li>
             <li>
               <p>
-                <m>P(t) = 16,000 + 500t - 20t^2</m> is used to model the daily production
+                <m>P(t) = 16,000 + 500t - 20t^{2}</m> is used to model the daily production
                 (in therms)
                 of natural gas from a well as a function of the number of days since the well was drilled.
                 What would be a reasonable relevant domain and relevant range for this function?
@@ -1535,7 +1535,7 @@
           <p>
             A movie theater operator has hired a business consultant to help determine price strategy.
             The consultant developed a model which projects the theatre's monthly profits as a function of the regular adult ticket price.
-            Suppose her model uses the function <m>p(x) = 800(-x^2 + 20x - 64)</m>.
+            Suppose her model uses the function <m>p(x) = 800(-x^{2} + 20x - 64)</m>.
             <ol>
               <li>
                 <p>

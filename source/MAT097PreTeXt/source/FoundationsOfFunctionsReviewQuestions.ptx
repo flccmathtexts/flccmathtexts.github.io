@@ -425,7 +425,7 @@
       <exercise>
         <statement>
           <p>
-          If <m>b(p) = p^2 - p + 1</m>, find <m>b(-4)</m>.
+          If <m>b(p) = p^{2} - p + 1</m>, find <m>b(-4)</m>.
         </p>
         </statement>
         <solution>
@@ -449,7 +449,7 @@
       <exercise>
         <statement>
           <p>
-          If <m>d(t) = -2t^2 + t - 4</m>, find <m>d(-2)</m>.
+          If <m>d(t) = -2t^{2} + t - 4</m>, find <m>d(-2)</m>.
         </p>
         </statement>
         <solution>
@@ -473,7 +473,7 @@
       <exercise>
         <statement>
           <p>
-          If <m>c(d) = d^2 - 4d</m>, find <m>c(-1)</m>.
+          If <m>c(d) = d^{2} - 4d</m>, find <m>c(-1)</m>.
         </p>
         </statement>
         <solution>
@@ -497,7 +497,7 @@
       <exercise>
         <statement>
           <p>
-          The height (in meters) of a diver jumping off a 10-meter platform <m>t</m> seconds after jumping is given by <m>h(t) = -4.9t^2 + 4t + 10</m>.
+          The height (in meters) of a diver jumping off a 10-meter platform <m>t</m> seconds after jumping is given by <m>h(t) = -4.9t^{2} + 4t + 10</m>.
           Evaluate <m>h(1.2)</m> and write a sentence interpreting the result.
         </p>
         </statement>
@@ -607,7 +607,7 @@
       <exercise>
         <statement>
           <p>
-            <m>g(a) = a^2 - 3</m>
+            <m>g(a) = a^{2} - 3</m>
           </p>
         </statement>
         <solution>
@@ -690,7 +690,7 @@
       <exercise>
         <statement>
           <p>
-          What is the domain of <m>g(t) = -2t^2 - t + 1</m>?
+          What is the domain of <m>g(t) = -2t^{2} - t + 1</m>?
         </p>
         </statement>
         <solution>
@@ -849,7 +849,7 @@
         <statement>
           <p>
           Use your calculator to create a table of values for the function
-          <m>f(x) = x^2 - 2x + 1</m> for <m>x = -8, -6, -4, -2, 0, 2, 4, 6</m>.
+          <m>f(x) = x^{2} - 2x + 1</m> for <m>x = -8, -6, -4, -2, 0, 2, 4, 6</m>.
           Sketch a coordinate plane and plot the points on your graph.
         </p>
         </statement>
@@ -941,7 +941,7 @@
         <statement>
           <p>
           Use your calculator to create a table of values of the function
-          <m>g(x) = x^2 - 3x - 4</m> for <m>x = -4, -2, 0, 2, 4</m>,
+          <m>g(x) = x^{2} - 3x - 4</m> for <m>x = -4, -2, 0, 2, 4</m>,
           or create the table yourself by hand.
           Then sketch a coordinate plane and plot these points on it.
           Use the points you plotted to sketch what the graph of <m>g(x)</m> appears to be.
@@ -1089,7 +1089,7 @@
         <statement>
           <p>
           Use your calculator to obtain a graph for the function
-          <m>r(n) = -4n^2 - 10n - 3</m> in the window <m>-3 \leq n \leq 3</m>,
+          <m>r(n) = -4n^{2} - 10n - 3</m> in the window <m>-3 \leq n \leq 3</m>,
           <m>-100 \leq r(n) \leq 10</m>.
           Use your graph to find <m>r(1.33)</m> and <m>r(-2.9)</m>.
         </p>
@@ -1192,7 +1192,7 @@
       <exercise>
         <statement>
           <p>
-            <m>50 = b^2 - b + 4</m>
+            <m>50 = b^{2} - b + 4</m>
           </p>
         </statement>
         <solution>
@@ -1204,7 +1204,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\frac{c^2}{4} = \frac{2c - 7}{2}</m>
+            <m>\frac{c^{2}}{4} = \frac{2c - 7}{2}</m>
           </p>
         </statement>
         <solution>
@@ -1329,7 +1329,7 @@
         <statement>
           <p>
           A batter hits a baseball and the ball's height, in feet,
-          after <m>t</m> seconds is given by the function <m>h(t) = -16t^2 + 140t + 3</m>.
+          after <m>t</m> seconds is given by the function <m>h(t) = -16t^{2} + 140t + 3</m>.
           What is the ball's height <m>6</m> seconds after the batter hits it?
         </p>
         </statement>
@@ -1673,7 +1673,7 @@
         <statement>
           <p>
           Find the AROC of the function
-          <m>f(x) = 9 - x^2</m> between <m>x = -2</m> and <m>x = 3</m>.
+          <m>f(x) = 9 - x^{2}</m> between <m>x = -2</m> and <m>x = 3</m>.
         </p>
         </statement>
         <solution>
@@ -1712,7 +1712,7 @@
         <statement>
           <p>
           Find the average rate of change in the function
-          <m>f(x) = x^2 - 2x + 1</m> between <m>x = 3</m> and <m>x = 7</m>.
+          <m>f(x) = x^{2} - 2x + 1</m> between <m>x = 3</m> and <m>x = 7</m>.
         </p>
         </statement>
         <solution>

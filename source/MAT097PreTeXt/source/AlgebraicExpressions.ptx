@@ -110,13 +110,13 @@
       </row>
       <row>
         <cell>
-          <m>14x^2y^3</m>
+          <m>14x^{2}y^{3}</m>
         </cell>
         <cell>
           <m>14</m>
         </cell>
         <cell>
-          <m>x^2y^3</m>
+          <m>x^{2}y^{3}</m>
         </cell>
       </row>
       <row>
@@ -178,9 +178,9 @@
       <m>3.85x</m> is a term and so is <m>1225</m>.
     </p>
     <p>
-      The expression <m>4x^2y^3-5x+y^4-3</m> consists of four terms.
+      The expression <m>4x^{2}y^{3}-5x+y^{4}-3</m> consists of four terms.
       While the definition says terms must be separated by addition,
-      subtraction is the same as adding a negative so we can rewrite this as <m>4x^2y^3+(-5x)+y^4+(-3)</m>.
+      subtraction is the same as adding a negative so we can rewrite this as <m>4x^{2}y^{3}+(-5x)+y^{4}+(-3)</m>.
       Usually we don't actually bother doing this,
       but we do remember that it could be done.
       This has an important consequence, though,
@@ -189,7 +189,7 @@
     <algorithm xml:id="AlgebraicExpressionsExample1">
       <statement>
         <p>
-          How many terms are there in the expression <m>2x^3-3x^2+5</m>?
+          How many terms are there in the expression <m>2x^{3}-3x^{2}+5</m>?
           Identify each term's coefficient and literal part
         </p>
       </statement>
@@ -206,8 +206,8 @@
       symbols.
     </p>
     <p>
-      For the first term, <m>2x^3</m>,
-      the coefficient is <m>2</m> and the literal part is <m>x^3</m>.
+      For the first term, <m>2x^{3}</m>,
+      the coefficient is <m>2</m> and the literal part is <m>x^{3}</m>.
     </p>
     <p>
       For the second term,
@@ -216,7 +216,7 @@
       but since the definition of a term requires us to at least think of it this way,
       we consider the coefficient to be <m>-3</m>.
       (In other words, we treat subtraction as a negative coefficient.)
-      The literal part is <m>x^2</m>.
+      The literal part is <m>x^{2}</m>.
     </p>
     <p>
       For the third term, the coefficient is <m>5</m>,
@@ -250,13 +250,13 @@
       A term can often be written in more than one way.
       For example, the term
       <me>
-        5x^3
+        5x^{3}
       </me>
       could also be written as
       <me>
         5xxx
       </me>
-      since <m>x^3</m> is just a shorter way of writing <m>xxx</m>.
+      since <m>x^{3}</m> is just a shorter way of writing <m>xxx</m>.
       But writing <m>5xxx</m> probably seems strange to you – and it should!
       We almost always would rather write our algebraic expressions in the simplest way we can,
       and writing out the <m>x</m>'s repeatedly is far less simple than just using an exponent.
@@ -264,7 +264,7 @@
     <p>
       We could also write this same term as
       <me>
-        x^3(5)
+        x^{3}(5)
       </me>
       since multiplication is commutative
       (that is, the order doesn't matter when you multiply,)
@@ -292,14 +292,14 @@
       </ul>
     </p>
     <p>
-      So, while <m>x^3(5)</m>,
-      <m>5xxx</m>, and <m>5x^3</m> are all perfectly good terms,
-      only <m>5x^3</m> would be considered to be in simplified form.
+      So, while <m>x^{3}(5)</m>,
+      <m>5xxx</m>, and <m>5x^{3}</m> are all perfectly good terms,
+      only <m>5x^{3}</m> would be considered to be in simplified form.
     </p>
     <p>
       Now, is the following expression a term?
       <me>
-        (4xy)(3x^2y)
+        (4xy)(3x^{2}y)
       </me>
     </p>
     <p>
@@ -314,14 +314,14 @@
       Since everything is multiplied,
       and multiplication is commutative (order doesn't matter)
       <me>
-        (4xy)(3x^2y)=(4)(3)(x)(xx)(y)(y)=12x^3y^2
+        (4xy)(3x^{2}y)=(4)(3)(x)(xx)(y)(y)=12x^{3}y^{2}
       </me>
-      and so we see the coefficient is <m>12</m> and the literal part is <m>x^3y^2</m>.
+      and so we see the coefficient is <m>12</m> and the literal part is <m>x^{3}y^{2}</m>.
     </p>
     <algorithm xml:id="AlgebraicExpressionsExample3">
       <statement>
         <p>
-          How many terms are there in the expression <m>(3x^2)(2x)(x^2)</m>?
+          How many terms are there in the expression <m>(3x^{2})(2x)(x^{2})</m>?
           Identify each term's coefficient and literal part.
         </p>
       </statement>
@@ -331,16 +331,16 @@
       To see the coefficient and literal part clearly,
       we'll simplify the term by multiplying.
       <me>
-        (3x^2)(2x)(x^2)=(3)(2)(1)(xx)(x)(xx)=6x^5
+        (3x^{2})(2x)(x^{2})=(3)(2)(1)(xx)(x)(xx)=6x^{5}
       </me>
     </p>
     <p>
-      So the coefficient is <m>6</m> and the literal part is <m>x^5</m>. }
+      So the coefficient is <m>6</m> and the literal part is <m>x^{5}</m>. }
     </p>
     <algorithm xml:id="AlgebraicExpressionsExample4">
       <statement>
         <p>
-          How many terms are there in the expression <m>(3x^2)(2x)-x^2</m>?
+          How many terms are there in the expression <m>(3x^{2})(2x)-x^{2}</m>?
           Identify each term's coefficient and literal part.
         </p>
       </statement>
@@ -349,12 +349,12 @@
       There are two terms here, separated by the subtraction.
       Simplifying by multiplying we get:
       <me>
-        (3x^2)(2x)-x^2=(3)(2)(xx)(x)+-1x^2=6x^2+-1x^2
+        (3x^{2})(2x)-x^{2}=(3)(2)(xx)(x)+-1x^{2}=6x^{2}+-1x^{2}
       </me>
     </p>
     <p>
-      The first term's coefficient is <m>6</m> and its literal part is <m>x^3</m>.
-      The second term's coefficient is <m>-1</m> and its <m>x^2</m>.
+      The first term's coefficient is <m>6</m> and its literal part is <m>x^{3}</m>.
+      The second term's coefficient is <m>-1</m> and its <m>x^{2}</m>.
       Remember that the coefficient is negative because if we rewrite the expression with the terms separated by addition.}
     </p>
     <p>
@@ -386,7 +386,7 @@
       </me>
     </p>
     <p>
-      Notice that if we consider <m>x</m> to be <m>x^1</m>,
+      Notice that if we consider <m>x</m> to be <m>x^{1}</m>,
       what we've done by counting the exponents is the same as just adding up the exponents.
       This can be stated as the following rule:
     </p>
@@ -404,14 +404,14 @@
         <p>
           When multiplying groupings of the same variable raised to powers,
           you can just add the powers.
-          (Make sure to remember though that a plain <m>x</m> is actually treated as <m>x^1</m>.)
+          (Make sure to remember though that a plain <m>x</m> is actually treated as <m>x^{1}</m>.)
         </p>
       </statement>
     </definition>
     <algorithm xml:id="AlgebraicExpressionsExample5">
       <statement>
         <p>
-          Rewrite the term <m>(4xy^4)(2x^7)(3x^{12}y^6)</m> in simplified form.
+          Rewrite the term <m>(4xy^{4})(2x^{7})(3x^{12}y^{6})</m> in simplified form.
         </p>
       </statement>
     </algorithm>
@@ -450,8 +450,8 @@
       How much carpet do you need to replace?
     </p>
     <p>
-      You could say: <m>300 ft^2 + 210 ft^2 +90 ft^2</m>.
-      But wouldn't it be far simpler to just total up the areas and say you needed to replace <m>600 ft^2</m>?
+      You could say: <m>300 ft^{2} + 210 ft^{2} +90 ft^{2}</m>.
+      But wouldn't it be far simpler to just total up the areas and say you needed to replace <m>600 ft^{2}</m>?
     </p>
     <p>
       Because the three measurements are all measuring the same thing
@@ -460,8 +460,8 @@
     </p>
     <p>
       We use the same idea with algebraic expressions.
-      While <m>300x^2+210x^2+90x^2</m> is a perfectly good algebraic expression,
-      it would be simpler to just put all those <m>x^2</m> terms together and rewrite the expression as the far simpler <m>600x^2</m>.
+      While <m>300x^{2}+210x^{2}+90x^{2}</m> is a perfectly good algebraic expression,
+      it would be simpler to just put all those <m>x^{2}</m> terms together and rewrite the expression as the far simpler <m>600x^{2}</m>.
       We handle those
       <q>squared <m>x</m>‘s</q>
       just the same as we handle square feet.
@@ -479,14 +479,14 @@
     <algorithm xml:id="AlgebraicExpressionsExample6">
       <statement>
         <p>
-          Simplify the expression <m>5x^3-9x^3+7x^3</m> by combining like terms.
+          Simplify the expression <m>5x^{3}-9x^{3}+7x^{3}</m> by combining like terms.
         </p>
       </statement>
     </algorithm>
     <p>
-      Since all three terms have the same literal part (<m>x^3</m>) they are all like,
+      Since all three terms have the same literal part (<m>x^{3}</m>) they are all like,
       and so we combine them by adding their coefficients.
-      Since <m>5+(-9)+7=3</m>, the expression simplifies to <m>3x^3</m>.
+      Since <m>5+(-9)+7=3</m>, the expression simplifies to <m>3x^{3}</m>.
     </p>
     <p>
       Now, let's change things up a little bit.
@@ -498,13 +498,13 @@
       and <m>15</m> feet of runner.
     </p>
     <p>
-      So, we need <m>300 ft^2+210 ft^2+15ft</m>.
+      So, we need <m>300 ft^{2}+210 ft^{2}+15ft</m>.
       Now, it still makes sense to combine the square footage of the two bedrooms.
       But would it make sense to add <m>15</m> feet to this?
       Of course not!
       Area and length measure to different things,
       and so we can't reasonably add them together.
-      So, we could say we need <m>510 ft^2 + 15 ft</m>,
+      So, we could say we need <m>510 ft^{2} + 15 ft</m>,
       but we would not combine things any further.
     </p>
     <p>
@@ -516,42 +516,42 @@
     <algorithm xml:id="AlgebraicExpressionsExample7">
       <statement>
         <p>
-          Simplify the expression <m>5y^3-2y+3y-11y^3</m>.
+          Simplify the expression <m>5y^{3}-2y+3y-11y^{3}</m>.
         </p>
       </statement>
     </algorithm>
     <p>
       Since addition is commutative,
-      we can rearrange the <m>y^3</m> terms so they can be added together.
+      we can rearrange the <m>y^{3}</m> terms so they can be added together.
     </p>
     <p>
-      Combining the <m>y^3</m> terms gives <m>5y^3+-11y^3=-6y^3</m>.
+      Combining the <m>y^{3}</m> terms gives <m>5y^{3}+-11y^{3}=-6y^{3}</m>.
     </p>
     <p>
       Combining the plain <m>y</m> terms gives <m>-2y+3y=1y</m>
     </p>
     <p>
-      So, overall we get <m>-6y^3+y</m>.
+      So, overall we get <m>-6y^{3}+y</m>.
     </p>
     <p>
-      These cannot be combined any further because the two terms in the expression are unlike. } In this example we wrote the <m>y^3</m> term first.
+      These cannot be combined any further because the two terms in the expression are unlike. } In this example we wrote the <m>y^{3}</m> term first.
       There is no reason why we cannot write it the other way around;
-      that is <m>y-6y^3</m> would also be a correct answer.
+      that is <m>y-6y^{3}</m> would also be a correct answer.
       However, we usually write expressions from highest to lowest powered terms.
       We will follow that convention in this book.
     </p>
     <algorithm xml:id="AlgebraicExpressionsExample8">
       <statement>
         <p>
-          Simplify the expression <m>3xy-14x^2y-9xy+4+8x^2y-1</m>.
+          Simplify the expression <m>3xy-14x^{2}y-9xy+4+8x^{2}y-1</m>.
         </p>
       </statement>
     </algorithm>
     <p>
       Here we proceed by adding like terms:
       <md>
-        <mrow>3xy-14x^2y-9xy+4+8x^2y-1 \amp  = -14x^2y+8x^2y+3xy-9xy+4+-1</mrow>
-        <mrow>\amp =-6x^2y-6xy+3</mrow>
+        <mrow>3xy-14x^{2}y-9xy+4+8x^{2}y-1 \amp  = -14x^{2}y+8x^{2}y+3xy-9xy+4+-1</mrow>
+        <mrow>\amp =-6x^{2}y-6xy+3</mrow>
       </md>
     </p>
   </subsection>
@@ -568,7 +568,7 @@
       <exercise>
         <statement>
           <p>
-            <m>3x^2</m>
+            <m>3x^{2}</m>
           </p>
         </statement>
         <solution>
@@ -579,14 +579,14 @@
             coefficient: <m>3</m>
           </p>
           <p>
-            literal part: <m>x^2</m>
+            literal part: <m>x^{2}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>4y^3</m>
+            <m>4y^{3}</m>
           </p>
         </statement>
       </exercise>
@@ -618,7 +618,7 @@
       <exercise>
         <statement>
           <p>
-            <m>x^7</m>
+            <m>x^{7}</m>
           </p>
         </statement>
         <solution>
@@ -629,7 +629,7 @@
             coefficient: <m>1</m>
           </p>
           <p>
-            literal part: <m>x^7</m>
+            literal part: <m>x^{7}</m>
           </p>
         </solution>
       </exercise>
@@ -668,7 +668,7 @@
       <exercise>
         <statement>
           <p>
-            <m>3x^2</m>
+            <m>3x^{2}</m>
           </p>
         </statement>
         <solution>
@@ -679,14 +679,14 @@
             coefficient: <m>3</m>
           </p>
           <p>
-            literal part: <m>x^2</m>
+            literal part: <m>x^{2}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>11x^5y</m>
+            <m>11x^{5}y</m>
           </p>
         </statement>
       </exercise>
@@ -743,7 +743,7 @@
       <exercise>
         <statement>
           <p>
-            <m>5x^2-3yb+2y^2</m>
+            <m>5x^{2}-3yb+2y^{2}</m>
           </p>
         </statement>
         <solution>
@@ -754,7 +754,7 @@
             coefficient: <m>5</m>, <m>-3</m>, <m>2</m>
           </p>
           <p>
-            literal parts: <m>x^2</m>, <m>yb</m>, <m>y^2</m>
+            literal parts: <m>x^{2}</m>, <m>yb</m>, <m>y^{2}</m>
           </p>
         </solution>
       </exercise>
@@ -768,7 +768,7 @@
       <exercise>
         <statement>
           <p>
-            <m>2mn^2+3yz-z</m>
+            <m>2mn^{2}+3yz-z</m>
           </p>
         </statement>
         <solution>
@@ -779,21 +779,21 @@
             coefficient: <m>2</m>, <m>3</m>, <m>-1</m>
           </p>
           <p>
-            literal parts: <m>mn^2</m>, <m>yz</m>, <m>z</m>
+            literal parts: <m>mn^{2}</m>, <m>yz</m>, <m>z</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>x^2-2uv+y^2</m>
+            <m>x^{2}-2uv+y^{2}</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>4x^2-2ab+b^2</m>
+            <m>4x^{2}-2ab+b^{2}</m>
           </p>
         </statement>
         <solution>
@@ -804,21 +804,21 @@
             coefficient: <m>4</m>, <m>-2</m>, <m>1</m>
           </p>
           <p>
-            literal parts: <m>x^2</m>, <m>ab</m>, <m>b^2</m>
+            literal parts: <m>x^{2}</m>, <m>ab</m>, <m>b^{2}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>3x^3+2y^2-5z+1</m>
+            <m>3x^{3}+2y^{2}-5z+1</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>2x^4-3c^3+4x^2-x</m>
+            <m>2x^{4}-3c^{3}+4x^{2}-x</m>
           </p>
         </statement>
         <solution>
@@ -829,21 +829,21 @@
             coefficient: <m>2</m>, <m>-3</m>, <m>4</m>, <m>-1</m>
           </p>
           <p>
-            literal parts: <m>x^4</m>, <m>c^3</m>, <m>x^2</m>, <m>x</m>
+            literal parts: <m>x^{4}</m>, <m>c^{3}</m>, <m>x^{2}</m>, <m>x</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>2x^3-3x^2+2x-1</m>
+            <m>2x^{3}-3x^{2}+2x-1</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>ax^2+by+c</m>
+            <m>ax^{2}+by+c</m>
           </p>
         </statement>
         <solution>
@@ -854,21 +854,21 @@
             coefficient: <m>1</m>, <m>1</m>, <m>1</m>
           </p>
           <p>
-            literal parts: <m>ax^2</m>, <m>by</m>, <m>c</m>
+            literal parts: <m>ax^{2}</m>, <m>by</m>, <m>c</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>2x^3y+3xy^2-4y^3</m>
+            <m>2x^{3}y+3xy^{2}-4y^{3}</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>4x^2+3xy-2y^2+z</m>
+            <m>4x^{2}+3xy-2y^{2}+z</m>
           </p>
         </statement>
         <solution>
@@ -879,21 +879,21 @@
             coefficient: <m>4</m>, <m>3</m>, <m>-2</m>, <m>1</m>
           </p>
           <p>
-            literal parts: <m>x^2</m>, <m>xy</m>, <m>y^2</m>, <m>z</m>
+            literal parts: <m>x^{2}</m>, <m>xy</m>, <m>y^{2}</m>, <m>z</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>x^4+2x^3-x^2+5x-7</m>
+            <m>x^{4}+2x^{3}-x^{2}+5x-7</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>3s^3+2r^2-4q-1</m>
+            <m>3s^{3}+2r^{2}-4q-1</m>
           </p>
         </statement>
         <solution>
@@ -904,7 +904,7 @@
             coefficient: <m>3</m>, <m>2</m>, <m>-4</m>, <m>-1</m>
           </p>
           <p>
-            literal parts: <m>s^3</m>, <m>r^2</m>, <m>q</m>, none
+            literal parts: <m>s^{3}</m>, <m>r^{2}</m>, <m>q</m>, none
           </p>
         </solution>
       </exercise>
@@ -936,14 +936,14 @@
       <exercise>
         <statement>
           <p>
-            <m>x^3+2x^2+3x+4</m>
+            <m>x^{3}+2x^{2}+3x+4</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>4z^3-3z^2</m>
+            <m>4z^{3}-3z^{2}</m>
           </p>
         </statement>
         <solution>
@@ -954,14 +954,14 @@
             coefficient: <m>4</m>, <m>-3</m>
           </p>
           <p>
-            literal parts: <m>z^3</m>, <m>z^2</m>
+            literal parts: <m>z^{3}</m>, <m>z^{2}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>17y^4-3y^2+2y-1</m>
+            <m>17y^{4}-3y^{2}+2y-1</m>
           </p>
         </statement>
       </exercise>
@@ -976,76 +976,76 @@
       <exercise>
         <statement>
           <p>
-            <m>2x(3x^2)</m>
+            <m>2x(3x^{2})</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>6x^3</m>
+            <m>6x^{3}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>4(2y^2)(7y^2)</m>
+            <m>4(2y^{2})(7y^{2})</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(3x^2)(5x)(2x^4)</m>
+            <m>(3x^{2})(5x)(2x^{4})</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>30x^7</m>
+            <m>30x^{7}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(7y)(2y^5)(3y^2)</m>
+            <m>(7y)(2y^{5})(3y^{2})</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(3z^3)(4z^4)</m>
+            <m>(3z^{3})(4z^{4})</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>12z^7</m>
+            <m>12z^{7}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(2p^2)(3p^3)(4p^4)</m>
+            <m>(2p^{2})(3p^{3})(4p^{4})</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(x^2y^3)(x^5)(3x^4)</m>
+            <m>(x^{2}y^{3})(x^{5})(3x^{4})</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>3x^11y^3</m>
+            <m>3x^{11}y^{3}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(2p^2)(3p^3q^5)(5q)</m>
+            <m>(2p^{2})(3p^{3}q^{5})(5q)</m>
           </p>
         </statement>
       </exercise>
@@ -1057,7 +1057,7 @@
         </statement>
         <solution>
           <p>
-            <m>6xy^2z</m>
+            <m>6xy^{2}z</m>
           </p>
         </solution>
       </exercise>
@@ -1071,19 +1071,19 @@
       <exercise>
         <statement>
           <p>
-            <m>(2pq^2)(3qr^2)</m>
+            <m>(2pq^{2})(3qr^{2})</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>6pq^3r^2</m>
+            <m>6pq^{3}r^{2}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(x^2y)(xy^2)</m>
+            <m>(x^{2}y)(xy^{2})</m>
           </p>
         </statement>
       </exercise>
@@ -1102,7 +1102,7 @@
       <exercise>
         <statement>
           <p>
-            <m>(7x^2y)(2xy^3)</m>
+            <m>(7x^{2}y)(2xy^{3})</m>
           </p>
         </statement>
       </exercise>
@@ -1121,114 +1121,114 @@
       <exercise>
         <statement>
           <p>
-            <m>(5xy^2)(2x^2z)</m>
+            <m>(5xy^{2})(2x^{2}z)</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(4ac^2)(3bd)(2ef)</m>
+            <m>(4ac^{2})(3bd)(2ef)</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>24abc^2def</m>
+            <m>24abc^{2}def</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(2x^3y^2)(3xyz)</m>
+            <m>(2x^{3}y^{2})(3xyz)</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(xy^2)(x^2y^3)</m>
+            <m>(xy^{2})(x^{2}y^{3})</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>x^3y^5</m>
+            <m>x^{3}y^{5}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(4a^2b)(3ab^2)(2abc)</m>
+            <m>(4a^{2}b)(3ab^{2})(2abc)</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(3x^2y^2)(2xy)(5xyz)</m>
+            <m>(3x^{2}y^{2})(2xy)(5xyz)</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>30x^4y^4z</m>
+            <m>30x^{4}y^{4}z</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(2pq^3)(5qr^2)(3rs)</m>
+            <m>(2pq^{3})(5qr^{2})(3rs)</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(x^3)(2x^2y)(3xy^2)(4y^3)</m>
+            <m>(x^{3})(2x^{2}y)(3xy^{2})(4y^{3})</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>24x^6y^6</m>
+            <m>24x^{6}y^{6}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(2a^2b^3)(3ab^2c)(4bc^2)</m>
+            <m>(2a^{2}b^{3})(3ab^{2}c)(4bc^{2})</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(3x^2y^3)(5xy^2z)(2xyz)</m>
+            <m>(3x^{2}y^{3})(5xy^{2}z)(2xyz)</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>30x^4y^6z^2</m>
+            <m>30x^{4}y^{6}z^{2}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(4a^2bc)(3ab^2c^2)(2abc^2)</m>
+            <m>(4a^{2}bc)(3ab^{2}c^{2})(2abc^{2})</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>(5xy)(2x^2y^2)(3x^3y^3)(4x^4y^4)</m>
+            <m>(5xy)(2x^{2}y^{2})(3x^{3}y^{3})(4x^{4}y^{4})</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>120x^10y^10</m>
+            <m>120x^{10}y^{10}</m>
           </p>
         </solution>
       </exercise>
@@ -1242,12 +1242,12 @@
       <exercise>
         <statement>
           <p>
-            <m>(xy)(x^2y)(xy^2)(x^2y^2)(xy^3)</m>
+            <m>(xy)(x^{2}y)(xy^{2})(x^{2}y^{2})(xy^{3})</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>x^7y^9</m>
+            <m>x^{7}y^{9}</m>
           </p>
         </solution>
       </exercise>
@@ -1267,76 +1267,76 @@
       <exercise>
         <statement>
           <p>
-            <m>2x^2-3x+5x+3x^2</m>
+            <m>2x^{2}-3x+5x+3x^{2}</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>5x^2+2x</m>
+            <m>5x^{2}+2x</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>5x-7x+3x-2x+x^2+4x+3x^2</m>
+            <m>5x-7x+3x-2x+x^{2}+4x+3x^{2}</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>11x^3-3x^2+2x-5+x^2-2x+6</m>
+            <m>11x^{3}-3x^{2}+2x-5+x^{2}-2x+6</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>11x^3-2x^2+1</m>
+            <m>11x^{3}-2x^{2}+1</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>r^2+2r-r^2-3r+r</m>
+            <m>r^{2}+2r-r^{2}-3r+r</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>4t-2t+3t-5+t^2-4t^2+2t+7</m>
+            <m>4t-2t+3t-5+t^{2}-4t^{2}+2t+7</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>-3t^2+7t+2</m>
+            <m>-3t^{2}+7t+2</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>11j-j^2+3j-9</m>
+            <m>11j-j^{2}+3j-9</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>3x^2-5x+2x^2-4x+7</m>
+            <m>3x^{2}-5x+2x^{2}-4x+7</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>5x^2-9x+7</m>
+            <m>5x^{2}-9x+7</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>4y^3+2y^2-3y^3+5y^2-y+10</m>
+            <m>4y^{3}+2y^{2}-3y^{3}+5y^{2}-y+10</m>
           </p>
         </statement>
       </exercise>
@@ -1355,19 +1355,19 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2y-xy^2+x^2y^2-2xy+3yx^2</m>
+            <m>x^{2}y-xy^{2}+x^{2}y^{2}-2xy+3yx^{2}</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>2p^2q^3-3p^2q^3+5p^2q-pq^3+2p^2q</m>
+            <m>2p^{2}q^{3}-3p^{2}q^{3}+5p^{2}q-pq^{3}+2p^{2}q</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>-p^2q^3+7p^2q-pq^3</m>
+            <m>-p^{2}q^{3}+7p^{2}q-pq^{3}</m>
           </p>
         </solution>
       </exercise>
@@ -1381,19 +1381,19 @@
       <exercise>
         <statement>
           <p>
-            <m>3x^2-5x+2x^2-4x+7</m>
+            <m>3x^{2}-5x+2x^{2}-4x+7</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>5x^2-9x+7</m>
+            <m>5x^{2}-9x+7</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>4y^3+2y^2-3y^3+5y^2-y+10</m>
+            <m>4y^{3}+2y^{2}-3y^{3}+5y^{2}-y+10</m>
           </p>
         </statement>
       </exercise>
@@ -1412,33 +1412,33 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2y-xy^2+x^2y^2-2xy+3yx^2</m>
+            <m>x^{2}y-xy^{2}+x^{2}y^{2}-2xy+3yx^{2}</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>2p^2q^3-3p^2q^3+5p^2q-pq^3+2p^2q</m>
+            <m>2p^{2}q^{3}-3p^{2}q^{3}+5p^{2}q-pq^{3}+2p^{2}q</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>-p^2q^3+7p^2q-pq^3</m>
+            <m>-p^{2}q^{3}+7p^{2}q-pq^{3}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>y^5-3y^3+2y-y^3+4y^5-5y+3y</m>
+            <m>y^{5}-3y^{3}+2y-y^{3}+4y^{5}-5y+3y</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>3z^2-5+2z-11z+3z^2+4-6z^2+9z+1</m>
+            <m>3z^{2}-5+2z-11z+3z^{2}+4-6z^{2}+9z+1</m>
           </p>
         </statement>
         <solution>
@@ -1457,57 +1457,57 @@
       <exercise>
         <statement>
           <p>
-            <m>2x^3-4x^2y+3xy^2-5x^3+2x^2y-3xy^2</m>
+            <m>2x^{3}-4x^{2}y+3xy^{2}-5x^{3}+2x^{2}y-3xy^{2}</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>-3x^3-2x^2y</m>
+            <m>-3x^{3}-2x^{2}y</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>4a^2b-3ab^2+2a^2b-5ab^2+3ab-4a^2b</m>
+            <m>4a^{2}b-3ab^{2}+2a^{2}b-5ab^{2}+3ab-4a^{2}b</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>2xy^2-3yx^2+4xy^2-2yx^2+5yx^2-xy^2</m>
+            <m>2xy^{2}-3yx^{2}+4xy^{2}-2yx^{2}+5yx^{2}-xy^{2}</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>5xy^2</m>
+            <m>5xy^{2}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>3p^3q-4pq^3+2p^3q-3pq^3+4p^3q-5pq^3</m>
+            <m>3p^{3}q-4pq^{3}+2p^{3}q-3pq^{3}+4p^{3}q-5pq^{3}</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>2a^2b^3-3a^2b^3+4ab^2-2a^2b^3+3ab^2-5ab^2</m>
+            <m>2a^{2}b^{3}-3a^{2}b^{3}+4ab^{2}-2a^{2}b^{3}+3ab^{2}-5ab^{2}</m>
           </p>
         </statement>
         <solution>
           <p>
-            <m>2ab^2-3a^2b^3</m>
+            <m>2ab^{2}-3a^{2}b^{3}</m>
           </p>
         </solution>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>3x^3y-4xy^3+2x^3y-3xy^3+4x^3y-5xy^3</m>
+            <m>3x^{3}y-4xy^{3}+2x^{3}y-3xy^{3}+4x^{3}y-5xy^{3}</m>
           </p>
         </statement>
       </exercise>
@@ -1526,7 +1526,7 @@
       <exercise>
         <statement>
           <p>
-            <m>2x^4-3x^3y+4x^2y^2-2x^4+3x^3y-5x^2y^2</m>
+            <m>2x^{4}-3x^{3}y+4x^{2}y^{2}-2x^{4}+3x^{3}y-5x^{2}y^{2}</m>
           </p>
         </statement>
       </exercise>

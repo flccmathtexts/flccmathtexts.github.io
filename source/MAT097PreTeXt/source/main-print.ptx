@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Reuse the web edition's content, adding a print-only answer section. -->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <xi:include href="main.ptx" xpointer="xpointer(/pretext/docinfo)"/>
+  <book>
+    <xi:include href="main.ptx" xpointer="xpointer(/pretext/book/*[not(self::backmatter)])"/>
+    <backmatter>
+      <solutions xml:id="answers-to-exercises" inline="answer solution" divisional="answer solution" worksheet="answer solution" reading="answer solution" project="answer solution">
+        <title>Answers to Exercises</title>
+      </solutions>
+      <xi:include href="main.ptx" xpointer="xpointer(/pretext/book/backmatter/*)"/>
+    </backmatter>
+  </book>
+</pretext>

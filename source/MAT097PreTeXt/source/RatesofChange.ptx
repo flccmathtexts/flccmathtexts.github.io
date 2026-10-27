@@ -296,7 +296,7 @@
       <statement>
         <p>
           Find the average rate of change in
-          <m>f(x)=x^2-3x+7</m> between <m>x=-1</m> and <m>x=1</m>
+          <m>f(x)=x^{2}-3x+7</m> between <m>x=-1</m> and <m>x=1</m>
         </p>
       </statement>
     </example>
@@ -305,7 +305,7 @@
       We are given the two inputs,
       but we need to use the function formula to find the corresponding outputs.
       <me>
-        f(-1)=(-1)^2-3(-1)+7=11\\ f(1)=(1)^2-3(1)+7=5
+        f(-1)=(-1)^{2}-3(-1)+7=11\\ f(1)=(1)^{2}-3(1)+7=5
       </me>
     </p>
     <p>
@@ -983,7 +983,7 @@
         <statement>
           <p>
             Find the average rate of change in the function
-            <m>f(x) = x^2</m> between <m>x = 2</m> and <m>x = 4</m>.
+            <m>f(x) = x^{2}</m> between <m>x = 2</m> and <m>x = 4</m>.
           </p>
         </statement>
         <solution>
@@ -996,7 +996,7 @@
         <statement>
           <p>
             Find the average rate of change in the function
-            <m>f(x) = x^3</m> between <m>x = 0</m> and <m>x = 5</m>.
+            <m>f(x) = x^{3}</m> between <m>x = 0</m> and <m>x = 5</m>.
           </p>
         </statement>
       </exercise>
@@ -1004,7 +1004,7 @@
         <statement>
           <p>
             Find the average rate of change in the function
-            <m>g(t) = t^2 - 3t + 5</m> between <m>t = -1</m> and <m>t = 3</m>.
+            <m>g(t) = t^{2} - 3t + 5</m> between <m>t = -1</m> and <m>t = 3</m>.
           </p>
         </statement>
         <solution>
@@ -1017,7 +1017,7 @@
         <statement>
           <p>
             Find the average rate of change in the function
-            <m>g(t) = 2t^2 - t + 3</m> between <m>t = -2</m> and <m>t = 3</m>.
+            <m>g(t) = 2t^{2} - t + 3</m> between <m>t = -2</m> and <m>t = 3</m>.
           </p>
         </statement>
       </exercise>
@@ -1599,7 +1599,7 @@
           <p>
             The population of Ulcer Gulch, Colorado,
             as a function of years since 2000,
-            is given by the formula <m>P(t) = 2800 + 200t - 3t^2</m>.
+            is given by the formula <m>P(t) = 2800 + 200t - 3t^{2}</m>.
             Find the average rate of change in the town's population between 2005 and 2011.
             Include units in your answer.
             Does it seem likely that this average rate of change would always be the same?
@@ -1665,7 +1665,7 @@
         <statement>
           <p>
             The number of members of Eastonboro YMCA as a function of years since 2000,
-            is given by the formula <m>Y(t) = 800 + 52t - 5t^2</m>.
+            is given by the formula <m>Y(t) = 800 + 52t - 5t^{2}</m>.
             Find the average rate of change in the Y's memberships between 2003 and 2011.
             Include units in your answer.
             Does it seem likely that this average rate of change would always be the same?

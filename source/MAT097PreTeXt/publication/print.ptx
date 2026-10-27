@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publication>
+  <common>
+    <!-- Keep exercise statements in the chapters; collect answers at the back. -->
+    <exercise-inline statement="yes" hint="yes" answer="no" solution="no"/>
+    <exercise-divisional statement="yes" hint="yes" answer="no" solution="no"/>
+    <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no"/>
+    <exercise-reading statement="yes" hint="yes" answer="no" solution="no"/>
+    <exercise-project statement="yes" hint="yes" answer="no" solution="no"/>
+  </common>
+  <source>
+    <directories external="../assets" generated="../generated-assets"/>
+  </source>
+</publication>

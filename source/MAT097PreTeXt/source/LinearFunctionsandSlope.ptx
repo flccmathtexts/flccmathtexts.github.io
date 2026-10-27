@@ -1564,7 +1564,7 @@
       <exercise>
         <statement>
           <p>
-            Graph the function <m>f(x) = 10000 \cdot (1.01)^x</m> in the window
+            Graph the function <m>f(x) = 10000 \cdot (1.01)^{x}</m> in the window
             <m>0 \leq x \leq 1</m> and <m>10000 \leq f(x) \leq 10100</m>.
             Is this function linear?
             Are you sure?

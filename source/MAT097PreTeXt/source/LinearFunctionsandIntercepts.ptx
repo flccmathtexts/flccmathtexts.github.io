@@ -595,13 +595,13 @@
       but perhaps with some simplification we can get it there:
       <md>
         <mrow>f(x) \amp = 2x(4x-5)+3(x-7)</mrow>
-        <mrow>\amp =8x^2-10x+3x-21</mrow>
-        <mrow>\amp =8x^2-7x-21</mrow>
+        <mrow>\amp =8x^{2}-10x+3x-21</mrow>
+        <mrow>\amp =8x^{2}-7x-21</mrow>
       </md>
     </p>
     <p>
       Here we have reached an impasse.
-      The first term, <m>8x^2</m> contains an exponent,
+      The first term, <m>8x^{2}</m> contains an exponent,
       something not allowed in the slope-intercept form.
       If there were other like terms to combine it with there might be some hope of getting rid of this
       <q>squared</q>
@@ -1154,12 +1154,12 @@
               </li>
               <li>
                 <p>
-                  <m>w(t) = t^2 - t(t + 5) + 1</m>
+                  <m>w(t) = t^{2} - t(t + 5) + 1</m>
                 </p>
               </li>
               <li>
                 <p>
-                  <m>f(x) = x^2 - 2(x + 5) + 1</m>
+                  <m>f(x) = x^{2} - 2(x + 5) + 1</m>
                 </p>
               </li>
             </ol>
@@ -1414,7 +1414,7 @@
       <exercise>
         <statement>
           <p>
-            Is <m>f(x) = 6x^2 - 3x(2x - 5)</m> linear?
+            Is <m>f(x) = 6x^{2} - 3x(2x - 5)</m> linear?
             If so, determine its slope and vertical intercept.
             If not, explain how you know it is not.
           </p>

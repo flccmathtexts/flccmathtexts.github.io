@@ -6,7 +6,7 @@
 <project ptx-version="2">
   <targets>
     <target name="web" format="html" />
-    <target name="print" format="pdf" />
+    <target name="print" format="pdf" source="main-print.ptx" publication="print.ptx" output-filename="main.pdf" />
   </targets>
 </project>
 

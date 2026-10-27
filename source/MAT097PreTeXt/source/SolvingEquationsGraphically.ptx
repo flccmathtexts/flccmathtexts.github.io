@@ -262,7 +262,7 @@
     <example xml:id="SolvingEquationsGraphicallyExample2">
       <statement>
         <p>
-          Solve <m>x^2-10=2x</m>.
+          Solve <m>x^{2}-10=2x</m>.
           Round to two decimal places if necessary.
           This equation has two solutions.
         </p>
@@ -271,7 +271,7 @@
     <p>
       Now, this is actually a problem that we cannot (yet) solve using traditional algebra,
       because if we try to put the <m>x</m> terms together we are unable to do so,
-      because we cannot put the <m>x^2</m> and <m>2x</m> together – they are unlike terms.
+      because we cannot put the <m>x^{2}</m> and <m>2x</m> together – they are unlike terms.
       Graphical solution still works just fine though.
     </p>
     <p>
@@ -871,7 +871,7 @@
         <exercise>
           <statement>
             <p>
-              <m>2x-x^2=3x-2</m>
+              <m>2x-x^{2}=3x-2</m>
             </p>
           </statement>
           <solution>
@@ -883,7 +883,7 @@
         <exercise>
           <statement>
             <p>
-              <m>x^2-5x+6=5-(x-2)^2</m>
+              <m>x^{2}-5x+6=5-(x-2)^{2}</m>
             </p>
           </statement>
         </exercise>
@@ -1098,14 +1098,14 @@
         <exercise>
           <statement>
             <p>
-              <m>z^2-5z+3=2z+1</m>
+              <m>z^{2}-5z+3=2z+1</m>
             </p>
           </statement>
         </exercise>
         <exercise>
           <statement>
             <p>
-              <m>3z^2-5z+3=8-z^2</m>
+              <m>3z^{2}-5z+3=8-z^{2}</m>
             </p>
           </statement>
           <solution>
@@ -1211,7 +1211,7 @@
         <exercise>
           <statement>
             <p>
-              <m>x^2-2x+8=8</m>
+              <m>x^{2}-2x+8=8</m>
             </p>
             <p>
         (NOTE: This equation has two solutions.)
@@ -1247,7 +1247,7 @@
         <exercise>
           <statement>
             <p>
-              <m>z^2=3z+1</m>
+              <m>z^{2}=3z+1</m>
             </p>
           </statement>
         </exercise>

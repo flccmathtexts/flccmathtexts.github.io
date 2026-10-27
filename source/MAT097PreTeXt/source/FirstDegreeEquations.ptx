@@ -84,12 +84,12 @@
       but equations can have multiple solutions.
       For example,
       suppose that using physics someone has determined that the expression
-      <m>64t - 16t^2</m> gives the height of a ball
+      <m>64t - 16t^{2}</m> gives the height of a ball
       (in feet)
       <m>t</m> seconds after it is thrown upward,
       and we want to know when the ball will be at a height of <m>48</m> feet.
       So we would need to know the solution set for the equation
-      <m>64-16t^2 = 48</m>. (Note that this is not a first-degree equation,
+      <m>64-16t^{2} = 48</m>. (Note that this is not a first-degree equation,
       because of the squared term).
       It turns out that this equation has two solutions,
       <m>t=1</m> and <m>t=3</m>,
@@ -871,7 +871,7 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2-2x=0</m>; <m>x=-2,-1,0,1,\text{ or } 2</m>
+            <m>x^{2}-2x=0</m>; <m>x=-2,-1,0,1,\text{ or } 2</m>
           </p>
         </statement>
         <solution>
@@ -883,7 +883,7 @@
       <exercise>
         <statement>
           <p>
-            <m>5-y^2=1</m>; <m>y=-2,-1,0,1,\text{ or } 2</m>
+            <m>5-y^{2}=1</m>; <m>y=-2,-1,0,1,\text{ or } 2</m>
           </p>
         </statement>
       </exercise>
@@ -1603,7 +1603,7 @@
       <exercise>
         <statement>
           <p>
-            <m>E=mc^2</m>for<m>m</m>
+            <m>E=mc^{2}</m>for<m>m</m>
           </p>
         </statement>
       </exercise>
@@ -1758,7 +1758,7 @@
         <statement>
           <p>
             Which, if any, of the values <m>-2</m>, <m>-1</m>, <m>0</m>,
-            <m>1</m>, <m>2</m> satisfy the equation <m>x^2+3x+4=2</m>?
+            <m>1</m>, <m>2</m> satisfy the equation <m>x^{2}+3x+4=2</m>?
           </p>
         </statement>
       </exercise>
@@ -1892,7 +1892,7 @@
           <p>
             Which, if any, of the values <m>0</m>,
             <m>1</m>, <m>2</m>, <m>3</m>,
-            <m>4</m>, <m>5</m> satisfy the equation <m>x^2-4x= 0</m>?
+            <m>4</m>, <m>5</m> satisfy the equation <m>x^{2}-4x= 0</m>?
           </p>
         </statement>
         <solution>
@@ -1904,7 +1904,7 @@
       <exercise>
         <statement>
           <p>
-            Solve for <m>c</m>: <m>E = \frac{1}{2}c^2</m>
+            Solve for <m>c</m>: <m>E = \frac{1}{2}c^{2}</m>
           </p>
         </statement>
       </exercise>

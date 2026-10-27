@@ -365,7 +365,7 @@
       the points for all the input-output pairs will form straight lines like this one.
       There are other possibilities, however.
       For example, if we consider the function
-      <m>g(x)=x^2</m> we can create this table:
+      <m>g(x)=x^{2}</m> we can create this table:
     </p>
     <tabular>
       <row>
@@ -407,7 +407,7 @@
       and if we plot the points from this table in the plane we get:
     </p>
     <figure>
-      <caption>Some of the input-output pairs for the function <m>g(x)=x^2</m>.</caption>
+      <caption>Some of the input-output pairs for the function <m>g(x)=x^{2}</m>.</caption>
       <image width="92.5%" source="FunctionsandGraphsImages/Figure07.png"/>
     </figure>
     <p>
@@ -416,7 +416,7 @@
       we'll see exactly why this is later) that the actual collection of points for this function looks like this:
     </p>
     <figure>
-      <caption>The shape formed by the input-output pairs for <m>g(x)=x^2</m>.</caption>
+      <caption>The shape formed by the input-output pairs for <m>g(x)=x^{2}</m>.</caption>
       <image width="92.5%" source="FunctionsandGraphsImages/Figure08.png"/>
     </figure>
     <p>
@@ -920,7 +920,7 @@
     <example xml:id="FunctionsandGraphsExample8">
       <statement>
         <p>
-          Obtain a graph for <m>h(t)=\frac{t^3+3t^2}{12}</m> in the standard window,
+          Obtain a graph for <m>h(t)=\frac{t^{3}+3t^{2}}{12}</m> in the standard window,
           and use this graph to find <m>h(2)</m>
         </p>
       </statement>
@@ -1642,7 +1642,7 @@
           <statement>
             <p>
             Use your calculator to obtain a graph for the function
-            <m>h(t)=-16t^2+64t+5</m> in the window <m>0 \leq t \leq 4, 0 \leq h(t) \leq 160</m>.
+            <m>h(t)=-16t^{2}+64t+5</m> in the window <m>0 \leq t \leq 4, 0 \leq h(t) \leq 160</m>.
             Use your graph to find <m>h(1.75)</m> and <m>h(3.8)</m>.
           </p>
           </statement>
@@ -1656,7 +1656,7 @@
           <statement>
             <p>
             Use your calculator to obtain a graph for the function
-            <m>j(s)=-4.9s^2+19.6s+2</m> in the window <m>0 \leq s \leq 4, 0 \leq j(s) \leq 75</m>.
+            <m>j(s)=-4.9s^{2}+19.6s+2</m> in the window <m>0 \leq s \leq 4, 0 \leq j(s) \leq 75</m>.
             Use your graph to find <m>j(1.75)</m> and <m>j(3.8)</m>.
           </p>
           </statement>
@@ -1740,7 +1740,7 @@
           <statement>
             <p>
             Use your calculator to obtain a graph for
-            <m>f(x)=10-\frac{x^2}{10}</m> in the standard window.
+            <m>f(x)=10-\frac{x^{2}}{10}</m> in the standard window.
             Use your graph to find <m>f(3)</m>,
             <m>f(-5)</m>, and <m>f(-8.2)</m>.
           </p>
@@ -1774,7 +1774,7 @@
           <statement>
             <p>
             Use your calculator to obtain a graph for
-            <m>g(t)=t^3</m> in the window <m>-3 \leq t \leq 3, -50 \leq g(t) \leq 50</m>
+            <m>g(t)=t^{3}</m> in the window <m>-3 \leq t \leq 3, -50 \leq g(t) \leq 50</m>
             </p>
           </statement>
           <solution>
@@ -1817,7 +1817,7 @@
           <statement>
             <p>
             Use your calculator to obtain a graph for
-            <m>p(w)=w-2^w</m> in the window <m>-2 \leq w \leq 4, -20 \leq p(w) \leq 5</m>.
+            <m>p(w)=w-2^{w}</m> in the window <m>-2 \leq w \leq 4, -20 \leq p(w) \leq 5</m>.
           </p>
           </statement>
         </exercise>

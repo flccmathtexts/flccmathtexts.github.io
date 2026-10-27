@@ -8,9 +8,9 @@
       <md>
         <mrow>(x+2)(x+3) \amp  = x(x+3)+2(x+3)</mrow>
         <mrow>\amp</mrow>
-        <mrow>\amp  = x^2+3x+2x+6</mrow>
+        <mrow>\amp  = x^{2}+3x+2x+6</mrow>
         <mrow>\amp</mrow>
-        <mrow>\amp  = x^2+5x+6</mrow>
+        <mrow>\amp  = x^{2}+5x+6</mrow>
       </md>
     </p>
     <p>
@@ -21,12 +21,12 @@
       terms <m>3x+2x</m> to give us our middle term of <m>5x</m>.
       The constant, <m>6</m>,
       came from the multiplication of the integers from our original expression.
-      Our simplified solution is a second-degree expression because it contains an <m>x^2</m> term.
+      Our simplified solution is a second-degree expression because it contains an <m>x^{2}</m> term.
     </p>
     <p>
       To factor an expression of the second degree,
-      in the form <m>x^2+bx+c</m>,
-      which the coefficient of the <m>x^2</m> term is <m>1</m>,
+      in the form <m>x^{2}+bx+c</m>,
+      which the coefficient of the <m>x^{2}</m> term is <m>1</m>,
       we need to find numbers whose sum is the coefficient of the middle term <m>b</m> and whose product is the constant term <m>c</m>.
     </p>
     <definition>
@@ -37,7 +37,7 @@
             <h>Second Degree</h>
           </idx>
           <em>
-            <em>Factoring Second Degree Expressions of the Form <m>x^2+bx+c</m>
+            <em>Factoring Second Degree Expressions of the Form <m>x^{2}+bx+c</m>
             </em>
           </em>
           <ul>
@@ -68,33 +68,33 @@
     <example xml:id="SecondDegreeFactorExample1">
       <statement>
         <p>
-          Factor <m>x^2+7x+10</m>
+          Factor <m>x^{2}+7x+10</m>
         </p>
       </statement>
     </example>
-    <p>The positive factor pairs of <m>10</m> are <m>10,1</m> (sum <m>11</m>) and <m>5,2</m> (sum <m>7</m>). The pair <m>5,2</m> has the required sum, so <m>x^2+7x+10=(x+5)(x+2)</m>. The factors may be written in either order.</p>
+    <p>The positive factor pairs of <m>10</m> are <m>10,1</m> (sum <m>11</m>) and <m>5,2</m> (sum <m>7</m>). The pair <m>5,2</m> has the required sum, so <m>x^{2}+7x+10=(x+5)(x+2)</m>. The factors may be written in either order.</p>
     <p>
       We can easily check our work by using the distributive law:
       <md>
         <mrow>(x+5)(x+2) \amp  = x(x)+x(2)+5(x)+5(2)</mrow>
         <mrow>\amp</mrow>
-        <mrow>\amp  = x^2+2x+5x+10</mrow>
+        <mrow>\amp  = x^{2}+2x+5x+10</mrow>
         <mrow>\amp</mrow>
-        <mrow>\amp  = x^2+7x+10</mrow>
+        <mrow>\amp  = x^{2}+7x+10</mrow>
       </md>
     </p>
     <example xml:id="SecondDegreeFactorExample2">
       <statement>
         <p>
-          Factor <m>x^2-11x+10</m>
+          Factor <m>x^{2}-11x+10</m>
         </p>
       </statement>
     </example>
-    <p>As in <xref ref="SecondDegreeFactorExample1"/>, the positive factor pairs of <m>10</m> have sums <m>11</m> and <m>7</m>. Here the sum must be <m>-11</m>. The negative pairs are <m>-10,-1</m> (sum <m>-11</m>) and <m>-5,-2</m> (sum <m>-7</m>). Thus <m>x^2-11x+10=(x-10)(x-1)</m>.</p>
+    <p>As in <xref ref="SecondDegreeFactorExample1"/>, the positive factor pairs of <m>10</m> have sums <m>11</m> and <m>7</m>. Here the sum must be <m>-11</m>. The negative pairs are <m>-10,-1</m> (sum <m>-11</m>) and <m>-5,-2</m> (sum <m>-7</m>). Thus <m>x^{2}-11x+10=(x-10)(x-1)</m>.</p>
     <example xml:id="SecondDegreeFactorExample3">
       <statement>
         <p>
-          Factor <m>x^2-7x-30</m>
+          Factor <m>x^{2}-7x-30</m>
         </p>
       </statement>
     </example>
@@ -240,51 +240,51 @@
     </tabular>
     <p>
       The factors of <m>-10</m> and <m>3</m> give us the sum and product that we are looking for.
-      Therefore, we can factor <m>x^2-7x-30</m> into <m>(x-10)(x+3)</m>. }
+      Therefore, we can factor <m>x^{2}-7x-30</m> into <m>(x-10)(x+3)</m>. }
     </p>
     <example xml:id="SecondDegreeFactorExample4">
       <statement>
         <p>
-          Factor <m>2x^2+16x+30</m>
+          Factor <m>2x^{2}+16x+30</m>
         </p>
       </statement>
     </example>
     <p>
-      It is important to recognize here that the coefficient of the <m>x^2</m> terms here does not equal <m>1</m>.
+      It is important to recognize here that the coefficient of the <m>x^{2}</m> terms here does not equal <m>1</m>.
       We can however, begin by dividing by a common factor,
       which in this case is <m>2</m> and once we do that we are left with:
       <me>
-        2x^2+16x+30=2(x^2+8x+15)
+        2x^{2}+16x+30=2(x^{2}+8x+15)
       </me>
     </p>
-    <p>To factor completely, factor <m>x^2+8x+15</m>. The pairs <m>15,1</m> and <m>5,3</m> have sums <m>16</m> and <m>8</m>, respectively. Hence <m>2x^2+16x+30=2(x+5)(x+3)</m>.</p>
+    <p>To factor completely, factor <m>x^{2}+8x+15</m>. The pairs <m>15,1</m> and <m>5,3</m> have sums <m>16</m> and <m>8</m>, respectively. Hence <m>2x^{2}+16x+30=2(x+5)(x+3)</m>.</p>
     <example xml:id="SecondDegreeFactorExample5">
       <statement>
-        <p>Factor <m>x^3+x^2-6x</m>.</p>
+        <p>Factor <m>x^{3}+x^{2}-6x</m>.</p>
       </statement>
     </example>
-    <p>This third-degree expression has common factor <m>x</m>, so <m>x^3+x^2-6x=x(x^2+x-6)</m>. To factor the quadratic, use integers whose product is <m>-6</m> and sum is <m>1</m>. The pair is <m>3,-2</m>, giving <m>x(x+3)(x-2)</m>.</p>
+    <p>This third-degree expression has common factor <m>x</m>, so <m>x^{3}+x^{2}-6x=x(x^{2}+x-6)</m>. To factor the quadratic, use integers whose product is <m>-6</m> and sum is <m>1</m>. The pair is <m>3,-2</m>, giving <m>x(x+3)(x-2)</m>.</p>
     <example xml:id="SecondDegreeFactorExample6">
       <statement>
         <p>
-          Factor: <m>x^2-25</m>
+          Factor: <m>x^{2}-25</m>
         </p>
       </statement>
     </example>
-    <p>Write <m>x^2-25=x^2+0x-25</m>. We need integers with product <m>-25</m> and sum <m>0</m>: <m>5,-5</m>. Thus <m>x^2-25=(x+5)(x-5)</m>. Distribution checks the result: <m>x^2-5x+5x-25=x^2-25</m>.</p>
-    <p>The middle terms cancel because the integers have opposite signs. This is the <term>difference of squares</term> pattern: <m>a^2-b^2=(a+b)(a-b)</m>.</p>
+    <p>Write <m>x^{2}-25=x^{2}+0x-25</m>. We need integers with product <m>-25</m> and sum <m>0</m>: <m>5,-5</m>. Thus <m>x^{2}-25=(x+5)(x-5)</m>. Distribution checks the result: <m>x^{2}-5x+5x-25=x^{2}-25</m>.</p>
+    <p>The middle terms cancel because the integers have opposite signs. This is the <term>difference of squares</term> pattern: <m>a^{2}-b^{2}=(a+b)(a-b)</m>.</p>
     <example xml:id="SecondDegreeFactorExample7">
       <statement>
-        <p>Factor <m>t^2-36</m>.</p>
+        <p>Factor <m>t^{2}-36</m>.</p>
       </statement>
     </example>
-    <p>Since <m>36=6^2</m>, <m>t^2-36=(t+6)(t-6)</m>.</p>
+    <p>Since <m>36=6^{2}</m>, <m>t^{2}-36=(t+6)(t-6)</m>.</p>
     <example xml:id="SecondDegreeFactorExample8">
       <statement>
-        <p>Factor <m>2w^2-32</m>.</p>
+        <p>Factor <m>2w^{2}-32</m>.</p>
       </statement>
     </example>
-    <p>First factor out <m>2</m>, then use the difference of squares: <m>2w^2-32=2(w^2-16)=2(w+4)(w-4)</m>.</p>
+    <p>First factor out <m>2</m>, then use the difference of squares: <m>2w^{2}-32=2(w^{2}-16)=2(w+4)(w-4)</m>.</p>
   </introduction>
   <exercises>
     <title>Exercises</title>
@@ -296,7 +296,7 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2+5x+6</m>
+            <m>x^{2}+5x+6</m>
           </p>
         </statement>
         <solution>
@@ -308,14 +308,14 @@
       <exercise>
         <statement>
           <p>
-            <m>a^2-a-6</m>
+            <m>a^{2}-a-6</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>g^2+g-6</m>
+            <m>g^{2}+g-6</m>
           </p>
         </statement>
         <solution>
@@ -327,14 +327,14 @@
       <exercise>
         <statement>
           <p>
-            <m>r^2-4r-5</m>
+            <m>r^{2}-4r-5</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>x^2+9x+14</m>
+            <m>x^{2}+9x+14</m>
           </p>
         </statement>
         <solution>
@@ -346,14 +346,14 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2-12x+36</m>
+            <m>x^{2}-12x+36</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>x^2+9x+18</m>
+            <m>x^{2}+9x+18</m>
           </p>
         </statement>
         <solution>
@@ -365,14 +365,14 @@
       <exercise>
         <statement>
           <p>
-            <m>y^2+7y-30</m>
+            <m>y^{2}+7y-30</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>t^2+9t+20</m>
+            <m>t^{2}+9t+20</m>
           </p>
         </statement>
         <solution>
@@ -384,14 +384,14 @@
       <exercise>
         <statement>
           <p>
-            <m>g^2-13g+36</m>
+            <m>g^{2}-13g+36</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>x^2+10x-24</m>
+            <m>x^{2}+10x-24</m>
           </p>
         </statement>
         <solution>
@@ -403,14 +403,14 @@
       <exercise>
         <statement>
           <p>
-            <m>h^2+h-30</m>
+            <m>h^{2}+h-30</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>f^2-7f+12</m>
+            <m>f^{2}-7f+12</m>
           </p>
         </statement>
         <solution>
@@ -422,14 +422,14 @@
       <exercise>
         <statement>
           <p>
-            <m>v^2+14v+48</m>
+            <m>v^{2}+14v+48</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>r^2-10r-24</m>
+            <m>r^{2}-10r-24</m>
           </p>
         </statement>
         <solution>
@@ -441,7 +441,7 @@
       <exercise>
         <statement>
           <p>
-            <m>p^2-26p+48</m>
+            <m>p^{2}-26p+48</m>
           </p>
         </statement>
       </exercise>
@@ -454,7 +454,7 @@
       <exercise>
         <statement>
           <p>
-            <m>2b^2+10b+12</m>
+            <m>2b^{2}+10b+12</m>
           </p>
         </statement>
         <solution>
@@ -466,14 +466,14 @@
       <exercise>
         <statement>
           <p>
-            <m>2w^2+12w+10</m>
+            <m>2w^{2}+12w+10</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>5x^2-50x+125</m>
+            <m>5x^{2}-50x+125</m>
           </p>
         </statement>
         <solution>
@@ -485,14 +485,14 @@
       <exercise>
         <statement>
           <p>
-            <m>x^3+3x^2-10x</m>
+            <m>x^{3}+3x^{2}-10x</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>2w^3-4w^2+2w</m>
+            <m>2w^{3}-4w^{2}+2w</m>
           </p>
         </statement>
         <solution>
@@ -510,14 +510,14 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2-100</m>
+            <m>x^{2}-100</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>a^2-49</m>
+            <m>a^{2}-49</m>
           </p>
         </statement>
         <solution>
@@ -529,14 +529,14 @@
       <exercise>
         <statement>
           <p>
-            <m>3x^2-75</m>
+            <m>3x^{2}-75</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>4x^2-36</m>
+            <m>4x^{2}-36</m>
           </p>
         </statement>
         <solution>
@@ -548,14 +548,14 @@
       <exercise>
         <statement>
           <p>
-            <m>q^2-225</m>
+            <m>q^{2}-225</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>2p^2-72</m>
+            <m>2p^{2}-72</m>
           </p>
         </statement>
         <solution>
@@ -567,7 +567,7 @@
       <exercise>
         <statement>
           <p>
-            <m>r^2-121</m>
+            <m>r^{2}-121</m>
           </p>
         </statement>
       </exercise>
