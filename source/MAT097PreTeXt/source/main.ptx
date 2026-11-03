@@ -37,7 +37,6 @@ IIIII}
 \usepackage{pgfplots}
 </latex-image-preamble>
 
-<rename element="algorithm">Example</rename>
   </docinfo>
   <book>
     <title>Algebra and Introduction to Functions</title>

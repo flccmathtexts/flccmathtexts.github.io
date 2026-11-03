@@ -186,14 +186,14 @@
       This has an important consequence, though,
       which the following example illustrates.
     </p>
-    <algorithm xml:id="AlgebraicExpressionsExample1">
+    <example xml:id="AlgebraicExpressionsExample1">
       <statement>
         <p>
           How many terms are there in the expression <m>2x^{3}-3x^{2}+5</m>?
           Identify each term's coefficient and literal part
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       There are three terms, separated by the
       <q>
@@ -222,14 +222,14 @@
       For the third term, the coefficient is <m>5</m>,
       and there is no literal part. }
     </p>
-    <algorithm xml:id="AlgebraicExpressionsExample2">
+    <example xml:id="AlgebraicExpressionsExample2">
       <statement>
         <p>
           How many terms are there in the expression <m>\displaystyle \frac{3x}{5y}</m>?
           Identify each term's coefficient and literal part.
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       Nothing here can be separated by addition, so this is one term.
       To determine the coefficient and literal part,
@@ -318,14 +318,14 @@
       </me>
       and so we see the coefficient is <m>12</m> and the literal part is <m>x^{3}y^{2}</m>.
     </p>
-    <algorithm xml:id="AlgebraicExpressionsExample3">
+    <example xml:id="AlgebraicExpressionsExample3">
       <statement>
         <p>
           How many terms are there in the expression <m>(3x^{2})(2x)(x^{2})</m>?
           Identify each term's coefficient and literal part.
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       Because everything is tied by multiplication, this is one term.
       To see the coefficient and literal part clearly,
@@ -337,14 +337,14 @@
     <p>
       So the coefficient is <m>6</m> and the literal part is <m>x^{5}</m>. }
     </p>
-    <algorithm xml:id="AlgebraicExpressionsExample4">
+    <example xml:id="AlgebraicExpressionsExample4">
       <statement>
         <p>
           How many terms are there in the expression <m>(3x^{2})(2x)-x^{2}</m>?
           Identify each term's coefficient and literal part.
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       There are two terms here, separated by the subtraction.
       Simplifying by multiplying we get:
@@ -408,13 +408,13 @@
         </p>
       </statement>
     </definition>
-    <algorithm xml:id="AlgebraicExpressionsExample5">
+    <example xml:id="AlgebraicExpressionsExample5">
       <statement>
         <p>
           Rewrite the term <m>(4xy^{4})(2x^{7})(3x^{12}y^{6})</m> in simplified form.
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       Multiplying the coefficients gives us an overall coefficient of:
       <me>
@@ -476,13 +476,13 @@
       Like terms can be combined by adding their coefficients
       (and keeping the literal part the same).
     </p>
-    <algorithm xml:id="AlgebraicExpressionsExample6">
+    <example xml:id="AlgebraicExpressionsExample6">
       <statement>
         <p>
           Simplify the expression <m>5x^{3}-9x^{3}+7x^{3}</m> by combining like terms.
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       Since all three terms have the same literal part (<m>x^{3}</m>) they are all like,
       and so we combine them by adding their coefficients.
@@ -513,13 +513,13 @@
       (that is, if they are not like)
       we cannot combine them at all.
     </p>
-    <algorithm xml:id="AlgebraicExpressionsExample7">
+    <example xml:id="AlgebraicExpressionsExample7">
       <statement>
         <p>
           Simplify the expression <m>5y^{3}-2y+3y-11y^{3}</m>.
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       Since addition is commutative,
       we can rearrange the <m>y^{3}</m> terms so they can be added together.
@@ -540,13 +540,13 @@
       However, we usually write expressions from highest to lowest powered terms.
       We will follow that convention in this book.
     </p>
-    <algorithm xml:id="AlgebraicExpressionsExample8">
+    <example xml:id="AlgebraicExpressionsExample8">
       <statement>
         <p>
           Simplify the expression <m>3xy-14x^{2}y-9xy+4+8x^{2}y-1</m>.
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       Here we proceed by adding like terms:
       <md>

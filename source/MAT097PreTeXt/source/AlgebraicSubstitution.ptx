@@ -94,14 +94,14 @@
       </idx>
       <em>algebraic substitution</em>.
     </p>
-    <algorithm xml:id="AlgebraicSubstitutionExample1">
+    <example xml:id="AlgebraicSubstitutionExample1">
       <statement>
         <p>
           Evaluate the algebraic expression
           <m>t^2+2t-4p</m> if <m>t=7</m> and <m>p=-3</m>
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       We start with the equation,
       and then replace the variables <m>t</m> and <m>p</m> with their given values,
@@ -114,13 +114,13 @@
       Since we don't know what this algebraic expression is meant to represent or the appropriate units for the variables represent,
       we just leave the final answer as <m>75</m>. }
     </p>
-    <algorithm xml:id="AlgebraicSubstitutionExample2">
+    <example xml:id="AlgebraicSubstitutionExample2">
       <statement>
         <p>
           Evaluate <m>\frac{c^2V}{2}</m> if <m>c=-3</m> and <m>V=200</m>
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       The original equation contains <m>c^2</m>,
       so whatever <m>c</m> is, we need to square it.
@@ -139,13 +139,13 @@
       you may want to consider always putting parentheses around negative numbers when you substitute them in,
       to play it safe.
     </p>
-    <algorithm xml:id="AlgebraicSubstitutionExample3">
+    <example xml:id="AlgebraicSubstitutionExample3">
       <statement>
         <p>
           Evaluate <m>P^2T^3-1</m> if <m>P=-4</m> and <m>T=2</m>
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       Substituting in the given values:
       <me>
@@ -172,7 +172,7 @@
       When you have know the units involved or the meaning of what you are calculating,
       it is appropriate to state your final answer using the appropriate units and/or in a way that relates it to the meaning.
     </p>
-    <algorithm xml:id="AlgebraicSubstitutionExample4">
+    <example xml:id="AlgebraicSubstitutionExample4">
       <statement>
         <p>
           The formula for converting from temperature in Fahrenheit to temperature in Celsius is <m>C=\frac{5}{9}(F-32)</m>.
@@ -180,7 +180,7 @@
           what is the temperature in Celsius?
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       It is clear that in the formula <m>F</m> represents temperature in degrees Fahrenheit and <m>C</m> represents temperature in degrees Celsius.
       So we substitute given <m>F=14</m> to get:
@@ -220,14 +220,14 @@
       Of course, if you don't know the appropriate units or the context,
       then you can only reasonably give the numeric answer.
     </p>
-    <algorithm xml:id="AlgebraicSubstitutionExample5">
+    <example xml:id="AlgebraicSubstitutionExample5">
       <statement>
         <p>
           The formula for the energy stored in a charged capacitor is <m>W=\frac{1}{2}cv^2</m>.
           Calculate <m>W</m> if <m>c=100</m> and <m>v=50</m>
         </p>
       </statement>
-    </algorithm>
+    </example>
     <md>
       <mrow>W \amp  = \frac{1}{2}(100)(50)^2</mrow>
       <mrow>\amp</mrow>
@@ -250,7 +250,7 @@
       If, however, we did know the units,
       it would be appropriate to use them. }
     </p>
-    <algorithm xml:id="AlgebraicSubstitutionExample6">
+    <example xml:id="AlgebraicSubstitutionExample6">
       <statement>
         <p>
           The energy, in joules,
@@ -259,7 +259,7 @@
           Determine the energy stored if the capacitance is 100 farads and the current is 50 volts.
         </p>
       </statement>
-    </algorithm>
+    </example>
     <p>
       This is the same problem as <xref ref="AlgebraicSubstitutionExample5">Example</xref>,
       except that here we know more about what the formula represents.
@@ -634,7 +634,7 @@
         </p>
       </statement>
     </definition>
-    <algorithm xml:id="AlgebraicSubstitutionExample7">
+    <example xml:id="AlgebraicSubstitutionExample7">
       <statement>
         <p>
           Using the formula <m>C=\frac{5}{9}(F-32)</m> given in <xref ref="AlgebraicSubstitutionExample4">Example</xref>,
@@ -672,7 +672,7 @@
           <image source="AlgebraicSubstitutionImages/CalculatorTableEx7.png"/>
         </figure>
       </statement>
-    </algorithm>
+    </example>
   </subsection>
   <subsection>
     <title>Tables with Multiple Inputs</title>
